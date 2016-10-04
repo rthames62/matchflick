@@ -1,0 +1,70 @@
+body {
+  background-color: #181818;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+a {
+  color: #FC7100;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  font-size: 18px;
+  border: 0;
+  border-bottom: 4px solid #FF4F09;
+  padding: 12px 22px;
+  color: #fff;
+  background-color: #FC7100;
+  border-radius: 3px;
+}
+
+ui-view, navbar {
+  display: block;
+}
+
+nav {
+  padding: 15px;
+  background: #282828;
+}
+
+nav > img.logo {
+  width: 250px;
+}
+
+div.user {
+  float: right;
+}
+
+main.getting-started {
+  width: 100%;
+  height: calc(100vh - 82px);
+  display: table;
+}
+
+main.getting-started div {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+main.getting-started h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+main.getting-started h4 {
+    font-size: 20px;
+    padding: 0 150px;
+    font-weight: 300;
+}
+
+main.getting-started button {
+  width: 200px;
+  margin: 35px 15px 0;
+}

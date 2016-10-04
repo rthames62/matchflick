@@ -1,0 +1,32 @@
+{
+  "name": "matchflick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'webpack -w -D' 'nodemon index' "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.2",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "html-loader": "^0.4.4",
+    "style-loader": "^0.13.1"
+  }
+}
