@@ -3,15 +3,20 @@ function mainService($http){
   let currentUserFbId = "";
 
   this.getCurrentUser = function(){
-    return $http.get(`/api/users/${currentUserFbId}`).then(function(response){
-      console.log("my db", response.data[0]);
-      return response.data[0];
+    return $http.get(`/api/users`).then(function(response){
+      let currIndex = 0;
+        response.data.map(function(x, i){
+          if(x.facebookId === currentUserFbId){
+              return currIndex = i;
+          }
+        })
+        console.log(currIndex);
+        return response.data[currIndex];
     })
   }
 
   function getCurrentUser(){
     return $http.get("/api/facebook").then(function(response){
-      console.log(response);
       let results = response.data;
       currentUser = {
         firstName : results._json.first_name,
@@ -24,7 +29,6 @@ function mainService($http){
         profilePictureUrl : results._json.picture.data.url
       };
       currentUserFbId = results.id;
-      console.log(currentUser);
       postCurrentUser(currentUser);
       return response;
     })
@@ -34,9 +38,11 @@ function mainService($http){
     $http.post("/api/users", obj)
   }
 
-  if(!currentUser){
-    getCurrentUser();
-  }
+    if(!currentUser){
+        getCurrentUser();
+    }
+
+
 }
 
 module.exports = mainService;

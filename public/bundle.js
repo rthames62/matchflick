@@ -89,6 +89,14 @@
 
 	var _navbar2 = _interopRequireDefault(_navbar);
 
+	var _sidebar = __webpack_require__(20);
+
+	var _sidebar2 = _interopRequireDefault(_sidebar);
+
+	var _dashNav = __webpack_require__(21);
+
+	var _dashNav2 = _interopRequireDefault(_dashNav);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//Services
@@ -114,7 +122,7 @@
 	    templateUrl: "./views/dashboard.html",
 	    controller: _dashboardCtrl2.default
 	  });
-	}).service("mainService", _mainService2.default).directive("navbar", _navbar2.default);
+	}).service("mainService", _mainService2.default).directive("navbar", _navbar2.default).directive("sidebar", _sidebar2.default).directive("dashnav", _dashNav2.default);
 
 	//Directives
 
@@ -36527,7 +36535,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #181818;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n}\n\nh1 {\n  font-size: 30px;\n}\n\na {\n  color: #FC7100;\n  text-decoration: none;\n  cursor: pointer;\n}\n\nbutton {\n  font-size: 18px;\n  border: 0;\n  border-bottom: 4px solid #FF4F09;\n  padding: 12px 22px;\n  color: #fff;\n  background-color: #FC7100;\n  border-radius: 3px;\n}\n\nui-view, navbar {\n  display: block;\n}\n\nnav {\n  padding: 15px;\n  background: #282828;\n}\n\nnav > img.logo {\n  width: 250px;\n}\n\ndiv.user {\n  float: right;\n}\n\nmain.getting-started {\n  width: 100%;\n  height: calc(100vh - 82px);\n  display: table;\n}\n\nmain.getting-started div {\n    text-align: center;\n    display: table-cell;\n    vertical-align: middle;\n}\n\nmain.getting-started h1 {\n    font-size: 60px;\n    margin-bottom: 10px;\n}\n\nmain.getting-started h4 {\n    font-size: 20px;\n    padding: 0 150px;\n    font-weight: 300;\n}\n\nmain.getting-started button {\n  width: 200px;\n  margin: 35px 15px 0;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #181818;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n}\n\nh1 {\n  font-size: 30px;\n}\n\na {\n  color: #FC7100;\n  text-decoration: none;\n  cursor: pointer;\n}\n\nbutton {\n  font-size: 18px;\n  border: 0;\n  border-bottom: 4px solid #FF4F09;\n  padding: 12px 22px;\n  color: #fff;\n  background-color: #FC7100;\n  border-radius: 3px;\n}\n\nui-view, navbar, sidebar, dashnav {\n  display: block;\n}\n\nnav {\n  padding: 15px;\n  background: #282828;\n}\n\nnav > img.logo {\n  width: 250px;\n}\n\ndiv.user {\n  float: right;\n}\n\nmain.getting-started {\n  width: 100%;\n  height: calc(100vh - 82px);\n  display: table;\n}\n\nmain.getting-started div {\n    text-align: center;\n    display: table-cell;\n    vertical-align: middle;\n}\n\nmain.getting-started h1 {\n    font-size: 60px;\n    margin-bottom: 10px;\n}\n\nmain.getting-started h4 {\n    font-size: 20px;\n    padding: 0 150px;\n    font-weight: 300;\n}\n\nmain.getting-started button {\n  width: 200px;\n  margin: 35px 15px 0;\n}\n\nsidebar {\n  width: 220px;\n  height: 100vh;\n  position: fixed;\n  background-color: #282828;\n}\n\nsidebar img.logo {\n  width: 100%;\n  padding: 15px 15px 35px 15px;\n}\n\nsidebar div.logo-cont {\n  border-bottom: 1px solid #000;\n}\n\nsidebar img.match {\n  width: 16px;\n}\n\nsidebar > ul > li {\n  border-bottom: 1px solid #000;\n}\n\nsidebar > ul > li > a > span {\n  margin-right: 10px;\n}\n\nsidebar span.match {\n  margin-right: 6px;\n}\n\nsidebar > ul > li > a {\n  width: 100%;\n  padding: 15px 4px 15px 15px;\n  display: block;\n  color: #fff;\n  transition: all ease .2s;\n}\n\nsidebar > ul > li > a:hover {\n  background-color: #2d2d2d;\n  text-decoration: none;\n  color: #FC7100;\n}\n\nsidebar > ul > li > a.active {\n  border-left: 4px solid #FC7100;\n  background-color: #2d2d2d;\n}\n\ndashnav {\n  width: calc(100% - 220px);\n  position: fixed;\n  top: 0;\n  right: 0;\n  padding: 10px;\n  /*background-color: rgba(0, 0, 0, 0.5);*/\n}\n\ndashnav img.profile {\n  border-radius: 50%;\n  height: 40px;\n  display: inline;\n  vertical-align: middle;\n  margin-right: 10px;\n}\n\ndashnav p {\n  display: inline;\n  vertical-align: middle;\n}\n\ndashnav div.user-info {\n  float: right;\n}\n\nmain.dashboard {\n  width: calc(100% - 220px);\n  float: right;\n  padding: 25px;\n}\n\nsection.dashboard-header {\n  padding: 50px  0;\n}\n", ""]);
 
 	// exports
 
@@ -36915,7 +36923,7 @@
 /* 17 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1>Dashboard</h1>\n<img ng-src=\"{{currentUser.profilePictureUrl}}\" />\n{{currentUser.firstName}}\n{{currentUser.lastName}}\n";
+	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1>Dashboard</h1>\n</main>\n";
 
 /***/ },
 /* 18 */
@@ -36928,6 +36936,7 @@
 	  $scope.getCurrentUser = function () {
 	    mainService.getCurrentUser().then(function (response) {
 	      $scope.currentUser = response;
+	      console.log("scope curr user", $scope.currentUser);
 	      return $scope.currentUser;
 	    });
 	  };
@@ -36947,15 +36956,20 @@
 	  var currentUserFbId = "";
 
 	  this.getCurrentUser = function () {
-	    return $http.get("/api/users/" + currentUserFbId).then(function (response) {
-	      console.log("my db", response.data[0]);
-	      return response.data[0];
+	    return $http.get("/api/users").then(function (response) {
+	      var currIndex = 0;
+	      response.data.map(function (x, i) {
+	        if (x.facebookId === currentUserFbId) {
+	          return currIndex = i;
+	        }
+	      });
+	      console.log(currIndex);
+	      return response.data[currIndex];
 	    });
 	  };
 
 	  function getCurrentUser() {
 	    return $http.get("/api/facebook").then(function (response) {
-	      console.log(response);
 	      var results = response.data;
 	      currentUser = {
 	        firstName: results._json.first_name,
@@ -36968,7 +36982,6 @@
 	        profilePictureUrl: results._json.picture.data.url
 	      };
 	      currentUserFbId = results.id;
-	      console.log(currentUser);
 	      postCurrentUser(currentUser);
 	      return response;
 	    });
@@ -36984,6 +36997,34 @@
 	}
 
 	module.exports = mainService;
+
+/***/ },
+/* 20 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function sidebarDirective() {
+	  return {
+	    templateUrl: "../../views/sidebar.html"
+	  };
+	}
+
+	module.exports = sidebarDirective;
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function dashNav() {
+	  return {
+	    templateUrl: "../../views/dashNav.html"
+	  };
+	}
+
+	module.exports = dashNav;
 
 /***/ }
 /******/ ]);

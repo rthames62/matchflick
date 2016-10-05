@@ -20,6 +20,8 @@ import mainService from "./js/services/mainService.js"
 
 //Directives
 import navbarDirective from "./js/directives/navbar.js";
+import sidebarDirective from "./js/directives/sidebar.js";
+import dashNavDirective from "./js/directives/dashNav.js";
 
 angular.module("MatchFlick", [uiRouter])
 .config(function($stateProvider, $urlRouterProvider){
@@ -41,3 +43,5 @@ angular.module("MatchFlick", [uiRouter])
 })
 .service("mainService", mainService)
 .directive("navbar", navbarDirective)
+.directive("sidebar", sidebarDirective)
+.directive("dashnav", dashNavDirective)

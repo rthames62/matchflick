@@ -24,7 +24,7 @@ button {
   border-radius: 3px;
 }
 
-ui-view, navbar {
+ui-view, navbar, sidebar, dashnav {
   display: block;
 }
 
@@ -67,4 +67,91 @@ main.getting-started h4 {
 main.getting-started button {
   width: 200px;
   margin: 35px 15px 0;
+}
+
+sidebar {
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  background-color: #282828;
+}
+
+sidebar img.logo {
+  width: 100%;
+  padding: 15px 15px 35px 15px;
+}
+
+sidebar div.logo-cont {
+  border-bottom: 1px solid #000;
+}
+
+sidebar img.match {
+  width: 16px;
+}
+
+sidebar > ul > li {
+  border-bottom: 1px solid #000;
+}
+
+sidebar > ul > li > a > span {
+  margin-right: 10px;
+}
+
+sidebar span.match {
+  margin-right: 6px;
+}
+
+sidebar > ul > li > a {
+  width: 100%;
+  padding: 15px 4px 15px 15px;
+  display: block;
+  color: #fff;
+  transition: all ease .2s;
+}
+
+sidebar > ul > li > a:hover {
+  background-color: #2d2d2d;
+  text-decoration: none;
+  color: #FC7100;
+}
+
+sidebar > ul > li > a.active {
+  border-left: 4px solid #FC7100;
+  background-color: #2d2d2d;
+}
+
+dashnav {
+  width: calc(100% - 220px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+dashnav img.profile {
+  border-radius: 50%;
+  height: 40px;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+dashnav p {
+  display: inline;
+  vertical-align: middle;
+}
+
+dashnav div.user-info {
+  float: right;
+}
+
+main.dashboard {
+  width: calc(100% - 220px);
+  float: right;
+  padding: 25px;
+}
+
+section.dashboard-header {
+  padding: 50px  0;
 }
