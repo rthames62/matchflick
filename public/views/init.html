@@ -30,8 +30,8 @@
   <p>Total ratings: {{recommendedMovie.voteCount}}</p>
 </div>
 <div class="details">
-  <h1>{{recommendedMovie.movieTitle}} ({{recommendedMovie.releaseDate.slice(13, 17)}})</h1>
-  <a class="trailer" href="#"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Watch Trailer</a>
+  <h1>{{recommendedMovie.movieTitle}} ({{recommendedMovie.releaseDate.substr(recommendedMovie.releaseDate.length - 4)}})</h1>
+  <a id="play-trailer" class="trailer"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Watch Trailer</a>
   <p>
     <strong>Rated: </strong>{{recommendedMovie.certification}} | {{recommendedMovie.runtime}} minutes | {{recommendedMovie.releaseDate}}
   </p>
@@ -54,7 +54,7 @@
       <img ng-src="{{cast.profile_path}}" />
       <div class="info">
         <p><strong>{{cast.name}}</strong><br>
-        {{cast.character}}</p>
+        {{cast.character.substr(0, 50)}}</p>
       </div>
     </li>
   </ul>
@@ -64,10 +64,14 @@
       <img ng-src="{{crew.profile_path}}" />
       <div class="info">
         <p><strong>{{crew.name}}</strong><br>
-        {{crew.job}}</p>
+        {{crew.job.substr(0, 45)}}</p>
       </div>
     </li>
   </ul>
-  <!-- <div ng-bind-html="trailerUrl"></div> -->
+</div>
+<div class="trailer-modal">
+  <div id="trailer-video" ng-bind-html="trailerUrl">
+  </div>
+  <span id="close-trailer" show-movie-details class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 </div>
 </div>

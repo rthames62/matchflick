@@ -19,13 +19,23 @@ module.exports = {
       }
     })
   },
+  // getUser(req, res){
+  //   User.findById(req.params.id, function(error, response){
+  //     if(error){
+  //       return res.status(500).json(error);
+  //     }
+  //     return res.status(201).json(response);
+  //   })
+  // },
   getUser(req, res){
-    User.findById(req.params.id, function(error, response){
-      if(error){
-        return res.status(500).json(error);
-      }
-      return res.status(201).json(response);
-    })
+    User.findById(req.params.id)
+      .populate()
+      .exec(function(error, response){
+          if(error){
+              return res.status(500).json(error);
+            }
+            return res.status(201).json(response);
+      })
   },
   currentUser(req, res){
     res.send(req.user);

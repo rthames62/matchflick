@@ -28,6 +28,7 @@ const Movie = new mongoose.Schema({
   keywords : {type : Array},
   recommendations : {type : Array},
   similar : {type : Array},
+  certification : {type : String, trim : true}
 })
 
 module.exports = mongoose.model("Movie", Movie);

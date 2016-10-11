@@ -18,6 +18,10 @@ function initMatch($scope, $sce, mainService){
     return item === "director"
   }
 
+  $scope.getInitRecommendedArr = function(){
+
+  }
+
 
   $scope.recommendMovieForInitMatch();
   $scope.getRecommendedMovieForInitMatch();

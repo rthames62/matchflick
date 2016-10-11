@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Movie = require('../movies/Movie.js');
 
 const User = new mongoose.Schema({
   firstName : {type : String, required : true, trim : true},
@@ -41,13 +42,15 @@ const User = new mongoose.Schema({
     similar : {type : Array},
     certification : {type : String, trim : true}
   }],
-  initRecommended : {type : Array},
-  ratedMoviesOne : {type : Array},
-  ratedMoviesTwo : {type : Array},
-  ratedMoviesThree : {type : Array},
-  ratedMoviesFour : {type : Array},
-  ratedMoviesFive : {type : Array},
-  unseenMovies : {type : Array}
+  // topFive : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  initRecommended : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  ratedMoviesOne : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  ratedMoviesTwo : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  ratedMoviesThree : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  ratedMoviesFour : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  ratedMoviesFive : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  unseenMovies : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}],
+  watchlist : [{type : mongoose.Schema.Types.ObjectId, ref : "Movie"}]
 })
 
 module.exports = mongoose.model("User", User);

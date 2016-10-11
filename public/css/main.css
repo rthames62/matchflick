@@ -18,6 +18,8 @@ p {
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 18px;
+  font-size: 14px;
+  color: #ddd;
 }
 
 a {
@@ -276,6 +278,7 @@ ul.top-five-results > li {
 
 ul.top-five-results > li > img {
   width: 140px;
+  height: 210px;
 }
 
 img.loading {
@@ -493,4 +496,36 @@ div.movie-details a.trailer {
 div.movie-details a.trailer:hover {
   text-decoration: none;
   color:#fff;
+}
+
+div.trailer-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.9);
+  z-index: 12;
+  display: none;
+}
+
+div#trailer-video > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+div.trailer-modal > span#close-trailer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  transition: .2s ease all;
+}
+
+div.trailer-modal > span#close-trailer:hover {
+  transform: scale(1.2);
 }

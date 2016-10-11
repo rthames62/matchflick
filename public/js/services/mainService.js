@@ -1,10 +1,11 @@
-function mainService($http, $location, $timeout){
+function mainService($http, $location, $timeout, $q){
   let currentUser = {};
   let currentUserFbId = "";
   let topFive = [];
   let myThis = this;
   let recommendMoviesForMatch = [];
   let initCounter = 0;
+  let currentMovie;
   const omdbUrl = "https://api.themoviedb.org/3/"
   const omdbKey = "550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";
 
@@ -41,7 +42,8 @@ function mainService($http, $location, $timeout){
   }
 
   this.addToTopFive = function(obj) {
-
+    let dfd = $q.defer();
+    let addedMovie;
     return $http.get(`${omdbUrl}movie/${obj.id}?${omdbKey}&append_to_response=videos,images,credits,recommendations,keywords,similar`)
     .then(function(response) {
         let results = response.data;
@@ -74,77 +76,101 @@ function mainService($http, $location, $timeout){
           recommendations : results.recommendations.results,
           similar : results.similar.results
         }
-        postMovieToDB(movieObj);
         if(currentUser.topFive.length < 5){
-            currentUser.topFive.push(movieObj);
-            topFive = currentUser.topFive;
-            $http.post(`/api/user/${currentUser._id}/topFive`, movieObj);
-        }
+            // postMovieToDB(movieObj);
+            $http.post("/api/movies", movieObj).then(function(response){
+              let addedMovie = response.data;
+              console.log("added movie", addedMovie);
+              currentUser.topFive.push(addedMovie);
+              topFive = currentUser.topFive;
+              $http.post(`/api/user/${currentUser._id}/topFive`, addedMovie);
 
-        if(currentUser.topFive.length === 5){
-          let movieIds = recommendMovieForInitMatch();
-          movieIds = movieIds.slice(0, 2);
-          let recommendMoviesArr = [];
-          currentUser.initRecommended = [];
-          movieIds.forEach(function(x, i){
-            $http.get(`${omdbUrl}movie/${x}?${omdbKey}&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates`).then(function(response2){
-              let results = response2.data;
-              let movieObj = {
-                movieTitle : results.title,
-                description : results.overview,
-                popularity : results.popularity,
-                posterUrl : `http://image.tmdb.org/t/p/w500/${results.poster_path}`,
-                releaseDate : formatDate(results.release_date),
-                video : results.video,
-                vote : results.vote_average,
-                voteCount : results.vote_count,
-                genreIds : results.genres,
-                backdropPath : `http://image.tmdb.org/t/p/w500/${results.backdrop_path}`,
-                omdbId : results.id,
-                language : results.original_language,
-                homepage : results.homepage,
-                imdbId : results.imdb_id,
-                productionCompanies : results.production_companies,
-                revenue : results.revenue,
-                runtime : results.runtime,
-                status : results.status,
-                tagline : results.tagline,
-                videos : results.videos.results,
-                images : results.images.backdrops,
-                adult : results.adult,
-                crew : results.credits.crew,
-                movieCast : results.credits.cast,
-                keywords : results.keywords.keywords,
-                recommendations : results.recommendations.results,
-                similar : results.similar.results,
-                certification : getCertification(results.release_dates.results)
-              }
-              if(movieObj.crew.length < 3) {
-                movieObj.crew = movieObj.crew[0];
-              }
-              movieObj.crew.forEach(function(y){
-                if(!y.profile_path){
-                  y.profile_path = "http://localhost:8080/images/no-picture.png"
-                } else {
-                  y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
-                }
-              })
-              movieObj.movieCast.forEach(function(y){
-                if(!y.profile_path){
-                  y.profile_path = "http://localhost:8080/images/no-picture.png"
-                } else {
-                  y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
-                }
-              })
-              postMovieToDB(movieObj);
-              currentUser.initRecommended.push(movieObj);
-              $http.post(`/api/user/${currentUser._id}/initRec`, movieObj);
-              myThis.recommendMoviesForMatch = [];
-              myThis.recommendMoviesForMatch = currentUser.initRecommended;
-            })
-          })
+              dfd.resolve(topFive);
+            });
+            // currentUser.topFive.push(addedMovie);
+            // topFive = currentUser.topFive;
+            // $http.post(`/api/user/${currentUser._id}/topFive`, addedMovie);
         }
-        return topFive;
+          // console.log("chicken", topFive);
+          // return topFive;
+          return dfd.promise;
+    })
+  }
+
+  this.postInitRec = function(){
+    let dfd = $q.defer();
+    let movieIds = recommendMovieForInitMatch();
+    console.log("movieIds", movieIds);
+    movieIds = movieIds.slice(0, 10);
+    let recommendMoviesArr = [];
+    currentUser.initRecommended = [];
+    movieIds.forEach(function(x, i){
+      $http.get(`${omdbUrl}movie/${x}?${omdbKey}&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates`).then(function(response2){
+        let results = response2.data;
+        let movieObj = {
+          movieTitle : results.title,
+          description : results.overview,
+          popularity : results.popularity,
+          posterUrl : `http://image.tmdb.org/t/p/w500/${results.poster_path}`,
+          releaseDate : formatDate(results.release_date),
+          video : results.video,
+          vote : results.vote_average,
+          voteCount : results.vote_count,
+          genreIds : results.genres,
+          backdropPath : `http://image.tmdb.org/t/p/w500/${results.backdrop_path}`,
+          omdbId : results.id,
+          language : results.original_language,
+          homepage : results.homepage,
+          imdbId : results.imdb_id,
+          productionCompanies : results.production_companies,
+          revenue : results.revenue,
+          runtime : results.runtime,
+          status : results.status,
+          tagline : results.tagline,
+          videos : results.videos.results,
+          images : results.images.backdrops,
+          adult : results.adult,
+          crew : results.credits.crew,
+          movieCast : results.credits.cast,
+          keywords : results.keywords.keywords,
+          recommendations : results.recommendations.results,
+          similar : results.similar.results,
+          certification : getCertification(results.release_dates.results)
+        }
+        if(movieObj.crew.length < 3) {
+          movieObj.crew = movieObj.crew[0];
+        }
+        movieObj.crew.forEach(function(y){
+          if(!y.profile_path){
+            y.profile_path = "http://localhost:8080/images/no-picture.png"
+          } else {
+            y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
+          }
+        })
+        movieObj.movieCast.forEach(function(y){
+          if(!y.profile_path){
+            y.profile_path = "http://localhost:8080/images/no-picture.png"
+          } else {
+            y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
+          }
+        })
+        // postInitRecToDB(movieObj);
+        $http.post("/api/movies", movieObj).then(function(response){
+          console.log("response", response);
+          currentUser.initRecommended.push(response.data._id);
+          $http.post(`/api/user/${currentUser._id}/initRec`, {_id : response.data._id});
+          myThis.recommendMoviesForMatch = [];
+          myThis.recommendMoviesForMatch = currentUser.initRecommended;
+          console.log("2", myThis.recommendMoviesForMatch);
+        });
+        // currentUser.initRecommended.push(movieObj);
+        // $http.post(`/api/user/${currentUser._id}/initRec`, movieObj);
+        console.log("1", myThis.recommendMoviesForMatch);
+        // myThis.recommendMoviesForMatch = [];
+        // myThis.recommendMoviesForMatch = currentUser.initRecommended;
+        dfd.resolve(response);
+      })
+      return dfd.promise;
     })
   }
 
@@ -166,6 +192,14 @@ function mainService($http, $location, $timeout){
       return this.topFive;
   }
 
+  this.getInitRecommendedArr = function(){
+    let initRecArr = [];
+    if(currentUser.initRecommended){
+      initRecArr = currentUser.initRecommended;
+    }
+    return initRecArr;
+  }
+
   this.queryFavMovies = function(query){
     return $http.get(`${omdbUrl}search/movie?${omdbKey}&language=en-US&query=${query}`).then(function(response){
       let results = response.data.results;
@@ -182,7 +216,9 @@ function mainService($http, $location, $timeout){
 
   this.loading = function(){
     $timeout(function(){
-      if(currentUser.initialized === false && currentUser.topFive.length > 0){
+      if(currentUser.initialized === false && currentUser.topFive.length === 5){
+        $location.path("/getting-started/match")
+      } else if(currentUser.initialized === false && currentUser.topFive.length > 0){
         $location.path("/getting-started/favorites")
       } else if(currentUser.initialized === false){
         $location.path("/getting-started")
@@ -201,10 +237,9 @@ function mainService($http, $location, $timeout){
   }
 
   this.getRecommendedMovieForInitMatch = function(){
-    let movie = [];
-    movie = currentUser.initRecommended[initCounter];
+    currentMovie = currentUser.initRecommended[initCounter];
     initCounter++;
-    return movie;
+    return currentMovie;
   }
 
 // **********************************************************
@@ -220,7 +255,28 @@ function mainService($http, $location, $timeout){
   }
 
   function postMovieToDB(obj){
-    return $http.post("/api/movies", obj);
+    return $http.post("/api/movies", obj).then(function(response){
+      console.log("responsedddd", response);
+      return response.data;
+    });
+  }
+
+  function postTopFiveToDB(obj){
+    return $http.post("/api/movies", obj).then(function(response){
+      currentUser.topFive.push(obj);
+      topFive = currentUser.topFive;
+      $http.post(`/api/user/${currentUser._id}/topFive`, addedMovie);
+    });
+  }
+
+  function postInitRecToDB(obj){
+    return $http.post("/api/movies", obj).then(function(response){
+      currentUser.initRecommended.push(response.data._id);
+      $http.post(`/api/user/${currentUser._id}/initRec`, {_id : response.data._id});
+      myThis.recommendMoviesForMatch = [];
+      myThis.recommendMoviesForMatch = currentUser.initRecommended;
+      console.log("2", myThis.recommendMoviesForMatch);
+    });
   }
 
   function recommendMovieForInitMatch(){
