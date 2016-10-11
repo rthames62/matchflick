@@ -8,13 +8,29 @@ h1 {
   font-size: 30px;
 }
 
+h3 {
+  font-size: 30px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+
 a {
   color: #FC7100;
   text-decoration: none;
   cursor: pointer;
 }
 
-button {
+b, strong {
+  font-weight: bold;
+}
+
+button.default {
   font-size: 18px;
   border: 0;
   border-bottom: 4px solid #FF4F09;
@@ -24,7 +40,15 @@ button {
   border-radius: 3px;
 }
 
-ui-view, navbar, sidebar, dashnav {
+button:disabled {
+  /*background-color: #ccc;*/
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+button:focus, input:focus {outline:0;}
+
+ui-view, navbar, sidebar, dashnav, fav-search-results {
   display: block;
 }
 
@@ -47,7 +71,7 @@ main.getting-started {
   display: table;
 }
 
-main.getting-started div {
+main.getting-started div.welcome {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -64,7 +88,7 @@ main.getting-started h4 {
     font-weight: 300;
 }
 
-main.getting-started button {
+main.getting-started button.default {
   width: 200px;
   margin: 35px 15px 0;
 }
@@ -154,4 +178,319 @@ main.dashboard {
 
 section.dashboard-header {
   padding: 50px  0;
+}
+
+main.getting-started h1.top-five {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+div.welcome-cont {
+  width: 800px;
+  margin: 0 auto;
+}
+
+div.top-movie-search {
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 422px;
+}
+
+div.top-movie-search span.search-icon {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 24px;
+  color: #A9A9A9;
+}
+
+div.top-movie-search input {
+  width: 100%;
+  padding: 20px 20px 20px 70px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #282828;
+  color: #A9A9A9;
+  margin-bottom: 30px;
+}
+
+button.search {
+  color: #A9A9A9;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 20px;
+  top:20px;
+}
+
+button.gs-btn {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+
+div.search-results {
+  width: 800px;
+  height: 270px;
+  overflow: scroll;
+  background: #282828;
+  position: absolute;
+  top: 42px;
+  z-index: 2;
+  display: none;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 65px;
+  bottom: 0;
+}
+
+div.search-results ul {
+  text-align: left;
+}
+
+.show {
+  display: block;
+}
+
+li.search-results {
+  margin: 20px;
+  display: inline-block;
+  min-height: 228px;
+}
+
+li.search-results > a > img {
+  width: 150px;
+  height: 225px;
+}
+
+ul.top-five-results {
+  text-align: left;
+}
+
+ul.top-five-results > li {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+ul.top-five-results > li > img {
+  width: 140px;
+}
+
+img.loading {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+span.remove-from-top-five {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 30px;
+  background-color: rgba(0,0,0,.7);
+  padding-top: 85px;
+  visibility: hidden;
+  text-align: center;
+}
+
+span.trash {
+  transition: .2s ease all;
+}
+
+span.trash:hover {
+  transform: scale(1.4);
+}
+
+div.movie-poster > img {
+  width: 350px;
+  border: 8px solid #282828;
+  border-bottom: none;
+}
+
+div.rating-cont {
+  background: #282828;
+  padding: 10px;
+  width: 350px;
+  margin: -3px auto 0;
+  position: relative;
+}
+
+div.rating-cont ul li {
+  display: inline-block;
+
+}
+
+div.rating-cont img {
+  width: 20px;
+  filter: grayscale(100%);
+}
+
+div.rating-cont img.rate-color {
+  filter: grayscale(0%);
+}
+
+div.rating-cont span.not-seen {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  font-size: 20px;
+  color: #929292;
+}
+
+div.rating-cont span.watchlist {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  font-size: 20px;
+  color: #929292;
+}
+
+div.match-cont div.movie-poster {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+
+div.movie-poster span.overlay {
+  position: absolute;
+  margin: auto;
+  left: 8px;
+  right: 8px;
+  top: 8px;
+  bottom: 3px;
+  font-size: 50px;
+  background-color: rgba(0,0,0,.4);
+  visibility: hidden;
+  text-align: center;
+  padding-top: 250px;
+}
+
+span.movie-details {
+  transition: .2s ease all;
+}
+
+span.movie-details:hover {
+  transform: scale(1.4);
+}
+
+div.movie-details {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  z-index: 9;
+  top: 0;
+  background-color: #282828;
+  padding: 25px;
+  overflow: hidden;
+}
+
+div.movie-details span.close-details {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #fff;
+  transition: .2s ease all;
+}
+
+div.movie-details span.close-details:hover {
+  transform: scale(1.2);
+}
+
+div.movie-details div.details {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  width: calc(100% - 285px);
+  padding: 0 15px;
+  overflow: scroll;
+}
+
+div.movie-details div.movie-details-poster {
+  display: inline-block;
+}
+
+div.movie-details div.movie-details-poster img {
+  width: 280px;
+}
+
+div.movie-details h1 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+div.movie-details p {
+  margin-bottom: 10px;
+}
+div.movie-details p.genres {
+  font-size: 14px;
+  color: #979797;
+}
+
+div.movie-details ul.cast {
+  width: 100%;
+  height: 310px;
+  padding: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #333;
+}
+
+div.movie-details ul.cast p {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 5px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: normal;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.movie-details ul.cast > li {
+  display: inline-block;
+  width: 140px;
+  vertical-align: top;
+  margin-right: 15px;
+  background: #282828;
+}
+
+div.movie-details ul.cast > li > img {
+  width: 140px;
+  vertical-align: top;
+  height: 210px;
+}
+
+div.movie-details h4 {
+  font-size: 24px;
+  color: #979797;
+  margin-bottom: 11px;
+  margin-top: 20px;
+}
+
+div.movie-details ul.cast div.info {
+  height: 70px;
+  padding: 0 5px;
+  display: table;
+  margin: 0 auto;
+}
+
+div.movie-details a.trailer {
+  margin-bottom: 17px;
+  transition: .2s ease all;
+  display: block;
+}
+
+div.movie-details a.trailer:hover {
+  text-decoration: none;
+  color:#fff;
 }

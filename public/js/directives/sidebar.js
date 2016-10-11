@@ -1,6 +1,6 @@
 function sidebarDirective(){
   return {
-    templateUrl : "../../views/sidebar.html"
+    templateUrl : "../../views/directives/sidebar.html"
   }
 }
 

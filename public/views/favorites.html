@@ -1,1 +1,25 @@
-<h1>Favorites</h1>
+<navbar></navbar>
+<main class="getting-started">
+  <div class="welcome">
+    <div class="welcome-cont">
+      <h1 class="top-five">What are 5 of your favorite movies?</h1>
+      <div class="top-movie-search">
+        <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
+        <input ng-model="searchQuery" type="text" placeholder="Search for a movie..." enter-submit="queryFavMovies(searchQuery)">
+        <!-- <button class="search" type="button" ng-Enter="queryFavMovies(searchQuery)"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button> -->
+
+        <ul class="top-five-results">
+          <li ng-repeat="movie in topFive">
+            <img trash-movie ng-src="{{movie.posterUrl}}" />
+            <span class="remove-from-top-five">
+              <span ng-click="removeFromTopFive(movie)" class="glyphicon glyphicon-trash trash" aria-hidden="true"></span>
+            </span>
+          </li>
+        </ul>
+
+        <a ui-sref="initMatch"><button class="gs-btn default" type="button" ng-disabled="reachFive">Next</button></a>
+      </div>
+      <fav-search-results></fav-search-results>
+    </div>
+  </div>
+</main>

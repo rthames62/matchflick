@@ -1,0 +1,7 @@
+<div class="search-results">
+  <ul>
+    <li class="search-results" ng-repeat="result in favMovieResults">
+      <a ng-click="addToTopFive(result)"><img ng-src="{{result.poster_path}}" /></a>
+    </li>
+  </ul>
+</div>

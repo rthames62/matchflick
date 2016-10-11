@@ -1,6 +1,6 @@
 function dashNav(){
   return {
-    templateUrl : "../../views/dashNav.html"
+    templateUrl : "../../views/directives/dashNav.html"
   }
 }
 

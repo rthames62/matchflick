@@ -1,6 +1,6 @@
 function navbarDirective(){
   return {
-    templateUrl : "../../views/navbar.html"
+    templateUrl : "../../views/directives/navbar.html"
   }
 }
 

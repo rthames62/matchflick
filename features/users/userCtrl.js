@@ -29,5 +29,29 @@ module.exports = {
   },
   currentUser(req, res){
     res.send(req.user);
+  },
+  postTopFive(req, res){
+    User.findByIdAndUpdate(req.params.id, {$push : {"topFive" : req.body}}, function(error, response){
+      if(error){
+        return res.status(500).json(error);
+      }
+      return res.status(201).json(response);
+    })
+  },
+  postInitRec(req, res){
+    User.findByIdAndUpdate(req.params.id, {$push : {"initRecommended" : req.body}}, function(error, response){
+      if(error){
+        return res.status(500).json(error);
+      }
+      return res.status(201).json(response);
+    })
+  },
+  deleteFromTopFive(req, res){
+    User.update({_id : req.params.id}, {$pull : {"topFive" : req.body}}, function(error, response){
+      if(error){
+        return res.status(500).json(error);
+      }
+      return res.status(201).json(response);
+    })
   }
 }

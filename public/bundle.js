@@ -65,37 +65,89 @@
 
 	__webpack_require__(6);
 
-	__webpack_require__(16);
+	__webpack_require__(7);
 
-	__webpack_require__(17);
+	__webpack_require__(8);
+
+	__webpack_require__(9);
+
+	__webpack_require__(10);
 
 	__webpack_require__(11);
 
-	__webpack_require__(7);
+	__webpack_require__(12);
 
-	var _loginCtrl = __webpack_require__(13);
+	__webpack_require__(13);
+
+	__webpack_require__(14);
+
+	__webpack_require__(15);
+
+	__webpack_require__(19);
+
+	var _mainCtrl = __webpack_require__(21);
+
+	var _mainCtrl2 = _interopRequireDefault(_mainCtrl);
+
+	var _loginCtrl = __webpack_require__(22);
 
 	var _loginCtrl2 = _interopRequireDefault(_loginCtrl);
 
-	var _dashboardCtrl = __webpack_require__(18);
+	var _dashboardCtrl = __webpack_require__(23);
 
 	var _dashboardCtrl2 = _interopRequireDefault(_dashboardCtrl);
 
-	var _mainService = __webpack_require__(19);
+	var _gsCtrl = __webpack_require__(24);
+
+	var _gsCtrl2 = _interopRequireDefault(_gsCtrl);
+
+	var _loadingCtrl = __webpack_require__(25);
+
+	var _loadingCtrl2 = _interopRequireDefault(_loadingCtrl);
+
+	var _initMatchCtrl = __webpack_require__(26);
+
+	var _initMatchCtrl2 = _interopRequireDefault(_initMatchCtrl);
+
+	var _mainService = __webpack_require__(27);
 
 	var _mainService2 = _interopRequireDefault(_mainService);
 
-	var _navbar = __webpack_require__(14);
+	var _navbar = __webpack_require__(28);
 
 	var _navbar2 = _interopRequireDefault(_navbar);
 
-	var _sidebar = __webpack_require__(20);
+	var _sidebar = __webpack_require__(29);
 
 	var _sidebar2 = _interopRequireDefault(_sidebar);
 
-	var _dashNav = __webpack_require__(21);
+	var _dashNav = __webpack_require__(30);
 
 	var _dashNav2 = _interopRequireDefault(_dashNav);
+
+	var _favSearchResults = __webpack_require__(31);
+
+	var _favSearchResults2 = _interopRequireDefault(_favSearchResults);
+
+	var _enterSubmit = __webpack_require__(32);
+
+	var _enterSubmit2 = _interopRequireDefault(_enterSubmit);
+
+	var _trashMovie = __webpack_require__(33);
+
+	var _trashMovie2 = _interopRequireDefault(_trashMovie);
+
+	var _ratings = __webpack_require__(34);
+
+	var _ratings2 = _interopRequireDefault(_ratings);
+
+	var _movieDetails = __webpack_require__(35);
+
+	var _movieDetails2 = _interopRequireDefault(_movieDetails);
+
+	var _showMovieDetails = __webpack_require__(36);
+
+	var _showMovieDetails2 = _interopRequireDefault(_showMovieDetails);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -121,8 +173,32 @@
 	    url: "/dashboard",
 	    templateUrl: "./views/dashboard.html",
 	    controller: _dashboardCtrl2.default
+	  }).state("gettingStarted", {
+	    url: "/getting-started",
+	    templateUrl: "./views/get-started.html",
+	    controller: _gsCtrl2.default
+	  }).state("favoriteMovies", {
+	    url: "/getting-started/favorites",
+	    templateUrl: "./views/favorites.html",
+	    controller: _gsCtrl2.default
+	  }).state("initMatch", {
+	    url: "/getting-started/match",
+	    templateUrl: "./views/init.html",
+	    controller: _initMatchCtrl2.default
+	  }).state("initCongrats", {
+	    url: "/getting-started/congratulations",
+	    templateUrl: "./views/congratulations.html",
+	    controller: _gsCtrl2.default
+	  }).state("loading", {
+	    url: "/loading",
+	    templateUrl: "./views/loading.html",
+	    controller: _loadingCtrl2.default
+	  }).state("instructions", {
+	    url: "/getting-started/match/instructions",
+	    templateUrl: "./views/instructions.html",
+	    controller: _gsCtrl2.default
 	  });
-	}).service("mainService", _mainService2.default).directive("navbar", _navbar2.default).directive("sidebar", _sidebar2.default).directive("dashnav", _dashNav2.default);
+	}).controller("mainCtrl", _mainCtrl2.default).service("mainService", _mainService2.default).directive("navbar", _navbar2.default).directive("sidebar", _sidebar2.default).directive("dashnav", _dashNav2.default).directive("favSearchResults", _favSearchResults2.default).directive("enterSubmit", _enterSubmit2.default).directive("trashMovie", _trashMovie2.default).directive("ratings", _ratings2.default).directive("movieDetails", _movieDetails2.default).directive("showMovieDetails", _showMovieDetails2.default);
 
 	//Directives
 
@@ -36492,7 +36568,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <h1>Welcome to MatchFlick</h1>\n    <h4>MatchFlick is the best way to recommend a movie for your movie night! Sign up for an account to let MatchFlick know what movies you like.</h4>\n    <a href=\"/auth/facebook\"><button type=\"button\">Login</button></a>\n    <a href=\"/auth/facebook\"><button type=\"button\">Sign Up</button></a>\n  </div>\n</main>\n";
+	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <h1>Welcome to MatchFlick</h1>\n    <h4>MatchFlick is the best way to recommend a movie for your movie night! Sign up for an account to let MatchFlick know what movies you like.</h4>\n    <a href=\"/auth/facebook\"><button class=\"default\" type=\"button\">Login</button></a>\n    <a href=\"/auth/facebook\"><button class=\"default\" type=\"button\">Sign Up</button></a>\n  </div>\n</main>\n";
 
 /***/ },
 /* 6 */
@@ -36502,22 +36578,70 @@
 
 /***/ },
 /* 7 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1>Sign Up</h1>\n";
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1>Dashboard</h1>\n</main>\n";
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <h1>Getting Started</h1>\n    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>\n    <a ui-sref=\"favoriteMovies\"><button class=\"default\" type=\"button\">Begin</button></a>\n  </div>\n</main>\n";
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 11 */
+/***/ function(module, exports) {
+
+	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <div class=\"welcome-cont\">\n      <div class=\"match-cont\">\n        <div class=\"movie-poster\">\n          <img movie-details ng-src=\"http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}\" />\n          <span class=\"overlay\"><span show-movie-details class=\"glyphicon glyphicon-info-sign movie-details\" aria-hidden=\"true\"></span></span>\n        </div>\n        <div class=\"rating-cont\">\n          <ul>\n            <a><span class=\"glyphicon glyphicon-eye-close not-seen\" aria-hidden=\"true\"></span></a>\n            <a><span class=\"glyphicon glyphicon-plus watchlist\" aria-hidden=\"true\"></span></a>\n            <li><a id=\"rateOne\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateTwo\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateThree\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateFour\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateFive\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</main>\n<div class=\"movie-details\">\n<span show-movie-details class=\"glyphicon glyphicon-remove close-details\" aria-hidden=\"true\"></span>\n<div class=\"movie-details-poster\">\n  <img ng-src=\"http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}\" />\n  <h3>{{recommendedMovie.vote}}/10</h3>\n  <p>Total ratings: {{recommendedMovie.voteCount}}</p>\n</div>\n<div class=\"details\">\n  <h1>{{recommendedMovie.movieTitle}} ({{recommendedMovie.releaseDate.slice(13, 17)}})</h1>\n  <a class=\"trailer\" href=\"#\"><span class=\"glyphicon glyphicon-play-circle\" aria-hidden=\"true\"></span> Watch Trailer</a>\n  <p>\n    <strong>Rated: </strong>{{recommendedMovie.certification}} | {{recommendedMovie.runtime}} minutes | {{recommendedMovie.releaseDate}}\n  </p>\n  <p class=\"genres\">\n    <span ng-repeat=\"genre in recommendedMovie.genreIds\">{{genre.name + ($last ? '' : ',')}}  </span>\n  </p>\n  <p>\n    <strong>Director:</strong> <span ng-repeat=\"director in recommendedMovie.crew | filter : {job : 'Director'} | limitTo : 1\">{{director.name}}</span>\n  </p>\n  <p>\n    <strong>Writers:</strong> <span ng-repeat=\"writer in recommendedMovie.crew | filter : {department : 'Writing'} | limitTo : 2\">{{writer.name}} ({{writer.job}}) </span>\n  </p>\n  <p>\n    <strong>Stars:</strong> <span ng-repeat=\"actor in recommendedMovie.movieCast | limitTo : 3\">{{actor.name + ($last ? '' : ',')}} </span>\n  </p>\n  <p>{{recommendedMovie.description}}</p>\n  <h4>Full Cast</h4>\n  <ul class=\"cast\">\n    <li ng-repeat=\"cast in recommendedMovie.movieCast\">\n      <img ng-src=\"{{cast.profile_path}}\" />\n      <div class=\"info\">\n        <p><strong>{{cast.name}}</strong><br>\n        {{cast.character}}</p>\n      </div>\n    </li>\n  </ul>\n  <h4>Full Crew</h4>\n  <ul class=\"cast\">\n    <li ng-repeat=\"crew in recommendedMovie.crew\">\n      <img ng-src=\"{{crew.profile_path}}\" />\n      <div class=\"info\">\n        <p><strong>{{crew.name}}</strong><br>\n        {{crew.job}}</p>\n      </div>\n    </li>\n  </ul>\n  <!-- <div ng-bind-html=\"trailerUrl\"></div> -->\n</div>\n</div>\n";
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	module.exports = "<navbar></navbar>\n<img class=\"loading\" src=\"http://localhost:8080/images/spin.gif\" />\n";
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <div class=\"welcome-cont\">\n      <h1>Thank you!</h1>\n      <h5>Now that we know some of your favorite movies, we are going to start the matching. Based off of the movies you gave us, we are going to give you 10 movies to rate for us. When you are ready, click begin.</h5>\n      <a ui-sref=\"initMatch\"><button class=\"default\" type=\"button\">Begin</button></a>\n    </div>\n  </div>\n</main>\n";
+
+/***/ },
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(8);
+	var content = __webpack_require__(16);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
+	var update = __webpack_require__(18)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./main.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./main.css");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./reset.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./reset.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -36527,21 +36651,21 @@
 	}
 
 /***/ },
-/* 8 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(9)();
+	exports = module.exports = __webpack_require__(17)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #181818;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n}\n\nh1 {\n  font-size: 30px;\n}\n\na {\n  color: #FC7100;\n  text-decoration: none;\n  cursor: pointer;\n}\n\nbutton {\n  font-size: 18px;\n  border: 0;\n  border-bottom: 4px solid #FF4F09;\n  padding: 12px 22px;\n  color: #fff;\n  background-color: #FC7100;\n  border-radius: 3px;\n}\n\nui-view, navbar, sidebar, dashnav {\n  display: block;\n}\n\nnav {\n  padding: 15px;\n  background: #282828;\n}\n\nnav > img.logo {\n  width: 250px;\n}\n\ndiv.user {\n  float: right;\n}\n\nmain.getting-started {\n  width: 100%;\n  height: calc(100vh - 82px);\n  display: table;\n}\n\nmain.getting-started div {\n    text-align: center;\n    display: table-cell;\n    vertical-align: middle;\n}\n\nmain.getting-started h1 {\n    font-size: 60px;\n    margin-bottom: 10px;\n}\n\nmain.getting-started h4 {\n    font-size: 20px;\n    padding: 0 150px;\n    font-weight: 300;\n}\n\nmain.getting-started button {\n  width: 200px;\n  margin: 35px 15px 0;\n}\n\nsidebar {\n  width: 220px;\n  height: 100vh;\n  position: fixed;\n  background-color: #282828;\n}\n\nsidebar img.logo {\n  width: 100%;\n  padding: 15px 15px 35px 15px;\n}\n\nsidebar div.logo-cont {\n  border-bottom: 1px solid #000;\n}\n\nsidebar img.match {\n  width: 16px;\n}\n\nsidebar > ul > li {\n  border-bottom: 1px solid #000;\n}\n\nsidebar > ul > li > a > span {\n  margin-right: 10px;\n}\n\nsidebar span.match {\n  margin-right: 6px;\n}\n\nsidebar > ul > li > a {\n  width: 100%;\n  padding: 15px 4px 15px 15px;\n  display: block;\n  color: #fff;\n  transition: all ease .2s;\n}\n\nsidebar > ul > li > a:hover {\n  background-color: #2d2d2d;\n  text-decoration: none;\n  color: #FC7100;\n}\n\nsidebar > ul > li > a.active {\n  border-left: 4px solid #FC7100;\n  background-color: #2d2d2d;\n}\n\ndashnav {\n  width: calc(100% - 220px);\n  position: fixed;\n  top: 0;\n  right: 0;\n  padding: 10px;\n  /*background-color: rgba(0, 0, 0, 0.5);*/\n}\n\ndashnav img.profile {\n  border-radius: 50%;\n  height: 40px;\n  display: inline;\n  vertical-align: middle;\n  margin-right: 10px;\n}\n\ndashnav p {\n  display: inline;\n  vertical-align: middle;\n}\n\ndashnav div.user-info {\n  float: right;\n}\n\nmain.dashboard {\n  width: calc(100% - 220px);\n  float: right;\n  padding: 25px;\n}\n\nsection.dashboard-header {\n  padding: 50px  0;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\n* {\n  box-sizing: border-box;\n}\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 9 */
+/* 17 */
 /***/ function(module, exports) {
 
 	/*
@@ -36597,7 +36721,7 @@
 
 
 /***/ },
-/* 10 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -36849,23 +36973,23 @@
 
 
 /***/ },
-/* 11 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(12);
+	var content = __webpack_require__(20);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
+	var update = __webpack_require__(18)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./reset.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./reset.css");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./main.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./main.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -36875,21 +36999,40 @@
 	}
 
 /***/ },
-/* 12 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(9)();
+	exports = module.exports = __webpack_require__(17)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\n* {\n  box-sizing: border-box;\n}\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #181818;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n}\n\nh1 {\n  font-size: 30px;\n}\n\nh3 {\n  font-size: 30px;\n  text-align: left;\n  margin: 20px 0;\n}\n\np {\n  font-weight: 300;\n  letter-spacing: 1px;\n  line-height: 18px;\n}\n\na {\n  color: #FC7100;\n  text-decoration: none;\n  cursor: pointer;\n}\n\nb, strong {\n  font-weight: bold;\n}\n\nbutton.default {\n  font-size: 18px;\n  border: 0;\n  border-bottom: 4px solid #FF4F09;\n  padding: 12px 22px;\n  color: #fff;\n  background-color: #FC7100;\n  border-radius: 3px;\n}\n\nbutton:disabled {\n  /*background-color: #ccc;*/\n  opacity: .5;\n  cursor: not-allowed;\n}\n\nbutton:focus, input:focus {outline:0;}\n\nui-view, navbar, sidebar, dashnav, fav-search-results {\n  display: block;\n}\n\nnav {\n  padding: 15px;\n  background: #282828;\n}\n\nnav > img.logo {\n  width: 250px;\n}\n\ndiv.user {\n  float: right;\n}\n\nmain.getting-started {\n  width: 100%;\n  height: calc(100vh - 82px);\n  display: table;\n}\n\nmain.getting-started div.welcome {\n    text-align: center;\n    display: table-cell;\n    vertical-align: middle;\n}\n\nmain.getting-started h1 {\n    font-size: 60px;\n    margin-bottom: 10px;\n}\n\nmain.getting-started h4 {\n    font-size: 20px;\n    padding: 0 150px;\n    font-weight: 300;\n}\n\nmain.getting-started button.default {\n  width: 200px;\n  margin: 35px 15px 0;\n}\n\nsidebar {\n  width: 220px;\n  height: 100vh;\n  position: fixed;\n  background-color: #282828;\n}\n\nsidebar img.logo {\n  width: 100%;\n  padding: 15px 15px 35px 15px;\n}\n\nsidebar div.logo-cont {\n  border-bottom: 1px solid #000;\n}\n\nsidebar img.match {\n  width: 16px;\n}\n\nsidebar > ul > li {\n  border-bottom: 1px solid #000;\n}\n\nsidebar > ul > li > a > span {\n  margin-right: 10px;\n}\n\nsidebar span.match {\n  margin-right: 6px;\n}\n\nsidebar > ul > li > a {\n  width: 100%;\n  padding: 15px 4px 15px 15px;\n  display: block;\n  color: #fff;\n  transition: all ease .2s;\n}\n\nsidebar > ul > li > a:hover {\n  background-color: #2d2d2d;\n  text-decoration: none;\n  color: #FC7100;\n}\n\nsidebar > ul > li > a.active {\n  border-left: 4px solid #FC7100;\n  background-color: #2d2d2d;\n}\n\ndashnav {\n  width: calc(100% - 220px);\n  position: fixed;\n  top: 0;\n  right: 0;\n  padding: 10px;\n  /*background-color: rgba(0, 0, 0, 0.5);*/\n}\n\ndashnav img.profile {\n  border-radius: 50%;\n  height: 40px;\n  display: inline;\n  vertical-align: middle;\n  margin-right: 10px;\n}\n\ndashnav p {\n  display: inline;\n  vertical-align: middle;\n}\n\ndashnav div.user-info {\n  float: right;\n}\n\nmain.dashboard {\n  width: calc(100% - 220px);\n  float: right;\n  padding: 25px;\n}\n\nsection.dashboard-header {\n  padding: 50px  0;\n}\n\nmain.getting-started h1.top-five {\n  font-size: 38px;\n  margin-bottom: 25px;\n}\n\ndiv.welcome-cont {\n  width: 800px;\n  margin: 0 auto;\n}\n\ndiv.top-movie-search {\n  position: relative;\n  padding-bottom: 100px;\n  min-height: 422px;\n}\n\ndiv.top-movie-search span.search-icon {\n  position: absolute;\n  top: 17px;\n  left: 20px;\n  font-size: 24px;\n  color: #A9A9A9;\n}\n\ndiv.top-movie-search input {\n  width: 100%;\n  padding: 20px 20px 20px 70px;\n  border-radius: 20px;\n  border: 0;\n  background-color: #282828;\n  color: #A9A9A9;\n  margin-bottom: 30px;\n}\n\nbutton.search {\n  color: #A9A9A9;\n  border: none;\n  background: none;\n  position: absolute;\n  right: 20px;\n  top:20px;\n}\n\nbutton.gs-btn {\n  position: absolute;\n  right: 1px;\n  bottom: 1px;\n}\n\ndiv.search-results {\n  width: 800px;\n  height: 270px;\n  overflow: scroll;\n  background: #282828;\n  position: absolute;\n  top: 42px;\n  z-index: 2;\n  display: none;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 65px;\n  bottom: 0;\n}\n\ndiv.search-results ul {\n  text-align: left;\n}\n\n.show {\n  display: block;\n}\n\nli.search-results {\n  margin: 20px;\n  display: inline-block;\n  min-height: 228px;\n}\n\nli.search-results > a > img {\n  width: 150px;\n  height: 225px;\n}\n\nul.top-five-results {\n  text-align: left;\n}\n\nul.top-five-results > li {\n  display: inline-block;\n  margin: 10px;\n  position: relative;\n}\n\nul.top-five-results > li > img {\n  width: 140px;\n}\n\nimg.loading {\n  position: absolute;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nspan.remove-from-top-five {\n  position: absolute;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  font-size: 30px;\n  background-color: rgba(0,0,0,.7);\n  padding-top: 85px;\n  visibility: hidden;\n  text-align: center;\n}\n\nspan.trash {\n  transition: .2s ease all;\n}\n\nspan.trash:hover {\n  transform: scale(1.4);\n}\n\ndiv.movie-poster > img {\n  width: 350px;\n  border: 8px solid #282828;\n  border-bottom: none;\n}\n\ndiv.rating-cont {\n  background: #282828;\n  padding: 10px;\n  width: 350px;\n  margin: -3px auto 0;\n  position: relative;\n}\n\ndiv.rating-cont ul li {\n  display: inline-block;\n\n}\n\ndiv.rating-cont img {\n  width: 20px;\n  filter: grayscale(100%);\n}\n\ndiv.rating-cont img.rate-color {\n  filter: grayscale(0%);\n}\n\ndiv.rating-cont span.not-seen {\n  position: absolute;\n  top: 15px;\n  left: 13px;\n  font-size: 20px;\n  color: #929292;\n}\n\ndiv.rating-cont span.watchlist {\n  position: absolute;\n  top: 15px;\n  right: 13px;\n  font-size: 20px;\n  color: #929292;\n}\n\ndiv.match-cont div.movie-poster {\n  position: relative;\n  width: 350px;\n  margin: 0 auto;\n}\n\ndiv.movie-poster span.overlay {\n  position: absolute;\n  margin: auto;\n  left: 8px;\n  right: 8px;\n  top: 8px;\n  bottom: 3px;\n  font-size: 50px;\n  background-color: rgba(0,0,0,.4);\n  visibility: hidden;\n  text-align: center;\n  padding-top: 250px;\n}\n\nspan.movie-details {\n  transition: .2s ease all;\n}\n\nspan.movie-details:hover {\n  transform: scale(1.4);\n}\n\ndiv.movie-details {\n  width: 100%;\n  height: 100vh;\n  position: absolute;\n  display: none;\n  z-index: 9;\n  top: 0;\n  background-color: #282828;\n  padding: 25px;\n  overflow: hidden;\n}\n\ndiv.movie-details span.close-details {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  font-size: 24px;\n  color: #fff;\n  transition: .2s ease all;\n}\n\ndiv.movie-details span.close-details:hover {\n  transform: scale(1.2);\n}\n\ndiv.movie-details div.details {\n  display: inline-block;\n  height: 100%;\n  vertical-align: top;\n  width: calc(100% - 285px);\n  padding: 0 15px;\n  overflow: scroll;\n}\n\ndiv.movie-details div.movie-details-poster {\n  display: inline-block;\n}\n\ndiv.movie-details div.movie-details-poster img {\n  width: 280px;\n}\n\ndiv.movie-details h1 {\n  font-size: 40px;\n  margin-bottom: 12px;\n}\n\ndiv.movie-details p {\n  margin-bottom: 10px;\n}\ndiv.movie-details p.genres {\n  font-size: 14px;\n  color: #979797;\n}\n\ndiv.movie-details ul.cast {\n  width: 100%;\n  height: 310px;\n  padding: 15px;\n  overflow-x: auto;\n  white-space: nowrap;\n  background-color: #333;\n}\n\ndiv.movie-details ul.cast p {\n  text-align: center;\n  font-size: 12px;\n  margin-bottom: 5px;\n  letter-spacing: 0;\n  line-height: 16px;\n  white-space: normal;\n  display: table-cell;\n  vertical-align: middle;\n}\n\ndiv.movie-details ul.cast > li {\n  display: inline-block;\n  width: 140px;\n  vertical-align: top;\n  margin-right: 15px;\n  background: #282828;\n}\n\ndiv.movie-details ul.cast > li > img {\n  width: 140px;\n  vertical-align: top;\n  height: 210px;\n}\n\ndiv.movie-details h4 {\n  font-size: 24px;\n  color: #979797;\n  margin-bottom: 11px;\n  margin-top: 20px;\n}\n\ndiv.movie-details ul.cast div.info {\n  height: 70px;\n  padding: 0 5px;\n  display: table;\n  margin: 0 auto;\n}\n\ndiv.movie-details a.trailer {\n  margin-bottom: 17px;\n  transition: .2s ease all;\n  display: block;\n}\n\ndiv.movie-details a.trailer:hover {\n  text-decoration: none;\n  color:#fff;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 13 */
+/* 21 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function mainCtrl($scope, mainService) {
+	  $scope.getFbCurrentUser = function () {
+	    mainService.getFbCurrentUser().then(function (response) {
+	      $scope.currentUser = response;
+	      return $scope.currentUser;
+	    });
+	  };
+
+	  $scope.getFbCurrentUser();
+	}
+
+	module.exports = mainCtrl;
+
+/***/ },
+/* 22 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -36899,132 +37042,646 @@
 	module.exports = loginCtrl;
 
 /***/ },
-/* 14 */
+/* 23 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function dashboardCtrl($scope, mainService) {}
+
+	module.exports = dashboardCtrl;
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function gsCtrl($scope, $timeout, mainService) {
+	  $scope.reachFive = true;
+	  $scope.queryFavMovies = function (query) {
+	    mainService.queryFavMovies(query).then(function (response) {
+	      $('div.search-results').addClass('show');
+	      $('body').on('click', function (event) {
+	        $('div.search-results').removeClass('show');
+	      });
+	      $scope.favMovieResults = response;
+	      return $scope.favMovieResults;
+	    });
+	  };
+	  $scope.addToTopFive = function (movie) {
+	    $scope.reachFive = true;
+	    mainService.addToTopFive(movie).then(function (response) {
+	      $scope.topFive = response;
+	      $scope.searchQuery = "";
+	      $scope.reachFive = mainService.reachFive($scope.topFive);
+	      return $scope.topFive;
+	    });
+
+	    // return $scope.topFive;
+	  };
+	  $scope.getTopFive = function () {
+	    $scope.topFive = [];
+	    $scope.topFive = mainService.getTopFive();
+	    if ($scope.topFive.length < 5) {
+	      $scope.reachFive = true;
+	    } else {
+	      $scope.reachFive = false;
+	    }
+	    return $scope.topFive;
+	  };
+	  $scope.removeFromTopFive = function (movie) {
+	    $scope.topFive = mainService.removeFromTopFive(movie);
+	    $scope.reachFive = true;
+	    return $scope.topFive;
+	  };
+
+	  $timeout(function () {
+	    $scope.getTopFive();
+	  }, 50);
+	}
+
+	module.exports = gsCtrl;
+
+/***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function loadingCtrl($scope, mainService) {
+	  $scope.loading = function () {
+	    return mainService.loading();
+	  };
+	  $scope.loading();
+	}
+
+	module.exports = loadingCtrl;
+
+/***/ },
+/* 26 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function initMatch($scope, $sce, mainService) {
+	  $scope.recommendMovieForInitMatch = function () {
+	    $scope.recommendedMovies = mainService.recommendMoviesForMatch;
+	    console.log("front end movie", $scope.recommendedMovies);
+	    return $scope.recommendedMovies;
+	  };
+	  $scope.getRecommendedMovieForInitMatch = function () {
+	    $scope.recommendedMovie = mainService.getRecommendedMovieForInitMatch();
+	    console.log("front end movie 2", $scope.recommendedMovie);
+	    $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	    return $scope.recommendedMovie;
+	  };
+	  $scope.writerFilter = function (item) {
+	    return item === "writing";
+	  };
+
+	  $scope.directorFilter = function (item) {
+	    return item === "director";
+	  };
+
+	  $scope.recommendMovieForInitMatch();
+	  $scope.getRecommendedMovieForInitMatch();
+	}
+
+	module.exports = initMatch;
+
+/***/ },
+/* 27 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function mainService($http, $location, $timeout) {
+	  var currentUser = {};
+	  var currentUserFbId = "";
+	  var topFive = [];
+	  var myThis = this;
+	  var recommendMoviesForMatch = [];
+	  var initCounter = 0;
+	  var omdbUrl = "https://api.themoviedb.org/3/";
+	  var omdbKey = "550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";
+
+	  this.getFbCurrentUser = function () {
+	    return $http.get("/api/facebook").then(function (response) {
+	      var results = response.data;
+	      $http.get("/api/users").then(function (userResponse) {
+	        var found = false;
+	        userResponse.data.map(function (x, i) {
+	          if (x.facebookId == results.id) {
+	            currentUser = x;
+	            found = true;
+	          }
+	        });
+	        if (!found) {
+	          currentUser = {
+	            firstName: results._json.first_name,
+	            lastName: results._json.last_name,
+	            email: results._json.email,
+	            facebookId: results.id,
+	            profileUrl: results.profileUrl,
+	            location: results._json.location,
+	            coverPhotoUrl: results._json.cover.source,
+	            profilePictureUrl: results._json.picture.data.url,
+	            topFive: [],
+	            initRecommended: []
+	          };
+	          currentUserFbId = results.id;
+	          postCurrentUser(currentUser);
+	        }
+	      });
+	      return response.data;
+	    });
+	  };
+
+	  this.addToTopFive = function (obj) {
+
+	    return $http.get(omdbUrl + "movie/" + obj.id + "?" + omdbKey + "&append_to_response=videos,images,credits,recommendations,keywords,similar").then(function (response) {
+	      var results = response.data;
+	      var movieObj = {
+	        movieTitle: results.title,
+	        description: results.overview,
+	        popularity: results.popularity,
+	        posterUrl: "http://image.tmdb.org/t/p/w500/" + results.poster_path,
+	        releaseDate: results.release_date,
+	        video: results.video,
+	        vote: results.vote_average,
+	        voteCount: results.vote_count,
+	        genreIds: results.genres,
+	        backdropPath: "http://image.tmdb.org/t/p/w500/" + results.backdrop_path,
+	        omdbId: results.id,
+	        language: results.original_language,
+	        homepage: results.homepage,
+	        imdbId: results.imdb_id,
+	        productionCompanies: results.production_companies,
+	        revenue: results.revenue,
+	        runtime: results.runtime,
+	        status: results.status,
+	        tagline: results.tagline,
+	        videos: results.videos.results,
+	        images: results.images.backdrops,
+	        adult: results.adult,
+	        crew: results.credits.crew,
+	        movieCast: results.credits.cast,
+	        keywords: results.keywords.keywords,
+	        recommendations: results.recommendations.results,
+	        similar: results.similar.results
+	      };
+	      postMovieToDB(movieObj);
+	      if (currentUser.topFive.length < 5) {
+	        currentUser.topFive.push(movieObj);
+	        topFive = currentUser.topFive;
+	        $http.post("/api/user/" + currentUser._id + "/topFive", movieObj);
+	      }
+
+	      if (currentUser.topFive.length === 5) {
+	        var movieIds = recommendMovieForInitMatch();
+	        movieIds = movieIds.slice(0, 2);
+	        var recommendMoviesArr = [];
+	        currentUser.initRecommended = [];
+	        movieIds.forEach(function (x, i) {
+	          $http.get(omdbUrl + "movie/" + x + "?" + omdbKey + "&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function (response2) {
+	            var results = response2.data;
+	            var movieObj = {
+	              movieTitle: results.title,
+	              description: results.overview,
+	              popularity: results.popularity,
+	              posterUrl: "http://image.tmdb.org/t/p/w500/" + results.poster_path,
+	              releaseDate: formatDate(results.release_date),
+	              video: results.video,
+	              vote: results.vote_average,
+	              voteCount: results.vote_count,
+	              genreIds: results.genres,
+	              backdropPath: "http://image.tmdb.org/t/p/w500/" + results.backdrop_path,
+	              omdbId: results.id,
+	              language: results.original_language,
+	              homepage: results.homepage,
+	              imdbId: results.imdb_id,
+	              productionCompanies: results.production_companies,
+	              revenue: results.revenue,
+	              runtime: results.runtime,
+	              status: results.status,
+	              tagline: results.tagline,
+	              videos: results.videos.results,
+	              images: results.images.backdrops,
+	              adult: results.adult,
+	              crew: results.credits.crew,
+	              movieCast: results.credits.cast,
+	              keywords: results.keywords.keywords,
+	              recommendations: results.recommendations.results,
+	              similar: results.similar.results,
+	              certification: getCertification(results.release_dates.results)
+	            };
+	            if (movieObj.crew.length < 3) {
+	              movieObj.crew = movieObj.crew[0];
+	            }
+	            movieObj.crew.forEach(function (y) {
+	              if (!y.profile_path) {
+	                y.profile_path = "http://localhost:8080/images/no-picture.png";
+	              } else {
+	                y.profile_path = "http://image.tmdb.org/t/p/w500/" + y.profile_path;
+	              }
+	            });
+	            movieObj.movieCast.forEach(function (y) {
+	              if (!y.profile_path) {
+	                y.profile_path = "http://localhost:8080/images/no-picture.png";
+	              } else {
+	                y.profile_path = "http://image.tmdb.org/t/p/w500/" + y.profile_path;
+	              }
+	            });
+	            postMovieToDB(movieObj);
+	            currentUser.initRecommended.push(movieObj);
+	            $http.post("/api/user/" + currentUser._id + "/initRec", movieObj);
+	            myThis.recommendMoviesForMatch = [];
+	            myThis.recommendMoviesForMatch = currentUser.initRecommended;
+	          });
+	        });
+	      }
+	      return topFive;
+	    });
+	  };
+
+	  this.removeFromTopFive = function (obj) {
+	    $http.put("/api/user/" + currentUser._id + "/topFive", obj);
+	    currentUser.topFive.map(function (x, i) {
+	      if (x.omdbId === obj.omdbId) {
+	        currentUser.topFive.splice(i, 1);
+	      }
+	    });
+	    return currentUser.topFive;
+	  };
+
+	  this.getTopFive = function () {
+	    this.topFive = [];
+	    if (currentUser.topFive.length > 0) {
+	      this.topFive = currentUser.topFive;
+	    }
+	    return this.topFive;
+	  };
+
+	  this.queryFavMovies = function (query) {
+	    return $http.get(omdbUrl + "search/movie?" + omdbKey + "&language=en-US&query=" + query).then(function (response) {
+	      var results = response.data.results;
+	      var resultsArr = [];
+	      results.forEach(function (x, i) {
+	        if (x.poster_path) {
+	          x.poster_path = "http://image.tmdb.org/t/p/w500/" + x.poster_path;
+	          resultsArr.push(x);
+	        }
+	      });
+	      return resultsArr;
+	    });
+	  };
+
+	  this.loading = function () {
+	    $timeout(function () {
+	      if (currentUser.initialized === false && currentUser.topFive.length > 0) {
+	        $location.path("/getting-started/favorites");
+	      } else if (currentUser.initialized === false) {
+	        $location.path("/getting-started");
+	      } else {
+	        $location.path("/dashboard");
+	      }
+	    }, 1000);
+	  };
+
+	  this.reachFive = function (arr) {
+	    if (arr.length === 5) {
+	      return false;
+	    } else {
+	      return true;
+	    }
+	  };
+
+	  this.getRecommendedMovieForInitMatch = function () {
+	    var movie = [];
+	    movie = currentUser.initRecommended[initCounter];
+	    initCounter++;
+	    return movie;
+	  };
+
+	  // **********************************************************
+	  //  HELPER FUNCTIONS
+	  // **********************************************************
+
+
+	  function postCurrentUser(obj) {
+	    return $http.post("/api/users", obj).then(function (response) {
+	      currentUser = response.data;
+	      return response;
+	    });
+	  }
+
+	  function postMovieToDB(obj) {
+	    return $http.post("/api/movies", obj);
+	  }
+
+	  function recommendMovieForInitMatch() {
+	    var recommendedMovies = [];
+	    var shuffled = [];
+	    currentUser.topFive.forEach(function (x, i) {
+	      x.recommendations.forEach(function (y, j) {
+	        recommendedMovies.push(y.id);
+	      });
+	    });
+	    return shuffleArray(recommendedMovies);
+	  }
+
+	  function shuffleArray(arr) {
+	    var array = arr.slice(0, arr.length);
+	    var currentIndex = array.length,
+	        temporaryValue,
+	        randomIndex;
+
+	    while (0 !== currentIndex) {
+
+	      randomIndex = Math.floor(Math.random() * currentIndex);
+	      currentIndex -= 1;
+
+	      temporaryValue = array[currentIndex];
+	      array[currentIndex] = array[randomIndex];
+	      array[randomIndex] = temporaryValue;
+	    }
+	    return array;
+	  }
+
+	  function getCertification(arr) {
+	    for (var i = 0; i < arr.length; i++) {
+	      if (arr[i].iso_3166_1 === "US") {
+	        return arr[i].release_dates[0].certification;
+	      }
+	    }
+	  }
+
+	  function formatDate(str) {
+	    var splitStr = str.split("");
+	    var year = splitStr.slice(0, 4).join("");
+	    var day = splitStr.slice(8, 10).join("");
+	    var month = splitStr.slice(5, 7).join("");
+	    var date = "";
+
+	    if (month === "01") {
+	      month = "January";
+	    };
+	    if (month === "02") {
+	      month = "February";
+	    };
+	    if (month === "03") {
+	      month = "March";
+	    };
+	    if (month === "04") {
+	      month = "April";
+	    };
+	    if (month === "05") {
+	      month = "May";
+	    };
+	    if (month === "06") {
+	      month = "June";
+	    };
+	    if (month === "07") {
+	      month = "July";
+	    };
+	    if (month === "08") {
+	      month = "August";
+	    };
+	    if (month === "09") {
+	      month = "September";
+	    };
+	    if (month === "10") {
+	      month = "October";
+	    };
+	    if (month === "11") {
+	      month = "November";
+	    };
+	    if (month === "12") {
+	      month = "December";
+	    };
+
+	    date = month + " " + day + ", " + year;
+
+	    return date;
+	  }
+
+	  // function generateScores(arr){
+	  //   let allRecommended = [];
+	  //   arr.forEach(function(x, i){
+	  //     $http.get("/api/movies").then(function(response){
+	  //       if()
+	  //     })
+	  //   })
+	  // }
+	}
+
+	module.exports = mainService;
+
+/***/ },
+/* 28 */
 /***/ function(module, exports) {
 
 	"use strict";
 
 	function navbarDirective() {
 	  return {
-	    templateUrl: "../../views/navbar.html"
+	    templateUrl: "../../views/directives/navbar.html"
 	  };
 	}
 
 	module.exports = navbarDirective;
 
 /***/ },
-/* 15 */,
-/* 16 */
-/***/ function(module, exports) {
-
-	module.exports = "<h1>Sign Up</h1>\n";
-
-/***/ },
-/* 17 */
-/***/ function(module, exports) {
-
-	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1>Dashboard</h1>\n</main>\n";
-
-/***/ },
-/* 18 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	function dashboardCtrl($scope, mainService) {
-	  $scope.test = "this is a test";
-	  $scope.getCurrentUser = function () {
-	    mainService.getCurrentUser().then(function (response) {
-	      $scope.currentUser = response;
-	      console.log("scope curr user", $scope.currentUser);
-	      return $scope.currentUser;
-	    });
-	  };
-	  $scope.getCurrentUser();
-	}
-
-	module.exports = dashboardCtrl;
-
-/***/ },
-/* 19 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	function mainService($http) {
-	  var currentUser = {};
-	  var currentUserFbId = "";
-
-	  this.getCurrentUser = function () {
-	    return $http.get("/api/users").then(function (response) {
-	      var currIndex = 0;
-	      response.data.map(function (x, i) {
-	        if (x.facebookId === currentUserFbId) {
-	          return currIndex = i;
-	        }
-	      });
-	      console.log(currIndex);
-	      return response.data[currIndex];
-	    });
-	  };
-
-	  function getCurrentUser() {
-	    return $http.get("/api/facebook").then(function (response) {
-	      var results = response.data;
-	      currentUser = {
-	        firstName: results._json.first_name,
-	        lastName: results._json.last_name,
-	        email: results._json.email,
-	        facebookId: results.id,
-	        profileUrl: results.profileUrl,
-	        location: results._json.location,
-	        coverPhotoUrl: results._json.cover.source,
-	        profilePictureUrl: results._json.picture.data.url
-	      };
-	      currentUserFbId = results.id;
-	      postCurrentUser(currentUser);
-	      return response;
-	    });
-	  }
-
-	  function postCurrentUser(obj) {
-	    $http.post("/api/users", obj);
-	  }
-
-	  if (!currentUser) {
-	    getCurrentUser();
-	  }
-	}
-
-	module.exports = mainService;
-
-/***/ },
-/* 20 */
+/* 29 */
 /***/ function(module, exports) {
 
 	"use strict";
 
 	function sidebarDirective() {
 	  return {
-	    templateUrl: "../../views/sidebar.html"
+	    templateUrl: "../../views/directives/sidebar.html"
 	  };
 	}
 
 	module.exports = sidebarDirective;
 
 /***/ },
-/* 21 */
+/* 30 */
 /***/ function(module, exports) {
 
 	"use strict";
 
 	function dashNav() {
 	  return {
-	    templateUrl: "../../views/dashNav.html"
+	    templateUrl: "../../views/directives/dashNav.html"
 	  };
 	}
 
 	module.exports = dashNav;
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function favSearchResults() {
+	  return {
+	    templateUrl: "../../views/directives/favSearchResults.html"
+	  };
+	}
+
+	module.exports = favSearchResults;
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function enterSubmit() {
+	    return function (scope, element, attrs) {
+	        element.bind("keydown keypress", function (event) {
+	            if (event.which === 13) {
+	                console.log("hit enter");
+	                scope.$apply(function () {
+	                    scope.$eval(attrs.enterSubmit, { 'event': event });
+	                });
+
+	                event.preventDefault();
+	            }
+	        });
+	    };
+	}
+
+	module.exports = enterSubmit;
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function trashMovie() {
+	  return function (scope, element, attrs) {
+	    $("ul.top-five-results li").on("mouseenter", function () {
+	      $("span.remove-from-top-five", this).css("visibility", "visible");
+	    });
+	    $("ul.top-five-results li").on("mouseleave", function () {
+	      $("span.remove-from-top-five", this).css("visibility", "hidden");
+	    });
+	  };
+	}
+
+	module.exports = trashMovie;
+
+/***/ },
+/* 34 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function ratings() {
+	  return function (scope, element, attrs) {
+	    $("a#rateOne").on("mouseenter", function () {
+	      $("a#rateOne img").addClass("rate-color");
+	    });
+	    $("a#rateOne").on("mouseleave", function () {
+	      $("a#rateOne img").removeClass("rate-color");
+	    });
+
+	    $("a#rateTwo").on("mouseenter", function () {
+	      $("a#rateOne img").addClass("rate-color");
+	      $("a#rateTwo img").addClass("rate-color");
+	    });
+	    $("a#rateTwo").on("mouseleave", function () {
+	      $("a#rateOne img").removeClass("rate-color");
+	      $("a#rateTwo img").removeClass("rate-color");
+	    });
+
+	    $("a#rateThree").on("mouseenter", function () {
+	      $("a#rateOne img").addClass("rate-color");
+	      $("a#rateTwo img").addClass("rate-color");
+	      $("a#rateThree img").addClass("rate-color");
+	    });
+	    $("a#rateThree").on("mouseleave", function () {
+	      $("a#rateOne img").removeClass("rate-color");
+	      $("a#rateTwo img").removeClass("rate-color");
+	      $("a#rateThree img").removeClass("rate-color");
+	    });
+
+	    $("a#rateFour").on("mouseenter", function () {
+	      $("a#rateOne img").addClass("rate-color");
+	      $("a#rateTwo img").addClass("rate-color");
+	      $("a#rateThree img").addClass("rate-color");
+	      $("a#rateFour img").addClass("rate-color");
+	    });
+	    $("a#rateFour").on("mouseleave", function () {
+	      $("a#rateOne img").removeClass("rate-color");
+	      $("a#rateTwo img").removeClass("rate-color");
+	      $("a#rateThree img").removeClass("rate-color");
+	      $("a#rateFour img").removeClass("rate-color");
+	    });
+
+	    $("a#rateFive").on("mouseenter", function () {
+	      $("a#rateOne img").addClass("rate-color");
+	      $("a#rateTwo img").addClass("rate-color");
+	      $("a#rateThree img").addClass("rate-color");
+	      $("a#rateFour img").addClass("rate-color");
+	      $("a#rateFive img").addClass("rate-color");
+	    });
+	    $("a#rateFive").on("mouseleave", function () {
+	      $("a#rateOne img").removeClass("rate-color");
+	      $("a#rateTwo img").removeClass("rate-color");
+	      $("a#rateThree img").removeClass("rate-color");
+	      $("a#rateFour img").removeClass("rate-color");
+	      $("a#rateFive img").removeClass("rate-color");
+	    });
+	  };
+	}
+
+	module.exports = ratings;
+
+/***/ },
+/* 35 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function movieDetails() {
+	  return function (scope, element, attrs) {
+	    $("div.movie-poster").on("mouseenter", function () {
+	      console.log("entered");
+	      $("span.overlay").css("visibility", "visible");
+	    });
+	    $("div.movie-poster").on("mouseleave", function () {
+	      console.log("left");
+	      $("span.overlay").css("visibility", "hidden");
+	    });
+	  };
+	}
+
+	module.exports = movieDetails;
+
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	function showMovieDetails() {
+	  return function (scope, element, attrs) {
+	    $("span.movie-details").on("click", function () {
+	      $("div.movie-details").slideDown("fast", function () {});
+	    });
+	    $("span.close-details").on("click", function () {
+	      $("div.movie-details").slideUp("fast", function () {});
+	    });
+	  };
+	}
+
+	module.exports = showMovieDetails;
 
 /***/ }
 /******/ ]);
