@@ -562,9 +562,7 @@ function mainService($http, $location, $timeout, $q){
 
   function postDecadePref(obj, score){
     let transferObj = {};
-    let year = obj.releaseDate.slice(0, 4);
-
-    console.log("year", year);
+    let year = parseInt(obj.releaseDate.split("").reverse().slice(0, 4).reverse().join(""));
 
     if(year >= 2010 && year <= 2019){
       transferObj = {

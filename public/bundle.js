@@ -37889,9 +37889,7 @@
 	
 	  function postDecadePref(obj, score) {
 	    var transferObj = {};
-	    var year = obj.releaseDate.slice(0, 4);
-	
-	    console.log("year", year);
+	    var year = parseInt(obj.releaseDate.split("").reverse().slice(0, 4).reverse().join(""));
 	
 	    if (year >= 2010 && year <= 2019) {
 	      transferObj = {
