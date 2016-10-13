@@ -38,6 +38,7 @@ import trashMovie from "./js/directives/trashMovie.js";
 import ratings from "./js/directives/ratings.js";
 import movieDetails from "./js/directives/movieDetails.js";
 import showMovieDetails from "./js/directives/showMovieDetails.js";
+import movieDetailsTemplate from "./js/directives/movieDetailsTemplate.js";
 
 angular.module("MatchFlick", [uiRouter])
 .config(function($stateProvider, $urlRouterProvider){
@@ -98,3 +99,4 @@ angular.module("MatchFlick", [uiRouter])
 .directive("ratings", ratings)
 .directive("movieDetails", movieDetails)
 .directive("showMovieDetails", showMovieDetails)
+.directive("movieDetailsTemplate", movieDetailsTemplate)

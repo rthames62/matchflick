@@ -1,0 +1,53 @@
+<div class="movie-details">
+<span show-movie-details class="glyphicon glyphicon-remove close-details" aria-hidden="true"></span>
+<div class="movie-details-poster">
+  <img ng-src="http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}" />
+  <h3>{{recommendedMovie.vote}}/10</h3>
+  <p>Total ratings: {{recommendedMovie.voteCount}}</p>
+</div>
+<div class="details">
+  <h1>{{recommendedMovie.movieTitle}} ({{recommendedMovie.releaseDate.substr(recommendedMovie.releaseDate.length - 4)}})</h1>
+  <a id="play-trailer" class="trailer"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Watch Trailer</a>
+  <p>
+    <strong>Rated: </strong>{{recommendedMovie.certification}} | {{recommendedMovie.runtime}} minutes | {{recommendedMovie.releaseDate}}
+  </p>
+  <p class="genres">
+    <span ng-repeat="genre in recommendedMovie.genreIds">{{genre.name + ($last ? '' : ',')}}  </span>
+  </p>
+  <p>
+    <strong>Director:</strong> <span ng-repeat="director in recommendedMovie.crew | filter : {job : 'Director'} | limitTo : 1">{{director.name}}</span>
+  </p>
+  <p>
+    <strong>Writers:</strong> <span ng-repeat="writer in recommendedMovie.crew | filter : {department : 'Writing'} | limitTo : 2">{{writer.name}} ({{writer.job}}) </span>
+  </p>
+  <p>
+    <strong>Stars:</strong> <span ng-repeat="actor in recommendedMovie.movieCast | limitTo : 3">{{actor.name + ($last ? '' : ',')}} </span>
+  </p>
+  <p>{{recommendedMovie.description}}</p>
+  <h4>Full Cast</h4>
+  <ul class="cast">
+    <li ng-repeat="cast in recommendedMovie.movieCast">
+      <img ng-src="{{cast.profile_path}}" />
+      <div class="info">
+        <p><strong>{{cast.name}}</strong><br>
+        {{cast.character.substr(0, 50)}}</p>
+      </div>
+    </li>
+  </ul>
+  <h4>Full Crew</h4>
+  <ul class="cast">
+    <li ng-repeat="crew in recommendedMovie.crew">
+      <img ng-src="{{crew.profile_path}}" />
+      <div class="info">
+        <p><strong>{{crew.name}}</strong><br>
+        {{crew.job.substr(0, 45)}}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="trailer-modal">
+  <div id="trailer-video" ng-bind-html="trailerUrl">
+  </div>
+  <span id="close-trailer" show-movie-details class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+</div>
+</div>

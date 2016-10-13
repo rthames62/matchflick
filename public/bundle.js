@@ -155,18 +155,13 @@
 	
 	var _showMovieDetails2 = _interopRequireDefault(_showMovieDetails);
 	
+	var _movieDetailsTemplate = __webpack_require__(/*! ./js/directives/movieDetailsTemplate.js */ 37);
+	
+	var _movieDetailsTemplate2 = _interopRequireDefault(_movieDetailsTemplate);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	//Services
-	
-	
-	//Controllers
-	
-	
-	//CSS
-	
-	
-	//HTML
+	//Directives
 	_angular2.default.module("MatchFlick", [_angularUiRouter2.default]).config(function ($stateProvider, $urlRouterProvider) {
 	  $urlRouterProvider.otherwise("/");
 	  $stateProvider.state("home", {
@@ -204,9 +199,18 @@
 	    templateUrl: "./views/instructions.html",
 	    controller: _gsCtrl2.default
 	  });
-	}).controller("mainCtrl", _mainCtrl2.default).service("mainService", _mainService2.default).directive("navbar", _navbar2.default).directive("sidebar", _sidebar2.default).directive("dashnav", _dashNav2.default).directive("favSearchResults", _favSearchResults2.default).directive("enterSubmit", _enterSubmit2.default).directive("trashMovie", _trashMovie2.default).directive("ratings", _ratings2.default).directive("movieDetails", _movieDetails2.default).directive("showMovieDetails", _showMovieDetails2.default);
+	}).controller("mainCtrl", _mainCtrl2.default).service("mainService", _mainService2.default).directive("navbar", _navbar2.default).directive("sidebar", _sidebar2.default).directive("dashnav", _dashNav2.default).directive("favSearchResults", _favSearchResults2.default).directive("enterSubmit", _enterSubmit2.default).directive("trashMovie", _trashMovie2.default).directive("ratings", _ratings2.default).directive("movieDetails", _movieDetails2.default).directive("showMovieDetails", _showMovieDetails2.default).directive("movieDetailsTemplate", _movieDetailsTemplate2.default);
 	
-	//Directives
+	//Services
+	
+	
+	//Controllers
+	
+	
+	//CSS
+	
+	
+	//HTML
 
 /***/ },
 /* 2 */
@@ -36640,7 +36644,7 @@
   \********************************/
 /***/ function(module, exports) {
 
-	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <div class=\"welcome-cont\">\n      <div class=\"match-cont\">\n        <div class=\"movie-poster\">\n          <img movie-details ng-src=\"http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}\" />\n          <span class=\"overlay\"><span show-movie-details class=\"glyphicon glyphicon-info-sign movie-details\" aria-hidden=\"true\"></span></span>\n        </div>\n        <div class=\"rating-cont\">\n          <ul>\n            <a><span class=\"glyphicon glyphicon-eye-close not-seen\" aria-hidden=\"true\"></span></a>\n            <a><span class=\"glyphicon glyphicon-plus watchlist\" aria-hidden=\"true\"></span></a>\n            <li><a id=\"rateOne\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateTwo\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateThree\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateFour\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateFive\" ratings href=\"#\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</main>\n<div class=\"movie-details\">\n<span show-movie-details class=\"glyphicon glyphicon-remove close-details\" aria-hidden=\"true\"></span>\n<div class=\"movie-details-poster\">\n  <img ng-src=\"http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}\" />\n  <h3>{{recommendedMovie.vote}}/10</h3>\n  <p>Total ratings: {{recommendedMovie.voteCount}}</p>\n</div>\n<div class=\"details\">\n  <h1>{{recommendedMovie.movieTitle}} ({{recommendedMovie.releaseDate.substr(recommendedMovie.releaseDate.length - 4)}})</h1>\n  <a id=\"play-trailer\" class=\"trailer\"><span class=\"glyphicon glyphicon-play-circle\" aria-hidden=\"true\"></span> Watch Trailer</a>\n  <p>\n    <strong>Rated: </strong>{{recommendedMovie.certification}} | {{recommendedMovie.runtime}} minutes | {{recommendedMovie.releaseDate}}\n  </p>\n  <p class=\"genres\">\n    <span ng-repeat=\"genre in recommendedMovie.genreIds\">{{genre.name + ($last ? '' : ',')}}  </span>\n  </p>\n  <p>\n    <strong>Director:</strong> <span ng-repeat=\"director in recommendedMovie.crew | filter : {job : 'Director'} | limitTo : 1\">{{director.name}}</span>\n  </p>\n  <p>\n    <strong>Writers:</strong> <span ng-repeat=\"writer in recommendedMovie.crew | filter : {department : 'Writing'} | limitTo : 2\">{{writer.name}} ({{writer.job}}) </span>\n  </p>\n  <p>\n    <strong>Stars:</strong> <span ng-repeat=\"actor in recommendedMovie.movieCast | limitTo : 3\">{{actor.name + ($last ? '' : ',')}} </span>\n  </p>\n  <p>{{recommendedMovie.description}}</p>\n  <h4>Full Cast</h4>\n  <ul class=\"cast\">\n    <li ng-repeat=\"cast in recommendedMovie.movieCast\">\n      <img ng-src=\"{{cast.profile_path}}\" />\n      <div class=\"info\">\n        <p><strong>{{cast.name}}</strong><br>\n        {{cast.character.substr(0, 50)}}</p>\n      </div>\n    </li>\n  </ul>\n  <h4>Full Crew</h4>\n  <ul class=\"cast\">\n    <li ng-repeat=\"crew in recommendedMovie.crew\">\n      <img ng-src=\"{{crew.profile_path}}\" />\n      <div class=\"info\">\n        <p><strong>{{crew.name}}</strong><br>\n        {{crew.job.substr(0, 45)}}</p>\n      </div>\n    </li>\n  </ul>\n</div>\n<div class=\"trailer-modal\">\n  <div id=\"trailer-video\" ng-bind-html=\"trailerUrl\">\n  </div>\n  <span id=\"close-trailer\" show-movie-details class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\n</div>\n</div>\n";
+	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <div class=\"welcome-cont\">\n      <div class=\"match-cont\">\n        <div class=\"movie-poster\">\n          <img movie-details ng-src=\"http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}\" />\n          <span class=\"overlay\"><span show-movie-details class=\"glyphicon glyphicon-info-sign movie-details\" aria-hidden=\"true\"></span></span>\n        </div>\n        <div class=\"rating-cont\">\n          <ul>\n            <a ng-click=\"addToUnseen(recommendedMovie)\"><span class=\"glyphicon glyphicon-eye-close not-seen\" aria-hidden=\"true\"></span></a>\n            <a ng-click=\"addToWatchlist(recommendedMovie)\"><span class=\"glyphicon glyphicon-plus watchlist\" aria-hidden=\"true\"></span></a>\n            <li><a id=\"rateOne\" ratings ng-click=\"addToRatedOne(recommendedMovie)\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateTwo\" ratings ng-click=\"addToRatedTwo(recommendedMovie)\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateThree\" ratings ng-click=\"addToRatedThree(recommendedMovie)\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateFour\" ratings ng-click=\"addToRatedFour(recommendedMovie)\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n            <li><a id=\"rateFive\" ratings ng-click=\"addToRatedFive(recommendedMovie)\"><img src=\"http://localhost:8080/images/matchflick-emblem100x134.png\" alt=\"\" /></a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</main>\n<movie-details-template></movie-details-template>\n";
 
 /***/ },
 /* 12 */
@@ -36649,7 +36653,7 @@
   \*******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <h1>Good job!</h1>\n    <h4>Now we know some of your movie tastes! You can continue to rate movies to help us better recommend movies that you would enjoy!</h4>\n    <a ui-sref=\"dashboard\"><button class=\"default\" type=\"button\">Continue Matching</button></a>\n    <a ui-sref=\"dashboard\"><button class=\"default\" type=\"button\">Go To Dashboard</button></a>\n  </div>\n</main>\n";
 
 /***/ },
 /* 13 */
@@ -37088,6 +37092,7 @@
 	  $scope.getFbCurrentUser = function () {
 	    mainService.getFbCurrentUser().then(function (response) {
 	      $scope.currentUser = response;
+	      console.log($scope.currentUser);
 	      return $scope.currentUser;
 	    });
 	  };
@@ -37209,17 +37214,25 @@
 
 	"use strict";
 	
-	function initMatch($scope, $sce, mainService) {
+	function initMatch($scope, $sce, mainService, $timeout) {
 	  $scope.recommendMovieForInitMatch = function () {
 	    $scope.recommendedMovies = mainService.recommendMoviesForMatch;
-	    console.log("front end movie", $scope.recommendedMovies);
 	    return $scope.recommendedMovies;
 	  };
 	  $scope.getRecommendedMovieForInitMatch = function () {
 	    $scope.recommendedMovie = mainService.getRecommendedMovieForInitMatch();
-	    console.log("front end movie 2", $scope.recommendedMovie);
-	    $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	    return $scope.recommendedMovie;
+	    console.log("scope recommended", $scope.recommendedMovie);
+	    if ($scope.recommendedMovie) {
+	      $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	      return $scope.recommendedMovie;
+	    } else {
+	      $timeout(function () {
+	        $scope.recommendedMovie = mainService.getRecommendedMovieForInitMatch();
+	        // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	        console.log("bout to finish", $scope.recommendedMovie);
+	        return $scope.recommendedMovie;
+	      }, 200);
+	    }
 	  };
 	  $scope.writerFilter = function (item) {
 	    return item === "writing";
@@ -37229,7 +37242,48 @@
 	    return item === "director";
 	  };
 	
-	  $scope.getInitRecommendedArr = function () {};
+	  $scope.addToRatedOne = function (movie) {
+	    mainService.addToRatedOne(movie);
+	    $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+	    return $scope.recommendedMovie;
+	  };
+	
+	  $scope.addToRatedTwo = function (movie) {
+	    mainService.addToRatedTwo(movie);
+	    $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+	    return $scope.recommendedMovie;
+	  };
+	
+	  $scope.addToRatedThree = function (movie) {
+	    mainService.addToRatedThree(movie);
+	    $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+	    return $scope.recommendedMovie;
+	  };
+	
+	  $scope.addToRatedFour = function (movie) {
+	    mainService.addToRatedFour(movie);
+	    $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+	    return $scope.recommendedMovie;
+	  };
+	
+	  $scope.addToRatedFive = function (movie) {
+	    mainService.addToRatedFive(movie);
+	    $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+	    return $scope.recommendedMovie;
+	  };
+	
+	  $scope.addToUnseen = function (movie) {
+	    mainService.addToUnseen(movie);
+	    $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+	    return $scope.recommendedMovie;
+	  };
+	
+	  $scope.addToWatchlist = function (movie) {
+	    mainService.addToWatchlist(movie);
+	    $("span.watchlist").on("click", function () {
+	      $("span.watchlist").css("color", "#FC7100");
+	    });
+	  };
 	
 	  $scope.recommendMovieForInitMatch();
 	  $scope.getRecommendedMovieForInitMatch();
@@ -37260,15 +37314,12 @@
 	  this.getFbCurrentUser = function () {
 	    return $http.get("/api/facebook").then(function (response) {
 	      var results = response.data;
-	      $http.get("/api/users").then(function (userResponse) {
-	        var found = false;
-	        userResponse.data.map(function (x, i) {
-	          if (x.facebookId == results.id) {
-	            currentUser = x;
-	            found = true;
-	          }
-	        });
-	        if (!found) {
+	      $http.get("/api/users/fb/" + results.id).then(function (userResponse) {
+	        // console.log(userResponse);
+	        if (userResponse.data.length > 0) {
+	          currentUser = userResponse.data[0];
+	          // console.log("current user", currentUser);
+	        } else {
 	          currentUser = {
 	            firstName: results._json.first_name,
 	            lastName: results._json.last_name,
@@ -37279,7 +37330,15 @@
 	            coverPhotoUrl: results._json.cover.source,
 	            profilePictureUrl: results._json.picture.data.url,
 	            topFive: [],
-	            initRecommended: []
+	            initRecommended: [],
+	            ratedMoviesOne: [],
+	            ratedMoviesTwo: [],
+	            ratedMoviesThree: [],
+	            ratedMoviesFour: [],
+	            ratedMoviesFive: [],
+	            unseenMovies: [],
+	            watchlist: [],
+	            preferences: []
 	          };
 	          currentUserFbId = results.id;
 	          postCurrentUser(currentUser);
@@ -37288,6 +37347,46 @@
 	      return response.data;
 	    });
 	  };
+	
+	  // this.getFbCurrentUser = function(){
+	  //   return $http.get("/api/facebook").then(function(response){
+	  //     let results = response.data;
+	  //     $http.get("/api/users").then(function(userResponse){
+	  //       let found = false;
+	  //       userResponse.data.map(function(x, i){
+	  //         if(x.facebookId == results.id){
+	  //           currentUser = x;
+	  //           console.log("Current User", currentUser);
+	  //           found = true;
+	  //         }
+	  //       })
+	  //       if(!found){
+	  //         currentUser = {
+	  //           firstName : results._json.first_name,
+	  //           lastName : results._json.last_name,
+	  //           email : results._json.email,
+	  //           facebookId : results.id,
+	  //           profileUrl : results.profileUrl,
+	  //           location : results._json.location,
+	  //           coverPhotoUrl : results._json.cover.source,
+	  //           profilePictureUrl : results._json.picture.data.url,
+	  //           topFive : [],
+	  //           initRecommended : [],
+	  //           ratedMoviesOne : [],
+	  //           ratedMoviesTwo : [],
+	  //           ratedMoviesThree : [],
+	  //           ratedMoviesFour : [],
+	  //           ratedMoviesFive : [],
+	  //           unseenMovies : [],
+	  //           watchlist : []
+	  //         };
+	  //         currentUserFbId = results.id;
+	  //         postCurrentUser(currentUser);
+	  //       }
+	  //     })
+	  //     return response.data;
+	  //   })
+	  // }
 	
 	  this.addToTopFive = function (obj) {
 	    var dfd = $q.defer();
@@ -37338,6 +37437,13 @@
 	        // topFive = currentUser.topFive;
 	        // $http.post(`/api/user/${currentUser._id}/topFive`, addedMovie);
 	      }
+	      // postGenrePref(movieObj, 3);
+	      // postLeadActorPref(movieObj, 3);
+	      // postDirectorPref(movieObj, 3);
+	      // postProducerPref(movieObj, 3);
+	      // postWriterPref(movieObj, 3);
+	      // postKeywordPref(movieObj, 3);
+	      // postDecadePref(movieObj, 3);
 	      // console.log("chicken", topFive);
 	      // return topFive;
 	      return dfd.promise;
@@ -37348,77 +37454,77 @@
 	    var dfd = $q.defer();
 	    var movieIds = recommendMovieForInitMatch();
 	    console.log("movieIds", movieIds);
-	    movieIds = movieIds.slice(0, 10);
+	    movieIds = movieIds.slice(0, 40);
 	    var recommendMoviesArr = [];
 	    currentUser.initRecommended = [];
 	    movieIds.forEach(function (x, i) {
-	      $http.get(omdbUrl + "movie/" + x + "?" + omdbKey + "&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function (response2) {
-	        var results = response2.data;
-	        var movieObj = {
-	          movieTitle: results.title,
-	          description: results.overview,
-	          popularity: results.popularity,
-	          posterUrl: "http://image.tmdb.org/t/p/w500/" + results.poster_path,
-	          releaseDate: formatDate(results.release_date),
-	          video: results.video,
-	          vote: results.vote_average,
-	          voteCount: results.vote_count,
-	          genreIds: results.genres,
-	          backdropPath: "http://image.tmdb.org/t/p/w500/" + results.backdrop_path,
-	          omdbId: results.id,
-	          language: results.original_language,
-	          homepage: results.homepage,
-	          imdbId: results.imdb_id,
-	          productionCompanies: results.production_companies,
-	          revenue: results.revenue,
-	          runtime: results.runtime,
-	          status: results.status,
-	          tagline: results.tagline,
-	          videos: results.videos.results,
-	          images: results.images.backdrops,
-	          adult: results.adult,
-	          crew: results.credits.crew,
-	          movieCast: results.credits.cast,
-	          keywords: results.keywords.keywords,
-	          recommendations: results.recommendations.results,
-	          similar: results.similar.results,
-	          certification: getCertification(results.release_dates.results)
-	        };
-	        if (movieObj.crew.length < 3) {
-	          movieObj.crew = movieObj.crew[0];
-	        }
-	        movieObj.crew.forEach(function (y) {
-	          if (!y.profile_path) {
-	            y.profile_path = "http://localhost:8080/images/no-picture.png";
-	          } else {
-	            y.profile_path = "http://image.tmdb.org/t/p/w500/" + y.profile_path;
+	      if (x !== currentUser.topFive.omdbId) {
+	        $http.get(omdbUrl + "movie/" + x + "?" + omdbKey + "&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function (response2) {
+	          var results = response2.data;
+	          var movieObj = {
+	            movieTitle: results.title,
+	            description: results.overview,
+	            popularity: results.popularity,
+	            posterUrl: "http://image.tmdb.org/t/p/w500/" + results.poster_path,
+	            releaseDate: formatDate(results.release_date),
+	            video: results.video,
+	            vote: results.vote_average,
+	            voteCount: results.vote_count,
+	            genreIds: results.genres,
+	            backdropPath: "http://image.tmdb.org/t/p/w500/" + results.backdrop_path,
+	            omdbId: results.id,
+	            language: results.original_language,
+	            homepage: results.homepage,
+	            imdbId: results.imdb_id,
+	            productionCompanies: results.production_companies,
+	            revenue: results.revenue,
+	            runtime: results.runtime,
+	            status: results.status,
+	            tagline: results.tagline,
+	            videos: results.videos.results,
+	            images: results.images.backdrops,
+	            adult: results.adult,
+	            crew: results.credits.crew,
+	            movieCast: results.credits.cast,
+	            keywords: results.keywords.keywords,
+	            recommendations: results.recommendations.results,
+	            similar: results.similar.results,
+	            certification: getCertification(results.release_dates.results)
+	          };
+	          if (movieObj.crew.length < 3) {
+	            movieObj.crew = movieObj.crew[0];
 	          }
+	          movieObj.crew.forEach(function (y) {
+	            if (!y.profile_path) {
+	              y.profile_path = "http://localhost:8080/images/no-picture.png";
+	            } else {
+	              y.profile_path = "http://image.tmdb.org/t/p/w500/" + y.profile_path;
+	            }
+	          });
+	          movieObj.movieCast.forEach(function (y) {
+	            if (!y.profile_path) {
+	              y.profile_path = "http://localhost:8080/images/no-picture.png";
+	            } else {
+	              y.profile_path = "http://image.tmdb.org/t/p/w500/" + y.profile_path;
+	            }
+	          });
+	          // currentUser.initRecommended.push(movieObj);
+	          $http.post("/api/movies", movieObj).then(function (response) {
+	            console.log();
+	            currentUser.initRecommended.push(response.data);
+	            $http.post("/api/user/" + currentUser._id + "/initRec", { _id: response.data._id });
+	            myThis.recommendMoviesForMatch = currentUser.initRecommended;
+	          });
+	          dfd.resolve(myThis.recommendMoviesForMatch);
+	          // console.log("rec movies arr", myThis.recommendMoviesForMatch);
+	          console.log("CU rec movies arr", currentUser.initRecommended);
 	        });
-	        movieObj.movieCast.forEach(function (y) {
-	          if (!y.profile_path) {
-	            y.profile_path = "http://localhost:8080/images/no-picture.png";
-	          } else {
-	            y.profile_path = "http://image.tmdb.org/t/p/w500/" + y.profile_path;
-	          }
-	        });
-	        // postInitRecToDB(movieObj);
-	        $http.post("/api/movies", movieObj).then(function (response) {
-	          console.log("response", response);
-	          currentUser.initRecommended.push(response.data._id);
-	          $http.post("/api/user/" + currentUser._id + "/initRec", { _id: response.data._id });
-	          myThis.recommendMoviesForMatch = [];
-	          myThis.recommendMoviesForMatch = currentUser.initRecommended;
-	          console.log("2", myThis.recommendMoviesForMatch);
-	        });
-	        // currentUser.initRecommended.push(movieObj);
-	        // $http.post(`/api/user/${currentUser._id}/initRec`, movieObj);
-	        console.log("1", myThis.recommendMoviesForMatch);
-	        // myThis.recommendMoviesForMatch = [];
-	        // myThis.recommendMoviesForMatch = currentUser.initRecommended;
-	        dfd.resolve(response);
-	      });
-	      return dfd.promise;
+	      } else {
+	        console.log("found duplicate");
+	      }
 	    });
+	    // console.log("rec movies arr", myThis.recommendMoviesForMatch);
+	    return dfd.promise;
 	  };
 	
 	  this.removeFromTopFive = function (obj) {
@@ -37484,9 +37590,90 @@
 	  };
 	
 	  this.getRecommendedMovieForInitMatch = function () {
-	    currentMovie = currentUser.initRecommended[initCounter];
-	    initCounter++;
-	    return currentMovie;
+	    if (Object.keys(currentUser).length > 0) {
+	      initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length + currentUser.unseenMovies.length;
+	      var toTwenty = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
+	
+	      if (toTwenty < 20 && initCounter < 100) {
+	        currentMovie = currentUser.initRecommended[initCounter];
+	        console.log("counter", initCounter);
+	        return currentMovie;
+	      } else {
+	        currentUser.initialized = true;
+	        $http.put("/api/user/" + currentUser._id, { initialized: true });
+	        $location.path("/getting-started/congratulations");
+	      }
+	    }
+	  };
+	
+	  this.addToRatedOne = function (obj) {
+	    currentUser.ratedMoviesOne.push(obj);
+	    $http.post("/api/user/" + currentUser._id + "/ratedOne", { _id: obj._id });
+	    postGenrePref(obj, -2);
+	    postLeadActorPref(obj, -2);
+	    postDirectorPref(obj, -2);
+	    postProducerPref(obj, -2);
+	    postWriterPref(obj, -2);
+	    postKeywordPref(obj, -2);
+	    postDecadePref(obj, -2);
+	  };
+	
+	  this.addToRatedTwo = function (obj) {
+	    currentUser.ratedMoviesOne.push(obj);
+	    $http.post("/api/user/" + currentUser._id + "/ratedTwo", { _id: obj._id });
+	    postGenrePref(obj, -1);
+	    postLeadActorPref(obj, -1);
+	    postDirectorPref(obj, -1);
+	    postProducerPref(obj, -1);
+	    postWriterPref(obj, -1);
+	    postKeywordPref(obj, -1);
+	    postDecadePref(obj, -1);
+	  };
+	
+	  this.addToRatedThree = function (obj) {
+	    currentUser.ratedMoviesOne.push(obj);
+	    $http.post("/api/user/" + currentUser._id + "/ratedThree", { _id: obj._id });
+	    postGenrePref(obj, 1);
+	    postLeadActorPref(obj, 1);
+	    postDirectorPref(obj, 1);
+	    postProducerPref(obj, 1);
+	    postWriterPref(obj, 1);
+	    postKeywordPref(obj, 1);
+	    postDecadePref(obj, 1);
+	  };
+	
+	  this.addToRatedFour = function (obj) {
+	    currentUser.ratedMoviesOne.push(obj);
+	    $http.post("/api/user/" + currentUser._id + "/ratedFour", { _id: obj._id });
+	    postGenrePref(obj, 2);
+	    postLeadActorPref(obj, 2);
+	    postDirectorPref(obj, 2);
+	    postProducerPref(obj, 2);
+	    postWriterPref(obj, 2);
+	    postKeywordPref(obj, 2);
+	    postDecadePref(obj, 2);
+	  };
+	
+	  this.addToRatedFive = function (obj) {
+	    currentUser.ratedMoviesOne.push(obj);
+	    $http.post("/api/user/" + currentUser._id + "/ratedFive", { _id: obj._id });
+	    postGenrePref(obj, 3);
+	    postLeadActorPref(obj, 3);
+	    postDirectorPref(obj, 3);
+	    postProducerPref(obj, 3);
+	    postWriterPref(obj, 3);
+	    postKeywordPref(obj, 3);
+	    postDecadePref(obj, 3);
+	  };
+	
+	  this.addToUnseen = function (obj) {
+	    currentUser.unseenMovies.push(obj);
+	    $http.post("/api/user/" + currentUser._id + "/unseenMovies", { _id: obj._id });
+	  };
+	
+	  this.addToWatchlist = function (obj) {
+	    currentUser.watchlist.push(obj);
+	    $http.post("/api/user/" + currentUser._id + "/watchlist", { _id: obj._id });
 	  };
 	
 	  // **********************************************************
@@ -37610,6 +37797,157 @@
 	    date = month + " " + day + ", " + year;
 	
 	    return date;
+	  }
+	
+	  function postGenrePref(obj, score) {
+	    var transferObj = {};
+	
+	    obj.genreIds.forEach(function (x) {
+	      transferObj = {
+	        genreName: x.name,
+	        genreScore: score,
+	        genreId: x.id
+	      };
+	
+	      $http.post("/api/user/" + currentUser._id + "/genrePref", transferObj);
+	    });
+	  }
+	
+	  function postLeadActorPref(obj, score) {
+	    var transferObj = {};
+	
+	    for (var i = 0; i < 6; i++) {
+	      transferObj = {
+	        leadActorName: obj.movieCast[i].name,
+	        leadActorScore: score,
+	        castId: obj.movieCast[i].id
+	      };
+	      $http.post("/api/user/" + currentUser._id + "/leadActorPref", transferObj);
+	    }
+	  }
+	
+	  function postDirectorPref(obj, score) {
+	    var transferObj = {};
+	
+	    obj.crew.forEach(function (x) {
+	      if (x.job === "Director") {
+	        transferObj = {
+	          directorName: x.name,
+	          directorScore: score,
+	          crewId: x.id
+	        };
+	
+	        $http.post("/api/user/" + currentUser._id + "/directorPref", transferObj);
+	      }
+	    });
+	  }
+	
+	  function postProducerPref(obj, score) {
+	    var transferObj = {};
+	
+	    obj.crew.forEach(function (x) {
+	      if (x.job === "Producer") {
+	        transferObj = {
+	          producerName: x.name,
+	          producerScore: score,
+	          crewId: x.id
+	        };
+	
+	        $http.post("/api/user/" + currentUser._id + "/producerPref", transferObj);
+	      }
+	    });
+	  }
+	
+	  function postWriterPref(obj, score) {
+	    var transferObj = {};
+	
+	    obj.crew.forEach(function (x) {
+	      if (x.department === "Writing") {
+	        transferObj = {
+	          writerName: x.name,
+	          writerScore: score,
+	          crewId: x.id
+	        };
+	
+	        $http.post("/api/user/" + currentUser._id + "/writerPref", transferObj);
+	      }
+	    });
+	  }
+	
+	  function postKeywordPref(obj, score) {
+	    var transferObj = {};
+	
+	    obj.keywords.forEach(function (x) {
+	      transferObj = {
+	        keywordName: x.name,
+	        keywordScore: score,
+	        keywordId: x.id
+	      };
+	      $http.post("/api/user/" + currentUser._id + "/keywordPref", transferObj);
+	    });
+	  }
+	
+	  function postDecadePref(obj, score) {
+	    var transferObj = {};
+	    var year = obj.releaseDate.slice(0, 4);
+	
+	    console.log("year", year);
+	
+	    if (year >= 2010 && year <= 2019) {
+	      transferObj = {
+	        decadeName: "2010s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 2000 && year <= 2009) {
+	      transferObj = {
+	        decadeName: "2000s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 1990 && year <= 1999) {
+	      transferObj = {
+	        decadeName: "1990s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 1980 && year <= 1989) {
+	      transferObj = {
+	        decadeName: "1980s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 1970 && year <= 1979) {
+	      transferObj = {
+	        decadeName: "1970s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 1960 && year <= 1969) {
+	      transferObj = {
+	        decadeName: "1960s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 1950 && year <= 1959) {
+	      transferObj = {
+	        decadeName: "1950s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 1940 && year <= 1949) {
+	      transferObj = {
+	        decadeName: "1940s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    } else if (year >= 1930 && year <= 1939) {
+	      transferObj = {
+	        decadeName: "1930s",
+	        decadeScore: score
+	      };
+	      return $http.post("/api/user/" + currentUser._id + "/decadePref", transferObj);
+	    }
 	  }
 	
 	  // function generateScores(arr){
@@ -37858,6 +38196,23 @@
 	}
 	
 	module.exports = showMovieDetails;
+
+/***/ },
+/* 37 */
+/*!******************************************************!*\
+  !*** ./public/js/directives/movieDetailsTemplate.js ***!
+  \******************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	function movieDetailsTemplate() {
+	  return {
+	    templateUrl: "../../views/directives/movieDetails.html"
+	  };
+	}
+	
+	module.exports = movieDetailsTemplate;
 
 /***/ }
 /******/ ]);

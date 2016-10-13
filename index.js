@@ -50,14 +50,17 @@ app.get("/auth/facebook/callback", passport.authenticate("facebook", {
 }));
 
 passport.serializeUser(function(user, done){
+  console.log("serialize");
   done(null, user);
 });
 
 passport.deserializeUser(function(user, done){
+  console.log("deserialize");
   done(null, user);
 });
 
 app.get("/api/facebook", loggedIn, function(req, res, next){
+  console.log(req.user);
   res.send(req.user);
 })
 

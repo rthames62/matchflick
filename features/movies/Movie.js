@@ -23,7 +23,7 @@ const Movie = new mongoose.Schema({
   videos : {type : Array, max : 5},
   images : {type : Array, max : 20},
   adult : {type : Boolean},
-  cast : {type : Array},
+  movieCast : {type : Array},
   crew : {type : Array},
   keywords : {type : Array},
   recommendations : {type : Array},

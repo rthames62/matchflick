@@ -13,7 +13,6 @@ module.exports = {
   postMovie(req, res){
     Movie.find({omdbId : req.body.omdbId}, function(error, response){
       if(response.length > 0){
-        console.log(response);
         console.log("already there");
         res.send(response[0]);
       } else {
@@ -24,7 +23,6 @@ module.exports = {
             return res.status(500).json(err);
           } else {
             console.log("response");
-            console.log(resp);
             return res.json(resp);
           }
         })
