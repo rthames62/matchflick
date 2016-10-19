@@ -2,8 +2,23 @@
 <span show-movie-details class="glyphicon glyphicon-remove close-details" aria-hidden="true"></span>
 <div class="movie-details-poster">
   <img ng-src="http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}" />
-  <h3>{{recommendedMovie.vote}}/10</h3>
-  <p>Total ratings: {{recommendedMovie.voteCount}}</p>
+  <div class="imdb-wrapper">
+    <img src="http://ia.media-imdb.com/images/M/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@._V1_.png" class="imdb-logo" />
+    <div class="rating-wrapper">
+      <div class="imdbStar"></div>
+      <h6>{{imdbRating}}<span class="out-of-ten">/10 </span></h6>
+      <p class="votes">{{imdbVotes}}</p>
+    </div>
+    <!-- <p>{{imdbVotes}}</p> -->
+  </div>
+  <div class="rt-wrapper">
+    <img src="http://www.esotericarticles.com/wp-content/uploads/rotten-tomatoes-logo.png" alt="Rotten Tomatoes Logo" class="rt-logo" />
+    <div class="rating-wrapper">
+      <div ng-class="tomatoClass"></div>
+      <h6>{{tomatoRating}}<span class="out-of-ten">/10 </span></h6>
+      <p class="votes">{{tomatoReviews}}</p>
+    </div>
+  </div>
 </div>
 <div class="details">
   <h1>{{recommendedMovie.movieTitle}} ({{recommendedMovie.releaseDate.substr(recommendedMovie.releaseDate.length - 4)}})</h1>

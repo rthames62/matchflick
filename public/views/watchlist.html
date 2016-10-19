@@ -1,1 +1,15 @@
-<h1>Watchlist</h1>
+<sidebar></sidebar>
+
+<dashnav></dashnav>
+
+<main class="dashboard">
+  <h1>My Watchlist</h1>
+  <ul class="watchlist">
+    <li ng-repeat="movie in watchlist">
+      <img movie-details ng-src="{{movie.posterUrl}}" />
+      <span class="overlay"><span show-movie-details class="glyphicon glyphicon-info-sign movie-details" aria-hidden="true"></span></span>
+    </li>
+  </ul>
+</main>
+
+<movie-details-template></movie-details-template>

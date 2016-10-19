@@ -1,4 +1,4 @@
-function mainCtrl($scope, mainService){
+function mainCtrl($scope, $location, mainService){
   $scope.getFbCurrentUser = function(){
       mainService.getFbCurrentUser().then(function(response){
         $scope.currentUser = response;
@@ -6,8 +6,6 @@ function mainCtrl($scope, mainService){
         return $scope.currentUser;
       })
   }
-
-
 
   $scope.getFbCurrentUser();
 }

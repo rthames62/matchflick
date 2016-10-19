@@ -13,16 +13,16 @@ module.exports = {
   postMovie(req, res){
     Movie.find({omdbId : req.body.omdbId}, function(error, response){
       if(response.length > 0){
-        console.log("already there");
+        // console.log("already there");
         res.send(response[0]);
       } else {
         new Movie(req.body).save(function(err, resp){
-          console.log("create new");
+          // console.log("create new");
           if(err){
-            console.log("error");
+            // console.log("error");
             return res.status(500).json(err);
           } else {
-            console.log("response");
+            // console.log("response");
             return res.json(resp);
           }
         })

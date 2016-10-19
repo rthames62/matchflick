@@ -155,7 +155,7 @@ dashnav {
   /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 
-dashnav img.profile {
+div.user-info img.profile {
   border-radius: 50%;
   height: 40px;
   display: inline;
@@ -163,19 +163,19 @@ dashnav img.profile {
   margin-right: 10px;
 }
 
-dashnav p {
+div.user-info p {
   display: inline;
   vertical-align: middle;
 }
 
-dashnav div.user-info {
+div.user-info {
   float: right;
 }
 
 main.dashboard {
   width: calc(100% - 220px);
   float: right;
-  padding: 25px;
+  padding: 20px;
 }
 
 section.dashboard-header {
@@ -243,7 +243,7 @@ div.search-results {
   margin: auto;
   left: 0;
   right: 0;
-  top: 65px;
+  top: 67px;
   bottom: 0;
 }
 
@@ -420,6 +420,7 @@ div.movie-details div.details {
 
 div.movie-details div.movie-details-poster {
   display: inline-block;
+  position: relative;
 }
 
 div.movie-details div.movie-details-poster img {
@@ -528,4 +529,139 @@ div.trailer-modal > span#close-trailer {
 
 div.trailer-modal > span#close-trailer:hover {
   transform: scale(1.2);
+}
+
+main.dashboard ul {
+  margin-bottom: 20px;
+}
+
+main.match {
+  width: calc(100% - 220px);
+  height: 100vh;
+  display: table;
+  right: 0;
+  position: fixed;
+}
+
+div.imdbStar {
+  background: url(http://ia.media-imdb.com/images/G/01/imdb/images/title/title_overview_sprite-2406345693._V_.png);
+  background-position: -15px -118px;
+  font-size: 11px;
+  height: 40px;
+  line-height: 13px;
+  padding: 2px 0 0 34px;
+  width: 40px;
+  display: inline-block;
+}
+
+div.rt-fresh {
+  background: url(http://www.tomatoflix.com/static/fresh.png);
+  height: 31px;
+  width: 30px;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+div.rt-rotten {
+  background: url(http://www.tomatoflix.com/static/rotten.png);
+  height: 31px;
+  width: 30px;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+img.imdb-logo {
+  width: 100px !important;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+div.movie-details-poster h6 {
+  display: inline-block;
+  font-size: 34px;
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+span.out-of-ten {
+  color: #5C5C5C;
+  font-size: 12px;
+}
+
+p.votes {
+  color: #5C5C5C;
+  font-size: 15px;
+  text-align: right;
+}
+
+div.imdb-wrapper {
+  margin-top: 15px;
+  width: 120px;
+  position: absolute;
+}
+
+div.rt-wrapper {
+  margin-top: 15px;
+  width: 120px;
+  position: absolute;
+  right: 0;
+}
+
+div.rating-wrapper {
+  display: inline-block;
+
+}
+
+img.rt-logo {
+  width: 75px !important;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+main.my-favorites {
+  width: calc(100% - 220px);
+  padding: 20px;
+  float: right;
+}
+
+section.favorites-cont {
+  margin-top: 25px;
+  padding: 20px 20px 10px 20px;
+  background-color: #1e1e1e;
+}
+
+ul.movies-wrapper > li {
+  display: inline-block;
+}
+
+ul.movies-wrapper > li > img {
+  width: 140px;
+  height: 210px;
+  margin: 10px;
+}
+
+section.favorites-cont > h3 {
+  margin: 0 0 15px 0;
+}
+
+ul.movies-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+
+div.flames > img {
+  width: 25px;
+  margin-bottom: 15px;
+}
+
+ul.watchlist {
+  margin-top: 20px;
+}
+
+ul.watchlist img {
+  width: 200px;
 }

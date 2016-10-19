@@ -1,0 +1,50 @@
+<sidebar></sidebar>
+
+<dashnav></dashnav>
+
+<main class="my-favorites">
+  <h1>My Favorites</h1>
+
+  <section class="favorites-cont">
+    <h3>My Top 5</h3>
+    <ul class="movies-wrapper">
+      <li ng-repeat="movie in topFive"><img ng-src="{{movie.posterUrl}}" /></li>
+    </ul>
+  </section>
+
+  <section class="favorites-cont">
+    <div class="flames">
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+    </div>
+    <ul class="movies-wrapper">
+      <li ng-repeat="movie in ratedFive"><img ng-src="{{movie.posterUrl}}" /></li>
+    </ul>
+  </section>
+
+  <section class="favorites-cont">
+    <div class="flames">
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+    </div>
+    <ul class="movies-wrapper">
+      <li ng-repeat="movie in ratedFour"><img ng-src="{{movie.posterUrl}}" /></li>
+    </ul>
+  </section>
+
+  <section class="favorites-cont">
+    <div class="flames">
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+      <img src="http://localhost:8080/images/matchflick-emblem100x134.png" />
+    </div>
+    <ul class="movies-wrapper">
+      <li ng-repeat="movie in ratedThree"><img ng-src="{{movie.posterUrl}}" /></li>
+    </ul>
+  </section>
+</main>

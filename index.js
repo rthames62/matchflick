@@ -13,8 +13,8 @@ const app = express();
 const port = 8080;
 
 app.use(express.static(`${__dirname}/public`));
-
-app.use(json());
+// app.use(json({limit: '50mb'}));
+app.use(json({limit: '50mb'}));
 // app.use(cors());
 require("./masterRoutes.js")(app);
 mongoose.connect(mongoUri);

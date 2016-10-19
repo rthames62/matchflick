@@ -27,36 +27,42 @@ function initMatch($scope, $sce, mainService, $timeout){
   }
 
   $scope.addToRatedOne = function(movie){
+    mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedOne(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
     return $scope.recommendedMovie;
   }
 
   $scope.addToRatedTwo = function(movie){
+    mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedTwo(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
     return $scope.recommendedMovie;
   }
 
   $scope.addToRatedThree = function(movie){
+    mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedThree(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
     return $scope.recommendedMovie;
   }
 
   $scope.addToRatedFour = function(movie){
+    mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedFour(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
     return $scope.recommendedMovie;
   }
 
   $scope.addToRatedFive = function(movie){
+    mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedFive(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
     return $scope.recommendedMovie;
   }
 
   $scope.addToUnseen = function(movie){
+    mainService.removeFromMatchQueue(movie._id);
     mainService.addToUnseen(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
     return $scope.recommendedMovie;

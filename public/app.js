@@ -12,6 +12,9 @@ import "./views/init.html";
 import "./views/congratulations.html";
 import "./views/loading.html";
 import "./views/instructions.html";
+import "./views/recommendations/recommendations.html";
+import "./views/favorites.html";
+import "./views/watchlist.html";
 
 //CSS
 import "./css/reset.css";
@@ -24,6 +27,9 @@ import dashboardCtrl from "./js/controllers/dashboardCtrl.js";
 import gsCtrl from "./js/controllers/gsCtrl.js";
 import loadingCtrl from "./js/controllers/loadingCtrl.js";
 import initMatchCtrl from "./js/controllers/initMatchCtrl.js";
+import matchCtrl from "./js/controllers/matchCtrl.js";
+import recommendationCtrl from "./js/controllers/recommendationCtrl.js";
+import favoritesCtrl from "./js/controllers/favoritesCtrl.js";
 
 //Services
 import mainService from "./js/services/mainService.js"
@@ -86,6 +92,26 @@ angular.module("MatchFlick", [uiRouter])
       url : "/getting-started/match/instructions",
       templateUrl : "./views/instructions.html",
       controller : gsCtrl
+    })
+    .state("match", {
+      url : "/match",
+      templateUrl : "./views/match.html",
+      controller : matchCtrl
+    })
+    .state("recommendations", {
+      url : "/recommendations",
+      templateUrl : "./views/recommendations/recommendations.html",
+      controller : recommendationCtrl
+    })
+    .state("favorites", {
+      url : "/favorites",
+      templateUrl : "./views/my-favorites.html",
+      controller : favoritesCtrl
+    })
+    .state("watchlist", {
+      url : "/watchlist",
+      templateUrl : "./views/watchlist.html",
+      controller : dashboardCtrl
     })
 })
 .controller("mainCtrl", mainCtrl)

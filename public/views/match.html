@@ -1,1 +1,29 @@
-<h1>Match</h1>
+<sidebar></sidebar>
+
+<dashnav></dashnav>
+
+<main class="getting-started match">
+  <!-- <h1>Match</h1> -->
+  <div class="welcome">
+    <div class="welcome-cont">
+      <div class="match-cont">
+        <div class="movie-poster">
+          <img movie-details ng-src="http://image.tmdb.org/t/p/w500/{{recommendedMovie.posterUrl}}" />
+          <span class="overlay"><span show-movie-details class="glyphicon glyphicon-info-sign movie-details" aria-hidden="true"></span></span>
+        </div>
+        <div class="rating-cont">
+          <ul>
+            <a ng-click="addToUnseen(recommendedMovie)"><span class="glyphicon glyphicon-eye-close not-seen" aria-hidden="true"></span></a>
+            <a ng-click="addToWatchlist(recommendedMovie)"><span class="glyphicon glyphicon-plus watchlist" aria-hidden="true"></span></a>
+            <li><a id="rateOne" ratings ng-click="addToRatedOne(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+            <li><a id="rateTwo" ratings ng-click="addToRatedTwo(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+            <li><a id="rateThree" ratings ng-click="addToRatedThree(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+            <li><a id="rateFour" ratings ng-click="addToRatedFour(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+            <li><a id="rateFive" ratings ng-click="addToRatedFive(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<movie-details-template></movie-details-template>

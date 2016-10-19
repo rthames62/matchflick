@@ -1,4 +1,5 @@
 const User = require('./User.js');
+const Movie = require('../movies/Movie.js');
 
 module.exports = {
   postUser(req, res){
@@ -56,6 +57,7 @@ module.exports = {
       .populate("ratedMoviesFive")
       .populate("unseenMovies")
       .populate("watchlist")
+      .populate("matchQueue")
       .exec(function(error, response){
           if(error){
               return res.status(500).json(error);
@@ -81,6 +83,18 @@ module.exports = {
       if(error){
         return res.status(500).json(error);
       } else {
+          return res.status(201).json(response);
+      }
+    })
+  },
+  postMatchQueue(req, res){
+    User.findByIdAndUpdate(req.params.id, {$addToSet : {"matchQueue" : req.body}}, function(error, response){
+      if(error){
+        console.log("I AM already there");
+        return res.status(500).json(error);
+      } else {
+          console.log("added");
+          console.log(req.body._id);
           return res.status(201).json(response);
       }
     })
@@ -148,6 +162,93 @@ module.exports = {
       }
     })
   },
+  deleteFromTopFive(req, res){
+    User.update({_id : req.params.id}, {$pull : {"topFive" : req.body}}, function(error, response){
+      if(error){
+        return res.status(500).json(error);
+      }
+      return res.status(201).json(response);
+    })
+  },
+  getGenresByScore(req, res){
+    User.findById(req.params.id)
+      .populate("preferences.genres")
+      .exec(function(error, response){
+          if(error){
+              return res.status(500).json(error);
+            } else {
+                let sortedByScore = sortByScore(response.preferences.genres, "genreTotalScore");
+                return res.status(201).json(sortedByScore);
+            }
+      })
+  },
+  getActorsByScore(req, res){
+    User.findById(req.params.id, function(error, response){
+      if(error){
+          return res.status(500).json(error);
+        } else {
+            let newArr = pushAndFlatten(response.preferences.actors.toObject())
+            let sortedByScore = sortByScore(newArr, "actorTotalScore");
+            return res.status(201).json(sortedByScore);
+        }
+    })
+  },
+  getDirectorsByScore(req, res){
+    User.findById(req.params.id, function(error, response){
+      if(error){
+          return res.status(500).json(error);
+        } else {
+            let newArr = pushAndFlatten(response.preferences.directors.toObject())
+            let sortedByScore = sortByScore(newArr, "directorTotalScore");
+            return res.status(201).json(sortedByScore);
+        }
+    })
+  },
+  getProducersByScore(req, res){
+    User.findById(req.params.id, function(error, response){
+      if(error){
+          return res.status(500).json(error);
+        } else {
+            let newArr = pushAndFlatten(response.preferences.producers.toObject())
+            let sortedByScore = sortByScore(newArr, "producerTotalScore");
+            return res.status(201).json(sortedByScore);
+        }
+    })
+  },
+  getWritersByScore(req, res){
+    User.findById(req.params.id, function(error, response){
+      if(error){
+          return res.status(500).json(error);
+        } else {
+            let newArr = pushAndFlatten(response.preferences.writers.toObject())
+            let sortedByScore = sortByScore(newArr, "writerTotalScore");
+            return res.status(201).json(sortedByScore);
+        }
+    })
+  },
+  getKeywordsByScore(req, res){
+    User.findById(req.params.id, function(error, response){
+      if(error){
+          return res.status(500).json(error);
+        } else {
+            let newArr = pushAndFlatten(response.preferences.keywords.toObject())
+            let sortedByScore = sortByScore(newArr, "keywordTotalScore");
+            return res.status(201).json(sortedByScore);
+        }
+    })
+  },
+  getDecadesByScore(req, res){
+    User.findById(req.params.id)
+      .populate("preferences.decades")
+      .exec(function(error, response){
+          if(error){
+              return res.status(500).json(error);
+            } else {
+                let sortedByScore = sortByScore(response.preferences.decades, "decadeTotalScore");
+                return res.status(201).json(sortedByScore);
+            }
+      })
+  },
   postGenrePref(req, res){
     User.findById(req.params.id, function(error, user){
       if(error){
@@ -156,7 +257,7 @@ module.exports = {
       if(user){
         if(user.preferences.genres.length === 0) {
           User.findByIdAndUpdate(req.params.id, {$push : {"preferences.genres" : req.body}}, function(err, updatedUser){
-            console.log("no genres", req.body.genreId);
+            // console.log("no genres", req.body.genreId);
             if(err){
               return res.status(500).json(err);
             } else {
@@ -166,24 +267,24 @@ module.exports = {
         } else {
           let found = false;
           for (let i = 0; i < user.preferences.genres.length; i++) {
-            console.log(user.preferences.genres[i].genreId, req.body.genreId);
             if(user.preferences.genres[i].genreId === req.body.genreId){
-              console.log(user.preferences.genres[i].genreId, req.body.genreId);
-              console.log("found genre", i, req.body.genreId);
               let updatedCount = user.preferences.genres[i].genreCount += 1;
-              let updatedScore = user.preferences.genres[i].genreScore += req.body.genreScore;
+              let updatedScore = user.preferences.genres[i].genreTotalScore += req.body.genreTotalScore;
               user.preferences.genres[i] = {
                 "genreName" : req.body.genreName,
-                "genreScore" : updatedScore,
+                "genreScore" : updatedScore / updatedCount,
+                "genreTotalScore" : updatedScore,
                 "genreCount" : updatedCount,
                 "genreId" : req.body.genreId
               }
 
               User.findByIdAndUpdate(req.params.id, {$set : {"preferences.genres" : user.preferences.genres}}, function(err, updatedUser){
                 if(err){
+                  // console.log("err2");
                   return res.status(500).json(err);
                 } else {
-                    return res.status(201).json(updatedUser);
+                  console.log("done7");
+                  return res.status(201).json(updatedUser.preferences.genres);
                 }
               })
               found = true;
@@ -192,10 +293,11 @@ module.exports = {
           }
           if(!found) {
             User.findByIdAndUpdate(req.params.id, {$push : {"preferences.genres" : req.body}}, function(err, updatedUser){
-              console.log("no match", req.body.genreId);
+              // console.log("no match", req.body.genreId);
               if(err){
                 return res.status(500).json(err);
               } else {
+                console.log("done7");
                   return res.status(201).json(updatedUser);
               }
             })
@@ -203,38 +305,42 @@ module.exports = {
         }
       }
   })
-},
-postLeadActorPref(req, res){
+  },
+  postActorPref(req, res){
   User.findById(req.params.id, function(error, user){
+    let firstLetter = checkForNum(req.body.actorName);
+    let arr = user.preferences.actors[firstLetter];
     if(error){
       return res.status(500).json(error);
     }
     if(user){
-      if(user.preferences.leadActors.length === 0) {
-        User.findByIdAndUpdate(req.params.id, {$push : {"preferences.leadActors" : req.body}}, function(err, updatedUser){
+      if(arr.length === 0) {
+        User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.actors.${firstLetter}`] : req.body}}, function(err, updatedUser){
           if(err){
             return res.status(500).json(err);
           } else {
-              return res.status(201).json(updatedUser);
+            return res.status(201).json(updatedUser);
           }
         })
       } else {
         let found = false;
-        for (let i = 0; i < user.preferences.leadActors.length; i++) {
-          if(user.preferences.leadActors[i].castId === req.body.castId){
-            let updatedCount = user.preferences.leadActors[i].leadActorCount += 1;
-            let updatedScore = user.preferences.leadActors[i].leadActorScore += req.body.leadActorScore;
-            user.preferences.leadActors[i] = {
-              "leadActorName" : req.body.leadActorName,
-              "leadActorScore" : updatedScore,
-              "leadActorCount" : updatedCount,
-              "castId" : req.body.castId
+        for (let i = 0; i < arr.length; i++) {
+          if(arr[i].castId === req.body.castId){
+            let updatedCount = arr[i].actorCount += 1;
+            let updatedScore = arr[i].actorTotalScore += req.body.actorTotalScore;
+            arr[i] = {
+              "actorName" : arr[i].actorName,
+              "actorScore" : updatedScore / updatedCount,
+              "actorTotalScore" : updatedScore,
+              "actorCount" : updatedCount,
+              "castId" : arr[i].castId
             }
 
-            User.findByIdAndUpdate(req.params.id, {$set : {"preferences.leadActors" : user.preferences.leadActors}}, function(err, updatedUser){
+            User.findByIdAndUpdate(req.params.id, {$set : {[`preferences.actors.${firstLetter}`] : arr}}, function(err, updatedUser){
               if(err){
                 return res.status(500).json(err);
               } else {
+                console.log("done6");
                   return res.status(201).json(updatedUser);
               }
             })
@@ -243,220 +349,244 @@ postLeadActorPref(req, res){
           }
         }
         if(!found) {
-          User.findByIdAndUpdate(req.params.id, {$push : {"preferences.leadActors" : req.body}}, function(err, updatedUser){
+          User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.actors.${firstLetter}`] : req.body}}, function(err, updatedUser){
             if(err){
               return res.status(500).json(err);
             } else {
+              console.log("done6");
                 return res.status(201).json(updatedUser);
             }
           })
         }
       }
     }
-})
+  })
 },
 postDirectorPref(req, res){
-  User.findById(req.params.id, function(error, user){
-    if(error){
-      return res.status(500).json(error);
-    }
-    if(user){
-      if(user.preferences.directors.length === 0) {
-        User.findByIdAndUpdate(req.params.id, {$push : {"preferences.directors" : req.body}}, function(err, updatedUser){
-          if(err){
-            return res.status(500).json(err);
-          } else {
-              return res.status(201).json(updatedUser);
-          }
-        })
-      } else {
-        let found = false;
-        for (let i = 0; i < user.preferences.directors.length; i++) {
-          if(user.preferences.directors[i].crewId === req.body.crewId){
-            let updatedCount = user.preferences.directors[i].directorCount += 1;
-            let updatedScore = user.preferences.directors[i].directorScore += req.body.directorScore;
-            user.preferences.directors[i] = {
-              "directorName" : req.body.directorName,
-              "directorScore" : updatedScore,
-              "directorCount" : updatedCount,
-              "crewId" : req.body.crewId
-            }
-
-            User.findByIdAndUpdate(req.params.id, {$set : {"preferences.directors" : user.preferences.directors}}, function(err, updatedUser){
-              if(err){
-                return res.status(500).json(err);
-              } else {
-                  return res.status(201).json(updatedUser);
-              }
-            })
-            found = true;
-            break;
-          }
+User.findById(req.params.id, function(error, user){
+  let firstLetter = checkForNum(req.body.directorName);
+  let arr = user.preferences.directors[firstLetter];
+  if(error){
+    return res.status(500).json(error);
+  }
+  if(user){
+    if(arr.length === 0) {
+      User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.directors.${firstLetter}`] : req.body}}, function(err, updatedUser){
+        if(err){
+          return res.status(500).json(err);
+        } else {
+          return res.status(201).json(updatedUser);
         }
-        if(!found) {
-          User.findByIdAndUpdate(req.params.id, {$push : {"preferences.directors" : req.body}}, function(err, updatedUser){
+      })
+    } else {
+      let found = false;
+      for (let i = 0; i < arr.length; i++) {
+        if(arr[i].crewId === req.body.crewId){
+          let updatedCount = arr[i].directorCount += 1;
+          let updatedScore = arr[i].directorTotalScore += req.body.directorTotalScore;
+          arr[i] = {
+            "directorName" : arr[i].directorName,
+            "directorScore" : updatedScore / updatedCount,
+            "directorTotalScore" : updatedScore,
+            "directorCount" : updatedCount,
+            "crewId" : arr[i].crewId
+          }
+
+          User.findByIdAndUpdate(req.params.id, {$set : {[`preferences.directors.${firstLetter}`] : arr}}, function(err, updatedUser){
             if(err){
               return res.status(500).json(err);
             } else {
-                return res.status(201).json(updatedUser);
+              console.log("done5");
+                return res.status(201).json(updatedUser.preferences.directors);
             }
           })
+          found = true;
+          break;
         }
       }
-    }
-})
-},
-postProducerPref(req, res){
-  User.findById(req.params.id, function(error, user){
-    if(error){
-      return res.status(500).json(error);
-    }
-    if(user){
-      if(user.preferences.producers.length === 0) {
-        User.findByIdAndUpdate(req.params.id, {$push : {"preferences.producers" : req.body}}, function(err, updatedUser){
+      if(!found) {
+        User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.directors.${firstLetter}`] : req.body}}, function(err, updatedUser){
           if(err){
             return res.status(500).json(err);
           } else {
+            console.log("done5");
               return res.status(201).json(updatedUser);
           }
         })
-      } else {
-        let found = false;
-        for (let i = 0; i < user.preferences.producers.length; i++) {
-          if(user.preferences.producers[i].crewId === req.body.crewId){
-            let updatedCount = user.preferences.producers[i].producerCount += 1;
-            let updatedScore = user.preferences.producers[i].producerScore += req.body.producerScore;
-            user.preferences.producers[i] = {
-              "producerName" : req.body.producerName,
-              "producerScore" : updatedScore,
-              "producerCount" : updatedCount,
-              "crewId" : req.body.crewId
-            }
-
-            User.findByIdAndUpdate(req.params.id, {$set : {"preferences.producers" : user.preferences.producers}}, function(err, updatedUser){
-              if(err){
-                return res.status(500).json(err);
-              } else {
-                  return res.status(201).json(updatedUser);
-              }
-            })
-            found = true;
-            break;
-          }
-        }
-        if(!found) {
-          User.findByIdAndUpdate(req.params.id, {$push : {"preferences.producers" : req.body}}, function(err, updatedUser){
-            if(err){
-              return res.status(500).json(err);
-            } else {
-                return res.status(201).json(updatedUser);
-            }
-          })
-        }
       }
     }
-})
-},
-postWriterPref(req, res){
-  User.findById(req.params.id, function(error, user){
-    if(error){
-      return res.status(500).json(error);
-    }
-    if(user){
-      if(user.preferences.writers.length === 0) {
-        User.findByIdAndUpdate(req.params.id, {$push : {"preferences.writers" : req.body}}, function(err, updatedUser){
-          if(err){
-            return res.status(500).json(err);
-          } else {
-              return res.status(201).json(updatedUser);
-          }
-        })
-      } else {
-        let found = false;
-        for (let i = 0; i < user.preferences.writers.length; i++) {
-          if(user.preferences.writers[i].crewId === req.body.crewId){
-            let updatedCount = user.preferences.writers[i].writerCount += 1;
-            let updatedScore = user.preferences.writers[i].writerScore += req.body.writerScore;
-            user.preferences.writers[i] = {
-              "writerName" : req.body.writerName,
-              "writerScore" : updatedScore,
-              "writerCount" : updatedCount,
-              "crewId" : req.body.crewId
-            }
-
-            User.findByIdAndUpdate(req.params.id, {$set : {"preferences.writers" : user.preferences.writers}}, function(err, updatedUser){
-              if(err){
-                return res.status(500).json(err);
-              } else {
-                  return res.status(201).json(updatedUser);
-              }
-            })
-            found = true;
-            break;
-          }
-        }
-        if(!found) {
-          User.findByIdAndUpdate(req.params.id, {$push : {"preferences.writers" : req.body}}, function(err, updatedUser){
-            if(err){
-              return res.status(500).json(err);
-            } else {
-                return res.status(201).json(updatedUser);
-            }
-          })
-        }
-      }
-    }
+  }
 })
 },
 postKeywordPref(req, res){
-  User.findById(req.params.id, function(error, user){
-    if(error){
-      return res.status(500).json(error);
-    }
-    if(user){
-      if(user.preferences.keywords.length === 0) {
-        User.findByIdAndUpdate(req.params.id, {$push : {"preferences.keywords" : req.body}}, function(err, updatedUser){
-          if(err){
-            return res.status(500).json(err);
-          } else {
-              return res.status(201).json(updatedUser);
-          }
-        })
-      } else {
-        let found = false;
-        for (let i = 0; i < user.preferences.keywords.length; i++) {
-          if(user.preferences.keywords[i].keywordId === req.body.keywordId){
-            let updatedCount = user.preferences.keywords[i].keywordCount += 1;
-            let updatedScore = user.preferences.keywords[i].keywordScore += req.body.keywordScore;
-            user.preferences.keywords[i] = {
-              "keywordName" : req.body.keywordName,
-              "keywordScore" : updatedScore,
-              "keywordCount" : updatedCount,
-              "keywordId" : req.body.keywordId
-            }
-
-            User.findByIdAndUpdate(req.params.id, {$set : {"preferences.keywords" : user.preferences.keywords}}, function(err, updatedUser){
-              if(err){
-                return res.status(500).json(err);
-              } else {
-                  return res.status(201).json(updatedUser);
-              }
-            })
-            found = true;
-            break;
-          }
+User.findById(req.params.id, function(error, user){
+  let firstLetter = checkForNum(req.body.keywordName);
+  let arr = user.preferences.keywords[firstLetter];
+  console.log("woorrrdddd", req.body.keywordName);
+  console.log("first letterrrrrr", firstLetter);
+  if(error){
+    return res.status(500).json(error);
+  }
+  if(user){
+    // console.log("araayyyyyyyy", arr);
+    if(arr.length === 0) {
+      User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.keywords.${firstLetter}`] : req.body}}, function(err, updatedUser){
+        if(err){
+          return res.status(500).json(err);
+        } else {
+          return res.status(201).json(updatedUser);
         }
-        if(!found) {
-          User.findByIdAndUpdate(req.params.id, {$push : {"preferences.keywords" : req.body}}, function(err, updatedUser){
+      })
+    } else {
+      let found = false;
+      for (let i = 0; i < arr.length; i++) {
+        if(arr[i].keywordId === req.body.keywordId){
+          let updatedCount = arr[i].keywordCount += 1;
+          let updatedScore = arr[i].keywordTotalScore += req.body.keywordTotalScore;
+          arr[i] = {
+            "keywordName" : arr[i].keywordName,
+            "keywordScore" : updatedScore / updatedCount,
+            "keywordTotalScore" : updatedScore,
+            "keywordCount" : updatedCount,
+            "keywordId" : arr[i].keywordId
+          }
+
+          User.findByIdAndUpdate(req.params.id, {$set : {[`preferences.keywords.${firstLetter}`] : arr}}, function(err, updatedUser){
             if(err){
               return res.status(500).json(err);
             } else {
-                return res.status(201).json(updatedUser);
+              console.log("done4");
+                return res.status(201).json(updatedUser.preferences.keywords);
             }
           })
+          found = true;
+          break;
         }
       }
+      if(!found) {
+        User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.keywords.${firstLetter}`] : req.body}}, function(err, updatedUser){
+          if(err){
+            return res.status(500).json(err);
+          } else {
+            console.log("done4");
+              return res.status(201).json(updatedUser);
+          }
+        })
+      }
     }
+  }
+})
+},
+postProducerPref(req, res){
+User.findById(req.params.id, function(error, user){
+  let firstLetter = checkForNum(req.body.producerName);
+  let arr = user.preferences.producers[firstLetter];
+  if(error){
+    return res.status(500).json(error);
+  }
+  if(user){
+    if(arr.length === 0) {
+      User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.producers.${firstLetter}`] : req.body}}, function(err, updatedUser){
+        if(err){
+          return res.status(500).json(err);
+        } else {
+          return res.status(201).json(updatedUser);
+        }
+      })
+    } else {
+      let found = false;
+      for (let i = 0; i < arr.length; i++) {
+        if(arr[i].crewId === req.body.crewId){
+          let updatedCount = arr[i].producerCount += 1;
+          let updatedScore = arr[i].producerTotalScore += req.body.producerTotalScore;
+          arr[i] = {
+            "producerName" : arr[i].producerName,
+            "producerScore" : updatedScore / updatedCount,
+            "producerTotalScore" : updatedScore,
+            "producerCount" : updatedCount,
+            "crewId" : arr[i].crewId
+          }
+
+          User.findByIdAndUpdate(req.params.id, {$set : {[`preferences.producers.${firstLetter}`] : arr}}, function(err, updatedUser){
+            if(err){
+              return res.status(500).json(err);
+            } else {
+              console.log("done3");
+                return res.status(201).json(updatedUser.preferences.producers);
+            }
+          })
+          found = true;
+          break;
+        }
+      }
+      if(!found) {
+        User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.producers.${firstLetter}`] : req.body}}, function(err, updatedUser){
+          if(err){
+            return res.status(500).json(err);
+          } else {
+            console.log("done3");
+              return res.status(201).json(updatedUser);
+          }
+        })
+      }
+    }
+  }
+})
+},
+postWriterPref(req, res){
+User.findById(req.params.id, function(error, user){
+  let firstLetter = checkForNum(req.body.writerName);
+  let arr = user.preferences.writers[firstLetter];
+  if(error){
+    return res.status(500).json(error);
+  }
+  if(user){
+    if(arr.length === 0) {
+      User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.writers.${firstLetter}`] : req.body}}, function(err, updatedUser){
+        if(err){
+          return res.status(500).json(err);
+        } else {
+          return res.status(201).json(updatedUser);
+        }
+      })
+    } else {
+      let found = false;
+      for (let i = 0; i < arr.length; i++) {
+        if(arr[i].crewId === req.body.crewId){
+          let updatedCount = arr[i].writerCount += 1;
+          let updatedScore = arr[i].writerTotalScore += req.body.writerTotalScore;
+          arr[i] = {
+            "writerName" : arr[i].writerName,
+            "writerScore" : updatedScore / updatedCount,
+            "writerTotalScore" : updatedScore,
+            "writerCount" : updatedCount,
+            "crewId" : arr[i].crewId
+          }
+
+          User.findByIdAndUpdate(req.params.id, {$set : {[`preferences.writers.${firstLetter}`] : arr}}, function(err, updatedUser){
+            if(err){
+              return res.status(500).json(err);
+            } else {
+              console.log("done2");
+                return res.status(201).json(updatedUser.preferences.writers);
+            }
+          })
+          found = true;
+          break;
+        }
+      }
+      if(!found) {
+        User.findByIdAndUpdate(req.params.id, {$push : {[`preferences.writers.${firstLetter}`] : req.body}}, function(err, updatedUser){
+          if(err){
+            return res.status(500).json(err);
+          } else {
+            console.log("done2");
+              return res.status(201).json(updatedUser);
+          }
+        })
+      }
+    }
+  }
 })
 },
 postDecadePref(req, res){
@@ -467,6 +597,7 @@ postDecadePref(req, res){
     if(user){
       if(user.preferences.decades.length === 0) {
         User.findByIdAndUpdate(req.params.id, {$push : {"preferences.decades" : req.body}}, function(err, updatedUser){
+          // console.log("no genres", req.body.genreId);
           if(err){
             return res.status(500).json(err);
           } else {
@@ -476,20 +607,23 @@ postDecadePref(req, res){
       } else {
         let found = false;
         for (let i = 0; i < user.preferences.decades.length; i++) {
-          if(user.preferences.decades[i].decadeName === req.body.decadeName){
+          if(user.preferences.decades[i].decadeId === req.body.decadeId){
             let updatedCount = user.preferences.decades[i].decadeCount += 1;
-            let updatedScore = user.preferences.decades[i].decadeScore += req.body.decadeScore;
+            let updatedScore = user.preferences.decades[i].decadeTotalScore += req.body.decadeTotalScore;
             user.preferences.decades[i] = {
               "decadeName" : req.body.decadeName,
-              "decadeScore" : updatedScore,
+              "decadeScore" : updatedScore / updatedCount,
+              "decadeTotalScore" : updatedScore,
               "decadeCount" : updatedCount
             }
 
             User.findByIdAndUpdate(req.params.id, {$set : {"preferences.decades" : user.preferences.decades}}, function(err, updatedUser){
               if(err){
+                // console.log("err2");
                 return res.status(500).json(err);
               } else {
-                  return res.status(201).json(updatedUser);
+                console.log("done1");
+                return res.status(201).json(updatedUser.preferences.decades);
               }
             })
             found = true;
@@ -498,9 +632,11 @@ postDecadePref(req, res){
         }
         if(!found) {
           User.findByIdAndUpdate(req.params.id, {$push : {"preferences.decades" : req.body}}, function(err, updatedUser){
+            // console.log("no match", req.body.genreId);
             if(err){
               return res.status(500).json(err);
             } else {
+              console.log("done1");
                 return res.status(201).json(updatedUser);
             }
           })
@@ -509,12 +645,57 @@ postDecadePref(req, res){
     }
 })
 },
-  deleteFromTopFive(req, res){
-    User.update({_id : req.params.id}, {$pull : {"topFive" : req.body}}, function(error, response){
-      if(error){
-        return res.status(500).json(error);
-      }
-      return res.status(201).json(response);
-    })
-  }
+removeFromMatchQueue(req, res){
+  User.findByIdAndUpdate(req.params.id, {$pull : {"matchQueue" : {$in : [req.body]}}}, {safe : true, upsert : true, new : true}, function(error, response){
+    if (error) {
+      console.log("error");
+      // console.log(error);
+      return res.status(500).json(error);
+    } else {
+      console.log("response");
+      // console.log(response);
+      return res.status(201).json(response.matchQueue);
+    }
+  })
+}
+
+
+
+} //end of object
+
+
+
+
+
+// ******************************************************************************** //
+// ******************************************************************************** //
+
+// HELPER FUNCTIONS
+
+// ******************************************************************************** //
+// ******************************************************************************** //
+
+function sortByScore(array, key) {
+  return array.sort(function(a, b) {
+      var y = a[key]; var x = b[key];
+      return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+  });
+}
+
+function pushAndFlatten(myObj){
+	var newArr = [];
+	for(var myProp in myObj){
+		newArr.push(myObj[myProp])
+	}
+	newArr = [].concat.apply([], newArr);
+	return [].concat.apply([], newArr);
+}
+
+function checkForNum(str){
+	let first = str.slice(0,1);
+	if(Number.isInteger(parseInt(first))){
+		return "num";
+	} else {
+		return first.toLowerCase();
+	}
 }
