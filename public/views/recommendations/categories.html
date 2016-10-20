@@ -1,0 +1,46 @@
+<sidebar></sidebar>
+
+<dashnav></dashnav>
+
+<main class="center">
+  <div class="genres-wrapper">
+    <h1>What are you in the mood for?</h1>
+    <div ng-class="action" ng-click="selectGenre('action', '28')" class="genre action">
+      <span>Action</span>
+    </div>
+    <div ng-class="adventure" ng-click="selectGenre('adventure', '12')" class="genre adventure">
+      <span>Adventure</span>
+    </div>
+    <div ng-class="animation" ng-click="selectGenre('animation', '16')" class="genre animation">
+      <span>Animated</span>
+    </div>
+    <div ng-class="comedy" ng-click="selectGenre('comedy', '35')" class="genre comedy">
+      <span>Comedy</span>
+    </div>
+    <div ng-class="drama" ng-click="selectGenre('drama', '18')" class="genre drama">
+      <span>Drama</span>
+    </div>
+    <div ng-class="fantasy" ng-click="selectGenre('fantasy', '14')" class="genre fantasy">
+      <span>Fantasy</span>
+    </div>
+    <div ng-class="mystery" ng-click="selectGenre('mystery', '9648')" class="genre mystery">
+      <span>Mystery</span>
+    </div>
+    <div ng-class="romance" ng-click="selectGenre('romance', '10749')" class="genre romance">
+      <span>Romance</span>
+    </div>
+    <div ng-class="scifi" ng-click="selectGenre('scifi', '878')" class="genre scifi">
+      <span>Science Fiction</span>
+    </div>
+    <div ng-class="thriller" ng-click="selectGenre('thriller', '53')" class="genre thriller">
+      <span>Thriller</span>
+    </div>
+    <div ng-class="war" ng-click="selectGenre('war', '10752')" class="genre war">
+      <span>War</span>
+    </div>
+    <div ng-class="western" ng-click="selectGenre('western', '37')" class="genre western">
+      <span>Western</span>
+    </div>
+    <a><button class="default recommend" type="button" ng-disabled="hasOne" ng-click="getRecommendationsByGenre()">Recommend Movies</button></a>
+  </div>
+</main>

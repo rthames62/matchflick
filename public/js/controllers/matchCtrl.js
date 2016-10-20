@@ -1,5 +1,14 @@
 function matchCtrl($scope, $http, $sce, $timeout, mainService){
 
+  $scope.done = mainService.done;
+
+  $scope.$watch("done", function(newValue, oldValue){
+    console.log(newValue, oldValue);
+    if (newValue === 1) {
+      console.log("yay");
+    }
+  }, true)
+
   $scope.getInitMatchQueue = function(){
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
@@ -20,7 +29,9 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        if ($scope.recommendedMovie.videos.length > 0) {
+            $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        }
         console.log($scope.recommendedMovie);
         return $scope.recommendedMovie;
       } else {
@@ -54,7 +65,9 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        if ($scope.recommendedMovie.videos.length > 0) {
+            $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        }
         console.log($scope.recommendedMovie);
         return $scope.recommendedMovie;
       } else {
@@ -90,7 +103,9 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        if ($scope.recommendedMovie.videos.length > 0) {
+            $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        }
         console.log($scope.recommendedMovie);
         return $scope.recommendedMovie;
       } else {
@@ -125,7 +140,9 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        if ($scope.recommendedMovie.videos.length > 0) {
+            $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        }
         console.log($scope.recommendedMovie);
         return $scope.recommendedMovie;
       } else {
@@ -160,7 +177,9 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        if ($scope.recommendedMovie.videos.length > 0) {
+            $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        }
         console.log($scope.recommendedMovie);
         return $scope.recommendedMovie;
       } else {
@@ -176,6 +195,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
 
   $scope.addToRatedFive = function(movie){
     mainService.removeFromMatchQueue(movie._id);
+    $scope.done = mainService.addToRatedFive(movie);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
         console.log("ratings", results);
@@ -195,7 +215,9 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        if ($scope.recommendedMovie.videos.length > 0) {
+            $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        }
         console.log($scope.recommendedMovie);
         return $scope.recommendedMovie;
       } else {
@@ -206,7 +228,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         }, 200)
       }
     })
-    mainService.addToRatedFive(movie);
   }
 
   $scope.addToUnseen = function(movie){
@@ -230,8 +251,12 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         console.log($scope.recommendedMovie);
+        console.log($scope.recommendedMovie.popularity);
+        console.log($scope.recommendedMovie.language);
+        if ($scope.recommendedMovie.videos.length > 0) {
+            $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+        }
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){

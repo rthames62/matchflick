@@ -20,18 +20,10 @@ function favoritesCtrl($scope, $state, mainService){
     return $scope.ratedThree;
   }
 
-  $scope.getWatchlist = function(){
-    $scope.watchlist = mainService.getWatchlist();
-    return $scope.watchlist;
-  }
-
   $scope.getTopFive();
   $scope.getRatedFive();
   $scope.getRatedFour();
   $scope.getRatedThree();
-  $scope.getWatchlist();
-
-  $state.reload();
 }
 
 module.exports = favoritesCtrl;

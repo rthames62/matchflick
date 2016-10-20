@@ -45,6 +45,8 @@ import ratings from "./js/directives/ratings.js";
 import movieDetails from "./js/directives/movieDetails.js";
 import showMovieDetails from "./js/directives/showMovieDetails.js";
 import movieDetailsTemplate from "./js/directives/movieDetailsTemplate.js";
+import watchlistDetails from "./js/directives/watchlistDetails.js";
+import genreSelect from "./js/directives/genreSelect.js";
 
 angular.module("MatchFlick", [uiRouter])
 .config(function($stateProvider, $urlRouterProvider){
@@ -103,6 +105,11 @@ angular.module("MatchFlick", [uiRouter])
       templateUrl : "./views/recommendations/recommendations.html",
       controller : recommendationCtrl
     })
+    .state("pickagenre", {
+      url : "/recommendations/genre",
+      templateUrl : "./views/recommendations/categories.html",
+      controller : recommendationCtrl
+    })
     .state("favorites", {
       url : "/favorites",
       templateUrl : "./views/my-favorites.html",
@@ -126,3 +133,5 @@ angular.module("MatchFlick", [uiRouter])
 .directive("movieDetails", movieDetails)
 .directive("showMovieDetails", showMovieDetails)
 .directive("movieDetailsTemplate", movieDetailsTemplate)
+.directive("watchlistDetails", watchlistDetails)
+.directive("genreSelect", genreSelect)

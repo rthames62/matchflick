@@ -8,6 +8,10 @@ function dashboardCtrl($scope, $http, mainService){
     mainService.getMoviesFromDiscover();
   }
 
+  $scope.removePorn = function(){
+    mainService.removePorn();
+  }
+
   $scope.getUserGenrePrefs = function(){
     mainService.getUserGenrePrefs().then(function(response){
       $scope.userGenrePrefs = response;
@@ -57,6 +61,13 @@ function dashboardCtrl($scope, $http, mainService){
       return $scope.userDecadePrefs;
     })
   }
+
+  $scope.getWatchlist = function(){
+    $scope.watchlist = mainService.getWatchlist();
+    return $scope.watchlist;
+  }
+
+  $scope.getWatchlist();
 }
 
 module.exports = dashboardCtrl;

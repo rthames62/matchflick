@@ -647,6 +647,7 @@ postDecadePref(req, res){
 },
 removeFromMatchQueue(req, res){
   User.findByIdAndUpdate(req.params.id, {$pull : {"matchQueue" : {$in : [req.body]}}}, {safe : true, upsert : true, new : true}, function(error, response){
+    console.log("start");
     if (error) {
       console.log("error");
       // console.log(error);

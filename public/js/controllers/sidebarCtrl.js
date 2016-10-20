@@ -14,7 +14,7 @@ function sidebarCtrl($scope, $http, mainService){
       $("a#dashboard").addClass("active");
     } else if ($scope.currentPage === "/match"){
       $("a#match").addClass("active");
-    } else if ($scope.currentPage === "/recommendations"){
+    } else if ($scope.currentPage.slice(0, 15) === "/recommendations"){
       $("a#recommendations").addClass("active");
     } else if ($scope.currentPage === "/favorites"){
       $("a#favorites").addClass("active");

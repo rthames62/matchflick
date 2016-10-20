@@ -87,95 +87,103 @@
 	
 	__webpack_require__(/*! ./views/instructions.html */ 14);
 	
-	__webpack_require__(/*! ./views/recommendations/recommendations.html */ 42);
+	__webpack_require__(/*! ./views/recommendations/recommendations.html */ 15);
 	
-	__webpack_require__(/*! ./views/favorites.html */ 41);
+	__webpack_require__(/*! ./views/favorites.html */ 16);
 	
-	__webpack_require__(/*! ./views/watchlist.html */ 43);
+	__webpack_require__(/*! ./views/watchlist.html */ 17);
 	
-	__webpack_require__(/*! ./css/reset.css */ 15);
+	__webpack_require__(/*! ./css/reset.css */ 18);
 	
-	__webpack_require__(/*! ./css/main.css */ 19);
+	__webpack_require__(/*! ./css/main.css */ 22);
 	
-	var _mainCtrl = __webpack_require__(/*! ./js/controllers/mainCtrl.js */ 21);
+	var _mainCtrl = __webpack_require__(/*! ./js/controllers/mainCtrl.js */ 24);
 	
 	var _mainCtrl2 = _interopRequireDefault(_mainCtrl);
 	
-	var _loginCtrl = __webpack_require__(/*! ./js/controllers/loginCtrl.js */ 22);
+	var _loginCtrl = __webpack_require__(/*! ./js/controllers/loginCtrl.js */ 25);
 	
 	var _loginCtrl2 = _interopRequireDefault(_loginCtrl);
 	
-	var _dashboardCtrl = __webpack_require__(/*! ./js/controllers/dashboardCtrl.js */ 23);
+	var _dashboardCtrl = __webpack_require__(/*! ./js/controllers/dashboardCtrl.js */ 26);
 	
 	var _dashboardCtrl2 = _interopRequireDefault(_dashboardCtrl);
 	
-	var _gsCtrl = __webpack_require__(/*! ./js/controllers/gsCtrl.js */ 24);
+	var _gsCtrl = __webpack_require__(/*! ./js/controllers/gsCtrl.js */ 27);
 	
 	var _gsCtrl2 = _interopRequireDefault(_gsCtrl);
 	
-	var _loadingCtrl = __webpack_require__(/*! ./js/controllers/loadingCtrl.js */ 25);
+	var _loadingCtrl = __webpack_require__(/*! ./js/controllers/loadingCtrl.js */ 29);
 	
 	var _loadingCtrl2 = _interopRequireDefault(_loadingCtrl);
 	
-	var _initMatchCtrl = __webpack_require__(/*! ./js/controllers/initMatchCtrl.js */ 26);
+	var _initMatchCtrl = __webpack_require__(/*! ./js/controllers/initMatchCtrl.js */ 30);
 	
 	var _initMatchCtrl2 = _interopRequireDefault(_initMatchCtrl);
 	
-	var _matchCtrl = __webpack_require__(/*! ./js/controllers/matchCtrl.js */ 38);
+	var _matchCtrl = __webpack_require__(/*! ./js/controllers/matchCtrl.js */ 31);
 	
 	var _matchCtrl2 = _interopRequireDefault(_matchCtrl);
 	
-	var _recommendationCtrl = __webpack_require__(/*! ./js/controllers/recommendationCtrl.js */ 40);
+	var _recommendationCtrl = __webpack_require__(/*! ./js/controllers/recommendationCtrl.js */ 32);
 	
 	var _recommendationCtrl2 = _interopRequireDefault(_recommendationCtrl);
 	
-	var _favoritesCtrl = __webpack_require__(/*! ./js/controllers/favoritesCtrl.js */ 44);
+	var _favoritesCtrl = __webpack_require__(/*! ./js/controllers/favoritesCtrl.js */ 33);
 	
 	var _favoritesCtrl2 = _interopRequireDefault(_favoritesCtrl);
 	
-	var _mainService = __webpack_require__(/*! ./js/services/mainService.js */ 27);
+	var _mainService = __webpack_require__(/*! ./js/services/mainService.js */ 34);
 	
 	var _mainService2 = _interopRequireDefault(_mainService);
 	
-	var _navbar = __webpack_require__(/*! ./js/directives/navbar.js */ 28);
+	var _navbar = __webpack_require__(/*! ./js/directives/navbar.js */ 35);
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _sidebar = __webpack_require__(/*! ./js/directives/sidebar.js */ 29);
+	var _sidebar = __webpack_require__(/*! ./js/directives/sidebar.js */ 36);
 	
 	var _sidebar2 = _interopRequireDefault(_sidebar);
 	
-	var _dashNav = __webpack_require__(/*! ./js/directives/dashNav.js */ 30);
+	var _dashNav = __webpack_require__(/*! ./js/directives/dashNav.js */ 38);
 	
 	var _dashNav2 = _interopRequireDefault(_dashNav);
 	
-	var _favSearchResults = __webpack_require__(/*! ./js/directives/favSearchResults.js */ 31);
+	var _favSearchResults = __webpack_require__(/*! ./js/directives/favSearchResults.js */ 39);
 	
 	var _favSearchResults2 = _interopRequireDefault(_favSearchResults);
 	
-	var _enterSubmit = __webpack_require__(/*! ./js/directives/enterSubmit.js */ 32);
+	var _enterSubmit = __webpack_require__(/*! ./js/directives/enterSubmit.js */ 40);
 	
 	var _enterSubmit2 = _interopRequireDefault(_enterSubmit);
 	
-	var _trashMovie = __webpack_require__(/*! ./js/directives/trashMovie.js */ 33);
+	var _trashMovie = __webpack_require__(/*! ./js/directives/trashMovie.js */ 41);
 	
 	var _trashMovie2 = _interopRequireDefault(_trashMovie);
 	
-	var _ratings = __webpack_require__(/*! ./js/directives/ratings.js */ 34);
+	var _ratings = __webpack_require__(/*! ./js/directives/ratings.js */ 42);
 	
 	var _ratings2 = _interopRequireDefault(_ratings);
 	
-	var _movieDetails = __webpack_require__(/*! ./js/directives/movieDetails.js */ 35);
+	var _movieDetails = __webpack_require__(/*! ./js/directives/movieDetails.js */ 43);
 	
 	var _movieDetails2 = _interopRequireDefault(_movieDetails);
 	
-	var _showMovieDetails = __webpack_require__(/*! ./js/directives/showMovieDetails.js */ 36);
+	var _showMovieDetails = __webpack_require__(/*! ./js/directives/showMovieDetails.js */ 44);
 	
 	var _showMovieDetails2 = _interopRequireDefault(_showMovieDetails);
 	
-	var _movieDetailsTemplate = __webpack_require__(/*! ./js/directives/movieDetailsTemplate.js */ 37);
+	var _movieDetailsTemplate = __webpack_require__(/*! ./js/directives/movieDetailsTemplate.js */ 45);
 	
 	var _movieDetailsTemplate2 = _interopRequireDefault(_movieDetailsTemplate);
+	
+	var _watchlistDetails = __webpack_require__(/*! ./js/directives/watchlistDetails.js */ 46);
+	
+	var _watchlistDetails2 = _interopRequireDefault(_watchlistDetails);
+	
+	var _genreSelect = __webpack_require__(/*! ./js/directives/genreSelect.js */ 47);
+	
+	var _genreSelect2 = _interopRequireDefault(_genreSelect);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -230,6 +238,10 @@
 	    url: "/recommendations",
 	    templateUrl: "./views/recommendations/recommendations.html",
 	    controller: _recommendationCtrl2.default
+	  }).state("pickagenre", {
+	    url: "/recommendations/genre",
+	    templateUrl: "./views/recommendations/categories.html",
+	    controller: _recommendationCtrl2.default
 	  }).state("favorites", {
 	    url: "/favorites",
 	    templateUrl: "./views/my-favorites.html",
@@ -239,7 +251,7 @@
 	    templateUrl: "./views/watchlist.html",
 	    controller: _dashboardCtrl2.default
 	  });
-	}).controller("mainCtrl", _mainCtrl2.default).service("mainService", _mainService2.default).directive("navbar", _navbar2.default).directive("sidebar", _sidebar2.default).directive("dashnav", _dashNav2.default).directive("favSearchResults", _favSearchResults2.default).directive("enterSubmit", _enterSubmit2.default).directive("trashMovie", _trashMovie2.default).directive("ratings", _ratings2.default).directive("movieDetails", _movieDetails2.default).directive("showMovieDetails", _showMovieDetails2.default).directive("movieDetailsTemplate", _movieDetailsTemplate2.default);
+	}).controller("mainCtrl", _mainCtrl2.default).service("mainService", _mainService2.default).directive("navbar", _navbar2.default).directive("sidebar", _sidebar2.default).directive("dashnav", _dashNav2.default).directive("favSearchResults", _favSearchResults2.default).directive("enterSubmit", _enterSubmit2.default).directive("trashMovie", _trashMovie2.default).directive("ratings", _ratings2.default).directive("movieDetails", _movieDetails2.default).directive("showMovieDetails", _showMovieDetails2.default).directive("movieDetailsTemplate", _movieDetailsTemplate2.default).directive("watchlistDetails", _watchlistDetails2.default).directive("genreSelect", _genreSelect2.default);
 	
 	//Services
 	
@@ -36651,7 +36663,7 @@
   \*************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1 style=\"margin-bottom:20px;\">Dashboard</h1>\n  <!-- <button ng-click=\"getUserGenrePrefs()\">Get Genre Prefs</button> -->\n  <ul>\n\n  <button ng-click=\"discoverForMatch()\" style=\"color:black;\">1</button>\n  <button ng-click=\"getMoviesFromDiscover()\" style=\"color:black;\">2</button>\n\n    <!-- <h2>Genres</h2>\n    <li ng-repeat=\"genrePref in userGenrePrefs\">{{genrePref.genreName}} - {{genrePref.genreTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Actors</h2>\n    <li ng-repeat=\"actorPref in userActorPrefs\">{{actorPref.actorName}} - {{actorPref.actorTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Directors</h2>\n    <li ng-repeat=\"directorPref in userDirectorPrefs\">{{directorPref.directorName}} - {{directorPref.directorTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Producers</h2>\n    <li ng-repeat=\"producerPref in userProducerPrefs\">{{producerPref.producerName}} - {{producerPref.producerTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Writers</h2>\n    <li ng-repeat=\"writerPref in userWriterPrefs\">{{writerPref.writerName}} - {{writerPref.writerTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Keywords</h2>\n    <li ng-repeat=\"keywordPref in userKeywordPrefs\">{{keywordPref.keywordName}} - {{keywordPref.keywordTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Decades</h2>\n    <li ng-repeat=\"decadePref in userDecadePrefs\">{{decadePref.decadeName}} - {{decadePref.decadeTotalScore}}</li>\n  </ul> -->\n</main>\n";
+	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1 style=\"margin-bottom:20px;\">Dashboard</h1>\n  <!-- <button ng-click=\"getUserGenrePrefs()\">Get Genre Prefs</button> -->\n  <ul>\n\n  <button ng-click=\"discoverForMatch()\" style=\"color:black;\">1</button>\n  <button ng-click=\"getMoviesFromDiscover()\" style=\"color:black;\">2</button>\n  <button ng-click=\"removePorn()\" style=\"color:black;\">Remove Porn</button>\n\n    <!-- <h2>Genres</h2>\n    <li ng-repeat=\"genrePref in userGenrePrefs\">{{genrePref.genreName}} - {{genrePref.genreTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Actors</h2>\n    <li ng-repeat=\"actorPref in userActorPrefs\">{{actorPref.actorName}} - {{actorPref.actorTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Directors</h2>\n    <li ng-repeat=\"directorPref in userDirectorPrefs\">{{directorPref.directorName}} - {{directorPref.directorTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Producers</h2>\n    <li ng-repeat=\"producerPref in userProducerPrefs\">{{producerPref.producerName}} - {{producerPref.producerTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Writers</h2>\n    <li ng-repeat=\"writerPref in userWriterPrefs\">{{writerPref.writerName}} - {{writerPref.writerTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Keywords</h2>\n    <li ng-repeat=\"keywordPref in userKeywordPrefs\">{{keywordPref.keywordName}} - {{keywordPref.keywordTotalScore}}</li>\n  </ul>\n\n  <ul>\n    <h2>Decades</h2>\n    <li ng-repeat=\"decadePref in userDecadePrefs\">{{decadePref.decadeName}} - {{decadePref.decadeTotalScore}}</li>\n  </ul> -->\n</main>\n";
 
 /***/ },
 /* 9 */
@@ -36709,6 +36721,33 @@
 
 /***/ },
 /* 15 */
+/*!***********************************************************!*\
+  !*** ./public/views/recommendations/recommendations.html ***!
+  \***********************************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1>My Recommendations</h1>\n</main>\n";
+
+/***/ },
+/* 16 */
+/*!*************************************!*\
+  !*** ./public/views/favorites.html ***!
+  \*************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <div class=\"welcome-cont\">\n      <h1 class=\"top-five\">What are 5 of your favorite movies?</h1>\n      <div class=\"top-movie-search\">\n        <span class=\"glyphicon glyphicon-search search-icon\" aria-hidden=\"true\"></span>\n        <input ng-model=\"searchQuery\" type=\"text\" placeholder=\"Search for a movie...\" enter-submit=\"queryFavMovies(searchQuery)\">\n        <!-- <button class=\"search\" type=\"button\" ng-Enter=\"queryFavMovies(searchQuery)\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></button> -->\n\n        <ul class=\"top-five-results\">\n          <li ng-repeat=\"movie in topFive\">\n            <img trash-movie ng-src=\"{{movie.posterUrl}}\" />\n            <span class=\"remove-from-top-five\">\n              <span ng-click=\"removeFromTopFive(movie)\" class=\"glyphicon glyphicon-trash trash\" aria-hidden=\"true\"></span>\n            </span>\n          </li>\n        </ul>\n\n        <a ui-sref=\"initMatch\"><button class=\"gs-btn default\" type=\"button\" ng-disabled=\"reachFive\">Next</button></a>\n      </div>\n      <fav-search-results></fav-search-results>\n    </div>\n  </div>\n</main>\n";
+
+/***/ },
+/* 17 */
+/*!*************************************!*\
+  !*** ./public/views/watchlist.html ***!
+  \*************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1>My Watchlist</h1>\n  <ul class=\"watchlist\">\n    <li watchlist-details class=\"movie-poster\" ng-repeat=\"movie in watchlist\">\n      <img ng-src=\"{{movie.posterUrl}}\" />\n      <span class=\"overlay\"><span show-movie-details class=\"glyphicon glyphicon-info-sign movie-details\" aria-hidden=\"true\"></span></span>\n    </li>\n  </ul>\n</main>\n\n<movie-details-template></movie-details-template>\n";
+
+/***/ },
+/* 18 */
 /*!******************************!*\
   !*** ./public/css/reset.css ***!
   \******************************/
@@ -36717,10 +36756,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./reset.css */ 16);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./reset.css */ 19);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 18)(content, {});
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 21)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -36737,13 +36776,13 @@
 	}
 
 /***/ },
-/* 16 */
+/* 19 */
 /*!*********************************************!*\
   !*** ./~/css-loader!./public/css/reset.css ***!
   \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 17)();
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 20)();
 	// imports
 	
 	
@@ -36754,7 +36793,7 @@
 
 
 /***/ },
-/* 17 */
+/* 20 */
 /*!**************************************!*\
   !*** ./~/css-loader/lib/css-base.js ***!
   \**************************************/
@@ -36813,7 +36852,7 @@
 
 
 /***/ },
-/* 18 */
+/* 21 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
@@ -37068,7 +37107,7 @@
 
 
 /***/ },
-/* 19 */
+/* 22 */
 /*!*****************************!*\
   !*** ./public/css/main.css ***!
   \*****************************/
@@ -37077,10 +37116,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./main.css */ 20);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./main.css */ 23);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 18)(content, {});
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 21)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -37097,24 +37136,24 @@
 	}
 
 /***/ },
-/* 20 */
+/* 23 */
 /*!********************************************!*\
   !*** ./~/css-loader!./public/css/main.css ***!
   \********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 17)();
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 20)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "body {\n  background-color: #181818;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n}\n\nh1 {\n  font-size: 30px;\n}\n\nh3 {\n  font-size: 30px;\n  text-align: left;\n  margin: 20px 0;\n}\n\np {\n  font-weight: 300;\n  letter-spacing: 1px;\n  line-height: 18px;\n  font-size: 14px;\n  color: #ddd;\n}\n\na {\n  color: #FC7100;\n  text-decoration: none;\n  cursor: pointer;\n}\n\nb, strong {\n  font-weight: bold;\n}\n\nbutton.default {\n  font-size: 18px;\n  border: 0;\n  border-bottom: 4px solid #FF4F09;\n  padding: 12px 22px;\n  color: #fff;\n  background-color: #FC7100;\n  border-radius: 3px;\n}\n\nbutton:disabled {\n  /*background-color: #ccc;*/\n  opacity: .5;\n  cursor: not-allowed;\n}\n\nbutton:focus, input:focus {outline:0;}\n\nui-view, navbar, sidebar, dashnav, fav-search-results {\n  display: block;\n}\n\nnav {\n  padding: 15px;\n  background: #282828;\n}\n\nnav > img.logo {\n  width: 250px;\n}\n\ndiv.user {\n  float: right;\n}\n\nmain.getting-started {\n  width: 100%;\n  height: calc(100vh - 82px);\n  display: table;\n}\n\nmain.getting-started div.welcome {\n    text-align: center;\n    display: table-cell;\n    vertical-align: middle;\n}\n\nmain.getting-started h1 {\n    font-size: 60px;\n    margin-bottom: 10px;\n}\n\nmain.getting-started h4 {\n    font-size: 20px;\n    padding: 0 150px;\n    font-weight: 300;\n}\n\nmain.getting-started button.default {\n  width: 200px;\n  margin: 35px 15px 0;\n}\n\nsidebar {\n  width: 220px;\n  height: 100vh;\n  position: fixed;\n  background-color: #282828;\n}\n\nsidebar img.logo {\n  width: 100%;\n  padding: 15px 15px 35px 15px;\n}\n\nsidebar div.logo-cont {\n  border-bottom: 1px solid #000;\n}\n\nsidebar img.match {\n  width: 16px;\n}\n\nsidebar > ul > li {\n  border-bottom: 1px solid #000;\n}\n\nsidebar > ul > li > a > span {\n  margin-right: 10px;\n}\n\nsidebar span.match {\n  margin-right: 6px;\n}\n\nsidebar > ul > li > a {\n  width: 100%;\n  padding: 15px 4px 15px 15px;\n  display: block;\n  color: #fff;\n  transition: all ease .2s;\n}\n\nsidebar > ul > li > a:hover {\n  background-color: #2d2d2d;\n  text-decoration: none;\n  color: #FC7100;\n}\n\nsidebar > ul > li > a.active {\n  border-left: 4px solid #FC7100;\n  background-color: #2d2d2d;\n}\n\ndashnav {\n  width: calc(100% - 220px);\n  position: fixed;\n  top: 0;\n  right: 0;\n  padding: 10px;\n  /*background-color: rgba(0, 0, 0, 0.5);*/\n}\n\ndiv.user-info img.profile {\n  border-radius: 50%;\n  height: 40px;\n  display: inline;\n  vertical-align: middle;\n  margin-right: 10px;\n}\n\ndiv.user-info p {\n  display: inline;\n  vertical-align: middle;\n}\n\ndiv.user-info {\n  float: right;\n}\n\nmain.dashboard {\n  width: calc(100% - 220px);\n  float: right;\n  padding: 20px;\n}\n\nsection.dashboard-header {\n  padding: 50px  0;\n}\n\nmain.getting-started h1.top-five {\n  font-size: 38px;\n  margin-bottom: 25px;\n}\n\ndiv.welcome-cont {\n  width: 800px;\n  margin: 0 auto;\n}\n\ndiv.top-movie-search {\n  position: relative;\n  padding-bottom: 100px;\n  min-height: 422px;\n}\n\ndiv.top-movie-search span.search-icon {\n  position: absolute;\n  top: 17px;\n  left: 20px;\n  font-size: 24px;\n  color: #A9A9A9;\n}\n\ndiv.top-movie-search input {\n  width: 100%;\n  padding: 20px 20px 20px 70px;\n  border-radius: 20px;\n  border: 0;\n  background-color: #282828;\n  color: #A9A9A9;\n  margin-bottom: 30px;\n}\n\nbutton.search {\n  color: #A9A9A9;\n  border: none;\n  background: none;\n  position: absolute;\n  right: 20px;\n  top:20px;\n}\n\nbutton.gs-btn {\n  position: absolute;\n  right: 1px;\n  bottom: 1px;\n}\n\ndiv.search-results {\n  width: 800px;\n  height: 270px;\n  overflow: scroll;\n  background: #282828;\n  position: absolute;\n  top: 42px;\n  z-index: 2;\n  display: none;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 67px;\n  bottom: 0;\n}\n\ndiv.search-results ul {\n  text-align: left;\n}\n\n.show {\n  display: block;\n}\n\nli.search-results {\n  margin: 20px;\n  display: inline-block;\n  min-height: 228px;\n}\n\nli.search-results > a > img {\n  width: 150px;\n  height: 225px;\n}\n\nul.top-five-results {\n  text-align: left;\n}\n\nul.top-five-results > li {\n  display: inline-block;\n  margin: 10px;\n  position: relative;\n}\n\nul.top-five-results > li > img {\n  width: 140px;\n  height: 210px;\n}\n\nimg.loading {\n  position: absolute;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nspan.remove-from-top-five {\n  position: absolute;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  font-size: 30px;\n  background-color: rgba(0,0,0,.7);\n  padding-top: 85px;\n  visibility: hidden;\n  text-align: center;\n}\n\nspan.trash {\n  transition: .2s ease all;\n}\n\nspan.trash:hover {\n  transform: scale(1.4);\n}\n\ndiv.movie-poster > img {\n  width: 350px;\n  border: 8px solid #282828;\n  border-bottom: none;\n}\n\ndiv.rating-cont {\n  background: #282828;\n  padding: 10px;\n  width: 350px;\n  margin: -3px auto 0;\n  position: relative;\n}\n\ndiv.rating-cont ul li {\n  display: inline-block;\n\n}\n\ndiv.rating-cont img {\n  width: 20px;\n  filter: grayscale(100%);\n}\n\ndiv.rating-cont img.rate-color {\n  filter: grayscale(0%);\n}\n\ndiv.rating-cont span.not-seen {\n  position: absolute;\n  top: 15px;\n  left: 13px;\n  font-size: 20px;\n  color: #929292;\n}\n\ndiv.rating-cont span.watchlist {\n  position: absolute;\n  top: 15px;\n  right: 13px;\n  font-size: 20px;\n  color: #929292;\n}\n\ndiv.match-cont div.movie-poster {\n  position: relative;\n  width: 350px;\n  margin: 0 auto;\n}\n\ndiv.movie-poster span.overlay {\n  position: absolute;\n  margin: auto;\n  left: 8px;\n  right: 8px;\n  top: 8px;\n  bottom: 3px;\n  font-size: 50px;\n  background-color: rgba(0,0,0,.4);\n  visibility: hidden;\n  text-align: center;\n  padding-top: 250px;\n}\n\nspan.movie-details {\n  transition: .2s ease all;\n}\n\nspan.movie-details:hover {\n  transform: scale(1.4);\n}\n\ndiv.movie-details {\n  width: 100%;\n  height: 100vh;\n  position: absolute;\n  display: none;\n  z-index: 9;\n  top: 0;\n  background-color: #282828;\n  padding: 25px;\n  overflow: hidden;\n}\n\ndiv.movie-details span.close-details {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  font-size: 24px;\n  color: #fff;\n  transition: .2s ease all;\n}\n\ndiv.movie-details span.close-details:hover {\n  transform: scale(1.2);\n}\n\ndiv.movie-details div.details {\n  display: inline-block;\n  height: 100%;\n  vertical-align: top;\n  width: calc(100% - 285px);\n  padding: 0 15px;\n  overflow: scroll;\n}\n\ndiv.movie-details div.movie-details-poster {\n  display: inline-block;\n  position: relative;\n}\n\ndiv.movie-details div.movie-details-poster img {\n  width: 280px;\n}\n\ndiv.movie-details h1 {\n  font-size: 40px;\n  margin-bottom: 12px;\n}\n\ndiv.movie-details p {\n  margin-bottom: 10px;\n}\ndiv.movie-details p.genres {\n  font-size: 14px;\n  color: #979797;\n}\n\ndiv.movie-details ul.cast {\n  width: 100%;\n  height: 310px;\n  padding: 15px;\n  overflow-x: auto;\n  white-space: nowrap;\n  background-color: #333;\n}\n\ndiv.movie-details ul.cast p {\n  text-align: center;\n  font-size: 12px;\n  margin-bottom: 5px;\n  letter-spacing: 0;\n  line-height: 16px;\n  white-space: normal;\n  display: table-cell;\n  vertical-align: middle;\n}\n\ndiv.movie-details ul.cast > li {\n  display: inline-block;\n  width: 140px;\n  vertical-align: top;\n  margin-right: 15px;\n  background: #282828;\n}\n\ndiv.movie-details ul.cast > li > img {\n  width: 140px;\n  vertical-align: top;\n  height: 210px;\n}\n\ndiv.movie-details h4 {\n  font-size: 24px;\n  color: #979797;\n  margin-bottom: 11px;\n  margin-top: 20px;\n}\n\ndiv.movie-details ul.cast div.info {\n  height: 70px;\n  padding: 0 5px;\n  display: table;\n  margin: 0 auto;\n}\n\ndiv.movie-details a.trailer {\n  margin-bottom: 17px;\n  transition: .2s ease all;\n  display: block;\n}\n\ndiv.movie-details a.trailer:hover {\n  text-decoration: none;\n  color:#fff;\n}\n\ndiv.trailer-modal {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: rgba(0,0,0,.9);\n  z-index: 12;\n  display: none;\n}\n\ndiv#trailer-video > iframe {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n}\n\ndiv.trailer-modal > span#close-trailer {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  font-size: 24px;\n  transition: .2s ease all;\n}\n\ndiv.trailer-modal > span#close-trailer:hover {\n  transform: scale(1.2);\n}\n\nmain.dashboard ul {\n  margin-bottom: 20px;\n}\n\nmain.match {\n  width: calc(100% - 220px);\n  height: 100vh;\n  display: table;\n  right: 0;\n  position: fixed;\n}\n\ndiv.imdbStar {\n  background: url(http://ia.media-imdb.com/images/G/01/imdb/images/title/title_overview_sprite-2406345693._V_.png);\n  background-position: -15px -118px;\n  font-size: 11px;\n  height: 40px;\n  line-height: 13px;\n  padding: 2px 0 0 34px;\n  width: 40px;\n  display: inline-block;\n}\n\ndiv.rt-fresh {\n  background: url(http://www.tomatoflix.com/static/fresh.png);\n  height: 31px;\n  width: 30px;\n  background-size: cover;\n  display: inline-block;\n  margin-right: 20px;\n}\n\ndiv.rt-rotten {\n  background: url(http://www.tomatoflix.com/static/rotten.png);\n  height: 31px;\n  width: 30px;\n  background-size: cover;\n  display: inline-block;\n  margin-right: 20px;\n}\n\nimg.imdb-logo {\n  width: 100px !important;\n  display: block;\n  margin: 0 auto 8px;\n}\n\ndiv.movie-details-poster h6 {\n  display: inline-block;\n  font-size: 34px;\n  vertical-align: top;\n  padding-top: 5px;\n}\n\nspan.out-of-ten {\n  color: #5C5C5C;\n  font-size: 12px;\n}\n\np.votes {\n  color: #5C5C5C;\n  font-size: 15px;\n  text-align: right;\n}\n\ndiv.imdb-wrapper {\n  margin-top: 15px;\n  width: 120px;\n  position: absolute;\n}\n\ndiv.rt-wrapper {\n  margin-top: 15px;\n  width: 120px;\n  position: absolute;\n  right: 0;\n}\n\ndiv.rating-wrapper {\n  display: inline-block;\n\n}\n\nimg.rt-logo {\n  width: 75px !important;\n  display: block;\n  margin: 0 auto 8px;\n}\n\nmain.my-favorites {\n  width: calc(100% - 220px);\n  padding: 20px;\n  float: right;\n}\n\nsection.favorites-cont {\n  margin-top: 25px;\n  padding: 20px 20px 10px 20px;\n  background-color: #1e1e1e;\n}\n\nul.movies-wrapper > li {\n  display: inline-block;\n}\n\nul.movies-wrapper > li > img {\n  width: 140px;\n  height: 210px;\n  margin: 10px;\n}\n\nsection.favorites-cont > h3 {\n  margin: 0 0 15px 0;\n}\n\nul.movies-wrapper {\n  width: 100%;\n  overflow-x: auto;\n  white-space: nowrap;\n  padding-bottom: 20px;\n}\n\ndiv.flames > img {\n  width: 25px;\n  margin-bottom: 15px;\n}\n\nul.watchlist {\n  margin-top: 20px;\n}\n\nul.watchlist img {\n  width: 200px;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #181818;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n}\n\nh1 {\n  font-size: 30px;\n}\n\nh3 {\n  font-size: 30px;\n  text-align: left;\n  margin: 20px 0;\n}\n\np {\n  font-weight: 300;\n  letter-spacing: 1px;\n  line-height: 18px;\n  font-size: 14px;\n  color: #ddd;\n}\n\na {\n  color: #FC7100;\n  text-decoration: none;\n  cursor: pointer;\n}\n\nb, strong {\n  font-weight: bold;\n}\n\nbutton.default {\n  font-size: 18px;\n  border: 0;\n  border-bottom: 4px solid #FF4F09;\n  padding: 12px 22px;\n  color: #fff;\n  background-color: #FC7100;\n  border-radius: 3px;\n}\n\nbutton:disabled {\n  /*background-color: #ccc;*/\n  opacity: .5;\n  cursor: not-allowed;\n}\n\nbutton:focus, input:focus {outline:0;}\n\nui-view, navbar, sidebar, dashnav, fav-search-results {\n  display: block;\n}\n\nnav {\n  padding: 15px;\n  background: #282828;\n}\n\nnav > img.logo {\n  width: 250px;\n}\n\ndiv.user {\n  float: right;\n}\n\nmain.getting-started {\n  width: 100%;\n  height: calc(100vh - 82px);\n  display: table;\n}\n\nmain.getting-started div.welcome {\n    text-align: center;\n    display: table-cell;\n    vertical-align: middle;\n}\n\nmain.getting-started h1 {\n    font-size: 60px;\n    margin-bottom: 10px;\n}\n\nmain.getting-started h4 {\n    font-size: 20px;\n    padding: 0 150px;\n    font-weight: 300;\n}\n\nmain.getting-started button.default {\n  width: 200px;\n  margin: 35px 15px 0;\n}\n\nsidebar {\n  width: 220px;\n  height: 100vh;\n  position: fixed;\n  background-color: #282828;\n}\n\nsidebar img.logo {\n  width: 100%;\n  padding: 15px 15px 35px 15px;\n}\n\nsidebar div.logo-cont {\n  border-bottom: 1px solid #000;\n}\n\nsidebar img.match {\n  width: 16px;\n}\n\nsidebar > ul > li {\n  border-bottom: 1px solid #000;\n}\n\nsidebar > ul > li > a > span {\n  margin-right: 10px;\n}\n\nsidebar span.match {\n  margin-right: 6px;\n}\n\nsidebar > ul > li > a {\n  width: 100%;\n  padding: 15px 4px 15px 15px;\n  display: block;\n  color: #fff;\n  transition: all ease .2s;\n}\n\nsidebar > ul > li > a:hover {\n  background-color: #2d2d2d;\n  text-decoration: none;\n  color: #FC7100;\n}\n\nsidebar > ul > li > a.active {\n  border-left: 4px solid #FC7100;\n  background-color: #2d2d2d;\n}\n\ndashnav {\n  width: calc(100% - 220px);\n  position: fixed;\n  top: 0;\n  right: 0;\n  padding: 10px;\n  /*background-color: rgba(0, 0, 0, 0.5);*/\n}\n\ndiv.user-info img.profile {\n  border-radius: 50%;\n  height: 40px;\n  display: inline;\n  vertical-align: middle;\n  margin-right: 10px;\n}\n\ndiv.user-info p {\n  display: inline;\n  vertical-align: middle;\n}\n\ndiv.user-info {\n  float: right;\n}\n\nmain.dashboard {\n  width: calc(100% - 220px);\n  float: right;\n  padding: 20px;\n}\n\nsection.dashboard-header {\n  padding: 50px  0;\n}\n\nmain.getting-started h1.top-five {\n  font-size: 38px;\n  margin-bottom: 25px;\n}\n\ndiv.welcome-cont {\n  width: 800px;\n  margin: 0 auto;\n}\n\ndiv.top-movie-search {\n  position: relative;\n  padding-bottom: 100px;\n  min-height: 422px;\n}\n\ndiv.top-movie-search span.search-icon {\n  position: absolute;\n  top: 17px;\n  left: 20px;\n  font-size: 24px;\n  color: #A9A9A9;\n}\n\ndiv.top-movie-search input {\n  width: 100%;\n  padding: 20px 20px 20px 70px;\n  border-radius: 20px;\n  border: 0;\n  background-color: #282828;\n  color: #A9A9A9;\n  margin-bottom: 30px;\n}\n\nbutton.search {\n  color: #A9A9A9;\n  border: none;\n  background: none;\n  position: absolute;\n  right: 20px;\n  top:20px;\n}\n\nbutton.gs-btn {\n  position: absolute;\n  right: 1px;\n  bottom: 1px;\n}\n\ndiv.search-results {\n  width: 800px;\n  height: 270px;\n  overflow: scroll;\n  background: #282828;\n  position: absolute;\n  top: 42px;\n  z-index: 2;\n  display: none;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 67px;\n  bottom: 0;\n}\n\ndiv.search-results ul {\n  text-align: left;\n}\n\n.show {\n  display: block;\n}\n\nli.search-results {\n  margin: 20px;\n  display: inline-block;\n  min-height: 228px;\n}\n\nli.search-results > a > img {\n  width: 150px;\n  height: 225px;\n}\n\nul.top-five-results {\n  text-align: left;\n}\n\nul.top-five-results > li {\n  display: inline-block;\n  margin: 10px;\n  position: relative;\n}\n\nul.top-five-results > li > img {\n  width: 140px;\n  height: 210px;\n}\n\nimg.loading {\n  position: absolute;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nspan.remove-from-top-five {\n  position: absolute;\n  margin: auto;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  font-size: 30px;\n  background-color: rgba(0,0,0,.7);\n  padding-top: 85px;\n  visibility: hidden;\n  text-align: center;\n}\n\nspan.trash {\n  transition: .2s ease all;\n}\n\nspan.trash:hover {\n  transform: scale(1.4);\n}\n\ndiv.movie-poster > img {\n  width: 350px;\n  border: 8px solid #282828;\n  border-bottom: none;\n}\n\ndiv.rating-cont {\n  background: #282828;\n  padding: 10px;\n  width: 350px;\n  margin: -3px auto 0;\n  position: relative;\n}\n\ndiv.rating-cont ul li {\n  display: inline-block;\n\n}\n\ndiv.rating-cont img {\n  width: 20px;\n  filter: grayscale(100%);\n}\n\ndiv.rating-cont img.rate-color {\n  filter: grayscale(0%);\n}\n\ndiv.rating-cont span.not-seen {\n  position: absolute;\n  top: 15px;\n  left: 13px;\n  font-size: 20px;\n  color: #929292;\n}\n\ndiv.rating-cont span.watchlist {\n  position: absolute;\n  top: 15px;\n  right: 13px;\n  font-size: 20px;\n  color: #929292;\n}\n\ndiv.match-cont div.movie-poster {\n  position: relative;\n  width: 350px;\n  margin: 0 auto;\n}\n\ndiv.movie-poster span.overlay {\n  position: absolute;\n  margin: auto;\n  left: 8px;\n  right: 8px;\n  top: 8px;\n  bottom: 3px;\n  font-size: 50px;\n  background-color: rgba(0,0,0,.4);\n  visibility: hidden;\n  text-align: center;\n  padding-top: 250px;\n}\n\nli.movie-poster span.overlay {\n  position: absolute;\n  margin: auto;\n  left: 0px;\n  right: 0px;\n  top: 0px;\n  bottom: 0px;\n  font-size: 50px;\n  background-color: rgba(0,0,0,.4);\n  visibility: hidden;\n  text-align: center;\n  padding-top: 120px;\n}\n\nspan.movie-details {\n  transition: .2s ease all;\n}\n\nspan.movie-details:hover {\n  transform: scale(1.4);\n}\n\ndiv.movie-details {\n  width: 100%;\n  height: 100vh;\n  position: absolute;\n  display: none;\n  z-index: 9;\n  top: 0;\n  background-color: #282828;\n  padding: 25px;\n  overflow: hidden;\n}\n\ndiv.movie-details span.close-details {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  font-size: 24px;\n  color: #fff;\n  transition: .2s ease all;\n}\n\ndiv.movie-details span.close-details:hover {\n  transform: scale(1.2);\n}\n\ndiv.movie-details div.details {\n  display: inline-block;\n  height: 100%;\n  vertical-align: top;\n  width: calc(100% - 285px);\n  padding: 0 15px;\n  overflow: scroll;\n}\n\ndiv.movie-details div.movie-details-poster {\n  display: inline-block;\n  position: relative;\n}\n\ndiv.movie-details div.movie-details-poster img {\n  width: 280px;\n}\n\ndiv.movie-details h1 {\n  font-size: 40px;\n  margin-bottom: 12px;\n}\n\ndiv.movie-details p {\n  margin-bottom: 10px;\n}\ndiv.movie-details p.genres {\n  font-size: 14px;\n  color: #979797;\n}\n\ndiv.movie-details ul.cast {\n  width: 100%;\n  height: 310px;\n  padding: 15px;\n  overflow-x: auto;\n  white-space: nowrap;\n  background-color: #333;\n}\n\ndiv.movie-details ul.cast p {\n  text-align: center;\n  font-size: 12px;\n  margin-bottom: 5px;\n  letter-spacing: 0;\n  line-height: 16px;\n  white-space: normal;\n  display: table-cell;\n  vertical-align: middle;\n}\n\ndiv.movie-details ul.cast > li {\n  display: inline-block;\n  width: 140px;\n  vertical-align: top;\n  margin-right: 15px;\n  background: #282828;\n}\n\ndiv.movie-details ul.cast > li > img {\n  width: 140px;\n  vertical-align: top;\n  height: 210px;\n}\n\ndiv.movie-details h4 {\n  font-size: 24px;\n  color: #979797;\n  margin-bottom: 11px;\n  margin-top: 20px;\n}\n\ndiv.movie-details ul.cast div.info {\n  height: 70px;\n  padding: 0 5px;\n  display: table;\n  margin: 0 auto;\n}\n\ndiv.movie-details a.trailer {\n  margin-bottom: 17px;\n  transition: .2s ease all;\n  display: block;\n}\n\ndiv.movie-details a.trailer:hover {\n  text-decoration: none;\n  color:#fff;\n}\n\ndiv.trailer-modal {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: rgba(0,0,0,.9);\n  z-index: 12;\n  display: none;\n}\n\ndiv#trailer-video > iframe {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n}\n\ndiv.trailer-modal > span#close-trailer {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  font-size: 24px;\n  transition: .2s ease all;\n}\n\ndiv.trailer-modal > span#close-trailer:hover {\n  transform: scale(1.2);\n}\n\nmain.dashboard ul {\n  margin-bottom: 20px;\n}\n\nmain.match {\n  width: calc(100% - 220px);\n  height: 100vh;\n  display: table;\n  right: 0;\n  position: fixed;\n}\n\ndiv.imdbStar {\n  background: url(http://ia.media-imdb.com/images/G/01/imdb/images/title/title_overview_sprite-2406345693._V_.png);\n  background-position: -15px -118px;\n  font-size: 11px;\n  height: 40px;\n  line-height: 13px;\n  padding: 2px 0 0 34px;\n  width: 40px;\n  display: inline-block;\n}\n\ndiv.rt-fresh {\n  background: url(http://www.tomatoflix.com/static/fresh.png);\n  height: 31px;\n  width: 30px;\n  background-size: cover;\n  display: inline-block;\n  margin-right: 20px;\n}\n\ndiv.rt-rotten {\n  background: url(http://www.tomatoflix.com/static/rotten.png);\n  height: 31px;\n  width: 30px;\n  background-size: cover;\n  display: inline-block;\n  margin-right: 20px;\n}\n\nimg.imdb-logo {\n  width: 100px !important;\n  display: block;\n  margin: 0 auto 8px;\n}\n\ndiv.movie-details-poster h6 {\n  display: inline-block;\n  font-size: 34px;\n  vertical-align: top;\n  padding-top: 5px;\n}\n\nspan.out-of-ten {\n  color: #5C5C5C;\n  font-size: 12px;\n}\n\np.votes {\n  color: #5C5C5C;\n  font-size: 15px;\n  text-align: right;\n}\n\ndiv.imdb-wrapper {\n  margin-top: 15px;\n  width: 120px;\n  position: absolute;\n}\n\ndiv.rt-wrapper {\n  margin-top: 15px;\n  width: 120px;\n  position: absolute;\n  right: 0;\n}\n\ndiv.rating-wrapper {\n  display: inline-block;\n\n}\n\nimg.rt-logo {\n  width: 75px !important;\n  display: block;\n  margin: 0 auto 8px;\n}\n\nmain.my-favorites {\n  width: calc(100% - 220px);\n  padding: 20px;\n  float: right;\n}\n\nsection.favorites-cont {\n  margin-top: 25px;\n  padding: 20px 20px 10px 20px;\n  background-color: #1e1e1e;\n}\n\nul.movies-wrapper > li {\n  display: inline-block;\n}\n\nul.movies-wrapper > li > img {\n  width: 140px;\n  height: 210px;\n  margin: 10px;\n}\n\nsection.favorites-cont > h3 {\n  margin: 0 0 15px 0;\n}\n\nul.movies-wrapper {\n  width: 100%;\n  overflow-x: auto;\n  white-space: nowrap;\n  padding-bottom: 20px;\n}\n\ndiv.flames > img {\n  width: 25px;\n  margin-bottom: 15px;\n}\n\nul.watchlist {\n  margin-top: 20px;\n}\n\nul.watchlist img {\n  width: 200px;\n}\n\nli.movie-poster {\n  display: inline-block;\n  margin: 20px;\n  position: relative;\n}\n\nmain.center {\n  height: 100vh;\n  width: calc(100vw - 220px);\n  float: right;\n  padding: 20px;\n  display: table;\n}\n\ndiv.genres-wrapper {\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n  position: relative;;\n}\n\ndiv.genres-wrapper h1 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\ndiv.genre {\n  display: inline-block;\n  background-color: #1F1F1F;\n  padding: 35px 0;\n  margin: 10px;\n  text-align: center;\n  width: 175px;\n  transition: .2s ease all;\n}\n\ndiv.genre:hover {\n  background-color: #282828;\n  transform: scale(1.1);\n  cursor: pointer;\n}\n\n.genre-selected{\nbackground-color: #FC7100 !important;\n}\n\ndiv.genres-wrapper button.recommend {\n  padding: 16px 30px;\n  margin-top: 20px;\n}\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 21 */
+/* 24 */
 /*!*******************************************!*\
   !*** ./public/js/controllers/mainCtrl.js ***!
   \*******************************************/
@@ -37137,7 +37176,7 @@
 	module.exports = mainCtrl;
 
 /***/ },
-/* 22 */
+/* 25 */
 /*!********************************************!*\
   !*** ./public/js/controllers/loginCtrl.js ***!
   \********************************************/
@@ -37150,7 +37189,7 @@
 	module.exports = loginCtrl;
 
 /***/ },
-/* 23 */
+/* 26 */
 /*!************************************************!*\
   !*** ./public/js/controllers/dashboardCtrl.js ***!
   \************************************************/
@@ -37166,6 +37205,10 @@
 	
 	  $scope.getMoviesFromDiscover = function () {
 	    mainService.getMoviesFromDiscover();
+	  };
+	
+	  $scope.removePorn = function () {
+	    mainService.removePorn();
 	  };
 	
 	  $scope.getUserGenrePrefs = function () {
@@ -37217,18 +37260,25 @@
 	      return $scope.userDecadePrefs;
 	    });
 	  };
+	
+	  $scope.getWatchlist = function () {
+	    $scope.watchlist = mainService.getWatchlist();
+	    return $scope.watchlist;
+	  };
+	
+	  $scope.getWatchlist();
 	}
 	
 	module.exports = dashboardCtrl;
 
 /***/ },
-/* 24 */
+/* 27 */
 /*!*****************************************!*\
   !*** ./public/js/controllers/gsCtrl.js ***!
   \*****************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
 	
 	function gsCtrl($scope, $timeout, mainService) {
 	  $scope.reachFive = true;
@@ -37279,9 +37329,10239 @@
 	}
 	
 	module.exports = gsCtrl;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
 
 /***/ },
-/* 25 */
+/* 28 */
+/*!*********************************!*\
+  !*** ./~/jquery/dist/jquery.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	 * jQuery JavaScript Library v3.1.1
+	 * https://jquery.com/
+	 *
+	 * Includes Sizzle.js
+	 * https://sizzlejs.com/
+	 *
+	 * Copyright jQuery Foundation and other contributors
+	 * Released under the MIT license
+	 * https://jquery.org/license
+	 *
+	 * Date: 2016-09-22T22:30Z
+	 */
+	( function( global, factory ) {
+	
+		"use strict";
+	
+		if ( typeof module === "object" && typeof module.exports === "object" ) {
+	
+			// For CommonJS and CommonJS-like environments where a proper `window`
+			// is present, execute the factory and get jQuery.
+			// For environments that do not have a `window` with a `document`
+			// (such as Node.js), expose a factory as module.exports.
+			// This accentuates the need for the creation of a real `window`.
+			// e.g. var jQuery = require("jquery")(window);
+			// See ticket #14549 for more info.
+			module.exports = global.document ?
+				factory( global, true ) :
+				function( w ) {
+					if ( !w.document ) {
+						throw new Error( "jQuery requires a window with a document" );
+					}
+					return factory( w );
+				};
+		} else {
+			factory( global );
+		}
+	
+	// Pass this if window is not defined yet
+	} )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
+	
+	// Edge <= 12 - 13+, Firefox <=18 - 45+, IE 10 - 11, Safari 5.1 - 9+, iOS 6 - 9.1
+	// throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode
+	// arguments.callee.caller (trac-13335). But as of jQuery 3.0 (2016), strict mode should be common
+	// enough that all such attempts are guarded in a try block.
+	"use strict";
+	
+	var arr = [];
+	
+	var document = window.document;
+	
+	var getProto = Object.getPrototypeOf;
+	
+	var slice = arr.slice;
+	
+	var concat = arr.concat;
+	
+	var push = arr.push;
+	
+	var indexOf = arr.indexOf;
+	
+	var class2type = {};
+	
+	var toString = class2type.toString;
+	
+	var hasOwn = class2type.hasOwnProperty;
+	
+	var fnToString = hasOwn.toString;
+	
+	var ObjectFunctionString = fnToString.call( Object );
+	
+	var support = {};
+	
+	
+	
+		function DOMEval( code, doc ) {
+			doc = doc || document;
+	
+			var script = doc.createElement( "script" );
+	
+			script.text = code;
+			doc.head.appendChild( script ).parentNode.removeChild( script );
+		}
+	/* global Symbol */
+	// Defining this global in .eslintrc.json would create a danger of using the global
+	// unguarded in another place, it seems safer to define global only for this module
+	
+	
+	
+	var
+		version = "3.1.1",
+	
+		// Define a local copy of jQuery
+		jQuery = function( selector, context ) {
+	
+			// The jQuery object is actually just the init constructor 'enhanced'
+			// Need init if jQuery is called (just allow error to be thrown if not included)
+			return new jQuery.fn.init( selector, context );
+		},
+	
+		// Support: Android <=4.0 only
+		// Make sure we trim BOM and NBSP
+		rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,
+	
+		// Matches dashed string for camelizing
+		rmsPrefix = /^-ms-/,
+		rdashAlpha = /-([a-z])/g,
+	
+		// Used by jQuery.camelCase as callback to replace()
+		fcamelCase = function( all, letter ) {
+			return letter.toUpperCase();
+		};
+	
+	jQuery.fn = jQuery.prototype = {
+	
+		// The current version of jQuery being used
+		jquery: version,
+	
+		constructor: jQuery,
+	
+		// The default length of a jQuery object is 0
+		length: 0,
+	
+		toArray: function() {
+			return slice.call( this );
+		},
+	
+		// Get the Nth element in the matched element set OR
+		// Get the whole matched element set as a clean array
+		get: function( num ) {
+	
+			// Return all the elements in a clean array
+			if ( num == null ) {
+				return slice.call( this );
+			}
+	
+			// Return just the one element from the set
+			return num < 0 ? this[ num + this.length ] : this[ num ];
+		},
+	
+		// Take an array of elements and push it onto the stack
+		// (returning the new matched element set)
+		pushStack: function( elems ) {
+	
+			// Build a new jQuery matched element set
+			var ret = jQuery.merge( this.constructor(), elems );
+	
+			// Add the old object onto the stack (as a reference)
+			ret.prevObject = this;
+	
+			// Return the newly-formed element set
+			return ret;
+		},
+	
+		// Execute a callback for every element in the matched set.
+		each: function( callback ) {
+			return jQuery.each( this, callback );
+		},
+	
+		map: function( callback ) {
+			return this.pushStack( jQuery.map( this, function( elem, i ) {
+				return callback.call( elem, i, elem );
+			} ) );
+		},
+	
+		slice: function() {
+			return this.pushStack( slice.apply( this, arguments ) );
+		},
+	
+		first: function() {
+			return this.eq( 0 );
+		},
+	
+		last: function() {
+			return this.eq( -1 );
+		},
+	
+		eq: function( i ) {
+			var len = this.length,
+				j = +i + ( i < 0 ? len : 0 );
+			return this.pushStack( j >= 0 && j < len ? [ this[ j ] ] : [] );
+		},
+	
+		end: function() {
+			return this.prevObject || this.constructor();
+		},
+	
+		// For internal use only.
+		// Behaves like an Array's method, not like a jQuery method.
+		push: push,
+		sort: arr.sort,
+		splice: arr.splice
+	};
+	
+	jQuery.extend = jQuery.fn.extend = function() {
+		var options, name, src, copy, copyIsArray, clone,
+			target = arguments[ 0 ] || {},
+			i = 1,
+			length = arguments.length,
+			deep = false;
+	
+		// Handle a deep copy situation
+		if ( typeof target === "boolean" ) {
+			deep = target;
+	
+			// Skip the boolean and the target
+			target = arguments[ i ] || {};
+			i++;
+		}
+	
+		// Handle case when target is a string or something (possible in deep copy)
+		if ( typeof target !== "object" && !jQuery.isFunction( target ) ) {
+			target = {};
+		}
+	
+		// Extend jQuery itself if only one argument is passed
+		if ( i === length ) {
+			target = this;
+			i--;
+		}
+	
+		for ( ; i < length; i++ ) {
+	
+			// Only deal with non-null/undefined values
+			if ( ( options = arguments[ i ] ) != null ) {
+	
+				// Extend the base object
+				for ( name in options ) {
+					src = target[ name ];
+					copy = options[ name ];
+	
+					// Prevent never-ending loop
+					if ( target === copy ) {
+						continue;
+					}
+	
+					// Recurse if we're merging plain objects or arrays
+					if ( deep && copy && ( jQuery.isPlainObject( copy ) ||
+						( copyIsArray = jQuery.isArray( copy ) ) ) ) {
+	
+						if ( copyIsArray ) {
+							copyIsArray = false;
+							clone = src && jQuery.isArray( src ) ? src : [];
+	
+						} else {
+							clone = src && jQuery.isPlainObject( src ) ? src : {};
+						}
+	
+						// Never move original objects, clone them
+						target[ name ] = jQuery.extend( deep, clone, copy );
+	
+					// Don't bring in undefined values
+					} else if ( copy !== undefined ) {
+						target[ name ] = copy;
+					}
+				}
+			}
+		}
+	
+		// Return the modified object
+		return target;
+	};
+	
+	jQuery.extend( {
+	
+		// Unique for each copy of jQuery on the page
+		expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
+	
+		// Assume jQuery is ready without the ready module
+		isReady: true,
+	
+		error: function( msg ) {
+			throw new Error( msg );
+		},
+	
+		noop: function() {},
+	
+		isFunction: function( obj ) {
+			return jQuery.type( obj ) === "function";
+		},
+	
+		isArray: Array.isArray,
+	
+		isWindow: function( obj ) {
+			return obj != null && obj === obj.window;
+		},
+	
+		isNumeric: function( obj ) {
+	
+			// As of jQuery 3.0, isNumeric is limited to
+			// strings and numbers (primitives or objects)
+			// that can be coerced to finite numbers (gh-2662)
+			var type = jQuery.type( obj );
+			return ( type === "number" || type === "string" ) &&
+	
+				// parseFloat NaNs numeric-cast false positives ("")
+				// ...but misinterprets leading-number strings, particularly hex literals ("0x...")
+				// subtraction forces infinities to NaN
+				!isNaN( obj - parseFloat( obj ) );
+		},
+	
+		isPlainObject: function( obj ) {
+			var proto, Ctor;
+	
+			// Detect obvious negatives
+			// Use toString instead of jQuery.type to catch host objects
+			if ( !obj || toString.call( obj ) !== "[object Object]" ) {
+				return false;
+			}
+	
+			proto = getProto( obj );
+	
+			// Objects with no prototype (e.g., `Object.create( null )`) are plain
+			if ( !proto ) {
+				return true;
+			}
+	
+			// Objects with prototype are plain iff they were constructed by a global Object function
+			Ctor = hasOwn.call( proto, "constructor" ) && proto.constructor;
+			return typeof Ctor === "function" && fnToString.call( Ctor ) === ObjectFunctionString;
+		},
+	
+		isEmptyObject: function( obj ) {
+	
+			/* eslint-disable no-unused-vars */
+			// See https://github.com/eslint/eslint/issues/6125
+			var name;
+	
+			for ( name in obj ) {
+				return false;
+			}
+			return true;
+		},
+	
+		type: function( obj ) {
+			if ( obj == null ) {
+				return obj + "";
+			}
+	
+			// Support: Android <=2.3 only (functionish RegExp)
+			return typeof obj === "object" || typeof obj === "function" ?
+				class2type[ toString.call( obj ) ] || "object" :
+				typeof obj;
+		},
+	
+		// Evaluates a script in a global context
+		globalEval: function( code ) {
+			DOMEval( code );
+		},
+	
+		// Convert dashed to camelCase; used by the css and data modules
+		// Support: IE <=9 - 11, Edge 12 - 13
+		// Microsoft forgot to hump their vendor prefix (#9572)
+		camelCase: function( string ) {
+			return string.replace( rmsPrefix, "ms-" ).replace( rdashAlpha, fcamelCase );
+		},
+	
+		nodeName: function( elem, name ) {
+			return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
+		},
+	
+		each: function( obj, callback ) {
+			var length, i = 0;
+	
+			if ( isArrayLike( obj ) ) {
+				length = obj.length;
+				for ( ; i < length; i++ ) {
+					if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+						break;
+					}
+				}
+			} else {
+				for ( i in obj ) {
+					if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+						break;
+					}
+				}
+			}
+	
+			return obj;
+		},
+	
+		// Support: Android <=4.0 only
+		trim: function( text ) {
+			return text == null ?
+				"" :
+				( text + "" ).replace( rtrim, "" );
+		},
+	
+		// results is for internal usage only
+		makeArray: function( arr, results ) {
+			var ret = results || [];
+	
+			if ( arr != null ) {
+				if ( isArrayLike( Object( arr ) ) ) {
+					jQuery.merge( ret,
+						typeof arr === "string" ?
+						[ arr ] : arr
+					);
+				} else {
+					push.call( ret, arr );
+				}
+			}
+	
+			return ret;
+		},
+	
+		inArray: function( elem, arr, i ) {
+			return arr == null ? -1 : indexOf.call( arr, elem, i );
+		},
+	
+		// Support: Android <=4.0 only, PhantomJS 1 only
+		// push.apply(_, arraylike) throws on ancient WebKit
+		merge: function( first, second ) {
+			var len = +second.length,
+				j = 0,
+				i = first.length;
+	
+			for ( ; j < len; j++ ) {
+				first[ i++ ] = second[ j ];
+			}
+	
+			first.length = i;
+	
+			return first;
+		},
+	
+		grep: function( elems, callback, invert ) {
+			var callbackInverse,
+				matches = [],
+				i = 0,
+				length = elems.length,
+				callbackExpect = !invert;
+	
+			// Go through the array, only saving the items
+			// that pass the validator function
+			for ( ; i < length; i++ ) {
+				callbackInverse = !callback( elems[ i ], i );
+				if ( callbackInverse !== callbackExpect ) {
+					matches.push( elems[ i ] );
+				}
+			}
+	
+			return matches;
+		},
+	
+		// arg is for internal usage only
+		map: function( elems, callback, arg ) {
+			var length, value,
+				i = 0,
+				ret = [];
+	
+			// Go through the array, translating each of the items to their new values
+			if ( isArrayLike( elems ) ) {
+				length = elems.length;
+				for ( ; i < length; i++ ) {
+					value = callback( elems[ i ], i, arg );
+	
+					if ( value != null ) {
+						ret.push( value );
+					}
+				}
+	
+			// Go through every key on the object,
+			} else {
+				for ( i in elems ) {
+					value = callback( elems[ i ], i, arg );
+	
+					if ( value != null ) {
+						ret.push( value );
+					}
+				}
+			}
+	
+			// Flatten any nested arrays
+			return concat.apply( [], ret );
+		},
+	
+		// A global GUID counter for objects
+		guid: 1,
+	
+		// Bind a function to a context, optionally partially applying any
+		// arguments.
+		proxy: function( fn, context ) {
+			var tmp, args, proxy;
+	
+			if ( typeof context === "string" ) {
+				tmp = fn[ context ];
+				context = fn;
+				fn = tmp;
+			}
+	
+			// Quick check to determine if target is callable, in the spec
+			// this throws a TypeError, but we will just return undefined.
+			if ( !jQuery.isFunction( fn ) ) {
+				return undefined;
+			}
+	
+			// Simulated bind
+			args = slice.call( arguments, 2 );
+			proxy = function() {
+				return fn.apply( context || this, args.concat( slice.call( arguments ) ) );
+			};
+	
+			// Set the guid of unique handler to the same of original handler, so it can be removed
+			proxy.guid = fn.guid = fn.guid || jQuery.guid++;
+	
+			return proxy;
+		},
+	
+		now: Date.now,
+	
+		// jQuery.support is not used in Core but other projects attach their
+		// properties to it so it needs to exist.
+		support: support
+	} );
+	
+	if ( typeof Symbol === "function" ) {
+		jQuery.fn[ Symbol.iterator ] = arr[ Symbol.iterator ];
+	}
+	
+	// Populate the class2type map
+	jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
+	function( i, name ) {
+		class2type[ "[object " + name + "]" ] = name.toLowerCase();
+	} );
+	
+	function isArrayLike( obj ) {
+	
+		// Support: real iOS 8.2 only (not reproducible in simulator)
+		// `in` check used to prevent JIT error (gh-2145)
+		// hasOwn isn't used here due to false negatives
+		// regarding Nodelist length in IE
+		var length = !!obj && "length" in obj && obj.length,
+			type = jQuery.type( obj );
+	
+		if ( type === "function" || jQuery.isWindow( obj ) ) {
+			return false;
+		}
+	
+		return type === "array" || length === 0 ||
+			typeof length === "number" && length > 0 && ( length - 1 ) in obj;
+	}
+	var Sizzle =
+	/*!
+	 * Sizzle CSS Selector Engine v2.3.3
+	 * https://sizzlejs.com/
+	 *
+	 * Copyright jQuery Foundation and other contributors
+	 * Released under the MIT license
+	 * http://jquery.org/license
+	 *
+	 * Date: 2016-08-08
+	 */
+	(function( window ) {
+	
+	var i,
+		support,
+		Expr,
+		getText,
+		isXML,
+		tokenize,
+		compile,
+		select,
+		outermostContext,
+		sortInput,
+		hasDuplicate,
+	
+		// Local document vars
+		setDocument,
+		document,
+		docElem,
+		documentIsHTML,
+		rbuggyQSA,
+		rbuggyMatches,
+		matches,
+		contains,
+	
+		// Instance-specific data
+		expando = "sizzle" + 1 * new Date(),
+		preferredDoc = window.document,
+		dirruns = 0,
+		done = 0,
+		classCache = createCache(),
+		tokenCache = createCache(),
+		compilerCache = createCache(),
+		sortOrder = function( a, b ) {
+			if ( a === b ) {
+				hasDuplicate = true;
+			}
+			return 0;
+		},
+	
+		// Instance methods
+		hasOwn = ({}).hasOwnProperty,
+		arr = [],
+		pop = arr.pop,
+		push_native = arr.push,
+		push = arr.push,
+		slice = arr.slice,
+		// Use a stripped-down indexOf as it's faster than native
+		// https://jsperf.com/thor-indexof-vs-for/5
+		indexOf = function( list, elem ) {
+			var i = 0,
+				len = list.length;
+			for ( ; i < len; i++ ) {
+				if ( list[i] === elem ) {
+					return i;
+				}
+			}
+			return -1;
+		},
+	
+		booleans = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",
+	
+		// Regular expressions
+	
+		// http://www.w3.org/TR/css3-selectors/#whitespace
+		whitespace = "[\\x20\\t\\r\\n\\f]",
+	
+		// http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
+		identifier = "(?:\\\\.|[\\w-]|[^\0-\\xa0])+",
+	
+		// Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors
+		attributes = "\\[" + whitespace + "*(" + identifier + ")(?:" + whitespace +
+			// Operator (capture 2)
+			"*([*^$|!~]?=)" + whitespace +
+			// "Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]"
+			"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + identifier + "))|)" + whitespace +
+			"*\\]",
+	
+		pseudos = ":(" + identifier + ")(?:\\((" +
+			// To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:
+			// 1. quoted (capture 3; capture 4 or capture 5)
+			"('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|" +
+			// 2. simple (capture 6)
+			"((?:\\\\.|[^\\\\()[\\]]|" + attributes + ")*)|" +
+			// 3. anything else (capture 2)
+			".*" +
+			")\\)|)",
+	
+		// Leading and non-escaped trailing whitespace, capturing some non-whitespace characters preceding the latter
+		rwhitespace = new RegExp( whitespace + "+", "g" ),
+		rtrim = new RegExp( "^" + whitespace + "+|((?:^|[^\\\\])(?:\\\\.)*)" + whitespace + "+$", "g" ),
+	
+		rcomma = new RegExp( "^" + whitespace + "*," + whitespace + "*" ),
+		rcombinators = new RegExp( "^" + whitespace + "*([>+~]|" + whitespace + ")" + whitespace + "*" ),
+	
+		rattributeQuotes = new RegExp( "=" + whitespace + "*([^\\]'\"]*?)" + whitespace + "*\\]", "g" ),
+	
+		rpseudo = new RegExp( pseudos ),
+		ridentifier = new RegExp( "^" + identifier + "$" ),
+	
+		matchExpr = {
+			"ID": new RegExp( "^#(" + identifier + ")" ),
+			"CLASS": new RegExp( "^\\.(" + identifier + ")" ),
+			"TAG": new RegExp( "^(" + identifier + "|[*])" ),
+			"ATTR": new RegExp( "^" + attributes ),
+			"PSEUDO": new RegExp( "^" + pseudos ),
+			"CHILD": new RegExp( "^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(" + whitespace +
+				"*(even|odd|(([+-]|)(\\d*)n|)" + whitespace + "*(?:([+-]|)" + whitespace +
+				"*(\\d+)|))" + whitespace + "*\\)|)", "i" ),
+			"bool": new RegExp( "^(?:" + booleans + ")$", "i" ),
+			// For use in libraries implementing .is()
+			// We use this for POS matching in `select`
+			"needsContext": new RegExp( "^" + whitespace + "*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(" +
+				whitespace + "*((?:-\\d)?\\d*)" + whitespace + "*\\)|)(?=[^-]|$)", "i" )
+		},
+	
+		rinputs = /^(?:input|select|textarea|button)$/i,
+		rheader = /^h\d$/i,
+	
+		rnative = /^[^{]+\{\s*\[native \w/,
+	
+		// Easily-parseable/retrievable ID or TAG or CLASS selectors
+		rquickExpr = /^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,
+	
+		rsibling = /[+~]/,
+	
+		// CSS escapes
+		// http://www.w3.org/TR/CSS21/syndata.html#escaped-characters
+		runescape = new RegExp( "\\\\([\\da-f]{1,6}" + whitespace + "?|(" + whitespace + ")|.)", "ig" ),
+		funescape = function( _, escaped, escapedWhitespace ) {
+			var high = "0x" + escaped - 0x10000;
+			// NaN means non-codepoint
+			// Support: Firefox<24
+			// Workaround erroneous numeric interpretation of +"0x"
+			return high !== high || escapedWhitespace ?
+				escaped :
+				high < 0 ?
+					// BMP codepoint
+					String.fromCharCode( high + 0x10000 ) :
+					// Supplemental Plane codepoint (surrogate pair)
+					String.fromCharCode( high >> 10 | 0xD800, high & 0x3FF | 0xDC00 );
+		},
+	
+		// CSS string/identifier serialization
+		// https://drafts.csswg.org/cssom/#common-serializing-idioms
+		rcssescape = /([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,
+		fcssescape = function( ch, asCodePoint ) {
+			if ( asCodePoint ) {
+	
+				// U+0000 NULL becomes U+FFFD REPLACEMENT CHARACTER
+				if ( ch === "\0" ) {
+					return "\uFFFD";
+				}
+	
+				// Control characters and (dependent upon position) numbers get escaped as code points
+				return ch.slice( 0, -1 ) + "\\" + ch.charCodeAt( ch.length - 1 ).toString( 16 ) + " ";
+			}
+	
+			// Other potentially-special ASCII characters get backslash-escaped
+			return "\\" + ch;
+		},
+	
+		// Used for iframes
+		// See setDocument()
+		// Removing the function wrapper causes a "Permission Denied"
+		// error in IE
+		unloadHandler = function() {
+			setDocument();
+		},
+	
+		disabledAncestor = addCombinator(
+			function( elem ) {
+				return elem.disabled === true && ("form" in elem || "label" in elem);
+			},
+			{ dir: "parentNode", next: "legend" }
+		);
+	
+	// Optimize for push.apply( _, NodeList )
+	try {
+		push.apply(
+			(arr = slice.call( preferredDoc.childNodes )),
+			preferredDoc.childNodes
+		);
+		// Support: Android<4.0
+		// Detect silently failing push.apply
+		arr[ preferredDoc.childNodes.length ].nodeType;
+	} catch ( e ) {
+		push = { apply: arr.length ?
+	
+			// Leverage slice if possible
+			function( target, els ) {
+				push_native.apply( target, slice.call(els) );
+			} :
+	
+			// Support: IE<9
+			// Otherwise append directly
+			function( target, els ) {
+				var j = target.length,
+					i = 0;
+				// Can't trust NodeList.length
+				while ( (target[j++] = els[i++]) ) {}
+				target.length = j - 1;
+			}
+		};
+	}
+	
+	function Sizzle( selector, context, results, seed ) {
+		var m, i, elem, nid, match, groups, newSelector,
+			newContext = context && context.ownerDocument,
+	
+			// nodeType defaults to 9, since context defaults to document
+			nodeType = context ? context.nodeType : 9;
+	
+		results = results || [];
+	
+		// Return early from calls with invalid selector or context
+		if ( typeof selector !== "string" || !selector ||
+			nodeType !== 1 && nodeType !== 9 && nodeType !== 11 ) {
+	
+			return results;
+		}
+	
+		// Try to shortcut find operations (as opposed to filters) in HTML documents
+		if ( !seed ) {
+	
+			if ( ( context ? context.ownerDocument || context : preferredDoc ) !== document ) {
+				setDocument( context );
+			}
+			context = context || document;
+	
+			if ( documentIsHTML ) {
+	
+				// If the selector is sufficiently simple, try using a "get*By*" DOM method
+				// (excepting DocumentFragment context, where the methods don't exist)
+				if ( nodeType !== 11 && (match = rquickExpr.exec( selector )) ) {
+	
+					// ID selector
+					if ( (m = match[1]) ) {
+	
+						// Document context
+						if ( nodeType === 9 ) {
+							if ( (elem = context.getElementById( m )) ) {
+	
+								// Support: IE, Opera, Webkit
+								// TODO: identify versions
+								// getElementById can match elements by name instead of ID
+								if ( elem.id === m ) {
+									results.push( elem );
+									return results;
+								}
+							} else {
+								return results;
+							}
+	
+						// Element context
+						} else {
+	
+							// Support: IE, Opera, Webkit
+							// TODO: identify versions
+							// getElementById can match elements by name instead of ID
+							if ( newContext && (elem = newContext.getElementById( m )) &&
+								contains( context, elem ) &&
+								elem.id === m ) {
+	
+								results.push( elem );
+								return results;
+							}
+						}
+	
+					// Type selector
+					} else if ( match[2] ) {
+						push.apply( results, context.getElementsByTagName( selector ) );
+						return results;
+	
+					// Class selector
+					} else if ( (m = match[3]) && support.getElementsByClassName &&
+						context.getElementsByClassName ) {
+	
+						push.apply( results, context.getElementsByClassName( m ) );
+						return results;
+					}
+				}
+	
+				// Take advantage of querySelectorAll
+				if ( support.qsa &&
+					!compilerCache[ selector + " " ] &&
+					(!rbuggyQSA || !rbuggyQSA.test( selector )) ) {
+	
+					if ( nodeType !== 1 ) {
+						newContext = context;
+						newSelector = selector;
+	
+					// qSA looks outside Element context, which is not what we want
+					// Thanks to Andrew Dupont for this workaround technique
+					// Support: IE <=8
+					// Exclude object elements
+					} else if ( context.nodeName.toLowerCase() !== "object" ) {
+	
+						// Capture the context ID, setting it first if necessary
+						if ( (nid = context.getAttribute( "id" )) ) {
+							nid = nid.replace( rcssescape, fcssescape );
+						} else {
+							context.setAttribute( "id", (nid = expando) );
+						}
+	
+						// Prefix every selector in the list
+						groups = tokenize( selector );
+						i = groups.length;
+						while ( i-- ) {
+							groups[i] = "#" + nid + " " + toSelector( groups[i] );
+						}
+						newSelector = groups.join( "," );
+	
+						// Expand context for sibling selectors
+						newContext = rsibling.test( selector ) && testContext( context.parentNode ) ||
+							context;
+					}
+	
+					if ( newSelector ) {
+						try {
+							push.apply( results,
+								newContext.querySelectorAll( newSelector )
+							);
+							return results;
+						} catch ( qsaError ) {
+						} finally {
+							if ( nid === expando ) {
+								context.removeAttribute( "id" );
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		// All others
+		return select( selector.replace( rtrim, "$1" ), context, results, seed );
+	}
+	
+	/**
+	 * Create key-value caches of limited size
+	 * @returns {function(string, object)} Returns the Object data after storing it on itself with
+	 *	property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
+	 *	deleting the oldest entry
+	 */
+	function createCache() {
+		var keys = [];
+	
+		function cache( key, value ) {
+			// Use (key + " ") to avoid collision with native prototype properties (see Issue #157)
+			if ( keys.push( key + " " ) > Expr.cacheLength ) {
+				// Only keep the most recent entries
+				delete cache[ keys.shift() ];
+			}
+			return (cache[ key + " " ] = value);
+		}
+		return cache;
+	}
+	
+	/**
+	 * Mark a function for special use by Sizzle
+	 * @param {Function} fn The function to mark
+	 */
+	function markFunction( fn ) {
+		fn[ expando ] = true;
+		return fn;
+	}
+	
+	/**
+	 * Support testing using an element
+	 * @param {Function} fn Passed the created element and returns a boolean result
+	 */
+	function assert( fn ) {
+		var el = document.createElement("fieldset");
+	
+		try {
+			return !!fn( el );
+		} catch (e) {
+			return false;
+		} finally {
+			// Remove from its parent by default
+			if ( el.parentNode ) {
+				el.parentNode.removeChild( el );
+			}
+			// release memory in IE
+			el = null;
+		}
+	}
+	
+	/**
+	 * Adds the same handler for all of the specified attrs
+	 * @param {String} attrs Pipe-separated list of attributes
+	 * @param {Function} handler The method that will be applied
+	 */
+	function addHandle( attrs, handler ) {
+		var arr = attrs.split("|"),
+			i = arr.length;
+	
+		while ( i-- ) {
+			Expr.attrHandle[ arr[i] ] = handler;
+		}
+	}
+	
+	/**
+	 * Checks document order of two siblings
+	 * @param {Element} a
+	 * @param {Element} b
+	 * @returns {Number} Returns less than 0 if a precedes b, greater than 0 if a follows b
+	 */
+	function siblingCheck( a, b ) {
+		var cur = b && a,
+			diff = cur && a.nodeType === 1 && b.nodeType === 1 &&
+				a.sourceIndex - b.sourceIndex;
+	
+		// Use IE sourceIndex if available on both nodes
+		if ( diff ) {
+			return diff;
+		}
+	
+		// Check if b follows a
+		if ( cur ) {
+			while ( (cur = cur.nextSibling) ) {
+				if ( cur === b ) {
+					return -1;
+				}
+			}
+		}
+	
+		return a ? 1 : -1;
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for input types
+	 * @param {String} type
+	 */
+	function createInputPseudo( type ) {
+		return function( elem ) {
+			var name = elem.nodeName.toLowerCase();
+			return name === "input" && elem.type === type;
+		};
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for buttons
+	 * @param {String} type
+	 */
+	function createButtonPseudo( type ) {
+		return function( elem ) {
+			var name = elem.nodeName.toLowerCase();
+			return (name === "input" || name === "button") && elem.type === type;
+		};
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for :enabled/:disabled
+	 * @param {Boolean} disabled true for :disabled; false for :enabled
+	 */
+	function createDisabledPseudo( disabled ) {
+	
+		// Known :disabled false positives: fieldset[disabled] > legend:nth-of-type(n+2) :can-disable
+		return function( elem ) {
+	
+			// Only certain elements can match :enabled or :disabled
+			// https://html.spec.whatwg.org/multipage/scripting.html#selector-enabled
+			// https://html.spec.whatwg.org/multipage/scripting.html#selector-disabled
+			if ( "form" in elem ) {
+	
+				// Check for inherited disabledness on relevant non-disabled elements:
+				// * listed form-associated elements in a disabled fieldset
+				//   https://html.spec.whatwg.org/multipage/forms.html#category-listed
+				//   https://html.spec.whatwg.org/multipage/forms.html#concept-fe-disabled
+				// * option elements in a disabled optgroup
+				//   https://html.spec.whatwg.org/multipage/forms.html#concept-option-disabled
+				// All such elements have a "form" property.
+				if ( elem.parentNode && elem.disabled === false ) {
+	
+					// Option elements defer to a parent optgroup if present
+					if ( "label" in elem ) {
+						if ( "label" in elem.parentNode ) {
+							return elem.parentNode.disabled === disabled;
+						} else {
+							return elem.disabled === disabled;
+						}
+					}
+	
+					// Support: IE 6 - 11
+					// Use the isDisabled shortcut property to check for disabled fieldset ancestors
+					return elem.isDisabled === disabled ||
+	
+						// Where there is no isDisabled, check manually
+						/* jshint -W018 */
+						elem.isDisabled !== !disabled &&
+							disabledAncestor( elem ) === disabled;
+				}
+	
+				return elem.disabled === disabled;
+	
+			// Try to winnow out elements that can't be disabled before trusting the disabled property.
+			// Some victims get caught in our net (label, legend, menu, track), but it shouldn't
+			// even exist on them, let alone have a boolean value.
+			} else if ( "label" in elem ) {
+				return elem.disabled === disabled;
+			}
+	
+			// Remaining elements are neither :enabled nor :disabled
+			return false;
+		};
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for positionals
+	 * @param {Function} fn
+	 */
+	function createPositionalPseudo( fn ) {
+		return markFunction(function( argument ) {
+			argument = +argument;
+			return markFunction(function( seed, matches ) {
+				var j,
+					matchIndexes = fn( [], seed.length, argument ),
+					i = matchIndexes.length;
+	
+				// Match elements found at the specified indexes
+				while ( i-- ) {
+					if ( seed[ (j = matchIndexes[i]) ] ) {
+						seed[j] = !(matches[j] = seed[j]);
+					}
+				}
+			});
+		});
+	}
+	
+	/**
+	 * Checks a node for validity as a Sizzle context
+	 * @param {Element|Object=} context
+	 * @returns {Element|Object|Boolean} The input node if acceptable, otherwise a falsy value
+	 */
+	function testContext( context ) {
+		return context && typeof context.getElementsByTagName !== "undefined" && context;
+	}
+	
+	// Expose support vars for convenience
+	support = Sizzle.support = {};
+	
+	/**
+	 * Detects XML nodes
+	 * @param {Element|Object} elem An element or a document
+	 * @returns {Boolean} True iff elem is a non-HTML XML node
+	 */
+	isXML = Sizzle.isXML = function( elem ) {
+		// documentElement is verified for cases where it doesn't yet exist
+		// (such as loading iframes in IE - #4833)
+		var documentElement = elem && (elem.ownerDocument || elem).documentElement;
+		return documentElement ? documentElement.nodeName !== "HTML" : false;
+	};
+	
+	/**
+	 * Sets document-related variables once based on the current document
+	 * @param {Element|Object} [doc] An element or document object to use to set the document
+	 * @returns {Object} Returns the current document
+	 */
+	setDocument = Sizzle.setDocument = function( node ) {
+		var hasCompare, subWindow,
+			doc = node ? node.ownerDocument || node : preferredDoc;
+	
+		// Return early if doc is invalid or already selected
+		if ( doc === document || doc.nodeType !== 9 || !doc.documentElement ) {
+			return document;
+		}
+	
+		// Update global variables
+		document = doc;
+		docElem = document.documentElement;
+		documentIsHTML = !isXML( document );
+	
+		// Support: IE 9-11, Edge
+		// Accessing iframe documents after unload throws "permission denied" errors (jQuery #13936)
+		if ( preferredDoc !== document &&
+			(subWindow = document.defaultView) && subWindow.top !== subWindow ) {
+	
+			// Support: IE 11, Edge
+			if ( subWindow.addEventListener ) {
+				subWindow.addEventListener( "unload", unloadHandler, false );
+	
+			// Support: IE 9 - 10 only
+			} else if ( subWindow.attachEvent ) {
+				subWindow.attachEvent( "onunload", unloadHandler );
+			}
+		}
+	
+		/* Attributes
+		---------------------------------------------------------------------- */
+	
+		// Support: IE<8
+		// Verify that getAttribute really returns attributes and not properties
+		// (excepting IE8 booleans)
+		support.attributes = assert(function( el ) {
+			el.className = "i";
+			return !el.getAttribute("className");
+		});
+	
+		/* getElement(s)By*
+		---------------------------------------------------------------------- */
+	
+		// Check if getElementsByTagName("*") returns only elements
+		support.getElementsByTagName = assert(function( el ) {
+			el.appendChild( document.createComment("") );
+			return !el.getElementsByTagName("*").length;
+		});
+	
+		// Support: IE<9
+		support.getElementsByClassName = rnative.test( document.getElementsByClassName );
+	
+		// Support: IE<10
+		// Check if getElementById returns elements by name
+		// The broken getElementById methods don't pick up programmatically-set names,
+		// so use a roundabout getElementsByName test
+		support.getById = assert(function( el ) {
+			docElem.appendChild( el ).id = expando;
+			return !document.getElementsByName || !document.getElementsByName( expando ).length;
+		});
+	
+		// ID filter and find
+		if ( support.getById ) {
+			Expr.filter["ID"] = function( id ) {
+				var attrId = id.replace( runescape, funescape );
+				return function( elem ) {
+					return elem.getAttribute("id") === attrId;
+				};
+			};
+			Expr.find["ID"] = function( id, context ) {
+				if ( typeof context.getElementById !== "undefined" && documentIsHTML ) {
+					var elem = context.getElementById( id );
+					return elem ? [ elem ] : [];
+				}
+			};
+		} else {
+			Expr.filter["ID"] =  function( id ) {
+				var attrId = id.replace( runescape, funescape );
+				return function( elem ) {
+					var node = typeof elem.getAttributeNode !== "undefined" &&
+						elem.getAttributeNode("id");
+					return node && node.value === attrId;
+				};
+			};
+	
+			// Support: IE 6 - 7 only
+			// getElementById is not reliable as a find shortcut
+			Expr.find["ID"] = function( id, context ) {
+				if ( typeof context.getElementById !== "undefined" && documentIsHTML ) {
+					var node, i, elems,
+						elem = context.getElementById( id );
+	
+					if ( elem ) {
+	
+						// Verify the id attribute
+						node = elem.getAttributeNode("id");
+						if ( node && node.value === id ) {
+							return [ elem ];
+						}
+	
+						// Fall back on getElementsByName
+						elems = context.getElementsByName( id );
+						i = 0;
+						while ( (elem = elems[i++]) ) {
+							node = elem.getAttributeNode("id");
+							if ( node && node.value === id ) {
+								return [ elem ];
+							}
+						}
+					}
+	
+					return [];
+				}
+			};
+		}
+	
+		// Tag
+		Expr.find["TAG"] = support.getElementsByTagName ?
+			function( tag, context ) {
+				if ( typeof context.getElementsByTagName !== "undefined" ) {
+					return context.getElementsByTagName( tag );
+	
+				// DocumentFragment nodes don't have gEBTN
+				} else if ( support.qsa ) {
+					return context.querySelectorAll( tag );
+				}
+			} :
+	
+			function( tag, context ) {
+				var elem,
+					tmp = [],
+					i = 0,
+					// By happy coincidence, a (broken) gEBTN appears on DocumentFragment nodes too
+					results = context.getElementsByTagName( tag );
+	
+				// Filter out possible comments
+				if ( tag === "*" ) {
+					while ( (elem = results[i++]) ) {
+						if ( elem.nodeType === 1 ) {
+							tmp.push( elem );
+						}
+					}
+	
+					return tmp;
+				}
+				return results;
+			};
+	
+		// Class
+		Expr.find["CLASS"] = support.getElementsByClassName && function( className, context ) {
+			if ( typeof context.getElementsByClassName !== "undefined" && documentIsHTML ) {
+				return context.getElementsByClassName( className );
+			}
+		};
+	
+		/* QSA/matchesSelector
+		---------------------------------------------------------------------- */
+	
+		// QSA and matchesSelector support
+	
+		// matchesSelector(:active) reports false when true (IE9/Opera 11.5)
+		rbuggyMatches = [];
+	
+		// qSa(:focus) reports false when true (Chrome 21)
+		// We allow this because of a bug in IE8/9 that throws an error
+		// whenever `document.activeElement` is accessed on an iframe
+		// So, we allow :focus to pass through QSA all the time to avoid the IE error
+		// See https://bugs.jquery.com/ticket/13378
+		rbuggyQSA = [];
+	
+		if ( (support.qsa = rnative.test( document.querySelectorAll )) ) {
+			// Build QSA regex
+			// Regex strategy adopted from Diego Perini
+			assert(function( el ) {
+				// Select is set to empty string on purpose
+				// This is to test IE's treatment of not explicitly
+				// setting a boolean content attribute,
+				// since its presence should be enough
+				// https://bugs.jquery.com/ticket/12359
+				docElem.appendChild( el ).innerHTML = "<a id='" + expando + "'></a>" +
+					"<select id='" + expando + "-\r\\' msallowcapture=''>" +
+					"<option selected=''></option></select>";
+	
+				// Support: IE8, Opera 11-12.16
+				// Nothing should be selected when empty strings follow ^= or $= or *=
+				// The test attribute must be unknown in Opera but "safe" for WinRT
+				// https://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section
+				if ( el.querySelectorAll("[msallowcapture^='']").length ) {
+					rbuggyQSA.push( "[*^$]=" + whitespace + "*(?:''|\"\")" );
+				}
+	
+				// Support: IE8
+				// Boolean attributes and "value" are not treated correctly
+				if ( !el.querySelectorAll("[selected]").length ) {
+					rbuggyQSA.push( "\\[" + whitespace + "*(?:value|" + booleans + ")" );
+				}
+	
+				// Support: Chrome<29, Android<4.4, Safari<7.0+, iOS<7.0+, PhantomJS<1.9.8+
+				if ( !el.querySelectorAll( "[id~=" + expando + "-]" ).length ) {
+					rbuggyQSA.push("~=");
+				}
+	
+				// Webkit/Opera - :checked should return selected option elements
+				// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+				// IE8 throws error here and will not see later tests
+				if ( !el.querySelectorAll(":checked").length ) {
+					rbuggyQSA.push(":checked");
+				}
+	
+				// Support: Safari 8+, iOS 8+
+				// https://bugs.webkit.org/show_bug.cgi?id=136851
+				// In-page `selector#id sibling-combinator selector` fails
+				if ( !el.querySelectorAll( "a#" + expando + "+*" ).length ) {
+					rbuggyQSA.push(".#.+[+~]");
+				}
+			});
+	
+			assert(function( el ) {
+				el.innerHTML = "<a href='' disabled='disabled'></a>" +
+					"<select disabled='disabled'><option/></select>";
+	
+				// Support: Windows 8 Native Apps
+				// The type and name attributes are restricted during .innerHTML assignment
+				var input = document.createElement("input");
+				input.setAttribute( "type", "hidden" );
+				el.appendChild( input ).setAttribute( "name", "D" );
+	
+				// Support: IE8
+				// Enforce case-sensitivity of name attribute
+				if ( el.querySelectorAll("[name=d]").length ) {
+					rbuggyQSA.push( "name" + whitespace + "*[*^$|!~]?=" );
+				}
+	
+				// FF 3.5 - :enabled/:disabled and hidden elements (hidden elements are still enabled)
+				// IE8 throws error here and will not see later tests
+				if ( el.querySelectorAll(":enabled").length !== 2 ) {
+					rbuggyQSA.push( ":enabled", ":disabled" );
+				}
+	
+				// Support: IE9-11+
+				// IE's :disabled selector does not pick up the children of disabled fieldsets
+				docElem.appendChild( el ).disabled = true;
+				if ( el.querySelectorAll(":disabled").length !== 2 ) {
+					rbuggyQSA.push( ":enabled", ":disabled" );
+				}
+	
+				// Opera 10-11 does not throw on post-comma invalid pseudos
+				el.querySelectorAll("*,:x");
+				rbuggyQSA.push(",.*:");
+			});
+		}
+	
+		if ( (support.matchesSelector = rnative.test( (matches = docElem.matches ||
+			docElem.webkitMatchesSelector ||
+			docElem.mozMatchesSelector ||
+			docElem.oMatchesSelector ||
+			docElem.msMatchesSelector) )) ) {
+	
+			assert(function( el ) {
+				// Check to see if it's possible to do matchesSelector
+				// on a disconnected node (IE 9)
+				support.disconnectedMatch = matches.call( el, "*" );
+	
+				// This should fail with an exception
+				// Gecko does not error, returns false instead
+				matches.call( el, "[s!='']:x" );
+				rbuggyMatches.push( "!=", pseudos );
+			});
+		}
+	
+		rbuggyQSA = rbuggyQSA.length && new RegExp( rbuggyQSA.join("|") );
+		rbuggyMatches = rbuggyMatches.length && new RegExp( rbuggyMatches.join("|") );
+	
+		/* Contains
+		---------------------------------------------------------------------- */
+		hasCompare = rnative.test( docElem.compareDocumentPosition );
+	
+		// Element contains another
+		// Purposefully self-exclusive
+		// As in, an element does not contain itself
+		contains = hasCompare || rnative.test( docElem.contains ) ?
+			function( a, b ) {
+				var adown = a.nodeType === 9 ? a.documentElement : a,
+					bup = b && b.parentNode;
+				return a === bup || !!( bup && bup.nodeType === 1 && (
+					adown.contains ?
+						adown.contains( bup ) :
+						a.compareDocumentPosition && a.compareDocumentPosition( bup ) & 16
+				));
+			} :
+			function( a, b ) {
+				if ( b ) {
+					while ( (b = b.parentNode) ) {
+						if ( b === a ) {
+							return true;
+						}
+					}
+				}
+				return false;
+			};
+	
+		/* Sorting
+		---------------------------------------------------------------------- */
+	
+		// Document order sorting
+		sortOrder = hasCompare ?
+		function( a, b ) {
+	
+			// Flag for duplicate removal
+			if ( a === b ) {
+				hasDuplicate = true;
+				return 0;
+			}
+	
+			// Sort on method existence if only one input has compareDocumentPosition
+			var compare = !a.compareDocumentPosition - !b.compareDocumentPosition;
+			if ( compare ) {
+				return compare;
+			}
+	
+			// Calculate position if both inputs belong to the same document
+			compare = ( a.ownerDocument || a ) === ( b.ownerDocument || b ) ?
+				a.compareDocumentPosition( b ) :
+	
+				// Otherwise we know they are disconnected
+				1;
+	
+			// Disconnected nodes
+			if ( compare & 1 ||
+				(!support.sortDetached && b.compareDocumentPosition( a ) === compare) ) {
+	
+				// Choose the first element that is related to our preferred document
+				if ( a === document || a.ownerDocument === preferredDoc && contains(preferredDoc, a) ) {
+					return -1;
+				}
+				if ( b === document || b.ownerDocument === preferredDoc && contains(preferredDoc, b) ) {
+					return 1;
+				}
+	
+				// Maintain original order
+				return sortInput ?
+					( indexOf( sortInput, a ) - indexOf( sortInput, b ) ) :
+					0;
+			}
+	
+			return compare & 4 ? -1 : 1;
+		} :
+		function( a, b ) {
+			// Exit early if the nodes are identical
+			if ( a === b ) {
+				hasDuplicate = true;
+				return 0;
+			}
+	
+			var cur,
+				i = 0,
+				aup = a.parentNode,
+				bup = b.parentNode,
+				ap = [ a ],
+				bp = [ b ];
+	
+			// Parentless nodes are either documents or disconnected
+			if ( !aup || !bup ) {
+				return a === document ? -1 :
+					b === document ? 1 :
+					aup ? -1 :
+					bup ? 1 :
+					sortInput ?
+					( indexOf( sortInput, a ) - indexOf( sortInput, b ) ) :
+					0;
+	
+			// If the nodes are siblings, we can do a quick check
+			} else if ( aup === bup ) {
+				return siblingCheck( a, b );
+			}
+	
+			// Otherwise we need full lists of their ancestors for comparison
+			cur = a;
+			while ( (cur = cur.parentNode) ) {
+				ap.unshift( cur );
+			}
+			cur = b;
+			while ( (cur = cur.parentNode) ) {
+				bp.unshift( cur );
+			}
+	
+			// Walk down the tree looking for a discrepancy
+			while ( ap[i] === bp[i] ) {
+				i++;
+			}
+	
+			return i ?
+				// Do a sibling check if the nodes have a common ancestor
+				siblingCheck( ap[i], bp[i] ) :
+	
+				// Otherwise nodes in our document sort first
+				ap[i] === preferredDoc ? -1 :
+				bp[i] === preferredDoc ? 1 :
+				0;
+		};
+	
+		return document;
+	};
+	
+	Sizzle.matches = function( expr, elements ) {
+		return Sizzle( expr, null, null, elements );
+	};
+	
+	Sizzle.matchesSelector = function( elem, expr ) {
+		// Set document vars if needed
+		if ( ( elem.ownerDocument || elem ) !== document ) {
+			setDocument( elem );
+		}
+	
+		// Make sure that attribute selectors are quoted
+		expr = expr.replace( rattributeQuotes, "='$1']" );
+	
+		if ( support.matchesSelector && documentIsHTML &&
+			!compilerCache[ expr + " " ] &&
+			( !rbuggyMatches || !rbuggyMatches.test( expr ) ) &&
+			( !rbuggyQSA     || !rbuggyQSA.test( expr ) ) ) {
+	
+			try {
+				var ret = matches.call( elem, expr );
+	
+				// IE 9's matchesSelector returns false on disconnected nodes
+				if ( ret || support.disconnectedMatch ||
+						// As well, disconnected nodes are said to be in a document
+						// fragment in IE 9
+						elem.document && elem.document.nodeType !== 11 ) {
+					return ret;
+				}
+			} catch (e) {}
+		}
+	
+		return Sizzle( expr, document, null, [ elem ] ).length > 0;
+	};
+	
+	Sizzle.contains = function( context, elem ) {
+		// Set document vars if needed
+		if ( ( context.ownerDocument || context ) !== document ) {
+			setDocument( context );
+		}
+		return contains( context, elem );
+	};
+	
+	Sizzle.attr = function( elem, name ) {
+		// Set document vars if needed
+		if ( ( elem.ownerDocument || elem ) !== document ) {
+			setDocument( elem );
+		}
+	
+		var fn = Expr.attrHandle[ name.toLowerCase() ],
+			// Don't get fooled by Object.prototype properties (jQuery #13807)
+			val = fn && hasOwn.call( Expr.attrHandle, name.toLowerCase() ) ?
+				fn( elem, name, !documentIsHTML ) :
+				undefined;
+	
+		return val !== undefined ?
+			val :
+			support.attributes || !documentIsHTML ?
+				elem.getAttribute( name ) :
+				(val = elem.getAttributeNode(name)) && val.specified ?
+					val.value :
+					null;
+	};
+	
+	Sizzle.escape = function( sel ) {
+		return (sel + "").replace( rcssescape, fcssescape );
+	};
+	
+	Sizzle.error = function( msg ) {
+		throw new Error( "Syntax error, unrecognized expression: " + msg );
+	};
+	
+	/**
+	 * Document sorting and removing duplicates
+	 * @param {ArrayLike} results
+	 */
+	Sizzle.uniqueSort = function( results ) {
+		var elem,
+			duplicates = [],
+			j = 0,
+			i = 0;
+	
+		// Unless we *know* we can detect duplicates, assume their presence
+		hasDuplicate = !support.detectDuplicates;
+		sortInput = !support.sortStable && results.slice( 0 );
+		results.sort( sortOrder );
+	
+		if ( hasDuplicate ) {
+			while ( (elem = results[i++]) ) {
+				if ( elem === results[ i ] ) {
+					j = duplicates.push( i );
+				}
+			}
+			while ( j-- ) {
+				results.splice( duplicates[ j ], 1 );
+			}
+		}
+	
+		// Clear input after sorting to release objects
+		// See https://github.com/jquery/sizzle/pull/225
+		sortInput = null;
+	
+		return results;
+	};
+	
+	/**
+	 * Utility function for retrieving the text value of an array of DOM nodes
+	 * @param {Array|Element} elem
+	 */
+	getText = Sizzle.getText = function( elem ) {
+		var node,
+			ret = "",
+			i = 0,
+			nodeType = elem.nodeType;
+	
+		if ( !nodeType ) {
+			// If no nodeType, this is expected to be an array
+			while ( (node = elem[i++]) ) {
+				// Do not traverse comment nodes
+				ret += getText( node );
+			}
+		} else if ( nodeType === 1 || nodeType === 9 || nodeType === 11 ) {
+			// Use textContent for elements
+			// innerText usage removed for consistency of new lines (jQuery #11153)
+			if ( typeof elem.textContent === "string" ) {
+				return elem.textContent;
+			} else {
+				// Traverse its children
+				for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
+					ret += getText( elem );
+				}
+			}
+		} else if ( nodeType === 3 || nodeType === 4 ) {
+			return elem.nodeValue;
+		}
+		// Do not include comment or processing instruction nodes
+	
+		return ret;
+	};
+	
+	Expr = Sizzle.selectors = {
+	
+		// Can be adjusted by the user
+		cacheLength: 50,
+	
+		createPseudo: markFunction,
+	
+		match: matchExpr,
+	
+		attrHandle: {},
+	
+		find: {},
+	
+		relative: {
+			">": { dir: "parentNode", first: true },
+			" ": { dir: "parentNode" },
+			"+": { dir: "previousSibling", first: true },
+			"~": { dir: "previousSibling" }
+		},
+	
+		preFilter: {
+			"ATTR": function( match ) {
+				match[1] = match[1].replace( runescape, funescape );
+	
+				// Move the given value to match[3] whether quoted or unquoted
+				match[3] = ( match[3] || match[4] || match[5] || "" ).replace( runescape, funescape );
+	
+				if ( match[2] === "~=" ) {
+					match[3] = " " + match[3] + " ";
+				}
+	
+				return match.slice( 0, 4 );
+			},
+	
+			"CHILD": function( match ) {
+				/* matches from matchExpr["CHILD"]
+					1 type (only|nth|...)
+					2 what (child|of-type)
+					3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+					4 xn-component of xn+y argument ([+-]?\d*n|)
+					5 sign of xn-component
+					6 x of xn-component
+					7 sign of y-component
+					8 y of y-component
+				*/
+				match[1] = match[1].toLowerCase();
+	
+				if ( match[1].slice( 0, 3 ) === "nth" ) {
+					// nth-* requires argument
+					if ( !match[3] ) {
+						Sizzle.error( match[0] );
+					}
+	
+					// numeric x and y parameters for Expr.filter.CHILD
+					// remember that false/true cast respectively to 0/1
+					match[4] = +( match[4] ? match[5] + (match[6] || 1) : 2 * ( match[3] === "even" || match[3] === "odd" ) );
+					match[5] = +( ( match[7] + match[8] ) || match[3] === "odd" );
+	
+				// other types prohibit arguments
+				} else if ( match[3] ) {
+					Sizzle.error( match[0] );
+				}
+	
+				return match;
+			},
+	
+			"PSEUDO": function( match ) {
+				var excess,
+					unquoted = !match[6] && match[2];
+	
+				if ( matchExpr["CHILD"].test( match[0] ) ) {
+					return null;
+				}
+	
+				// Accept quoted arguments as-is
+				if ( match[3] ) {
+					match[2] = match[4] || match[5] || "";
+	
+				// Strip excess characters from unquoted arguments
+				} else if ( unquoted && rpseudo.test( unquoted ) &&
+					// Get excess from tokenize (recursively)
+					(excess = tokenize( unquoted, true )) &&
+					// advance to the next closing parenthesis
+					(excess = unquoted.indexOf( ")", unquoted.length - excess ) - unquoted.length) ) {
+	
+					// excess is a negative index
+					match[0] = match[0].slice( 0, excess );
+					match[2] = unquoted.slice( 0, excess );
+				}
+	
+				// Return only captures needed by the pseudo filter method (type and argument)
+				return match.slice( 0, 3 );
+			}
+		},
+	
+		filter: {
+	
+			"TAG": function( nodeNameSelector ) {
+				var nodeName = nodeNameSelector.replace( runescape, funescape ).toLowerCase();
+				return nodeNameSelector === "*" ?
+					function() { return true; } :
+					function( elem ) {
+						return elem.nodeName && elem.nodeName.toLowerCase() === nodeName;
+					};
+			},
+	
+			"CLASS": function( className ) {
+				var pattern = classCache[ className + " " ];
+	
+				return pattern ||
+					(pattern = new RegExp( "(^|" + whitespace + ")" + className + "(" + whitespace + "|$)" )) &&
+					classCache( className, function( elem ) {
+						return pattern.test( typeof elem.className === "string" && elem.className || typeof elem.getAttribute !== "undefined" && elem.getAttribute("class") || "" );
+					});
+			},
+	
+			"ATTR": function( name, operator, check ) {
+				return function( elem ) {
+					var result = Sizzle.attr( elem, name );
+	
+					if ( result == null ) {
+						return operator === "!=";
+					}
+					if ( !operator ) {
+						return true;
+					}
+	
+					result += "";
+	
+					return operator === "=" ? result === check :
+						operator === "!=" ? result !== check :
+						operator === "^=" ? check && result.indexOf( check ) === 0 :
+						operator === "*=" ? check && result.indexOf( check ) > -1 :
+						operator === "$=" ? check && result.slice( -check.length ) === check :
+						operator === "~=" ? ( " " + result.replace( rwhitespace, " " ) + " " ).indexOf( check ) > -1 :
+						operator === "|=" ? result === check || result.slice( 0, check.length + 1 ) === check + "-" :
+						false;
+				};
+			},
+	
+			"CHILD": function( type, what, argument, first, last ) {
+				var simple = type.slice( 0, 3 ) !== "nth",
+					forward = type.slice( -4 ) !== "last",
+					ofType = what === "of-type";
+	
+				return first === 1 && last === 0 ?
+	
+					// Shortcut for :nth-*(n)
+					function( elem ) {
+						return !!elem.parentNode;
+					} :
+	
+					function( elem, context, xml ) {
+						var cache, uniqueCache, outerCache, node, nodeIndex, start,
+							dir = simple !== forward ? "nextSibling" : "previousSibling",
+							parent = elem.parentNode,
+							name = ofType && elem.nodeName.toLowerCase(),
+							useCache = !xml && !ofType,
+							diff = false;
+	
+						if ( parent ) {
+	
+							// :(first|last|only)-(child|of-type)
+							if ( simple ) {
+								while ( dir ) {
+									node = elem;
+									while ( (node = node[ dir ]) ) {
+										if ( ofType ?
+											node.nodeName.toLowerCase() === name :
+											node.nodeType === 1 ) {
+	
+											return false;
+										}
+									}
+									// Reverse direction for :only-* (if we haven't yet done so)
+									start = dir = type === "only" && !start && "nextSibling";
+								}
+								return true;
+							}
+	
+							start = [ forward ? parent.firstChild : parent.lastChild ];
+	
+							// non-xml :nth-child(...) stores cache data on `parent`
+							if ( forward && useCache ) {
+	
+								// Seek `elem` from a previously-cached index
+	
+								// ...in a gzip-friendly way
+								node = parent;
+								outerCache = node[ expando ] || (node[ expando ] = {});
+	
+								// Support: IE <9 only
+								// Defend against cloned attroperties (jQuery gh-1709)
+								uniqueCache = outerCache[ node.uniqueID ] ||
+									(outerCache[ node.uniqueID ] = {});
+	
+								cache = uniqueCache[ type ] || [];
+								nodeIndex = cache[ 0 ] === dirruns && cache[ 1 ];
+								diff = nodeIndex && cache[ 2 ];
+								node = nodeIndex && parent.childNodes[ nodeIndex ];
+	
+								while ( (node = ++nodeIndex && node && node[ dir ] ||
+	
+									// Fallback to seeking `elem` from the start
+									(diff = nodeIndex = 0) || start.pop()) ) {
+	
+									// When found, cache indexes on `parent` and break
+									if ( node.nodeType === 1 && ++diff && node === elem ) {
+										uniqueCache[ type ] = [ dirruns, nodeIndex, diff ];
+										break;
+									}
+								}
+	
+							} else {
+								// Use previously-cached element index if available
+								if ( useCache ) {
+									// ...in a gzip-friendly way
+									node = elem;
+									outerCache = node[ expando ] || (node[ expando ] = {});
+	
+									// Support: IE <9 only
+									// Defend against cloned attroperties (jQuery gh-1709)
+									uniqueCache = outerCache[ node.uniqueID ] ||
+										(outerCache[ node.uniqueID ] = {});
+	
+									cache = uniqueCache[ type ] || [];
+									nodeIndex = cache[ 0 ] === dirruns && cache[ 1 ];
+									diff = nodeIndex;
+								}
+	
+								// xml :nth-child(...)
+								// or :nth-last-child(...) or :nth(-last)?-of-type(...)
+								if ( diff === false ) {
+									// Use the same loop as above to seek `elem` from the start
+									while ( (node = ++nodeIndex && node && node[ dir ] ||
+										(diff = nodeIndex = 0) || start.pop()) ) {
+	
+										if ( ( ofType ?
+											node.nodeName.toLowerCase() === name :
+											node.nodeType === 1 ) &&
+											++diff ) {
+	
+											// Cache the index of each encountered element
+											if ( useCache ) {
+												outerCache = node[ expando ] || (node[ expando ] = {});
+	
+												// Support: IE <9 only
+												// Defend against cloned attroperties (jQuery gh-1709)
+												uniqueCache = outerCache[ node.uniqueID ] ||
+													(outerCache[ node.uniqueID ] = {});
+	
+												uniqueCache[ type ] = [ dirruns, diff ];
+											}
+	
+											if ( node === elem ) {
+												break;
+											}
+										}
+									}
+								}
+							}
+	
+							// Incorporate the offset, then check against cycle size
+							diff -= last;
+							return diff === first || ( diff % first === 0 && diff / first >= 0 );
+						}
+					};
+			},
+	
+			"PSEUDO": function( pseudo, argument ) {
+				// pseudo-class names are case-insensitive
+				// http://www.w3.org/TR/selectors/#pseudo-classes
+				// Prioritize by case sensitivity in case custom pseudos are added with uppercase letters
+				// Remember that setFilters inherits from pseudos
+				var args,
+					fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
+						Sizzle.error( "unsupported pseudo: " + pseudo );
+	
+				// The user may use createPseudo to indicate that
+				// arguments are needed to create the filter function
+				// just as Sizzle does
+				if ( fn[ expando ] ) {
+					return fn( argument );
+				}
+	
+				// But maintain support for old signatures
+				if ( fn.length > 1 ) {
+					args = [ pseudo, pseudo, "", argument ];
+					return Expr.setFilters.hasOwnProperty( pseudo.toLowerCase() ) ?
+						markFunction(function( seed, matches ) {
+							var idx,
+								matched = fn( seed, argument ),
+								i = matched.length;
+							while ( i-- ) {
+								idx = indexOf( seed, matched[i] );
+								seed[ idx ] = !( matches[ idx ] = matched[i] );
+							}
+						}) :
+						function( elem ) {
+							return fn( elem, 0, args );
+						};
+				}
+	
+				return fn;
+			}
+		},
+	
+		pseudos: {
+			// Potentially complex pseudos
+			"not": markFunction(function( selector ) {
+				// Trim the selector passed to compile
+				// to avoid treating leading and trailing
+				// spaces as combinators
+				var input = [],
+					results = [],
+					matcher = compile( selector.replace( rtrim, "$1" ) );
+	
+				return matcher[ expando ] ?
+					markFunction(function( seed, matches, context, xml ) {
+						var elem,
+							unmatched = matcher( seed, null, xml, [] ),
+							i = seed.length;
+	
+						// Match elements unmatched by `matcher`
+						while ( i-- ) {
+							if ( (elem = unmatched[i]) ) {
+								seed[i] = !(matches[i] = elem);
+							}
+						}
+					}) :
+					function( elem, context, xml ) {
+						input[0] = elem;
+						matcher( input, null, xml, results );
+						// Don't keep the element (issue #299)
+						input[0] = null;
+						return !results.pop();
+					};
+			}),
+	
+			"has": markFunction(function( selector ) {
+				return function( elem ) {
+					return Sizzle( selector, elem ).length > 0;
+				};
+			}),
+	
+			"contains": markFunction(function( text ) {
+				text = text.replace( runescape, funescape );
+				return function( elem ) {
+					return ( elem.textContent || elem.innerText || getText( elem ) ).indexOf( text ) > -1;
+				};
+			}),
+	
+			// "Whether an element is represented by a :lang() selector
+			// is based solely on the element's language value
+			// being equal to the identifier C,
+			// or beginning with the identifier C immediately followed by "-".
+			// The matching of C against the element's language value is performed case-insensitively.
+			// The identifier C does not have to be a valid language name."
+			// http://www.w3.org/TR/selectors/#lang-pseudo
+			"lang": markFunction( function( lang ) {
+				// lang value must be a valid identifier
+				if ( !ridentifier.test(lang || "") ) {
+					Sizzle.error( "unsupported lang: " + lang );
+				}
+				lang = lang.replace( runescape, funescape ).toLowerCase();
+				return function( elem ) {
+					var elemLang;
+					do {
+						if ( (elemLang = documentIsHTML ?
+							elem.lang :
+							elem.getAttribute("xml:lang") || elem.getAttribute("lang")) ) {
+	
+							elemLang = elemLang.toLowerCase();
+							return elemLang === lang || elemLang.indexOf( lang + "-" ) === 0;
+						}
+					} while ( (elem = elem.parentNode) && elem.nodeType === 1 );
+					return false;
+				};
+			}),
+	
+			// Miscellaneous
+			"target": function( elem ) {
+				var hash = window.location && window.location.hash;
+				return hash && hash.slice( 1 ) === elem.id;
+			},
+	
+			"root": function( elem ) {
+				return elem === docElem;
+			},
+	
+			"focus": function( elem ) {
+				return elem === document.activeElement && (!document.hasFocus || document.hasFocus()) && !!(elem.type || elem.href || ~elem.tabIndex);
+			},
+	
+			// Boolean properties
+			"enabled": createDisabledPseudo( false ),
+			"disabled": createDisabledPseudo( true ),
+	
+			"checked": function( elem ) {
+				// In CSS3, :checked should return both checked and selected elements
+				// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+				var nodeName = elem.nodeName.toLowerCase();
+				return (nodeName === "input" && !!elem.checked) || (nodeName === "option" && !!elem.selected);
+			},
+	
+			"selected": function( elem ) {
+				// Accessing this property makes selected-by-default
+				// options in Safari work properly
+				if ( elem.parentNode ) {
+					elem.parentNode.selectedIndex;
+				}
+	
+				return elem.selected === true;
+			},
+	
+			// Contents
+			"empty": function( elem ) {
+				// http://www.w3.org/TR/selectors/#empty-pseudo
+				// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
+				//   but not by others (comment: 8; processing instruction: 7; etc.)
+				// nodeType < 6 works because attributes (2) do not appear as children
+				for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
+					if ( elem.nodeType < 6 ) {
+						return false;
+					}
+				}
+				return true;
+			},
+	
+			"parent": function( elem ) {
+				return !Expr.pseudos["empty"]( elem );
+			},
+	
+			// Element/input types
+			"header": function( elem ) {
+				return rheader.test( elem.nodeName );
+			},
+	
+			"input": function( elem ) {
+				return rinputs.test( elem.nodeName );
+			},
+	
+			"button": function( elem ) {
+				var name = elem.nodeName.toLowerCase();
+				return name === "input" && elem.type === "button" || name === "button";
+			},
+	
+			"text": function( elem ) {
+				var attr;
+				return elem.nodeName.toLowerCase() === "input" &&
+					elem.type === "text" &&
+	
+					// Support: IE<8
+					// New HTML5 attribute values (e.g., "search") appear with elem.type === "text"
+					( (attr = elem.getAttribute("type")) == null || attr.toLowerCase() === "text" );
+			},
+	
+			// Position-in-collection
+			"first": createPositionalPseudo(function() {
+				return [ 0 ];
+			}),
+	
+			"last": createPositionalPseudo(function( matchIndexes, length ) {
+				return [ length - 1 ];
+			}),
+	
+			"eq": createPositionalPseudo(function( matchIndexes, length, argument ) {
+				return [ argument < 0 ? argument + length : argument ];
+			}),
+	
+			"even": createPositionalPseudo(function( matchIndexes, length ) {
+				var i = 0;
+				for ( ; i < length; i += 2 ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			}),
+	
+			"odd": createPositionalPseudo(function( matchIndexes, length ) {
+				var i = 1;
+				for ( ; i < length; i += 2 ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			}),
+	
+			"lt": createPositionalPseudo(function( matchIndexes, length, argument ) {
+				var i = argument < 0 ? argument + length : argument;
+				for ( ; --i >= 0; ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			}),
+	
+			"gt": createPositionalPseudo(function( matchIndexes, length, argument ) {
+				var i = argument < 0 ? argument + length : argument;
+				for ( ; ++i < length; ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			})
+		}
+	};
+	
+	Expr.pseudos["nth"] = Expr.pseudos["eq"];
+	
+	// Add button/input type pseudos
+	for ( i in { radio: true, checkbox: true, file: true, password: true, image: true } ) {
+		Expr.pseudos[ i ] = createInputPseudo( i );
+	}
+	for ( i in { submit: true, reset: true } ) {
+		Expr.pseudos[ i ] = createButtonPseudo( i );
+	}
+	
+	// Easy API for creating new setFilters
+	function setFilters() {}
+	setFilters.prototype = Expr.filters = Expr.pseudos;
+	Expr.setFilters = new setFilters();
+	
+	tokenize = Sizzle.tokenize = function( selector, parseOnly ) {
+		var matched, match, tokens, type,
+			soFar, groups, preFilters,
+			cached = tokenCache[ selector + " " ];
+	
+		if ( cached ) {
+			return parseOnly ? 0 : cached.slice( 0 );
+		}
+	
+		soFar = selector;
+		groups = [];
+		preFilters = Expr.preFilter;
+	
+		while ( soFar ) {
+	
+			// Comma and first run
+			if ( !matched || (match = rcomma.exec( soFar )) ) {
+				if ( match ) {
+					// Don't consume trailing commas as valid
+					soFar = soFar.slice( match[0].length ) || soFar;
+				}
+				groups.push( (tokens = []) );
+			}
+	
+			matched = false;
+	
+			// Combinators
+			if ( (match = rcombinators.exec( soFar )) ) {
+				matched = match.shift();
+				tokens.push({
+					value: matched,
+					// Cast descendant combinators to space
+					type: match[0].replace( rtrim, " " )
+				});
+				soFar = soFar.slice( matched.length );
+			}
+	
+			// Filters
+			for ( type in Expr.filter ) {
+				if ( (match = matchExpr[ type ].exec( soFar )) && (!preFilters[ type ] ||
+					(match = preFilters[ type ]( match ))) ) {
+					matched = match.shift();
+					tokens.push({
+						value: matched,
+						type: type,
+						matches: match
+					});
+					soFar = soFar.slice( matched.length );
+				}
+			}
+	
+			if ( !matched ) {
+				break;
+			}
+		}
+	
+		// Return the length of the invalid excess
+		// if we're just parsing
+		// Otherwise, throw an error or return tokens
+		return parseOnly ?
+			soFar.length :
+			soFar ?
+				Sizzle.error( selector ) :
+				// Cache the tokens
+				tokenCache( selector, groups ).slice( 0 );
+	};
+	
+	function toSelector( tokens ) {
+		var i = 0,
+			len = tokens.length,
+			selector = "";
+		for ( ; i < len; i++ ) {
+			selector += tokens[i].value;
+		}
+		return selector;
+	}
+	
+	function addCombinator( matcher, combinator, base ) {
+		var dir = combinator.dir,
+			skip = combinator.next,
+			key = skip || dir,
+			checkNonElements = base && key === "parentNode",
+			doneName = done++;
+	
+		return combinator.first ?
+			// Check against closest ancestor/preceding element
+			function( elem, context, xml ) {
+				while ( (elem = elem[ dir ]) ) {
+					if ( elem.nodeType === 1 || checkNonElements ) {
+						return matcher( elem, context, xml );
+					}
+				}
+				return false;
+			} :
+	
+			// Check against all ancestor/preceding elements
+			function( elem, context, xml ) {
+				var oldCache, uniqueCache, outerCache,
+					newCache = [ dirruns, doneName ];
+	
+				// We can't set arbitrary data on XML nodes, so they don't benefit from combinator caching
+				if ( xml ) {
+					while ( (elem = elem[ dir ]) ) {
+						if ( elem.nodeType === 1 || checkNonElements ) {
+							if ( matcher( elem, context, xml ) ) {
+								return true;
+							}
+						}
+					}
+				} else {
+					while ( (elem = elem[ dir ]) ) {
+						if ( elem.nodeType === 1 || checkNonElements ) {
+							outerCache = elem[ expando ] || (elem[ expando ] = {});
+	
+							// Support: IE <9 only
+							// Defend against cloned attroperties (jQuery gh-1709)
+							uniqueCache = outerCache[ elem.uniqueID ] || (outerCache[ elem.uniqueID ] = {});
+	
+							if ( skip && skip === elem.nodeName.toLowerCase() ) {
+								elem = elem[ dir ] || elem;
+							} else if ( (oldCache = uniqueCache[ key ]) &&
+								oldCache[ 0 ] === dirruns && oldCache[ 1 ] === doneName ) {
+	
+								// Assign to newCache so results back-propagate to previous elements
+								return (newCache[ 2 ] = oldCache[ 2 ]);
+							} else {
+								// Reuse newcache so results back-propagate to previous elements
+								uniqueCache[ key ] = newCache;
+	
+								// A match means we're done; a fail means we have to keep checking
+								if ( (newCache[ 2 ] = matcher( elem, context, xml )) ) {
+									return true;
+								}
+							}
+						}
+					}
+				}
+				return false;
+			};
+	}
+	
+	function elementMatcher( matchers ) {
+		return matchers.length > 1 ?
+			function( elem, context, xml ) {
+				var i = matchers.length;
+				while ( i-- ) {
+					if ( !matchers[i]( elem, context, xml ) ) {
+						return false;
+					}
+				}
+				return true;
+			} :
+			matchers[0];
+	}
+	
+	function multipleContexts( selector, contexts, results ) {
+		var i = 0,
+			len = contexts.length;
+		for ( ; i < len; i++ ) {
+			Sizzle( selector, contexts[i], results );
+		}
+		return results;
+	}
+	
+	function condense( unmatched, map, filter, context, xml ) {
+		var elem,
+			newUnmatched = [],
+			i = 0,
+			len = unmatched.length,
+			mapped = map != null;
+	
+		for ( ; i < len; i++ ) {
+			if ( (elem = unmatched[i]) ) {
+				if ( !filter || filter( elem, context, xml ) ) {
+					newUnmatched.push( elem );
+					if ( mapped ) {
+						map.push( i );
+					}
+				}
+			}
+		}
+	
+		return newUnmatched;
+	}
+	
+	function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {
+		if ( postFilter && !postFilter[ expando ] ) {
+			postFilter = setMatcher( postFilter );
+		}
+		if ( postFinder && !postFinder[ expando ] ) {
+			postFinder = setMatcher( postFinder, postSelector );
+		}
+		return markFunction(function( seed, results, context, xml ) {
+			var temp, i, elem,
+				preMap = [],
+				postMap = [],
+				preexisting = results.length,
+	
+				// Get initial elements from seed or context
+				elems = seed || multipleContexts( selector || "*", context.nodeType ? [ context ] : context, [] ),
+	
+				// Prefilter to get matcher input, preserving a map for seed-results synchronization
+				matcherIn = preFilter && ( seed || !selector ) ?
+					condense( elems, preMap, preFilter, context, xml ) :
+					elems,
+	
+				matcherOut = matcher ?
+					// If we have a postFinder, or filtered seed, or non-seed postFilter or preexisting results,
+					postFinder || ( seed ? preFilter : preexisting || postFilter ) ?
+	
+						// ...intermediate processing is necessary
+						[] :
+	
+						// ...otherwise use results directly
+						results :
+					matcherIn;
+	
+			// Find primary matches
+			if ( matcher ) {
+				matcher( matcherIn, matcherOut, context, xml );
+			}
+	
+			// Apply postFilter
+			if ( postFilter ) {
+				temp = condense( matcherOut, postMap );
+				postFilter( temp, [], context, xml );
+	
+				// Un-match failing elements by moving them back to matcherIn
+				i = temp.length;
+				while ( i-- ) {
+					if ( (elem = temp[i]) ) {
+						matcherOut[ postMap[i] ] = !(matcherIn[ postMap[i] ] = elem);
+					}
+				}
+			}
+	
+			if ( seed ) {
+				if ( postFinder || preFilter ) {
+					if ( postFinder ) {
+						// Get the final matcherOut by condensing this intermediate into postFinder contexts
+						temp = [];
+						i = matcherOut.length;
+						while ( i-- ) {
+							if ( (elem = matcherOut[i]) ) {
+								// Restore matcherIn since elem is not yet a final match
+								temp.push( (matcherIn[i] = elem) );
+							}
+						}
+						postFinder( null, (matcherOut = []), temp, xml );
+					}
+	
+					// Move matched elements from seed to results to keep them synchronized
+					i = matcherOut.length;
+					while ( i-- ) {
+						if ( (elem = matcherOut[i]) &&
+							(temp = postFinder ? indexOf( seed, elem ) : preMap[i]) > -1 ) {
+	
+							seed[temp] = !(results[temp] = elem);
+						}
+					}
+				}
+	
+			// Add elements to results, through postFinder if defined
+			} else {
+				matcherOut = condense(
+					matcherOut === results ?
+						matcherOut.splice( preexisting, matcherOut.length ) :
+						matcherOut
+				);
+				if ( postFinder ) {
+					postFinder( null, results, matcherOut, xml );
+				} else {
+					push.apply( results, matcherOut );
+				}
+			}
+		});
+	}
+	
+	function matcherFromTokens( tokens ) {
+		var checkContext, matcher, j,
+			len = tokens.length,
+			leadingRelative = Expr.relative[ tokens[0].type ],
+			implicitRelative = leadingRelative || Expr.relative[" "],
+			i = leadingRelative ? 1 : 0,
+	
+			// The foundational matcher ensures that elements are reachable from top-level context(s)
+			matchContext = addCombinator( function( elem ) {
+				return elem === checkContext;
+			}, implicitRelative, true ),
+			matchAnyContext = addCombinator( function( elem ) {
+				return indexOf( checkContext, elem ) > -1;
+			}, implicitRelative, true ),
+			matchers = [ function( elem, context, xml ) {
+				var ret = ( !leadingRelative && ( xml || context !== outermostContext ) ) || (
+					(checkContext = context).nodeType ?
+						matchContext( elem, context, xml ) :
+						matchAnyContext( elem, context, xml ) );
+				// Avoid hanging onto element (issue #299)
+				checkContext = null;
+				return ret;
+			} ];
+	
+		for ( ; i < len; i++ ) {
+			if ( (matcher = Expr.relative[ tokens[i].type ]) ) {
+				matchers = [ addCombinator(elementMatcher( matchers ), matcher) ];
+			} else {
+				matcher = Expr.filter[ tokens[i].type ].apply( null, tokens[i].matches );
+	
+				// Return special upon seeing a positional matcher
+				if ( matcher[ expando ] ) {
+					// Find the next relative operator (if any) for proper handling
+					j = ++i;
+					for ( ; j < len; j++ ) {
+						if ( Expr.relative[ tokens[j].type ] ) {
+							break;
+						}
+					}
+					return setMatcher(
+						i > 1 && elementMatcher( matchers ),
+						i > 1 && toSelector(
+							// If the preceding token was a descendant combinator, insert an implicit any-element `*`
+							tokens.slice( 0, i - 1 ).concat({ value: tokens[ i - 2 ].type === " " ? "*" : "" })
+						).replace( rtrim, "$1" ),
+						matcher,
+						i < j && matcherFromTokens( tokens.slice( i, j ) ),
+						j < len && matcherFromTokens( (tokens = tokens.slice( j )) ),
+						j < len && toSelector( tokens )
+					);
+				}
+				matchers.push( matcher );
+			}
+		}
+	
+		return elementMatcher( matchers );
+	}
+	
+	function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
+		var bySet = setMatchers.length > 0,
+			byElement = elementMatchers.length > 0,
+			superMatcher = function( seed, context, xml, results, outermost ) {
+				var elem, j, matcher,
+					matchedCount = 0,
+					i = "0",
+					unmatched = seed && [],
+					setMatched = [],
+					contextBackup = outermostContext,
+					// We must always have either seed elements or outermost context
+					elems = seed || byElement && Expr.find["TAG"]( "*", outermost ),
+					// Use integer dirruns iff this is the outermost matcher
+					dirrunsUnique = (dirruns += contextBackup == null ? 1 : Math.random() || 0.1),
+					len = elems.length;
+	
+				if ( outermost ) {
+					outermostContext = context === document || context || outermost;
+				}
+	
+				// Add elements passing elementMatchers directly to results
+				// Support: IE<9, Safari
+				// Tolerate NodeList properties (IE: "length"; Safari: <number>) matching elements by id
+				for ( ; i !== len && (elem = elems[i]) != null; i++ ) {
+					if ( byElement && elem ) {
+						j = 0;
+						if ( !context && elem.ownerDocument !== document ) {
+							setDocument( elem );
+							xml = !documentIsHTML;
+						}
+						while ( (matcher = elementMatchers[j++]) ) {
+							if ( matcher( elem, context || document, xml) ) {
+								results.push( elem );
+								break;
+							}
+						}
+						if ( outermost ) {
+							dirruns = dirrunsUnique;
+						}
+					}
+	
+					// Track unmatched elements for set filters
+					if ( bySet ) {
+						// They will have gone through all possible matchers
+						if ( (elem = !matcher && elem) ) {
+							matchedCount--;
+						}
+	
+						// Lengthen the array for every element, matched or not
+						if ( seed ) {
+							unmatched.push( elem );
+						}
+					}
+				}
+	
+				// `i` is now the count of elements visited above, and adding it to `matchedCount`
+				// makes the latter nonnegative.
+				matchedCount += i;
+	
+				// Apply set filters to unmatched elements
+				// NOTE: This can be skipped if there are no unmatched elements (i.e., `matchedCount`
+				// equals `i`), unless we didn't visit _any_ elements in the above loop because we have
+				// no element matchers and no seed.
+				// Incrementing an initially-string "0" `i` allows `i` to remain a string only in that
+				// case, which will result in a "00" `matchedCount` that differs from `i` but is also
+				// numerically zero.
+				if ( bySet && i !== matchedCount ) {
+					j = 0;
+					while ( (matcher = setMatchers[j++]) ) {
+						matcher( unmatched, setMatched, context, xml );
+					}
+	
+					if ( seed ) {
+						// Reintegrate element matches to eliminate the need for sorting
+						if ( matchedCount > 0 ) {
+							while ( i-- ) {
+								if ( !(unmatched[i] || setMatched[i]) ) {
+									setMatched[i] = pop.call( results );
+								}
+							}
+						}
+	
+						// Discard index placeholder values to get only actual matches
+						setMatched = condense( setMatched );
+					}
+	
+					// Add matches to results
+					push.apply( results, setMatched );
+	
+					// Seedless set matches succeeding multiple successful matchers stipulate sorting
+					if ( outermost && !seed && setMatched.length > 0 &&
+						( matchedCount + setMatchers.length ) > 1 ) {
+	
+						Sizzle.uniqueSort( results );
+					}
+				}
+	
+				// Override manipulation of globals by nested matchers
+				if ( outermost ) {
+					dirruns = dirrunsUnique;
+					outermostContext = contextBackup;
+				}
+	
+				return unmatched;
+			};
+	
+		return bySet ?
+			markFunction( superMatcher ) :
+			superMatcher;
+	}
+	
+	compile = Sizzle.compile = function( selector, match /* Internal Use Only */ ) {
+		var i,
+			setMatchers = [],
+			elementMatchers = [],
+			cached = compilerCache[ selector + " " ];
+	
+		if ( !cached ) {
+			// Generate a function of recursive functions that can be used to check each element
+			if ( !match ) {
+				match = tokenize( selector );
+			}
+			i = match.length;
+			while ( i-- ) {
+				cached = matcherFromTokens( match[i] );
+				if ( cached[ expando ] ) {
+					setMatchers.push( cached );
+				} else {
+					elementMatchers.push( cached );
+				}
+			}
+	
+			// Cache the compiled function
+			cached = compilerCache( selector, matcherFromGroupMatchers( elementMatchers, setMatchers ) );
+	
+			// Save selector and tokenization
+			cached.selector = selector;
+		}
+		return cached;
+	};
+	
+	/**
+	 * A low-level selection function that works with Sizzle's compiled
+	 *  selector functions
+	 * @param {String|Function} selector A selector or a pre-compiled
+	 *  selector function built with Sizzle.compile
+	 * @param {Element} context
+	 * @param {Array} [results]
+	 * @param {Array} [seed] A set of elements to match against
+	 */
+	select = Sizzle.select = function( selector, context, results, seed ) {
+		var i, tokens, token, type, find,
+			compiled = typeof selector === "function" && selector,
+			match = !seed && tokenize( (selector = compiled.selector || selector) );
+	
+		results = results || [];
+	
+		// Try to minimize operations if there is only one selector in the list and no seed
+		// (the latter of which guarantees us context)
+		if ( match.length === 1 ) {
+	
+			// Reduce context if the leading compound selector is an ID
+			tokens = match[0] = match[0].slice( 0 );
+			if ( tokens.length > 2 && (token = tokens[0]).type === "ID" &&
+					context.nodeType === 9 && documentIsHTML && Expr.relative[ tokens[1].type ] ) {
+	
+				context = ( Expr.find["ID"]( token.matches[0].replace(runescape, funescape), context ) || [] )[0];
+				if ( !context ) {
+					return results;
+	
+				// Precompiled matchers will still verify ancestry, so step up a level
+				} else if ( compiled ) {
+					context = context.parentNode;
+				}
+	
+				selector = selector.slice( tokens.shift().value.length );
+			}
+	
+			// Fetch a seed set for right-to-left matching
+			i = matchExpr["needsContext"].test( selector ) ? 0 : tokens.length;
+			while ( i-- ) {
+				token = tokens[i];
+	
+				// Abort if we hit a combinator
+				if ( Expr.relative[ (type = token.type) ] ) {
+					break;
+				}
+				if ( (find = Expr.find[ type ]) ) {
+					// Search, expanding context for leading sibling combinators
+					if ( (seed = find(
+						token.matches[0].replace( runescape, funescape ),
+						rsibling.test( tokens[0].type ) && testContext( context.parentNode ) || context
+					)) ) {
+	
+						// If seed is empty or no tokens remain, we can return early
+						tokens.splice( i, 1 );
+						selector = seed.length && toSelector( tokens );
+						if ( !selector ) {
+							push.apply( results, seed );
+							return results;
+						}
+	
+						break;
+					}
+				}
+			}
+		}
+	
+		// Compile and execute a filtering function if one is not provided
+		// Provide `match` to avoid retokenization if we modified the selector above
+		( compiled || compile( selector, match ) )(
+			seed,
+			context,
+			!documentIsHTML,
+			results,
+			!context || rsibling.test( selector ) && testContext( context.parentNode ) || context
+		);
+		return results;
+	};
+	
+	// One-time assignments
+	
+	// Sort stability
+	support.sortStable = expando.split("").sort( sortOrder ).join("") === expando;
+	
+	// Support: Chrome 14-35+
+	// Always assume duplicates if they aren't passed to the comparison function
+	support.detectDuplicates = !!hasDuplicate;
+	
+	// Initialize against the default document
+	setDocument();
+	
+	// Support: Webkit<537.32 - Safari 6.0.3/Chrome 25 (fixed in Chrome 27)
+	// Detached nodes confoundingly follow *each other*
+	support.sortDetached = assert(function( el ) {
+		// Should return 1, but returns 4 (following)
+		return el.compareDocumentPosition( document.createElement("fieldset") ) & 1;
+	});
+	
+	// Support: IE<8
+	// Prevent attribute/property "interpolation"
+	// https://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
+	if ( !assert(function( el ) {
+		el.innerHTML = "<a href='#'></a>";
+		return el.firstChild.getAttribute("href") === "#" ;
+	}) ) {
+		addHandle( "type|href|height|width", function( elem, name, isXML ) {
+			if ( !isXML ) {
+				return elem.getAttribute( name, name.toLowerCase() === "type" ? 1 : 2 );
+			}
+		});
+	}
+	
+	// Support: IE<9
+	// Use defaultValue in place of getAttribute("value")
+	if ( !support.attributes || !assert(function( el ) {
+		el.innerHTML = "<input/>";
+		el.firstChild.setAttribute( "value", "" );
+		return el.firstChild.getAttribute( "value" ) === "";
+	}) ) {
+		addHandle( "value", function( elem, name, isXML ) {
+			if ( !isXML && elem.nodeName.toLowerCase() === "input" ) {
+				return elem.defaultValue;
+			}
+		});
+	}
+	
+	// Support: IE<9
+	// Use getAttributeNode to fetch booleans when getAttribute lies
+	if ( !assert(function( el ) {
+		return el.getAttribute("disabled") == null;
+	}) ) {
+		addHandle( booleans, function( elem, name, isXML ) {
+			var val;
+			if ( !isXML ) {
+				return elem[ name ] === true ? name.toLowerCase() :
+						(val = elem.getAttributeNode( name )) && val.specified ?
+						val.value :
+					null;
+			}
+		});
+	}
+	
+	return Sizzle;
+	
+	})( window );
+	
+	
+	
+	jQuery.find = Sizzle;
+	jQuery.expr = Sizzle.selectors;
+	
+	// Deprecated
+	jQuery.expr[ ":" ] = jQuery.expr.pseudos;
+	jQuery.uniqueSort = jQuery.unique = Sizzle.uniqueSort;
+	jQuery.text = Sizzle.getText;
+	jQuery.isXMLDoc = Sizzle.isXML;
+	jQuery.contains = Sizzle.contains;
+	jQuery.escapeSelector = Sizzle.escape;
+	
+	
+	
+	
+	var dir = function( elem, dir, until ) {
+		var matched = [],
+			truncate = until !== undefined;
+	
+		while ( ( elem = elem[ dir ] ) && elem.nodeType !== 9 ) {
+			if ( elem.nodeType === 1 ) {
+				if ( truncate && jQuery( elem ).is( until ) ) {
+					break;
+				}
+				matched.push( elem );
+			}
+		}
+		return matched;
+	};
+	
+	
+	var siblings = function( n, elem ) {
+		var matched = [];
+	
+		for ( ; n; n = n.nextSibling ) {
+			if ( n.nodeType === 1 && n !== elem ) {
+				matched.push( n );
+			}
+		}
+	
+		return matched;
+	};
+	
+	
+	var rneedsContext = jQuery.expr.match.needsContext;
+	
+	var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
+	
+	
+	
+	var risSimple = /^.[^:#\[\.,]*$/;
+	
+	// Implement the identical functionality for filter and not
+	function winnow( elements, qualifier, not ) {
+		if ( jQuery.isFunction( qualifier ) ) {
+			return jQuery.grep( elements, function( elem, i ) {
+				return !!qualifier.call( elem, i, elem ) !== not;
+			} );
+		}
+	
+		// Single element
+		if ( qualifier.nodeType ) {
+			return jQuery.grep( elements, function( elem ) {
+				return ( elem === qualifier ) !== not;
+			} );
+		}
+	
+		// Arraylike of elements (jQuery, arguments, Array)
+		if ( typeof qualifier !== "string" ) {
+			return jQuery.grep( elements, function( elem ) {
+				return ( indexOf.call( qualifier, elem ) > -1 ) !== not;
+			} );
+		}
+	
+		// Simple selector that can be filtered directly, removing non-Elements
+		if ( risSimple.test( qualifier ) ) {
+			return jQuery.filter( qualifier, elements, not );
+		}
+	
+		// Complex selector, compare the two sets, removing non-Elements
+		qualifier = jQuery.filter( qualifier, elements );
+		return jQuery.grep( elements, function( elem ) {
+			return ( indexOf.call( qualifier, elem ) > -1 ) !== not && elem.nodeType === 1;
+		} );
+	}
+	
+	jQuery.filter = function( expr, elems, not ) {
+		var elem = elems[ 0 ];
+	
+		if ( not ) {
+			expr = ":not(" + expr + ")";
+		}
+	
+		if ( elems.length === 1 && elem.nodeType === 1 ) {
+			return jQuery.find.matchesSelector( elem, expr ) ? [ elem ] : [];
+		}
+	
+		return jQuery.find.matches( expr, jQuery.grep( elems, function( elem ) {
+			return elem.nodeType === 1;
+		} ) );
+	};
+	
+	jQuery.fn.extend( {
+		find: function( selector ) {
+			var i, ret,
+				len = this.length,
+				self = this;
+	
+			if ( typeof selector !== "string" ) {
+				return this.pushStack( jQuery( selector ).filter( function() {
+					for ( i = 0; i < len; i++ ) {
+						if ( jQuery.contains( self[ i ], this ) ) {
+							return true;
+						}
+					}
+				} ) );
+			}
+	
+			ret = this.pushStack( [] );
+	
+			for ( i = 0; i < len; i++ ) {
+				jQuery.find( selector, self[ i ], ret );
+			}
+	
+			return len > 1 ? jQuery.uniqueSort( ret ) : ret;
+		},
+		filter: function( selector ) {
+			return this.pushStack( winnow( this, selector || [], false ) );
+		},
+		not: function( selector ) {
+			return this.pushStack( winnow( this, selector || [], true ) );
+		},
+		is: function( selector ) {
+			return !!winnow(
+				this,
+	
+				// If this is a positional/relative selector, check membership in the returned set
+				// so $("p:first").is("p:last") won't return true for a doc with two "p".
+				typeof selector === "string" && rneedsContext.test( selector ) ?
+					jQuery( selector ) :
+					selector || [],
+				false
+			).length;
+		}
+	} );
+	
+	
+	// Initialize a jQuery object
+	
+	
+	// A central reference to the root jQuery(document)
+	var rootjQuery,
+	
+		// A simple way to check for HTML strings
+		// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
+		// Strict HTML recognition (#11290: must start with <)
+		// Shortcut simple #id case for speed
+		rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/,
+	
+		init = jQuery.fn.init = function( selector, context, root ) {
+			var match, elem;
+	
+			// HANDLE: $(""), $(null), $(undefined), $(false)
+			if ( !selector ) {
+				return this;
+			}
+	
+			// Method init() accepts an alternate rootjQuery
+			// so migrate can support jQuery.sub (gh-2101)
+			root = root || rootjQuery;
+	
+			// Handle HTML strings
+			if ( typeof selector === "string" ) {
+				if ( selector[ 0 ] === "<" &&
+					selector[ selector.length - 1 ] === ">" &&
+					selector.length >= 3 ) {
+	
+					// Assume that strings that start and end with <> are HTML and skip the regex check
+					match = [ null, selector, null ];
+	
+				} else {
+					match = rquickExpr.exec( selector );
+				}
+	
+				// Match html or make sure no context is specified for #id
+				if ( match && ( match[ 1 ] || !context ) ) {
+	
+					// HANDLE: $(html) -> $(array)
+					if ( match[ 1 ] ) {
+						context = context instanceof jQuery ? context[ 0 ] : context;
+	
+						// Option to run scripts is true for back-compat
+						// Intentionally let the error be thrown if parseHTML is not present
+						jQuery.merge( this, jQuery.parseHTML(
+							match[ 1 ],
+							context && context.nodeType ? context.ownerDocument || context : document,
+							true
+						) );
+	
+						// HANDLE: $(html, props)
+						if ( rsingleTag.test( match[ 1 ] ) && jQuery.isPlainObject( context ) ) {
+							for ( match in context ) {
+	
+								// Properties of context are called as methods if possible
+								if ( jQuery.isFunction( this[ match ] ) ) {
+									this[ match ]( context[ match ] );
+	
+								// ...and otherwise set as attributes
+								} else {
+									this.attr( match, context[ match ] );
+								}
+							}
+						}
+	
+						return this;
+	
+					// HANDLE: $(#id)
+					} else {
+						elem = document.getElementById( match[ 2 ] );
+	
+						if ( elem ) {
+	
+							// Inject the element directly into the jQuery object
+							this[ 0 ] = elem;
+							this.length = 1;
+						}
+						return this;
+					}
+	
+				// HANDLE: $(expr, $(...))
+				} else if ( !context || context.jquery ) {
+					return ( context || root ).find( selector );
+	
+				// HANDLE: $(expr, context)
+				// (which is just equivalent to: $(context).find(expr)
+				} else {
+					return this.constructor( context ).find( selector );
+				}
+	
+			// HANDLE: $(DOMElement)
+			} else if ( selector.nodeType ) {
+				this[ 0 ] = selector;
+				this.length = 1;
+				return this;
+	
+			// HANDLE: $(function)
+			// Shortcut for document ready
+			} else if ( jQuery.isFunction( selector ) ) {
+				return root.ready !== undefined ?
+					root.ready( selector ) :
+	
+					// Execute immediately if ready is not present
+					selector( jQuery );
+			}
+	
+			return jQuery.makeArray( selector, this );
+		};
+	
+	// Give the init function the jQuery prototype for later instantiation
+	init.prototype = jQuery.fn;
+	
+	// Initialize central reference
+	rootjQuery = jQuery( document );
+	
+	
+	var rparentsprev = /^(?:parents|prev(?:Until|All))/,
+	
+		// Methods guaranteed to produce a unique set when starting from a unique set
+		guaranteedUnique = {
+			children: true,
+			contents: true,
+			next: true,
+			prev: true
+		};
+	
+	jQuery.fn.extend( {
+		has: function( target ) {
+			var targets = jQuery( target, this ),
+				l = targets.length;
+	
+			return this.filter( function() {
+				var i = 0;
+				for ( ; i < l; i++ ) {
+					if ( jQuery.contains( this, targets[ i ] ) ) {
+						return true;
+					}
+				}
+			} );
+		},
+	
+		closest: function( selectors, context ) {
+			var cur,
+				i = 0,
+				l = this.length,
+				matched = [],
+				targets = typeof selectors !== "string" && jQuery( selectors );
+	
+			// Positional selectors never match, since there's no _selection_ context
+			if ( !rneedsContext.test( selectors ) ) {
+				for ( ; i < l; i++ ) {
+					for ( cur = this[ i ]; cur && cur !== context; cur = cur.parentNode ) {
+	
+						// Always skip document fragments
+						if ( cur.nodeType < 11 && ( targets ?
+							targets.index( cur ) > -1 :
+	
+							// Don't pass non-elements to Sizzle
+							cur.nodeType === 1 &&
+								jQuery.find.matchesSelector( cur, selectors ) ) ) {
+	
+							matched.push( cur );
+							break;
+						}
+					}
+				}
+			}
+	
+			return this.pushStack( matched.length > 1 ? jQuery.uniqueSort( matched ) : matched );
+		},
+	
+		// Determine the position of an element within the set
+		index: function( elem ) {
+	
+			// No argument, return index in parent
+			if ( !elem ) {
+				return ( this[ 0 ] && this[ 0 ].parentNode ) ? this.first().prevAll().length : -1;
+			}
+	
+			// Index in selector
+			if ( typeof elem === "string" ) {
+				return indexOf.call( jQuery( elem ), this[ 0 ] );
+			}
+	
+			// Locate the position of the desired element
+			return indexOf.call( this,
+	
+				// If it receives a jQuery object, the first element is used
+				elem.jquery ? elem[ 0 ] : elem
+			);
+		},
+	
+		add: function( selector, context ) {
+			return this.pushStack(
+				jQuery.uniqueSort(
+					jQuery.merge( this.get(), jQuery( selector, context ) )
+				)
+			);
+		},
+	
+		addBack: function( selector ) {
+			return this.add( selector == null ?
+				this.prevObject : this.prevObject.filter( selector )
+			);
+		}
+	} );
+	
+	function sibling( cur, dir ) {
+		while ( ( cur = cur[ dir ] ) && cur.nodeType !== 1 ) {}
+		return cur;
+	}
+	
+	jQuery.each( {
+		parent: function( elem ) {
+			var parent = elem.parentNode;
+			return parent && parent.nodeType !== 11 ? parent : null;
+		},
+		parents: function( elem ) {
+			return dir( elem, "parentNode" );
+		},
+		parentsUntil: function( elem, i, until ) {
+			return dir( elem, "parentNode", until );
+		},
+		next: function( elem ) {
+			return sibling( elem, "nextSibling" );
+		},
+		prev: function( elem ) {
+			return sibling( elem, "previousSibling" );
+		},
+		nextAll: function( elem ) {
+			return dir( elem, "nextSibling" );
+		},
+		prevAll: function( elem ) {
+			return dir( elem, "previousSibling" );
+		},
+		nextUntil: function( elem, i, until ) {
+			return dir( elem, "nextSibling", until );
+		},
+		prevUntil: function( elem, i, until ) {
+			return dir( elem, "previousSibling", until );
+		},
+		siblings: function( elem ) {
+			return siblings( ( elem.parentNode || {} ).firstChild, elem );
+		},
+		children: function( elem ) {
+			return siblings( elem.firstChild );
+		},
+		contents: function( elem ) {
+			return elem.contentDocument || jQuery.merge( [], elem.childNodes );
+		}
+	}, function( name, fn ) {
+		jQuery.fn[ name ] = function( until, selector ) {
+			var matched = jQuery.map( this, fn, until );
+	
+			if ( name.slice( -5 ) !== "Until" ) {
+				selector = until;
+			}
+	
+			if ( selector && typeof selector === "string" ) {
+				matched = jQuery.filter( selector, matched );
+			}
+	
+			if ( this.length > 1 ) {
+	
+				// Remove duplicates
+				if ( !guaranteedUnique[ name ] ) {
+					jQuery.uniqueSort( matched );
+				}
+	
+				// Reverse order for parents* and prev-derivatives
+				if ( rparentsprev.test( name ) ) {
+					matched.reverse();
+				}
+			}
+	
+			return this.pushStack( matched );
+		};
+	} );
+	var rnothtmlwhite = ( /[^\x20\t\r\n\f]+/g );
+	
+	
+	
+	// Convert String-formatted options into Object-formatted ones
+	function createOptions( options ) {
+		var object = {};
+		jQuery.each( options.match( rnothtmlwhite ) || [], function( _, flag ) {
+			object[ flag ] = true;
+		} );
+		return object;
+	}
+	
+	/*
+	 * Create a callback list using the following parameters:
+	 *
+	 *	options: an optional list of space-separated options that will change how
+	 *			the callback list behaves or a more traditional option object
+	 *
+	 * By default a callback list will act like an event callback list and can be
+	 * "fired" multiple times.
+	 *
+	 * Possible options:
+	 *
+	 *	once:			will ensure the callback list can only be fired once (like a Deferred)
+	 *
+	 *	memory:			will keep track of previous values and will call any callback added
+	 *					after the list has been fired right away with the latest "memorized"
+	 *					values (like a Deferred)
+	 *
+	 *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+	 *
+	 *	stopOnFalse:	interrupt callings when a callback returns false
+	 *
+	 */
+	jQuery.Callbacks = function( options ) {
+	
+		// Convert options from String-formatted to Object-formatted if needed
+		// (we check in cache first)
+		options = typeof options === "string" ?
+			createOptions( options ) :
+			jQuery.extend( {}, options );
+	
+		var // Flag to know if list is currently firing
+			firing,
+	
+			// Last fire value for non-forgettable lists
+			memory,
+	
+			// Flag to know if list was already fired
+			fired,
+	
+			// Flag to prevent firing
+			locked,
+	
+			// Actual callback list
+			list = [],
+	
+			// Queue of execution data for repeatable lists
+			queue = [],
+	
+			// Index of currently firing callback (modified by add/remove as needed)
+			firingIndex = -1,
+	
+			// Fire callbacks
+			fire = function() {
+	
+				// Enforce single-firing
+				locked = options.once;
+	
+				// Execute callbacks for all pending executions,
+				// respecting firingIndex overrides and runtime changes
+				fired = firing = true;
+				for ( ; queue.length; firingIndex = -1 ) {
+					memory = queue.shift();
+					while ( ++firingIndex < list.length ) {
+	
+						// Run callback and check for early termination
+						if ( list[ firingIndex ].apply( memory[ 0 ], memory[ 1 ] ) === false &&
+							options.stopOnFalse ) {
+	
+							// Jump to end and forget the data so .add doesn't re-fire
+							firingIndex = list.length;
+							memory = false;
+						}
+					}
+				}
+	
+				// Forget the data if we're done with it
+				if ( !options.memory ) {
+					memory = false;
+				}
+	
+				firing = false;
+	
+				// Clean up if we're done firing for good
+				if ( locked ) {
+	
+					// Keep an empty list if we have data for future add calls
+					if ( memory ) {
+						list = [];
+	
+					// Otherwise, this object is spent
+					} else {
+						list = "";
+					}
+				}
+			},
+	
+			// Actual Callbacks object
+			self = {
+	
+				// Add a callback or a collection of callbacks to the list
+				add: function() {
+					if ( list ) {
+	
+						// If we have memory from a past run, we should fire after adding
+						if ( memory && !firing ) {
+							firingIndex = list.length - 1;
+							queue.push( memory );
+						}
+	
+						( function add( args ) {
+							jQuery.each( args, function( _, arg ) {
+								if ( jQuery.isFunction( arg ) ) {
+									if ( !options.unique || !self.has( arg ) ) {
+										list.push( arg );
+									}
+								} else if ( arg && arg.length && jQuery.type( arg ) !== "string" ) {
+	
+									// Inspect recursively
+									add( arg );
+								}
+							} );
+						} )( arguments );
+	
+						if ( memory && !firing ) {
+							fire();
+						}
+					}
+					return this;
+				},
+	
+				// Remove a callback from the list
+				remove: function() {
+					jQuery.each( arguments, function( _, arg ) {
+						var index;
+						while ( ( index = jQuery.inArray( arg, list, index ) ) > -1 ) {
+							list.splice( index, 1 );
+	
+							// Handle firing indexes
+							if ( index <= firingIndex ) {
+								firingIndex--;
+							}
+						}
+					} );
+					return this;
+				},
+	
+				// Check if a given callback is in the list.
+				// If no argument is given, return whether or not list has callbacks attached.
+				has: function( fn ) {
+					return fn ?
+						jQuery.inArray( fn, list ) > -1 :
+						list.length > 0;
+				},
+	
+				// Remove all callbacks from the list
+				empty: function() {
+					if ( list ) {
+						list = [];
+					}
+					return this;
+				},
+	
+				// Disable .fire and .add
+				// Abort any current/pending executions
+				// Clear all callbacks and values
+				disable: function() {
+					locked = queue = [];
+					list = memory = "";
+					return this;
+				},
+				disabled: function() {
+					return !list;
+				},
+	
+				// Disable .fire
+				// Also disable .add unless we have memory (since it would have no effect)
+				// Abort any pending executions
+				lock: function() {
+					locked = queue = [];
+					if ( !memory && !firing ) {
+						list = memory = "";
+					}
+					return this;
+				},
+				locked: function() {
+					return !!locked;
+				},
+	
+				// Call all callbacks with the given context and arguments
+				fireWith: function( context, args ) {
+					if ( !locked ) {
+						args = args || [];
+						args = [ context, args.slice ? args.slice() : args ];
+						queue.push( args );
+						if ( !firing ) {
+							fire();
+						}
+					}
+					return this;
+				},
+	
+				// Call all the callbacks with the given arguments
+				fire: function() {
+					self.fireWith( this, arguments );
+					return this;
+				},
+	
+				// To know if the callbacks have already been called at least once
+				fired: function() {
+					return !!fired;
+				}
+			};
+	
+		return self;
+	};
+	
+	
+	function Identity( v ) {
+		return v;
+	}
+	function Thrower( ex ) {
+		throw ex;
+	}
+	
+	function adoptValue( value, resolve, reject ) {
+		var method;
+	
+		try {
+	
+			// Check for promise aspect first to privilege synchronous behavior
+			if ( value && jQuery.isFunction( ( method = value.promise ) ) ) {
+				method.call( value ).done( resolve ).fail( reject );
+	
+			// Other thenables
+			} else if ( value && jQuery.isFunction( ( method = value.then ) ) ) {
+				method.call( value, resolve, reject );
+	
+			// Other non-thenables
+			} else {
+	
+				// Support: Android 4.0 only
+				// Strict mode functions invoked without .call/.apply get global-object context
+				resolve.call( undefined, value );
+			}
+	
+		// For Promises/A+, convert exceptions into rejections
+		// Since jQuery.when doesn't unwrap thenables, we can skip the extra checks appearing in
+		// Deferred#then to conditionally suppress rejection.
+		} catch ( value ) {
+	
+			// Support: Android 4.0 only
+			// Strict mode functions invoked without .call/.apply get global-object context
+			reject.call( undefined, value );
+		}
+	}
+	
+	jQuery.extend( {
+	
+		Deferred: function( func ) {
+			var tuples = [
+	
+					// action, add listener, callbacks,
+					// ... .then handlers, argument index, [final state]
+					[ "notify", "progress", jQuery.Callbacks( "memory" ),
+						jQuery.Callbacks( "memory" ), 2 ],
+					[ "resolve", "done", jQuery.Callbacks( "once memory" ),
+						jQuery.Callbacks( "once memory" ), 0, "resolved" ],
+					[ "reject", "fail", jQuery.Callbacks( "once memory" ),
+						jQuery.Callbacks( "once memory" ), 1, "rejected" ]
+				],
+				state = "pending",
+				promise = {
+					state: function() {
+						return state;
+					},
+					always: function() {
+						deferred.done( arguments ).fail( arguments );
+						return this;
+					},
+					"catch": function( fn ) {
+						return promise.then( null, fn );
+					},
+	
+					// Keep pipe for back-compat
+					pipe: function( /* fnDone, fnFail, fnProgress */ ) {
+						var fns = arguments;
+	
+						return jQuery.Deferred( function( newDefer ) {
+							jQuery.each( tuples, function( i, tuple ) {
+	
+								// Map tuples (progress, done, fail) to arguments (done, fail, progress)
+								var fn = jQuery.isFunction( fns[ tuple[ 4 ] ] ) && fns[ tuple[ 4 ] ];
+	
+								// deferred.progress(function() { bind to newDefer or newDefer.notify })
+								// deferred.done(function() { bind to newDefer or newDefer.resolve })
+								// deferred.fail(function() { bind to newDefer or newDefer.reject })
+								deferred[ tuple[ 1 ] ]( function() {
+									var returned = fn && fn.apply( this, arguments );
+									if ( returned && jQuery.isFunction( returned.promise ) ) {
+										returned.promise()
+											.progress( newDefer.notify )
+											.done( newDefer.resolve )
+											.fail( newDefer.reject );
+									} else {
+										newDefer[ tuple[ 0 ] + "With" ](
+											this,
+											fn ? [ returned ] : arguments
+										);
+									}
+								} );
+							} );
+							fns = null;
+						} ).promise();
+					},
+					then: function( onFulfilled, onRejected, onProgress ) {
+						var maxDepth = 0;
+						function resolve( depth, deferred, handler, special ) {
+							return function() {
+								var that = this,
+									args = arguments,
+									mightThrow = function() {
+										var returned, then;
+	
+										// Support: Promises/A+ section 2.3.3.3.3
+										// https://promisesaplus.com/#point-59
+										// Ignore double-resolution attempts
+										if ( depth < maxDepth ) {
+											return;
+										}
+	
+										returned = handler.apply( that, args );
+	
+										// Support: Promises/A+ section 2.3.1
+										// https://promisesaplus.com/#point-48
+										if ( returned === deferred.promise() ) {
+											throw new TypeError( "Thenable self-resolution" );
+										}
+	
+										// Support: Promises/A+ sections 2.3.3.1, 3.5
+										// https://promisesaplus.com/#point-54
+										// https://promisesaplus.com/#point-75
+										// Retrieve `then` only once
+										then = returned &&
+	
+											// Support: Promises/A+ section 2.3.4
+											// https://promisesaplus.com/#point-64
+											// Only check objects and functions for thenability
+											( typeof returned === "object" ||
+												typeof returned === "function" ) &&
+											returned.then;
+	
+										// Handle a returned thenable
+										if ( jQuery.isFunction( then ) ) {
+	
+											// Special processors (notify) just wait for resolution
+											if ( special ) {
+												then.call(
+													returned,
+													resolve( maxDepth, deferred, Identity, special ),
+													resolve( maxDepth, deferred, Thrower, special )
+												);
+	
+											// Normal processors (resolve) also hook into progress
+											} else {
+	
+												// ...and disregard older resolution values
+												maxDepth++;
+	
+												then.call(
+													returned,
+													resolve( maxDepth, deferred, Identity, special ),
+													resolve( maxDepth, deferred, Thrower, special ),
+													resolve( maxDepth, deferred, Identity,
+														deferred.notifyWith )
+												);
+											}
+	
+										// Handle all other returned values
+										} else {
+	
+											// Only substitute handlers pass on context
+											// and multiple values (non-spec behavior)
+											if ( handler !== Identity ) {
+												that = undefined;
+												args = [ returned ];
+											}
+	
+											// Process the value(s)
+											// Default process is resolve
+											( special || deferred.resolveWith )( that, args );
+										}
+									},
+	
+									// Only normal processors (resolve) catch and reject exceptions
+									process = special ?
+										mightThrow :
+										function() {
+											try {
+												mightThrow();
+											} catch ( e ) {
+	
+												if ( jQuery.Deferred.exceptionHook ) {
+													jQuery.Deferred.exceptionHook( e,
+														process.stackTrace );
+												}
+	
+												// Support: Promises/A+ section 2.3.3.3.4.1
+												// https://promisesaplus.com/#point-61
+												// Ignore post-resolution exceptions
+												if ( depth + 1 >= maxDepth ) {
+	
+													// Only substitute handlers pass on context
+													// and multiple values (non-spec behavior)
+													if ( handler !== Thrower ) {
+														that = undefined;
+														args = [ e ];
+													}
+	
+													deferred.rejectWith( that, args );
+												}
+											}
+										};
+	
+								// Support: Promises/A+ section 2.3.3.3.1
+								// https://promisesaplus.com/#point-57
+								// Re-resolve promises immediately to dodge false rejection from
+								// subsequent errors
+								if ( depth ) {
+									process();
+								} else {
+	
+									// Call an optional hook to record the stack, in case of exception
+									// since it's otherwise lost when execution goes async
+									if ( jQuery.Deferred.getStackHook ) {
+										process.stackTrace = jQuery.Deferred.getStackHook();
+									}
+									window.setTimeout( process );
+								}
+							};
+						}
+	
+						return jQuery.Deferred( function( newDefer ) {
+	
+							// progress_handlers.add( ... )
+							tuples[ 0 ][ 3 ].add(
+								resolve(
+									0,
+									newDefer,
+									jQuery.isFunction( onProgress ) ?
+										onProgress :
+										Identity,
+									newDefer.notifyWith
+								)
+							);
+	
+							// fulfilled_handlers.add( ... )
+							tuples[ 1 ][ 3 ].add(
+								resolve(
+									0,
+									newDefer,
+									jQuery.isFunction( onFulfilled ) ?
+										onFulfilled :
+										Identity
+								)
+							);
+	
+							// rejected_handlers.add( ... )
+							tuples[ 2 ][ 3 ].add(
+								resolve(
+									0,
+									newDefer,
+									jQuery.isFunction( onRejected ) ?
+										onRejected :
+										Thrower
+								)
+							);
+						} ).promise();
+					},
+	
+					// Get a promise for this deferred
+					// If obj is provided, the promise aspect is added to the object
+					promise: function( obj ) {
+						return obj != null ? jQuery.extend( obj, promise ) : promise;
+					}
+				},
+				deferred = {};
+	
+			// Add list-specific methods
+			jQuery.each( tuples, function( i, tuple ) {
+				var list = tuple[ 2 ],
+					stateString = tuple[ 5 ];
+	
+				// promise.progress = list.add
+				// promise.done = list.add
+				// promise.fail = list.add
+				promise[ tuple[ 1 ] ] = list.add;
+	
+				// Handle state
+				if ( stateString ) {
+					list.add(
+						function() {
+	
+							// state = "resolved" (i.e., fulfilled)
+							// state = "rejected"
+							state = stateString;
+						},
+	
+						// rejected_callbacks.disable
+						// fulfilled_callbacks.disable
+						tuples[ 3 - i ][ 2 ].disable,
+	
+						// progress_callbacks.lock
+						tuples[ 0 ][ 2 ].lock
+					);
+				}
+	
+				// progress_handlers.fire
+				// fulfilled_handlers.fire
+				// rejected_handlers.fire
+				list.add( tuple[ 3 ].fire );
+	
+				// deferred.notify = function() { deferred.notifyWith(...) }
+				// deferred.resolve = function() { deferred.resolveWith(...) }
+				// deferred.reject = function() { deferred.rejectWith(...) }
+				deferred[ tuple[ 0 ] ] = function() {
+					deferred[ tuple[ 0 ] + "With" ]( this === deferred ? undefined : this, arguments );
+					return this;
+				};
+	
+				// deferred.notifyWith = list.fireWith
+				// deferred.resolveWith = list.fireWith
+				// deferred.rejectWith = list.fireWith
+				deferred[ tuple[ 0 ] + "With" ] = list.fireWith;
+			} );
+	
+			// Make the deferred a promise
+			promise.promise( deferred );
+	
+			// Call given func if any
+			if ( func ) {
+				func.call( deferred, deferred );
+			}
+	
+			// All done!
+			return deferred;
+		},
+	
+		// Deferred helper
+		when: function( singleValue ) {
+			var
+	
+				// count of uncompleted subordinates
+				remaining = arguments.length,
+	
+				// count of unprocessed arguments
+				i = remaining,
+	
+				// subordinate fulfillment data
+				resolveContexts = Array( i ),
+				resolveValues = slice.call( arguments ),
+	
+				// the master Deferred
+				master = jQuery.Deferred(),
+	
+				// subordinate callback factory
+				updateFunc = function( i ) {
+					return function( value ) {
+						resolveContexts[ i ] = this;
+						resolveValues[ i ] = arguments.length > 1 ? slice.call( arguments ) : value;
+						if ( !( --remaining ) ) {
+							master.resolveWith( resolveContexts, resolveValues );
+						}
+					};
+				};
+	
+			// Single- and empty arguments are adopted like Promise.resolve
+			if ( remaining <= 1 ) {
+				adoptValue( singleValue, master.done( updateFunc( i ) ).resolve, master.reject );
+	
+				// Use .then() to unwrap secondary thenables (cf. gh-3000)
+				if ( master.state() === "pending" ||
+					jQuery.isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
+	
+					return master.then();
+				}
+			}
+	
+			// Multiple arguments are aggregated like Promise.all array elements
+			while ( i-- ) {
+				adoptValue( resolveValues[ i ], updateFunc( i ), master.reject );
+			}
+	
+			return master.promise();
+		}
+	} );
+	
+	
+	// These usually indicate a programmer mistake during development,
+	// warn about them ASAP rather than swallowing them by default.
+	var rerrorNames = /^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;
+	
+	jQuery.Deferred.exceptionHook = function( error, stack ) {
+	
+		// Support: IE 8 - 9 only
+		// Console exists when dev tools are open, which can happen at any time
+		if ( window.console && window.console.warn && error && rerrorNames.test( error.name ) ) {
+			window.console.warn( "jQuery.Deferred exception: " + error.message, error.stack, stack );
+		}
+	};
+	
+	
+	
+	
+	jQuery.readyException = function( error ) {
+		window.setTimeout( function() {
+			throw error;
+		} );
+	};
+	
+	
+	
+	
+	// The deferred used on DOM ready
+	var readyList = jQuery.Deferred();
+	
+	jQuery.fn.ready = function( fn ) {
+	
+		readyList
+			.then( fn )
+	
+			// Wrap jQuery.readyException in a function so that the lookup
+			// happens at the time of error handling instead of callback
+			// registration.
+			.catch( function( error ) {
+				jQuery.readyException( error );
+			} );
+	
+		return this;
+	};
+	
+	jQuery.extend( {
+	
+		// Is the DOM ready to be used? Set to true once it occurs.
+		isReady: false,
+	
+		// A counter to track how many items to wait for before
+		// the ready event fires. See #6781
+		readyWait: 1,
+	
+		// Hold (or release) the ready event
+		holdReady: function( hold ) {
+			if ( hold ) {
+				jQuery.readyWait++;
+			} else {
+				jQuery.ready( true );
+			}
+		},
+	
+		// Handle when the DOM is ready
+		ready: function( wait ) {
+	
+			// Abort if there are pending holds or we're already ready
+			if ( wait === true ? --jQuery.readyWait : jQuery.isReady ) {
+				return;
+			}
+	
+			// Remember that the DOM is ready
+			jQuery.isReady = true;
+	
+			// If a normal DOM Ready event fired, decrement, and wait if need be
+			if ( wait !== true && --jQuery.readyWait > 0 ) {
+				return;
+			}
+	
+			// If there are functions bound, to execute
+			readyList.resolveWith( document, [ jQuery ] );
+		}
+	} );
+	
+	jQuery.ready.then = readyList.then;
+	
+	// The ready event handler and self cleanup method
+	function completed() {
+		document.removeEventListener( "DOMContentLoaded", completed );
+		window.removeEventListener( "load", completed );
+		jQuery.ready();
+	}
+	
+	// Catch cases where $(document).ready() is called
+	// after the browser event has already occurred.
+	// Support: IE <=9 - 10 only
+	// Older IE sometimes signals "interactive" too soon
+	if ( document.readyState === "complete" ||
+		( document.readyState !== "loading" && !document.documentElement.doScroll ) ) {
+	
+		// Handle it asynchronously to allow scripts the opportunity to delay ready
+		window.setTimeout( jQuery.ready );
+	
+	} else {
+	
+		// Use the handy event callback
+		document.addEventListener( "DOMContentLoaded", completed );
+	
+		// A fallback to window.onload, that will always work
+		window.addEventListener( "load", completed );
+	}
+	
+	
+	
+	
+	// Multifunctional method to get and set values of a collection
+	// The value/s can optionally be executed if it's a function
+	var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {
+		var i = 0,
+			len = elems.length,
+			bulk = key == null;
+	
+		// Sets many values
+		if ( jQuery.type( key ) === "object" ) {
+			chainable = true;
+			for ( i in key ) {
+				access( elems, fn, i, key[ i ], true, emptyGet, raw );
+			}
+	
+		// Sets one value
+		} else if ( value !== undefined ) {
+			chainable = true;
+	
+			if ( !jQuery.isFunction( value ) ) {
+				raw = true;
+			}
+	
+			if ( bulk ) {
+	
+				// Bulk operations run against the entire set
+				if ( raw ) {
+					fn.call( elems, value );
+					fn = null;
+	
+				// ...except when executing function values
+				} else {
+					bulk = fn;
+					fn = function( elem, key, value ) {
+						return bulk.call( jQuery( elem ), value );
+					};
+				}
+			}
+	
+			if ( fn ) {
+				for ( ; i < len; i++ ) {
+					fn(
+						elems[ i ], key, raw ?
+						value :
+						value.call( elems[ i ], i, fn( elems[ i ], key ) )
+					);
+				}
+			}
+		}
+	
+		if ( chainable ) {
+			return elems;
+		}
+	
+		// Gets
+		if ( bulk ) {
+			return fn.call( elems );
+		}
+	
+		return len ? fn( elems[ 0 ], key ) : emptyGet;
+	};
+	var acceptData = function( owner ) {
+	
+		// Accepts only:
+		//  - Node
+		//    - Node.ELEMENT_NODE
+		//    - Node.DOCUMENT_NODE
+		//  - Object
+		//    - Any
+		return owner.nodeType === 1 || owner.nodeType === 9 || !( +owner.nodeType );
+	};
+	
+	
+	
+	
+	function Data() {
+		this.expando = jQuery.expando + Data.uid++;
+	}
+	
+	Data.uid = 1;
+	
+	Data.prototype = {
+	
+		cache: function( owner ) {
+	
+			// Check if the owner object already has a cache
+			var value = owner[ this.expando ];
+	
+			// If not, create one
+			if ( !value ) {
+				value = {};
+	
+				// We can accept data for non-element nodes in modern browsers,
+				// but we should not, see #8335.
+				// Always return an empty object.
+				if ( acceptData( owner ) ) {
+	
+					// If it is a node unlikely to be stringify-ed or looped over
+					// use plain assignment
+					if ( owner.nodeType ) {
+						owner[ this.expando ] = value;
+	
+					// Otherwise secure it in a non-enumerable property
+					// configurable must be true to allow the property to be
+					// deleted when data is removed
+					} else {
+						Object.defineProperty( owner, this.expando, {
+							value: value,
+							configurable: true
+						} );
+					}
+				}
+			}
+	
+			return value;
+		},
+		set: function( owner, data, value ) {
+			var prop,
+				cache = this.cache( owner );
+	
+			// Handle: [ owner, key, value ] args
+			// Always use camelCase key (gh-2257)
+			if ( typeof data === "string" ) {
+				cache[ jQuery.camelCase( data ) ] = value;
+	
+			// Handle: [ owner, { properties } ] args
+			} else {
+	
+				// Copy the properties one-by-one to the cache object
+				for ( prop in data ) {
+					cache[ jQuery.camelCase( prop ) ] = data[ prop ];
+				}
+			}
+			return cache;
+		},
+		get: function( owner, key ) {
+			return key === undefined ?
+				this.cache( owner ) :
+	
+				// Always use camelCase key (gh-2257)
+				owner[ this.expando ] && owner[ this.expando ][ jQuery.camelCase( key ) ];
+		},
+		access: function( owner, key, value ) {
+	
+			// In cases where either:
+			//
+			//   1. No key was specified
+			//   2. A string key was specified, but no value provided
+			//
+			// Take the "read" path and allow the get method to determine
+			// which value to return, respectively either:
+			//
+			//   1. The entire cache object
+			//   2. The data stored at the key
+			//
+			if ( key === undefined ||
+					( ( key && typeof key === "string" ) && value === undefined ) ) {
+	
+				return this.get( owner, key );
+			}
+	
+			// When the key is not a string, or both a key and value
+			// are specified, set or extend (existing objects) with either:
+			//
+			//   1. An object of properties
+			//   2. A key and value
+			//
+			this.set( owner, key, value );
+	
+			// Since the "set" path can have two possible entry points
+			// return the expected data based on which path was taken[*]
+			return value !== undefined ? value : key;
+		},
+		remove: function( owner, key ) {
+			var i,
+				cache = owner[ this.expando ];
+	
+			if ( cache === undefined ) {
+				return;
+			}
+	
+			if ( key !== undefined ) {
+	
+				// Support array or space separated string of keys
+				if ( jQuery.isArray( key ) ) {
+	
+					// If key is an array of keys...
+					// We always set camelCase keys, so remove that.
+					key = key.map( jQuery.camelCase );
+				} else {
+					key = jQuery.camelCase( key );
+	
+					// If a key with the spaces exists, use it.
+					// Otherwise, create an array by matching non-whitespace
+					key = key in cache ?
+						[ key ] :
+						( key.match( rnothtmlwhite ) || [] );
+				}
+	
+				i = key.length;
+	
+				while ( i-- ) {
+					delete cache[ key[ i ] ];
+				}
+			}
+	
+			// Remove the expando if there's no more data
+			if ( key === undefined || jQuery.isEmptyObject( cache ) ) {
+	
+				// Support: Chrome <=35 - 45
+				// Webkit & Blink performance suffers when deleting properties
+				// from DOM nodes, so set to undefined instead
+				// https://bugs.chromium.org/p/chromium/issues/detail?id=378607 (bug restricted)
+				if ( owner.nodeType ) {
+					owner[ this.expando ] = undefined;
+				} else {
+					delete owner[ this.expando ];
+				}
+			}
+		},
+		hasData: function( owner ) {
+			var cache = owner[ this.expando ];
+			return cache !== undefined && !jQuery.isEmptyObject( cache );
+		}
+	};
+	var dataPriv = new Data();
+	
+	var dataUser = new Data();
+	
+	
+	
+	//	Implementation Summary
+	//
+	//	1. Enforce API surface and semantic compatibility with 1.9.x branch
+	//	2. Improve the module's maintainability by reducing the storage
+	//		paths to a single mechanism.
+	//	3. Use the same single mechanism to support "private" and "user" data.
+	//	4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
+	//	5. Avoid exposing implementation details on user objects (eg. expando properties)
+	//	6. Provide a clear path for implementation upgrade to WeakMap in 2014
+	
+	var rbrace = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
+		rmultiDash = /[A-Z]/g;
+	
+	function getData( data ) {
+		if ( data === "true" ) {
+			return true;
+		}
+	
+		if ( data === "false" ) {
+			return false;
+		}
+	
+		if ( data === "null" ) {
+			return null;
+		}
+	
+		// Only convert to a number if it doesn't change the string
+		if ( data === +data + "" ) {
+			return +data;
+		}
+	
+		if ( rbrace.test( data ) ) {
+			return JSON.parse( data );
+		}
+	
+		return data;
+	}
+	
+	function dataAttr( elem, key, data ) {
+		var name;
+	
+		// If nothing was found internally, try to fetch any
+		// data from the HTML5 data-* attribute
+		if ( data === undefined && elem.nodeType === 1 ) {
+			name = "data-" + key.replace( rmultiDash, "-$&" ).toLowerCase();
+			data = elem.getAttribute( name );
+	
+			if ( typeof data === "string" ) {
+				try {
+					data = getData( data );
+				} catch ( e ) {}
+	
+				// Make sure we set the data so it isn't changed later
+				dataUser.set( elem, key, data );
+			} else {
+				data = undefined;
+			}
+		}
+		return data;
+	}
+	
+	jQuery.extend( {
+		hasData: function( elem ) {
+			return dataUser.hasData( elem ) || dataPriv.hasData( elem );
+		},
+	
+		data: function( elem, name, data ) {
+			return dataUser.access( elem, name, data );
+		},
+	
+		removeData: function( elem, name ) {
+			dataUser.remove( elem, name );
+		},
+	
+		// TODO: Now that all calls to _data and _removeData have been replaced
+		// with direct calls to dataPriv methods, these can be deprecated.
+		_data: function( elem, name, data ) {
+			return dataPriv.access( elem, name, data );
+		},
+	
+		_removeData: function( elem, name ) {
+			dataPriv.remove( elem, name );
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		data: function( key, value ) {
+			var i, name, data,
+				elem = this[ 0 ],
+				attrs = elem && elem.attributes;
+	
+			// Gets all values
+			if ( key === undefined ) {
+				if ( this.length ) {
+					data = dataUser.get( elem );
+	
+					if ( elem.nodeType === 1 && !dataPriv.get( elem, "hasDataAttrs" ) ) {
+						i = attrs.length;
+						while ( i-- ) {
+	
+							// Support: IE 11 only
+							// The attrs elements can be null (#14894)
+							if ( attrs[ i ] ) {
+								name = attrs[ i ].name;
+								if ( name.indexOf( "data-" ) === 0 ) {
+									name = jQuery.camelCase( name.slice( 5 ) );
+									dataAttr( elem, name, data[ name ] );
+								}
+							}
+						}
+						dataPriv.set( elem, "hasDataAttrs", true );
+					}
+				}
+	
+				return data;
+			}
+	
+			// Sets multiple values
+			if ( typeof key === "object" ) {
+				return this.each( function() {
+					dataUser.set( this, key );
+				} );
+			}
+	
+			return access( this, function( value ) {
+				var data;
+	
+				// The calling jQuery object (element matches) is not empty
+				// (and therefore has an element appears at this[ 0 ]) and the
+				// `value` parameter was not undefined. An empty jQuery object
+				// will result in `undefined` for elem = this[ 0 ] which will
+				// throw an exception if an attempt to read a data cache is made.
+				if ( elem && value === undefined ) {
+	
+					// Attempt to get data from the cache
+					// The key will always be camelCased in Data
+					data = dataUser.get( elem, key );
+					if ( data !== undefined ) {
+						return data;
+					}
+	
+					// Attempt to "discover" the data in
+					// HTML5 custom data-* attrs
+					data = dataAttr( elem, key );
+					if ( data !== undefined ) {
+						return data;
+					}
+	
+					// We tried really hard, but the data doesn't exist.
+					return;
+				}
+	
+				// Set the data...
+				this.each( function() {
+	
+					// We always store the camelCased key
+					dataUser.set( this, key, value );
+				} );
+			}, null, value, arguments.length > 1, null, true );
+		},
+	
+		removeData: function( key ) {
+			return this.each( function() {
+				dataUser.remove( this, key );
+			} );
+		}
+	} );
+	
+	
+	jQuery.extend( {
+		queue: function( elem, type, data ) {
+			var queue;
+	
+			if ( elem ) {
+				type = ( type || "fx" ) + "queue";
+				queue = dataPriv.get( elem, type );
+	
+				// Speed up dequeue by getting out quickly if this is just a lookup
+				if ( data ) {
+					if ( !queue || jQuery.isArray( data ) ) {
+						queue = dataPriv.access( elem, type, jQuery.makeArray( data ) );
+					} else {
+						queue.push( data );
+					}
+				}
+				return queue || [];
+			}
+		},
+	
+		dequeue: function( elem, type ) {
+			type = type || "fx";
+	
+			var queue = jQuery.queue( elem, type ),
+				startLength = queue.length,
+				fn = queue.shift(),
+				hooks = jQuery._queueHooks( elem, type ),
+				next = function() {
+					jQuery.dequeue( elem, type );
+				};
+	
+			// If the fx queue is dequeued, always remove the progress sentinel
+			if ( fn === "inprogress" ) {
+				fn = queue.shift();
+				startLength--;
+			}
+	
+			if ( fn ) {
+	
+				// Add a progress sentinel to prevent the fx queue from being
+				// automatically dequeued
+				if ( type === "fx" ) {
+					queue.unshift( "inprogress" );
+				}
+	
+				// Clear up the last queue stop function
+				delete hooks.stop;
+				fn.call( elem, next, hooks );
+			}
+	
+			if ( !startLength && hooks ) {
+				hooks.empty.fire();
+			}
+		},
+	
+		// Not public - generate a queueHooks object, or return the current one
+		_queueHooks: function( elem, type ) {
+			var key = type + "queueHooks";
+			return dataPriv.get( elem, key ) || dataPriv.access( elem, key, {
+				empty: jQuery.Callbacks( "once memory" ).add( function() {
+					dataPriv.remove( elem, [ type + "queue", key ] );
+				} )
+			} );
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		queue: function( type, data ) {
+			var setter = 2;
+	
+			if ( typeof type !== "string" ) {
+				data = type;
+				type = "fx";
+				setter--;
+			}
+	
+			if ( arguments.length < setter ) {
+				return jQuery.queue( this[ 0 ], type );
+			}
+	
+			return data === undefined ?
+				this :
+				this.each( function() {
+					var queue = jQuery.queue( this, type, data );
+	
+					// Ensure a hooks for this queue
+					jQuery._queueHooks( this, type );
+	
+					if ( type === "fx" && queue[ 0 ] !== "inprogress" ) {
+						jQuery.dequeue( this, type );
+					}
+				} );
+		},
+		dequeue: function( type ) {
+			return this.each( function() {
+				jQuery.dequeue( this, type );
+			} );
+		},
+		clearQueue: function( type ) {
+			return this.queue( type || "fx", [] );
+		},
+	
+		// Get a promise resolved when queues of a certain type
+		// are emptied (fx is the type by default)
+		promise: function( type, obj ) {
+			var tmp,
+				count = 1,
+				defer = jQuery.Deferred(),
+				elements = this,
+				i = this.length,
+				resolve = function() {
+					if ( !( --count ) ) {
+						defer.resolveWith( elements, [ elements ] );
+					}
+				};
+	
+			if ( typeof type !== "string" ) {
+				obj = type;
+				type = undefined;
+			}
+			type = type || "fx";
+	
+			while ( i-- ) {
+				tmp = dataPriv.get( elements[ i ], type + "queueHooks" );
+				if ( tmp && tmp.empty ) {
+					count++;
+					tmp.empty.add( resolve );
+				}
+			}
+			resolve();
+			return defer.promise( obj );
+		}
+	} );
+	var pnum = ( /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/ ).source;
+	
+	var rcssNum = new RegExp( "^(?:([+-])=|)(" + pnum + ")([a-z%]*)$", "i" );
+	
+	
+	var cssExpand = [ "Top", "Right", "Bottom", "Left" ];
+	
+	var isHiddenWithinTree = function( elem, el ) {
+	
+			// isHiddenWithinTree might be called from jQuery#filter function;
+			// in that case, element will be second argument
+			elem = el || elem;
+	
+			// Inline style trumps all
+			return elem.style.display === "none" ||
+				elem.style.display === "" &&
+	
+				// Otherwise, check computed style
+				// Support: Firefox <=43 - 45
+				// Disconnected elements can have computed display: none, so first confirm that elem is
+				// in the document.
+				jQuery.contains( elem.ownerDocument, elem ) &&
+	
+				jQuery.css( elem, "display" ) === "none";
+		};
+	
+	var swap = function( elem, options, callback, args ) {
+		var ret, name,
+			old = {};
+	
+		// Remember the old values, and insert the new ones
+		for ( name in options ) {
+			old[ name ] = elem.style[ name ];
+			elem.style[ name ] = options[ name ];
+		}
+	
+		ret = callback.apply( elem, args || [] );
+	
+		// Revert the old values
+		for ( name in options ) {
+			elem.style[ name ] = old[ name ];
+		}
+	
+		return ret;
+	};
+	
+	
+	
+	
+	function adjustCSS( elem, prop, valueParts, tween ) {
+		var adjusted,
+			scale = 1,
+			maxIterations = 20,
+			currentValue = tween ?
+				function() {
+					return tween.cur();
+				} :
+				function() {
+					return jQuery.css( elem, prop, "" );
+				},
+			initial = currentValue(),
+			unit = valueParts && valueParts[ 3 ] || ( jQuery.cssNumber[ prop ] ? "" : "px" ),
+	
+			// Starting value computation is required for potential unit mismatches
+			initialInUnit = ( jQuery.cssNumber[ prop ] || unit !== "px" && +initial ) &&
+				rcssNum.exec( jQuery.css( elem, prop ) );
+	
+		if ( initialInUnit && initialInUnit[ 3 ] !== unit ) {
+	
+			// Trust units reported by jQuery.css
+			unit = unit || initialInUnit[ 3 ];
+	
+			// Make sure we update the tween properties later on
+			valueParts = valueParts || [];
+	
+			// Iteratively approximate from a nonzero starting point
+			initialInUnit = +initial || 1;
+	
+			do {
+	
+				// If previous iteration zeroed out, double until we get *something*.
+				// Use string for doubling so we don't accidentally see scale as unchanged below
+				scale = scale || ".5";
+	
+				// Adjust and apply
+				initialInUnit = initialInUnit / scale;
+				jQuery.style( elem, prop, initialInUnit + unit );
+	
+			// Update scale, tolerating zero or NaN from tween.cur()
+			// Break the loop if scale is unchanged or perfect, or if we've just had enough.
+			} while (
+				scale !== ( scale = currentValue() / initial ) && scale !== 1 && --maxIterations
+			);
+		}
+	
+		if ( valueParts ) {
+			initialInUnit = +initialInUnit || +initial || 0;
+	
+			// Apply relative offset (+=/-=) if specified
+			adjusted = valueParts[ 1 ] ?
+				initialInUnit + ( valueParts[ 1 ] + 1 ) * valueParts[ 2 ] :
+				+valueParts[ 2 ];
+			if ( tween ) {
+				tween.unit = unit;
+				tween.start = initialInUnit;
+				tween.end = adjusted;
+			}
+		}
+		return adjusted;
+	}
+	
+	
+	var defaultDisplayMap = {};
+	
+	function getDefaultDisplay( elem ) {
+		var temp,
+			doc = elem.ownerDocument,
+			nodeName = elem.nodeName,
+			display = defaultDisplayMap[ nodeName ];
+	
+		if ( display ) {
+			return display;
+		}
+	
+		temp = doc.body.appendChild( doc.createElement( nodeName ) );
+		display = jQuery.css( temp, "display" );
+	
+		temp.parentNode.removeChild( temp );
+	
+		if ( display === "none" ) {
+			display = "block";
+		}
+		defaultDisplayMap[ nodeName ] = display;
+	
+		return display;
+	}
+	
+	function showHide( elements, show ) {
+		var display, elem,
+			values = [],
+			index = 0,
+			length = elements.length;
+	
+		// Determine new display value for elements that need to change
+		for ( ; index < length; index++ ) {
+			elem = elements[ index ];
+			if ( !elem.style ) {
+				continue;
+			}
+	
+			display = elem.style.display;
+			if ( show ) {
+	
+				// Since we force visibility upon cascade-hidden elements, an immediate (and slow)
+				// check is required in this first loop unless we have a nonempty display value (either
+				// inline or about-to-be-restored)
+				if ( display === "none" ) {
+					values[ index ] = dataPriv.get( elem, "display" ) || null;
+					if ( !values[ index ] ) {
+						elem.style.display = "";
+					}
+				}
+				if ( elem.style.display === "" && isHiddenWithinTree( elem ) ) {
+					values[ index ] = getDefaultDisplay( elem );
+				}
+			} else {
+				if ( display !== "none" ) {
+					values[ index ] = "none";
+	
+					// Remember what we're overwriting
+					dataPriv.set( elem, "display", display );
+				}
+			}
+		}
+	
+		// Set the display of the elements in a second loop to avoid constant reflow
+		for ( index = 0; index < length; index++ ) {
+			if ( values[ index ] != null ) {
+				elements[ index ].style.display = values[ index ];
+			}
+		}
+	
+		return elements;
+	}
+	
+	jQuery.fn.extend( {
+		show: function() {
+			return showHide( this, true );
+		},
+		hide: function() {
+			return showHide( this );
+		},
+		toggle: function( state ) {
+			if ( typeof state === "boolean" ) {
+				return state ? this.show() : this.hide();
+			}
+	
+			return this.each( function() {
+				if ( isHiddenWithinTree( this ) ) {
+					jQuery( this ).show();
+				} else {
+					jQuery( this ).hide();
+				}
+			} );
+		}
+	} );
+	var rcheckableType = ( /^(?:checkbox|radio)$/i );
+	
+	var rtagName = ( /<([a-z][^\/\0>\x20\t\r\n\f]+)/i );
+	
+	var rscriptType = ( /^$|\/(?:java|ecma)script/i );
+	
+	
+	
+	// We have to close these tags to support XHTML (#13200)
+	var wrapMap = {
+	
+		// Support: IE <=9 only
+		option: [ 1, "<select multiple='multiple'>", "</select>" ],
+	
+		// XHTML parsers do not magically insert elements in the
+		// same way that tag soup parsers do. So we cannot shorten
+		// this by omitting <tbody> or other required elements.
+		thead: [ 1, "<table>", "</table>" ],
+		col: [ 2, "<table><colgroup>", "</colgroup></table>" ],
+		tr: [ 2, "<table><tbody>", "</tbody></table>" ],
+		td: [ 3, "<table><tbody><tr>", "</tr></tbody></table>" ],
+	
+		_default: [ 0, "", "" ]
+	};
+	
+	// Support: IE <=9 only
+	wrapMap.optgroup = wrapMap.option;
+	
+	wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption = wrapMap.thead;
+	wrapMap.th = wrapMap.td;
+	
+	
+	function getAll( context, tag ) {
+	
+		// Support: IE <=9 - 11 only
+		// Use typeof to avoid zero-argument method invocation on host objects (#15151)
+		var ret;
+	
+		if ( typeof context.getElementsByTagName !== "undefined" ) {
+			ret = context.getElementsByTagName( tag || "*" );
+	
+		} else if ( typeof context.querySelectorAll !== "undefined" ) {
+			ret = context.querySelectorAll( tag || "*" );
+	
+		} else {
+			ret = [];
+		}
+	
+		if ( tag === undefined || tag && jQuery.nodeName( context, tag ) ) {
+			return jQuery.merge( [ context ], ret );
+		}
+	
+		return ret;
+	}
+	
+	
+	// Mark scripts as having already been evaluated
+	function setGlobalEval( elems, refElements ) {
+		var i = 0,
+			l = elems.length;
+	
+		for ( ; i < l; i++ ) {
+			dataPriv.set(
+				elems[ i ],
+				"globalEval",
+				!refElements || dataPriv.get( refElements[ i ], "globalEval" )
+			);
+		}
+	}
+	
+	
+	var rhtml = /<|&#?\w+;/;
+	
+	function buildFragment( elems, context, scripts, selection, ignored ) {
+		var elem, tmp, tag, wrap, contains, j,
+			fragment = context.createDocumentFragment(),
+			nodes = [],
+			i = 0,
+			l = elems.length;
+	
+		for ( ; i < l; i++ ) {
+			elem = elems[ i ];
+	
+			if ( elem || elem === 0 ) {
+	
+				// Add nodes directly
+				if ( jQuery.type( elem ) === "object" ) {
+	
+					// Support: Android <=4.0 only, PhantomJS 1 only
+					// push.apply(_, arraylike) throws on ancient WebKit
+					jQuery.merge( nodes, elem.nodeType ? [ elem ] : elem );
+	
+				// Convert non-html into a text node
+				} else if ( !rhtml.test( elem ) ) {
+					nodes.push( context.createTextNode( elem ) );
+	
+				// Convert html into DOM nodes
+				} else {
+					tmp = tmp || fragment.appendChild( context.createElement( "div" ) );
+	
+					// Deserialize a standard representation
+					tag = ( rtagName.exec( elem ) || [ "", "" ] )[ 1 ].toLowerCase();
+					wrap = wrapMap[ tag ] || wrapMap._default;
+					tmp.innerHTML = wrap[ 1 ] + jQuery.htmlPrefilter( elem ) + wrap[ 2 ];
+	
+					// Descend through wrappers to the right content
+					j = wrap[ 0 ];
+					while ( j-- ) {
+						tmp = tmp.lastChild;
+					}
+	
+					// Support: Android <=4.0 only, PhantomJS 1 only
+					// push.apply(_, arraylike) throws on ancient WebKit
+					jQuery.merge( nodes, tmp.childNodes );
+	
+					// Remember the top-level container
+					tmp = fragment.firstChild;
+	
+					// Ensure the created nodes are orphaned (#12392)
+					tmp.textContent = "";
+				}
+			}
+		}
+	
+		// Remove wrapper from fragment
+		fragment.textContent = "";
+	
+		i = 0;
+		while ( ( elem = nodes[ i++ ] ) ) {
+	
+			// Skip elements already in the context collection (trac-4087)
+			if ( selection && jQuery.inArray( elem, selection ) > -1 ) {
+				if ( ignored ) {
+					ignored.push( elem );
+				}
+				continue;
+			}
+	
+			contains = jQuery.contains( elem.ownerDocument, elem );
+	
+			// Append to fragment
+			tmp = getAll( fragment.appendChild( elem ), "script" );
+	
+			// Preserve script evaluation history
+			if ( contains ) {
+				setGlobalEval( tmp );
+			}
+	
+			// Capture executables
+			if ( scripts ) {
+				j = 0;
+				while ( ( elem = tmp[ j++ ] ) ) {
+					if ( rscriptType.test( elem.type || "" ) ) {
+						scripts.push( elem );
+					}
+				}
+			}
+		}
+	
+		return fragment;
+	}
+	
+	
+	( function() {
+		var fragment = document.createDocumentFragment(),
+			div = fragment.appendChild( document.createElement( "div" ) ),
+			input = document.createElement( "input" );
+	
+		// Support: Android 4.0 - 4.3 only
+		// Check state lost if the name is set (#11217)
+		// Support: Windows Web Apps (WWA)
+		// `name` and `type` must use .setAttribute for WWA (#14901)
+		input.setAttribute( "type", "radio" );
+		input.setAttribute( "checked", "checked" );
+		input.setAttribute( "name", "t" );
+	
+		div.appendChild( input );
+	
+		// Support: Android <=4.1 only
+		// Older WebKit doesn't clone checked state correctly in fragments
+		support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
+	
+		// Support: IE <=11 only
+		// Make sure textarea (and checkbox) defaultValue is properly cloned
+		div.innerHTML = "<textarea>x</textarea>";
+		support.noCloneChecked = !!div.cloneNode( true ).lastChild.defaultValue;
+	} )();
+	var documentElement = document.documentElement;
+	
+	
+	
+	var
+		rkeyEvent = /^key/,
+		rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
+		rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
+	
+	function returnTrue() {
+		return true;
+	}
+	
+	function returnFalse() {
+		return false;
+	}
+	
+	// Support: IE <=9 only
+	// See #13393 for more info
+	function safeActiveElement() {
+		try {
+			return document.activeElement;
+		} catch ( err ) { }
+	}
+	
+	function on( elem, types, selector, data, fn, one ) {
+		var origFn, type;
+	
+		// Types can be a map of types/handlers
+		if ( typeof types === "object" ) {
+	
+			// ( types-Object, selector, data )
+			if ( typeof selector !== "string" ) {
+	
+				// ( types-Object, data )
+				data = data || selector;
+				selector = undefined;
+			}
+			for ( type in types ) {
+				on( elem, type, selector, data, types[ type ], one );
+			}
+			return elem;
+		}
+	
+		if ( data == null && fn == null ) {
+	
+			// ( types, fn )
+			fn = selector;
+			data = selector = undefined;
+		} else if ( fn == null ) {
+			if ( typeof selector === "string" ) {
+	
+				// ( types, selector, fn )
+				fn = data;
+				data = undefined;
+			} else {
+	
+				// ( types, data, fn )
+				fn = data;
+				data = selector;
+				selector = undefined;
+			}
+		}
+		if ( fn === false ) {
+			fn = returnFalse;
+		} else if ( !fn ) {
+			return elem;
+		}
+	
+		if ( one === 1 ) {
+			origFn = fn;
+			fn = function( event ) {
+	
+				// Can use an empty set, since event contains the info
+				jQuery().off( event );
+				return origFn.apply( this, arguments );
+			};
+	
+			// Use same guid so caller can remove using origFn
+			fn.guid = origFn.guid || ( origFn.guid = jQuery.guid++ );
+		}
+		return elem.each( function() {
+			jQuery.event.add( this, types, fn, data, selector );
+		} );
+	}
+	
+	/*
+	 * Helper functions for managing events -- not part of the public interface.
+	 * Props to Dean Edwards' addEvent library for many of the ideas.
+	 */
+	jQuery.event = {
+	
+		global: {},
+	
+		add: function( elem, types, handler, data, selector ) {
+	
+			var handleObjIn, eventHandle, tmp,
+				events, t, handleObj,
+				special, handlers, type, namespaces, origType,
+				elemData = dataPriv.get( elem );
+	
+			// Don't attach events to noData or text/comment nodes (but allow plain objects)
+			if ( !elemData ) {
+				return;
+			}
+	
+			// Caller can pass in an object of custom data in lieu of the handler
+			if ( handler.handler ) {
+				handleObjIn = handler;
+				handler = handleObjIn.handler;
+				selector = handleObjIn.selector;
+			}
+	
+			// Ensure that invalid selectors throw exceptions at attach time
+			// Evaluate against documentElement in case elem is a non-element node (e.g., document)
+			if ( selector ) {
+				jQuery.find.matchesSelector( documentElement, selector );
+			}
+	
+			// Make sure that the handler has a unique ID, used to find/remove it later
+			if ( !handler.guid ) {
+				handler.guid = jQuery.guid++;
+			}
+	
+			// Init the element's event structure and main handler, if this is the first
+			if ( !( events = elemData.events ) ) {
+				events = elemData.events = {};
+			}
+			if ( !( eventHandle = elemData.handle ) ) {
+				eventHandle = elemData.handle = function( e ) {
+	
+					// Discard the second event of a jQuery.event.trigger() and
+					// when an event is called after a page has unloaded
+					return typeof jQuery !== "undefined" && jQuery.event.triggered !== e.type ?
+						jQuery.event.dispatch.apply( elem, arguments ) : undefined;
+				};
+			}
+	
+			// Handle multiple events separated by a space
+			types = ( types || "" ).match( rnothtmlwhite ) || [ "" ];
+			t = types.length;
+			while ( t-- ) {
+				tmp = rtypenamespace.exec( types[ t ] ) || [];
+				type = origType = tmp[ 1 ];
+				namespaces = ( tmp[ 2 ] || "" ).split( "." ).sort();
+	
+				// There *must* be a type, no attaching namespace-only handlers
+				if ( !type ) {
+					continue;
+				}
+	
+				// If event changes its type, use the special event handlers for the changed type
+				special = jQuery.event.special[ type ] || {};
+	
+				// If selector defined, determine special event api type, otherwise given type
+				type = ( selector ? special.delegateType : special.bindType ) || type;
+	
+				// Update special based on newly reset type
+				special = jQuery.event.special[ type ] || {};
+	
+				// handleObj is passed to all event handlers
+				handleObj = jQuery.extend( {
+					type: type,
+					origType: origType,
+					data: data,
+					handler: handler,
+					guid: handler.guid,
+					selector: selector,
+					needsContext: selector && jQuery.expr.match.needsContext.test( selector ),
+					namespace: namespaces.join( "." )
+				}, handleObjIn );
+	
+				// Init the event handler queue if we're the first
+				if ( !( handlers = events[ type ] ) ) {
+					handlers = events[ type ] = [];
+					handlers.delegateCount = 0;
+	
+					// Only use addEventListener if the special events handler returns false
+					if ( !special.setup ||
+						special.setup.call( elem, data, namespaces, eventHandle ) === false ) {
+	
+						if ( elem.addEventListener ) {
+							elem.addEventListener( type, eventHandle );
+						}
+					}
+				}
+	
+				if ( special.add ) {
+					special.add.call( elem, handleObj );
+	
+					if ( !handleObj.handler.guid ) {
+						handleObj.handler.guid = handler.guid;
+					}
+				}
+	
+				// Add to the element's handler list, delegates in front
+				if ( selector ) {
+					handlers.splice( handlers.delegateCount++, 0, handleObj );
+				} else {
+					handlers.push( handleObj );
+				}
+	
+				// Keep track of which events have ever been used, for event optimization
+				jQuery.event.global[ type ] = true;
+			}
+	
+		},
+	
+		// Detach an event or set of events from an element
+		remove: function( elem, types, handler, selector, mappedTypes ) {
+	
+			var j, origCount, tmp,
+				events, t, handleObj,
+				special, handlers, type, namespaces, origType,
+				elemData = dataPriv.hasData( elem ) && dataPriv.get( elem );
+	
+			if ( !elemData || !( events = elemData.events ) ) {
+				return;
+			}
+	
+			// Once for each type.namespace in types; type may be omitted
+			types = ( types || "" ).match( rnothtmlwhite ) || [ "" ];
+			t = types.length;
+			while ( t-- ) {
+				tmp = rtypenamespace.exec( types[ t ] ) || [];
+				type = origType = tmp[ 1 ];
+				namespaces = ( tmp[ 2 ] || "" ).split( "." ).sort();
+	
+				// Unbind all events (on this namespace, if provided) for the element
+				if ( !type ) {
+					for ( type in events ) {
+						jQuery.event.remove( elem, type + types[ t ], handler, selector, true );
+					}
+					continue;
+				}
+	
+				special = jQuery.event.special[ type ] || {};
+				type = ( selector ? special.delegateType : special.bindType ) || type;
+				handlers = events[ type ] || [];
+				tmp = tmp[ 2 ] &&
+					new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" );
+	
+				// Remove matching events
+				origCount = j = handlers.length;
+				while ( j-- ) {
+					handleObj = handlers[ j ];
+	
+					if ( ( mappedTypes || origType === handleObj.origType ) &&
+						( !handler || handler.guid === handleObj.guid ) &&
+						( !tmp || tmp.test( handleObj.namespace ) ) &&
+						( !selector || selector === handleObj.selector ||
+							selector === "**" && handleObj.selector ) ) {
+						handlers.splice( j, 1 );
+	
+						if ( handleObj.selector ) {
+							handlers.delegateCount--;
+						}
+						if ( special.remove ) {
+							special.remove.call( elem, handleObj );
+						}
+					}
+				}
+	
+				// Remove generic event handler if we removed something and no more handlers exist
+				// (avoids potential for endless recursion during removal of special event handlers)
+				if ( origCount && !handlers.length ) {
+					if ( !special.teardown ||
+						special.teardown.call( elem, namespaces, elemData.handle ) === false ) {
+	
+						jQuery.removeEvent( elem, type, elemData.handle );
+					}
+	
+					delete events[ type ];
+				}
+			}
+	
+			// Remove data and the expando if it's no longer used
+			if ( jQuery.isEmptyObject( events ) ) {
+				dataPriv.remove( elem, "handle events" );
+			}
+		},
+	
+		dispatch: function( nativeEvent ) {
+	
+			// Make a writable jQuery.Event from the native event object
+			var event = jQuery.event.fix( nativeEvent );
+	
+			var i, j, ret, matched, handleObj, handlerQueue,
+				args = new Array( arguments.length ),
+				handlers = ( dataPriv.get( this, "events" ) || {} )[ event.type ] || [],
+				special = jQuery.event.special[ event.type ] || {};
+	
+			// Use the fix-ed jQuery.Event rather than the (read-only) native event
+			args[ 0 ] = event;
+	
+			for ( i = 1; i < arguments.length; i++ ) {
+				args[ i ] = arguments[ i ];
+			}
+	
+			event.delegateTarget = this;
+	
+			// Call the preDispatch hook for the mapped type, and let it bail if desired
+			if ( special.preDispatch && special.preDispatch.call( this, event ) === false ) {
+				return;
+			}
+	
+			// Determine handlers
+			handlerQueue = jQuery.event.handlers.call( this, event, handlers );
+	
+			// Run delegates first; they may want to stop propagation beneath us
+			i = 0;
+			while ( ( matched = handlerQueue[ i++ ] ) && !event.isPropagationStopped() ) {
+				event.currentTarget = matched.elem;
+	
+				j = 0;
+				while ( ( handleObj = matched.handlers[ j++ ] ) &&
+					!event.isImmediatePropagationStopped() ) {
+	
+					// Triggered event must either 1) have no namespace, or 2) have namespace(s)
+					// a subset or equal to those in the bound event (both can have no namespace).
+					if ( !event.rnamespace || event.rnamespace.test( handleObj.namespace ) ) {
+	
+						event.handleObj = handleObj;
+						event.data = handleObj.data;
+	
+						ret = ( ( jQuery.event.special[ handleObj.origType ] || {} ).handle ||
+							handleObj.handler ).apply( matched.elem, args );
+	
+						if ( ret !== undefined ) {
+							if ( ( event.result = ret ) === false ) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+						}
+					}
+				}
+			}
+	
+			// Call the postDispatch hook for the mapped type
+			if ( special.postDispatch ) {
+				special.postDispatch.call( this, event );
+			}
+	
+			return event.result;
+		},
+	
+		handlers: function( event, handlers ) {
+			var i, handleObj, sel, matchedHandlers, matchedSelectors,
+				handlerQueue = [],
+				delegateCount = handlers.delegateCount,
+				cur = event.target;
+	
+			// Find delegate handlers
+			if ( delegateCount &&
+	
+				// Support: IE <=9
+				// Black-hole SVG <use> instance trees (trac-13180)
+				cur.nodeType &&
+	
+				// Support: Firefox <=42
+				// Suppress spec-violating clicks indicating a non-primary pointer button (trac-3861)
+				// https://www.w3.org/TR/DOM-Level-3-Events/#event-type-click
+				// Support: IE 11 only
+				// ...but not arrow key "clicks" of radio inputs, which can have `button` -1 (gh-2343)
+				!( event.type === "click" && event.button >= 1 ) ) {
+	
+				for ( ; cur !== this; cur = cur.parentNode || this ) {
+	
+					// Don't check non-elements (#13208)
+					// Don't process clicks on disabled elements (#6911, #8165, #11382, #11764)
+					if ( cur.nodeType === 1 && !( event.type === "click" && cur.disabled === true ) ) {
+						matchedHandlers = [];
+						matchedSelectors = {};
+						for ( i = 0; i < delegateCount; i++ ) {
+							handleObj = handlers[ i ];
+	
+							// Don't conflict with Object.prototype properties (#13203)
+							sel = handleObj.selector + " ";
+	
+							if ( matchedSelectors[ sel ] === undefined ) {
+								matchedSelectors[ sel ] = handleObj.needsContext ?
+									jQuery( sel, this ).index( cur ) > -1 :
+									jQuery.find( sel, this, null, [ cur ] ).length;
+							}
+							if ( matchedSelectors[ sel ] ) {
+								matchedHandlers.push( handleObj );
+							}
+						}
+						if ( matchedHandlers.length ) {
+							handlerQueue.push( { elem: cur, handlers: matchedHandlers } );
+						}
+					}
+				}
+			}
+	
+			// Add the remaining (directly-bound) handlers
+			cur = this;
+			if ( delegateCount < handlers.length ) {
+				handlerQueue.push( { elem: cur, handlers: handlers.slice( delegateCount ) } );
+			}
+	
+			return handlerQueue;
+		},
+	
+		addProp: function( name, hook ) {
+			Object.defineProperty( jQuery.Event.prototype, name, {
+				enumerable: true,
+				configurable: true,
+	
+				get: jQuery.isFunction( hook ) ?
+					function() {
+						if ( this.originalEvent ) {
+								return hook( this.originalEvent );
+						}
+					} :
+					function() {
+						if ( this.originalEvent ) {
+								return this.originalEvent[ name ];
+						}
+					},
+	
+				set: function( value ) {
+					Object.defineProperty( this, name, {
+						enumerable: true,
+						configurable: true,
+						writable: true,
+						value: value
+					} );
+				}
+			} );
+		},
+	
+		fix: function( originalEvent ) {
+			return originalEvent[ jQuery.expando ] ?
+				originalEvent :
+				new jQuery.Event( originalEvent );
+		},
+	
+		special: {
+			load: {
+	
+				// Prevent triggered image.load events from bubbling to window.load
+				noBubble: true
+			},
+			focus: {
+	
+				// Fire native event if possible so blur/focus sequence is correct
+				trigger: function() {
+					if ( this !== safeActiveElement() && this.focus ) {
+						this.focus();
+						return false;
+					}
+				},
+				delegateType: "focusin"
+			},
+			blur: {
+				trigger: function() {
+					if ( this === safeActiveElement() && this.blur ) {
+						this.blur();
+						return false;
+					}
+				},
+				delegateType: "focusout"
+			},
+			click: {
+	
+				// For checkbox, fire native event so checked state will be right
+				trigger: function() {
+					if ( this.type === "checkbox" && this.click && jQuery.nodeName( this, "input" ) ) {
+						this.click();
+						return false;
+					}
+				},
+	
+				// For cross-browser consistency, don't fire native .click() on links
+				_default: function( event ) {
+					return jQuery.nodeName( event.target, "a" );
+				}
+			},
+	
+			beforeunload: {
+				postDispatch: function( event ) {
+	
+					// Support: Firefox 20+
+					// Firefox doesn't alert if the returnValue field is not set.
+					if ( event.result !== undefined && event.originalEvent ) {
+						event.originalEvent.returnValue = event.result;
+					}
+				}
+			}
+		}
+	};
+	
+	jQuery.removeEvent = function( elem, type, handle ) {
+	
+		// This "if" is needed for plain objects
+		if ( elem.removeEventListener ) {
+			elem.removeEventListener( type, handle );
+		}
+	};
+	
+	jQuery.Event = function( src, props ) {
+	
+		// Allow instantiation without the 'new' keyword
+		if ( !( this instanceof jQuery.Event ) ) {
+			return new jQuery.Event( src, props );
+		}
+	
+		// Event object
+		if ( src && src.type ) {
+			this.originalEvent = src;
+			this.type = src.type;
+	
+			// Events bubbling up the document may have been marked as prevented
+			// by a handler lower down the tree; reflect the correct value.
+			this.isDefaultPrevented = src.defaultPrevented ||
+					src.defaultPrevented === undefined &&
+	
+					// Support: Android <=2.3 only
+					src.returnValue === false ?
+				returnTrue :
+				returnFalse;
+	
+			// Create target properties
+			// Support: Safari <=6 - 7 only
+			// Target should not be a text node (#504, #13143)
+			this.target = ( src.target && src.target.nodeType === 3 ) ?
+				src.target.parentNode :
+				src.target;
+	
+			this.currentTarget = src.currentTarget;
+			this.relatedTarget = src.relatedTarget;
+	
+		// Event type
+		} else {
+			this.type = src;
+		}
+	
+		// Put explicitly provided properties onto the event object
+		if ( props ) {
+			jQuery.extend( this, props );
+		}
+	
+		// Create a timestamp if incoming event doesn't have one
+		this.timeStamp = src && src.timeStamp || jQuery.now();
+	
+		// Mark it as fixed
+		this[ jQuery.expando ] = true;
+	};
+	
+	// jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding
+	// https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
+	jQuery.Event.prototype = {
+		constructor: jQuery.Event,
+		isDefaultPrevented: returnFalse,
+		isPropagationStopped: returnFalse,
+		isImmediatePropagationStopped: returnFalse,
+		isSimulated: false,
+	
+		preventDefault: function() {
+			var e = this.originalEvent;
+	
+			this.isDefaultPrevented = returnTrue;
+	
+			if ( e && !this.isSimulated ) {
+				e.preventDefault();
+			}
+		},
+		stopPropagation: function() {
+			var e = this.originalEvent;
+	
+			this.isPropagationStopped = returnTrue;
+	
+			if ( e && !this.isSimulated ) {
+				e.stopPropagation();
+			}
+		},
+		stopImmediatePropagation: function() {
+			var e = this.originalEvent;
+	
+			this.isImmediatePropagationStopped = returnTrue;
+	
+			if ( e && !this.isSimulated ) {
+				e.stopImmediatePropagation();
+			}
+	
+			this.stopPropagation();
+		}
+	};
+	
+	// Includes all common event props including KeyEvent and MouseEvent specific props
+	jQuery.each( {
+		altKey: true,
+		bubbles: true,
+		cancelable: true,
+		changedTouches: true,
+		ctrlKey: true,
+		detail: true,
+		eventPhase: true,
+		metaKey: true,
+		pageX: true,
+		pageY: true,
+		shiftKey: true,
+		view: true,
+		"char": true,
+		charCode: true,
+		key: true,
+		keyCode: true,
+		button: true,
+		buttons: true,
+		clientX: true,
+		clientY: true,
+		offsetX: true,
+		offsetY: true,
+		pointerId: true,
+		pointerType: true,
+		screenX: true,
+		screenY: true,
+		targetTouches: true,
+		toElement: true,
+		touches: true,
+	
+		which: function( event ) {
+			var button = event.button;
+	
+			// Add which for key events
+			if ( event.which == null && rkeyEvent.test( event.type ) ) {
+				return event.charCode != null ? event.charCode : event.keyCode;
+			}
+	
+			// Add which for click: 1 === left; 2 === middle; 3 === right
+			if ( !event.which && button !== undefined && rmouseEvent.test( event.type ) ) {
+				if ( button & 1 ) {
+					return 1;
+				}
+	
+				if ( button & 2 ) {
+					return 3;
+				}
+	
+				if ( button & 4 ) {
+					return 2;
+				}
+	
+				return 0;
+			}
+	
+			return event.which;
+		}
+	}, jQuery.event.addProp );
+	
+	// Create mouseenter/leave events using mouseover/out and event-time checks
+	// so that event delegation works in jQuery.
+	// Do the same for pointerenter/pointerleave and pointerover/pointerout
+	//
+	// Support: Safari 7 only
+	// Safari sends mouseenter too often; see:
+	// https://bugs.chromium.org/p/chromium/issues/detail?id=470258
+	// for the description of the bug (it existed in older Chrome versions as well).
+	jQuery.each( {
+		mouseenter: "mouseover",
+		mouseleave: "mouseout",
+		pointerenter: "pointerover",
+		pointerleave: "pointerout"
+	}, function( orig, fix ) {
+		jQuery.event.special[ orig ] = {
+			delegateType: fix,
+			bindType: fix,
+	
+			handle: function( event ) {
+				var ret,
+					target = this,
+					related = event.relatedTarget,
+					handleObj = event.handleObj;
+	
+				// For mouseenter/leave call the handler if related is outside the target.
+				// NB: No relatedTarget if the mouse left/entered the browser window
+				if ( !related || ( related !== target && !jQuery.contains( target, related ) ) ) {
+					event.type = handleObj.origType;
+					ret = handleObj.handler.apply( this, arguments );
+					event.type = fix;
+				}
+				return ret;
+			}
+		};
+	} );
+	
+	jQuery.fn.extend( {
+	
+		on: function( types, selector, data, fn ) {
+			return on( this, types, selector, data, fn );
+		},
+		one: function( types, selector, data, fn ) {
+			return on( this, types, selector, data, fn, 1 );
+		},
+		off: function( types, selector, fn ) {
+			var handleObj, type;
+			if ( types && types.preventDefault && types.handleObj ) {
+	
+				// ( event )  dispatched jQuery.Event
+				handleObj = types.handleObj;
+				jQuery( types.delegateTarget ).off(
+					handleObj.namespace ?
+						handleObj.origType + "." + handleObj.namespace :
+						handleObj.origType,
+					handleObj.selector,
+					handleObj.handler
+				);
+				return this;
+			}
+			if ( typeof types === "object" ) {
+	
+				// ( types-object [, selector] )
+				for ( type in types ) {
+					this.off( type, selector, types[ type ] );
+				}
+				return this;
+			}
+			if ( selector === false || typeof selector === "function" ) {
+	
+				// ( types [, fn] )
+				fn = selector;
+				selector = undefined;
+			}
+			if ( fn === false ) {
+				fn = returnFalse;
+			}
+			return this.each( function() {
+				jQuery.event.remove( this, types, fn, selector );
+			} );
+		}
+	} );
+	
+	
+	var
+	
+		/* eslint-disable max-len */
+	
+		// See https://github.com/eslint/eslint/issues/3229
+		rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0>\x20\t\r\n\f]*)[^>]*)\/>/gi,
+	
+		/* eslint-enable */
+	
+		// Support: IE <=10 - 11, Edge 12 - 13
+		// In IE/Edge using regex groups here causes severe slowdowns.
+		// See https://connect.microsoft.com/IE/feedback/details/1736512/
+		rnoInnerhtml = /<script|<style|<link/i,
+	
+		// checked="checked" or checked
+		rchecked = /checked\s*(?:[^=]|=\s*.checked.)/i,
+		rscriptTypeMasked = /^true\/(.*)/,
+		rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;
+	
+	function manipulationTarget( elem, content ) {
+		if ( jQuery.nodeName( elem, "table" ) &&
+			jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ) {
+	
+			return elem.getElementsByTagName( "tbody" )[ 0 ] || elem;
+		}
+	
+		return elem;
+	}
+	
+	// Replace/restore the type attribute of script elements for safe DOM manipulation
+	function disableScript( elem ) {
+		elem.type = ( elem.getAttribute( "type" ) !== null ) + "/" + elem.type;
+		return elem;
+	}
+	function restoreScript( elem ) {
+		var match = rscriptTypeMasked.exec( elem.type );
+	
+		if ( match ) {
+			elem.type = match[ 1 ];
+		} else {
+			elem.removeAttribute( "type" );
+		}
+	
+		return elem;
+	}
+	
+	function cloneCopyEvent( src, dest ) {
+		var i, l, type, pdataOld, pdataCur, udataOld, udataCur, events;
+	
+		if ( dest.nodeType !== 1 ) {
+			return;
+		}
+	
+		// 1. Copy private data: events, handlers, etc.
+		if ( dataPriv.hasData( src ) ) {
+			pdataOld = dataPriv.access( src );
+			pdataCur = dataPriv.set( dest, pdataOld );
+			events = pdataOld.events;
+	
+			if ( events ) {
+				delete pdataCur.handle;
+				pdataCur.events = {};
+	
+				for ( type in events ) {
+					for ( i = 0, l = events[ type ].length; i < l; i++ ) {
+						jQuery.event.add( dest, type, events[ type ][ i ] );
+					}
+				}
+			}
+		}
+	
+		// 2. Copy user data
+		if ( dataUser.hasData( src ) ) {
+			udataOld = dataUser.access( src );
+			udataCur = jQuery.extend( {}, udataOld );
+	
+			dataUser.set( dest, udataCur );
+		}
+	}
+	
+	// Fix IE bugs, see support tests
+	function fixInput( src, dest ) {
+		var nodeName = dest.nodeName.toLowerCase();
+	
+		// Fails to persist the checked state of a cloned checkbox or radio button.
+		if ( nodeName === "input" && rcheckableType.test( src.type ) ) {
+			dest.checked = src.checked;
+	
+		// Fails to return the selected option to the default selected state when cloning options
+		} else if ( nodeName === "input" || nodeName === "textarea" ) {
+			dest.defaultValue = src.defaultValue;
+		}
+	}
+	
+	function domManip( collection, args, callback, ignored ) {
+	
+		// Flatten any nested arrays
+		args = concat.apply( [], args );
+	
+		var fragment, first, scripts, hasScripts, node, doc,
+			i = 0,
+			l = collection.length,
+			iNoClone = l - 1,
+			value = args[ 0 ],
+			isFunction = jQuery.isFunction( value );
+	
+		// We can't cloneNode fragments that contain checked, in WebKit
+		if ( isFunction ||
+				( l > 1 && typeof value === "string" &&
+					!support.checkClone && rchecked.test( value ) ) ) {
+			return collection.each( function( index ) {
+				var self = collection.eq( index );
+				if ( isFunction ) {
+					args[ 0 ] = value.call( this, index, self.html() );
+				}
+				domManip( self, args, callback, ignored );
+			} );
+		}
+	
+		if ( l ) {
+			fragment = buildFragment( args, collection[ 0 ].ownerDocument, false, collection, ignored );
+			first = fragment.firstChild;
+	
+			if ( fragment.childNodes.length === 1 ) {
+				fragment = first;
+			}
+	
+			// Require either new content or an interest in ignored elements to invoke the callback
+			if ( first || ignored ) {
+				scripts = jQuery.map( getAll( fragment, "script" ), disableScript );
+				hasScripts = scripts.length;
+	
+				// Use the original fragment for the last item
+				// instead of the first because it can end up
+				// being emptied incorrectly in certain situations (#8070).
+				for ( ; i < l; i++ ) {
+					node = fragment;
+	
+					if ( i !== iNoClone ) {
+						node = jQuery.clone( node, true, true );
+	
+						// Keep references to cloned scripts for later restoration
+						if ( hasScripts ) {
+	
+							// Support: Android <=4.0 only, PhantomJS 1 only
+							// push.apply(_, arraylike) throws on ancient WebKit
+							jQuery.merge( scripts, getAll( node, "script" ) );
+						}
+					}
+	
+					callback.call( collection[ i ], node, i );
+				}
+	
+				if ( hasScripts ) {
+					doc = scripts[ scripts.length - 1 ].ownerDocument;
+	
+					// Reenable scripts
+					jQuery.map( scripts, restoreScript );
+	
+					// Evaluate executable scripts on first document insertion
+					for ( i = 0; i < hasScripts; i++ ) {
+						node = scripts[ i ];
+						if ( rscriptType.test( node.type || "" ) &&
+							!dataPriv.access( node, "globalEval" ) &&
+							jQuery.contains( doc, node ) ) {
+	
+							if ( node.src ) {
+	
+								// Optional AJAX dependency, but won't run scripts if not present
+								if ( jQuery._evalUrl ) {
+									jQuery._evalUrl( node.src );
+								}
+							} else {
+								DOMEval( node.textContent.replace( rcleanScript, "" ), doc );
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		return collection;
+	}
+	
+	function remove( elem, selector, keepData ) {
+		var node,
+			nodes = selector ? jQuery.filter( selector, elem ) : elem,
+			i = 0;
+	
+		for ( ; ( node = nodes[ i ] ) != null; i++ ) {
+			if ( !keepData && node.nodeType === 1 ) {
+				jQuery.cleanData( getAll( node ) );
+			}
+	
+			if ( node.parentNode ) {
+				if ( keepData && jQuery.contains( node.ownerDocument, node ) ) {
+					setGlobalEval( getAll( node, "script" ) );
+				}
+				node.parentNode.removeChild( node );
+			}
+		}
+	
+		return elem;
+	}
+	
+	jQuery.extend( {
+		htmlPrefilter: function( html ) {
+			return html.replace( rxhtmlTag, "<$1></$2>" );
+		},
+	
+		clone: function( elem, dataAndEvents, deepDataAndEvents ) {
+			var i, l, srcElements, destElements,
+				clone = elem.cloneNode( true ),
+				inPage = jQuery.contains( elem.ownerDocument, elem );
+	
+			// Fix IE cloning issues
+			if ( !support.noCloneChecked && ( elem.nodeType === 1 || elem.nodeType === 11 ) &&
+					!jQuery.isXMLDoc( elem ) ) {
+	
+				// We eschew Sizzle here for performance reasons: https://jsperf.com/getall-vs-sizzle/2
+				destElements = getAll( clone );
+				srcElements = getAll( elem );
+	
+				for ( i = 0, l = srcElements.length; i < l; i++ ) {
+					fixInput( srcElements[ i ], destElements[ i ] );
+				}
+			}
+	
+			// Copy the events from the original to the clone
+			if ( dataAndEvents ) {
+				if ( deepDataAndEvents ) {
+					srcElements = srcElements || getAll( elem );
+					destElements = destElements || getAll( clone );
+	
+					for ( i = 0, l = srcElements.length; i < l; i++ ) {
+						cloneCopyEvent( srcElements[ i ], destElements[ i ] );
+					}
+				} else {
+					cloneCopyEvent( elem, clone );
+				}
+			}
+	
+			// Preserve script evaluation history
+			destElements = getAll( clone, "script" );
+			if ( destElements.length > 0 ) {
+				setGlobalEval( destElements, !inPage && getAll( elem, "script" ) );
+			}
+	
+			// Return the cloned set
+			return clone;
+		},
+	
+		cleanData: function( elems ) {
+			var data, elem, type,
+				special = jQuery.event.special,
+				i = 0;
+	
+			for ( ; ( elem = elems[ i ] ) !== undefined; i++ ) {
+				if ( acceptData( elem ) ) {
+					if ( ( data = elem[ dataPriv.expando ] ) ) {
+						if ( data.events ) {
+							for ( type in data.events ) {
+								if ( special[ type ] ) {
+									jQuery.event.remove( elem, type );
+	
+								// This is a shortcut to avoid jQuery.event.remove's overhead
+								} else {
+									jQuery.removeEvent( elem, type, data.handle );
+								}
+							}
+						}
+	
+						// Support: Chrome <=35 - 45+
+						// Assign undefined instead of using delete, see Data#remove
+						elem[ dataPriv.expando ] = undefined;
+					}
+					if ( elem[ dataUser.expando ] ) {
+	
+						// Support: Chrome <=35 - 45+
+						// Assign undefined instead of using delete, see Data#remove
+						elem[ dataUser.expando ] = undefined;
+					}
+				}
+			}
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		detach: function( selector ) {
+			return remove( this, selector, true );
+		},
+	
+		remove: function( selector ) {
+			return remove( this, selector );
+		},
+	
+		text: function( value ) {
+			return access( this, function( value ) {
+				return value === undefined ?
+					jQuery.text( this ) :
+					this.empty().each( function() {
+						if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+							this.textContent = value;
+						}
+					} );
+			}, null, value, arguments.length );
+		},
+	
+		append: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+					var target = manipulationTarget( this, elem );
+					target.appendChild( elem );
+				}
+			} );
+		},
+	
+		prepend: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+					var target = manipulationTarget( this, elem );
+					target.insertBefore( elem, target.firstChild );
+				}
+			} );
+		},
+	
+		before: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.parentNode ) {
+					this.parentNode.insertBefore( elem, this );
+				}
+			} );
+		},
+	
+		after: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.parentNode ) {
+					this.parentNode.insertBefore( elem, this.nextSibling );
+				}
+			} );
+		},
+	
+		empty: function() {
+			var elem,
+				i = 0;
+	
+			for ( ; ( elem = this[ i ] ) != null; i++ ) {
+				if ( elem.nodeType === 1 ) {
+	
+					// Prevent memory leaks
+					jQuery.cleanData( getAll( elem, false ) );
+	
+					// Remove any remaining nodes
+					elem.textContent = "";
+				}
+			}
+	
+			return this;
+		},
+	
+		clone: function( dataAndEvents, deepDataAndEvents ) {
+			dataAndEvents = dataAndEvents == null ? false : dataAndEvents;
+			deepDataAndEvents = deepDataAndEvents == null ? dataAndEvents : deepDataAndEvents;
+	
+			return this.map( function() {
+				return jQuery.clone( this, dataAndEvents, deepDataAndEvents );
+			} );
+		},
+	
+		html: function( value ) {
+			return access( this, function( value ) {
+				var elem = this[ 0 ] || {},
+					i = 0,
+					l = this.length;
+	
+				if ( value === undefined && elem.nodeType === 1 ) {
+					return elem.innerHTML;
+				}
+	
+				// See if we can take a shortcut and just use innerHTML
+				if ( typeof value === "string" && !rnoInnerhtml.test( value ) &&
+					!wrapMap[ ( rtagName.exec( value ) || [ "", "" ] )[ 1 ].toLowerCase() ] ) {
+	
+					value = jQuery.htmlPrefilter( value );
+	
+					try {
+						for ( ; i < l; i++ ) {
+							elem = this[ i ] || {};
+	
+							// Remove element nodes and prevent memory leaks
+							if ( elem.nodeType === 1 ) {
+								jQuery.cleanData( getAll( elem, false ) );
+								elem.innerHTML = value;
+							}
+						}
+	
+						elem = 0;
+	
+					// If using innerHTML throws an exception, use the fallback method
+					} catch ( e ) {}
+				}
+	
+				if ( elem ) {
+					this.empty().append( value );
+				}
+			}, null, value, arguments.length );
+		},
+	
+		replaceWith: function() {
+			var ignored = [];
+	
+			// Make the changes, replacing each non-ignored context element with the new content
+			return domManip( this, arguments, function( elem ) {
+				var parent = this.parentNode;
+	
+				if ( jQuery.inArray( this, ignored ) < 0 ) {
+					jQuery.cleanData( getAll( this ) );
+					if ( parent ) {
+						parent.replaceChild( elem, this );
+					}
+				}
+	
+			// Force callback invocation
+			}, ignored );
+		}
+	} );
+	
+	jQuery.each( {
+		appendTo: "append",
+		prependTo: "prepend",
+		insertBefore: "before",
+		insertAfter: "after",
+		replaceAll: "replaceWith"
+	}, function( name, original ) {
+		jQuery.fn[ name ] = function( selector ) {
+			var elems,
+				ret = [],
+				insert = jQuery( selector ),
+				last = insert.length - 1,
+				i = 0;
+	
+			for ( ; i <= last; i++ ) {
+				elems = i === last ? this : this.clone( true );
+				jQuery( insert[ i ] )[ original ]( elems );
+	
+				// Support: Android <=4.0 only, PhantomJS 1 only
+				// .get() because push.apply(_, arraylike) throws on ancient WebKit
+				push.apply( ret, elems.get() );
+			}
+	
+			return this.pushStack( ret );
+		};
+	} );
+	var rmargin = ( /^margin/ );
+	
+	var rnumnonpx = new RegExp( "^(" + pnum + ")(?!px)[a-z%]+$", "i" );
+	
+	var getStyles = function( elem ) {
+	
+			// Support: IE <=11 only, Firefox <=30 (#15098, #14150)
+			// IE throws on elements created in popups
+			// FF meanwhile throws on frame elements through "defaultView.getComputedStyle"
+			var view = elem.ownerDocument.defaultView;
+	
+			if ( !view || !view.opener ) {
+				view = window;
+			}
+	
+			return view.getComputedStyle( elem );
+		};
+	
+	
+	
+	( function() {
+	
+		// Executing both pixelPosition & boxSizingReliable tests require only one layout
+		// so they're executed at the same time to save the second computation.
+		function computeStyleTests() {
+	
+			// This is a singleton, we need to execute it only once
+			if ( !div ) {
+				return;
+			}
+	
+			div.style.cssText =
+				"box-sizing:border-box;" +
+				"position:relative;display:block;" +
+				"margin:auto;border:1px;padding:1px;" +
+				"top:1%;width:50%";
+			div.innerHTML = "";
+			documentElement.appendChild( container );
+	
+			var divStyle = window.getComputedStyle( div );
+			pixelPositionVal = divStyle.top !== "1%";
+	
+			// Support: Android 4.0 - 4.3 only, Firefox <=3 - 44
+			reliableMarginLeftVal = divStyle.marginLeft === "2px";
+			boxSizingReliableVal = divStyle.width === "4px";
+	
+			// Support: Android 4.0 - 4.3 only
+			// Some styles come back with percentage values, even though they shouldn't
+			div.style.marginRight = "50%";
+			pixelMarginRightVal = divStyle.marginRight === "4px";
+	
+			documentElement.removeChild( container );
+	
+			// Nullify the div so it wouldn't be stored in the memory and
+			// it will also be a sign that checks already performed
+			div = null;
+		}
+	
+		var pixelPositionVal, boxSizingReliableVal, pixelMarginRightVal, reliableMarginLeftVal,
+			container = document.createElement( "div" ),
+			div = document.createElement( "div" );
+	
+		// Finish early in limited (non-browser) environments
+		if ( !div.style ) {
+			return;
+		}
+	
+		// Support: IE <=9 - 11 only
+		// Style of cloned element affects source element cloned (#8908)
+		div.style.backgroundClip = "content-box";
+		div.cloneNode( true ).style.backgroundClip = "";
+		support.clearCloneStyle = div.style.backgroundClip === "content-box";
+	
+		container.style.cssText = "border:0;width:8px;height:0;top:0;left:-9999px;" +
+			"padding:0;margin-top:1px;position:absolute";
+		container.appendChild( div );
+	
+		jQuery.extend( support, {
+			pixelPosition: function() {
+				computeStyleTests();
+				return pixelPositionVal;
+			},
+			boxSizingReliable: function() {
+				computeStyleTests();
+				return boxSizingReliableVal;
+			},
+			pixelMarginRight: function() {
+				computeStyleTests();
+				return pixelMarginRightVal;
+			},
+			reliableMarginLeft: function() {
+				computeStyleTests();
+				return reliableMarginLeftVal;
+			}
+		} );
+	} )();
+	
+	
+	function curCSS( elem, name, computed ) {
+		var width, minWidth, maxWidth, ret,
+			style = elem.style;
+	
+		computed = computed || getStyles( elem );
+	
+		// Support: IE <=9 only
+		// getPropertyValue is only needed for .css('filter') (#12537)
+		if ( computed ) {
+			ret = computed.getPropertyValue( name ) || computed[ name ];
+	
+			if ( ret === "" && !jQuery.contains( elem.ownerDocument, elem ) ) {
+				ret = jQuery.style( elem, name );
+			}
+	
+			// A tribute to the "awesome hack by Dean Edwards"
+			// Android Browser returns percentage for some values,
+			// but width seems to be reliably pixels.
+			// This is against the CSSOM draft spec:
+			// https://drafts.csswg.org/cssom/#resolved-values
+			if ( !support.pixelMarginRight() && rnumnonpx.test( ret ) && rmargin.test( name ) ) {
+	
+				// Remember the original values
+				width = style.width;
+				minWidth = style.minWidth;
+				maxWidth = style.maxWidth;
+	
+				// Put in the new values to get a computed value out
+				style.minWidth = style.maxWidth = style.width = ret;
+				ret = computed.width;
+	
+				// Revert the changed values
+				style.width = width;
+				style.minWidth = minWidth;
+				style.maxWidth = maxWidth;
+			}
+		}
+	
+		return ret !== undefined ?
+	
+			// Support: IE <=9 - 11 only
+			// IE returns zIndex value as an integer.
+			ret + "" :
+			ret;
+	}
+	
+	
+	function addGetHookIf( conditionFn, hookFn ) {
+	
+		// Define the hook, we'll check on the first run if it's really needed.
+		return {
+			get: function() {
+				if ( conditionFn() ) {
+	
+					// Hook not needed (or it's not possible to use it due
+					// to missing dependency), remove it.
+					delete this.get;
+					return;
+				}
+	
+				// Hook needed; redefine it so that the support test is not executed again.
+				return ( this.get = hookFn ).apply( this, arguments );
+			}
+		};
+	}
+	
+	
+	var
+	
+		// Swappable if display is none or starts with table
+		// except "table", "table-cell", or "table-caption"
+		// See here for display values: https://developer.mozilla.org/en-US/docs/CSS/display
+		rdisplayswap = /^(none|table(?!-c[ea]).+)/,
+		cssShow = { position: "absolute", visibility: "hidden", display: "block" },
+		cssNormalTransform = {
+			letterSpacing: "0",
+			fontWeight: "400"
+		},
+	
+		cssPrefixes = [ "Webkit", "Moz", "ms" ],
+		emptyStyle = document.createElement( "div" ).style;
+	
+	// Return a css property mapped to a potentially vendor prefixed property
+	function vendorPropName( name ) {
+	
+		// Shortcut for names that are not vendor prefixed
+		if ( name in emptyStyle ) {
+			return name;
+		}
+	
+		// Check for vendor prefixed names
+		var capName = name[ 0 ].toUpperCase() + name.slice( 1 ),
+			i = cssPrefixes.length;
+	
+		while ( i-- ) {
+			name = cssPrefixes[ i ] + capName;
+			if ( name in emptyStyle ) {
+				return name;
+			}
+		}
+	}
+	
+	function setPositiveNumber( elem, value, subtract ) {
+	
+		// Any relative (+/-) values have already been
+		// normalized at this point
+		var matches = rcssNum.exec( value );
+		return matches ?
+	
+			// Guard against undefined "subtract", e.g., when used as in cssHooks
+			Math.max( 0, matches[ 2 ] - ( subtract || 0 ) ) + ( matches[ 3 ] || "px" ) :
+			value;
+	}
+	
+	function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
+		var i,
+			val = 0;
+	
+		// If we already have the right measurement, avoid augmentation
+		if ( extra === ( isBorderBox ? "border" : "content" ) ) {
+			i = 4;
+	
+		// Otherwise initialize for horizontal or vertical properties
+		} else {
+			i = name === "width" ? 1 : 0;
+		}
+	
+		for ( ; i < 4; i += 2 ) {
+	
+			// Both box models exclude margin, so add it if we want it
+			if ( extra === "margin" ) {
+				val += jQuery.css( elem, extra + cssExpand[ i ], true, styles );
+			}
+	
+			if ( isBorderBox ) {
+	
+				// border-box includes padding, so remove it if we want content
+				if ( extra === "content" ) {
+					val -= jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
+				}
+	
+				// At this point, extra isn't border nor margin, so remove border
+				if ( extra !== "margin" ) {
+					val -= jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+				}
+			} else {
+	
+				// At this point, extra isn't content, so add padding
+				val += jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
+	
+				// At this point, extra isn't content nor padding, so add border
+				if ( extra !== "padding" ) {
+					val += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+				}
+			}
+		}
+	
+		return val;
+	}
+	
+	function getWidthOrHeight( elem, name, extra ) {
+	
+		// Start with offset property, which is equivalent to the border-box value
+		var val,
+			valueIsBorderBox = true,
+			styles = getStyles( elem ),
+			isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
+	
+		// Support: IE <=11 only
+		// Running getBoundingClientRect on a disconnected node
+		// in IE throws an error.
+		if ( elem.getClientRects().length ) {
+			val = elem.getBoundingClientRect()[ name ];
+		}
+	
+		// Some non-html elements return undefined for offsetWidth, so check for null/undefined
+		// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
+		// MathML - https://bugzilla.mozilla.org/show_bug.cgi?id=491668
+		if ( val <= 0 || val == null ) {
+	
+			// Fall back to computed then uncomputed css if necessary
+			val = curCSS( elem, name, styles );
+			if ( val < 0 || val == null ) {
+				val = elem.style[ name ];
+			}
+	
+			// Computed unit is not pixels. Stop here and return.
+			if ( rnumnonpx.test( val ) ) {
+				return val;
+			}
+	
+			// Check for style in case a browser which returns unreliable values
+			// for getComputedStyle silently falls back to the reliable elem.style
+			valueIsBorderBox = isBorderBox &&
+				( support.boxSizingReliable() || val === elem.style[ name ] );
+	
+			// Normalize "", auto, and prepare for extra
+			val = parseFloat( val ) || 0;
+		}
+	
+		// Use the active box-sizing model to add/subtract irrelevant styles
+		return ( val +
+			augmentWidthOrHeight(
+				elem,
+				name,
+				extra || ( isBorderBox ? "border" : "content" ),
+				valueIsBorderBox,
+				styles
+			)
+		) + "px";
+	}
+	
+	jQuery.extend( {
+	
+		// Add in style property hooks for overriding the default
+		// behavior of getting and setting a style property
+		cssHooks: {
+			opacity: {
+				get: function( elem, computed ) {
+					if ( computed ) {
+	
+						// We should always get a number back from opacity
+						var ret = curCSS( elem, "opacity" );
+						return ret === "" ? "1" : ret;
+					}
+				}
+			}
+		},
+	
+		// Don't automatically add "px" to these possibly-unitless properties
+		cssNumber: {
+			"animationIterationCount": true,
+			"columnCount": true,
+			"fillOpacity": true,
+			"flexGrow": true,
+			"flexShrink": true,
+			"fontWeight": true,
+			"lineHeight": true,
+			"opacity": true,
+			"order": true,
+			"orphans": true,
+			"widows": true,
+			"zIndex": true,
+			"zoom": true
+		},
+	
+		// Add in properties whose names you wish to fix before
+		// setting or getting the value
+		cssProps: {
+			"float": "cssFloat"
+		},
+	
+		// Get and set the style property on a DOM Node
+		style: function( elem, name, value, extra ) {
+	
+			// Don't set styles on text and comment nodes
+			if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
+				return;
+			}
+	
+			// Make sure that we're working with the right name
+			var ret, type, hooks,
+				origName = jQuery.camelCase( name ),
+				style = elem.style;
+	
+			name = jQuery.cssProps[ origName ] ||
+				( jQuery.cssProps[ origName ] = vendorPropName( origName ) || origName );
+	
+			// Gets hook for the prefixed version, then unprefixed version
+			hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+	
+			// Check if we're setting a value
+			if ( value !== undefined ) {
+				type = typeof value;
+	
+				// Convert "+=" or "-=" to relative numbers (#7345)
+				if ( type === "string" && ( ret = rcssNum.exec( value ) ) && ret[ 1 ] ) {
+					value = adjustCSS( elem, name, ret );
+	
+					// Fixes bug #9237
+					type = "number";
+				}
+	
+				// Make sure that null and NaN values aren't set (#7116)
+				if ( value == null || value !== value ) {
+					return;
+				}
+	
+				// If a number was passed in, add the unit (except for certain CSS properties)
+				if ( type === "number" ) {
+					value += ret && ret[ 3 ] || ( jQuery.cssNumber[ origName ] ? "" : "px" );
+				}
+	
+				// background-* props affect original clone's values
+				if ( !support.clearCloneStyle && value === "" && name.indexOf( "background" ) === 0 ) {
+					style[ name ] = "inherit";
+				}
+	
+				// If a hook was provided, use that value, otherwise just set the specified value
+				if ( !hooks || !( "set" in hooks ) ||
+					( value = hooks.set( elem, value, extra ) ) !== undefined ) {
+	
+					style[ name ] = value;
+				}
+	
+			} else {
+	
+				// If a hook was provided get the non-computed value from there
+				if ( hooks && "get" in hooks &&
+					( ret = hooks.get( elem, false, extra ) ) !== undefined ) {
+	
+					return ret;
+				}
+	
+				// Otherwise just get the value from the style object
+				return style[ name ];
+			}
+		},
+	
+		css: function( elem, name, extra, styles ) {
+			var val, num, hooks,
+				origName = jQuery.camelCase( name );
+	
+			// Make sure that we're working with the right name
+			name = jQuery.cssProps[ origName ] ||
+				( jQuery.cssProps[ origName ] = vendorPropName( origName ) || origName );
+	
+			// Try prefixed name followed by the unprefixed name
+			hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+	
+			// If a hook was provided get the computed value from there
+			if ( hooks && "get" in hooks ) {
+				val = hooks.get( elem, true, extra );
+			}
+	
+			// Otherwise, if a way to get the computed value exists, use that
+			if ( val === undefined ) {
+				val = curCSS( elem, name, styles );
+			}
+	
+			// Convert "normal" to computed value
+			if ( val === "normal" && name in cssNormalTransform ) {
+				val = cssNormalTransform[ name ];
+			}
+	
+			// Make numeric if forced or a qualifier was provided and val looks numeric
+			if ( extra === "" || extra ) {
+				num = parseFloat( val );
+				return extra === true || isFinite( num ) ? num || 0 : val;
+			}
+			return val;
+		}
+	} );
+	
+	jQuery.each( [ "height", "width" ], function( i, name ) {
+		jQuery.cssHooks[ name ] = {
+			get: function( elem, computed, extra ) {
+				if ( computed ) {
+	
+					// Certain elements can have dimension info if we invisibly show them
+					// but it must have a current display style that would benefit
+					return rdisplayswap.test( jQuery.css( elem, "display" ) ) &&
+	
+						// Support: Safari 8+
+						// Table columns in Safari have non-zero offsetWidth & zero
+						// getBoundingClientRect().width unless display is changed.
+						// Support: IE <=11 only
+						// Running getBoundingClientRect on a disconnected node
+						// in IE throws an error.
+						( !elem.getClientRects().length || !elem.getBoundingClientRect().width ) ?
+							swap( elem, cssShow, function() {
+								return getWidthOrHeight( elem, name, extra );
+							} ) :
+							getWidthOrHeight( elem, name, extra );
+				}
+			},
+	
+			set: function( elem, value, extra ) {
+				var matches,
+					styles = extra && getStyles( elem ),
+					subtract = extra && augmentWidthOrHeight(
+						elem,
+						name,
+						extra,
+						jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
+						styles
+					);
+	
+				// Convert to pixels if value adjustment is needed
+				if ( subtract && ( matches = rcssNum.exec( value ) ) &&
+					( matches[ 3 ] || "px" ) !== "px" ) {
+	
+					elem.style[ name ] = value;
+					value = jQuery.css( elem, name );
+				}
+	
+				return setPositiveNumber( elem, value, subtract );
+			}
+		};
+	} );
+	
+	jQuery.cssHooks.marginLeft = addGetHookIf( support.reliableMarginLeft,
+		function( elem, computed ) {
+			if ( computed ) {
+				return ( parseFloat( curCSS( elem, "marginLeft" ) ) ||
+					elem.getBoundingClientRect().left -
+						swap( elem, { marginLeft: 0 }, function() {
+							return elem.getBoundingClientRect().left;
+						} )
+					) + "px";
+			}
+		}
+	);
+	
+	// These hooks are used by animate to expand properties
+	jQuery.each( {
+		margin: "",
+		padding: "",
+		border: "Width"
+	}, function( prefix, suffix ) {
+		jQuery.cssHooks[ prefix + suffix ] = {
+			expand: function( value ) {
+				var i = 0,
+					expanded = {},
+	
+					// Assumes a single number if not a string
+					parts = typeof value === "string" ? value.split( " " ) : [ value ];
+	
+				for ( ; i < 4; i++ ) {
+					expanded[ prefix + cssExpand[ i ] + suffix ] =
+						parts[ i ] || parts[ i - 2 ] || parts[ 0 ];
+				}
+	
+				return expanded;
+			}
+		};
+	
+		if ( !rmargin.test( prefix ) ) {
+			jQuery.cssHooks[ prefix + suffix ].set = setPositiveNumber;
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		css: function( name, value ) {
+			return access( this, function( elem, name, value ) {
+				var styles, len,
+					map = {},
+					i = 0;
+	
+				if ( jQuery.isArray( name ) ) {
+					styles = getStyles( elem );
+					len = name.length;
+	
+					for ( ; i < len; i++ ) {
+						map[ name[ i ] ] = jQuery.css( elem, name[ i ], false, styles );
+					}
+	
+					return map;
+				}
+	
+				return value !== undefined ?
+					jQuery.style( elem, name, value ) :
+					jQuery.css( elem, name );
+			}, name, value, arguments.length > 1 );
+		}
+	} );
+	
+	
+	function Tween( elem, options, prop, end, easing ) {
+		return new Tween.prototype.init( elem, options, prop, end, easing );
+	}
+	jQuery.Tween = Tween;
+	
+	Tween.prototype = {
+		constructor: Tween,
+		init: function( elem, options, prop, end, easing, unit ) {
+			this.elem = elem;
+			this.prop = prop;
+			this.easing = easing || jQuery.easing._default;
+			this.options = options;
+			this.start = this.now = this.cur();
+			this.end = end;
+			this.unit = unit || ( jQuery.cssNumber[ prop ] ? "" : "px" );
+		},
+		cur: function() {
+			var hooks = Tween.propHooks[ this.prop ];
+	
+			return hooks && hooks.get ?
+				hooks.get( this ) :
+				Tween.propHooks._default.get( this );
+		},
+		run: function( percent ) {
+			var eased,
+				hooks = Tween.propHooks[ this.prop ];
+	
+			if ( this.options.duration ) {
+				this.pos = eased = jQuery.easing[ this.easing ](
+					percent, this.options.duration * percent, 0, 1, this.options.duration
+				);
+			} else {
+				this.pos = eased = percent;
+			}
+			this.now = ( this.end - this.start ) * eased + this.start;
+	
+			if ( this.options.step ) {
+				this.options.step.call( this.elem, this.now, this );
+			}
+	
+			if ( hooks && hooks.set ) {
+				hooks.set( this );
+			} else {
+				Tween.propHooks._default.set( this );
+			}
+			return this;
+		}
+	};
+	
+	Tween.prototype.init.prototype = Tween.prototype;
+	
+	Tween.propHooks = {
+		_default: {
+			get: function( tween ) {
+				var result;
+	
+				// Use a property on the element directly when it is not a DOM element,
+				// or when there is no matching style property that exists.
+				if ( tween.elem.nodeType !== 1 ||
+					tween.elem[ tween.prop ] != null && tween.elem.style[ tween.prop ] == null ) {
+					return tween.elem[ tween.prop ];
+				}
+	
+				// Passing an empty string as a 3rd parameter to .css will automatically
+				// attempt a parseFloat and fallback to a string if the parse fails.
+				// Simple values such as "10px" are parsed to Float;
+				// complex values such as "rotate(1rad)" are returned as-is.
+				result = jQuery.css( tween.elem, tween.prop, "" );
+	
+				// Empty strings, null, undefined and "auto" are converted to 0.
+				return !result || result === "auto" ? 0 : result;
+			},
+			set: function( tween ) {
+	
+				// Use step hook for back compat.
+				// Use cssHook if its there.
+				// Use .style if available and use plain properties where available.
+				if ( jQuery.fx.step[ tween.prop ] ) {
+					jQuery.fx.step[ tween.prop ]( tween );
+				} else if ( tween.elem.nodeType === 1 &&
+					( tween.elem.style[ jQuery.cssProps[ tween.prop ] ] != null ||
+						jQuery.cssHooks[ tween.prop ] ) ) {
+					jQuery.style( tween.elem, tween.prop, tween.now + tween.unit );
+				} else {
+					tween.elem[ tween.prop ] = tween.now;
+				}
+			}
+		}
+	};
+	
+	// Support: IE <=9 only
+	// Panic based approach to setting things on disconnected nodes
+	Tween.propHooks.scrollTop = Tween.propHooks.scrollLeft = {
+		set: function( tween ) {
+			if ( tween.elem.nodeType && tween.elem.parentNode ) {
+				tween.elem[ tween.prop ] = tween.now;
+			}
+		}
+	};
+	
+	jQuery.easing = {
+		linear: function( p ) {
+			return p;
+		},
+		swing: function( p ) {
+			return 0.5 - Math.cos( p * Math.PI ) / 2;
+		},
+		_default: "swing"
+	};
+	
+	jQuery.fx = Tween.prototype.init;
+	
+	// Back compat <1.8 extension point
+	jQuery.fx.step = {};
+	
+	
+	
+	
+	var
+		fxNow, timerId,
+		rfxtypes = /^(?:toggle|show|hide)$/,
+		rrun = /queueHooks$/;
+	
+	function raf() {
+		if ( timerId ) {
+			window.requestAnimationFrame( raf );
+			jQuery.fx.tick();
+		}
+	}
+	
+	// Animations created synchronously will run synchronously
+	function createFxNow() {
+		window.setTimeout( function() {
+			fxNow = undefined;
+		} );
+		return ( fxNow = jQuery.now() );
+	}
+	
+	// Generate parameters to create a standard animation
+	function genFx( type, includeWidth ) {
+		var which,
+			i = 0,
+			attrs = { height: type };
+	
+		// If we include width, step value is 1 to do all cssExpand values,
+		// otherwise step value is 2 to skip over Left and Right
+		includeWidth = includeWidth ? 1 : 0;
+		for ( ; i < 4; i += 2 - includeWidth ) {
+			which = cssExpand[ i ];
+			attrs[ "margin" + which ] = attrs[ "padding" + which ] = type;
+		}
+	
+		if ( includeWidth ) {
+			attrs.opacity = attrs.width = type;
+		}
+	
+		return attrs;
+	}
+	
+	function createTween( value, prop, animation ) {
+		var tween,
+			collection = ( Animation.tweeners[ prop ] || [] ).concat( Animation.tweeners[ "*" ] ),
+			index = 0,
+			length = collection.length;
+		for ( ; index < length; index++ ) {
+			if ( ( tween = collection[ index ].call( animation, prop, value ) ) ) {
+	
+				// We're done with this property
+				return tween;
+			}
+		}
+	}
+	
+	function defaultPrefilter( elem, props, opts ) {
+		var prop, value, toggle, hooks, oldfire, propTween, restoreDisplay, display,
+			isBox = "width" in props || "height" in props,
+			anim = this,
+			orig = {},
+			style = elem.style,
+			hidden = elem.nodeType && isHiddenWithinTree( elem ),
+			dataShow = dataPriv.get( elem, "fxshow" );
+	
+		// Queue-skipping animations hijack the fx hooks
+		if ( !opts.queue ) {
+			hooks = jQuery._queueHooks( elem, "fx" );
+			if ( hooks.unqueued == null ) {
+				hooks.unqueued = 0;
+				oldfire = hooks.empty.fire;
+				hooks.empty.fire = function() {
+					if ( !hooks.unqueued ) {
+						oldfire();
+					}
+				};
+			}
+			hooks.unqueued++;
+	
+			anim.always( function() {
+	
+				// Ensure the complete handler is called before this completes
+				anim.always( function() {
+					hooks.unqueued--;
+					if ( !jQuery.queue( elem, "fx" ).length ) {
+						hooks.empty.fire();
+					}
+				} );
+			} );
+		}
+	
+		// Detect show/hide animations
+		for ( prop in props ) {
+			value = props[ prop ];
+			if ( rfxtypes.test( value ) ) {
+				delete props[ prop ];
+				toggle = toggle || value === "toggle";
+				if ( value === ( hidden ? "hide" : "show" ) ) {
+	
+					// Pretend to be hidden if this is a "show" and
+					// there is still data from a stopped show/hide
+					if ( value === "show" && dataShow && dataShow[ prop ] !== undefined ) {
+						hidden = true;
+	
+					// Ignore all other no-op show/hide data
+					} else {
+						continue;
+					}
+				}
+				orig[ prop ] = dataShow && dataShow[ prop ] || jQuery.style( elem, prop );
+			}
+		}
+	
+		// Bail out if this is a no-op like .hide().hide()
+		propTween = !jQuery.isEmptyObject( props );
+		if ( !propTween && jQuery.isEmptyObject( orig ) ) {
+			return;
+		}
+	
+		// Restrict "overflow" and "display" styles during box animations
+		if ( isBox && elem.nodeType === 1 ) {
+	
+			// Support: IE <=9 - 11, Edge 12 - 13
+			// Record all 3 overflow attributes because IE does not infer the shorthand
+			// from identically-valued overflowX and overflowY
+			opts.overflow = [ style.overflow, style.overflowX, style.overflowY ];
+	
+			// Identify a display type, preferring old show/hide data over the CSS cascade
+			restoreDisplay = dataShow && dataShow.display;
+			if ( restoreDisplay == null ) {
+				restoreDisplay = dataPriv.get( elem, "display" );
+			}
+			display = jQuery.css( elem, "display" );
+			if ( display === "none" ) {
+				if ( restoreDisplay ) {
+					display = restoreDisplay;
+				} else {
+	
+					// Get nonempty value(s) by temporarily forcing visibility
+					showHide( [ elem ], true );
+					restoreDisplay = elem.style.display || restoreDisplay;
+					display = jQuery.css( elem, "display" );
+					showHide( [ elem ] );
+				}
+			}
+	
+			// Animate inline elements as inline-block
+			if ( display === "inline" || display === "inline-block" && restoreDisplay != null ) {
+				if ( jQuery.css( elem, "float" ) === "none" ) {
+	
+					// Restore the original display value at the end of pure show/hide animations
+					if ( !propTween ) {
+						anim.done( function() {
+							style.display = restoreDisplay;
+						} );
+						if ( restoreDisplay == null ) {
+							display = style.display;
+							restoreDisplay = display === "none" ? "" : display;
+						}
+					}
+					style.display = "inline-block";
+				}
+			}
+		}
+	
+		if ( opts.overflow ) {
+			style.overflow = "hidden";
+			anim.always( function() {
+				style.overflow = opts.overflow[ 0 ];
+				style.overflowX = opts.overflow[ 1 ];
+				style.overflowY = opts.overflow[ 2 ];
+			} );
+		}
+	
+		// Implement show/hide animations
+		propTween = false;
+		for ( prop in orig ) {
+	
+			// General show/hide setup for this element animation
+			if ( !propTween ) {
+				if ( dataShow ) {
+					if ( "hidden" in dataShow ) {
+						hidden = dataShow.hidden;
+					}
+				} else {
+					dataShow = dataPriv.access( elem, "fxshow", { display: restoreDisplay } );
+				}
+	
+				// Store hidden/visible for toggle so `.stop().toggle()` "reverses"
+				if ( toggle ) {
+					dataShow.hidden = !hidden;
+				}
+	
+				// Show elements before animating them
+				if ( hidden ) {
+					showHide( [ elem ], true );
+				}
+	
+				/* eslint-disable no-loop-func */
+	
+				anim.done( function() {
+	
+				/* eslint-enable no-loop-func */
+	
+					// The final step of a "hide" animation is actually hiding the element
+					if ( !hidden ) {
+						showHide( [ elem ] );
+					}
+					dataPriv.remove( elem, "fxshow" );
+					for ( prop in orig ) {
+						jQuery.style( elem, prop, orig[ prop ] );
+					}
+				} );
+			}
+	
+			// Per-property setup
+			propTween = createTween( hidden ? dataShow[ prop ] : 0, prop, anim );
+			if ( !( prop in dataShow ) ) {
+				dataShow[ prop ] = propTween.start;
+				if ( hidden ) {
+					propTween.end = propTween.start;
+					propTween.start = 0;
+				}
+			}
+		}
+	}
+	
+	function propFilter( props, specialEasing ) {
+		var index, name, easing, value, hooks;
+	
+		// camelCase, specialEasing and expand cssHook pass
+		for ( index in props ) {
+			name = jQuery.camelCase( index );
+			easing = specialEasing[ name ];
+			value = props[ index ];
+			if ( jQuery.isArray( value ) ) {
+				easing = value[ 1 ];
+				value = props[ index ] = value[ 0 ];
+			}
+	
+			if ( index !== name ) {
+				props[ name ] = value;
+				delete props[ index ];
+			}
+	
+			hooks = jQuery.cssHooks[ name ];
+			if ( hooks && "expand" in hooks ) {
+				value = hooks.expand( value );
+				delete props[ name ];
+	
+				// Not quite $.extend, this won't overwrite existing keys.
+				// Reusing 'index' because we have the correct "name"
+				for ( index in value ) {
+					if ( !( index in props ) ) {
+						props[ index ] = value[ index ];
+						specialEasing[ index ] = easing;
+					}
+				}
+			} else {
+				specialEasing[ name ] = easing;
+			}
+		}
+	}
+	
+	function Animation( elem, properties, options ) {
+		var result,
+			stopped,
+			index = 0,
+			length = Animation.prefilters.length,
+			deferred = jQuery.Deferred().always( function() {
+	
+				// Don't match elem in the :animated selector
+				delete tick.elem;
+			} ),
+			tick = function() {
+				if ( stopped ) {
+					return false;
+				}
+				var currentTime = fxNow || createFxNow(),
+					remaining = Math.max( 0, animation.startTime + animation.duration - currentTime ),
+	
+					// Support: Android 2.3 only
+					// Archaic crash bug won't allow us to use `1 - ( 0.5 || 0 )` (#12497)
+					temp = remaining / animation.duration || 0,
+					percent = 1 - temp,
+					index = 0,
+					length = animation.tweens.length;
+	
+				for ( ; index < length; index++ ) {
+					animation.tweens[ index ].run( percent );
+				}
+	
+				deferred.notifyWith( elem, [ animation, percent, remaining ] );
+	
+				if ( percent < 1 && length ) {
+					return remaining;
+				} else {
+					deferred.resolveWith( elem, [ animation ] );
+					return false;
+				}
+			},
+			animation = deferred.promise( {
+				elem: elem,
+				props: jQuery.extend( {}, properties ),
+				opts: jQuery.extend( true, {
+					specialEasing: {},
+					easing: jQuery.easing._default
+				}, options ),
+				originalProperties: properties,
+				originalOptions: options,
+				startTime: fxNow || createFxNow(),
+				duration: options.duration,
+				tweens: [],
+				createTween: function( prop, end ) {
+					var tween = jQuery.Tween( elem, animation.opts, prop, end,
+							animation.opts.specialEasing[ prop ] || animation.opts.easing );
+					animation.tweens.push( tween );
+					return tween;
+				},
+				stop: function( gotoEnd ) {
+					var index = 0,
+	
+						// If we are going to the end, we want to run all the tweens
+						// otherwise we skip this part
+						length = gotoEnd ? animation.tweens.length : 0;
+					if ( stopped ) {
+						return this;
+					}
+					stopped = true;
+					for ( ; index < length; index++ ) {
+						animation.tweens[ index ].run( 1 );
+					}
+	
+					// Resolve when we played the last frame; otherwise, reject
+					if ( gotoEnd ) {
+						deferred.notifyWith( elem, [ animation, 1, 0 ] );
+						deferred.resolveWith( elem, [ animation, gotoEnd ] );
+					} else {
+						deferred.rejectWith( elem, [ animation, gotoEnd ] );
+					}
+					return this;
+				}
+			} ),
+			props = animation.props;
+	
+		propFilter( props, animation.opts.specialEasing );
+	
+		for ( ; index < length; index++ ) {
+			result = Animation.prefilters[ index ].call( animation, elem, props, animation.opts );
+			if ( result ) {
+				if ( jQuery.isFunction( result.stop ) ) {
+					jQuery._queueHooks( animation.elem, animation.opts.queue ).stop =
+						jQuery.proxy( result.stop, result );
+				}
+				return result;
+			}
+		}
+	
+		jQuery.map( props, createTween, animation );
+	
+		if ( jQuery.isFunction( animation.opts.start ) ) {
+			animation.opts.start.call( elem, animation );
+		}
+	
+		jQuery.fx.timer(
+			jQuery.extend( tick, {
+				elem: elem,
+				anim: animation,
+				queue: animation.opts.queue
+			} )
+		);
+	
+		// attach callbacks from options
+		return animation.progress( animation.opts.progress )
+			.done( animation.opts.done, animation.opts.complete )
+			.fail( animation.opts.fail )
+			.always( animation.opts.always );
+	}
+	
+	jQuery.Animation = jQuery.extend( Animation, {
+	
+		tweeners: {
+			"*": [ function( prop, value ) {
+				var tween = this.createTween( prop, value );
+				adjustCSS( tween.elem, prop, rcssNum.exec( value ), tween );
+				return tween;
+			} ]
+		},
+	
+		tweener: function( props, callback ) {
+			if ( jQuery.isFunction( props ) ) {
+				callback = props;
+				props = [ "*" ];
+			} else {
+				props = props.match( rnothtmlwhite );
+			}
+	
+			var prop,
+				index = 0,
+				length = props.length;
+	
+			for ( ; index < length; index++ ) {
+				prop = props[ index ];
+				Animation.tweeners[ prop ] = Animation.tweeners[ prop ] || [];
+				Animation.tweeners[ prop ].unshift( callback );
+			}
+		},
+	
+		prefilters: [ defaultPrefilter ],
+	
+		prefilter: function( callback, prepend ) {
+			if ( prepend ) {
+				Animation.prefilters.unshift( callback );
+			} else {
+				Animation.prefilters.push( callback );
+			}
+		}
+	} );
+	
+	jQuery.speed = function( speed, easing, fn ) {
+		var opt = speed && typeof speed === "object" ? jQuery.extend( {}, speed ) : {
+			complete: fn || !fn && easing ||
+				jQuery.isFunction( speed ) && speed,
+			duration: speed,
+			easing: fn && easing || easing && !jQuery.isFunction( easing ) && easing
+		};
+	
+		// Go to the end state if fx are off or if document is hidden
+		if ( jQuery.fx.off || document.hidden ) {
+			opt.duration = 0;
+	
+		} else {
+			if ( typeof opt.duration !== "number" ) {
+				if ( opt.duration in jQuery.fx.speeds ) {
+					opt.duration = jQuery.fx.speeds[ opt.duration ];
+	
+				} else {
+					opt.duration = jQuery.fx.speeds._default;
+				}
+			}
+		}
+	
+		// Normalize opt.queue - true/undefined/null -> "fx"
+		if ( opt.queue == null || opt.queue === true ) {
+			opt.queue = "fx";
+		}
+	
+		// Queueing
+		opt.old = opt.complete;
+	
+		opt.complete = function() {
+			if ( jQuery.isFunction( opt.old ) ) {
+				opt.old.call( this );
+			}
+	
+			if ( opt.queue ) {
+				jQuery.dequeue( this, opt.queue );
+			}
+		};
+	
+		return opt;
+	};
+	
+	jQuery.fn.extend( {
+		fadeTo: function( speed, to, easing, callback ) {
+	
+			// Show any hidden elements after setting opacity to 0
+			return this.filter( isHiddenWithinTree ).css( "opacity", 0 ).show()
+	
+				// Animate to the value specified
+				.end().animate( { opacity: to }, speed, easing, callback );
+		},
+		animate: function( prop, speed, easing, callback ) {
+			var empty = jQuery.isEmptyObject( prop ),
+				optall = jQuery.speed( speed, easing, callback ),
+				doAnimation = function() {
+	
+					// Operate on a copy of prop so per-property easing won't be lost
+					var anim = Animation( this, jQuery.extend( {}, prop ), optall );
+	
+					// Empty animations, or finishing resolves immediately
+					if ( empty || dataPriv.get( this, "finish" ) ) {
+						anim.stop( true );
+					}
+				};
+				doAnimation.finish = doAnimation;
+	
+			return empty || optall.queue === false ?
+				this.each( doAnimation ) :
+				this.queue( optall.queue, doAnimation );
+		},
+		stop: function( type, clearQueue, gotoEnd ) {
+			var stopQueue = function( hooks ) {
+				var stop = hooks.stop;
+				delete hooks.stop;
+				stop( gotoEnd );
+			};
+	
+			if ( typeof type !== "string" ) {
+				gotoEnd = clearQueue;
+				clearQueue = type;
+				type = undefined;
+			}
+			if ( clearQueue && type !== false ) {
+				this.queue( type || "fx", [] );
+			}
+	
+			return this.each( function() {
+				var dequeue = true,
+					index = type != null && type + "queueHooks",
+					timers = jQuery.timers,
+					data = dataPriv.get( this );
+	
+				if ( index ) {
+					if ( data[ index ] && data[ index ].stop ) {
+						stopQueue( data[ index ] );
+					}
+				} else {
+					for ( index in data ) {
+						if ( data[ index ] && data[ index ].stop && rrun.test( index ) ) {
+							stopQueue( data[ index ] );
+						}
+					}
+				}
+	
+				for ( index = timers.length; index--; ) {
+					if ( timers[ index ].elem === this &&
+						( type == null || timers[ index ].queue === type ) ) {
+	
+						timers[ index ].anim.stop( gotoEnd );
+						dequeue = false;
+						timers.splice( index, 1 );
+					}
+				}
+	
+				// Start the next in the queue if the last step wasn't forced.
+				// Timers currently will call their complete callbacks, which
+				// will dequeue but only if they were gotoEnd.
+				if ( dequeue || !gotoEnd ) {
+					jQuery.dequeue( this, type );
+				}
+			} );
+		},
+		finish: function( type ) {
+			if ( type !== false ) {
+				type = type || "fx";
+			}
+			return this.each( function() {
+				var index,
+					data = dataPriv.get( this ),
+					queue = data[ type + "queue" ],
+					hooks = data[ type + "queueHooks" ],
+					timers = jQuery.timers,
+					length = queue ? queue.length : 0;
+	
+				// Enable finishing flag on private data
+				data.finish = true;
+	
+				// Empty the queue first
+				jQuery.queue( this, type, [] );
+	
+				if ( hooks && hooks.stop ) {
+					hooks.stop.call( this, true );
+				}
+	
+				// Look for any active animations, and finish them
+				for ( index = timers.length; index--; ) {
+					if ( timers[ index ].elem === this && timers[ index ].queue === type ) {
+						timers[ index ].anim.stop( true );
+						timers.splice( index, 1 );
+					}
+				}
+	
+				// Look for any animations in the old queue and finish them
+				for ( index = 0; index < length; index++ ) {
+					if ( queue[ index ] && queue[ index ].finish ) {
+						queue[ index ].finish.call( this );
+					}
+				}
+	
+				// Turn off finishing flag
+				delete data.finish;
+			} );
+		}
+	} );
+	
+	jQuery.each( [ "toggle", "show", "hide" ], function( i, name ) {
+		var cssFn = jQuery.fn[ name ];
+		jQuery.fn[ name ] = function( speed, easing, callback ) {
+			return speed == null || typeof speed === "boolean" ?
+				cssFn.apply( this, arguments ) :
+				this.animate( genFx( name, true ), speed, easing, callback );
+		};
+	} );
+	
+	// Generate shortcuts for custom animations
+	jQuery.each( {
+		slideDown: genFx( "show" ),
+		slideUp: genFx( "hide" ),
+		slideToggle: genFx( "toggle" ),
+		fadeIn: { opacity: "show" },
+		fadeOut: { opacity: "hide" },
+		fadeToggle: { opacity: "toggle" }
+	}, function( name, props ) {
+		jQuery.fn[ name ] = function( speed, easing, callback ) {
+			return this.animate( props, speed, easing, callback );
+		};
+	} );
+	
+	jQuery.timers = [];
+	jQuery.fx.tick = function() {
+		var timer,
+			i = 0,
+			timers = jQuery.timers;
+	
+		fxNow = jQuery.now();
+	
+		for ( ; i < timers.length; i++ ) {
+			timer = timers[ i ];
+	
+			// Checks the timer has not already been removed
+			if ( !timer() && timers[ i ] === timer ) {
+				timers.splice( i--, 1 );
+			}
+		}
+	
+		if ( !timers.length ) {
+			jQuery.fx.stop();
+		}
+		fxNow = undefined;
+	};
+	
+	jQuery.fx.timer = function( timer ) {
+		jQuery.timers.push( timer );
+		if ( timer() ) {
+			jQuery.fx.start();
+		} else {
+			jQuery.timers.pop();
+		}
+	};
+	
+	jQuery.fx.interval = 13;
+	jQuery.fx.start = function() {
+		if ( !timerId ) {
+			timerId = window.requestAnimationFrame ?
+				window.requestAnimationFrame( raf ) :
+				window.setInterval( jQuery.fx.tick, jQuery.fx.interval );
+		}
+	};
+	
+	jQuery.fx.stop = function() {
+		if ( window.cancelAnimationFrame ) {
+			window.cancelAnimationFrame( timerId );
+		} else {
+			window.clearInterval( timerId );
+		}
+	
+		timerId = null;
+	};
+	
+	jQuery.fx.speeds = {
+		slow: 600,
+		fast: 200,
+	
+		// Default speed
+		_default: 400
+	};
+	
+	
+	// Based off of the plugin by Clint Helfers, with permission.
+	// https://web.archive.org/web/20100324014747/http://blindsignals.com/index.php/2009/07/jquery-delay/
+	jQuery.fn.delay = function( time, type ) {
+		time = jQuery.fx ? jQuery.fx.speeds[ time ] || time : time;
+		type = type || "fx";
+	
+		return this.queue( type, function( next, hooks ) {
+			var timeout = window.setTimeout( next, time );
+			hooks.stop = function() {
+				window.clearTimeout( timeout );
+			};
+		} );
+	};
+	
+	
+	( function() {
+		var input = document.createElement( "input" ),
+			select = document.createElement( "select" ),
+			opt = select.appendChild( document.createElement( "option" ) );
+	
+		input.type = "checkbox";
+	
+		// Support: Android <=4.3 only
+		// Default value for a checkbox should be "on"
+		support.checkOn = input.value !== "";
+	
+		// Support: IE <=11 only
+		// Must access selectedIndex to make default options select
+		support.optSelected = opt.selected;
+	
+		// Support: IE <=11 only
+		// An input loses its value after becoming a radio
+		input = document.createElement( "input" );
+		input.value = "t";
+		input.type = "radio";
+		support.radioValue = input.value === "t";
+	} )();
+	
+	
+	var boolHook,
+		attrHandle = jQuery.expr.attrHandle;
+	
+	jQuery.fn.extend( {
+		attr: function( name, value ) {
+			return access( this, jQuery.attr, name, value, arguments.length > 1 );
+		},
+	
+		removeAttr: function( name ) {
+			return this.each( function() {
+				jQuery.removeAttr( this, name );
+			} );
+		}
+	} );
+	
+	jQuery.extend( {
+		attr: function( elem, name, value ) {
+			var ret, hooks,
+				nType = elem.nodeType;
+	
+			// Don't get/set attributes on text, comment and attribute nodes
+			if ( nType === 3 || nType === 8 || nType === 2 ) {
+				return;
+			}
+	
+			// Fallback to prop when attributes are not supported
+			if ( typeof elem.getAttribute === "undefined" ) {
+				return jQuery.prop( elem, name, value );
+			}
+	
+			// Attribute hooks are determined by the lowercase version
+			// Grab necessary hook if one is defined
+			if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
+				hooks = jQuery.attrHooks[ name.toLowerCase() ] ||
+					( jQuery.expr.match.bool.test( name ) ? boolHook : undefined );
+			}
+	
+			if ( value !== undefined ) {
+				if ( value === null ) {
+					jQuery.removeAttr( elem, name );
+					return;
+				}
+	
+				if ( hooks && "set" in hooks &&
+					( ret = hooks.set( elem, value, name ) ) !== undefined ) {
+					return ret;
+				}
+	
+				elem.setAttribute( name, value + "" );
+				return value;
+			}
+	
+			if ( hooks && "get" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {
+				return ret;
+			}
+	
+			ret = jQuery.find.attr( elem, name );
+	
+			// Non-existent attributes return null, we normalize to undefined
+			return ret == null ? undefined : ret;
+		},
+	
+		attrHooks: {
+			type: {
+				set: function( elem, value ) {
+					if ( !support.radioValue && value === "radio" &&
+						jQuery.nodeName( elem, "input" ) ) {
+						var val = elem.value;
+						elem.setAttribute( "type", value );
+						if ( val ) {
+							elem.value = val;
+						}
+						return value;
+					}
+				}
+			}
+		},
+	
+		removeAttr: function( elem, value ) {
+			var name,
+				i = 0,
+	
+				// Attribute names can contain non-HTML whitespace characters
+				// https://html.spec.whatwg.org/multipage/syntax.html#attributes-2
+				attrNames = value && value.match( rnothtmlwhite );
+	
+			if ( attrNames && elem.nodeType === 1 ) {
+				while ( ( name = attrNames[ i++ ] ) ) {
+					elem.removeAttribute( name );
+				}
+			}
+		}
+	} );
+	
+	// Hooks for boolean attributes
+	boolHook = {
+		set: function( elem, value, name ) {
+			if ( value === false ) {
+	
+				// Remove boolean attributes when set to false
+				jQuery.removeAttr( elem, name );
+			} else {
+				elem.setAttribute( name, name );
+			}
+			return name;
+		}
+	};
+	
+	jQuery.each( jQuery.expr.match.bool.source.match( /\w+/g ), function( i, name ) {
+		var getter = attrHandle[ name ] || jQuery.find.attr;
+	
+		attrHandle[ name ] = function( elem, name, isXML ) {
+			var ret, handle,
+				lowercaseName = name.toLowerCase();
+	
+			if ( !isXML ) {
+	
+				// Avoid an infinite loop by temporarily removing this function from the getter
+				handle = attrHandle[ lowercaseName ];
+				attrHandle[ lowercaseName ] = ret;
+				ret = getter( elem, name, isXML ) != null ?
+					lowercaseName :
+					null;
+				attrHandle[ lowercaseName ] = handle;
+			}
+			return ret;
+		};
+	} );
+	
+	
+	
+	
+	var rfocusable = /^(?:input|select|textarea|button)$/i,
+		rclickable = /^(?:a|area)$/i;
+	
+	jQuery.fn.extend( {
+		prop: function( name, value ) {
+			return access( this, jQuery.prop, name, value, arguments.length > 1 );
+		},
+	
+		removeProp: function( name ) {
+			return this.each( function() {
+				delete this[ jQuery.propFix[ name ] || name ];
+			} );
+		}
+	} );
+	
+	jQuery.extend( {
+		prop: function( elem, name, value ) {
+			var ret, hooks,
+				nType = elem.nodeType;
+	
+			// Don't get/set properties on text, comment and attribute nodes
+			if ( nType === 3 || nType === 8 || nType === 2 ) {
+				return;
+			}
+	
+			if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
+	
+				// Fix name and attach hooks
+				name = jQuery.propFix[ name ] || name;
+				hooks = jQuery.propHooks[ name ];
+			}
+	
+			if ( value !== undefined ) {
+				if ( hooks && "set" in hooks &&
+					( ret = hooks.set( elem, value, name ) ) !== undefined ) {
+					return ret;
+				}
+	
+				return ( elem[ name ] = value );
+			}
+	
+			if ( hooks && "get" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {
+				return ret;
+			}
+	
+			return elem[ name ];
+		},
+	
+		propHooks: {
+			tabIndex: {
+				get: function( elem ) {
+	
+					// Support: IE <=9 - 11 only
+					// elem.tabIndex doesn't always return the
+					// correct value when it hasn't been explicitly set
+					// https://web.archive.org/web/20141116233347/http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
+					// Use proper attribute retrieval(#12072)
+					var tabindex = jQuery.find.attr( elem, "tabindex" );
+	
+					if ( tabindex ) {
+						return parseInt( tabindex, 10 );
+					}
+	
+					if (
+						rfocusable.test( elem.nodeName ) ||
+						rclickable.test( elem.nodeName ) &&
+						elem.href
+					) {
+						return 0;
+					}
+	
+					return -1;
+				}
+			}
+		},
+	
+		propFix: {
+			"for": "htmlFor",
+			"class": "className"
+		}
+	} );
+	
+	// Support: IE <=11 only
+	// Accessing the selectedIndex property
+	// forces the browser to respect setting selected
+	// on the option
+	// The getter ensures a default option is selected
+	// when in an optgroup
+	// eslint rule "no-unused-expressions" is disabled for this code
+	// since it considers such accessions noop
+	if ( !support.optSelected ) {
+		jQuery.propHooks.selected = {
+			get: function( elem ) {
+	
+				/* eslint no-unused-expressions: "off" */
+	
+				var parent = elem.parentNode;
+				if ( parent && parent.parentNode ) {
+					parent.parentNode.selectedIndex;
+				}
+				return null;
+			},
+			set: function( elem ) {
+	
+				/* eslint no-unused-expressions: "off" */
+	
+				var parent = elem.parentNode;
+				if ( parent ) {
+					parent.selectedIndex;
+	
+					if ( parent.parentNode ) {
+						parent.parentNode.selectedIndex;
+					}
+				}
+			}
+		};
+	}
+	
+	jQuery.each( [
+		"tabIndex",
+		"readOnly",
+		"maxLength",
+		"cellSpacing",
+		"cellPadding",
+		"rowSpan",
+		"colSpan",
+		"useMap",
+		"frameBorder",
+		"contentEditable"
+	], function() {
+		jQuery.propFix[ this.toLowerCase() ] = this;
+	} );
+	
+	
+	
+	
+		// Strip and collapse whitespace according to HTML spec
+		// https://html.spec.whatwg.org/multipage/infrastructure.html#strip-and-collapse-whitespace
+		function stripAndCollapse( value ) {
+			var tokens = value.match( rnothtmlwhite ) || [];
+			return tokens.join( " " );
+		}
+	
+	
+	function getClass( elem ) {
+		return elem.getAttribute && elem.getAttribute( "class" ) || "";
+	}
+	
+	jQuery.fn.extend( {
+		addClass: function( value ) {
+			var classes, elem, cur, curValue, clazz, j, finalValue,
+				i = 0;
+	
+			if ( jQuery.isFunction( value ) ) {
+				return this.each( function( j ) {
+					jQuery( this ).addClass( value.call( this, j, getClass( this ) ) );
+				} );
+			}
+	
+			if ( typeof value === "string" && value ) {
+				classes = value.match( rnothtmlwhite ) || [];
+	
+				while ( ( elem = this[ i++ ] ) ) {
+					curValue = getClass( elem );
+					cur = elem.nodeType === 1 && ( " " + stripAndCollapse( curValue ) + " " );
+	
+					if ( cur ) {
+						j = 0;
+						while ( ( clazz = classes[ j++ ] ) ) {
+							if ( cur.indexOf( " " + clazz + " " ) < 0 ) {
+								cur += clazz + " ";
+							}
+						}
+	
+						// Only assign if different to avoid unneeded rendering.
+						finalValue = stripAndCollapse( cur );
+						if ( curValue !== finalValue ) {
+							elem.setAttribute( "class", finalValue );
+						}
+					}
+				}
+			}
+	
+			return this;
+		},
+	
+		removeClass: function( value ) {
+			var classes, elem, cur, curValue, clazz, j, finalValue,
+				i = 0;
+	
+			if ( jQuery.isFunction( value ) ) {
+				return this.each( function( j ) {
+					jQuery( this ).removeClass( value.call( this, j, getClass( this ) ) );
+				} );
+			}
+	
+			if ( !arguments.length ) {
+				return this.attr( "class", "" );
+			}
+	
+			if ( typeof value === "string" && value ) {
+				classes = value.match( rnothtmlwhite ) || [];
+	
+				while ( ( elem = this[ i++ ] ) ) {
+					curValue = getClass( elem );
+	
+					// This expression is here for better compressibility (see addClass)
+					cur = elem.nodeType === 1 && ( " " + stripAndCollapse( curValue ) + " " );
+	
+					if ( cur ) {
+						j = 0;
+						while ( ( clazz = classes[ j++ ] ) ) {
+	
+							// Remove *all* instances
+							while ( cur.indexOf( " " + clazz + " " ) > -1 ) {
+								cur = cur.replace( " " + clazz + " ", " " );
+							}
+						}
+	
+						// Only assign if different to avoid unneeded rendering.
+						finalValue = stripAndCollapse( cur );
+						if ( curValue !== finalValue ) {
+							elem.setAttribute( "class", finalValue );
+						}
+					}
+				}
+			}
+	
+			return this;
+		},
+	
+		toggleClass: function( value, stateVal ) {
+			var type = typeof value;
+	
+			if ( typeof stateVal === "boolean" && type === "string" ) {
+				return stateVal ? this.addClass( value ) : this.removeClass( value );
+			}
+	
+			if ( jQuery.isFunction( value ) ) {
+				return this.each( function( i ) {
+					jQuery( this ).toggleClass(
+						value.call( this, i, getClass( this ), stateVal ),
+						stateVal
+					);
+				} );
+			}
+	
+			return this.each( function() {
+				var className, i, self, classNames;
+	
+				if ( type === "string" ) {
+	
+					// Toggle individual class names
+					i = 0;
+					self = jQuery( this );
+					classNames = value.match( rnothtmlwhite ) || [];
+	
+					while ( ( className = classNames[ i++ ] ) ) {
+	
+						// Check each className given, space separated list
+						if ( self.hasClass( className ) ) {
+							self.removeClass( className );
+						} else {
+							self.addClass( className );
+						}
+					}
+	
+				// Toggle whole class name
+				} else if ( value === undefined || type === "boolean" ) {
+					className = getClass( this );
+					if ( className ) {
+	
+						// Store className if set
+						dataPriv.set( this, "__className__", className );
+					}
+	
+					// If the element has a class name or if we're passed `false`,
+					// then remove the whole classname (if there was one, the above saved it).
+					// Otherwise bring back whatever was previously saved (if anything),
+					// falling back to the empty string if nothing was stored.
+					if ( this.setAttribute ) {
+						this.setAttribute( "class",
+							className || value === false ?
+							"" :
+							dataPriv.get( this, "__className__" ) || ""
+						);
+					}
+				}
+			} );
+		},
+	
+		hasClass: function( selector ) {
+			var className, elem,
+				i = 0;
+	
+			className = " " + selector + " ";
+			while ( ( elem = this[ i++ ] ) ) {
+				if ( elem.nodeType === 1 &&
+					( " " + stripAndCollapse( getClass( elem ) ) + " " ).indexOf( className ) > -1 ) {
+						return true;
+				}
+			}
+	
+			return false;
+		}
+	} );
+	
+	
+	
+	
+	var rreturn = /\r/g;
+	
+	jQuery.fn.extend( {
+		val: function( value ) {
+			var hooks, ret, isFunction,
+				elem = this[ 0 ];
+	
+			if ( !arguments.length ) {
+				if ( elem ) {
+					hooks = jQuery.valHooks[ elem.type ] ||
+						jQuery.valHooks[ elem.nodeName.toLowerCase() ];
+	
+					if ( hooks &&
+						"get" in hooks &&
+						( ret = hooks.get( elem, "value" ) ) !== undefined
+					) {
+						return ret;
+					}
+	
+					ret = elem.value;
+	
+					// Handle most common string cases
+					if ( typeof ret === "string" ) {
+						return ret.replace( rreturn, "" );
+					}
+	
+					// Handle cases where value is null/undef or number
+					return ret == null ? "" : ret;
+				}
+	
+				return;
+			}
+	
+			isFunction = jQuery.isFunction( value );
+	
+			return this.each( function( i ) {
+				var val;
+	
+				if ( this.nodeType !== 1 ) {
+					return;
+				}
+	
+				if ( isFunction ) {
+					val = value.call( this, i, jQuery( this ).val() );
+				} else {
+					val = value;
+				}
+	
+				// Treat null/undefined as ""; convert numbers to string
+				if ( val == null ) {
+					val = "";
+	
+				} else if ( typeof val === "number" ) {
+					val += "";
+	
+				} else if ( jQuery.isArray( val ) ) {
+					val = jQuery.map( val, function( value ) {
+						return value == null ? "" : value + "";
+					} );
+				}
+	
+				hooks = jQuery.valHooks[ this.type ] || jQuery.valHooks[ this.nodeName.toLowerCase() ];
+	
+				// If set returns undefined, fall back to normal setting
+				if ( !hooks || !( "set" in hooks ) || hooks.set( this, val, "value" ) === undefined ) {
+					this.value = val;
+				}
+			} );
+		}
+	} );
+	
+	jQuery.extend( {
+		valHooks: {
+			option: {
+				get: function( elem ) {
+	
+					var val = jQuery.find.attr( elem, "value" );
+					return val != null ?
+						val :
+	
+						// Support: IE <=10 - 11 only
+						// option.text throws exceptions (#14686, #14858)
+						// Strip and collapse whitespace
+						// https://html.spec.whatwg.org/#strip-and-collapse-whitespace
+						stripAndCollapse( jQuery.text( elem ) );
+				}
+			},
+			select: {
+				get: function( elem ) {
+					var value, option, i,
+						options = elem.options,
+						index = elem.selectedIndex,
+						one = elem.type === "select-one",
+						values = one ? null : [],
+						max = one ? index + 1 : options.length;
+	
+					if ( index < 0 ) {
+						i = max;
+	
+					} else {
+						i = one ? index : 0;
+					}
+	
+					// Loop through all the selected options
+					for ( ; i < max; i++ ) {
+						option = options[ i ];
+	
+						// Support: IE <=9 only
+						// IE8-9 doesn't update selected after form reset (#2551)
+						if ( ( option.selected || i === index ) &&
+	
+								// Don't return options that are disabled or in a disabled optgroup
+								!option.disabled &&
+								( !option.parentNode.disabled ||
+									!jQuery.nodeName( option.parentNode, "optgroup" ) ) ) {
+	
+							// Get the specific value for the option
+							value = jQuery( option ).val();
+	
+							// We don't need an array for one selects
+							if ( one ) {
+								return value;
+							}
+	
+							// Multi-Selects return an array
+							values.push( value );
+						}
+					}
+	
+					return values;
+				},
+	
+				set: function( elem, value ) {
+					var optionSet, option,
+						options = elem.options,
+						values = jQuery.makeArray( value ),
+						i = options.length;
+	
+					while ( i-- ) {
+						option = options[ i ];
+	
+						/* eslint-disable no-cond-assign */
+	
+						if ( option.selected =
+							jQuery.inArray( jQuery.valHooks.option.get( option ), values ) > -1
+						) {
+							optionSet = true;
+						}
+	
+						/* eslint-enable no-cond-assign */
+					}
+	
+					// Force browsers to behave consistently when non-matching value is set
+					if ( !optionSet ) {
+						elem.selectedIndex = -1;
+					}
+					return values;
+				}
+			}
+		}
+	} );
+	
+	// Radios and checkboxes getter/setter
+	jQuery.each( [ "radio", "checkbox" ], function() {
+		jQuery.valHooks[ this ] = {
+			set: function( elem, value ) {
+				if ( jQuery.isArray( value ) ) {
+					return ( elem.checked = jQuery.inArray( jQuery( elem ).val(), value ) > -1 );
+				}
+			}
+		};
+		if ( !support.checkOn ) {
+			jQuery.valHooks[ this ].get = function( elem ) {
+				return elem.getAttribute( "value" ) === null ? "on" : elem.value;
+			};
+		}
+	} );
+	
+	
+	
+	
+	// Return jQuery for attributes-only inclusion
+	
+	
+	var rfocusMorph = /^(?:focusinfocus|focusoutblur)$/;
+	
+	jQuery.extend( jQuery.event, {
+	
+		trigger: function( event, data, elem, onlyHandlers ) {
+	
+			var i, cur, tmp, bubbleType, ontype, handle, special,
+				eventPath = [ elem || document ],
+				type = hasOwn.call( event, "type" ) ? event.type : event,
+				namespaces = hasOwn.call( event, "namespace" ) ? event.namespace.split( "." ) : [];
+	
+			cur = tmp = elem = elem || document;
+	
+			// Don't do events on text and comment nodes
+			if ( elem.nodeType === 3 || elem.nodeType === 8 ) {
+				return;
+			}
+	
+			// focus/blur morphs to focusin/out; ensure we're not firing them right now
+			if ( rfocusMorph.test( type + jQuery.event.triggered ) ) {
+				return;
+			}
+	
+			if ( type.indexOf( "." ) > -1 ) {
+	
+				// Namespaced trigger; create a regexp to match event type in handle()
+				namespaces = type.split( "." );
+				type = namespaces.shift();
+				namespaces.sort();
+			}
+			ontype = type.indexOf( ":" ) < 0 && "on" + type;
+	
+			// Caller can pass in a jQuery.Event object, Object, or just an event type string
+			event = event[ jQuery.expando ] ?
+				event :
+				new jQuery.Event( type, typeof event === "object" && event );
+	
+			// Trigger bitmask: & 1 for native handlers; & 2 for jQuery (always true)
+			event.isTrigger = onlyHandlers ? 2 : 3;
+			event.namespace = namespaces.join( "." );
+			event.rnamespace = event.namespace ?
+				new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" ) :
+				null;
+	
+			// Clean up the event in case it is being reused
+			event.result = undefined;
+			if ( !event.target ) {
+				event.target = elem;
+			}
+	
+			// Clone any incoming data and prepend the event, creating the handler arg list
+			data = data == null ?
+				[ event ] :
+				jQuery.makeArray( data, [ event ] );
+	
+			// Allow special events to draw outside the lines
+			special = jQuery.event.special[ type ] || {};
+			if ( !onlyHandlers && special.trigger && special.trigger.apply( elem, data ) === false ) {
+				return;
+			}
+	
+			// Determine event propagation path in advance, per W3C events spec (#9951)
+			// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
+			if ( !onlyHandlers && !special.noBubble && !jQuery.isWindow( elem ) ) {
+	
+				bubbleType = special.delegateType || type;
+				if ( !rfocusMorph.test( bubbleType + type ) ) {
+					cur = cur.parentNode;
+				}
+				for ( ; cur; cur = cur.parentNode ) {
+					eventPath.push( cur );
+					tmp = cur;
+				}
+	
+				// Only add window if we got to document (e.g., not plain obj or detached DOM)
+				if ( tmp === ( elem.ownerDocument || document ) ) {
+					eventPath.push( tmp.defaultView || tmp.parentWindow || window );
+				}
+			}
+	
+			// Fire handlers on the event path
+			i = 0;
+			while ( ( cur = eventPath[ i++ ] ) && !event.isPropagationStopped() ) {
+	
+				event.type = i > 1 ?
+					bubbleType :
+					special.bindType || type;
+	
+				// jQuery handler
+				handle = ( dataPriv.get( cur, "events" ) || {} )[ event.type ] &&
+					dataPriv.get( cur, "handle" );
+				if ( handle ) {
+					handle.apply( cur, data );
+				}
+	
+				// Native handler
+				handle = ontype && cur[ ontype ];
+				if ( handle && handle.apply && acceptData( cur ) ) {
+					event.result = handle.apply( cur, data );
+					if ( event.result === false ) {
+						event.preventDefault();
+					}
+				}
+			}
+			event.type = type;
+	
+			// If nobody prevented the default action, do it now
+			if ( !onlyHandlers && !event.isDefaultPrevented() ) {
+	
+				if ( ( !special._default ||
+					special._default.apply( eventPath.pop(), data ) === false ) &&
+					acceptData( elem ) ) {
+	
+					// Call a native DOM method on the target with the same name as the event.
+					// Don't do default actions on window, that's where global variables be (#6170)
+					if ( ontype && jQuery.isFunction( elem[ type ] ) && !jQuery.isWindow( elem ) ) {
+	
+						// Don't re-trigger an onFOO event when we call its FOO() method
+						tmp = elem[ ontype ];
+	
+						if ( tmp ) {
+							elem[ ontype ] = null;
+						}
+	
+						// Prevent re-triggering of the same event, since we already bubbled it above
+						jQuery.event.triggered = type;
+						elem[ type ]();
+						jQuery.event.triggered = undefined;
+	
+						if ( tmp ) {
+							elem[ ontype ] = tmp;
+						}
+					}
+				}
+			}
+	
+			return event.result;
+		},
+	
+		// Piggyback on a donor event to simulate a different one
+		// Used only for `focus(in | out)` events
+		simulate: function( type, elem, event ) {
+			var e = jQuery.extend(
+				new jQuery.Event(),
+				event,
+				{
+					type: type,
+					isSimulated: true
+				}
+			);
+	
+			jQuery.event.trigger( e, null, elem );
+		}
+	
+	} );
+	
+	jQuery.fn.extend( {
+	
+		trigger: function( type, data ) {
+			return this.each( function() {
+				jQuery.event.trigger( type, data, this );
+			} );
+		},
+		triggerHandler: function( type, data ) {
+			var elem = this[ 0 ];
+			if ( elem ) {
+				return jQuery.event.trigger( type, data, elem, true );
+			}
+		}
+	} );
+	
+	
+	jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
+		"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
+		"change select submit keydown keypress keyup contextmenu" ).split( " " ),
+		function( i, name ) {
+	
+		// Handle event binding
+		jQuery.fn[ name ] = function( data, fn ) {
+			return arguments.length > 0 ?
+				this.on( name, null, data, fn ) :
+				this.trigger( name );
+		};
+	} );
+	
+	jQuery.fn.extend( {
+		hover: function( fnOver, fnOut ) {
+			return this.mouseenter( fnOver ).mouseleave( fnOut || fnOver );
+		}
+	} );
+	
+	
+	
+	
+	support.focusin = "onfocusin" in window;
+	
+	
+	// Support: Firefox <=44
+	// Firefox doesn't have focus(in | out) events
+	// Related ticket - https://bugzilla.mozilla.org/show_bug.cgi?id=687787
+	//
+	// Support: Chrome <=48 - 49, Safari <=9.0 - 9.1
+	// focus(in | out) events fire after focus & blur events,
+	// which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
+	// Related ticket - https://bugs.chromium.org/p/chromium/issues/detail?id=449857
+	if ( !support.focusin ) {
+		jQuery.each( { focus: "focusin", blur: "focusout" }, function( orig, fix ) {
+	
+			// Attach a single capturing handler on the document while someone wants focusin/focusout
+			var handler = function( event ) {
+				jQuery.event.simulate( fix, event.target, jQuery.event.fix( event ) );
+			};
+	
+			jQuery.event.special[ fix ] = {
+				setup: function() {
+					var doc = this.ownerDocument || this,
+						attaches = dataPriv.access( doc, fix );
+	
+					if ( !attaches ) {
+						doc.addEventListener( orig, handler, true );
+					}
+					dataPriv.access( doc, fix, ( attaches || 0 ) + 1 );
+				},
+				teardown: function() {
+					var doc = this.ownerDocument || this,
+						attaches = dataPriv.access( doc, fix ) - 1;
+	
+					if ( !attaches ) {
+						doc.removeEventListener( orig, handler, true );
+						dataPriv.remove( doc, fix );
+	
+					} else {
+						dataPriv.access( doc, fix, attaches );
+					}
+				}
+			};
+		} );
+	}
+	var location = window.location;
+	
+	var nonce = jQuery.now();
+	
+	var rquery = ( /\?/ );
+	
+	
+	
+	// Cross-browser xml parsing
+	jQuery.parseXML = function( data ) {
+		var xml;
+		if ( !data || typeof data !== "string" ) {
+			return null;
+		}
+	
+		// Support: IE 9 - 11 only
+		// IE throws on parseFromString with invalid input.
+		try {
+			xml = ( new window.DOMParser() ).parseFromString( data, "text/xml" );
+		} catch ( e ) {
+			xml = undefined;
+		}
+	
+		if ( !xml || xml.getElementsByTagName( "parsererror" ).length ) {
+			jQuery.error( "Invalid XML: " + data );
+		}
+		return xml;
+	};
+	
+	
+	var
+		rbracket = /\[\]$/,
+		rCRLF = /\r?\n/g,
+		rsubmitterTypes = /^(?:submit|button|image|reset|file)$/i,
+		rsubmittable = /^(?:input|select|textarea|keygen)/i;
+	
+	function buildParams( prefix, obj, traditional, add ) {
+		var name;
+	
+		if ( jQuery.isArray( obj ) ) {
+	
+			// Serialize array item.
+			jQuery.each( obj, function( i, v ) {
+				if ( traditional || rbracket.test( prefix ) ) {
+	
+					// Treat each array item as a scalar.
+					add( prefix, v );
+	
+				} else {
+	
+					// Item is non-scalar (array or object), encode its numeric index.
+					buildParams(
+						prefix + "[" + ( typeof v === "object" && v != null ? i : "" ) + "]",
+						v,
+						traditional,
+						add
+					);
+				}
+			} );
+	
+		} else if ( !traditional && jQuery.type( obj ) === "object" ) {
+	
+			// Serialize object item.
+			for ( name in obj ) {
+				buildParams( prefix + "[" + name + "]", obj[ name ], traditional, add );
+			}
+	
+		} else {
+	
+			// Serialize scalar item.
+			add( prefix, obj );
+		}
+	}
+	
+	// Serialize an array of form elements or a set of
+	// key/values into a query string
+	jQuery.param = function( a, traditional ) {
+		var prefix,
+			s = [],
+			add = function( key, valueOrFunction ) {
+	
+				// If value is a function, invoke it and use its return value
+				var value = jQuery.isFunction( valueOrFunction ) ?
+					valueOrFunction() :
+					valueOrFunction;
+	
+				s[ s.length ] = encodeURIComponent( key ) + "=" +
+					encodeURIComponent( value == null ? "" : value );
+			};
+	
+		// If an array was passed in, assume that it is an array of form elements.
+		if ( jQuery.isArray( a ) || ( a.jquery && !jQuery.isPlainObject( a ) ) ) {
+	
+			// Serialize the form elements
+			jQuery.each( a, function() {
+				add( this.name, this.value );
+			} );
+	
+		} else {
+	
+			// If traditional, encode the "old" way (the way 1.3.2 or older
+			// did it), otherwise encode params recursively.
+			for ( prefix in a ) {
+				buildParams( prefix, a[ prefix ], traditional, add );
+			}
+		}
+	
+		// Return the resulting serialization
+		return s.join( "&" );
+	};
+	
+	jQuery.fn.extend( {
+		serialize: function() {
+			return jQuery.param( this.serializeArray() );
+		},
+		serializeArray: function() {
+			return this.map( function() {
+	
+				// Can add propHook for "elements" to filter or add form elements
+				var elements = jQuery.prop( this, "elements" );
+				return elements ? jQuery.makeArray( elements ) : this;
+			} )
+			.filter( function() {
+				var type = this.type;
+	
+				// Use .is( ":disabled" ) so that fieldset[disabled] works
+				return this.name && !jQuery( this ).is( ":disabled" ) &&
+					rsubmittable.test( this.nodeName ) && !rsubmitterTypes.test( type ) &&
+					( this.checked || !rcheckableType.test( type ) );
+			} )
+			.map( function( i, elem ) {
+				var val = jQuery( this ).val();
+	
+				if ( val == null ) {
+					return null;
+				}
+	
+				if ( jQuery.isArray( val ) ) {
+					return jQuery.map( val, function( val ) {
+						return { name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
+					} );
+				}
+	
+				return { name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
+			} ).get();
+		}
+	} );
+	
+	
+	var
+		r20 = /%20/g,
+		rhash = /#.*$/,
+		rantiCache = /([?&])_=[^&]*/,
+		rheaders = /^(.*?):[ \t]*([^\r\n]*)$/mg,
+	
+		// #7653, #8125, #8152: local protocol detection
+		rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
+		rnoContent = /^(?:GET|HEAD)$/,
+		rprotocol = /^\/\//,
+	
+		/* Prefilters
+		 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
+		 * 2) These are called:
+		 *    - BEFORE asking for a transport
+		 *    - AFTER param serialization (s.data is a string if s.processData is true)
+		 * 3) key is the dataType
+		 * 4) the catchall symbol "*" can be used
+		 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
+		 */
+		prefilters = {},
+	
+		/* Transports bindings
+		 * 1) key is the dataType
+		 * 2) the catchall symbol "*" can be used
+		 * 3) selection will start with transport dataType and THEN go to "*" if needed
+		 */
+		transports = {},
+	
+		// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
+		allTypes = "*/".concat( "*" ),
+	
+		// Anchor tag for parsing the document origin
+		originAnchor = document.createElement( "a" );
+		originAnchor.href = location.href;
+	
+	// Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
+	function addToPrefiltersOrTransports( structure ) {
+	
+		// dataTypeExpression is optional and defaults to "*"
+		return function( dataTypeExpression, func ) {
+	
+			if ( typeof dataTypeExpression !== "string" ) {
+				func = dataTypeExpression;
+				dataTypeExpression = "*";
+			}
+	
+			var dataType,
+				i = 0,
+				dataTypes = dataTypeExpression.toLowerCase().match( rnothtmlwhite ) || [];
+	
+			if ( jQuery.isFunction( func ) ) {
+	
+				// For each dataType in the dataTypeExpression
+				while ( ( dataType = dataTypes[ i++ ] ) ) {
+	
+					// Prepend if requested
+					if ( dataType[ 0 ] === "+" ) {
+						dataType = dataType.slice( 1 ) || "*";
+						( structure[ dataType ] = structure[ dataType ] || [] ).unshift( func );
+	
+					// Otherwise append
+					} else {
+						( structure[ dataType ] = structure[ dataType ] || [] ).push( func );
+					}
+				}
+			}
+		};
+	}
+	
+	// Base inspection function for prefilters and transports
+	function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {
+	
+		var inspected = {},
+			seekingTransport = ( structure === transports );
+	
+		function inspect( dataType ) {
+			var selected;
+			inspected[ dataType ] = true;
+			jQuery.each( structure[ dataType ] || [], function( _, prefilterOrFactory ) {
+				var dataTypeOrTransport = prefilterOrFactory( options, originalOptions, jqXHR );
+				if ( typeof dataTypeOrTransport === "string" &&
+					!seekingTransport && !inspected[ dataTypeOrTransport ] ) {
+	
+					options.dataTypes.unshift( dataTypeOrTransport );
+					inspect( dataTypeOrTransport );
+					return false;
+				} else if ( seekingTransport ) {
+					return !( selected = dataTypeOrTransport );
+				}
+			} );
+			return selected;
+		}
+	
+		return inspect( options.dataTypes[ 0 ] ) || !inspected[ "*" ] && inspect( "*" );
+	}
+	
+	// A special extend for ajax options
+	// that takes "flat" options (not to be deep extended)
+	// Fixes #9887
+	function ajaxExtend( target, src ) {
+		var key, deep,
+			flatOptions = jQuery.ajaxSettings.flatOptions || {};
+	
+		for ( key in src ) {
+			if ( src[ key ] !== undefined ) {
+				( flatOptions[ key ] ? target : ( deep || ( deep = {} ) ) )[ key ] = src[ key ];
+			}
+		}
+		if ( deep ) {
+			jQuery.extend( true, target, deep );
+		}
+	
+		return target;
+	}
+	
+	/* Handles responses to an ajax request:
+	 * - finds the right dataType (mediates between content-type and expected dataType)
+	 * - returns the corresponding response
+	 */
+	function ajaxHandleResponses( s, jqXHR, responses ) {
+	
+		var ct, type, finalDataType, firstDataType,
+			contents = s.contents,
+			dataTypes = s.dataTypes;
+	
+		// Remove auto dataType and get content-type in the process
+		while ( dataTypes[ 0 ] === "*" ) {
+			dataTypes.shift();
+			if ( ct === undefined ) {
+				ct = s.mimeType || jqXHR.getResponseHeader( "Content-Type" );
+			}
+		}
+	
+		// Check if we're dealing with a known content-type
+		if ( ct ) {
+			for ( type in contents ) {
+				if ( contents[ type ] && contents[ type ].test( ct ) ) {
+					dataTypes.unshift( type );
+					break;
+				}
+			}
+		}
+	
+		// Check to see if we have a response for the expected dataType
+		if ( dataTypes[ 0 ] in responses ) {
+			finalDataType = dataTypes[ 0 ];
+		} else {
+	
+			// Try convertible dataTypes
+			for ( type in responses ) {
+				if ( !dataTypes[ 0 ] || s.converters[ type + " " + dataTypes[ 0 ] ] ) {
+					finalDataType = type;
+					break;
+				}
+				if ( !firstDataType ) {
+					firstDataType = type;
+				}
+			}
+	
+			// Or just use first one
+			finalDataType = finalDataType || firstDataType;
+		}
+	
+		// If we found a dataType
+		// We add the dataType to the list if needed
+		// and return the corresponding response
+		if ( finalDataType ) {
+			if ( finalDataType !== dataTypes[ 0 ] ) {
+				dataTypes.unshift( finalDataType );
+			}
+			return responses[ finalDataType ];
+		}
+	}
+	
+	/* Chain conversions given the request and the original response
+	 * Also sets the responseXXX fields on the jqXHR instance
+	 */
+	function ajaxConvert( s, response, jqXHR, isSuccess ) {
+		var conv2, current, conv, tmp, prev,
+			converters = {},
+	
+			// Work with a copy of dataTypes in case we need to modify it for conversion
+			dataTypes = s.dataTypes.slice();
+	
+		// Create converters map with lowercased keys
+		if ( dataTypes[ 1 ] ) {
+			for ( conv in s.converters ) {
+				converters[ conv.toLowerCase() ] = s.converters[ conv ];
+			}
+		}
+	
+		current = dataTypes.shift();
+	
+		// Convert to each sequential dataType
+		while ( current ) {
+	
+			if ( s.responseFields[ current ] ) {
+				jqXHR[ s.responseFields[ current ] ] = response;
+			}
+	
+			// Apply the dataFilter if provided
+			if ( !prev && isSuccess && s.dataFilter ) {
+				response = s.dataFilter( response, s.dataType );
+			}
+	
+			prev = current;
+			current = dataTypes.shift();
+	
+			if ( current ) {
+	
+				// There's only work to do if current dataType is non-auto
+				if ( current === "*" ) {
+	
+					current = prev;
+	
+				// Convert response if prev dataType is non-auto and differs from current
+				} else if ( prev !== "*" && prev !== current ) {
+	
+					// Seek a direct converter
+					conv = converters[ prev + " " + current ] || converters[ "* " + current ];
+	
+					// If none found, seek a pair
+					if ( !conv ) {
+						for ( conv2 in converters ) {
+	
+							// If conv2 outputs current
+							tmp = conv2.split( " " );
+							if ( tmp[ 1 ] === current ) {
+	
+								// If prev can be converted to accepted input
+								conv = converters[ prev + " " + tmp[ 0 ] ] ||
+									converters[ "* " + tmp[ 0 ] ];
+								if ( conv ) {
+	
+									// Condense equivalence converters
+									if ( conv === true ) {
+										conv = converters[ conv2 ];
+	
+									// Otherwise, insert the intermediate dataType
+									} else if ( converters[ conv2 ] !== true ) {
+										current = tmp[ 0 ];
+										dataTypes.unshift( tmp[ 1 ] );
+									}
+									break;
+								}
+							}
+						}
+					}
+	
+					// Apply converter (if not an equivalence)
+					if ( conv !== true ) {
+	
+						// Unless errors are allowed to bubble, catch and return them
+						if ( conv && s.throws ) {
+							response = conv( response );
+						} else {
+							try {
+								response = conv( response );
+							} catch ( e ) {
+								return {
+									state: "parsererror",
+									error: conv ? e : "No conversion from " + prev + " to " + current
+								};
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		return { state: "success", data: response };
+	}
+	
+	jQuery.extend( {
+	
+		// Counter for holding the number of active queries
+		active: 0,
+	
+		// Last-Modified header cache for next request
+		lastModified: {},
+		etag: {},
+	
+		ajaxSettings: {
+			url: location.href,
+			type: "GET",
+			isLocal: rlocalProtocol.test( location.protocol ),
+			global: true,
+			processData: true,
+			async: true,
+			contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+	
+			/*
+			timeout: 0,
+			data: null,
+			dataType: null,
+			username: null,
+			password: null,
+			cache: null,
+			throws: false,
+			traditional: false,
+			headers: {},
+			*/
+	
+			accepts: {
+				"*": allTypes,
+				text: "text/plain",
+				html: "text/html",
+				xml: "application/xml, text/xml",
+				json: "application/json, text/javascript"
+			},
+	
+			contents: {
+				xml: /\bxml\b/,
+				html: /\bhtml/,
+				json: /\bjson\b/
+			},
+	
+			responseFields: {
+				xml: "responseXML",
+				text: "responseText",
+				json: "responseJSON"
+			},
+	
+			// Data converters
+			// Keys separate source (or catchall "*") and destination types with a single space
+			converters: {
+	
+				// Convert anything to text
+				"* text": String,
+	
+				// Text to html (true = no transformation)
+				"text html": true,
+	
+				// Evaluate text as a json expression
+				"text json": JSON.parse,
+	
+				// Parse text as xml
+				"text xml": jQuery.parseXML
+			},
+	
+			// For options that shouldn't be deep extended:
+			// you can add your own custom options here if
+			// and when you create one that shouldn't be
+			// deep extended (see ajaxExtend)
+			flatOptions: {
+				url: true,
+				context: true
+			}
+		},
+	
+		// Creates a full fledged settings object into target
+		// with both ajaxSettings and settings fields.
+		// If target is omitted, writes into ajaxSettings.
+		ajaxSetup: function( target, settings ) {
+			return settings ?
+	
+				// Building a settings object
+				ajaxExtend( ajaxExtend( target, jQuery.ajaxSettings ), settings ) :
+	
+				// Extending ajaxSettings
+				ajaxExtend( jQuery.ajaxSettings, target );
+		},
+	
+		ajaxPrefilter: addToPrefiltersOrTransports( prefilters ),
+		ajaxTransport: addToPrefiltersOrTransports( transports ),
+	
+		// Main method
+		ajax: function( url, options ) {
+	
+			// If url is an object, simulate pre-1.5 signature
+			if ( typeof url === "object" ) {
+				options = url;
+				url = undefined;
+			}
+	
+			// Force options to be an object
+			options = options || {};
+	
+			var transport,
+	
+				// URL without anti-cache param
+				cacheURL,
+	
+				// Response headers
+				responseHeadersString,
+				responseHeaders,
+	
+				// timeout handle
+				timeoutTimer,
+	
+				// Url cleanup var
+				urlAnchor,
+	
+				// Request state (becomes false upon send and true upon completion)
+				completed,
+	
+				// To know if global events are to be dispatched
+				fireGlobals,
+	
+				// Loop variable
+				i,
+	
+				// uncached part of the url
+				uncached,
+	
+				// Create the final options object
+				s = jQuery.ajaxSetup( {}, options ),
+	
+				// Callbacks context
+				callbackContext = s.context || s,
+	
+				// Context for global events is callbackContext if it is a DOM node or jQuery collection
+				globalEventContext = s.context &&
+					( callbackContext.nodeType || callbackContext.jquery ) ?
+						jQuery( callbackContext ) :
+						jQuery.event,
+	
+				// Deferreds
+				deferred = jQuery.Deferred(),
+				completeDeferred = jQuery.Callbacks( "once memory" ),
+	
+				// Status-dependent callbacks
+				statusCode = s.statusCode || {},
+	
+				// Headers (they are sent all at once)
+				requestHeaders = {},
+				requestHeadersNames = {},
+	
+				// Default abort message
+				strAbort = "canceled",
+	
+				// Fake xhr
+				jqXHR = {
+					readyState: 0,
+	
+					// Builds headers hashtable if needed
+					getResponseHeader: function( key ) {
+						var match;
+						if ( completed ) {
+							if ( !responseHeaders ) {
+								responseHeaders = {};
+								while ( ( match = rheaders.exec( responseHeadersString ) ) ) {
+									responseHeaders[ match[ 1 ].toLowerCase() ] = match[ 2 ];
+								}
+							}
+							match = responseHeaders[ key.toLowerCase() ];
+						}
+						return match == null ? null : match;
+					},
+	
+					// Raw string
+					getAllResponseHeaders: function() {
+						return completed ? responseHeadersString : null;
+					},
+	
+					// Caches the header
+					setRequestHeader: function( name, value ) {
+						if ( completed == null ) {
+							name = requestHeadersNames[ name.toLowerCase() ] =
+								requestHeadersNames[ name.toLowerCase() ] || name;
+							requestHeaders[ name ] = value;
+						}
+						return this;
+					},
+	
+					// Overrides response content-type header
+					overrideMimeType: function( type ) {
+						if ( completed == null ) {
+							s.mimeType = type;
+						}
+						return this;
+					},
+	
+					// Status-dependent callbacks
+					statusCode: function( map ) {
+						var code;
+						if ( map ) {
+							if ( completed ) {
+	
+								// Execute the appropriate callbacks
+								jqXHR.always( map[ jqXHR.status ] );
+							} else {
+	
+								// Lazy-add the new callbacks in a way that preserves old ones
+								for ( code in map ) {
+									statusCode[ code ] = [ statusCode[ code ], map[ code ] ];
+								}
+							}
+						}
+						return this;
+					},
+	
+					// Cancel the request
+					abort: function( statusText ) {
+						var finalText = statusText || strAbort;
+						if ( transport ) {
+							transport.abort( finalText );
+						}
+						done( 0, finalText );
+						return this;
+					}
+				};
+	
+			// Attach deferreds
+			deferred.promise( jqXHR );
+	
+			// Add protocol if not provided (prefilters might expect it)
+			// Handle falsy url in the settings object (#10093: consistency with old signature)
+			// We also use the url parameter if available
+			s.url = ( ( url || s.url || location.href ) + "" )
+				.replace( rprotocol, location.protocol + "//" );
+	
+			// Alias method option to type as per ticket #12004
+			s.type = options.method || options.type || s.method || s.type;
+	
+			// Extract dataTypes list
+			s.dataTypes = ( s.dataType || "*" ).toLowerCase().match( rnothtmlwhite ) || [ "" ];
+	
+			// A cross-domain request is in order when the origin doesn't match the current origin.
+			if ( s.crossDomain == null ) {
+				urlAnchor = document.createElement( "a" );
+	
+				// Support: IE <=8 - 11, Edge 12 - 13
+				// IE throws exception on accessing the href property if url is malformed,
+				// e.g. http://example.com:80x/
+				try {
+					urlAnchor.href = s.url;
+	
+					// Support: IE <=8 - 11 only
+					// Anchor's host property isn't correctly set when s.url is relative
+					urlAnchor.href = urlAnchor.href;
+					s.crossDomain = originAnchor.protocol + "//" + originAnchor.host !==
+						urlAnchor.protocol + "//" + urlAnchor.host;
+				} catch ( e ) {
+	
+					// If there is an error parsing the URL, assume it is crossDomain,
+					// it can be rejected by the transport if it is invalid
+					s.crossDomain = true;
+				}
+			}
+	
+			// Convert data if not already a string
+			if ( s.data && s.processData && typeof s.data !== "string" ) {
+				s.data = jQuery.param( s.data, s.traditional );
+			}
+	
+			// Apply prefilters
+			inspectPrefiltersOrTransports( prefilters, s, options, jqXHR );
+	
+			// If request was aborted inside a prefilter, stop there
+			if ( completed ) {
+				return jqXHR;
+			}
+	
+			// We can fire global events as of now if asked to
+			// Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
+			fireGlobals = jQuery.event && s.global;
+	
+			// Watch for a new set of requests
+			if ( fireGlobals && jQuery.active++ === 0 ) {
+				jQuery.event.trigger( "ajaxStart" );
+			}
+	
+			// Uppercase the type
+			s.type = s.type.toUpperCase();
+	
+			// Determine if request has content
+			s.hasContent = !rnoContent.test( s.type );
+	
+			// Save the URL in case we're toying with the If-Modified-Since
+			// and/or If-None-Match header later on
+			// Remove hash to simplify url manipulation
+			cacheURL = s.url.replace( rhash, "" );
+	
+			// More options handling for requests with no content
+			if ( !s.hasContent ) {
+	
+				// Remember the hash so we can put it back
+				uncached = s.url.slice( cacheURL.length );
+	
+				// If data is available, append data to url
+				if ( s.data ) {
+					cacheURL += ( rquery.test( cacheURL ) ? "&" : "?" ) + s.data;
+	
+					// #9682: remove data so that it's not used in an eventual retry
+					delete s.data;
+				}
+	
+				// Add or update anti-cache param if needed
+				if ( s.cache === false ) {
+					cacheURL = cacheURL.replace( rantiCache, "$1" );
+					uncached = ( rquery.test( cacheURL ) ? "&" : "?" ) + "_=" + ( nonce++ ) + uncached;
+				}
+	
+				// Put hash and anti-cache on the URL that will be requested (gh-1732)
+				s.url = cacheURL + uncached;
+	
+			// Change '%20' to '+' if this is encoded form body content (gh-2658)
+			} else if ( s.data && s.processData &&
+				( s.contentType || "" ).indexOf( "application/x-www-form-urlencoded" ) === 0 ) {
+				s.data = s.data.replace( r20, "+" );
+			}
+	
+			// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
+			if ( s.ifModified ) {
+				if ( jQuery.lastModified[ cacheURL ] ) {
+					jqXHR.setRequestHeader( "If-Modified-Since", jQuery.lastModified[ cacheURL ] );
+				}
+				if ( jQuery.etag[ cacheURL ] ) {
+					jqXHR.setRequestHeader( "If-None-Match", jQuery.etag[ cacheURL ] );
+				}
+			}
+	
+			// Set the correct header, if data is being sent
+			if ( s.data && s.hasContent && s.contentType !== false || options.contentType ) {
+				jqXHR.setRequestHeader( "Content-Type", s.contentType );
+			}
+	
+			// Set the Accepts header for the server, depending on the dataType
+			jqXHR.setRequestHeader(
+				"Accept",
+				s.dataTypes[ 0 ] && s.accepts[ s.dataTypes[ 0 ] ] ?
+					s.accepts[ s.dataTypes[ 0 ] ] +
+						( s.dataTypes[ 0 ] !== "*" ? ", " + allTypes + "; q=0.01" : "" ) :
+					s.accepts[ "*" ]
+			);
+	
+			// Check for headers option
+			for ( i in s.headers ) {
+				jqXHR.setRequestHeader( i, s.headers[ i ] );
+			}
+	
+			// Allow custom headers/mimetypes and early abort
+			if ( s.beforeSend &&
+				( s.beforeSend.call( callbackContext, jqXHR, s ) === false || completed ) ) {
+	
+				// Abort if not done already and return
+				return jqXHR.abort();
+			}
+	
+			// Aborting is no longer a cancellation
+			strAbort = "abort";
+	
+			// Install callbacks on deferreds
+			completeDeferred.add( s.complete );
+			jqXHR.done( s.success );
+			jqXHR.fail( s.error );
+	
+			// Get transport
+			transport = inspectPrefiltersOrTransports( transports, s, options, jqXHR );
+	
+			// If no transport, we auto-abort
+			if ( !transport ) {
+				done( -1, "No Transport" );
+			} else {
+				jqXHR.readyState = 1;
+	
+				// Send global event
+				if ( fireGlobals ) {
+					globalEventContext.trigger( "ajaxSend", [ jqXHR, s ] );
+				}
+	
+				// If request was aborted inside ajaxSend, stop there
+				if ( completed ) {
+					return jqXHR;
+				}
+	
+				// Timeout
+				if ( s.async && s.timeout > 0 ) {
+					timeoutTimer = window.setTimeout( function() {
+						jqXHR.abort( "timeout" );
+					}, s.timeout );
+				}
+	
+				try {
+					completed = false;
+					transport.send( requestHeaders, done );
+				} catch ( e ) {
+	
+					// Rethrow post-completion exceptions
+					if ( completed ) {
+						throw e;
+					}
+	
+					// Propagate others as results
+					done( -1, e );
+				}
+			}
+	
+			// Callback for when everything is done
+			function done( status, nativeStatusText, responses, headers ) {
+				var isSuccess, success, error, response, modified,
+					statusText = nativeStatusText;
+	
+				// Ignore repeat invocations
+				if ( completed ) {
+					return;
+				}
+	
+				completed = true;
+	
+				// Clear timeout if it exists
+				if ( timeoutTimer ) {
+					window.clearTimeout( timeoutTimer );
+				}
+	
+				// Dereference transport for early garbage collection
+				// (no matter how long the jqXHR object will be used)
+				transport = undefined;
+	
+				// Cache response headers
+				responseHeadersString = headers || "";
+	
+				// Set readyState
+				jqXHR.readyState = status > 0 ? 4 : 0;
+	
+				// Determine if successful
+				isSuccess = status >= 200 && status < 300 || status === 304;
+	
+				// Get response data
+				if ( responses ) {
+					response = ajaxHandleResponses( s, jqXHR, responses );
+				}
+	
+				// Convert no matter what (that way responseXXX fields are always set)
+				response = ajaxConvert( s, response, jqXHR, isSuccess );
+	
+				// If successful, handle type chaining
+				if ( isSuccess ) {
+	
+					// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
+					if ( s.ifModified ) {
+						modified = jqXHR.getResponseHeader( "Last-Modified" );
+						if ( modified ) {
+							jQuery.lastModified[ cacheURL ] = modified;
+						}
+						modified = jqXHR.getResponseHeader( "etag" );
+						if ( modified ) {
+							jQuery.etag[ cacheURL ] = modified;
+						}
+					}
+	
+					// if no content
+					if ( status === 204 || s.type === "HEAD" ) {
+						statusText = "nocontent";
+	
+					// if not modified
+					} else if ( status === 304 ) {
+						statusText = "notmodified";
+	
+					// If we have data, let's convert it
+					} else {
+						statusText = response.state;
+						success = response.data;
+						error = response.error;
+						isSuccess = !error;
+					}
+				} else {
+	
+					// Extract error from statusText and normalize for non-aborts
+					error = statusText;
+					if ( status || !statusText ) {
+						statusText = "error";
+						if ( status < 0 ) {
+							status = 0;
+						}
+					}
+				}
+	
+				// Set data for the fake xhr object
+				jqXHR.status = status;
+				jqXHR.statusText = ( nativeStatusText || statusText ) + "";
+	
+				// Success/Error
+				if ( isSuccess ) {
+					deferred.resolveWith( callbackContext, [ success, statusText, jqXHR ] );
+				} else {
+					deferred.rejectWith( callbackContext, [ jqXHR, statusText, error ] );
+				}
+	
+				// Status-dependent callbacks
+				jqXHR.statusCode( statusCode );
+				statusCode = undefined;
+	
+				if ( fireGlobals ) {
+					globalEventContext.trigger( isSuccess ? "ajaxSuccess" : "ajaxError",
+						[ jqXHR, s, isSuccess ? success : error ] );
+				}
+	
+				// Complete
+				completeDeferred.fireWith( callbackContext, [ jqXHR, statusText ] );
+	
+				if ( fireGlobals ) {
+					globalEventContext.trigger( "ajaxComplete", [ jqXHR, s ] );
+	
+					// Handle the global AJAX counter
+					if ( !( --jQuery.active ) ) {
+						jQuery.event.trigger( "ajaxStop" );
+					}
+				}
+			}
+	
+			return jqXHR;
+		},
+	
+		getJSON: function( url, data, callback ) {
+			return jQuery.get( url, data, callback, "json" );
+		},
+	
+		getScript: function( url, callback ) {
+			return jQuery.get( url, undefined, callback, "script" );
+		}
+	} );
+	
+	jQuery.each( [ "get", "post" ], function( i, method ) {
+		jQuery[ method ] = function( url, data, callback, type ) {
+	
+			// Shift arguments if data argument was omitted
+			if ( jQuery.isFunction( data ) ) {
+				type = type || callback;
+				callback = data;
+				data = undefined;
+			}
+	
+			// The url can be an options object (which then must have .url)
+			return jQuery.ajax( jQuery.extend( {
+				url: url,
+				type: method,
+				dataType: type,
+				data: data,
+				success: callback
+			}, jQuery.isPlainObject( url ) && url ) );
+		};
+	} );
+	
+	
+	jQuery._evalUrl = function( url ) {
+		return jQuery.ajax( {
+			url: url,
+	
+			// Make this explicit, since user can override this through ajaxSetup (#11264)
+			type: "GET",
+			dataType: "script",
+			cache: true,
+			async: false,
+			global: false,
+			"throws": true
+		} );
+	};
+	
+	
+	jQuery.fn.extend( {
+		wrapAll: function( html ) {
+			var wrap;
+	
+			if ( this[ 0 ] ) {
+				if ( jQuery.isFunction( html ) ) {
+					html = html.call( this[ 0 ] );
+				}
+	
+				// The elements to wrap the target around
+				wrap = jQuery( html, this[ 0 ].ownerDocument ).eq( 0 ).clone( true );
+	
+				if ( this[ 0 ].parentNode ) {
+					wrap.insertBefore( this[ 0 ] );
+				}
+	
+				wrap.map( function() {
+					var elem = this;
+	
+					while ( elem.firstElementChild ) {
+						elem = elem.firstElementChild;
+					}
+	
+					return elem;
+				} ).append( this );
+			}
+	
+			return this;
+		},
+	
+		wrapInner: function( html ) {
+			if ( jQuery.isFunction( html ) ) {
+				return this.each( function( i ) {
+					jQuery( this ).wrapInner( html.call( this, i ) );
+				} );
+			}
+	
+			return this.each( function() {
+				var self = jQuery( this ),
+					contents = self.contents();
+	
+				if ( contents.length ) {
+					contents.wrapAll( html );
+	
+				} else {
+					self.append( html );
+				}
+			} );
+		},
+	
+		wrap: function( html ) {
+			var isFunction = jQuery.isFunction( html );
+	
+			return this.each( function( i ) {
+				jQuery( this ).wrapAll( isFunction ? html.call( this, i ) : html );
+			} );
+		},
+	
+		unwrap: function( selector ) {
+			this.parent( selector ).not( "body" ).each( function() {
+				jQuery( this ).replaceWith( this.childNodes );
+			} );
+			return this;
+		}
+	} );
+	
+	
+	jQuery.expr.pseudos.hidden = function( elem ) {
+		return !jQuery.expr.pseudos.visible( elem );
+	};
+	jQuery.expr.pseudos.visible = function( elem ) {
+		return !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
+	};
+	
+	
+	
+	
+	jQuery.ajaxSettings.xhr = function() {
+		try {
+			return new window.XMLHttpRequest();
+		} catch ( e ) {}
+	};
+	
+	var xhrSuccessStatus = {
+	
+			// File protocol always yields status code 0, assume 200
+			0: 200,
+	
+			// Support: IE <=9 only
+			// #1450: sometimes IE returns 1223 when it should be 204
+			1223: 204
+		},
+		xhrSupported = jQuery.ajaxSettings.xhr();
+	
+	support.cors = !!xhrSupported && ( "withCredentials" in xhrSupported );
+	support.ajax = xhrSupported = !!xhrSupported;
+	
+	jQuery.ajaxTransport( function( options ) {
+		var callback, errorCallback;
+	
+		// Cross domain only allowed if supported through XMLHttpRequest
+		if ( support.cors || xhrSupported && !options.crossDomain ) {
+			return {
+				send: function( headers, complete ) {
+					var i,
+						xhr = options.xhr();
+	
+					xhr.open(
+						options.type,
+						options.url,
+						options.async,
+						options.username,
+						options.password
+					);
+	
+					// Apply custom fields if provided
+					if ( options.xhrFields ) {
+						for ( i in options.xhrFields ) {
+							xhr[ i ] = options.xhrFields[ i ];
+						}
+					}
+	
+					// Override mime type if needed
+					if ( options.mimeType && xhr.overrideMimeType ) {
+						xhr.overrideMimeType( options.mimeType );
+					}
+	
+					// X-Requested-With header
+					// For cross-domain requests, seeing as conditions for a preflight are
+					// akin to a jigsaw puzzle, we simply never set it to be sure.
+					// (it can always be set on a per-request basis or even using ajaxSetup)
+					// For same-domain requests, won't change header if already provided.
+					if ( !options.crossDomain && !headers[ "X-Requested-With" ] ) {
+						headers[ "X-Requested-With" ] = "XMLHttpRequest";
+					}
+	
+					// Set headers
+					for ( i in headers ) {
+						xhr.setRequestHeader( i, headers[ i ] );
+					}
+	
+					// Callback
+					callback = function( type ) {
+						return function() {
+							if ( callback ) {
+								callback = errorCallback = xhr.onload =
+									xhr.onerror = xhr.onabort = xhr.onreadystatechange = null;
+	
+								if ( type === "abort" ) {
+									xhr.abort();
+								} else if ( type === "error" ) {
+	
+									// Support: IE <=9 only
+									// On a manual native abort, IE9 throws
+									// errors on any property access that is not readyState
+									if ( typeof xhr.status !== "number" ) {
+										complete( 0, "error" );
+									} else {
+										complete(
+	
+											// File: protocol always yields status 0; see #8605, #14207
+											xhr.status,
+											xhr.statusText
+										);
+									}
+								} else {
+									complete(
+										xhrSuccessStatus[ xhr.status ] || xhr.status,
+										xhr.statusText,
+	
+										// Support: IE <=9 only
+										// IE9 has no XHR2 but throws on binary (trac-11426)
+										// For XHR2 non-text, let the caller handle it (gh-2498)
+										( xhr.responseType || "text" ) !== "text"  ||
+										typeof xhr.responseText !== "string" ?
+											{ binary: xhr.response } :
+											{ text: xhr.responseText },
+										xhr.getAllResponseHeaders()
+									);
+								}
+							}
+						};
+					};
+	
+					// Listen to events
+					xhr.onload = callback();
+					errorCallback = xhr.onerror = callback( "error" );
+	
+					// Support: IE 9 only
+					// Use onreadystatechange to replace onabort
+					// to handle uncaught aborts
+					if ( xhr.onabort !== undefined ) {
+						xhr.onabort = errorCallback;
+					} else {
+						xhr.onreadystatechange = function() {
+	
+							// Check readyState before timeout as it changes
+							if ( xhr.readyState === 4 ) {
+	
+								// Allow onerror to be called first,
+								// but that will not handle a native abort
+								// Also, save errorCallback to a variable
+								// as xhr.onerror cannot be accessed
+								window.setTimeout( function() {
+									if ( callback ) {
+										errorCallback();
+									}
+								} );
+							}
+						};
+					}
+	
+					// Create the abort callback
+					callback = callback( "abort" );
+	
+					try {
+	
+						// Do send the request (this may raise an exception)
+						xhr.send( options.hasContent && options.data || null );
+					} catch ( e ) {
+	
+						// #14683: Only rethrow if this hasn't been notified as an error yet
+						if ( callback ) {
+							throw e;
+						}
+					}
+				},
+	
+				abort: function() {
+					if ( callback ) {
+						callback();
+					}
+				}
+			};
+		}
+	} );
+	
+	
+	
+	
+	// Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)
+	jQuery.ajaxPrefilter( function( s ) {
+		if ( s.crossDomain ) {
+			s.contents.script = false;
+		}
+	} );
+	
+	// Install script dataType
+	jQuery.ajaxSetup( {
+		accepts: {
+			script: "text/javascript, application/javascript, " +
+				"application/ecmascript, application/x-ecmascript"
+		},
+		contents: {
+			script: /\b(?:java|ecma)script\b/
+		},
+		converters: {
+			"text script": function( text ) {
+				jQuery.globalEval( text );
+				return text;
+			}
+		}
+	} );
+	
+	// Handle cache's special case and crossDomain
+	jQuery.ajaxPrefilter( "script", function( s ) {
+		if ( s.cache === undefined ) {
+			s.cache = false;
+		}
+		if ( s.crossDomain ) {
+			s.type = "GET";
+		}
+	} );
+	
+	// Bind script tag hack transport
+	jQuery.ajaxTransport( "script", function( s ) {
+	
+		// This transport only deals with cross domain requests
+		if ( s.crossDomain ) {
+			var script, callback;
+			return {
+				send: function( _, complete ) {
+					script = jQuery( "<script>" ).prop( {
+						charset: s.scriptCharset,
+						src: s.url
+					} ).on(
+						"load error",
+						callback = function( evt ) {
+							script.remove();
+							callback = null;
+							if ( evt ) {
+								complete( evt.type === "error" ? 404 : 200, evt.type );
+							}
+						}
+					);
+	
+					// Use native DOM manipulation to avoid our domManip AJAX trickery
+					document.head.appendChild( script[ 0 ] );
+				},
+				abort: function() {
+					if ( callback ) {
+						callback();
+					}
+				}
+			};
+		}
+	} );
+	
+	
+	
+	
+	var oldCallbacks = [],
+		rjsonp = /(=)\?(?=&|$)|\?\?/;
+	
+	// Default jsonp settings
+	jQuery.ajaxSetup( {
+		jsonp: "callback",
+		jsonpCallback: function() {
+			var callback = oldCallbacks.pop() || ( jQuery.expando + "_" + ( nonce++ ) );
+			this[ callback ] = true;
+			return callback;
+		}
+	} );
+	
+	// Detect, normalize options and install callbacks for jsonp requests
+	jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
+	
+		var callbackName, overwritten, responseContainer,
+			jsonProp = s.jsonp !== false && ( rjsonp.test( s.url ) ?
+				"url" :
+				typeof s.data === "string" &&
+					( s.contentType || "" )
+						.indexOf( "application/x-www-form-urlencoded" ) === 0 &&
+					rjsonp.test( s.data ) && "data"
+			);
+	
+		// Handle iff the expected data type is "jsonp" or we have a parameter to set
+		if ( jsonProp || s.dataTypes[ 0 ] === "jsonp" ) {
+	
+			// Get callback name, remembering preexisting value associated with it
+			callbackName = s.jsonpCallback = jQuery.isFunction( s.jsonpCallback ) ?
+				s.jsonpCallback() :
+				s.jsonpCallback;
+	
+			// Insert callback into url or form data
+			if ( jsonProp ) {
+				s[ jsonProp ] = s[ jsonProp ].replace( rjsonp, "$1" + callbackName );
+			} else if ( s.jsonp !== false ) {
+				s.url += ( rquery.test( s.url ) ? "&" : "?" ) + s.jsonp + "=" + callbackName;
+			}
+	
+			// Use data converter to retrieve json after script execution
+			s.converters[ "script json" ] = function() {
+				if ( !responseContainer ) {
+					jQuery.error( callbackName + " was not called" );
+				}
+				return responseContainer[ 0 ];
+			};
+	
+			// Force json dataType
+			s.dataTypes[ 0 ] = "json";
+	
+			// Install callback
+			overwritten = window[ callbackName ];
+			window[ callbackName ] = function() {
+				responseContainer = arguments;
+			};
+	
+			// Clean-up function (fires after converters)
+			jqXHR.always( function() {
+	
+				// If previous value didn't exist - remove it
+				if ( overwritten === undefined ) {
+					jQuery( window ).removeProp( callbackName );
+	
+				// Otherwise restore preexisting value
+				} else {
+					window[ callbackName ] = overwritten;
+				}
+	
+				// Save back as free
+				if ( s[ callbackName ] ) {
+	
+					// Make sure that re-using the options doesn't screw things around
+					s.jsonpCallback = originalSettings.jsonpCallback;
+	
+					// Save the callback name for future use
+					oldCallbacks.push( callbackName );
+				}
+	
+				// Call if it was a function and we have a response
+				if ( responseContainer && jQuery.isFunction( overwritten ) ) {
+					overwritten( responseContainer[ 0 ] );
+				}
+	
+				responseContainer = overwritten = undefined;
+			} );
+	
+			// Delegate to script
+			return "script";
+		}
+	} );
+	
+	
+	
+	
+	// Support: Safari 8 only
+	// In Safari 8 documents created via document.implementation.createHTMLDocument
+	// collapse sibling forms: the second one becomes a child of the first one.
+	// Because of that, this security measure has to be disabled in Safari 8.
+	// https://bugs.webkit.org/show_bug.cgi?id=137337
+	support.createHTMLDocument = ( function() {
+		var body = document.implementation.createHTMLDocument( "" ).body;
+		body.innerHTML = "<form></form><form></form>";
+		return body.childNodes.length === 2;
+	} )();
+	
+	
+	// Argument "data" should be string of html
+	// context (optional): If specified, the fragment will be created in this context,
+	// defaults to document
+	// keepScripts (optional): If true, will include scripts passed in the html string
+	jQuery.parseHTML = function( data, context, keepScripts ) {
+		if ( typeof data !== "string" ) {
+			return [];
+		}
+		if ( typeof context === "boolean" ) {
+			keepScripts = context;
+			context = false;
+		}
+	
+		var base, parsed, scripts;
+	
+		if ( !context ) {
+	
+			// Stop scripts or inline event handlers from being executed immediately
+			// by using document.implementation
+			if ( support.createHTMLDocument ) {
+				context = document.implementation.createHTMLDocument( "" );
+	
+				// Set the base href for the created document
+				// so any parsed elements with URLs
+				// are based on the document's URL (gh-2965)
+				base = context.createElement( "base" );
+				base.href = document.location.href;
+				context.head.appendChild( base );
+			} else {
+				context = document;
+			}
+		}
+	
+		parsed = rsingleTag.exec( data );
+		scripts = !keepScripts && [];
+	
+		// Single tag
+		if ( parsed ) {
+			return [ context.createElement( parsed[ 1 ] ) ];
+		}
+	
+		parsed = buildFragment( [ data ], context, scripts );
+	
+		if ( scripts && scripts.length ) {
+			jQuery( scripts ).remove();
+		}
+	
+		return jQuery.merge( [], parsed.childNodes );
+	};
+	
+	
+	/**
+	 * Load a url into a page
+	 */
+	jQuery.fn.load = function( url, params, callback ) {
+		var selector, type, response,
+			self = this,
+			off = url.indexOf( " " );
+	
+		if ( off > -1 ) {
+			selector = stripAndCollapse( url.slice( off ) );
+			url = url.slice( 0, off );
+		}
+	
+		// If it's a function
+		if ( jQuery.isFunction( params ) ) {
+	
+			// We assume that it's the callback
+			callback = params;
+			params = undefined;
+	
+		// Otherwise, build a param string
+		} else if ( params && typeof params === "object" ) {
+			type = "POST";
+		}
+	
+		// If we have elements to modify, make the request
+		if ( self.length > 0 ) {
+			jQuery.ajax( {
+				url: url,
+	
+				// If "type" variable is undefined, then "GET" method will be used.
+				// Make value of this field explicit since
+				// user can override it through ajaxSetup method
+				type: type || "GET",
+				dataType: "html",
+				data: params
+			} ).done( function( responseText ) {
+	
+				// Save response for use in complete callback
+				response = arguments;
+	
+				self.html( selector ?
+	
+					// If a selector was specified, locate the right elements in a dummy div
+					// Exclude scripts to avoid IE 'Permission Denied' errors
+					jQuery( "<div>" ).append( jQuery.parseHTML( responseText ) ).find( selector ) :
+	
+					// Otherwise use the full result
+					responseText );
+	
+			// If the request succeeds, this function gets "data", "status", "jqXHR"
+			// but they are ignored because response was set above.
+			// If it fails, this function gets "jqXHR", "status", "error"
+			} ).always( callback && function( jqXHR, status ) {
+				self.each( function() {
+					callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
+				} );
+			} );
+		}
+	
+		return this;
+	};
+	
+	
+	
+	
+	// Attach a bunch of functions for handling common AJAX events
+	jQuery.each( [
+		"ajaxStart",
+		"ajaxStop",
+		"ajaxComplete",
+		"ajaxError",
+		"ajaxSuccess",
+		"ajaxSend"
+	], function( i, type ) {
+		jQuery.fn[ type ] = function( fn ) {
+			return this.on( type, fn );
+		};
+	} );
+	
+	
+	
+	
+	jQuery.expr.pseudos.animated = function( elem ) {
+		return jQuery.grep( jQuery.timers, function( fn ) {
+			return elem === fn.elem;
+		} ).length;
+	};
+	
+	
+	
+	
+	/**
+	 * Gets a window from an element
+	 */
+	function getWindow( elem ) {
+		return jQuery.isWindow( elem ) ? elem : elem.nodeType === 9 && elem.defaultView;
+	}
+	
+	jQuery.offset = {
+		setOffset: function( elem, options, i ) {
+			var curPosition, curLeft, curCSSTop, curTop, curOffset, curCSSLeft, calculatePosition,
+				position = jQuery.css( elem, "position" ),
+				curElem = jQuery( elem ),
+				props = {};
+	
+			// Set position first, in-case top/left are set even on static elem
+			if ( position === "static" ) {
+				elem.style.position = "relative";
+			}
+	
+			curOffset = curElem.offset();
+			curCSSTop = jQuery.css( elem, "top" );
+			curCSSLeft = jQuery.css( elem, "left" );
+			calculatePosition = ( position === "absolute" || position === "fixed" ) &&
+				( curCSSTop + curCSSLeft ).indexOf( "auto" ) > -1;
+	
+			// Need to be able to calculate position if either
+			// top or left is auto and position is either absolute or fixed
+			if ( calculatePosition ) {
+				curPosition = curElem.position();
+				curTop = curPosition.top;
+				curLeft = curPosition.left;
+	
+			} else {
+				curTop = parseFloat( curCSSTop ) || 0;
+				curLeft = parseFloat( curCSSLeft ) || 0;
+			}
+	
+			if ( jQuery.isFunction( options ) ) {
+	
+				// Use jQuery.extend here to allow modification of coordinates argument (gh-1848)
+				options = options.call( elem, i, jQuery.extend( {}, curOffset ) );
+			}
+	
+			if ( options.top != null ) {
+				props.top = ( options.top - curOffset.top ) + curTop;
+			}
+			if ( options.left != null ) {
+				props.left = ( options.left - curOffset.left ) + curLeft;
+			}
+	
+			if ( "using" in options ) {
+				options.using.call( elem, props );
+	
+			} else {
+				curElem.css( props );
+			}
+		}
+	};
+	
+	jQuery.fn.extend( {
+		offset: function( options ) {
+	
+			// Preserve chaining for setter
+			if ( arguments.length ) {
+				return options === undefined ?
+					this :
+					this.each( function( i ) {
+						jQuery.offset.setOffset( this, options, i );
+					} );
+			}
+	
+			var docElem, win, rect, doc,
+				elem = this[ 0 ];
+	
+			if ( !elem ) {
+				return;
+			}
+	
+			// Support: IE <=11 only
+			// Running getBoundingClientRect on a
+			// disconnected node in IE throws an error
+			if ( !elem.getClientRects().length ) {
+				return { top: 0, left: 0 };
+			}
+	
+			rect = elem.getBoundingClientRect();
+	
+			// Make sure element is not hidden (display: none)
+			if ( rect.width || rect.height ) {
+				doc = elem.ownerDocument;
+				win = getWindow( doc );
+				docElem = doc.documentElement;
+	
+				return {
+					top: rect.top + win.pageYOffset - docElem.clientTop,
+					left: rect.left + win.pageXOffset - docElem.clientLeft
+				};
+			}
+	
+			// Return zeros for disconnected and hidden elements (gh-2310)
+			return rect;
+		},
+	
+		position: function() {
+			if ( !this[ 0 ] ) {
+				return;
+			}
+	
+			var offsetParent, offset,
+				elem = this[ 0 ],
+				parentOffset = { top: 0, left: 0 };
+	
+			// Fixed elements are offset from window (parentOffset = {top:0, left: 0},
+			// because it is its only offset parent
+			if ( jQuery.css( elem, "position" ) === "fixed" ) {
+	
+				// Assume getBoundingClientRect is there when computed position is fixed
+				offset = elem.getBoundingClientRect();
+	
+			} else {
+	
+				// Get *real* offsetParent
+				offsetParent = this.offsetParent();
+	
+				// Get correct offsets
+				offset = this.offset();
+				if ( !jQuery.nodeName( offsetParent[ 0 ], "html" ) ) {
+					parentOffset = offsetParent.offset();
+				}
+	
+				// Add offsetParent borders
+				parentOffset = {
+					top: parentOffset.top + jQuery.css( offsetParent[ 0 ], "borderTopWidth", true ),
+					left: parentOffset.left + jQuery.css( offsetParent[ 0 ], "borderLeftWidth", true )
+				};
+			}
+	
+			// Subtract parent offsets and element margins
+			return {
+				top: offset.top - parentOffset.top - jQuery.css( elem, "marginTop", true ),
+				left: offset.left - parentOffset.left - jQuery.css( elem, "marginLeft", true )
+			};
+		},
+	
+		// This method will return documentElement in the following cases:
+		// 1) For the element inside the iframe without offsetParent, this method will return
+		//    documentElement of the parent window
+		// 2) For the hidden or detached element
+		// 3) For body or html element, i.e. in case of the html node - it will return itself
+		//
+		// but those exceptions were never presented as a real life use-cases
+		// and might be considered as more preferable results.
+		//
+		// This logic, however, is not guaranteed and can change at any point in the future
+		offsetParent: function() {
+			return this.map( function() {
+				var offsetParent = this.offsetParent;
+	
+				while ( offsetParent && jQuery.css( offsetParent, "position" ) === "static" ) {
+					offsetParent = offsetParent.offsetParent;
+				}
+	
+				return offsetParent || documentElement;
+			} );
+		}
+	} );
+	
+	// Create scrollLeft and scrollTop methods
+	jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( method, prop ) {
+		var top = "pageYOffset" === prop;
+	
+		jQuery.fn[ method ] = function( val ) {
+			return access( this, function( elem, method, val ) {
+				var win = getWindow( elem );
+	
+				if ( val === undefined ) {
+					return win ? win[ prop ] : elem[ method ];
+				}
+	
+				if ( win ) {
+					win.scrollTo(
+						!top ? val : win.pageXOffset,
+						top ? val : win.pageYOffset
+					);
+	
+				} else {
+					elem[ method ] = val;
+				}
+			}, method, val, arguments.length );
+		};
+	} );
+	
+	// Support: Safari <=7 - 9.1, Chrome <=37 - 49
+	// Add the top/left cssHooks using jQuery.fn.position
+	// Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
+	// Blink bug: https://bugs.chromium.org/p/chromium/issues/detail?id=589347
+	// getComputedStyle returns percent when specified for top/left/bottom/right;
+	// rather than make the css module depend on the offset module, just check for it here
+	jQuery.each( [ "top", "left" ], function( i, prop ) {
+		jQuery.cssHooks[ prop ] = addGetHookIf( support.pixelPosition,
+			function( elem, computed ) {
+				if ( computed ) {
+					computed = curCSS( elem, prop );
+	
+					// If curCSS returns percentage, fallback to offset
+					return rnumnonpx.test( computed ) ?
+						jQuery( elem ).position()[ prop ] + "px" :
+						computed;
+				}
+			}
+		);
+	} );
+	
+	
+	// Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
+	jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
+		jQuery.each( { padding: "inner" + name, content: type, "": "outer" + name },
+			function( defaultExtra, funcName ) {
+	
+			// Margin is only for outerHeight, outerWidth
+			jQuery.fn[ funcName ] = function( margin, value ) {
+				var chainable = arguments.length && ( defaultExtra || typeof margin !== "boolean" ),
+					extra = defaultExtra || ( margin === true || value === true ? "margin" : "border" );
+	
+				return access( this, function( elem, type, value ) {
+					var doc;
+	
+					if ( jQuery.isWindow( elem ) ) {
+	
+						// $( window ).outerWidth/Height return w/h including scrollbars (gh-1729)
+						return funcName.indexOf( "outer" ) === 0 ?
+							elem[ "inner" + name ] :
+							elem.document.documentElement[ "client" + name ];
+					}
+	
+					// Get document width or height
+					if ( elem.nodeType === 9 ) {
+						doc = elem.documentElement;
+	
+						// Either scroll[Width/Height] or offset[Width/Height] or client[Width/Height],
+						// whichever is greatest
+						return Math.max(
+							elem.body[ "scroll" + name ], doc[ "scroll" + name ],
+							elem.body[ "offset" + name ], doc[ "offset" + name ],
+							doc[ "client" + name ]
+						);
+					}
+	
+					return value === undefined ?
+	
+						// Get width or height on the element, requesting but not forcing parseFloat
+						jQuery.css( elem, type, extra ) :
+	
+						// Set width or height on the element
+						jQuery.style( elem, type, value, extra );
+				}, type, chainable ? margin : undefined, chainable );
+			};
+		} );
+	} );
+	
+	
+	jQuery.fn.extend( {
+	
+		bind: function( types, data, fn ) {
+			return this.on( types, null, data, fn );
+		},
+		unbind: function( types, fn ) {
+			return this.off( types, null, fn );
+		},
+	
+		delegate: function( selector, types, data, fn ) {
+			return this.on( types, selector, data, fn );
+		},
+		undelegate: function( selector, types, fn ) {
+	
+			// ( namespace ) or ( selector, types [, fn] )
+			return arguments.length === 1 ?
+				this.off( selector, "**" ) :
+				this.off( types, selector || "**", fn );
+		}
+	} );
+	
+	jQuery.parseJSON = JSON.parse;
+	
+	
+	
+	
+	// Register as a named AMD module, since jQuery can be concatenated with other
+	// files that may use define, but not via a proper concatenation script that
+	// understands anonymous AMD modules. A named AMD is safest and most robust
+	// way to register. Lowercase jquery is used because AMD module names are
+	// derived from file names, and jQuery is normally delivered in a lowercase
+	// file name. Do this after creating the global so that if an AMD module wants
+	// to call noConflict to hide this version of jQuery, it will work.
+	
+	// Note that for maximum portability, libraries that are not jQuery should
+	// declare themselves as anonymous modules, and avoid setting a global if an
+	// AMD loader is present. jQuery is a special case. For more information, see
+	// https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
+	
+	if ( true ) {
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+			return jQuery;
+		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	}
+	
+	
+	
+	
+	var
+	
+		// Map over jQuery in case of overwrite
+		_jQuery = window.jQuery,
+	
+		// Map over the $ in case of overwrite
+		_$ = window.$;
+	
+	jQuery.noConflict = function( deep ) {
+		if ( window.$ === jQuery ) {
+			window.$ = _$;
+		}
+	
+		if ( deep && window.jQuery === jQuery ) {
+			window.jQuery = _jQuery;
+		}
+	
+		return jQuery;
+	};
+	
+	// Expose jQuery and $ identifiers, even in AMD
+	// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
+	// and CommonJS for browser emulators (#13566)
+	if ( !noGlobal ) {
+		window.jQuery = window.$ = jQuery;
+	}
+	
+	
+	
+	
+	
+	return jQuery;
+	} );
+
+
+/***/ },
+/* 29 */
 /*!**********************************************!*\
   !*** ./public/js/controllers/loadingCtrl.js ***!
   \**********************************************/
@@ -37299,13 +47579,13 @@
 	module.exports = loadingCtrl;
 
 /***/ },
-/* 26 */
+/* 30 */
 /*!************************************************!*\
   !*** ./public/js/controllers/initMatchCtrl.js ***!
   \************************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
 	function initMatch($scope, $sce, mainService, $timeout) {
 	  $scope.recommendMovieForInitMatch = function () {
@@ -37389,16 +47669,388 @@
 	}
 	
 	module.exports = initMatch;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
 
 /***/ },
-/* 27 */
+/* 31 */
+/*!********************************************!*\
+  !*** ./public/js/controllers/matchCtrl.js ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
+	
+	function matchCtrl($scope, $http, $sce, $timeout, mainService) {
+	
+	  $scope.done = mainService.done;
+	
+	  $scope.$watch("done", function (newValue, oldValue) {
+	    console.log(newValue, oldValue);
+	    if (newValue === 1) {
+	      console.log("yay");
+	    }
+	  }, true);
+	
+	  $scope.getInitMatchQueue = function () {
+	    mainService.getInitMatchQueue().then(function (response) {
+	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
+	        console.log("ratings", results);
+	        $scope.awards = results.data.Awards;
+	        $scope.imdbMetascore = results.data.Metascore;
+	        $scope.imdbRating = results.data.imdbRating;
+	        $scope.imdbVotes = results.data.imdbVotes;
+	        $scope.tomatoRating = results.data.tomatoRating;
+	        $scope.tomatoReviews = results.data.tomatoReviews;
+	        $scope.tomatoUserRating = results.data.tomatoUserRating;
+	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
+	        if ($scope.tomatoRating > 5) {
+	          $scope.tomatoClass = "rt-fresh";
+	        } else {
+	          $scope.tomatoClass = "rt-rotten";
+	        }
+	      });
+	      $scope.recommendedMovie = response;
+	      if ($scope.recommendedMovie) {
+	        if ($scope.recommendedMovie.videos.length > 0) {
+	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	        }
+	        console.log($scope.recommendedMovie);
+	        return $scope.recommendedMovie;
+	      } else {
+	        $timeout(function () {
+	          $scope.recommendedMovie = mainService.getInitMatchQueue();
+	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	          return $scope.recommendedMovie;
+	        }, 200);
+	      }
+	    });
+	  };
+	
+	  $scope.addToRatedOne = function (movie) {
+	    mainService.removeFromMatchQueue(movie._id);
+	    mainService.getInitMatchQueue().then(function (response) {
+	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
+	        console.log("ratings", results);
+	        $scope.awards = results.data.Awards;
+	        $scope.imdbMetascore = results.data.Metascore;
+	        $scope.imdbRating = results.data.imdbRating;
+	        $scope.imdbVotes = results.data.imdbVotes;
+	        $scope.tomatoRating = results.data.tomatoRating;
+	        $scope.tomatoReviews = results.data.tomatoReviews;
+	        $scope.tomatoUserRating = results.data.tomatoUserRating;
+	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
+	        if ($scope.tomatoRating > 5) {
+	          $scope.tomatoClass = "rt-fresh";
+	        } else {
+	          $scope.tomatoClass = "rt-rotten";
+	        }
+	      });
+	      $scope.recommendedMovie = response;
+	      if ($scope.recommendedMovie) {
+	        if ($scope.recommendedMovie.videos.length > 0) {
+	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	        }
+	        console.log($scope.recommendedMovie);
+	        return $scope.recommendedMovie;
+	      } else {
+	        $timeout(function () {
+	          $scope.recommendedMovie = mainService.getInitMatchQueue();
+	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	          return $scope.recommendedMovie;
+	        }, 200);
+	      }
+	    });
+	    mainService.addToRatedOne(movie);
+	    // return $scope.recommendedMovie;
+	  };
+	
+	  $scope.addToRatedTwo = function (movie) {
+	    mainService.removeFromMatchQueue(movie._id);
+	    mainService.getInitMatchQueue().then(function (response) {
+	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
+	        console.log("ratings", results);
+	        $scope.awards = results.data.Awards;
+	        $scope.imdbMetascore = results.data.Metascore;
+	        $scope.imdbRating = results.data.imdbRating;
+	        $scope.imdbVotes = results.data.imdbVotes;
+	        $scope.tomatoRating = results.data.tomatoRating;
+	        $scope.tomatoReviews = results.data.tomatoReviews;
+	        $scope.tomatoUserRating = results.data.tomatoUserRating;
+	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
+	        if ($scope.tomatoRating > 5) {
+	          $scope.tomatoClass = "rt-fresh";
+	        } else {
+	          $scope.tomatoClass = "rt-rotten";
+	        }
+	      });
+	      $scope.recommendedMovie = response;
+	      if ($scope.recommendedMovie) {
+	        if ($scope.recommendedMovie.videos.length > 0) {
+	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	        }
+	        console.log($scope.recommendedMovie);
+	        return $scope.recommendedMovie;
+	      } else {
+	        $timeout(function () {
+	          $scope.recommendedMovie = mainService.getInitMatchQueue();
+	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	          return $scope.recommendedMovie;
+	        }, 200);
+	      }
+	    });
+	    mainService.addToRatedTwo(movie);
+	  };
+	
+	  $scope.addToRatedThree = function (movie) {
+	    mainService.removeFromMatchQueue(movie._id);
+	    mainService.getInitMatchQueue().then(function (response) {
+	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
+	        console.log("ratings", results);
+	        $scope.awards = results.data.Awards;
+	        $scope.imdbMetascore = results.data.Metascore;
+	        $scope.imdbRating = results.data.imdbRating;
+	        $scope.imdbVotes = results.data.imdbVotes;
+	        $scope.tomatoRating = results.data.tomatoRating;
+	        $scope.tomatoReviews = results.data.tomatoReviews;
+	        $scope.tomatoUserRating = results.data.tomatoUserRating;
+	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
+	        if ($scope.tomatoRating > 5) {
+	          $scope.tomatoClass = "rt-fresh";
+	        } else {
+	          $scope.tomatoClass = "rt-rotten";
+	        }
+	      });
+	      $scope.recommendedMovie = response;
+	      if ($scope.recommendedMovie) {
+	        if ($scope.recommendedMovie.videos.length > 0) {
+	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	        }
+	        console.log($scope.recommendedMovie);
+	        return $scope.recommendedMovie;
+	      } else {
+	        $timeout(function () {
+	          $scope.recommendedMovie = mainService.getInitMatchQueue();
+	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	          return $scope.recommendedMovie;
+	        }, 200);
+	      }
+	    });
+	    mainService.addToRatedThree(movie);
+	  };
+	
+	  $scope.addToRatedFour = function (movie) {
+	    mainService.removeFromMatchQueue(movie._id);
+	    mainService.getInitMatchQueue().then(function (response) {
+	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
+	        console.log("ratings", results);
+	        $scope.awards = results.data.Awards;
+	        $scope.imdbMetascore = results.data.Metascore;
+	        $scope.imdbRating = results.data.imdbRating;
+	        $scope.imdbVotes = results.data.imdbVotes;
+	        $scope.tomatoRating = results.data.tomatoRating;
+	        $scope.tomatoReviews = results.data.tomatoReviews;
+	        $scope.tomatoUserRating = results.data.tomatoUserRating;
+	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
+	        if ($scope.tomatoRating > 5) {
+	          $scope.tomatoClass = "rt-fresh";
+	        } else {
+	          $scope.tomatoClass = "rt-rotten";
+	        }
+	      });
+	      $scope.recommendedMovie = response;
+	      if ($scope.recommendedMovie) {
+	        if ($scope.recommendedMovie.videos.length > 0) {
+	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	        }
+	        console.log($scope.recommendedMovie);
+	        return $scope.recommendedMovie;
+	      } else {
+	        $timeout(function () {
+	          $scope.recommendedMovie = mainService.getInitMatchQueue();
+	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	          return $scope.recommendedMovie;
+	        }, 200);
+	      }
+	    });
+	    mainService.addToRatedFour(movie);
+	  };
+	
+	  $scope.addToRatedFive = function (movie) {
+	    mainService.removeFromMatchQueue(movie._id);
+	    $scope.done = mainService.addToRatedFive(movie);
+	    mainService.getInitMatchQueue().then(function (response) {
+	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
+	        console.log("ratings", results);
+	        $scope.awards = results.data.Awards;
+	        $scope.imdbMetascore = results.data.Metascore;
+	        $scope.imdbRating = results.data.imdbRating;
+	        $scope.imdbVotes = results.data.imdbVotes;
+	        $scope.tomatoRating = results.data.tomatoRating;
+	        $scope.tomatoReviews = results.data.tomatoReviews;
+	        $scope.tomatoUserRating = results.data.tomatoUserRating;
+	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
+	        if ($scope.tomatoRating > 5) {
+	          $scope.tomatoClass = "rt-fresh";
+	        } else {
+	          $scope.tomatoClass = "rt-rotten";
+	        }
+	      });
+	      $scope.recommendedMovie = response;
+	      if ($scope.recommendedMovie) {
+	        if ($scope.recommendedMovie.videos.length > 0) {
+	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	        }
+	        console.log($scope.recommendedMovie);
+	        return $scope.recommendedMovie;
+	      } else {
+	        $timeout(function () {
+	          $scope.recommendedMovie = mainService.getInitMatchQueue();
+	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	          return $scope.recommendedMovie;
+	        }, 200);
+	      }
+	    });
+	  };
+	
+	  $scope.addToUnseen = function (movie) {
+	    mainService.removeFromMatchQueue(movie._id);
+	    mainService.getInitMatchQueue().then(function (response) {
+	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
+	        console.log("ratings", results);
+	        $scope.awards = results.data.Awards;
+	        $scope.imdbMetascore = results.data.Metascore;
+	        $scope.imdbRating = results.data.imdbRating;
+	        $scope.imdbVotes = results.data.imdbVotes;
+	        $scope.tomatoRating = results.data.tomatoRating;
+	        $scope.tomatoReviews = results.data.tomatoReviews;
+	        $scope.tomatoUserRating = results.data.tomatoUserRating;
+	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
+	        if ($scope.tomatoRating > 5) {
+	          $scope.tomatoClass = "rt-fresh";
+	        } else {
+	          $scope.tomatoClass = "rt-rotten";
+	        }
+	      });
+	      $scope.recommendedMovie = response;
+	      if ($scope.recommendedMovie) {
+	        console.log($scope.recommendedMovie);
+	        console.log($scope.recommendedMovie.popularity);
+	        console.log($scope.recommendedMovie.language);
+	        if ($scope.recommendedMovie.videos.length > 0) {
+	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
+	        }
+	        return $scope.recommendedMovie;
+	      } else {
+	        $timeout(function () {
+	          $scope.recommendedMovie = mainService.getInitMatchQueue();
+	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
+	          return $scope.recommendedMovie;
+	        }, 200);
+	      }
+	    });
+	    mainService.addToUnseen(movie);
+	  };
+	
+	  $scope.addToWatchlist = function (movie) {
+	    mainService.addToWatchlist(movie);
+	    $("span.watchlist").on("click", function () {
+	      $("span.watchlist").css("color", "#FC7100");
+	    });
+	  };
+	
+	  $scope.getInitMatchQueue();
+	}
+	
+	module.exports = matchCtrl;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
+
+/***/ },
+/* 32 */
+/*!*****************************************************!*\
+  !*** ./public/js/controllers/recommendationCtrl.js ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	function recommendationsCtrl($scope, mainService) {
+	  var selectedGenres = [];
+	  $scope.hasOne = true;
+	
+	  $scope.selectGenre = function (genre, id) {
+	    if ($scope[genre] === "genre-selected") {
+	      $scope[genre] = "";
+	      var index = selectedGenres.indexOf(id);
+	      selectedGenres.splice(index, 1);
+	    } else {
+	      $scope[genre] = "genre-selected";
+	      selectedGenres.push(id);
+	    }
+	    if (selectedGenres.length > 0) {
+	      $scope.hasOne = false;
+	    } else {
+	      $scope.hasOne = true;
+	    }
+	    return $scope[genre];
+	  };
+	
+	  $scope.getRecommendationsByGenre = function () {
+	    mainService.getRecommendationsByGenre(selectedGenres).then(function (response) {
+	      console.log("response from ctrl", response);
+	    });
+	  };
+	}
+	
+	module.exports = recommendationsCtrl;
+
+/***/ },
+/* 33 */
+/*!************************************************!*\
+  !*** ./public/js/controllers/favoritesCtrl.js ***!
+  \************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	function favoritesCtrl($scope, $state, mainService) {
+	
+	  $scope.getTopFive = function () {
+	    $scope.topFive = mainService.getTopFive();
+	    return $scope.topFive;
+	  };
+	
+	  $scope.getRatedFive = function () {
+	    $scope.ratedFive = mainService.getRatedFive();
+	    return $scope.ratedFive;
+	  };
+	
+	  $scope.getRatedFour = function () {
+	    $scope.ratedFour = mainService.getRatedFour();
+	    return $scope.ratedFour;
+	  };
+	
+	  $scope.getRatedThree = function () {
+	    $scope.ratedThree = mainService.getRatedThree();
+	    return $scope.ratedThree;
+	  };
+	
+	  $scope.getTopFive();
+	  $scope.getRatedFive();
+	  $scope.getRatedFour();
+	  $scope.getRatedThree();
+	}
+	
+	module.exports = favoritesCtrl;
+
+/***/ },
+/* 34 */
 /*!*******************************************!*\
   !*** ./public/js/services/mainService.js ***!
   \*******************************************/
 /***/ function(module, exports) {
 
-	"use strict";function mainService($http,$location,$timeout,$q){var currentUser={};var currentUserFbId="";var topFive=[];var myThis=this;var recommendMoviesForMatch=[];var initCounter=0;var currentMovie=void 0;var tempDiscover=[];var currentTopActors=[];var currentTopGenres=[];var currentTopDirectors=[];var currentTopProducers=[];var currentTopWriters=[];var currentTopKeywords=[];var action80s=[218,941,85,562,106];var action90s=[36955,1701,754,710,9772];var action00s=[155,98,2501,180,8681,1858];var action10s=[76341,137113,1771,118340];var comedy80s=[620,9377,2108,11977,90];var comedy90s=[8467,1542,3049,816,9614];var comedy00s=[8699,9522,9398,134,8363];var comedy10s=[27581,109414,22538,55721,41733];var drama80s=[235,601,207,88,2323];var drama90s=[278,13,857,597,275];var drama00s=[7345,1422,12405,8358,70];var drama10s=[37799,68734,210577,85350,76203];var adventure80s=[9340,2493,105];var adventure90s=[329,8844,564,197];var adventure00s=[19995,674,22];var adventure10s=[27205,87827,36657,116745];var scifi80s=[11,348];var scifi90s=[602,607,18];var scifi00s=[17654,16320,13475,6479,2675];var scifi10s=[120,24428,37686,20504,277];var omdbUrl="https://api.themoviedb.org/3/";var omdbKey="550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";this.getFbCurrentUser=function(){return $http.get("/api/facebook").then(function(response){var results=response.data;$http.get("/api/users/fb/"+results.id).then(function(userResponse){// console.log(userResponse);
-	if(userResponse.data.length>0){currentUser=userResponse.data[0];console.log("current user",currentUser);}else{currentUser={firstName:results._json.first_name,lastName:results._json.last_name,email:results._json.email,facebookId:results.id,profileUrl:results.profileUrl,location:results._json.location,coverPhotoUrl:results._json.cover.source,profilePictureUrl:results._json.picture.data.url,topFive:[],initRecommended:[],matchQueue:initMatchQueue,ratedMoviesOne:[],ratedMoviesTwo:[],ratedMoviesThree:[],ratedMoviesFour:[],ratedMoviesFive:[],unseenMovies:[],watchlist:[],preferences:[]};currentUserFbId=results.id;postCurrentUser(currentUser);}});return response.data;});};// this.getFbCurrentUser = function(){
+	"use strict";function mainService($http,$location,$timeout,$q){var currentUser={};var currentUserFbId="";var topFive=[];var myThis=this;myThis.done=0;console.log("i am the first",myThis.done);var recommendMoviesForMatch=[];var initCounter=0;var currentMovie=void 0;var tempDiscover=[];var currentTopActors=[];var currentTopGenres=[];var currentTopDirectors=[];var currentTopProducers=[];var currentTopWriters=[];var currentTopKeywords=[];var action80s=[218,941,85,562,106];var action90s=[36955,1701,754,710,9772];var action00s=[155,98,2501,180,8681,1858];var action10s=[76341,137113,1771,118340];var comedy80s=[620,9377,2108,11977,90];var comedy90s=[8467,1542,3049,816,9614];var comedy00s=[8699,9522,9398,134,8363];var comedy10s=[27581,109414,22538,55721,41733];var drama80s=[235,601,207,88,2323];var drama90s=[278,13,857,597,275];var drama00s=[7345,1422,12405,8358,70];var drama10s=[37799,68734,210577,85350,76203];var adventure80s=[9340,2493,105];var adventure90s=[329,8844,564,197];var adventure00s=[19995,674,22];var adventure10s=[27205,87827,36657,116745];var scifi80s=[11,348];var scifi90s=[602,607,18];var scifi00s=[17654,16320,13475,6479,2675];var scifi10s=[120,24428,37686,20504,277];var omdbUrl="https://api.themoviedb.org/3/";var omdbKey="550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";this.getFbCurrentUser=function(){return $http.get("/api/facebook").then(function(response){var results=response.data;$http.get("/api/users/fb/"+results.id).then(function(userResponse){// console.log(userResponse);
+	if(userResponse.data.length>0){currentUser=userResponse.data[0];myThis.currentUser=currentUser;console.log("current user",currentUser);}else{currentUser={firstName:results._json.first_name,lastName:results._json.last_name,email:results._json.email,facebookId:results.id,profileUrl:results.profileUrl,location:results._json.location,coverPhotoUrl:results._json.cover.source,profilePictureUrl:results._json.picture.data.url,topFive:[],initRecommended:[],matchQueue:shuffleArray(initMatchQueue),ratedMoviesOne:[],ratedMoviesTwo:[],ratedMoviesThree:[],ratedMoviesFour:[],ratedMoviesFive:[],unseenMovies:[],watchlist:[],preferences:[]};currentUserFbId=results.id;postCurrentUser(currentUser);}});return response.data;});};// this.getFbCurrentUser = function(){
 	//   return $http.get("/api/facebook").then(function(response){
 	//     let results = response.data;
 	//     $http.get("/api/users").then(function(userResponse){
@@ -37437,7 +48089,10 @@
 	//     return response.data;
 	//   })
 	// }
-	this.addToTopFive=function(obj){var dfd=$q.defer();var addedMovie=void 0;return $http.get(omdbUrl+"movie/"+obj.id+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar").then(function(response){var results=response.data;var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:results.release_date,video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results};if(currentUser.topFive.length<5){// postMovieToDB(movieObj);
+	this.addToTopFive=function(obj){var dfd=$q.defer();var addedMovie=void 0;return $http.get(omdbUrl+"movie/"+obj.id+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response){var results=response.data;console.log(results);var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:formatDate(results.release_date),video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results,certification:getCertification(results.release_dates.results)};if(movieObj.crew.length<3){movieObj.crew=movieObj.crew[0];}movieObj.crew.forEach(function(y){console.log(y.profile_path);if(!y.profile_path){y.profile_path="http://localhost:8080/images/no-picture.png";}else{y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});movieObj.movieCast.forEach(function(y){// console.log(y.profile_path);
+	if(!y.profile_path){// console.log("no picture");
+	y.profile_path="http://localhost:8080/images/no-picture.png";}else{// console.log("replacing picture");
+	y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});if(currentUser.topFive.length<5){// postMovieToDB(movieObj);
 	$http.post("/api/movies",movieObj).then(function(response){var addedMovie=response.data;console.log("added movie",addedMovie.omdbId);currentUser.topFive.push(addedMovie);topFive=currentUser.topFive;$http.post("/api/user/"+currentUser._id+"/topFive",addedMovie);dfd.resolve(topFive);});// currentUser.topFive.push(addedMovie);
 	// topFive = currentUser.topFive;
 	// $http.post(`/api/user/${currentUser._id}/topFive`, addedMovie);
@@ -37456,14 +48111,45 @@
 	y.profile_path="http://localhost:8080/images/no-picture.png";}else{// console.log("replacing picture");
 	y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});// currentUser.initRecommended.push(movieObj);
 	$http.post("/api/movies",movieObj).then(function(response){console.log(response.data._id);currentUser.matchQueue.push(response.data._id);$http.post("/api/user/"+currentUser._id+"/matchQueue",{_id:response.data._id});console.log("temp index",tempDiscover[i],i);tempDiscover.splice(0,1);console.log("done");console.log("tempDiscover",tempDiscover.length);});});}};this.getInitMatchQueue=function(){return $http.get("/api/movies/"+currentUser.matchQueue[0]).then(function(response){return response.data;});};this.addToRatedOne=function(obj){currentUser.ratedMoviesOne.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedOne",{_id:obj._id});postGenrePref(obj,-2);postActorPref(obj,-2);postDirectorPref(obj,-2);postProducerPref(obj,-2);postWriterPref(obj,-2);postKeywordPref(obj,-2);// postDecadePref(obj, -2);
-	};this.addToRatedTwo=function(obj){currentUser.ratedMoviesOne.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedTwo",{_id:obj._id});postGenrePref(obj,-1);postActorPref(obj,-1);postDirectorPref(obj,-1);postProducerPref(obj,-1);postWriterPref(obj,-1);postKeywordPref(obj,-1);// postDecadePref(obj, -1);
-	};this.addToRatedThree=function(obj){currentUser.ratedMoviesOne.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedThree",{_id:obj._id});postGenrePref(obj,1);postActorPref(obj,1);postDirectorPref(obj,1);postProducerPref(obj,1);postWriterPref(obj,1);postKeywordPref(obj,1);// postDecadePref(obj, 1);
-	};this.addToRatedFour=function(obj){currentUser.ratedMoviesOne.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedFour",{_id:obj._id});postGenrePref(obj,2);postActorPref(obj,2);postDirectorPref(obj,2);postProducerPref(obj,2);postWriterPref(obj,2);postKeywordPref(obj,2);// postDecadePref(obj, 2);
-	};this.addToRatedFive=function(obj){currentUser.ratedMoviesOne.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedFive",{_id:obj._id});postGenrePref(obj,3);postActorPref(obj,3);postDirectorPref(obj,3);postProducerPref(obj,3);postWriterPref(obj,3);postKeywordPref(obj,3);// postDecadePref(obj, 3);
-	};this.addToUnseen=function(obj){currentUser.unseenMovies.push(obj);$http.post("/api/user/"+currentUser._id+"/unseenMovies",{_id:obj._id});};this.addToWatchlist=function(obj){currentUser.watchlist.push(obj);$http.post("/api/user/"+currentUser._id+"/watchlist",{_id:obj._id});};this.getUserGenrePrefs=function(){return $http.get("/api/user/"+currentUser._id+"/genrePref").then(function(response){currentTopGenres=response.data;return response.data;});};this.getUserActorPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/actorPref").then(function(response){currentTopActors=response.data;return response.data;});};this.getUserDirectorPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/directorPref").then(function(response){currentTopDirectors=response.data;return response.data;});};this.getUserProducerPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/producerPref").then(function(response){currentTopProducers=response.data;return response.data;});};this.getUserWriterPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/writerPref").then(function(response){currentTopWriters=response.data;return response.data;});};this.getUserKeywordPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/keywordPref").then(function(response){currentTopKeywords=response.data;return response.data;});};this.getUserDecadePrefs=function(){return $http.get("/api/user/"+currentUser._id+"/decadePref").then(function(response){return response.data;});};this.getCurrentPage=function(){myThis.currentPage=$location.path();return myThis.currentPage;};this.removeFromMatchQueue=function(mId){currentUser.matchQueue.splice(0,1);$http.put("/api/user/"+currentUser._id+"/matchQueue",{_id:mId});};this.getRatedFive=function(){return currentUser.ratedMoviesFive;};this.getRatedFour=function(){return currentUser.ratedMoviesFour;};this.getRatedThree=function(){return currentUser.ratedMoviesThree;};this.getWatchlist=function(){return currentUser.watchlist;};// **********************************************************
+	};this.addToRatedTwo=function(obj){currentUser.ratedMoviesTwo.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedTwo",{_id:obj._id});postGenrePref(obj,-1);postActorPref(obj,-1);postDirectorPref(obj,-1);postProducerPref(obj,-1);postWriterPref(obj,-1);postKeywordPref(obj,-1);// postDecadePref(obj, -1);
+	};this.addToRatedThree=function(obj){currentUser.ratedMoviesThree.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedThree",{_id:obj._id});postGenrePref(obj,1);postActorPref(obj,1);postDirectorPref(obj,1);postProducerPref(obj,1);postWriterPref(obj,1);postKeywordPref(obj,1);// postDecadePref(obj, 1);
+	};this.addToRatedFour=function(obj){currentUser.ratedMoviesFour.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedFour",{_id:obj._id});postGenrePref(obj,2);postActorPref(obj,2);postDirectorPref(obj,2);postProducerPref(obj,2);postWriterPref(obj,2);postKeywordPref(obj,2);// postDecadePref(obj, 2);
+	};this.addToRatedFive=function(obj){currentUser.ratedMoviesFive.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedFive",{_id:obj._id});postGenrePref(obj,3);postActorPref(obj,3);postDirectorPref(obj,3);postProducerPref(obj,3);postWriterPref(obj,3);postKeywordPref(obj,3);// postDecadePref(obj, 3);
+	myThis.done=1;return myThis.done;};this.addToUnseen=function(obj){currentUser.unseenMovies.push(obj);$http.post("/api/user/"+currentUser._id+"/unseenMovies",{_id:obj._id});};this.addToWatchlist=function(obj){currentUser.watchlist.push(obj);$http.post("/api/user/"+currentUser._id+"/watchlist",{_id:obj._id});};this.getUserGenrePrefs=function(){return $http.get("/api/user/"+currentUser._id+"/genrePref").then(function(response){currentTopGenres=response.data;return response.data;});};this.getUserActorPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/actorPref").then(function(response){currentTopActors=response.data;return response.data;});};this.getUserDirectorPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/directorPref").then(function(response){currentTopDirectors=response.data;return response.data;});};this.getUserProducerPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/producerPref").then(function(response){currentTopProducers=response.data;return response.data;});};this.getUserWriterPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/writerPref").then(function(response){currentTopWriters=response.data;return response.data;});};this.getUserKeywordPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/keywordPref").then(function(response){currentTopKeywords=response.data;return response.data;});};this.getUserDecadePrefs=function(){return $http.get("/api/user/"+currentUser._id+"/decadePref").then(function(response){return response.data;});};this.getCurrentPage=function(){myThis.currentPage=$location.path();return myThis.currentPage;};this.removeFromMatchQueue=function(mId){currentUser.matchQueue.splice(0,1);$http.put("/api/user/"+currentUser._id+"/matchQueue",{_id:mId});};this.getRatedFive=function(){return currentUser.ratedMoviesFive;};this.getRatedFour=function(){return currentUser.ratedMoviesFour;};this.getRatedThree=function(){return currentUser.ratedMoviesThree;};this.getWatchlist=function(){return currentUser.watchlist;};this.removePorn=function(){var myArr=initMatchQueue;myArr.forEach(function(x){$http.get("/api/movies/"+x).then(function(response){// console.log(`/api/movies/${x}`);
+	if(response.data.popularity<1){$http.put("/api/user/"+currentUser._id+"/matchQueue",{_id:x});console.log("remove",response.data.movieTitle);}});});};this.getRecommendationsByGenre=function(arr){var genres="with_genres=";arr.forEach(function(x){genres+=x+",";});genres=genres.slice(0,-1);console.log(genres);var promises=[discoverByGenre1(genres),discoverByGenre2(genres)// discoverByGenre3(genres),
+	// discoverByGenre4(genres),
+	// discoverByGenre5(genres)
+	// discoverByGenre6(genres),
+	// discoverByGenre7(genres)
+	// discoverByGenre8(genres)
+	// discoverByGenre9(genres),
+	// discoverByGenre10(genres),
+	// discoverByGenre11(genres),
+	// discoverByGenre12(genres),
+	// discoverByGenre13(genres),
+	// discoverByGenre14(genres),
+	// discoverByGenre15(genres),
+	// discoverByGenre16(genres),
+	// discoverByGenre17(genres),
+	// discoverByGenre18(genres),
+	// discoverByGenre19(genres),
+	// discoverByGenre20(genres),
+	];return $q.all(promises).then(function(response){var moviePromises=[];console.log("q all",response);response.forEach(function(x,i){x.data.results.forEach(function(y,j){moviePromises.push(getAndPostMovieByOMDBId(y.id));});});console.log("movie promises",moviePromises);return $q.all(moviePromises).then(function(response2){console.log("q all 2",response2);return response2;});});};function discoverByGenre1(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=1&"+genres);}function discoverByGenre2(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=2&"+genres);}function discoverByGenre3(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=3&"+genres);}function discoverByGenre4(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=4&"+genres);}function discoverByGenre5(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=5&"+genres);}function discoverByGenre6(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=6&"+genres);}function discoverByGenre7(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=7&"+genres);}function discoverByGenre8(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=8&"+genres);}function discoverByGenre9(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=9&"+genres);}function discoverByGenre10(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=10&"+genres);}function discoverByGenre11(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=11&"+genres);}function discoverByGenre12(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=12&"+genres);}function discoverByGenre13(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=13&"+genres);}function discoverByGenre14(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=14&"+genres);}function discoverByGenre15(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=15&"+genres);}function discoverByGenre16(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=16&"+genres);}function discoverByGenre17(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=17&"+genres);}function discoverByGenre18(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=18&"+genres);}function discoverByGenre19(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=19&"+genres);}function discoverByGenre20(genres){return $http.get(omdbUrl+"discover/movie?"+omdbKey+"&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=20&"+genres);}// **********************************************************
 	//  HELPER FUNCTIONS
 	// **********************************************************
-	function postCurrentUser(obj){return $http.post("/api/users",obj).then(function(response){currentUser=response.data;return response;});}function postMovieToDB(obj){return $http.post("/api/movies",obj).then(function(response){console.log("responsedddd",response);return response.data;});}function postTopFiveToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.topFive.push(obj);topFive=currentUser.topFive;$http.post("/api/user/"+currentUser._id+"/topFive",addedMovie);});}function postInitRecToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.initRecommended.push(response.data._id);$http.post("/api/user/"+currentUser._id+"/initRec",{_id:response.data._id});myThis.recommendMoviesForMatch=[];myThis.recommendMoviesForMatch=currentUser.initRecommended;console.log("2",myThis.recommendMoviesForMatch);});}function recommendMovieForInitMatch(){var recommendedMovies=[];var shuffled=[];currentUser.topFive.forEach(function(x,i){x.recommendations.forEach(function(y,j){recommendedMovies.push(y.id);});});return shuffleArray(recommendedMovies);}function shuffleArray(arr){var array=arr.slice(0,arr.length);var currentIndex=array.length,temporaryValue,randomIndex;while(0!==currentIndex){randomIndex=Math.floor(Math.random()*currentIndex);currentIndex-=1;temporaryValue=array[currentIndex];array[currentIndex]=array[randomIndex];array[randomIndex]=temporaryValue;}return array;}function getCertification(arr){for(var i=0;i<arr.length;i++){if(arr[i].iso_3166_1==="US"){return arr[i].release_dates[0].certification;}}}function formatDate(str){var splitStr=str.split("");var year=splitStr.slice(0,4).join("");var day=splitStr.slice(8,10).join("");var month=splitStr.slice(5,7).join("");var date="";if(month==="01"){month="January";};if(month==="02"){month="February";};if(month==="03"){month="March";};if(month==="04"){month="April";};if(month==="05"){month="May";};if(month==="06"){month="June";};if(month==="07"){month="July";};if(month==="08"){month="August";};if(month==="09"){month="September";};if(month==="10"){month="October";};if(month==="11"){month="November";};if(month==="12"){month="December";};date=month+" "+day+", "+year;return date;}function postGenrePref(obj,score){var transferObj={};obj.genreIds.forEach(function(x){transferObj={genreName:x.name,genreTotalScore:score,genreId:x.id};$http.post("/api/user/"+currentUser._id+"/genrePref",transferObj);});}function postActorPref(obj,score){var transferObj={};for(var i=0;i<3;i++){transferObj={actorName:obj.movieCast[i].name,actorTotalScore:score,castId:obj.movieCast[i].id};$http.post("/api/user/"+currentUser._id+"/actorPref",transferObj);}}function postDirectorPref(obj,score){var transferObj={};obj.crew.forEach(function(x){if(x.job==="Director"){transferObj={directorName:x.name,directorTotalScore:score,crewId:x.id};$http.post("/api/user/"+currentUser._id+"/directorPref",transferObj);}});}function postProducerPref(obj,score){var transferObj={};var count=0;for(var i=0;i<obj.crew.length;i++){if(obj.crew[i].job==="Producer"){count++;transferObj={producerName:obj.crew[i].name,producerTotalScore:score,crewId:obj.crew[i].id};$http.post("/api/user/"+currentUser._id+"/producerPref",transferObj);}if(count===2){break;}}}function postWriterPref(obj,score){var transferObj={};var count=0;for(var i=0;i<obj.crew.length;i++){if(obj.crew[i].department==="Writing"){count++;transferObj={writerName:obj.crew[i].name,writerTotalScore:score,crewId:obj.crew[i].id};$http.post("/api/user/"+currentUser._id+"/writerPref",transferObj);}if(count===2){break;}}}function postKeywordPref(obj,score){var transferObj={};var keywordsArr=obj.keywords.slice(0,3);keywordsArr.forEach(function(x){transferObj={keywordName:x.name,keywordTotalScore:score,keywordId:x.id};$http.post("/api/user/"+currentUser._id+"/keywordPref",transferObj);});}function postDecadePref(obj,score){var transferObj={};var year=parseInt(obj.releaseDate.split("").reverse().slice(0,4).reverse().join(""));if(year>=2010&&year<=2019){transferObj={decadeName:"2010s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=2000&&year<=2009){transferObj={decadeName:"2000s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1990&&year<=1999){transferObj={decadeName:"1990s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1980&&year<=1989){transferObj={decadeName:"1980s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1970&&year<=1979){transferObj={decadeName:"1970s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1960&&year<=1969){transferObj={decadeName:"1960s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1950&&year<=1959){transferObj={decadeName:"1950s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1940&&year<=1949){transferObj={decadeName:"1940s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1930&&year<=1939){transferObj={decadeName:"1930s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}}function sortByScore(array,key){return array.sort(function(a,b){var x=a[key];var y=b[key];return x<y?-1:x>y?1:0;});}function findDuplicates(array1,array2){var initRec=array1;var topFive=array2;initRec=initRec.filter(function(val){return topFive.indexOf(val)==-1;});return initRec;}function removeDuplicates(a){var uniqueArray=a.filter(function(item,pos,self){return self.indexOf(item)==pos;});return uniqueArray;}function getTopFiveIds(arr){var idsArr=[];arr.forEach(function(x){idsArr.push(x.omdbId);});return idsArr;}function flattenArr(arr){var newArr=[];newArr=[].concat.apply([],arr);return newArr;}// function generateScores(arr){
+	function postCurrentUser(obj){return $http.post("/api/users",obj).then(function(response){currentUser=response.data;return response;});}function postMovieToDB(obj){return $http.post("/api/movies",obj).then(function(response){console.log("responsedddd",response);return response.data;});}function postTopFiveToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.topFive.push(obj);topFive=currentUser.topFive;$http.post("/api/user/"+currentUser._id+"/topFive",addedMovie);});}function postInitRecToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.initRecommended.push(response.data._id);$http.post("/api/user/"+currentUser._id+"/initRec",{_id:response.data._id});myThis.recommendMoviesForMatch=[];myThis.recommendMoviesForMatch=currentUser.initRecommended;console.log("2",myThis.recommendMoviesForMatch);});}function recommendMovieForInitMatch(){var recommendedMovies=[];var shuffled=[];currentUser.topFive.forEach(function(x,i){x.recommendations.forEach(function(y,j){recommendedMovies.push(y.id);});});return shuffleArray(recommendedMovies);}function shuffleArray(arr){var array=arr.slice(0,arr.length);var currentIndex=array.length,temporaryValue,randomIndex;while(0!==currentIndex){randomIndex=Math.floor(Math.random()*currentIndex);currentIndex-=1;temporaryValue=array[currentIndex];array[currentIndex]=array[randomIndex];array[randomIndex]=temporaryValue;}return array;}function getCertification(arr){for(var i=0;i<arr.length;i++){if(arr[i].iso_3166_1==="US"){if(arr[i].release_dates.length<2){return arr[i].release_dates[0].certification;}else{for(var j=0;j<arr[i].release_dates.length;j++){if(arr[i].release_dates[j].certification){return arr[i].release_dates[j].certification;}}}}}}function formatDate(str){var splitStr=str.split("");var year=splitStr.slice(0,4).join("");var day=splitStr.slice(8,10).join("");var month=splitStr.slice(5,7).join("");var date="";if(month==="01"){month="January";};if(month==="02"){month="February";};if(month==="03"){month="March";};if(month==="04"){month="April";};if(month==="05"){month="May";};if(month==="06"){month="June";};if(month==="07"){month="July";};if(month==="08"){month="August";};if(month==="09"){month="September";};if(month==="10"){month="October";};if(month==="11"){month="November";};if(month==="12"){month="December";};date=month+" "+day+", "+year;return date;}function postGenrePref(obj,score){var transferObj={};obj.genreIds.forEach(function(x){transferObj={genreName:x.name,genreTotalScore:score,genreId:x.id};$http.post("/api/user/"+currentUser._id+"/genrePref",transferObj);});}function postActorPref(obj,score){var transferObj={};var myArray=obj.movieCast.slice(0,3);// for (var i = 0; i < 3; i++) {
+	//   transferObj = {
+	//     actorName : obj.movieCast[i].name,
+	//     actorTotalScore : score,
+	//     castId : obj.movieCast[i].id
+	//   }
+	//   $http.post(`/api/user/${currentUser._id}/actorPref`, transferObj).then(function(response){
+	//
+	//   })
+	// }
+	angular.forEach(myArray,function(x){transferObj={actorName:x.name,actorTotalScore:score,castId:x.id};var promise=$http({url:"/api/user/"+currentUser._id+"/actorPref",method:"POST",data:transferObj});});}function postDirectorPref(obj,score){var transferObj={};obj.crew.forEach(function(x){if(x.job==="Director"){transferObj={directorName:x.name,directorTotalScore:score,crewId:x.id};$http.post("/api/user/"+currentUser._id+"/directorPref",transferObj);}});}function postProducerPref(obj,score){var transferObj={};var count=0;for(var i=0;i<obj.crew.length;i++){if(obj.crew[i].job==="Producer"){count++;transferObj={producerName:obj.crew[i].name,producerTotalScore:score,crewId:obj.crew[i].id};$http.post("/api/user/"+currentUser._id+"/producerPref",transferObj);}if(count===2){break;}}}function postWriterPref(obj,score){var transferObj={};var count=0;for(var i=0;i<obj.crew.length;i++){if(obj.crew[i].department==="Writing"){count++;transferObj={writerName:obj.crew[i].name,writerTotalScore:score,crewId:obj.crew[i].id};$http.post("/api/user/"+currentUser._id+"/writerPref",transferObj);}if(count===2){break;}}}function postKeywordPref(obj,score){var transferObj={};var keywordsArr=obj.keywords.slice(0,3);keywordsArr.forEach(function(x){transferObj={keywordName:x.name,keywordTotalScore:score,keywordId:x.id};$http.post("/api/user/"+currentUser._id+"/keywordPref",transferObj);});}function postDecadePref(obj,score){var transferObj={};var year=parseInt(obj.releaseDate.split("").reverse().slice(0,4).reverse().join(""));if(year>=2010&&year<=2019){transferObj={decadeName:"2010s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=2000&&year<=2009){transferObj={decadeName:"2000s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1990&&year<=1999){transferObj={decadeName:"1990s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1980&&year<=1989){transferObj={decadeName:"1980s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1970&&year<=1979){transferObj={decadeName:"1970s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1960&&year<=1969){transferObj={decadeName:"1960s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1950&&year<=1959){transferObj={decadeName:"1950s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1940&&year<=1949){transferObj={decadeName:"1940s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}else if(year>=1930&&year<=1939){transferObj={decadeName:"1930s",decadeTotalScore:score};return $http.post("/api/user/"+currentUser._id+"/decadePref",transferObj);}}function sortByScore(array,key){return array.sort(function(a,b){var x=a[key];var y=b[key];return x<y?-1:x>y?1:0;});}function findDuplicates(array1,array2){var initRec=array1;var topFive=array2;initRec=initRec.filter(function(val){return topFive.indexOf(val)==-1;});return initRec;}function removeDuplicates(a){var uniqueArray=a.filter(function(item,pos,self){return self.indexOf(item)==pos;});return uniqueArray;}function getTopFiveIds(arr){var idsArr=[];arr.forEach(function(x){idsArr.push(x.omdbId);});return idsArr;}function flattenArr(arr){var newArr=[];newArr=[].concat.apply([],arr);return newArr;}function getAndPostMovieByOMDBId(id){// console.log("apple");
+	return $http.get(omdbUrl+"movie/"+id+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response){var movieObj=organizeMovie(response);// console.log(movieObj);
+	return $http.post("/api/movies",movieObj).then(function(response2){return response2;});});}// function generateScores(arr){
 	//   let allRecommended = [];
 	//   arr.forEach(function(x, i){
 	//     $http.get("/api/movies").then(function(response){
@@ -37471,10 +48157,13 @@
 	//     })
 	//   })
 	// }
-	}var initMatchQueue=["580643aeb624f68064c5bdb2","580643aeb624f68064c5bdb0","580643aeb624f68064c5bdaf","5806408a6dcddf8010f371de","580643aeb624f68064c5bdb1","580537843ca7247be13fe491","580537503ca7247be13fe414","580537853ca7247be13fe4e2","580537863ca7247be13fe4f9","580537853ca7247be13fe4e4","580537843ca7247be13fe4a1","580537843ca7247be13fe48b","58064cd15564f580e70fc3ab","58064cd15564f580e70fc3ac","580537823ca7247be13fe450","58064cd15564f580e70fc3ad","58064cd15564f580e70fc3ae","58064cd15564f580e70fc3af","58064cd15564f580e70fc3b0","58064cd15564f580e70fc3b1","580537853ca7247be13fe4ed","580537853ca7247be13fe4b1","580537853ca7247be13fe4bb","5806408b6dcddf8010f371ee","58064d6caf05f980ef9eaa6b","580537753ca7247be13fe441","58064d6caf05f980ef9eaa6c","58064d6daf05f980ef9eaa6e","58064d6daf05f980ef9eaa6d","58064d6daf05f980ef9eaa6f","580537833ca7247be13fe464","580537833ca7247be13fe46f","580537843ca7247be13fe4ab","5806456154027480830ccd62","58064972503fae80cb45d7fc","58064d6faf05f980ef9eaa70","58064d6faf05f980ef9eaa72","58064d6faf05f980ef9eaa71","58064d6faf05f980ef9eaa73","58064d6faf05f980ef9eaa74","580537853ca7247be13fe4d5","580537833ca7247be13fe471","580537843ca7247be13fe4a0","580537853ca7247be13fe4e7","580537853ca7247be13fe4de","58064d71af05f980ef9eaa75","58064d71af05f980ef9eaa76","58064d71af05f980ef9eaa77","5806456154027480830ccd6b","580537853ca7247be13fe4b5","58064d73af05f980ef9eaa78","58064d73af05f980ef9eaa7a","58064d73af05f980ef9eaa7b","58064d73af05f980ef9eaa79","58064d73af05f980ef9eaa7c","58064d73af05f980ef9eaa7d","580537843ca7247be13fe493","580537853ca7247be13fe4cb","580537843ca7247be13fe487","580537843ca7247be13fe484","580537853ca7247be13fe4e5","580537853ca7247be13fe4dd","58064d75af05f980ef9eaa7e","58064d75af05f980ef9eaa7f","58064d75af05f980ef9eaa80","58064d77af05f980ef9eaa81","58064d77af05f980ef9eaa82","58064d77af05f980ef9eaa83","58064d77af05f980ef9eaa84","58064d77af05f980ef9eaa85","58064d78af05f980ef9eaa86","58064d78af05f980ef9eaa89","58064d78af05f980ef9eaa87","58064d78af05f980ef9eaa88","58064d78af05f980ef9eaa8a","580537843ca7247be13fe496","580537853ca7247be13fe4b0","580537843ca7247be13fe497","580537853ca7247be13fe4dc","58064d7aaf05f980ef9eaa8b","58064d7aaf05f980ef9eaa8e","58064d7aaf05f980ef9eaa8d","58064d7aaf05f980ef9eaa8c","58064d7aaf05f980ef9eaa8f","58064d7aaf05f980ef9eaa90","5806437851275a805bf3f1e4","5806437951275a805bf3f1e8","580537833ca7247be13fe470","5806437851275a805bf3f1e5","5806437851275a805bf3f1e3","580537833ca7247be13fe460","5806437851275a805bf3f1e7","58064d7caf05f980ef9eaa91","58064d7caf05f980ef9eaa92","5806437851275a805bf3f1e6","580537843ca7247be13fe49a","5806437951275a805bf3f1e9","58064d7eaf05f980ef9eaa93","58064d7eaf05f980ef9eaa94","58064d7eaf05f980ef9eaa96","58064d7eaf05f980ef9eaa95","58064d7eaf05f980ef9eaa97","580537843ca7247be13fe485","580537843ca7247be13fe49c","58064d80af05f980ef9eaa98","58064d80af05f980ef9eaa99","58064d82af05f980ef9eaa9a","58064d82af05f980ef9eaa9c","58064d82af05f980ef9eaa9d","58064d82af05f980ef9eaa9b","58064d82af05f980ef9eaa9e","58064d8faf05f980ef9eaaa0","58064d8faf05f980ef9eaa9f","58064d8faf05f980ef9eaaa1","58064d8faf05f980ef9eaaa2","58064d8faf05f980ef9eaaa6","58064d8faf05f980ef9eaaa3","58064d8faf05f980ef9eaaa5","58064d8faf05f980ef9eaaa4","58064d8faf05f980ef9eaaa7","58064d8faf05f980ef9eaaa8","580537843ca7247be13fe48c","580537843ca7247be13fe473","580537843ca7247be13fe4ad","580537853ca7247be13fe4d6","58064d91af05f980ef9eaaa9","58064d91af05f980ef9eaaac","58064d91af05f980ef9eaaab","58064d91af05f980ef9eaaad","58064d91af05f980ef9eaaaa","58064d91af05f980ef9eaaae","580537853ca7247be13fe4d3","580537843ca7247be13fe4a8","58064d93af05f980ef9eaaaf","58064d93af05f980ef9eaab0","58064d93af05f980ef9eaab1","58064d93af05f980ef9eaab2","58064d93af05f980ef9eaab3","58064d93af05f980ef9eaab4","58064d93af05f980ef9eaab5","58064d95af05f980ef9eaab6","58064d95af05f980ef9eaab7","58064d95af05f980ef9eaab8","58064d95af05f980ef9eaaba","58064d95af05f980ef9eaab9","58064d95af05f980ef9eaabb","58064d95af05f980ef9eaabc","58064d95af05f980ef9eaabd","58064d95af05f980ef9eaabe","580537843ca7247be13fe499","580537833ca7247be13fe45e","58064d96af05f980ef9eaabf","58064d97af05f980ef9eaac0","58064d97af05f980ef9eaac1","58064d97af05f980ef9eaac2","58064d97af05f980ef9eaac3","58064d97af05f980ef9eaac4","580537853ca7247be13fe4b3","580537843ca7247be13fe488","580537853ca7247be13fe4e8","58064d9aaf05f980ef9eaac5","58064d9aaf05f980ef9eaac9","58064d9aaf05f980ef9eaac8","58064d9aaf05f980ef9eaac7","58064d9aaf05f980ef9eaac6","580537843ca7247be13fe4a3","580537843ca7247be13fe495","58064d9caf05f980ef9eaaca","58064d9caf05f980ef9eaacb","58064d9caf05f980ef9eaacc","58064d9caf05f980ef9eaacd","58064d9caf05f980ef9eaace","58064d9caf05f980ef9eaacf","5806408a6dcddf8010f371d4","5806408a6dcddf8010f371d8","5806408a6dcddf8010f371da","5806408a6dcddf8010f371d7","5806408a6dcddf8010f371d5","580537853ca7247be13fe4e6","5806408a6dcddf8010f371d6","58064dee7c476280f8b33164","5806408a6dcddf8010f371dd","5806408a6dcddf8010f371db","5806408a6dcddf8010f371d9","5806408a6dcddf8010f371dc","5806408a6dcddf8010f371e0","580537853ca7247be13fe4ee","5806408a6dcddf8010f371df","5806408a6dcddf8010f371e2","5806408a6dcddf8010f371e1","5806408b6dcddf8010f371e6","5806408b6dcddf8010f371e5","580537853ca7247be13fe4da","5806408b6dcddf8010f371e3","5806408b6dcddf8010f371e7","580537853ca7247be13fe4d4","580537863ca7247be13fe4f8","580537573ca7247be13fe423","5806408b6dcddf8010f371e4","5806408b6dcddf8010f371eb","5806408b6dcddf8010f371e8","5806408b6dcddf8010f371ed","5806408b6dcddf8010f371e9","5806408b6dcddf8010f371ea","5806408b6dcddf8010f371ef","580537853ca7247be13fe4ea","580537853ca7247be13fe4e3","580537853ca7247be13fe4ec","580537853ca7247be13fe4f0","580537843ca7247be13fe474","580537853ca7247be13fe4c6","5806408b6dcddf8010f371ec","580537863ca7247be13fe4f5","580537853ca7247be13fe4db","580537843ca7247be13fe4ac","58064df47c476280f8b33166","58064df47c476280f8b33165","58064df47c476280f8b33167","580537853ca7247be13fe4d2","580537863ca7247be13fe4fa","58064df57c476280f8b33168","58064df57c476280f8b3316a","58064df57c476280f8b33169","58064df57c476280f8b3316c","58064df57c476280f8b3316b","58064df57c476280f8b3316d","58064df57c476280f8b3316e","580537843ca7247be13fe47b","58064df67c476280f8b33172","58064df67c476280f8b33173","58064df67c476280f8b33171","58064df67c476280f8b3316f","58064df67c476280f8b33170","58064df67c476280f8b33174","580537853ca7247be13fe4c0","5806456254027480830ccd72","580537853ca7247be13fe4df","58064df77c476280f8b33176","58064df77c476280f8b33175","58064df77c476280f8b33177","58064df77c476280f8b33178","58064df77c476280f8b33179","58064df77c476280f8b3317a","580537833ca7247be13fe46a","5806456154027480830ccd65","580537853ca7247be13fe4c1","58064df87c476280f8b3317b","58064df87c476280f8b3317e","58064df87c476280f8b3317d","58064df87c476280f8b3317c","58064df87c476280f8b3317f","58064df87c476280f8b33180","58064df97c476280f8b33181","580537863ca7247be13fe4f3","580537853ca7247be13fe4cf","58064dfa7c476280f8b33184","58064dfa7c476280f8b33183","58064df97c476280f8b33182","58064dfa7c476280f8b33185","58064dfa7c476280f8b33186","58064dfa7c476280f8b33187","58064dfa7c476280f8b33188","5806456154027480830ccd68","58064dfb7c476280f8b33189","58064dfb7c476280f8b3318b","58064dfb7c476280f8b3318a","58064dfb7c476280f8b3318c","58064dfb7c476280f8b3318d","58064dfb7c476280f8b3318e","58064dfb7c476280f8b3318f","58064dfb7c476280f8b33190","580537853ca7247be13fe4c2","580537843ca7247be13fe498","58064dfc7c476280f8b33192","58064dfc7c476280f8b33194","58064dfc7c476280f8b33195","58064dfc7c476280f8b33191","58064dfc7c476280f8b33193","58064dfc7c476280f8b33196","580537833ca7247be13fe468","580537863ca7247be13fe4f2","58064dfd7c476280f8b33199","58064dfd7c476280f8b33197","58064dfd7c476280f8b33198","58064dfd7c476280f8b3319a","58064dfd7c476280f8b3319b","58064dfd7c476280f8b3319c","58064dfd7c476280f8b3319d","58064dfe7c476280f8b3319f","58064dfe7c476280f8b3319e","58064dfe7c476280f8b331a0","58064dfe7c476280f8b331a1","58064dfe7c476280f8b331a2","580537833ca7247be13fe461","5806456154027480830ccd6c","58064e047c476280f8b331a4","58064e047c476280f8b331a3","58064e047c476280f8b331a5","58064e047c476280f8b331a7","58064e047c476280f8b331a6","58064e047c476280f8b331a8","580537833ca7247be13fe46c","58064e067c476280f8b331a9","58064e067c476280f8b331ab","58064e067c476280f8b331aa","58064e067c476280f8b331ac","58064e067c476280f8b331ad","58064e067c476280f8b331ae","58064e067c476280f8b331af","58064e067c476280f8b331b0","58064e077c476280f8b331b1","58064e097c476280f8b331b2","58064e097c476280f8b331b3","58064e097c476280f8b331b4","58064e097c476280f8b331b5","58064e097c476280f8b331b6","58064e097c476280f8b331b7","58064e097c476280f8b331b8","58064e097c476280f8b331b9","58064e0a7c476280f8b331ba","5806456154027480830ccd64","5806456254027480830ccd6e","58064e0b7c476280f8b331bb","58064e0b7c476280f8b331bc","58064e0b7c476280f8b331bd","58064e0b7c476280f8b331bf","58064e0b7c476280f8b331be","58064e0b7c476280f8b331c0","58064e0b7c476280f8b331c1","5806456254027480830ccd73","58064e53a05fd98101c67226","580537863ca7247be13fe4f6","580537843ca7247be13fe49b","58064e55a05fd98101c67227","58064e56a05fd98101c67229","58064e56a05fd98101c67228","58064e59a05fd98101c6722b","58064e59a05fd98101c6722a","58064e59a05fd98101c6722c","58064e59a05fd98101c6722d","58064e5aa05fd98101c6722e","58064e5ba05fd98101c67231","58064e5ba05fd98101c67230","58064e5aa05fd98101c6722f","58064e5ba05fd98101c67232","580537853ca7247be13fe4c7","580537843ca7247be13fe4a7","580537843ca7247be13fe486","58064e5ca05fd98101c67233","5806456154027480830ccd69","58064e5fa05fd98101c67234","58064e60a05fd98101c67236","58064e60a05fd98101c67235","58064e60a05fd98101c67237","5806456254027480830ccd71","58064e61a05fd98101c67238","58064e61a05fd98101c6723a","58064e61a05fd98101c67239","58064e61a05fd98101c6723b","58064e61a05fd98101c6723c","58064e61a05fd98101c6723d","58064e62a05fd98101c6723e","5806456254027480830ccd70","580537853ca7247be13fe4bc","580537843ca7247be13fe4a6","580537853ca7247be13fe4ce","58064e64a05fd98101c6723f","58064e64a05fd98101c67242","58064e64a05fd98101c67241","58064e64a05fd98101c67240","58064e64a05fd98101c67243","580537843ca7247be13fe492","580537853ca7247be13fe4eb","580537853ca7247be13fe4e9","58064e66a05fd98101c67245","58064e66a05fd98101c67244","58064e66a05fd98101c67246","58064e66a05fd98101c67247","58064e66a05fd98101c67248","580537843ca7247be13fe494","58064e68a05fd98101c67249","58064e68a05fd98101c6724a","58064e68a05fd98101c6724b","58064e68a05fd98101c6724c","58064e68a05fd98101c6724d","58064e68a05fd98101c6724f","58064e68a05fd98101c6724e","58064e68a05fd98101c67250","58064e6aa05fd98101c67251","58064e6aa05fd98101c67252","58064e6aa05fd98101c67254","58064e6aa05fd98101c67253","58064e6aa05fd98101c67255","58064e6aa05fd98101c67256","58064e6aa05fd98101c67257","58064e6aa05fd98101c67258","58064e6aa05fd98101c67259","58064e6ba05fd98101c6725a","58064e6ba05fd98101c6725b","58064e6ba05fd98101c6725d","58064e6ba05fd98101c6725c","58064e6ba05fd98101c6725e","58064e6ba05fd98101c67260","58064e6ba05fd98101c6725f","58064e6ba05fd98101c67261","58064e6ca05fd98101c67262","58064e6ca05fd98101c67263","58064e6da05fd98101c67264","58064e6da05fd98101c67266","58064e6da05fd98101c67265","58064e6da05fd98101c67267","58064e6da05fd98101c67269","58064e6da05fd98101c67268","58064e6da05fd98101c6726a","580537833ca7247be13fe469","580537853ca7247be13fe4f1","58064e74a05fd98101c6726b","58064e74a05fd98101c6726c","58064e74a05fd98101c6726e","58064e74a05fd98101c6726d","58064e74a05fd98101c6726f","58064e74a05fd98101c67270","58064e74a05fd98101c67271","58064e74a05fd98101c67272","58064e77a05fd98101c67273","58064e77a05fd98101c67274","58064e77a05fd98101c67275","58064e77a05fd98101c67276","58064e77a05fd98101c67278","58064e77a05fd98101c67277","58064e77a05fd98101c67279","58064e77a05fd98101c6727a","58064e78a05fd98101c6727b","58064e78a05fd98101c6727c","5806456154027480830ccd63","58064e9c2120e2810a5e0314","58064e9c2120e2810a5e0315","58064e9e2120e2810a5e0316","5806456254027480830ccd6d","5806456154027480830ccd67","58064ea02120e2810a5e0317","58064ea02120e2810a5e0318","58064ea62120e2810a5e031a","58064ea62120e2810a5e031b","58064ea62120e2810a5e0319","5806456154027480830ccd6a","580537853ca7247be13fe4ef","580537853ca7247be13fe4bf","58064eab2120e2810a5e031c","58064eab2120e2810a5e031d","58064eae2120e2810a5e031e","58064eae2120e2810a5e031f","58064eb12120e2810a5e0320","58064eb42120e2810a5e0321","58064eb72120e2810a5e0322","58064eb72120e2810a5e0323","580537843ca7247be13fe4a4","580537863ca7247be13fe4f7","58064eba2120e2810a5e0324","58064eba2120e2810a5e0326","58064eba2120e2810a5e0327","58064eba2120e2810a5e0325","58064ebd2120e2810a5e0328","580537843ca7247be13fe476","58064ec02120e2810a5e0329","58064ec02120e2810a5e032a","58064ec02120e2810a5e032b","580537843ca7247be13fe47c","58064ec22120e2810a5e032c","580537853ca7247be13fe4e0","58064ec62120e2810a5e032e","58064ec62120e2810a5e032d","58064ec62120e2810a5e032f","58064ec82120e2810a5e0330","58064ecb2120e2810a5e0331","58064ecb2120e2810a5e0332","58064f00cd5dd981118aa275","58064f00cd5dd981118aa276","580537833ca7247be13fe46d","58064f05cd5dd981118aa277","58064f05cd5dd981118aa278","5806456154027480830ccd66","58064f08cd5dd981118aa279","58064f09cd5dd981118aa27b","58064f09cd5dd981118aa27a","58064f09cd5dd981118aa27c","58064f09cd5dd981118aa27d","58064f0bcd5dd981118aa27e","58064f0bcd5dd981118aa27f","58064f0bcd5dd981118aa282","58064f0bcd5dd981118aa281","58064f0bcd5dd981118aa280","58064f0bcd5dd981118aa283","58064f0bcd5dd981118aa284","58064f0bcd5dd981118aa285","58064f0dcd5dd981118aa28a","58064f0dcd5dd981118aa289","58064f0dcd5dd981118aa288","58064f0dcd5dd981118aa287","58064f0dcd5dd981118aa286","580537843ca7247be13fe48a","58064f0fcd5dd981118aa28b","58064f0fcd5dd981118aa28c","58064f0fcd5dd981118aa28d","58064f0fcd5dd981118aa28e","58064f0fcd5dd981118aa28f","58064f0fcd5dd981118aa290","58064f0fcd5dd981118aa291","58064f0fcd5dd981118aa292","58064f0fcd5dd981118aa293","58064f11cd5dd981118aa294","58064f11cd5dd981118aa295","58064f11cd5dd981118aa297","58064f11cd5dd981118aa296","58064f11cd5dd981118aa298","58064f11cd5dd981118aa299","58064f11cd5dd981118aa29a","58064f11cd5dd981118aa29b","58064f11cd5dd981118aa29c","58064f11cd5dd981118aa29d","58064f13cd5dd981118aa29e","58064f13cd5dd981118aa29f","58064f13cd5dd981118aa2a0","58064f13cd5dd981118aa2a1","58064f13cd5dd981118aa2a2","580537843ca7247be13fe4af","58064f19cd5dd981118aa2a3","58064f19cd5dd981118aa2a4","58064f19cd5dd981118aa2a6","58064f19cd5dd981118aa2a5","58064f19cd5dd981118aa2a8","58064f19cd5dd981118aa2a7","58064f19cd5dd981118aa2a9","58064f1ccd5dd981118aa2aa","58064f1ccd5dd981118aa2ab","58064f1ccd5dd981118aa2ac","58064f1ccd5dd981118aa2ad","58064f1ccd5dd981118aa2ae","58064f1dcd5dd981118aa2af","58064f1dcd5dd981118aa2b2","58064f1dcd5dd981118aa2b1","58064f1dcd5dd981118aa2b0","58064f1dcd5dd981118aa2b3","58064f1fcd5dd981118aa2b4","58064f1fcd5dd981118aa2b7","58064f1fcd5dd981118aa2b6","58064f1fcd5dd981118aa2b5","58064f1fcd5dd981118aa2b8","58064f1fcd5dd981118aa2b9","58064f1fcd5dd981118aa2ba","58064f20cd5dd981118aa2bb","58064f20cd5dd981118aa2bc","58064f20cd5dd981118aa2bd","58064f23cd5dd981118aa2be","58064f23cd5dd981118aa2bf","58064f23cd5dd981118aa2c0","58064f23cd5dd981118aa2c1","58064f23cd5dd981118aa2c2","58064f23cd5dd981118aa2c5","58064f23cd5dd981118aa2c4","58064f23cd5dd981118aa2c3","58064f23cd5dd981118aa2c6","58064f23cd5dd981118aa2c7","58064f26cd5dd981118aa2c8","58064f26cd5dd981118aa2c9","58064f26cd5dd981118aa2ca","58064f26cd5dd981118aa2cb","58064f26cd5dd981118aa2cc","58064f26cd5dd981118aa2cd","58064f26cd5dd981118aa2ce","58064f26cd5dd981118aa2d0","58064f26cd5dd981118aa2cf","58064f26cd5dd981118aa2d1","580537853ca7247be13fe4d7","58064f2acd5dd981118aa2d2","58064f2acd5dd981118aa2d4","58064f2acd5dd981118aa2d3","58064f2acd5dd981118aa2d5","58064f2acd5dd981118aa2d6","58064f2acd5dd981118aa2d7","58064f2acd5dd981118aa2d8","58064f2acd5dd981118aa2d9","58064f2acd5dd981118aa2da","58064f2fcd5dd981118aa2db","58064f30cd5dd981118aa2dc","58064f30cd5dd981118aa2dd","58064f30cd5dd981118aa2df","58064f30cd5dd981118aa2de","58064f30cd5dd981118aa2e0","58064f30cd5dd981118aa2e1","58064f30cd5dd981118aa2e3","58064f30cd5dd981118aa2e2","58064f30cd5dd981118aa2e4","58064f32cd5dd981118aa2e5","58064f32cd5dd981118aa2e6","58064f32cd5dd981118aa2e7","58064f32cd5dd981118aa2e9","58064f32cd5dd981118aa2e8","58064f33cd5dd981118aa2ea","58064f33cd5dd981118aa2eb","58064f33cd5dd981118aa2ed","58064f33cd5dd981118aa2ec","58064f33cd5dd981118aa2ee","58064f979e84498120e7cbbb","580537833ca7247be13fe463","58064f999e84498120e7cbbc","58064f999e84498120e7cbbd","58064f999e84498120e7cbbe","58064f999e84498120e7cbbf","58064f999e84498120e7cbc0","58064f999e84498120e7cbc1","58064f999e84498120e7cbc2","58064f9b9e84498120e7cbc3","58064f9b9e84498120e7cbc4","58064f9b9e84498120e7cbc5","58064f9b9e84498120e7cbc9","58064f9b9e84498120e7cbc8","58064f9b9e84498120e7cbc7","58064f9b9e84498120e7cbc6","58064f9b9e84498120e7cbca","58064f9b9e84498120e7cbcb","58064f9b9e84498120e7cbcc","580537853ca7247be13fe4b9","58064f9d9e84498120e7cbcd","58064f9d9e84498120e7cbce","58064f9e9e84498120e7cbcf","58064f9e9e84498120e7cbd0","58064f9e9e84498120e7cbd1","58064f9e9e84498120e7cbd2","58064f9e9e84498120e7cbd3","58064f9e9e84498120e7cbd4","58064f9e9e84498120e7cbd5","58064fa09e84498120e7cbd6","58064fa09e84498120e7cbd7","58064fa09e84498120e7cbd8","58064fa09e84498120e7cbda","58064fa09e84498120e7cbd9","58064fa09e84498120e7cbdb","58064fa09e84498120e7cbdc","58064fa09e84498120e7cbdd","580537853ca7247be13fe4b7","58064fa29e84498120e7cbde","58064fa29e84498120e7cbdf","58064fa29e84498120e7cbe0","58064fa29e84498120e7cbe1","58064fa39e84498120e7cbe2","58064fa39e84498120e7cbe3","58064fa39e84498120e7cbe4","58064fa69e84498120e7cbe5","58064fa69e84498120e7cbe6","58064fa69e84498120e7cbe7","58064fa69e84498120e7cbe8","58064fa69e84498120e7cbe9","58064fa69e84498120e7cbea","58064fa69e84498120e7cbec","58064fa69e84498120e7cbeb","58064fa69e84498120e7cbed","58064fa89e84498120e7cbee","58064fa89e84498120e7cbf0","58064fa89e84498120e7cbef","58064fa89e84498120e7cbf1","58064fa89e84498120e7cbf2","58064fa99e84498120e7cbf3","58064fa99e84498120e7cbf4","58064fa99e84498120e7cbf5","58064fa99e84498120e7cbf6","58064fab9e84498120e7cbf7","58064fab9e84498120e7cbf8","58064fab9e84498120e7cbfb","58064fab9e84498120e7cbfa","58064fab9e84498120e7cbf9","58064fab9e84498120e7cbfc","58064fac9e84498120e7cbfd","58064fac9e84498120e7cbfe","58064fac9e84498120e7cbff","58064fac9e84498120e7cc00","58064fae9e84498120e7cc01","58064fae9e84498120e7cc02","58064fae9e84498120e7cc03","58064fae9e84498120e7cc04","58064fae9e84498120e7cc05","58064fae9e84498120e7cc06","58064fae9e84498120e7cc07","58064fae9e84498120e7cc08","58064fae9e84498120e7cc09","58064fae9e84498120e7cc0a","58064fb09e84498120e7cc0b","58064fb09e84498120e7cc0c","58064fb09e84498120e7cc0d","58064fb09e84498120e7cc0e","58064fb19e84498120e7cc0f","58064fb19e84498120e7cc10","58064fb19e84498120e7cc11","58064fb19e84498120e7cc12","58064fb19e84498120e7cc13","58064fb19e84498120e7cc14","58064fb59e84498120e7cc15","58064fb59e84498120e7cc18","58064fb59e84498120e7cc16","58064fb59e84498120e7cc17","58064fb59e84498120e7cc1b","58064fb59e84498120e7cc1a","58064fb59e84498120e7cc19","58064fb59e84498120e7cc1d","58064fb59e84498120e7cc1c","58064fb89e84498120e7cc1e","58064fb89e84498120e7cc1f","58064fb89e84498120e7cc21","58064fb89e84498120e7cc20","58064fb89e84498120e7cc22","58064fb89e84498120e7cc23","58064fb89e84498120e7cc25","58064fb89e84498120e7cc24","58064fb89e84498120e7cc26","58064fbb9e84498120e7cc27","58064fbb9e84498120e7cc28","58064fbb9e84498120e7cc2a","58064fbb9e84498120e7cc2b","58064fbb9e84498120e7cc29","58064fbb9e84498120e7cc2c","58064fbb9e84498120e7cc2d","58064fbb9e84498120e7cc2e","58064fbe9e84498120e7cc2f","58064fbe9e84498120e7cc30","58064fbe9e84498120e7cc31","58064fbe9e84498120e7cc32","58064fbe9e84498120e7cc33","58064fbe9e84498120e7cc34","58064fbe9e84498120e7cc35","58064fbf9e84498120e7cc36","58064fc29e84498120e7cc37","58064fc29e84498120e7cc38","58064fc29e84498120e7cc39","58064fc29e84498120e7cc3a","58064fc29e84498120e7cc3b","58064fc29e84498120e7cc3c","58064fc29e84498120e7cc3e","58064fc29e84498120e7cc3d","58064fc29e84498120e7cc3f","58064fc29e84498120e7cc40","58064fc59e84498120e7cc41","58064fc59e84498120e7cc42","58064fc59e84498120e7cc43","58064fc59e84498120e7cc44","58064fc59e84498120e7cc45","58064fc69e84498120e7cc46","58064fc69e84498120e7cc49","58064fc69e84498120e7cc48","58064fc69e84498120e7cc47","58064fc99e84498120e7cc4a","58064fc99e84498120e7cc4b","58064fc99e84498120e7cc4c","58064fc99e84498120e7cc4d","58064fc99e84498120e7cc4e","58064fc99e84498120e7cc4f","58064fc99e84498120e7cc51","58064fc99e84498120e7cc52","58064fc99e84498120e7cc50","58064fcc9e84498120e7cc53","58064fcc9e84498120e7cc55","58064fcc9e84498120e7cc54","58064fcc9e84498120e7cc56","58064fcc9e84498120e7cc57","58064fcc9e84498120e7cc59","58064fcc9e84498120e7cc58","58064fcc9e84498120e7cc5a","58064fce9e84498120e7cc5b","58064fce9e84498120e7cc5c","58064fcf9e84498120e7cc5d","58064fcf9e84498120e7cc5f","58064fcf9e84498120e7cc5e","58064fcf9e84498120e7cc60","58064fcf9e84498120e7cc61","58064fd09e84498120e7cc62","58064fd09e84498120e7cc63","58064fd09e84498120e7cc64","58064fd09e84498120e7cc65","58064fd09e84498120e7cc66","58064fd09e84498120e7cc67","58064fd09e84498120e7cc68","58064fd29e84498120e7cc69","58064fd29e84498120e7cc6a","58064fd29e84498120e7cc6b","58064fd29e84498120e7cc6c","58064fd29e84498120e7cc6e","58064fd29e84498120e7cc6d","58064fd29e84498120e7cc6f","58064fd29e84498120e7cc70","58064fd29e84498120e7cc71","58064fd69e84498120e7cc72","58064fd69e84498120e7cc73","58064fd69e84498120e7cc74","58064fd79e84498120e7cc75","58064fd79e84498120e7cc76","58064fd79e84498120e7cc79","58064fd79e84498120e7cc78","58064fd79e84498120e7cc77","58064fd79e84498120e7cc7a","58064fd89e84498120e7cc7b","58064fd89e84498120e7cc7c","58064fd89e84498120e7cc7d","58064fd89e84498120e7cc7e","58064fd89e84498120e7cc80","58064fd89e84498120e7cc7f","58064fd99e84498120e7cc81","58064fdb9e84498120e7cc82","58064fdb9e84498120e7cc83","58064fdb9e84498120e7cc84","58064fdb9e84498120e7cc85","58064fdb9e84498120e7cc86","58064fdd9e84498120e7cc88","58064fdd9e84498120e7cc87","58064fdd9e84498120e7cc89","58064fde9e84498120e7cc8a","58064fe39e84498120e7cc8b","58064fe39e84498120e7cc8c","58064fe39e84498120e7cc8e","58064fe39e84498120e7cc90","58064fe39e84498120e7cc8d","58064fe39e84498120e7cc8f","58064fe39e84498120e7cc91","58064fe59e84498120e7cc92","58064fe59e84498120e7cc93","58064fe59e84498120e7cc94","58064fe59e84498120e7cc98","58064fe59e84498120e7cc97","58064fe59e84498120e7cc96","58064fe59e84498120e7cc95","58064fe59e84498120e7cc99","58064fe59e84498120e7cc9a","58064fe89e84498120e7cc9b","58064fe89e84498120e7cc9c","58064fe89e84498120e7cc9d","58064fe89e84498120e7cc9e","58064fe89e84498120e7cca0","58064fe89e84498120e7cc9f","58064fe89e84498120e7cca2","58064fe89e84498120e7cca1","58064fe89e84498120e7cca3","58064fea9e84498120e7cca4","58064fea9e84498120e7cca5","58064fea9e84498120e7cca6","58064fea9e84498120e7cca7","58064fea9e84498120e7cca8","58064fea9e84498120e7cca9","58064fea9e84498120e7ccaa","58064feb9e84498120e7ccab","58064fee9e84498120e7ccac","58064fee9e84498120e7ccae","58064fee9e84498120e7ccaf","58064fee9e84498120e7ccad","58064fee9e84498120e7ccb0","58064fee9e84498120e7ccb3","58064fee9e84498120e7ccb2","58064fee9e84498120e7ccb1","58064fee9e84498120e7ccb4","58064ff19e84498120e7ccb5","58064ff19e84498120e7ccb7","58064ff19e84498120e7ccb6","58064ff19e84498120e7ccb8","58064ff19e84498120e7ccb9","58064ff19e84498120e7ccbb","58064ff19e84498120e7ccba","58064ff19e84498120e7ccbc","58064ff19e84498120e7ccbd","58064ff19e84498120e7ccbe","58064ff39e84498120e7ccbf","58064ff39e84498120e7ccc0","58064ff39e84498120e7ccc1","58064ff39e84498120e7ccc2","58064ff49e84498120e7ccc4","58064ff39e84498120e7ccc3","58064ff49e84498120e7ccc5","58064ff49e84498120e7ccc6","58064ff49e84498120e7ccc7","58064ff99e84498120e7ccc8","58064ff99e84498120e7ccc9","58064ff99e84498120e7ccca","58064ff99e84498120e7cccb","58064ff99e84498120e7cccc","58064ff99e84498120e7cccd","58064ff99e84498120e7ccce","58064ff99e84498120e7cccf","58064ff99e84498120e7ccd0","58064ffe9e84498120e7ccd1","58064ffe9e84498120e7ccd2","58064ffe9e84498120e7ccd3","58064ffe9e84498120e7ccd6","58064ffe9e84498120e7ccd5","58064ffe9e84498120e7ccd4","58064fff9e84498120e7ccd7","58064fff9e84498120e7ccd8","580650029e84498120e7ccd9","580650029e84498120e7ccda","580650029e84498120e7ccdb","580650029e84498120e7ccdc","580650029e84498120e7ccde","580650029e84498120e7ccdd","580650029e84498120e7ccdf","580650029e84498120e7cce0","580650049e84498120e7cce1","580650049e84498120e7cce2","580650049e84498120e7cce3","580650049e84498120e7cce5","580650049e84498120e7cce6","580650049e84498120e7cce7","580650049e84498120e7cce4","580650049e84498120e7cce8","580650059e84498120e7ccea","580650059e84498120e7cce9","580650069e84498120e7cceb","580650069e84498120e7ccec","580650069e84498120e7ccee","580650069e84498120e7cced","580650069e84498120e7ccef","580650069e84498120e7ccf0","580650069e84498120e7ccf1","580650079e84498120e7ccf2","580650079e84498120e7ccf3","580650089e84498120e7ccf4","580650089e84498120e7ccf5","580650089e84498120e7ccf6","580650089e84498120e7ccf7","580650089e84498120e7ccf9","580650089e84498120e7ccf8","580650089e84498120e7ccfa","580650089e84498120e7ccfb","580650089e84498120e7ccfc","5806500a9e84498120e7ccfd","5806500a9e84498120e7ccfe","5806500a9e84498120e7cd01","5806500a9e84498120e7cd00","5806500a9e84498120e7cd04","5806500a9e84498120e7cd08","5806500a9e84498120e7cd06","5806500a9e84498120e7cd0c","5806500a9e84498120e7cd0a","5806500a9e84498120e7cd0e","580650129e84498120e7cd0f","580650129e84498120e7cd11","580650129e84498120e7cd10","580650129e84498120e7cd12","580650129e84498120e7cd13","580650129e84498120e7cd15","580650129e84498120e7cd14","580650189e84498120e7cd16","580650189e84498120e7cd17","580650189e84498120e7cd18","580650189e84498120e7cd19","580650189e84498120e7cd1a","580650189e84498120e7cd1b","5806501b9e84498120e7cd1c","5806501b9e84498120e7cd1d","5806501b9e84498120e7cd1e","5806501b9e84498120e7cd1f","5806501c9e84498120e7cd20","5806501c9e84498120e7cd21","5806501e9e84498120e7cd22","5806501e9e84498120e7cd23","5806501e9e84498120e7cd24","5806501e9e84498120e7cd25","5806501e9e84498120e7cd26","5806501f9e84498120e7cd27","5806501f9e84498120e7cd28","580650219e84498120e7cd29","580650219e84498120e7cd2b","580650219e84498120e7cd2d","580650219e84498120e7cd2a","580650219e84498120e7cd2c","580650219e84498120e7cd2e","580650249e84498120e7cd2f","580650249e84498120e7cd30","580650249e84498120e7cd31","580650249e84498120e7cd32","580650249e84498120e7cd33","580650249e84498120e7cd35","580650249e84498120e7cd34","580650249e84498120e7cd36","580650269e84498120e7cd37","580650269e84498120e7cd38","580650269e84498120e7cd39","580650269e84498120e7cd3a","580650269e84498120e7cd3c","580650269e84498120e7cd3b","580650269e84498120e7cd3d","580650269e84498120e7cd3e","580650289e84498120e7cd3f","580650299e84498120e7cd40","580650299e84498120e7cd41","580650299e84498120e7cd42","580650299e84498120e7cd43","5806502c9e84498120e7cd44","5806502c9e84498120e7cd45","5806502c9e84498120e7cd46","580650349e84498120e7cd47","580650349e84498120e7cd49","580650349e84498120e7cd48","580650349e84498120e7cd4a","580650379e84498120e7cd4e","580650379e84498120e7cd4d","580650379e84498120e7cd4c","580650379e84498120e7cd4b","580650379e84498120e7cd4f","580650379e84498120e7cd50","580650389e84498120e7cd51","5806503a9e84498120e7cd52","5806503a9e84498120e7cd53","5806503a9e84498120e7cd54","5806503a9e84498120e7cd55","5806503b9e84498120e7cd56","5806503b9e84498120e7cd59","5806503b9e84498120e7cd58","5806503b9e84498120e7cd57","5806503b9e84498120e7cd5a","5806503d9e84498120e7cd5b","5806503d9e84498120e7cd5c","5806503d9e84498120e7cd5d","5806503d9e84498120e7cd5e","5806503d9e84498120e7cd5f","5806503f9e84498120e7cd60","5806503f9e84498120e7cd61","5806503f9e84498120e7cd62","5806503f9e84498120e7cd64","5806503f9e84498120e7cd63","580650419e84498120e7cd66","580650419e84498120e7cd65","580650419e84498120e7cd67","580650419e84498120e7cd68","580650419e84498120e7cd69","580650419e84498120e7cd6a","580650459e84498120e7cd6b","580650459e84498120e7cd6c","580650459e84498120e7cd6d","580650459e84498120e7cd6e","580650459e84498120e7cd6f","580650459e84498120e7cd70","580650469e84498120e7cd71","580650469e84498120e7cd72","580650469e84498120e7cd73","580650479e84498120e7cd74","580650479e84498120e7cd75","580650479e84498120e7cd76","580650489e84498120e7cd77","580650489e84498120e7cd78","580650489e84498120e7cd79","580650489e84498120e7cd7a","580650489e84498120e7cd7b","580650489e84498120e7cd7c","5806504d9e84498120e7cd7d","5806504d9e84498120e7cd7e","5806504d9e84498120e7cd7f","5806504d9e84498120e7cd81","5806504d9e84498120e7cd80","5806504f9e84498120e7cd82","5806504f9e84498120e7cd83","5806504f9e84498120e7cd84","5806504f9e84498120e7cd85","580650509e84498120e7cd86","580650509e84498120e7cd87","580650529e84498120e7cd88","580650529e84498120e7cd89","580650529e84498120e7cd8a","580650529e84498120e7cd8b","580650569e84498120e7cd8c","580650569e84498120e7cd8d","580650569e84498120e7cd8e","580650579e84498120e7cd8f","580650579e84498120e7cd90","580650599e84498120e7cd91","580650599e84498120e7cd92","580650599e84498120e7cd93","580650599e84498120e7cd94","580650599e84498120e7cd95","580650609e84498120e7cd96","580650609e84498120e7cd97","580650609e84498120e7cd98","580650609e84498120e7cd99","580650609e84498120e7cd9a","580650609e84498120e7cd9b","580650609e84498120e7cd9c","580650629e84498120e7cd9d","580650639e84498120e7cd9e","580650639e84498120e7cda0","580650639e84498120e7cd9f","580650639e84498120e7cda1","580650639e84498120e7cda2","580650639e84498120e7cda3","580650669e84498120e7cda4","580650669e84498120e7cda5","580650669e84498120e7cda6","580650669e84498120e7cda7","580650669e84498120e7cda8","580650669e84498120e7cda9","580650669e84498120e7cdaa","580650699e84498120e7cdab","580650699e84498120e7cdac","580650699e84498120e7cdae","580650699e84498120e7cdad","580650699e84498120e7cdb1","580650699e84498120e7cdb0","580650699e84498120e7cdaf","580650699e84498120e7cdb2","580650699e84498120e7cdb3","5806506b9e84498120e7cdb4","5806506b9e84498120e7cdb5","5806506b9e84498120e7cdb6","5806506c9e84498120e7cdb7","5806506c9e84498120e7cdb8","5806506c9e84498120e7cdb9","5806506e9e84498120e7cdba","5806506e9e84498120e7cdbb","5806506e9e84498120e7cdbc","5806506f9e84498120e7cdbe","5806506f9e84498120e7cdbd","580650719e84498120e7cdbf","580650719e84498120e7cdc0","580650719e84498120e7cdc1","580650719e84498120e7cdc2","580650749e84498120e7cdc3","580650749e84498120e7cdc4","580650749e84498120e7cdc5","580650759e84498120e7cdc6","580650789e84498120e7cdc8","580650789e84498120e7cdc7","580650789e84498120e7cdca","580650789e84498120e7cdc9","580650789e84498120e7cdcb","580650789e84498120e7cdcc","5806507b9e84498120e7cdcd","5806507b9e84498120e7cdce","5806507b9e84498120e7cdcf","5806507b9e84498120e7cdd0","5806507b9e84498120e7cdd1","5806507e9e84498120e7cdd2","5806507e9e84498120e7cdd3","5806507e9e84498120e7cdd4","5806507e9e84498120e7cdd5","5806507e9e84498120e7cdd6","580650839e84498120e7cdd7","580650839e84498120e7cdd8","580650839e84498120e7cdd9","580650889e84498120e7cdda","580650889e84498120e7cddb","5806508a9e84498120e7cddc","5806508a9e84498120e7cddd","5806508d9e84498120e7cdde","5806508d9e84498120e7cddf","5806508d9e84498120e7cde0","5806508d9e84498120e7cde1","5806509d9e84498120e7cde2","5806509d9e84498120e7cde3","5806509d9e84498120e7cde5","5806509d9e84498120e7cde4","5806509d9e84498120e7cde6","5806509d9e84498120e7cde7","5806509f9e84498120e7cde8","5806509f9e84498120e7cde9","5806509f9e84498120e7cdea","5806509f9e84498120e7cdeb","5806509f9e84498120e7cdec","5806509f9e84498120e7cded","5806509f9e84498120e7cdee","580650a29e84498120e7cdef","580650a29e84498120e7cdf0","580650a29e84498120e7cdf1","580650a29e84498120e7cdf2","580650a29e84498120e7cdf3","580650a49e84498120e7cdf4","580650a49e84498120e7cdf5","580650a49e84498120e7cdf6","580650a49e84498120e7cdf7","580650a49e84498120e7cdf8","580650a49e84498120e7cdf9","580650a69e84498120e7cdfa","580650a69e84498120e7cdfb","580650a69e84498120e7cdfc","580650a69e84498120e7cdfd","580650a69e84498120e7cdfe","580650a79e84498120e7cdff","580650a89e84498120e7ce00","580650a89e84498120e7ce01","580650a89e84498120e7ce02","580650a99e84498120e7ce03","580650a99e84498120e7ce04","580650a99e84498120e7ce05","580650a99e84498120e7ce06","580650a99e84498120e7ce07","580650ab9e84498120e7ce08","580650ab9e84498120e7ce09","580650ab9e84498120e7ce0a","580650ab9e84498120e7ce0b","580650ab9e84498120e7ce0c","580650ab9e84498120e7ce0d","580650ab9e84498120e7ce0e","580650ab9e84498120e7ce0f","580650ad9e84498120e7ce11","580650ad9e84498120e7ce10","580650ad9e84498120e7ce12","580650ae9e84498120e7ce13","580650ae9e84498120e7ce15","580650ae9e84498120e7ce14","580650b19e84498120e7ce16","580650b19e84498120e7ce17","580650b19e84498120e7ce18","580650b19e84498120e7ce19","580650b19e84498120e7ce1a","580650b19e84498120e7ce1b","580650b39e84498120e7ce1c","580650b39e84498120e7ce1d","580650b39e84498120e7ce1e","580650b49e84498120e7ce20","580650b49e84498120e7ce1f","580650b69e84498120e7ce21","580650b69e84498120e7ce22","580650b69e84498120e7ce23","580650b69e84498120e7ce24","580650b69e84498120e7ce25","580650b69e84498120e7ce26","580650b69e84498120e7ce27","580650b69e84498120e7ce28","580650b99e84498120e7ce29","580650b99e84498120e7ce2a","580650b99e84498120e7ce2b","580650b99e84498120e7ce2c","580650b99e84498120e7ce2d","580650b99e84498120e7ce2e","580650be9e84498120e7ce2f","580650be9e84498120e7ce30","580650be9e84498120e7ce31","580650c29e84498120e7ce33","580650c29e84498120e7ce32","580650c29e84498120e7ce34","580650c29e84498120e7ce35","580650c59e84498120e7ce36","580650c59e84498120e7ce37","580650c59e84498120e7ce38","580650c59e84498120e7ce3a","580650c59e84498120e7ce39","580650c59e84498120e7ce3b","580650c79e84498120e7ce3c","580650c79e84498120e7ce3d","580650c79e84498120e7ce3e","580650c79e84498120e7ce3f","580650c79e84498120e7ce40","580650c79e84498120e7ce41","580650ca9e84498120e7ce42","580650cb9e84498120e7ce43","580650cb9e84498120e7ce44","580650ce9e84498120e7ce45","580650ce9e84498120e7ce46","580650ce9e84498120e7ce47","580650d19e84498120e7ce48","580650d19e84498120e7ce4a","580650d19e84498120e7ce49","580650d19e84498120e7ce4b","580650d39e84498120e7ce4c","580650d39e84498120e7ce4d","580650d39e84498120e7ce4e","580650d49e84498120e7ce4f","580650d49e84498120e7ce50","580650d49e84498120e7ce51","580650d59e84498120e7ce52","580650d69e84498120e7ce53","580650d69e84498120e7ce54","580650d69e84498120e7ce55","580650d69e84498120e7ce56","580650d69e84498120e7ce57","580650d79e84498120e7ce58","580650d79e84498120e7ce59","580650d79e84498120e7ce5a","580650d79e84498120e7ce5b","580650d89e84498120e7ce5d","580650d89e84498120e7ce5c","580650d89e84498120e7ce5e","580650da9e84498120e7ce5f","580650da9e84498120e7ce60","580650da9e84498120e7ce61","580650da9e84498120e7ce62","580650da9e84498120e7ce63","580650da9e84498120e7ce64","580650dc9e84498120e7ce67","580650dc9e84498120e7ce66","580650dc9e84498120e7ce65","580650dc9e84498120e7ce68","580650dc9e84498120e7ce69","580650de9e84498120e7ce6a","580650de9e84498120e7ce6b","580650de9e84498120e7ce6d","580650de9e84498120e7ce6c","580650de9e84498120e7ce6e","580650e79e84498120e7ce6f","580650e79e84498120e7ce70","580650e79e84498120e7ce71","580650e79e84498120e7ce72","580650e79e84498120e7ce73","580650e89e84498120e7ce74","580650e99e84498120e7ce76","580650e99e84498120e7ce75","580650e99e84498120e7ce77","580650e99e84498120e7ce78","580650e99e84498120e7ce79","580650ec9e84498120e7ce7a","580650ec9e84498120e7ce7b","580650ec9e84498120e7ce7c","580650ec9e84498120e7ce7d","580650ec9e84498120e7ce7e","580650ec9e84498120e7ce7f","580650ee9e84498120e7ce81","580650ee9e84498120e7ce80","580650ee9e84498120e7ce82","580650ee9e84498120e7ce83","580650ef9e84498120e7ce84","580650f59e84498120e7ce85","580650f59e84498120e7ce86","580650f59e84498120e7ce87","580650f59e84498120e7ce88","580650f89e84498120e7ce89","580650f89e84498120e7ce8a","580650f89e84498120e7ce8b","580650f89e84498120e7ce8c","580650fb9e84498120e7ce8d","580650fc9e84498120e7ce8e","580650fc9e84498120e7ce8f","580650fc9e84498120e7ce90","580650fe9e84498120e7ce91","580650ff9e84498120e7ce92","580650ff9e84498120e7ce94","580650ff9e84498120e7ce93","580651019e84498120e7ce95","580651019e84498120e7ce96","580651019e84498120e7ce97","580651019e84498120e7ce98","580651039e84498120e7ce99","580651039e84498120e7ce9a","580651039e84498120e7ce9b","580651039e84498120e7ce9c","580651059e84498120e7ce9d","580651069e84498120e7ce9e","580651089e84498120e7ce9f","5806510b9e84498120e7cea0","5806510b9e84498120e7cea1","5806510e9e84498120e7cea2","5806510e9e84498120e7cea3","5806510e9e84498120e7cea4","5806510e9e84498120e7cea5","580651119e84498120e7cea6","580651119e84498120e7cea7","580651119e84498120e7cea8","580651119e84498120e7cea9","580651139e84498120e7ceaa","580651139e84498120e7ceab","580651139e84498120e7ceac","580651169e84498120e7cead","580651169e84498120e7ceae","580651169e84498120e7ceaf","580651189e84498120e7ceb0","580651189e84498120e7ceb2","580651189e84498120e7ceb1","580651189e84498120e7ceb3","58065151868f85812eb9f14f","58065151868f85812eb9f151","58065151868f85812eb9f150","58065151868f85812eb9f152","58065151868f85812eb9f153","58065152868f85812eb9f154","58065152868f85812eb9f155","58065159868f85812eb9f156","58065159868f85812eb9f157","58065159868f85812eb9f158","58065159868f85812eb9f15a","58065159868f85812eb9f159","58065159868f85812eb9f15b","58065159868f85812eb9f15c","5806515a868f85812eb9f15e","5806515a868f85812eb9f15d","5806515a868f85812eb9f15f","5806515a868f85812eb9f161","5806515a868f85812eb9f163","5806515a868f85812eb9f160","5806515a868f85812eb9f162","5806515a868f85812eb9f165","5806515a868f85812eb9f164","5806515a868f85812eb9f166","5806515a868f85812eb9f167","580537843ca7247be13fe477","5806456254027480830ccd6f","5806515f868f85812eb9f168","58065160868f85812eb9f16a","5806515f868f85812eb9f169","58065160868f85812eb9f16c","58065160868f85812eb9f16b","58065160868f85812eb9f16d","58065160868f85812eb9f16f","58065160868f85812eb9f16e","58065160868f85812eb9f171","58065160868f85812eb9f170","58065160868f85812eb9f172","58065160868f85812eb9f173","58065160868f85812eb9f176","58065160868f85812eb9f175","58065160868f85812eb9f174","58065160868f85812eb9f177","58065160868f85812eb9f178","58065160868f85812eb9f179","580537843ca7247be13fe48f","58065165868f85812eb9f17a","58065165868f85812eb9f17d","58065165868f85812eb9f17c","58065165868f85812eb9f17b","58065165868f85812eb9f17e","58065165868f85812eb9f17f","58065165868f85812eb9f182","58065165868f85812eb9f184","58065165868f85812eb9f181","58065165868f85812eb9f180","58065165868f85812eb9f183","58065166868f85812eb9f186","58065165868f85812eb9f185","58065166868f85812eb9f188","58065166868f85812eb9f187","58065166868f85812eb9f189","58065166868f85812eb9f18a","58065166868f85812eb9f18b","58065166868f85812eb9f18d","58065166868f85812eb9f18c","58065166868f85812eb9f18e","58065180868f85812eb9f18f","58065180868f85812eb9f190","58065180868f85812eb9f191","58065180868f85812eb9f193","58065180868f85812eb9f192","58065180868f85812eb9f194","58065180868f85812eb9f195","58065180868f85812eb9f197","58065180868f85812eb9f196","58065181868f85812eb9f199","58065181868f85812eb9f198","58065181868f85812eb9f19a","58065181868f85812eb9f19b","58065181868f85812eb9f19c","58065181868f85812eb9f19d","58065181868f85812eb9f19f","58065181868f85812eb9f19e","58065181868f85812eb9f1a2","58065181868f85812eb9f1a1","58065181868f85812eb9f1a0","58065181868f85812eb9f1a3","58065181868f85812eb9f1a4","58065181868f85812eb9f1a5","58065181868f85812eb9f1a6","58065181868f85812eb9f1a7","58065181868f85812eb9f1a9","58065181868f85812eb9f1a8","58065181868f85812eb9f1aa","58065181868f85812eb9f1ac","58065181868f85812eb9f1ab","58065181868f85812eb9f1ae","58065181868f85812eb9f1ad","58065182868f85812eb9f1b1","58065182868f85812eb9f1af","58065182868f85812eb9f1b0","58065182868f85812eb9f1b2","580537843ca7247be13fe4aa","580651bf868f85812eb9f1b3","580651bf868f85812eb9f1b4","580651bf868f85812eb9f1b5","580651bf868f85812eb9f1b6","580651bf868f85812eb9f1b7","580651bf868f85812eb9f1b8","580651bf868f85812eb9f1b9","580651bf868f85812eb9f1ba","580651bf868f85812eb9f1bc","580651bf868f85812eb9f1bb","580651bf868f85812eb9f1bd","580651bf868f85812eb9f1be","580651c0868f85812eb9f1bf","580651c0868f85812eb9f1c0","580651c1868f85812eb9f1c2","580651c1868f85812eb9f1c1","580651c1868f85812eb9f1c4","580651c1868f85812eb9f1c3","580651c1868f85812eb9f1c5","580651c1868f85812eb9f1c7","580651c1868f85812eb9f1c9","580651c1868f85812eb9f1c6","580651c1868f85812eb9f1c8","580651c1868f85812eb9f1ca","580651c1868f85812eb9f1cc","580651c1868f85812eb9f1ce","580651c1868f85812eb9f1cb","580651c1868f85812eb9f1cd","580651c1868f85812eb9f1d1","580651c1868f85812eb9f1d0","580651c1868f85812eb9f1cf","580651c1868f85812eb9f1d2","580651c1868f85812eb9f1d4","580651c1868f85812eb9f1d3","580651c1868f85812eb9f1d5","580537843ca7247be13fe48d","580537843ca7247be13fe47d","580537833ca7247be13fe466","580651ce868f85812eb9f1d6","580651ce868f85812eb9f1d7","580651ce868f85812eb9f1db","580651ce868f85812eb9f1da","580651ce868f85812eb9f1d9","580651ce868f85812eb9f1d8","580651ce868f85812eb9f1dc","580651ce868f85812eb9f1dd","580651ce868f85812eb9f1df","580651ce868f85812eb9f1de","580651ce868f85812eb9f1e0","580651ce868f85812eb9f1e2","580651ce868f85812eb9f1e1","580651ce868f85812eb9f1e3","580651ce868f85812eb9f1e7","580651ce868f85812eb9f1e4","580651ce868f85812eb9f1e6","580651ce868f85812eb9f1e5","580651ce868f85812eb9f1e8","580651ce868f85812eb9f1eb","580651ce868f85812eb9f1ea","580651ce868f85812eb9f1e9","580651ce868f85812eb9f1ec","580651ce868f85812eb9f1ed","580651ce868f85812eb9f1ee","580651cf868f85812eb9f1ef","580651cf868f85812eb9f1f0","580651cf868f85812eb9f1f2","580651cf868f85812eb9f1f1","580651cf868f85812eb9f1f3","580651d0868f85812eb9f1f7","580651d0868f85812eb9f1f5","580651d0868f85812eb9f1f6","580651d0868f85812eb9f1f4","580537843ca7247be13fe482","580537843ca7247be13fe4a9","580537843ca7247be13fe4ae","580651e8868f85812eb9f1f9","580651e8868f85812eb9f1f8","580651e8868f85812eb9f1fb","580651e8868f85812eb9f1fd","580651e8868f85812eb9f1fa","580651e8868f85812eb9f1fc","580651e8868f85812eb9f1fe","580651e8868f85812eb9f1ff","580651e8868f85812eb9f201","580651e8868f85812eb9f200","580651e8868f85812eb9f202","580651e8868f85812eb9f205","580651e8868f85812eb9f204","580651e8868f85812eb9f203","580651e8868f85812eb9f206","580651e8868f85812eb9f207","580651e9868f85812eb9f209","580651e8868f85812eb9f208","580651e9868f85812eb9f20a","580651e9868f85812eb9f20b","580651e9868f85812eb9f20d","580651e9868f85812eb9f20c","580651e9868f85812eb9f20e","580651ea868f85812eb9f20f","580651ea868f85812eb9f210","580651ea868f85812eb9f212","580651ea868f85812eb9f213","580651ea868f85812eb9f211","580651ea868f85812eb9f214","580651ea868f85812eb9f215","580651ea868f85812eb9f216","580651ea868f85812eb9f217","580651f8868f85812eb9f218","580651f8868f85812eb9f219","580651f8868f85812eb9f21a","580651f8868f85812eb9f21b","580651f9868f85812eb9f21c","580651f9868f85812eb9f21f","580651f9868f85812eb9f21e","580651f9868f85812eb9f21d","580651f9868f85812eb9f220","580651f9868f85812eb9f221","580651f9868f85812eb9f223","580651f9868f85812eb9f222","580651f9868f85812eb9f224","580651f9868f85812eb9f225","580651f9868f85812eb9f228","580651f9868f85812eb9f226","580651f9868f85812eb9f227","580651f9868f85812eb9f229","580651f9868f85812eb9f22a","580651fa868f85812eb9f22c","580651fa868f85812eb9f22b","580651fa868f85812eb9f22e","580651fa868f85812eb9f22d","580651fa868f85812eb9f22f","580651fa868f85812eb9f230","580651fa868f85812eb9f231","580651fa868f85812eb9f234","580651fa868f85812eb9f233","580651fa868f85812eb9f232","580651fa868f85812eb9f236","580651fa868f85812eb9f235","580651fb868f85812eb9f237","580651fb868f85812eb9f239","580651fb868f85812eb9f238","580651fb868f85812eb9f23b","580651fb868f85812eb9f23c","580651fb868f85812eb9f23a","580651fb868f85812eb9f23d","580537843ca7247be13fe47e","580537853ca7247be13fe4d1","58065202868f85812eb9f23e","58065212868f85812eb9f23f","58065212868f85812eb9f241","58065212868f85812eb9f240","58065212868f85812eb9f242","58065212868f85812eb9f243","58065212868f85812eb9f244","58065212868f85812eb9f245","58065212868f85812eb9f248","58065212868f85812eb9f247","58065212868f85812eb9f24a","58065212868f85812eb9f246","58065212868f85812eb9f249","58065212868f85812eb9f24c","58065212868f85812eb9f24b","58065212868f85812eb9f24e","58065212868f85812eb9f24d","58065212868f85812eb9f24f","58065213868f85812eb9f252","58065213868f85812eb9f251","58065213868f85812eb9f250","58065213868f85812eb9f253","58065213868f85812eb9f254","58065213868f85812eb9f256","58065213868f85812eb9f255","58065213868f85812eb9f257","58065213868f85812eb9f258","58065214868f85812eb9f25a","58065214868f85812eb9f259","58065214868f85812eb9f25c","58065214868f85812eb9f25b","58065214868f85812eb9f25d","58065214868f85812eb9f25f","58065214868f85812eb9f25e","5806522a868f85812eb9f261","5806522a868f85812eb9f260","5806522a868f85812eb9f262","5806522a868f85812eb9f264","5806522a868f85812eb9f263","5806522a868f85812eb9f265","5806522a868f85812eb9f267","5806522a868f85812eb9f266","5806522a868f85812eb9f268","5806522b868f85812eb9f26a","5806522b868f85812eb9f269","5806522b868f85812eb9f26c","5806522b868f85812eb9f26b","5806522b868f85812eb9f26e","5806522b868f85812eb9f26d","5806522b868f85812eb9f26f","5806522b868f85812eb9f270","5806522b868f85812eb9f272","5806522b868f85812eb9f271","5806522b868f85812eb9f274","5806522b868f85812eb9f273","5806522b868f85812eb9f277","5806522b868f85812eb9f276","5806522b868f85812eb9f275","5806522b868f85812eb9f278","5806522b868f85812eb9f279","5806522b868f85812eb9f27b","5806522b868f85812eb9f27a","5806522b868f85812eb9f27c","5806522c868f85812eb9f27d","5806522c868f85812eb9f280","5806522c868f85812eb9f27f","5806522c868f85812eb9f27e","5806522c868f85812eb9f281","5806522c868f85812eb9f282","5806522c868f85812eb9f283","580537833ca7247be13fe462","580537843ca7247be13fe49d","580537853ca7247be13fe4ca","58065234868f85812eb9f285","58065234868f85812eb9f284","58065234868f85812eb9f286","58065234868f85812eb9f287","58065234868f85812eb9f288","58065234868f85812eb9f289","58065234868f85812eb9f28a","58065234868f85812eb9f28b","58065234868f85812eb9f28c","58065234868f85812eb9f28d","58065235868f85812eb9f28f","58065235868f85812eb9f28e","58065235868f85812eb9f291","58065235868f85812eb9f292","58065235868f85812eb9f290","58065235868f85812eb9f295","58065235868f85812eb9f294","58065235868f85812eb9f297","58065235868f85812eb9f293","58065235868f85812eb9f298","58065235868f85812eb9f296","58065235868f85812eb9f29a","58065235868f85812eb9f299","58065235868f85812eb9f29b","58065235868f85812eb9f29d","58065235868f85812eb9f29e","58065235868f85812eb9f29f","58065235868f85812eb9f29c","58065236868f85812eb9f2a0","580537843ca7247be13fe47f","58065254868f85812eb9f2a1","58065254868f85812eb9f2a3","58065254868f85812eb9f2a2","58065254868f85812eb9f2a4","58065254868f85812eb9f2a5","58065254868f85812eb9f2a6","58065254868f85812eb9f2a9","58065254868f85812eb9f2a8","58065254868f85812eb9f2a7","58065254868f85812eb9f2aa","58065254868f85812eb9f2ab","58065254868f85812eb9f2ae","58065254868f85812eb9f2af","58065254868f85812eb9f2ac","58065254868f85812eb9f2ad","58065254868f85812eb9f2b0","58065254868f85812eb9f2b2","58065254868f85812eb9f2b3","58065254868f85812eb9f2b4","58065254868f85812eb9f2b1","58065254868f85812eb9f2b5","58065254868f85812eb9f2b9","58065254868f85812eb9f2b6","58065254868f85812eb9f2b8","58065254868f85812eb9f2ba","58065254868f85812eb9f2b7","58065254868f85812eb9f2bb","58065254868f85812eb9f2bc","58065254868f85812eb9f2bd","58065255868f85812eb9f2be","5806529b868f85812eb9f2bf","5806529b868f85812eb9f2c0","5806529b868f85812eb9f2c1","5806529b868f85812eb9f2c2","5806529b868f85812eb9f2c3","5806529b868f85812eb9f2c5","5806529b868f85812eb9f2c4","5806529b868f85812eb9f2c6","5806529b868f85812eb9f2c7","5806529c868f85812eb9f2ca","5806529c868f85812eb9f2c8","5806529c868f85812eb9f2c9","5806529c868f85812eb9f2cc","5806529c868f85812eb9f2cb","5806529c868f85812eb9f2ce","5806529c868f85812eb9f2cd","5806529c868f85812eb9f2cf","5806529c868f85812eb9f2d0","5806529c868f85812eb9f2d2","5806529c868f85812eb9f2d1","5806529c868f85812eb9f2d3","5806529c868f85812eb9f2d4","5806529c868f85812eb9f2d5","5806529c868f85812eb9f2d6","5806529c868f85812eb9f2d7","5806529d868f85812eb9f2d9","5806529c868f85812eb9f2d8","5806529d868f85812eb9f2da","5806529d868f85812eb9f2db","5806529d868f85812eb9f2dc","5806529d868f85812eb9f2dd","5806529d868f85812eb9f2e1","5806529d868f85812eb9f2df","5806529d868f85812eb9f2de","5806529d868f85812eb9f2e0","5806529d868f85812eb9f2e2","5806529d868f85812eb9f2e3","5806529e868f85812eb9f2e6","5806529e868f85812eb9f2e5","5806529d868f85812eb9f2e4","580652a6868f85812eb9f2e7","580652a6868f85812eb9f2e8","580652a6868f85812eb9f2e9","580652a6868f85812eb9f2ea","580652a6868f85812eb9f2eb","580652a6868f85812eb9f2ec","580652a7868f85812eb9f2f0","580652a7868f85812eb9f2ee","580652a7868f85812eb9f2ef","580652a7868f85812eb9f2ed","580652a7868f85812eb9f2f1","580652a7868f85812eb9f2f2","580652a7868f85812eb9f2f3","580652a7868f85812eb9f2f4","580652a7868f85812eb9f2f5","580652a7868f85812eb9f2f7","580652a7868f85812eb9f2f6","580652a7868f85812eb9f2f8","580652a7868f85812eb9f2fc","580652a7868f85812eb9f2fb","580652a7868f85812eb9f2fa","580652a7868f85812eb9f2f9","580652a7868f85812eb9f2fd","580652a8868f85812eb9f2fe","580652a8868f85812eb9f2ff","580652a8868f85812eb9f301","580652a8868f85812eb9f300","580652a8868f85812eb9f302","580652a8868f85812eb9f304","580652a8868f85812eb9f303","580652a9868f85812eb9f307","580652a9868f85812eb9f306","580652a9868f85812eb9f309","580652a9868f85812eb9f308","580652a9868f85812eb9f305","580652a9868f85812eb9f30a","580652a9868f85812eb9f30b","580537843ca7247be13fe47a","580652b5868f85812eb9f30f","580652b5868f85812eb9f30d","580652b5868f85812eb9f30e","580652b5868f85812eb9f30c","580652b5868f85812eb9f310","580652b5868f85812eb9f312","580652b5868f85812eb9f311","580652b5868f85812eb9f313","580652b5868f85812eb9f314","580652b5868f85812eb9f316","580652b5868f85812eb9f317","580652b5868f85812eb9f315","580652b5868f85812eb9f31b","580652b5868f85812eb9f31a","580652b5868f85812eb9f318","580652b5868f85812eb9f31d","580652b5868f85812eb9f31c","580652b5868f85812eb9f319","580652b5868f85812eb9f31e","580652b5868f85812eb9f31f","580652b5868f85812eb9f321","580652b5868f85812eb9f320","580652b5868f85812eb9f323","580652b5868f85812eb9f324","580652b5868f85812eb9f322","580652b6868f85812eb9f326","580652b6868f85812eb9f325","580652b7868f85812eb9f328","580652b7868f85812eb9f32b","580652b7868f85812eb9f32a","580652b6868f85812eb9f327","580652b7868f85812eb9f329","580652b7868f85812eb9f32c","580652b7868f85812eb9f32f","580652b7868f85812eb9f32d","580652b7868f85812eb9f330","580652b7868f85812eb9f32e","580537843ca7247be13fe480","580652c6868f85812eb9f332","580652c6868f85812eb9f331","580652c6868f85812eb9f334","580652c6868f85812eb9f333","580652c6868f85812eb9f335","580652c6868f85812eb9f337","580652c6868f85812eb9f336","580652c6868f85812eb9f338","580652c7868f85812eb9f339","580652c7868f85812eb9f33a","580652c7868f85812eb9f33b","580652c7868f85812eb9f33c","580652c7868f85812eb9f33d","580652c7868f85812eb9f33f","580652c7868f85812eb9f33e","580652c7868f85812eb9f340","580652c7868f85812eb9f344","580652c7868f85812eb9f343","580652c7868f85812eb9f341","580652c7868f85812eb9f342","580652c7868f85812eb9f345","580652c7868f85812eb9f346","580652c7868f85812eb9f347","580652c7868f85812eb9f34a","580652c7868f85812eb9f348","580652c7868f85812eb9f349","580652c8868f85812eb9f34c","580652c8868f85812eb9f34b","580652c8868f85812eb9f34d","580652c9868f85812eb9f350","580652c9868f85812eb9f351","580652c8868f85812eb9f34f","580652c8868f85812eb9f34e","580652c9868f85812eb9f352","580652c9868f85812eb9f354","580652c9868f85812eb9f355","580652c9868f85812eb9f353","580537833ca7247be13fe46b","580537853ca7247be13fe4b2","580652e7868f85812eb9f356","580652e7868f85812eb9f35a","580652e7868f85812eb9f359","580652e7868f85812eb9f358","580652e7868f85812eb9f357","580652e7868f85812eb9f35b","580652e7868f85812eb9f35c","580652e7868f85812eb9f35e","580652e7868f85812eb9f35d","580652e8868f85812eb9f35f","580652e8868f85812eb9f361","580652e8868f85812eb9f362","580652e8868f85812eb9f363","580652e8868f85812eb9f360","580652e8868f85812eb9f364","580652e8868f85812eb9f365","580652e8868f85812eb9f366","580652e8868f85812eb9f36a","580652e8868f85812eb9f369","580652e8868f85812eb9f368","580652e8868f85812eb9f367","580652e8868f85812eb9f36b","580652e8868f85812eb9f36c","580652e8868f85812eb9f36d","580652e8868f85812eb9f36e","580652e8868f85812eb9f36f","580652e8868f85812eb9f370","580652e8868f85812eb9f371","580652e8868f85812eb9f372","580652e9868f85812eb9f373","580652e9868f85812eb9f375","580652e9868f85812eb9f374","580652e9868f85812eb9f377","580652e9868f85812eb9f376","580652e9868f85812eb9f378","580652e9868f85812eb9f379","580652f2868f85812eb9f37a","580652f3868f85812eb9f37b","580652f3868f85812eb9f37c","580652f3868f85812eb9f37d","580652f3868f85812eb9f37e","580652f3868f85812eb9f380","580652f3868f85812eb9f37f","580652f3868f85812eb9f381","580652f3868f85812eb9f382","580652f3868f85812eb9f384","580652f3868f85812eb9f383","580652f3868f85812eb9f386","580652f3868f85812eb9f385","580652f3868f85812eb9f388","580652f3868f85812eb9f387","580652f4868f85812eb9f389","580652f4868f85812eb9f38a","580652f4868f85812eb9f38b","580652f4868f85812eb9f38c","580652f4868f85812eb9f38e","580652f4868f85812eb9f38d","580652f4868f85812eb9f38f","580652f4868f85812eb9f390","580652f4868f85812eb9f391","580652f4868f85812eb9f393","580652f4868f85812eb9f395","580652f4868f85812eb9f396","580652f4868f85812eb9f392","580652f4868f85812eb9f394","580652f4868f85812eb9f397","580652f4868f85812eb9f399","580652f4868f85812eb9f39d","580652f4868f85812eb9f398","580652f4868f85812eb9f39c","580652f4868f85812eb9f39b","580652f4868f85812eb9f39a","58065303868f85812eb9f3a1","58065303868f85812eb9f3a0","58065303868f85812eb9f39f","58065303868f85812eb9f39e","58065303868f85812eb9f3a3","58065303868f85812eb9f3a2","58065303868f85812eb9f3a4","58065303868f85812eb9f3a5","58065303868f85812eb9f3a6","58065303868f85812eb9f3a8","58065303868f85812eb9f3a7","58065303868f85812eb9f3aa","58065303868f85812eb9f3a9","58065303868f85812eb9f3ac","58065303868f85812eb9f3ab","58065304868f85812eb9f3ad","58065304868f85812eb9f3af","58065304868f85812eb9f3ae","58065304868f85812eb9f3b0","58065304868f85812eb9f3b1","58065304868f85812eb9f3b2","58065304868f85812eb9f3b3","58065304868f85812eb9f3b4","58065304868f85812eb9f3b6","58065304868f85812eb9f3b5","58065304868f85812eb9f3b7","58065305868f85812eb9f3bd","58065304868f85812eb9f3b9","58065304868f85812eb9f3b8","58065305868f85812eb9f3bc","58065305868f85812eb9f3bb","58065305868f85812eb9f3ba","58065305868f85812eb9f3c0","58065305868f85812eb9f3bf","58065305868f85812eb9f3be","58065305868f85812eb9f3c1","580537853ca7247be13fe4d8","58065387cbfa7d81497fe762","58065388cbfa7d81497fe763","58065388cbfa7d81497fe765","58065388cbfa7d81497fe764","58065388cbfa7d81497fe766","58065388cbfa7d81497fe767","58065391cbfa7d81497fe768","5805375b3ca7247be13fe433","58065391cbfa7d81497fe76a","58065391cbfa7d81497fe769","58065391cbfa7d81497fe76c","58065391cbfa7d81497fe76b","58065391cbfa7d81497fe76d","58065391cbfa7d81497fe771","58065391cbfa7d81497fe770","58065391cbfa7d81497fe76f","58065391cbfa7d81497fe772","58065391cbfa7d81497fe76e","58065391cbfa7d81497fe773","58065391cbfa7d81497fe777","58065391cbfa7d81497fe776","58065391cbfa7d81497fe775","58065391cbfa7d81497fe774","58065391cbfa7d81497fe77a","58065391cbfa7d81497fe779","58065391cbfa7d81497fe778","58065391cbfa7d81497fe77b","580537843ca7247be13fe475","580537843ca7247be13fe4a2","5806539ccbfa7d81497fe77c","5806539ccbfa7d81497fe77d","5806539ccbfa7d81497fe781","5806539ccbfa7d81497fe77f","5806539ccbfa7d81497fe77e","5806539ccbfa7d81497fe780","5806539ccbfa7d81497fe782","5806539ccbfa7d81497fe784","5806539ccbfa7d81497fe783","5806539ccbfa7d81497fe786","5806539ccbfa7d81497fe785","5806539ccbfa7d81497fe78a","5806539ccbfa7d81497fe789","5806539ccbfa7d81497fe788","5806539ccbfa7d81497fe787","5806539ccbfa7d81497fe78b","5806539ccbfa7d81497fe78c","5806539ccbfa7d81497fe78f","5806539ccbfa7d81497fe78e","5806539ccbfa7d81497fe78d","5806539ccbfa7d81497fe790","580537853ca7247be13fe4c5","580537853ca7247be13fe4cc","580537833ca7247be13fe472","580653accbfa7d81497fe791","580653accbfa7d81497fe793","580653accbfa7d81497fe792","580653accbfa7d81497fe794","580653accbfa7d81497fe795","580653accbfa7d81497fe796","580653accbfa7d81497fe797","580653accbfa7d81497fe79a","580653accbfa7d81497fe799","580653accbfa7d81497fe798","580653accbfa7d81497fe79b","580653accbfa7d81497fe79d","580653accbfa7d81497fe79f","580653accbfa7d81497fe79e","580653accbfa7d81497fe79c","580653accbfa7d81497fe7a0","580653accbfa7d81497fe7a1","580653accbfa7d81497fe7a2","580653accbfa7d81497fe7a3","580537853ca7247be13fe4bd","580653b5cbfa7d81497fe7a4","580653b5cbfa7d81497fe7a6","580653b5cbfa7d81497fe7a5","580653b5cbfa7d81497fe7a7","580653b5cbfa7d81497fe7a8","580653b5cbfa7d81497fe7a9","580653b5cbfa7d81497fe7aa","580653b5cbfa7d81497fe7ad","580653b5cbfa7d81497fe7ac","580653b5cbfa7d81497fe7ab","580653b5cbfa7d81497fe7ae","580653b5cbfa7d81497fe7af","580653b5cbfa7d81497fe7b3","580653b5cbfa7d81497fe7b2","580653b5cbfa7d81497fe7b1","580653b5cbfa7d81497fe7b0","580653b5cbfa7d81497fe7b4","580653b5cbfa7d81497fe7b5","580653b5cbfa7d81497fe7b8","580653b5cbfa7d81497fe7b7","580653b5cbfa7d81497fe7b6","580653b5cbfa7d81497fe7b9","580653b5cbfa7d81497fe7bc","580653b5cbfa7d81497fe7bb","580653b5cbfa7d81497fe7ba","580653b5cbfa7d81497fe7bd","580653b5cbfa7d81497fe7be","580653b5cbfa7d81497fe7bf","580537853ca7247be13fe4c3","580653bfcbfa7d81497fe7c0","580653bfcbfa7d81497fe7c1","580653bfcbfa7d81497fe7c5","580653bfcbfa7d81497fe7c4","580653bfcbfa7d81497fe7c3","580653bfcbfa7d81497fe7c2","580653bfcbfa7d81497fe7c9","580653bfcbfa7d81497fe7c8","580653bfcbfa7d81497fe7c7","580653bfcbfa7d81497fe7c6","580653bfcbfa7d81497fe7ca","580653bfcbfa7d81497fe7cd","580653bfcbfa7d81497fe7cc","580653bfcbfa7d81497fe7cb","580653bfcbfa7d81497fe7cf","580653bfcbfa7d81497fe7ce","580653bfcbfa7d81497fe7d0","580653bfcbfa7d81497fe7d1","580653bfcbfa7d81497fe7d2","580653bfcbfa7d81497fe7d4","580653bfcbfa7d81497fe7d3","580653bfcbfa7d81497fe7d5","580653bfcbfa7d81497fe7d7","580653bfcbfa7d81497fe7d6","580653bfcbfa7d81497fe7d9","580653bfcbfa7d81497fe7d8","580653c0cbfa7d81497fe7da","580653c1cbfa7d81497fe7dc","580653c0cbfa7d81497fe7db","580653c1cbfa7d81497fe7dd","580537833ca7247be13fe467","580537843ca7247be13fe489","580653cccbfa7d81497fe7de","580653cccbfa7d81497fe7df","580653cccbfa7d81497fe7e0","580653cccbfa7d81497fe7e1","580653cccbfa7d81497fe7e2","580653cccbfa7d81497fe7e3","580653cccbfa7d81497fe7e7","580653cccbfa7d81497fe7e5","580653cccbfa7d81497fe7e6","580653cccbfa7d81497fe7e4","580653cccbfa7d81497fe7eb","580653cccbfa7d81497fe7ea","580653cccbfa7d81497fe7e9","580653cccbfa7d81497fe7ec","580653cccbfa7d81497fe7e8","580653cccbfa7d81497fe7ed","580653cccbfa7d81497fe7ee","580653cccbfa7d81497fe7f0","580653cccbfa7d81497fe7ef","580653cccbfa7d81497fe7f2","580653cccbfa7d81497fe7f1","580653cccbfa7d81497fe7f3","580653cdcbfa7d81497fe7f5","580653cccbfa7d81497fe7f4","580537853ca7247be13fe4be","580537833ca7247be13fe46e","580653d8cbfa7d81497fe7f6","580653d8cbfa7d81497fe7f7","580653d8cbfa7d81497fe7f8","580653d8cbfa7d81497fe7fa","580653d8cbfa7d81497fe7f9","580653d8cbfa7d81497fe7fb","580653d8cbfa7d81497fe7fe","580653d8cbfa7d81497fe7fd","580653d8cbfa7d81497fe7fc","580653d8cbfa7d81497fe7ff","580653d8cbfa7d81497fe800","580653d8cbfa7d81497fe801","580653d8cbfa7d81497fe802","580653d8cbfa7d81497fe803","580653d8cbfa7d81497fe804","580653d8cbfa7d81497fe805","580653d8cbfa7d81497fe806","580653d8cbfa7d81497fe809","580653d8cbfa7d81497fe807","580653d8cbfa7d81497fe808","580653d8cbfa7d81497fe80a","580653d8cbfa7d81497fe80b","580537853ca7247be13fe4ba","580653ddcbfa7d81497fe80c","580653decbfa7d81497fe80e","580653decbfa7d81497fe80d","580653decbfa7d81497fe810","580653decbfa7d81497fe80f","580653decbfa7d81497fe813","580653decbfa7d81497fe811","580653decbfa7d81497fe812","580653decbfa7d81497fe815","580653decbfa7d81497fe814","580653decbfa7d81497fe817","580653decbfa7d81497fe816","580653decbfa7d81497fe819","580653decbfa7d81497fe818","580653decbfa7d81497fe81a","580653decbfa7d81497fe81c","580653decbfa7d81497fe81b","580653decbfa7d81497fe81d","580653edcbfa7d81497fe81f","580653edcbfa7d81497fe81e","580653edcbfa7d81497fe821","580653edcbfa7d81497fe820","580653eecbfa7d81497fe822","580653eecbfa7d81497fe823","580653eecbfa7d81497fe824","580653eecbfa7d81497fe828","580653eecbfa7d81497fe827","580653eecbfa7d81497fe826","580653eecbfa7d81497fe82a","580653eecbfa7d81497fe829","580653eecbfa7d81497fe825","580653eecbfa7d81497fe82d","580653eecbfa7d81497fe82c","580653eecbfa7d81497fe830","580653eecbfa7d81497fe82b","580653eecbfa7d81497fe82f","580653eecbfa7d81497fe82e","580653eecbfa7d81497fe831","580653eecbfa7d81497fe833","580653eecbfa7d81497fe836","580653eecbfa7d81497fe834","580653eecbfa7d81497fe835","580653eecbfa7d81497fe832","580653eecbfa7d81497fe837","580653eecbfa7d81497fe838","580653ffcbfa7d81497fe839","580653ffcbfa7d81497fe83a","580653ffcbfa7d81497fe83b","580653ffcbfa7d81497fe83d","580653ffcbfa7d81497fe83c","580653ffcbfa7d81497fe83e","580653ffcbfa7d81497fe83f","580653ffcbfa7d81497fe840","58065400cbfa7d81497fe841","58065400cbfa7d81497fe843","58065400cbfa7d81497fe842","58065400cbfa7d81497fe844","58065400cbfa7d81497fe846","58065400cbfa7d81497fe845","58065400cbfa7d81497fe849","58065400cbfa7d81497fe84a","58065400cbfa7d81497fe848","58065400cbfa7d81497fe847","58065400cbfa7d81497fe84b","58065400cbfa7d81497fe84c","58065400cbfa7d81497fe84d","58065400cbfa7d81497fe84e","58065407cbfa7d81497fe84f","58065407cbfa7d81497fe851","58065407cbfa7d81497fe850","58065407cbfa7d81497fe852","58065407cbfa7d81497fe855","58065407cbfa7d81497fe853","58065407cbfa7d81497fe854","58065407cbfa7d81497fe857","58065407cbfa7d81497fe856","58065407cbfa7d81497fe85b","58065407cbfa7d81497fe858","58065407cbfa7d81497fe859","58065407cbfa7d81497fe85a","58065407cbfa7d81497fe85d","58065407cbfa7d81497fe85c","58065407cbfa7d81497fe85e","580537853ca7247be13fe4c4","58065415cbfa7d81497fe85f","58065415cbfa7d81497fe863","58065415cbfa7d81497fe862","58065415cbfa7d81497fe861","58065415cbfa7d81497fe865","58065415cbfa7d81497fe860","58065415cbfa7d81497fe866","58065415cbfa7d81497fe864","58065415cbfa7d81497fe867","58065416cbfa7d81497fe86b","58065415cbfa7d81497fe868","58065416cbfa7d81497fe86a","58065416cbfa7d81497fe869","58065416cbfa7d81497fe86f","58065416cbfa7d81497fe86d","58065416cbfa7d81497fe86e","58065416cbfa7d81497fe86c","58065416cbfa7d81497fe870","58065416cbfa7d81497fe872","58065416cbfa7d81497fe871","58065416cbfa7d81497fe874","58065416cbfa7d81497fe873","58065416cbfa7d81497fe875","58065416cbfa7d81497fe876","58065417cbfa7d81497fe877","58065417cbfa7d81497fe878","58065417cbfa7d81497fe87a","58065417cbfa7d81497fe879","58065417cbfa7d81497fe87b","58065417cbfa7d81497fe87c","58065426cbfa7d81497fe87d","58065426cbfa7d81497fe87f","58065426cbfa7d81497fe87e","58065426cbfa7d81497fe880","58065426cbfa7d81497fe881","58065426cbfa7d81497fe882","58065426cbfa7d81497fe885","58065426cbfa7d81497fe884","58065426cbfa7d81497fe883","58065426cbfa7d81497fe886","58065426cbfa7d81497fe887","58065426cbfa7d81497fe888","58065426cbfa7d81497fe88a","58065426cbfa7d81497fe889","58065426cbfa7d81497fe88c","58065426cbfa7d81497fe88d","58065426cbfa7d81497fe88b","58065427cbfa7d81497fe88f","58065427cbfa7d81497fe88e","58065427cbfa7d81497fe891","58065427cbfa7d81497fe890","58065427cbfa7d81497fe894","58065427cbfa7d81497fe892","58065427cbfa7d81497fe893","58065427cbfa7d81497fe895","58065427cbfa7d81497fe896","58065427cbfa7d81497fe897","58065438cbfa7d81497fe899","58065438cbfa7d81497fe898","58065438cbfa7d81497fe89a","58065438cbfa7d81497fe89c","58065439cbfa7d81497fe89d","58065438cbfa7d81497fe89b","58065439cbfa7d81497fe89e","58065439cbfa7d81497fe8a1","58065439cbfa7d81497fe8a0","58065439cbfa7d81497fe89f","58065439cbfa7d81497fe8a3","58065439cbfa7d81497fe8a2","58065439cbfa7d81497fe8a6","58065439cbfa7d81497fe8a5","58065439cbfa7d81497fe8a4","58065439cbfa7d81497fe8a7","58065439cbfa7d81497fe8ab","58065439cbfa7d81497fe8a8","58065439cbfa7d81497fe8aa","58065439cbfa7d81497fe8a9","58065439cbfa7d81497fe8ac","58065439cbfa7d81497fe8ad","58065439cbfa7d81497fe8af","58065439cbfa7d81497fe8b0","58065439cbfa7d81497fe8ae","58065439cbfa7d81497fe8b1","58065445cbfa7d81497fe8b2","58065445cbfa7d81497fe8b3","58065445cbfa7d81497fe8b6","58065445cbfa7d81497fe8b5","58065445cbfa7d81497fe8b4","58065445cbfa7d81497fe8b7","58065445cbfa7d81497fe8b8","58065445cbfa7d81497fe8ba","58065445cbfa7d81497fe8b9","58065445cbfa7d81497fe8bb","58065445cbfa7d81497fe8bc","58065445cbfa7d81497fe8bf","58065445cbfa7d81497fe8be","58065445cbfa7d81497fe8bd","58065445cbfa7d81497fe8c0","58065446cbfa7d81497fe8c3","58065446cbfa7d81497fe8c2","58065446cbfa7d81497fe8c1","58065446cbfa7d81497fe8c4","58065446cbfa7d81497fe8c5","58065446cbfa7d81497fe8c6","58065446cbfa7d81497fe8c7","58065446cbfa7d81497fe8c9","58065446cbfa7d81497fe8c8","58065446cbfa7d81497fe8cb","58065446cbfa7d81497fe8ca","58065446cbfa7d81497fe8cc","58065446cbfa7d81497fe8cd","58065446cbfa7d81497fe8ce","58065446cbfa7d81497fe8d0","58065447cbfa7d81497fe8d2","58065446cbfa7d81497fe8cf","58065447cbfa7d81497fe8d1","58065447cbfa7d81497fe8d3","58065447cbfa7d81497fe8d4","58065459cbfa7d81497fe8d5","58065459cbfa7d81497fe8d6","58065459cbfa7d81497fe8d8","58065459cbfa7d81497fe8d7","58065459cbfa7d81497fe8d9","58065459cbfa7d81497fe8da","58065459cbfa7d81497fe8db","58065459cbfa7d81497fe8dc","58065459cbfa7d81497fe8dd","58065459cbfa7d81497fe8df","58065459cbfa7d81497fe8e4","58065459cbfa7d81497fe8de","58065459cbfa7d81497fe8e0","58065459cbfa7d81497fe8e3","58065459cbfa7d81497fe8e2","58065459cbfa7d81497fe8e1","58065459cbfa7d81497fe8e5","58065459cbfa7d81497fe8e6","5806545acbfa7d81497fe8e8","5806545acbfa7d81497fe8e7","5806545acbfa7d81497fe8ea","5806545acbfa7d81497fe8e9","5806545acbfa7d81497fe8ec","5806545acbfa7d81497fe8ed","5806545acbfa7d81497fe8eb","5806545acbfa7d81497fe8ee","5806546acbfa7d81497fe8ef","5806546acbfa7d81497fe8f1","5806546acbfa7d81497fe8f0","5806546acbfa7d81497fe8f3","5806546acbfa7d81497fe8f2","5806546acbfa7d81497fe8f4","5806546acbfa7d81497fe8f6","5806546acbfa7d81497fe8f8","5806546acbfa7d81497fe8f5","5806546acbfa7d81497fe8f7","5806546acbfa7d81497fe8f9","5806546acbfa7d81497fe8fd","5806546acbfa7d81497fe8fb","5806546acbfa7d81497fe8fc","5806546acbfa7d81497fe8fa","5806546acbfa7d81497fe8fe","5806546acbfa7d81497fe8ff","5806546acbfa7d81497fe900","5806546acbfa7d81497fe902","5806546acbfa7d81497fe901","5806546acbfa7d81497fe903","5806546acbfa7d81497fe904","5806546bcbfa7d81497fe905","5806546bcbfa7d81497fe907","5806546ccbfa7d81497fe909","5806546bcbfa7d81497fe908","5806546bcbfa7d81497fe906","5806546ccbfa7d81497fe90a","5806546ccbfa7d81497fe90b","5806547bcbfa7d81497fe90c","5806547ccbfa7d81497fe910","5806547ccbfa7d81497fe90e","5806547ccbfa7d81497fe90d","5806547ccbfa7d81497fe90f","5806547ccbfa7d81497fe911","5806547ccbfa7d81497fe912","5806547ccbfa7d81497fe913","5806547ccbfa7d81497fe917","5806547ccbfa7d81497fe915","5806547ccbfa7d81497fe916","5806547ccbfa7d81497fe914","5806547ccbfa7d81497fe919","5806547ccbfa7d81497fe918","5806547ccbfa7d81497fe91b","5806547ccbfa7d81497fe91c","5806547ccbfa7d81497fe91a","5806547ccbfa7d81497fe91d","5806547ccbfa7d81497fe91e","5806547ccbfa7d81497fe91f","5806547ccbfa7d81497fe921","5806547ccbfa7d81497fe920","5806548dcbfa7d81497fe922","5806548dcbfa7d81497fe924","5806548dcbfa7d81497fe923","5806548dcbfa7d81497fe926","5806548dcbfa7d81497fe925","5806548dcbfa7d81497fe927","5806548dcbfa7d81497fe929","5806548dcbfa7d81497fe928","5806548dcbfa7d81497fe92b","5806548dcbfa7d81497fe92c","5806548dcbfa7d81497fe92f","5806548dcbfa7d81497fe92a","5806548dcbfa7d81497fe92e","5806548dcbfa7d81497fe92d","5806548dcbfa7d81497fe931","5806548dcbfa7d81497fe932","5806548dcbfa7d81497fe933","5806548dcbfa7d81497fe930","5806548dcbfa7d81497fe934","5806548dcbfa7d81497fe935","5806548dcbfa7d81497fe936","5806548dcbfa7d81497fe939","5806548dcbfa7d81497fe938","5806548dcbfa7d81497fe937","5806548dcbfa7d81497fe93b","5806548ecbfa7d81497fe93d","5806548fcbfa7d81497fe93e","5806548dcbfa7d81497fe93a","5806548dcbfa7d81497fe93c","580537853ca7247be13fe4d9","5806549ccbfa7d81497fe940","5806549ccbfa7d81497fe93f","5806549ccbfa7d81497fe943","5806549ccbfa7d81497fe942","5806549ccbfa7d81497fe941","5806549ccbfa7d81497fe945","5806549ccbfa7d81497fe944","5806549ccbfa7d81497fe946","5806549ccbfa7d81497fe948","5806549ccbfa7d81497fe947","5806549ccbfa7d81497fe949","5806549ccbfa7d81497fe94b","5806549ccbfa7d81497fe94d","5806549ccbfa7d81497fe94c","5806549ccbfa7d81497fe94a","5806549ccbfa7d81497fe94e","5806549ccbfa7d81497fe94f","5806549ccbfa7d81497fe951","5806549ccbfa7d81497fe950","5806549ccbfa7d81497fe953","5806549ccbfa7d81497fe952","5806549ccbfa7d81497fe954","5806549ccbfa7d81497fe955","5806549ccbfa7d81497fe956","5806549dcbfa7d81497fe957","5806551311337e81519b53dc","5806551311337e81519b53dd","5806551411337e81519b53df","5806551411337e81519b53de","5806551411337e81519b53e2","5806551411337e81519b53e1","5806551411337e81519b53e0","580537843ca7247be13fe49f","5806552011337e81519b53e3","5806552011337e81519b53e4","5806552011337e81519b53e7","5806552011337e81519b53e6","5806552011337e81519b53e9","5806552011337e81519b53e8","5806552011337e81519b53e5","5806552011337e81519b53eb","5806552011337e81519b53ea","5806552011337e81519b53ec","5806552911337e81519b53ed","5806552911337e81519b53f1","5806552911337e81519b53f0","5806552911337e81519b53ee","5806552911337e81519b53ef","5806552911337e81519b53f2","5806552911337e81519b53f3","5806552911337e81519b53f5","5806552911337e81519b53f4","5806552911337e81519b53f8","5806552911337e81519b53f7","5806552911337e81519b53f6","5806552911337e81519b53fa","5806552911337e81519b53f9","5806552911337e81519b53fb","5806552911337e81519b53fc","580537853ca7247be13fe4d0","5806553c11337e81519b53fd","5806553c11337e81519b5400","5806553c11337e81519b53ff","5806553c11337e81519b53fe","5806553c11337e81519b5405","5806553c11337e81519b5403","5806553c11337e81519b5404","5806553c11337e81519b5401","5806553c11337e81519b5402","5806553c11337e81519b5406","5806553c11337e81519b5408","5806553c11337e81519b540b","5806553c11337e81519b5409","5806553c11337e81519b5407","5806553c11337e81519b540a","5806553c11337e81519b540c","5806553c11337e81519b540d","5806553d11337e81519b540f","5806553d11337e81519b540e","5806554b11337e81519b5411","5806554b11337e81519b5410","5806554c11337e81519b5413","5806554b11337e81519b5412","5806554c11337e81519b5414","5806554c11337e81519b5417","5806554c11337e81519b5416","5806554c11337e81519b5415","5806554c11337e81519b541a","5806554c11337e81519b5418","5806554c11337e81519b541c","5806554c11337e81519b541b","5806554c11337e81519b5419","5806554c11337e81519b541d","5806555611337e81519b541e","5806555711337e81519b541f","5806555711337e81519b5420","5806555711337e81519b5421","5806555811337e81519b5423","5806555811337e81519b5422","5806555811337e81519b5425","5806555811337e81519b5426","5806555811337e81519b5424","5806555811337e81519b5427","5806555811337e81519b542b","5806555811337e81519b5429","5806555811337e81519b5428","5806555811337e81519b542a","5806555811337e81519b542c","5806555811337e81519b542d","5806555811337e81519b542e","5806555811337e81519b5430","5806555811337e81519b542f","5806556211337e81519b5431","5806556311337e81519b5432","5806556311337e81519b5433","5806556311337e81519b5435","5806556311337e81519b5434","5806556311337e81519b543a","5806556311337e81519b5438","5806556311337e81519b5439","5806556311337e81519b5436","5806556311337e81519b5437","5806556311337e81519b543b","5806556411337e81519b543e","5806556411337e81519b543d","5806556311337e81519b543c","5806556f11337e81519b5440","5806556e11337e81519b543f","5806556f11337e81519b5441","5806556f11337e81519b5442","5806556f11337e81519b5443","5806556f11337e81519b5444","5806556f11337e81519b5445","5806556f11337e81519b5448","5806556f11337e81519b5447","5806556f11337e81519b544a","5806556f11337e81519b5449","5806556f11337e81519b5446","5806556f11337e81519b544c","5806556f11337e81519b544b","5806556f11337e81519b544d","5806556f11337e81519b544f","5806556f11337e81519b544e","5806556f11337e81519b5450","5806556f11337e81519b5451","5806556f11337e81519b5454","5806556f11337e81519b5453","5806556f11337e81519b5455","5806556f11337e81519b5452","5806557f11337e81519b5456","5806558011337e81519b5457","5806558011337e81519b5458","5806558111337e81519b5459","5806558111337e81519b545d","5806558111337e81519b545a","5806558111337e81519b545b","5806558111337e81519b545c","5806558111337e81519b545f","5806558111337e81519b545e","5806558111337e81519b5461","5806558111337e81519b5462","5806558111337e81519b5460","5806558111337e81519b5464","5806558111337e81519b5463","5806558111337e81519b5465","5806558111337e81519b5466","5806558c11337e81519b5467","5806558e11337e81519b5469","5806558d11337e81519b5468","5806558e11337e81519b546d","5806558e11337e81519b546b","5806558e11337e81519b546c","5806558e11337e81519b546a","5806558e11337e81519b546e","5806558e11337e81519b546f","5806558e11337e81519b5472","5806558e11337e81519b5471","5806558e11337e81519b5470","5806558e11337e81519b5473","5806558e11337e81519b5475","5806558e11337e81519b5474","5806558e11337e81519b5476","5806559e11337e81519b5477","5806559e11337e81519b5478","5806559e11337e81519b5479","5806559e11337e81519b547b","5806559e11337e81519b547a","5806559e11337e81519b547c","5806559e11337e81519b547e","5806559e11337e81519b547d","5806559e11337e81519b547f","5806559e11337e81519b5480","5806559f11337e81519b5485","5806559e11337e81519b5481","5806559f11337e81519b5484","5806559f11337e81519b5483","5806559f11337e81519b5482","5806559f11337e81519b5489","5806559f11337e81519b5486","5806559f11337e81519b5487","5806559f11337e81519b548a","5806559f11337e81519b5488","5806559f11337e81519b548c","5806559f11337e81519b548b","5806559f11337e81519b548d","5806559f11337e81519b548e","5806559f11337e81519b548f","5806559f11337e81519b5490","580655a011337e81519b5491","580655b611337e81519b5492","580655b711337e81519b5493","580655b711337e81519b5495","580655b711337e81519b5494","580655b711337e81519b5498","580655b711337e81519b5497","580655b711337e81519b5496","580655b711337e81519b5499","580655b711337e81519b549a","580655b711337e81519b549b","580655b711337e81519b549c","580655b711337e81519b549e","580655b711337e81519b549d","580655b711337e81519b54a0","580655b711337e81519b549f","580655b711337e81519b54a1","580655b811337e81519b54a2","580655cc11337e81519b54a3","580655cc11337e81519b54a4","580655cc11337e81519b54a5","580655cc11337e81519b54a9","580655cc11337e81519b54a8","580655cc11337e81519b54a7","580655cc11337e81519b54a6","580655cc11337e81519b54ac","580655cc11337e81519b54ab","580655cc11337e81519b54aa","580655cc11337e81519b54ad","580655cc11337e81519b54ae","580655cd11337e81519b54af","580655cd11337e81519b54b2","580655cd11337e81519b54b1","580655cd11337e81519b54b0","580655cd11337e81519b54b3","580655cd11337e81519b54b5","580655cd11337e81519b54b4","580655cd11337e81519b54b8","580655cd11337e81519b54b9","580655cd11337e81519b54b6","580655cd11337e81519b54b7","580655cd11337e81519b54ba","580655cd11337e81519b54bb","580655cd11337e81519b54bf","580655cd11337e81519b54bc","580655cd11337e81519b54be","580655ce11337e81519b54c0","580655cd11337e81519b54bd","580655ce11337e81519b54c1","580655ce11337e81519b54c3","580655ce11337e81519b54c5","580655ce11337e81519b54c4","580655ce11337e81519b54c2","580655e111337e81519b54c6","580655e111337e81519b54c7","580655e111337e81519b54c9","580655e111337e81519b54c8","580655e111337e81519b54ca","580655e111337e81519b54cb","580655e111337e81519b54ce","580655e111337e81519b54cc","580655e111337e81519b54cd","580655e111337e81519b54cf","580655e111337e81519b54d0","580655e111337e81519b54d2","580655e111337e81519b54d3","580655e111337e81519b54d4","580655e111337e81519b54d1","580655e111337e81519b54d5","580655e111337e81519b54d6","580655e211337e81519b54d7","580655e211337e81519b54d8","580655e211337e81519b54dc","580655e211337e81519b54db","580655e211337e81519b54da","580655e211337e81519b54d9","580655e211337e81519b54dd","580655e211337e81519b54de","580655e211337e81519b54e0","580655e211337e81519b54e1","580655e211337e81519b54df","580655e211337e81519b54e2","580655e211337e81519b54e5","580655e211337e81519b54e4","580655e211337e81519b54e6","580655e211337e81519b54e3","580655e211337e81519b54e7","580655e211337e81519b54e8","580655e211337e81519b54e9","580655f011337e81519b54ea","580655f011337e81519b54eb","580655f011337e81519b54ec","580655f011337e81519b54ed","580655f011337e81519b54ee","580655f011337e81519b54ef","580655f011337e81519b54f0","580655f111337e81519b54f1","580655f111337e81519b54f2","580655f111337e81519b54f4","580655f111337e81519b54f3","580655f111337e81519b54f5","580655f111337e81519b54f7","580655f111337e81519b54f9","580655f111337e81519b54f8","580655f111337e81519b54f6","580655f111337e81519b54fa","580655f111337e81519b54fb","580655f111337e81519b54fc","580655f111337e81519b54fd","580655f211337e81519b5500","580655f211337e81519b54ff","580655f211337e81519b5501","580655f211337e81519b5503","580655f211337e81519b5504","580655f211337e81519b54fe","580655f211337e81519b5502","580655f211337e81519b5505","580655f211337e81519b5506","580655f211337e81519b5509","580655f211337e81519b5507","580655f211337e81519b5508","580655f211337e81519b550a","5806560311337e81519b550b","5806560311337e81519b550c","5806560311337e81519b550f","5806560311337e81519b550e","5806560311337e81519b550d","5806560311337e81519b5510","5806560311337e81519b5511","5806560311337e81519b5514","5806560311337e81519b5512","5806560311337e81519b5513","5806560311337e81519b5515","5806560311337e81519b5517","5806560311337e81519b5516","5806560311337e81519b5519","5806560311337e81519b5518","5806560411337e81519b551a","5806560411337e81519b551b","5806560511337e81519b551e","5806560411337e81519b551c","5806560411337e81519b551d","5806560511337e81519b551f","5806560511337e81519b5520","5806560511337e81519b5522","5806560511337e81519b5524","5806560511337e81519b5523","5806560511337e81519b5521","5806560511337e81519b5525","5806560511337e81519b5527","5806560511337e81519b5526","5806560511337e81519b5529","5806560511337e81519b5528","5806560511337e81519b552a","5806561611337e81519b552b","5806561611337e81519b552c","5806561711337e81519b552d","5806561711337e81519b5530","5806561711337e81519b552e","5806561711337e81519b552f","5806561711337e81519b5531","5806561711337e81519b5532","5806561711337e81519b5534","5806561711337e81519b5533","5806561711337e81519b5535","5806561711337e81519b5537","5806561711337e81519b5538","5806561711337e81519b5536","5806561711337e81519b5539","5806561711337e81519b553a","5806561711337e81519b553e","5806561711337e81519b553b","5806561711337e81519b553d","5806561711337e81519b553c","5806561711337e81519b553f","5806561811337e81519b5540","5806561811337e81519b5541","5806561811337e81519b5542","5806561811337e81519b5543","5806561811337e81519b5544","5806561911337e81519b5547","5806561911337e81519b5545","5806561911337e81519b5546","5806561911337e81519b5548","5806561911337e81519b5549","5806561911337e81519b554a","5806563311337e81519b554e","5806563311337e81519b554d","5806563311337e81519b554c","5806563311337e81519b554b","5806563311337e81519b5550","5806563311337e81519b554f","5806563311337e81519b5552","5806563311337e81519b5551","5806563311337e81519b5555","5806563311337e81519b5554","5806563311337e81519b5553","5806563311337e81519b5556","5806563311337e81519b5557","5806563411337e81519b555a","5806563411337e81519b5559","5806563311337e81519b5558","5806563411337e81519b555b","5806563411337e81519b555c","5806563411337e81519b555d","5806563411337e81519b555e","5806563411337e81519b555f","5806563411337e81519b5561","5806563411337e81519b5562","5806563511337e81519b5563","5806563411337e81519b5560","5806563511337e81519b5564","5806563511337e81519b5566","5806563511337e81519b5565","5806563511337e81519b5567","5806563f11337e81519b5569","5806563f11337e81519b5568","5806563f11337e81519b556a","5806563f11337e81519b556b","5806563f11337e81519b556d","5806563f11337e81519b556c","5806563f11337e81519b556e","5806563f11337e81519b556f","5806563f11337e81519b5570","5806563f11337e81519b5571","5806563f11337e81519b5572","5806563f11337e81519b5573","5806563f11337e81519b5574","5806563f11337e81519b5577","5806563f11337e81519b5576","5806563f11337e81519b5578","5806563f11337e81519b5575","5806563f11337e81519b5579","5806563f11337e81519b557c","5806563f11337e81519b557a","5806563f11337e81519b557b","5806564011337e81519b557e","5806563f11337e81519b557d","5806564011337e81519b5580","5806564011337e81519b557f","5806564011337e81519b5581","5806564011337e81519b5582","5806564011337e81519b5583","5806564011337e81519b5584","5806564011337e81519b5587","5806564011337e81519b5585","5806564011337e81519b5586","5806565111337e81519b5588","5806565111337e81519b558a","5806565111337e81519b5589","5806565111337e81519b558c","5806565111337e81519b558b","5806565111337e81519b558d","5806565111337e81519b558e","5806565111337e81519b5590","5806565111337e81519b558f","5806565111337e81519b5591","5806565111337e81519b5592","5806565111337e81519b5593","5806565111337e81519b5594","5806565211337e81519b5595","5806565211337e81519b5596","5806565211337e81519b5597","5806565211337e81519b559a","5806565211337e81519b5599","5806565211337e81519b5598","5806565211337e81519b559b","5806565211337e81519b559c","5806565211337e81519b559e","5806565211337e81519b559d","5806565211337e81519b55a0","5806565211337e81519b55a2","5806565211337e81519b55a1","5806565211337e81519b559f","5806565311337e81519b55a4","5806565311337e81519b55a3","5806565311337e81519b55a5","5806565311337e81519b55a6","580537843ca7247be13fe490","580537853ca7247be13fe4b6","580537843ca7247be13fe483","580537853ca7247be13fe4e1","5806572d2a4f8e8160c49b37","5806572d2a4f8e8160c49b38","5806572e2a4f8e8160c49b39","5806572f2a4f8e8160c49b3a","580537853ca7247be13fe4b4","580657342a4f8e8160c49b3b","580657342a4f8e8160c49b3c","580657342a4f8e8160c49b3d","580657352a4f8e8160c49b3e","580657352a4f8e8160c49b40","580657352a4f8e8160c49b3f","580657352a4f8e8160c49b41","580657362a4f8e8160c49b42","5806573a2a4f8e8160c49b43","5806573b2a4f8e8160c49b44","5806573c2a4f8e8160c49b45","5806573c2a4f8e8160c49b46","5806573c2a4f8e8160c49b48","5806573c2a4f8e8160c49b47","580537843ca7247be13fe4a5","580657452a4f8e8160c49b49","580657452a4f8e8160c49b4b","580657452a4f8e8160c49b4a","580657462a4f8e8160c49b4d","580657462a4f8e8160c49b4c","580657462a4f8e8160c49b4f","580657462a4f8e8160c49b4e","580657462a4f8e8160c49b50","580657462a4f8e8160c49b51","580657462a4f8e8160c49b52","5806574f2a4f8e8160c49b53","5806574f2a4f8e8160c49b55","5806574f2a4f8e8160c49b56","5806574f2a4f8e8160c49b54","5806574f2a4f8e8160c49b57","5806574f2a4f8e8160c49b58","5806574f2a4f8e8160c49b5a","5806574f2a4f8e8160c49b5b","5806574f2a4f8e8160c49b59","5806574f2a4f8e8160c49b5c","5806574f2a4f8e8160c49b5d","5806575a2a4f8e8160c49b5e","5806575a2a4f8e8160c49b60","5806575a2a4f8e8160c49b5f","5806575a2a4f8e8160c49b61","5806575a2a4f8e8160c49b63","5806575a2a4f8e8160c49b62","5806575a2a4f8e8160c49b64","5806575b2a4f8e8160c49b65","580657672a4f8e8160c49b66","580657682a4f8e8160c49b67","580657682a4f8e8160c49b69","580657682a4f8e8160c49b68","580657682a4f8e8160c49b6a","580657682a4f8e8160c49b6b","580657682a4f8e8160c49b6c","580657692a4f8e8160c49b6d","580657692a4f8e8160c49b6e","580657692a4f8e8160c49b6f","580657742a4f8e8160c49b70","580657742a4f8e8160c49b71","580657752a4f8e8160c49b72","580657762a4f8e8160c49b73","580657762a4f8e8160c49b74","580657822a4f8e8160c49b75","580657822a4f8e8160c49b76","580657822a4f8e8160c49b77","580657832a4f8e8160c49b78","580657832a4f8e8160c49b7a","580657832a4f8e8160c49b79","580657832a4f8e8160c49b7c","580657832a4f8e8160c49b7b","580657832a4f8e8160c49b7d","580657832a4f8e8160c49b7e","580657832a4f8e8160c49b7f","580657832a4f8e8160c49b81","580657832a4f8e8160c49b80","580657832a4f8e8160c49b82","580657832a4f8e8160c49b83","580657832a4f8e8160c49b84","580657832a4f8e8160c49b85","580657842a4f8e8160c49b87","580657842a4f8e8160c49b86","580657842a4f8e8160c49b88","5806578f2a4f8e8160c49b8b","5806578f2a4f8e8160c49b8a","5806578f2a4f8e8160c49b89","5806578f2a4f8e8160c49b8c","5806578f2a4f8e8160c49b8d","5806578f2a4f8e8160c49b8f","5806578f2a4f8e8160c49b8e","5806578f2a4f8e8160c49b90","5806578f2a4f8e8160c49b93","5806578f2a4f8e8160c49b92","5806578f2a4f8e8160c49b91","5806578f2a4f8e8160c49b94","5806578f2a4f8e8160c49b97","5806578f2a4f8e8160c49b95","5806578f2a4f8e8160c49b96","5806578f2a4f8e8160c49b98","5806578f2a4f8e8160c49b99","5806578f2a4f8e8160c49b9a","5806578f2a4f8e8160c49b9b","5806578f2a4f8e8160c49b9d","5806578f2a4f8e8160c49b9c","5806578f2a4f8e8160c49b9e","580657902a4f8e8160c49b9f","580657902a4f8e8160c49ba0","580657912a4f8e8160c49ba3","580657912a4f8e8160c49ba2","580657902a4f8e8160c49ba1","580657912a4f8e8160c49ba4","580657912a4f8e8160c49ba5","580657912a4f8e8160c49ba6","580657912a4f8e8160c49ba7","580657912a4f8e8160c49ba8","580657992a4f8e8160c49ba9","580657992a4f8e8160c49baa","580657992a4f8e8160c49bab","580657992a4f8e8160c49bac","580657992a4f8e8160c49bae","580657992a4f8e8160c49bad","580657992a4f8e8160c49baf","580657992a4f8e8160c49bb0","580657992a4f8e8160c49bb2","580657992a4f8e8160c49bb1","580657992a4f8e8160c49bb4","580657992a4f8e8160c49bb3","580657992a4f8e8160c49bb5","580657992a4f8e8160c49bb6","5806579a2a4f8e8160c49bb7","5806579a2a4f8e8160c49bb8","5806579a2a4f8e8160c49bb9","5806579a2a4f8e8160c49bba","5806579a2a4f8e8160c49bbb","5806579a2a4f8e8160c49bbc","5806579a2a4f8e8160c49bbd","5806579a2a4f8e8160c49bbe","5806579a2a4f8e8160c49bbf","5806579b2a4f8e8160c49bc2","5806579a2a4f8e8160c49bc0","5806579b2a4f8e8160c49bc1","5806579b2a4f8e8160c49bc4","5806579b2a4f8e8160c49bc3","5806579b2a4f8e8160c49bc6","5806579b2a4f8e8160c49bc5","5806579b2a4f8e8160c49bc7","5806579b2a4f8e8160c49bca","5806579b2a4f8e8160c49bc8","5806579b2a4f8e8160c49bc9","5806579b2a4f8e8160c49bcb","5806579b2a4f8e8160c49bcc","5806579b2a4f8e8160c49bcd","5806579b2a4f8e8160c49bce","580537843ca7247be13fe48e","580657a22a4f8e8160c49bcf","580657a22a4f8e8160c49bd0","580657af2a4f8e8160c49bd1","580657af2a4f8e8160c49bd2","580657af2a4f8e8160c49bd3","580657af2a4f8e8160c49bd4","580657af2a4f8e8160c49bd5","580657af2a4f8e8160c49bd8","580657af2a4f8e8160c49bd7","580657af2a4f8e8160c49bd6","580657af2a4f8e8160c49bd9","580657b02a4f8e8160c49bda","580657b02a4f8e8160c49bdb","580657b02a4f8e8160c49bdc","580657b02a4f8e8160c49bdf","580657b02a4f8e8160c49bde","580657b02a4f8e8160c49bdd","580657b02a4f8e8160c49be1","580657b02a4f8e8160c49be0","580657b02a4f8e8160c49be2","580657b02a4f8e8160c49be3","580657b02a4f8e8160c49be5","580657b02a4f8e8160c49be4","580657b02a4f8e8160c49be6","580657b02a4f8e8160c49be9","580657b02a4f8e8160c49be7","580657b02a4f8e8160c49be8","580657b02a4f8e8160c49bea","580657b02a4f8e8160c49beb","580657b12a4f8e8160c49bed","580657b02a4f8e8160c49bec","580657b12a4f8e8160c49bef","580657b12a4f8e8160c49bee","580657b12a4f8e8160c49bf0","580657b12a4f8e8160c49bf1","580657b12a4f8e8160c49bf3","580657b12a4f8e8160c49bf2","580657b12a4f8e8160c49bf4","580657ba2a4f8e8160c49bf6","580657ba2a4f8e8160c49bf5","580657ba2a4f8e8160c49bfa","580657ba2a4f8e8160c49bf7","580657ba2a4f8e8160c49bf9","580657ba2a4f8e8160c49bf8","580657ba2a4f8e8160c49bfe","580657ba2a4f8e8160c49bff","580657ba2a4f8e8160c49bfd","580657ba2a4f8e8160c49bfb","580657ba2a4f8e8160c49bfc","580657ba2a4f8e8160c49c00","580657ba2a4f8e8160c49c01","580657bb2a4f8e8160c49c02","580657bb2a4f8e8160c49c03","580657bb2a4f8e8160c49c06","580657bb2a4f8e8160c49c05","580657bb2a4f8e8160c49c04","580657bb2a4f8e8160c49c09","580657bb2a4f8e8160c49c07","580657bb2a4f8e8160c49c08","580657bb2a4f8e8160c49c0a","580657bb2a4f8e8160c49c0b","580657bb2a4f8e8160c49c0c","580657bb2a4f8e8160c49c0e","580657bb2a4f8e8160c49c10","580657bb2a4f8e8160c49c0d","580657bb2a4f8e8160c49c0f","580657bb2a4f8e8160c49c12","580657bb2a4f8e8160c49c11","580657bb2a4f8e8160c49c13","580657bb2a4f8e8160c49c15","580657bb2a4f8e8160c49c14","580657c62a4f8e8160c49c16","580657c62a4f8e8160c49c1a","580657c62a4f8e8160c49c17","580657c62a4f8e8160c49c19","580657c62a4f8e8160c49c1b","580657c62a4f8e8160c49c18","580657c62a4f8e8160c49c1c","580657c62a4f8e8160c49c1d","580657c62a4f8e8160c49c1f","580657c62a4f8e8160c49c1e","580657c62a4f8e8160c49c21","580657c62a4f8e8160c49c20","580657c62a4f8e8160c49c22","580657c62a4f8e8160c49c26","580657c62a4f8e8160c49c25","580657c62a4f8e8160c49c27","580657c62a4f8e8160c49c24","580657c62a4f8e8160c49c23","580657c62a4f8e8160c49c28","580657c62a4f8e8160c49c29","580657c62a4f8e8160c49c2a","580657c72a4f8e8160c49c2c","580657c72a4f8e8160c49c2e","580657c82a4f8e8160c49c2f","580657c72a4f8e8160c49c2d","580657c72a4f8e8160c49c2b","580657c82a4f8e8160c49c30","580657c82a4f8e8160c49c34","580657c82a4f8e8160c49c31","580657c82a4f8e8160c49c32","580657c82a4f8e8160c49c33","580657c82a4f8e8160c49c35","580657c82a4f8e8160c49c38","580657c82a4f8e8160c49c37","580657c82a4f8e8160c49c39","580657c82a4f8e8160c49c36","580657e12a4f8e8160c49c3a","580657e12a4f8e8160c49c3b","580657e12a4f8e8160c49c3e","580657e12a4f8e8160c49c3d","580657e12a4f8e8160c49c3c","580657e12a4f8e8160c49c3f","580657e12a4f8e8160c49c43","580657e12a4f8e8160c49c42","580657e12a4f8e8160c49c40","580657e12a4f8e8160c49c44","580657e12a4f8e8160c49c41","580657e12a4f8e8160c49c45","580657e12a4f8e8160c49c48","580657e12a4f8e8160c49c49","580657e12a4f8e8160c49c46","580657e12a4f8e8160c49c47","580657e12a4f8e8160c49c4a","580657e12a4f8e8160c49c4b","580657e12a4f8e8160c49c4c","580657e12a4f8e8160c49c4d","580657e22a4f8e8160c49c4e","580657e22a4f8e8160c49c4f","580657e32a4f8e8160c49c51","580657e32a4f8e8160c49c55","580657e32a4f8e8160c49c52","580657e32a4f8e8160c49c50","580657e32a4f8e8160c49c54","580657e32a4f8e8160c49c53","580657e32a4f8e8160c49c56","580657e32a4f8e8160c49c58","580657e32a4f8e8160c49c59","580657e32a4f8e8160c49c57","580657e32a4f8e8160c49c5a","580657f12a4f8e8160c49c5b","580657f12a4f8e8160c49c5c","580657f12a4f8e8160c49c5d","580657f22a4f8e8160c49c5e","580657f22a4f8e8160c49c5f","580657f22a4f8e8160c49c60","580657f22a4f8e8160c49c61","580657f22a4f8e8160c49c63","580657f22a4f8e8160c49c62","580657f22a4f8e8160c49c64","580657f22a4f8e8160c49c65","580657f22a4f8e8160c49c67","580657f22a4f8e8160c49c66","580657f22a4f8e8160c49c68","580657f22a4f8e8160c49c69","580657f22a4f8e8160c49c6a","580657f22a4f8e8160c49c6b","580657f32a4f8e8160c49c6c","580657f32a4f8e8160c49c6d","580657f32a4f8e8160c49c6e","580657f32a4f8e8160c49c6f","580657f32a4f8e8160c49c70","580657f32a4f8e8160c49c71","580657f32a4f8e8160c49c73","580657f32a4f8e8160c49c74","580657f32a4f8e8160c49c72","580657f32a4f8e8160c49c75","580657f32a4f8e8160c49c77","580657f32a4f8e8160c49c7a","580657f32a4f8e8160c49c78","580657f32a4f8e8160c49c79","580657f32a4f8e8160c49c76","580657f32a4f8e8160c49c7b","580657f32a4f8e8160c49c7c","580657f32a4f8e8160c49c7f","580657f32a4f8e8160c49c7d","580657f32a4f8e8160c49c80","580657f32a4f8e8160c49c7e","580657fd2a4f8e8160c49c81","580657fd2a4f8e8160c49c82","580657fd2a4f8e8160c49c83","580657fd2a4f8e8160c49c85","580657fd2a4f8e8160c49c84","580657fd2a4f8e8160c49c87","580657fd2a4f8e8160c49c86","580657fd2a4f8e8160c49c88","580657fe2a4f8e8160c49c89","580657fe2a4f8e8160c49c8a","580657fe2a4f8e8160c49c8b","580657fe2a4f8e8160c49c8d","580657fe2a4f8e8160c49c8c","580657fe2a4f8e8160c49c90","580657fe2a4f8e8160c49c92","580657fe2a4f8e8160c49c8e","580657fe2a4f8e8160c49c8f","580657fe2a4f8e8160c49c91","580657fe2a4f8e8160c49c93","580657fe2a4f8e8160c49c94","580657fe2a4f8e8160c49c98","580657fe2a4f8e8160c49c97","580657fe2a4f8e8160c49c96","580657fe2a4f8e8160c49c95","580657fe2a4f8e8160c49c99","580657ff2a4f8e8160c49c9b","580657ff2a4f8e8160c49c9c","580657ff2a4f8e8160c49c9e","580657ff2a4f8e8160c49c9d","580657ff2a4f8e8160c49c9a","580657ff2a4f8e8160c49c9f","580658002a4f8e8160c49ca0","580658002a4f8e8160c49ca3","580658002a4f8e8160c49ca1","580658002a4f8e8160c49ca4","580658002a4f8e8160c49ca2","580658122a4f8e8160c49ca5","580658122a4f8e8160c49ca6","580658122a4f8e8160c49ca7","580658122a4f8e8160c49ca9","580658122a4f8e8160c49ca8","580658122a4f8e8160c49caa","580658122a4f8e8160c49cab","580658122a4f8e8160c49cac","580658122a4f8e8160c49cad","580658132a4f8e8160c49cae","580658132a4f8e8160c49caf","580658132a4f8e8160c49cb0","580658132a4f8e8160c49cb3","580658132a4f8e8160c49cb2","580658132a4f8e8160c49cb1","580658132a4f8e8160c49cb4","580658132a4f8e8160c49cb7","580658132a4f8e8160c49cb5","580658132a4f8e8160c49cb6","580658132a4f8e8160c49cb8","580658132a4f8e8160c49cb9","580658132a4f8e8160c49cbb","580658132a4f8e8160c49cbd","580658132a4f8e8160c49cbc","580658132a4f8e8160c49cba","580658132a4f8e8160c49cbe","580658132a4f8e8160c49cbf","580658142a4f8e8160c49cc1","580658142a4f8e8160c49cc2","580658132a4f8e8160c49cc0","580658142a4f8e8160c49cc3","580658142a4f8e8160c49cc4","580658152a4f8e8160c49cc5","5806584a2a4f8e8160c49cc6","5806584a2a4f8e8160c49cc7","5806584a2a4f8e8160c49cc8","5806584a2a4f8e8160c49cc9","5806584a2a4f8e8160c49cca","5806584a2a4f8e8160c49ccb","5806584a2a4f8e8160c49ccc","5806584b2a4f8e8160c49ccf","5806584a2a4f8e8160c49ccd","5806584b2a4f8e8160c49cce","5806584b2a4f8e8160c49cd0","5806584b2a4f8e8160c49cd1","5806584b2a4f8e8160c49cd2","5806584b2a4f8e8160c49cd3","5806584c2a4f8e8160c49cd5","5806584c2a4f8e8160c49cd4","5806584c2a4f8e8160c49cd7","5806584c2a4f8e8160c49cd6","5806584c2a4f8e8160c49cd9","5806584c2a4f8e8160c49cda","5806584c2a4f8e8160c49cd8","5806584c2a4f8e8160c49cdc","5806584c2a4f8e8160c49cdb","5806584c2a4f8e8160c49cdd","5806584c2a4f8e8160c49ce0","5806584c2a4f8e8160c49cdf","5806584c2a4f8e8160c49cde","5806584c2a4f8e8160c49ce1","5806584c2a4f8e8160c49ce3","5806584c2a4f8e8160c49ce2","5806584c2a4f8e8160c49ce4","58065a0c29169f816f05d181","58065a0d29169f816f05d182","58065a3129169f816f05d183","58065a3229169f816f05d184","580537863ca7247be13fe4f4","58065a4529169f816f05d186","58065a4429169f816f05d185","58065a4729169f816f05d187","58065a4729169f816f05d188","58065a5229169f816f05d189","58065a5229169f816f05d18a","58065a5329169f816f05d18b","58065a5429169f816f05d18e","58065a5429169f816f05d18f","58065a5329169f816f05d18c","58065a5429169f816f05d18d","58065a5429169f816f05d190","58065a5a29169f816f05d191","58065a5b29169f816f05d192","58065a5c29169f816f05d193","58065a5d29169f816f05d194","58065a5d29169f816f05d195","58065a5d29169f816f05d196","58065a5d29169f816f05d197","58065a6629169f816f05d198","58065a6629169f816f05d199","58065a6729169f816f05d19a","58065a6829169f816f05d19b","58065a6829169f816f05d19c","58065a7429169f816f05d19d","58065a7429169f816f05d19e","58065a7429169f816f05d19f","58065a7629169f816f05d1a3","58065a7629169f816f05d1a2","58065a7529169f816f05d1a0","58065a7529169f816f05d1a1","58065a7629169f816f05d1a5","58065a7629169f816f05d1a4","58065a9029169f816f05d1a6","58065a9029169f816f05d1a7","58065a9029169f816f05d1a8","58065a9029169f816f05d1a9","58065a9029169f816f05d1ab","58065a9029169f816f05d1aa","58065a9029169f816f05d1ac","58065a9029169f816f05d1ad","58065a9029169f816f05d1ae","580537833ca7247be13fe45d","58065a9f29169f816f05d1af","58065aa029169f816f05d1b0","58065aa029169f816f05d1b2","58065aa029169f816f05d1b3","58065aa029169f816f05d1b1","58065aa129169f816f05d1b4","58065aa129169f816f05d1b5","58065aa129169f816f05d1b7","58065aa129169f816f05d1b6","58065aa129169f816f05d1b8","58065ab629169f816f05d1b9","58065ab629169f816f05d1ba","58065ab629169f816f05d1bc","58065ab629169f816f05d1bb","58065ab629169f816f05d1bd","58065ab829169f816f05d1c2","58065ab829169f816f05d1bf","58065ab729169f816f05d1be","58065ab829169f816f05d1c1","58065ab829169f816f05d1c0","58065aca29169f816f05d1c3","58065aca29169f816f05d1c5","58065aca29169f816f05d1c4","58065acb29169f816f05d1c7","58065acb29169f816f05d1c6","58065acb29169f816f05d1cb","58065acb29169f816f05d1ca","58065acb29169f816f05d1cc","58065acb29169f816f05d1c8","58065acb29169f816f05d1c9","58065acb29169f816f05d1cd","58065acb29169f816f05d1ce","580537843ca7247be13fe478","58065ad829169f816f05d1cf","58065ad829169f816f05d1d0","58065ad929169f816f05d1d2","58065ad829169f816f05d1d1","58065ada29169f816f05d1d3","58065ada29169f816f05d1d4","58065adb29169f816f05d1d6","58065ada29169f816f05d1d5","58065ae729169f816f05d1d7","58065ae829169f816f05d1d9","58065ae829169f816f05d1db","58065ae729169f816f05d1d8","58065ae829169f816f05d1da","58065af929169f816f05d1dc","58065afa29169f816f05d1de","58065af929169f816f05d1dd","58065afa29169f816f05d1df","58065afb29169f816f05d1e1","58065afb29169f816f05d1e0","58065afb29169f816f05d1e2","58065afb29169f816f05d1e3","58065afb29169f816f05d1e4","58065afb29169f816f05d1e5","58065afb29169f816f05d1e6","58065b1029169f816f05d1e7","58065b1029169f816f05d1e9","58065b1029169f816f05d1e8","58065b1029169f816f05d1eb","58065b1029169f816f05d1ec","58065b1029169f816f05d1ea","58065b1029169f816f05d1ed","58065b1929169f816f05d1ee","58065b1a29169f816f05d1ef","58065b1a29169f816f05d1f1","58065b1a29169f816f05d1f2","58065b1a29169f816f05d1f0","58065b1a29169f816f05d1f3","58065b1b29169f816f05d1f4","58065b1b29169f816f05d1f5","58065b2a29169f816f05d1f6","58065b2a29169f816f05d1f7","58065b2b29169f816f05d1f8","58065b2c29169f816f05d1fb","58065b2b29169f816f05d1fa","58065b2b29169f816f05d1f9","58065b2c29169f816f05d1fc","58065b2c29169f816f05d1fd","58065b3529169f816f05d1fe","58065b3629169f816f05d1ff","58065b3629169f816f05d201","58065b3629169f816f05d200","58065b3629169f816f05d202","58065b3629169f816f05d203","58065b3629169f816f05d206","58065b3629169f816f05d204","58065b3629169f816f05d205","58065b3629169f816f05d207","58065b3629169f816f05d20a","58065b3629169f816f05d20b","58065b3629169f816f05d209","58065b3629169f816f05d20c","58065b3629169f816f05d208","58065b5829169f816f05d20d","58065b5829169f816f05d20e","58065b5829169f816f05d20f","58065b5829169f816f05d211","58065b5829169f816f05d212","58065b5829169f816f05d210","58065b5829169f816f05d213","58065b5829169f816f05d216","58065b5829169f816f05d215","58065b5829169f816f05d217","58065b5829169f816f05d218","58065b5829169f816f05d214","58065b5829169f816f05d21b","58065b5829169f816f05d21a","58065b5829169f816f05d219","58065b5829169f816f05d21c","58065b5829169f816f05d21d","58065cc02418ec817d0989ab","58065ce12418ec817d0989ac","58065ce22418ec817d0989af","58065ce22418ec817d0989ad","58065ce22418ec817d0989b1","58065ce22418ec817d0989b0","58065ce22418ec817d0989ae","58065ce22418ec817d0989b3","58065ce22418ec817d0989b2","58065ce22418ec817d0989b4","58065ce22418ec817d0989b5","58065ce22418ec817d0989b6","58065ce22418ec817d0989b7","58065ce22418ec817d0989b8","58065ce22418ec817d0989b9","58065cf72418ec817d0989ba","58065cf92418ec817d0989bb","58065cf92418ec817d0989bc","58065cf92418ec817d0989be","58065cf92418ec817d0989bd","58065cf92418ec817d0989c4","58065cf92418ec817d0989c0","58065cf92418ec817d0989bf","58065cf92418ec817d0989c3","58065cf92418ec817d0989c2","58065cf92418ec817d0989c1","58065cf92418ec817d0989c7","58065cf92418ec817d0989c6","58065cf92418ec817d0989c8","58065cf92418ec817d0989c5","58065cf92418ec817d0989c9","58065d0a2418ec817d0989ca","58065d0a2418ec817d0989cd","58065d0a2418ec817d0989cb","58065d0a2418ec817d0989cc","58065d0a2418ec817d0989ce","58065d0a2418ec817d0989cf","58065d0a2418ec817d0989d2","58065d0a2418ec817d0989d1","58065d0a2418ec817d0989d0","58065d0a2418ec817d0989d3","58065d0a2418ec817d0989d6","58065d0a2418ec817d0989d5","58065d0a2418ec817d0989d4","58065d0a2418ec817d0989d7","58065d0a2418ec817d0989d8","58065d0a2418ec817d0989d9","58065d0a2418ec817d0989da","58065d0a2418ec817d0989dd","58065d0a2418ec817d0989dc","58065d0a2418ec817d0989db","58065d0a2418ec817d0989df","58065d0a2418ec817d0989de","58065d0a2418ec817d0989e0","58065d1c2418ec817d0989e1","58065d1c2418ec817d0989e6","58065d1c2418ec817d0989e3","58065d1c2418ec817d0989e5","58065d1c2418ec817d0989e8","58065d1c2418ec817d0989e9","58065d1c2418ec817d0989e4","58065d1c2418ec817d0989e2","58065d1c2418ec817d0989e7","58065d1c2418ec817d0989ea","58065d1c2418ec817d0989eb","58065d1c2418ec817d0989ec","58065d1c2418ec817d0989ed","58065d1c2418ec817d0989ee","58065d1d2418ec817d0989ef","58065d1d2418ec817d0989f0","58065d1d2418ec817d0989f1","58065d1e2418ec817d0989f3","58065d1e2418ec817d0989f2","58065d1e2418ec817d0989f4","58065d1e2418ec817d0989f6","58065d1e2418ec817d0989f8","58065d1e2418ec817d0989f5","58065d1e2418ec817d0989f7","58065d1e2418ec817d0989f9","58065d1e2418ec817d0989fa","58065d292418ec817d0989fb","58065d292418ec817d0989fc","58065d292418ec817d0989fd","58065d292418ec817d0989ff","58065d292418ec817d098a01","58065d292418ec817d098a04","58065d292418ec817d098a00","58065d292418ec817d0989fe","58065d292418ec817d098a03","58065d292418ec817d098a0a","58065d292418ec817d098a02","58065d292418ec817d098a05","58065d292418ec817d098a06","58065d292418ec817d098a09","58065d292418ec817d098a08","58065d292418ec817d098a0f","58065d292418ec817d098a0c","58065d292418ec817d098a07","58065d292418ec817d098a0b","58065d292418ec817d098a0e","58065d292418ec817d098a0d","58065d292418ec817d098a11","58065d292418ec817d098a13","58065d292418ec817d098a12","58065d292418ec817d098a10","58065d292418ec817d098a14","58065d362418ec817d098a15","58065d362418ec817d098a19","58065d362418ec817d098a18","58065d362418ec817d098a17","58065d362418ec817d098a16","58065d362418ec817d098a1c","58065d362418ec817d098a1a","58065d362418ec817d098a1b","58065d362418ec817d098a1d","58065d362418ec817d098a1f","58065d362418ec817d098a20","58065d362418ec817d098a1e","58065d362418ec817d098a21","58065d362418ec817d098a22","58065d362418ec817d098a23","58065d372418ec817d098a24","58065d372418ec817d098a25","58065d372418ec817d098a28","58065d372418ec817d098a27","58065d372418ec817d098a26","58065d372418ec817d098a2b","58065d372418ec817d098a2a","58065d372418ec817d098a29","58065d372418ec817d098a2e","58065d372418ec817d098a2d","58065d372418ec817d098a2c","58065d382418ec817d098a30","58065d372418ec817d098a2f","58065d382418ec817d098a31","58065d422418ec817d098a32","58065d432418ec817d098a33","58065d432418ec817d098a36","58065d432418ec817d098a35","58065d432418ec817d098a34","58065d432418ec817d098a37","58065d432418ec817d098a38","58065d432418ec817d098a3b","58065d432418ec817d098a3a","58065d432418ec817d098a3d","58065d432418ec817d098a39","58065d432418ec817d098a3c","58065d432418ec817d098a3f","58065d432418ec817d098a3e","58065d432418ec817d098a42","58065d432418ec817d098a40","58065d432418ec817d098a41","58065d432418ec817d098a43","58065d432418ec817d098a44","58065d432418ec817d098a45","58065d432418ec817d098a47","58065d432418ec817d098a46","58065d432418ec817d098a48","58065d432418ec817d098a49","58065d502418ec817d098a4d","58065d502418ec817d098a4c","58065d502418ec817d098a4b","58065d502418ec817d098a4a","58065d502418ec817d098a4f","58065d502418ec817d098a51","58065d502418ec817d098a50","58065d502418ec817d098a54","58065d502418ec817d098a4e","58065d502418ec817d098a53","58065d502418ec817d098a52","58065d502418ec817d098a57","58065d502418ec817d098a56","58065d502418ec817d098a59","58065d502418ec817d098a55","58065d502418ec817d098a58","58065d502418ec817d098a5a","58065d502418ec817d098a5b","58065d502418ec817d098a5c","58065d502418ec817d098a5d","58065d622418ec817d098a60","58065d622418ec817d098a5f","58065d622418ec817d098a5e","58065d622418ec817d098a62","58065d622418ec817d098a64","58065d622418ec817d098a61","58065d622418ec817d098a63","58065d622418ec817d098a65","58065d622418ec817d098a69","58065d622418ec817d098a66","58065d622418ec817d098a67","58065d622418ec817d098a68","58065d622418ec817d098a6a","58065d622418ec817d098a6c","58065d622418ec817d098a6b","58065d622418ec817d098a6f","58065d622418ec817d098a6d","58065d622418ec817d098a6e","58065d622418ec817d098a72","58065d622418ec817d098a71","58065d622418ec817d098a73","58065d622418ec817d098a74","58065d622418ec817d098a70","58065d742418ec817d098a78","58065d742418ec817d098a77","58065d742418ec817d098a75","58065d742418ec817d098a79","58065d752418ec817d098a7a","58065d742418ec817d098a76","58065d752418ec817d098a7c","58065d752418ec817d098a7b","58065d752418ec817d098a7e","58065d752418ec817d098a7d","58065d752418ec817d098a7f","58065d752418ec817d098a81","58065d752418ec817d098a80","58065d752418ec817d098a83","58065d752418ec817d098a82","58065d752418ec817d098a85","58065d752418ec817d098a86","58065d752418ec817d098a88","58065d752418ec817d098a84","58065d752418ec817d098a87","58065d752418ec817d098a89","58065d752418ec817d098a8a","58065de314a214818555f253","58065de414a214818555f254","58065de414a214818555f256","58065de414a214818555f255","58065de514a214818555f257","58065dec14a214818555f258","58065df714a214818555f259","58065df714a214818555f25a","58065e0214a214818555f25b","58065e0214a214818555f25c","58065e0314a214818555f25e","58065e0214a214818555f25d","58065e0c14a214818555f25f","58065e0d14a214818555f260","58065e4014a214818555f261","58065e5714a214818555f262","58065e5714a214818555f263","58065e5714a214818555f264","58065e5714a214818555f265","58065e5814a214818555f266","58065e6714a214818555f267","58065e6814a214818555f269","58065e6814a214818555f268","58065e6814a214818555f26c","58065e6814a214818555f26a","58065e6814a214818555f26d","58065e6814a214818555f26e","58065e6814a214818555f26b","58065e6814a214818555f26f","58065e6814a214818555f271","58065e6814a214818555f270","58065e6814a214818555f274","58065e6814a214818555f272","58065e6814a214818555f273","58065e6814a214818555f275","58065e7114a214818555f276","58065e7214a214818555f278","58065e7214a214818555f277","58065e7214a214818555f279","58065e7214a214818555f27a","58065e7214a214818555f27c","58065e7214a214818555f27b","58065e7214a214818555f27d","58065e7214a214818555f27f","58065e7214a214818555f27e","58065e7214a214818555f282","58065e7214a214818555f280","58065e7214a214818555f281","58065e7214a214818555f283","58065e7214a214818555f284","58065e7314a214818555f285","58065e7314a214818555f286","58065e7314a214818555f288","58065e7314a214818555f287","58065e7314a214818555f28a","58065e7314a214818555f28b","58065e7314a214818555f289","58065e7314a214818555f28c","58065e7314a214818555f28d","58065e7314a214818555f28e","58065e7314a214818555f28f","58065e7314a214818555f290","58065e7314a214818555f291","58065e7314a214818555f292","58065e8014a214818555f296","58065e8014a214818555f295","58065e8014a214818555f294","58065e8014a214818555f293","58065e8014a214818555f297","58065e8014a214818555f298","58065e8014a214818555f299","58065e8014a214818555f29b","58065e8014a214818555f29e","58065e8014a214818555f29d","58065e8014a214818555f29c","58065e8014a214818555f29a","58065e8014a214818555f2a2","58065e8014a214818555f2a1","58065e8014a214818555f2a0","58065e8014a214818555f29f","58065e8014a214818555f2a3","58065e8014a214818555f2a7","58065e8014a214818555f2a4","58065e8014a214818555f2a6","58065e8014a214818555f2a5","58065e8014a214818555f2a8","58065e8014a214818555f2a9","58065e8014a214818555f2aa","58065e8914a214818555f2ab","58065e8914a214818555f2ae","58065e8914a214818555f2ac","58065e8914a214818555f2af","58065e8914a214818555f2ad","58065e8914a214818555f2b0","58065e8914a214818555f2b1","58065e8914a214818555f2b2","58065e8914a214818555f2b3","58065e8a14a214818555f2b4","58065e8a14a214818555f2b5","58065e8a14a214818555f2b6","58065e8a14a214818555f2ba","58065e8a14a214818555f2b9","58065e8a14a214818555f2b7","58065e8a14a214818555f2b8","58065e8a14a214818555f2bb","58065e8a14a214818555f2bc","58065e8a14a214818555f2bd","58065e8a14a214818555f2be","58065e8a14a214818555f2bf","58065e8a14a214818555f2c0","58065e8b14a214818555f2c1","58065e8b14a214818555f2c4","58065e8b14a214818555f2c3","58065e8b14a214818555f2c2","58065e8b14a214818555f2c6","58065e8b14a214818555f2c5","58065e8b14a214818555f2c7","58065e9714a214818555f2c8","58065e9714a214818555f2c9","58065e9714a214818555f2cc","58065e9714a214818555f2cd","58065e9714a214818555f2cb","58065e9714a214818555f2ca","58065e9714a214818555f2ce","58065e9714a214818555f2cf","58065e9714a214818555f2d2","58065e9714a214818555f2d1","58065e9714a214818555f2d0","58065e9714a214818555f2d3","58065e9714a214818555f2d4","58065e9714a214818555f2d5","58065e9814a214818555f2d6","58065e9814a214818555f2d7","58065e9814a214818555f2d8","58065e9814a214818555f2d9","58065e9914a214818555f2dd","58065e9914a214818555f2dc","58065e9814a214818555f2da","58065e9914a214818555f2db","58065e9914a214818555f2df","58065e9914a214818555f2de","58065e9914a214818555f2e0","58065e9914a214818555f2e1","58065e9914a214818555f2e2","58065e9914a214818555f2e5","58065e9914a214818555f2e4","58065e9914a214818555f2e3","58065ea514a214818555f2e6","58065ea514a214818555f2e8","58065ea514a214818555f2e7","58065ea514a214818555f2ea","58065ea514a214818555f2e9","58065ea514a214818555f2eb","58065ea514a214818555f2ec","58065ea514a214818555f2ed","58065ea514a214818555f2ef","58065ea514a214818555f2ee","58065ea514a214818555f2f0","58065ea514a214818555f2f2","58065ea514a214818555f2f1","58065ea514a214818555f2f4","58065ea514a214818555f2f3","58065ea514a214818555f2f7","58065ea514a214818555f2f5","58065ea514a214818555f2f9","58065ea514a214818555f2f6","58065ea514a214818555f2f8","58065ea514a214818555f2fa","58065ea514a214818555f2fb","58065ea614a214818555f2fd","58065ea614a214818555f2fe","58065ea514a214818555f2fc","58065eb714a214818555f2ff","58065eb714a214818555f301","58065eb714a214818555f300","58065eb714a214818555f303","58065eb714a214818555f302","58065eb714a214818555f304","58065eb714a214818555f308","58065eb714a214818555f307","58065eb714a214818555f306","58065eb714a214818555f305","58065eb714a214818555f309","58065eb714a214818555f30a","58065eb714a214818555f30b","58065eb714a214818555f30c","58065eb714a214818555f30d","58065eb814a214818555f30e","58065eb814a214818555f30f","58065eb814a214818555f311","58065eb814a214818555f310","58065eb814a214818555f312","58065eb914a214818555f313","58065eb914a214818555f316","58065eb914a214818555f315","58065eb914a214818555f314","58065eb914a214818555f317","58065eb914a214818555f318","58065eb914a214818555f319","58065eb914a214818555f31a","58065ec714a214818555f31b","58065ec714a214818555f31c","58065ec714a214818555f31d","58065ec714a214818555f320","58065ec714a214818555f322","58065ec714a214818555f321","58065ec714a214818555f31e","58065ec714a214818555f31f","58065ec714a214818555f323","58065ec714a214818555f325","58065ec714a214818555f328","58065ec714a214818555f324","58065ec714a214818555f326","58065ec714a214818555f327","58065ec714a214818555f32a","58065ec714a214818555f329","58065ec714a214818555f330","58065ec714a214818555f32b","58065ec714a214818555f32d","58065ec714a214818555f32c","58065ec714a214818555f32f","58065ec714a214818555f32e","58065ec714a214818555f334","58065ec714a214818555f331","58065ec714a214818555f332","58065ec714a214818555f333","58065ec714a214818555f335","58065ed314a214818555f336","58065ed314a214818555f337","58065ed314a214818555f338","58065ed414a214818555f339","58065ed414a214818555f33a","58065ed414a214818555f33d","58065ed414a214818555f33e","58065ed414a214818555f33c","58065ed414a214818555f340","58065ed414a214818555f33b","58065ed414a214818555f33f","58065ed414a214818555f341","58065ed414a214818555f342","58065ed414a214818555f343","58065ed414a214818555f345","58065ed414a214818555f344","58065ed414a214818555f346","58065ed514a214818555f347","58065ed514a214818555f349","58065ed514a214818555f34b","58065ed514a214818555f34a","58065ed514a214818555f348","58065ed514a214818555f34c","58065ed514a214818555f34f","58065ed514a214818555f34e","58065ed514a214818555f350","58065ed514a214818555f34d","58065ed514a214818555f351","58065ed514a214818555f353","58065ed514a214818555f352","58065ed514a214818555f354","58065ed514a214818555f358","58065ed514a214818555f355","58065ed514a214818555f356","58065ed514a214818555f357","58065ed514a214818555f359","58065edf14a214818555f35b","58065edf14a214818555f35a","58065edf14a214818555f35c","58065edf14a214818555f35e","58065edf14a214818555f35f","58065edf14a214818555f35d","58065edf14a214818555f360","58065edf14a214818555f361","58065ee014a214818555f364","58065ee014a214818555f365","58065ee014a214818555f363","58065ee014a214818555f362","58065ee014a214818555f368","58065ee014a214818555f367","58065ee014a214818555f366","58065ee014a214818555f369","58065ee014a214818555f36a","58065ee114a214818555f36b","58065ee114a214818555f36d","58065ee114a214818555f36c","58065ee114a214818555f36e","58065ee114a214818555f370","58065ee114a214818555f36f","58065ee114a214818555f371","58065ee114a214818555f372","58065ee114a214818555f375","58065ee114a214818555f374","58065ee114a214818555f373","58065ee114a214818555f376","58065ee114a214818555f377","58065ee114a214818555f378","58065ef814a214818555f37a","58065ef814a214818555f379","58065ef814a214818555f37b","58065ef814a214818555f37d","58065ef814a214818555f37e","58065ef814a214818555f381","58065ef814a214818555f37c","58065ef814a214818555f380","58065ef814a214818555f37f","58065ef814a214818555f382","58065ef914a214818555f385","58065ef914a214818555f384","58065ef914a214818555f383","58065ef914a214818555f386","58065ef914a214818555f388","58065ef914a214818555f387","58065ef914a214818555f38a","58065ef914a214818555f389","58065ef914a214818555f38b","58065ef914a214818555f38c","58065ef914a214818555f38e","58065ef914a214818555f38f","58065ef914a214818555f38d","58065ef914a214818555f390","58065ef914a214818555f391","58065ef914a214818555f392","58065efa14a214818555f393"];module.exports=mainService;
+	function organizeMovie(response){var results=response.data;var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:formatDate(results.release_date),video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results,certification:getCertification(results.release_dates.results)};if(movieObj.crew.length<3){movieObj.crew=movieObj.crew[0];}movieObj.crew.forEach(function(y){if(!y.profile_path){y.profile_path="http://localhost:8080/images/no-picture.png";}else{y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});movieObj.movieCast.forEach(function(y){// console.log(y.profile_path);
+	if(!y.profile_path){// console.log("no picture");
+	y.profile_path="http://localhost:8080/images/no-picture.png";}else{// console.log("replacing picture");
+	y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});return movieObj;}}var initMatchQueue=["580653decbfa7d81497fe80d","58065d1c2418ec817d0989eb","5806522a868f85812eb9f262","580653bfcbfa7d81497fe7d6","58065e7314a214818555f28d","58065214868f85812eb9f25f","5806552911337e81519b53f4","58065d0a2418ec817d0989cc","58065416cbfa7d81497fe875","58065439cbfa7d81497fe8a5","5806547ccbfa7d81497fe911","5806529c868f85812eb9f2d0","58065182868f85812eb9f1af","58065eb714a214818555f306","5806552011337e81519b53e5","580653eecbfa7d81497fe829","580657342a4f8e8160c49b3c","58065ed514a214818555f34d","580537853ca7247be13fe4db","58065235868f85812eb9f28e","58065d0a2418ec817d0989cf","580652e8868f85812eb9f36b","58065427cbfa7d81497fe88f","580652c7868f85812eb9f33b","5806437851275a805bf3f1e7","58065235868f85812eb9f29b","580651fa868f85812eb9f234","580652c9868f85812eb9f353","580657352a4f8e8160c49b3e","5806548dcbfa7d81497fe935","58065254868f85812eb9f2ae","580657ff2a4f8e8160c49c9c","5806545acbfa7d81497fe8eb","5806556311337e81519b5434","58065212868f85812eb9f240","5806515a868f85812eb9f163","58065d752418ec817d098a7c","58065ec714a214818555f325","58065e8a14a214818555f2b7","580655cc11337e81519b54a7","58064f20cd5dd981118aa2bd","5806579a2a4f8e8160c49bbf","58065d292418ec817d098a08","58065e5714a214818555f265","58065159868f85812eb9f156","5806546acbfa7d81497fe8f3","58065b3629169f816f05d209","5806456154027480830ccd63","5806522c868f85812eb9f27d","58064f1dcd5dd981118aa2b3","58065acb29169f816f05d1c7","58065e8a14a214818555f2be","58065407cbfa7d81497fe859","580651c1868f85812eb9f1d5","58064e0b7c476280f8b331be","580657912a4f8e8160c49ba7","5806553c11337e81519b53fd","58064f0dcd5dd981118aa289","580653accbfa7d81497fe79d","58065d0a2418ec817d0989d9","5806408b6dcddf8010f371e6","5806549ccbfa7d81497fe949","580653d8cbfa7d81497fe808","5806559f11337e81519b5488","580657682a4f8e8160c49b6a","58065439cbfa7d81497fe8a0","58064f2acd5dd981118aa2d7","5806584c2a4f8e8160c49ce0","580537853ca7247be13fe4c0","58064dfd7c476280f8b3319b","5806553c11337e81519b5403","5806559f11337e81519b548f","58065ec714a214818555f31e","58064fa29e84498120e7cbde","58064dfb7c476280f8b3318d","58065e9714a214818555f2c9","58065edf14a214818555f360","58065391cbfa7d81497fe769","58064d9caf05f980ef9eaacf","58065e5714a214818555f263","58064d7aaf05f980ef9eaa8f","5806456154027480830ccd69","58065ef914a214818555f38e","580653ddcbfa7d81497fe80c","58065d292418ec817d098a11","580655b711337e81519b549d","580657f22a4f8e8160c49c65","580537853ca7247be13fe4b0","58064e097c476280f8b331b7","580653b5cbfa7d81497fe7b6","5806529b868f85812eb9f2c4","58064f11cd5dd981118aa295","580652f4868f85812eb9f39d","58064fae9e84498120e7cc03","58064e097c476280f8b331b6","5806408a6dcddf8010f371d9","580657f32a4f8e8160c49c73","5806408a6dcddf8010f371d5","58064f26cd5dd981118aa2cb","58064dfa7c476280f8b33187","58065254868f85812eb9f2b4","58065e8014a214818555f2a6","580657462a4f8e8160c49b4f","580652e8868f85812eb9f36f","58065ef914a214818555f38b","580657ff2a4f8e8160c49c9a","580537843ca7247be13fe4af","5806552011337e81519b53e3","58064d9caf05f980ef9eaacc","5806456254027480830ccd73","5806545acbfa7d81497fe8ee","58064dfb7c476280f8b33190","580537843ca7247be13fe490","58065d372418ec817d098a2c","5806574f2a4f8e8160c49b58","580651ea868f85812eb9f217","58064e6ca05fd98101c67262","580653b5cbfa7d81497fe7ab","58065e6814a214818555f275","58064f9b9e84498120e7cbcc","580658142a4f8e8160c49cc3","58064d82af05f980ef9eaa9a","58064dfb7c476280f8b3318c","58065ab829169f816f05d1c1","58065304868f85812eb9f3b7","58064eb42120e2810a5e0321","58064e68a05fd98101c6724f","58065a9029169f816f05d1a6","5806546ccbfa7d81497fe909","58065aa029169f816f05d1b3","580652e9868f85812eb9f378","58065254868f85812eb9f2ac","580653bfcbfa7d81497fe7cd","580651c1868f85812eb9f1c7","58065235868f85812eb9f298","58065e7214a214818555f281","580655cc11337e81519b54aa","58064fa69e84498120e7cbeb","5806553d11337e81519b540e","58065aa029169f816f05d1b2","5806579b2a4f8e8160c49bc1","58065d1e2418ec817d0989f8","5806556f11337e81519b5449","5806408a6dcddf8010f371d6","580652f3868f85812eb9f380","58064d9aaf05f980ef9eaac6","58065254868f85812eb9f2af","5806555711337e81519b5421","58065ea514a214818555f2f1","58064df57c476280f8b3316d","580657742a4f8e8160c49b70","5806584c2a4f8e8160c49ce4","580652b5868f85812eb9f315","580657f22a4f8e8160c49c64","58065ea514a214818555f2f3","58064e59a05fd98101c6722b","58065e9914a214818555f2dc","58065b3629169f816f05d208","580657f22a4f8e8160c49c60","58065426cbfa7d81497fe886","580652c8868f85812eb9f34d","5806579b2a4f8e8160c49bc2","58065ec714a214818555f327","58064cd15564f580e70fc3ad","580651fa868f85812eb9f22b","58065304868f85812eb9f3b8","58064e74a05fd98101c6726f","5806456154027480830ccd6a","58065304868f85812eb9f3b3","5806456254027480830ccd71","58065427cbfa7d81497fe895","5806539ccbfa7d81497fe781","58065b5829169f816f05d218","5806558111337e81519b5462","580537843ca7247be13fe48a","580651ea868f85812eb9f214","580653bfcbfa7d81497fe7c7","580537843ca7247be13fe498","5806578f2a4f8e8160c49b96","58064f33cd5dd981118aa2ee","5806545acbfa7d81497fe8e7","580657352a4f8e8160c49b41","58065e7214a214818555f27c","5806584c2a4f8e8160c49cd5","58065ee114a214818555f378","58065407cbfa7d81497fe851","5806575a2a4f8e8160c49b61","5806555811337e81519b542e","580653decbfa7d81497fe818","58064f11cd5dd981118aa296","580537843ca7247be13fe49b","58064d6faf05f980ef9eaa74","58065eb714a214818555f30c","58064f19cd5dd981118aa2a4","580652b5868f85812eb9f320","58065a9029169f816f05d1ae","5806456154027480830ccd64","58065b2b29169f816f05d1fa","58065d752418ec817d098a86","5806573c2a4f8e8160c49b47","58065b3629169f816f05d20c","58065166868f85812eb9f186","58064e68a05fd98101c6724a","58064dfd7c476280f8b3319d","58065304868f85812eb9f3ae","5806548dcbfa7d81497fe92c","5806552011337e81519b53e4","580657e32a4f8e8160c49c55","58064d95af05f980ef9eaabe","58065d502418ec817d098a5c","580651bf868f85812eb9f1b9","5806584a2a4f8e8160c49cca","580653bfcbfa7d81497fe7c2","580651c0868f85812eb9f1c0","580653bfcbfa7d81497fe7d8","58065254868f85812eb9f2a9","58065446cbfa7d81497fe8c4","5806549ccbfa7d81497fe955","58064e78a05fd98101c6727c","580657fe2a4f8e8160c49c8a","58065416cbfa7d81497fe870","58064dfd7c476280f8b3319c","580537863ca7247be13fe4f6","580658002a4f8e8160c49ca4","58064f9b9e84498120e7cbc5","58065eb714a214818555f308","58065a7529169f816f05d1a1","58065e8a14a214818555f2bb","58064f999e84498120e7cbbc","58064f19cd5dd981118aa2a5","58065e8014a214818555f2a7","580653bfcbfa7d81497fe7c5","580537503ca7247be13fe414","580651e8868f85812eb9f1ff","580657e32a4f8e8160c49c56","580657832a4f8e8160c49b79","58065180868f85812eb9f192","58065235868f85812eb9f292","58065180868f85812eb9f194","580657ff2a4f8e8160c49c9b","580537843ca7247be13fe49d","58065e8a14a214818555f2bf","58065ee014a214818555f369","5806559e11337e81519b547b","58065e7214a214818555f282","58065445cbfa7d81497fe8b2","580658132a4f8e8160c49caf","58064f23cd5dd981118aa2c2","5806552911337e81519b53f5","58064e097c476280f8b331b2","58065254868f85812eb9f2b1","5806558c11337e81519b5467","580652b5868f85812eb9f316","58065d752418ec817d098a89","580657692a4f8e8160c49b6e","58065181868f85812eb9f19f","58064f9b9e84498120e7cbc8","58065eb714a214818555f307","5806456254027480830ccd70","580653d8cbfa7d81497fe800","5806549ccbfa7d81497fe944","580653b5cbfa7d81497fe7bf","5806539ccbfa7d81497fe789","580537853ca7247be13fe4da","58064fab9e84498120e7cbfc","58064f999e84498120e7cbc0","58065df714a214818555f25a","580537833ca7247be13fe46d","58065180868f85812eb9f18f","580655b711337e81519b549f","580652b6868f85812eb9f326","580658002a4f8e8160c49ca3","58065d752418ec817d098a87","58065ec714a214818555f31d","58065e8914a214818555f2af","58065d292418ec817d098a0e","58064e0b7c476280f8b331bc","580652e8868f85812eb9f366","58065426cbfa7d81497fe889","58064e77a05fd98101c67273","58065ea514a214818555f2e9","580537853ca7247be13fe4bb","58064e6da05fd98101c67268","58065445cbfa7d81497fe8b5","580537853ca7247be13fe4ed","580652f3868f85812eb9f37c","5806515a868f85812eb9f162","580652a7868f85812eb9f2f7","5806555811337e81519b5427","58065d372418ec817d098a25","58065e8914a214818555f2ae","58065ea614a214818555f2fd","58064e5fa05fd98101c67234","58065447cbfa7d81497fe8d2","580537853ca7247be13fe4d5","580653accbfa7d81497fe795","580652a6868f85812eb9f2eb","58065d502418ec817d098a4d","5806559e11337e81519b547e","58065212868f85812eb9f24e","58065e7214a214818555f27b","5806553c11337e81519b5408","580652e8868f85812eb9f36c","580652b5868f85812eb9f31f","5806549ccbfa7d81497fe950","5806559e11337e81519b547f","58065159868f85812eb9f159","5806529c868f85812eb9f2d1","58065427cbfa7d81497fe897","580651fa868f85812eb9f230","58064f1dcd5dd981118aa2af","58065edf14a214818555f35d","580651ce868f85812eb9f1e8","580653cccbfa7d81497fe7e1","58064f1fcd5dd981118aa2b7","5806408b6dcddf8010f371ec","580652e7868f85812eb9f358","58065165868f85812eb9f185","58064f0fcd5dd981118aa292","580657832a4f8e8160c49b7c","580657e12a4f8e8160c49c4b","5806554c11337e81519b541c","5806558e11337e81519b546f","58064fab9e84498120e7cbfb","58064df87c476280f8b3317c","5806558011337e81519b5458","580652c9868f85812eb9f352","5806584c2a4f8e8160c49cdb","58065ec714a214818555f32d","58065d622418ec817d098a72","580652c6868f85812eb9f338","58065426cbfa7d81497fe885","5806408a6dcddf8010f371d8","58065303868f85812eb9f3a0","580651c1868f85812eb9f1cc","580537843ca7247be13fe486","58065417cbfa7d81497fe87b","580651e8868f85812eb9f1fc","580651cf868f85812eb9f1f2","5806556311337e81519b5437","5806584a2a4f8e8160c49cc8","58065b1029169f816f05d1ec","58064dfe7c476280f8b331a2","5806549ccbfa7d81497fe945","58064d8faf05f980ef9eaaa3","58064fae9e84498120e7cc02","58065e6814a214818555f272","58065151868f85812eb9f151","5806573c2a4f8e8160c49b46","58065415cbfa7d81497fe861","58065e8b14a214818555f2c6","580653d8cbfa7d81497fe806","58064d95af05f980ef9eaab8","58065235868f85812eb9f29e","58065181868f85812eb9f19d","58064e9c2120e2810a5e0315","5806529c868f85812eb9f2cd","58065ad829169f816f05d1d0","58064f1dcd5dd981118aa2b1","58064fa69e84498120e7cbe8","580653accbfa7d81497fe7a0","580652a7868f85812eb9f2fa","58065eb914a214818555f319","58065aa029169f816f05d1b1","58064f30cd5dd981118aa2e4","58065d622418ec817d098a6f","58065305868f85812eb9f3c0","58065303868f85812eb9f3a5","5806555811337e81519b542c","58064e047c476280f8b331a6","58065b5829169f816f05d219","5806522b868f85812eb9f26f","58064f0fcd5dd981118aa293","580537833ca7247be13fe46a","5806578f2a4f8e8160c49b91","580653accbfa7d81497fe79f","58065304868f85812eb9f3b4","58065a5a29169f816f05d191","58064f00cd5dd981118aa275","58065a5429169f816f05d18e","58065ed514a214818555f353","58065e7314a214818555f290","58065ed414a214818555f341","58065e9714a214818555f2ce","580653bfcbfa7d81497fe7d7","5806552911337e81519b53f8","580655a011337e81519b5491","5806575a2a4f8e8160c49b62","5806556f11337e81519b5444","580537853ca7247be13fe4e9","58064e6da05fd98101c67266","58065214868f85812eb9f25d","580658132a4f8e8160c49cbc","58065e8a14a214818555f2ba","580651ce868f85812eb9f1d6","5806549ccbfa7d81497fe94e","580653cccbfa7d81497fe7f3","58065ec714a214818555f331","580651bf868f85812eb9f1b8","580652b5868f85812eb9f31e","580653b5cbfa7d81497fe7b9","58064ecb2120e2810a5e0331","5806546acbfa7d81497fe8f9","5806556311337e81519b5436","5805375b3ca7247be13fe433","580537833ca7247be13fe46c","58065e8014a214818555f297","5806573c2a4f8e8160c49b45","58064e6ba05fd98101c6725e","580655ce11337e81519b54c2","5806559f11337e81519b5486","58065b1a29169f816f05d1f0","580643aeb624f68064c5bdb0","5806546acbfa7d81497fe8f0","58065b3529169f816f05d1fe","58065ea514a214818555f2f9","58065415cbfa7d81497fe85f","58065407cbfa7d81497fe85e","5806539ccbfa7d81497fe784","58065ae729169f816f05d1d8","5806548fcbfa7d81497fe93e","58065303868f85812eb9f3a4","5806539ccbfa7d81497fe780","58065416cbfa7d81497fe86e","58064f11cd5dd981118aa29a","58064dfb7c476280f8b3318f","580658132a4f8e8160c49cb1","58064df97c476280f8b33181","580651f9868f85812eb9f227","58064fa99e84498120e7cbf3","58065391cbfa7d81497fe76c","580652a7868f85812eb9f2f9","58064df77c476280f8b33176","58065e8014a214818555f2a0","58064f32cd5dd981118aa2e5","5806456154027480830ccd6c","580652a7868f85812eb9f2f4","580652b7868f85812eb9f32e","58065426cbfa7d81497fe88a","580537843ca7247be13fe4a5","58064f09cd5dd981118aa27b","58064e77a05fd98101c67279","580652c8868f85812eb9f34e","58065cf92418ec817d0989be","58065ec714a214818555f332","580652a7868f85812eb9f2fb","58065acb29169f816f05d1c9","58064f9e9e84498120e7cbd3","580537843ca7247be13fe497","580655cd11337e81519b54be","5806529c868f85812eb9f2ce","580653b5cbfa7d81497fe7bc","58065ce22418ec817d0989ad","5806522a868f85812eb9f265","5806573c2a4f8e8160c49b48","58064e59a05fd98101c6722c","58065ec714a214818555f323","58065d742418ec817d098a79","5806558e11337e81519b546b","58064d7eaf05f980ef9eaa94","58064e61a05fd98101c67239","580657fd2a4f8e8160c49c85","58065254868f85812eb9f2b2","58065166868f85812eb9f18c","5806552011337e81519b53eb","58065ec714a214818555f329","58065eb914a214818555f316","58064fa69e84498120e7cbe5","5806546acbfa7d81497fe8fa","5806559e11337e81519b547d","58064e6aa05fd98101c67254","58064d9aaf05f980ef9eaac8","580652c6868f85812eb9f336","580653eecbfa7d81497fe822","5806547ccbfa7d81497fe920","58064e0a7c476280f8b331ba","58065a4729169f816f05d187","58065459cbfa7d81497fe8e6","580652c8868f85812eb9f34c","580655b711337e81519b549c","58065407cbfa7d81497fe852","5806522b868f85812eb9f26d","580653b5cbfa7d81497fe7bb","5806548dcbfa7d81497fe92a","58064d71af05f980ef9eaa75","580657f32a4f8e8160c49c6f","58065304868f85812eb9f3b5","58065ee014a214818555f363","58065181868f85812eb9f1aa","58065415cbfa7d81497fe860","580537833ca7247be13fe45e","58064e6da05fd98101c67264","58065a5429169f816f05d190","580652c7868f85812eb9f33c","58065edf14a214818555f35e","5806539ccbfa7d81497fe78d","580537833ca7247be13fe463","58065ef914a214818555f388","58065ec714a214818555f333","58065e8b14a214818555f2c1","5806548dcbfa7d81497fe93c","580653decbfa7d81497fe814","58064d78af05f980ef9eaa87","580653cccbfa7d81497fe7e8","580652a8868f85812eb9f301","58064eb72120e2810a5e0323","58065303868f85812eb9f39f","580657f32a4f8e8160c49c6c","5806529c868f85812eb9f2d3","58065459cbfa7d81497fe8da","58065e9914a214818555f2e2","580652a8868f85812eb9f304","58065e8014a214818555f294","58064df77c476280f8b3317a","58065e7314a214818555f289","580653decbfa7d81497fe816","58065ce22418ec817d0989b0","58065e8b14a214818555f2c2","5806408b6dcddf8010f371ef","58065ee114a214818555f36f","58064f0bcd5dd981118aa284","580653accbfa7d81497fe79e","5806552911337e81519b53ef","580653d8cbfa7d81497fe805","580657fe2a4f8e8160c49c8e","58065d1e2418ec817d0989fa","58064d6daf05f980ef9eaa6e","58065d502418ec817d098a56","580651d0868f85812eb9f1f5","580652a7868f85812eb9f2ee","58065ef814a214818555f382","58064d82af05f980ef9eaa9d","58065aca29169f816f05d1c5","580651fa868f85812eb9f235","5806555711337e81519b5420","58065160868f85812eb9f178","58064e6ba05fd98101c6725c","580653b5cbfa7d81497fe7b0","5806558e11337e81519b5472","580653b5cbfa7d81497fe7b8","58065eb914a214818555f317","58065165868f85812eb9f17e","58064e5ba05fd98101c67231","5806408a6dcddf8010f371db","5806556f11337e81519b5455","580537853ca7247be13fe4e8","58065ea514a214818555f2ec","5806539ccbfa7d81497fe788","58064e6da05fd98101c6726a","58065416cbfa7d81497fe86c","58065acb29169f816f05d1cb","58065446cbfa7d81497fe8c9","58064f23cd5dd981118aa2c5","580653cccbfa7d81497fe7ea","58064f979e84498120e7cbbb","58064e74a05fd98101c6726d","580653eecbfa7d81497fe838","58065b3629169f816f05d206","5806549ccbfa7d81497fe948","58064e0b7c476280f8b331c1","580653bfcbfa7d81497fe7c8","580655ce11337e81519b54c3","58064d8faf05f980ef9eaaa8","58065ee014a214818555f36a","58064fa29e84498120e7cbe0","580653b5cbfa7d81497fe7a6","58065254868f85812eb9f2a7","58064d95af05f980ef9eaab6","58065b1929169f816f05d1ee","580651e8868f85812eb9f208","5806529c868f85812eb9f2d6","58064d93af05f980ef9eaab1","580651ce868f85812eb9f1ed","5806547bcbfa7d81497fe90c","58064f1ccd5dd981118aa2ab","5806529b868f85812eb9f2bf","58064e6ba05fd98101c6725b","58065439cbfa7d81497fe8ae","580652b7868f85812eb9f330","58065182868f85812eb9f1b1","580657f12a4f8e8160c49c5b","580651ce868f85812eb9f1d8","5806559f11337e81519b5490","58065af929169f816f05d1dd","58065afb29169f816f05d1e6","58064f1ccd5dd981118aa2ac","580652a6868f85812eb9f2e8","58065234868f85812eb9f287","58065ea514a214818555f2f7","580658002a4f8e8160c49ca1","5806522a868f85812eb9f268","58064f2acd5dd981118aa2d9","58064d78af05f980ef9eaa86","58065439cbfa7d81497fe8b0","58065305868f85812eb9f3ba","58064dfa7c476280f8b33185","580537833ca7247be13fe464","58065df714a214818555f259","58065b3629169f816f05d202","58064f0fcd5dd981118aa28b","58064ea62120e2810a5e0319","580657e12a4f8e8160c49c4c","5806529d868f85812eb9f2db","58065d502418ec817d098a5d","580651bf868f85812eb9f1b4","580652b5868f85812eb9f312","58065181868f85812eb9f1ac","5806549ccbfa7d81497fe947","58065214868f85812eb9f25b","58065212868f85812eb9f243","58064e60a05fd98101c67236","5806552011337e81519b53e6","5806556311337e81519b5438","58065e8914a214818555f2b3","580652b5868f85812eb9f318","5806554b11337e81519b5411","58065ed514a214818555f34c","580657f32a4f8e8160c49c7d","58065304868f85812eb9f3b6","58065e7214a214818555f284","5806522b868f85812eb9f278","580657fd2a4f8e8160c49c86","5806584c2a4f8e8160c49ce3","58065acb29169f816f05d1c6","5806547ccbfa7d81497fe910","580653decbfa7d81497fe819","58065d622418ec817d098a74","58065d432418ec817d098a42","580653b5cbfa7d81497fe7a9","58064f2acd5dd981118aa2d8","580652b6868f85812eb9f325","5806522b868f85812eb9f26b","5806584c2a4f8e8160c49cd7","58064f19cd5dd981118aa2a7","580652b5868f85812eb9f311","58065d432418ec817d098a46","580537843ca7247be13fe49f","58065212868f85812eb9f24d","580653b5cbfa7d81497fe7a5","580651c1868f85812eb9f1c5","58064e097c476280f8b331b4","5806555811337e81519b5424","58065e9914a214818555f2df","58065d1c2418ec817d0989e5","580657462a4f8e8160c49b4d","58064f1dcd5dd981118aa2b2","58064f32cd5dd981118aa2e9","58065ada29169f816f05d1d4","58065446cbfa7d81497fe8c8","580651c1868f85812eb9f1cd","58065a7529169f816f05d1a0","58065d752418ec817d098a7e","5806546acbfa7d81497fe8fe","580537823ca7247be13fe450","580537853ca7247be13fe4d6","58065ee114a214818555f376","58064ea02120e2810a5e0317","58065d432418ec817d098a44","5806574f2a4f8e8160c49b5d","58065400cbfa7d81497fe84e","58065416cbfa7d81497fe871","580651c0868f85812eb9f1bf","580657832a4f8e8160c49b7b","580653b5cbfa7d81497fe7a4","5806574f2a4f8e8160c49b57","58064f11cd5dd981118aa297","580652f4868f85812eb9f398","580651e8868f85812eb9f202","580657fe2a4f8e8160c49c96","58065b3629169f816f05d203","580651e9868f85812eb9f20d","580655b811337e81519b54a2","58065e8014a214818555f29c","5806547ccbfa7d81497fe90e","5806584c2a4f8e8160c49ce1","58064dfd7c476280f8b33198","58065e8a14a214818555f2bc","580657762a4f8e8160c49b74","5806515a868f85812eb9f15f","58065cf92418ec817d0989c8","58064f9e9e84498120e7cbd0","58065d0a2418ec817d0989d2","58064fa89e84498120e7cbee","58064fa39e84498120e7cbe3","5806529c868f85812eb9f2d7","58065166868f85812eb9f18a","58065d432418ec817d098a3e","58065427cbfa7d81497fe893","580652a9868f85812eb9f305","580655cc11337e81519b54a9","580537853ca7247be13fe4e3","5806548dcbfa7d81497fe927","58064cd15564f580e70fc3ab","58064e097c476280f8b331b5","580537843ca7247be13fe493","580651fb868f85812eb9f239","580651bf868f85812eb9f1be","58065e7314a214818555f288","58065160868f85812eb9f170","58064df77c476280f8b33175","58065b5829169f816f05d214","580657fe2a4f8e8160c49c94","580655cc11337e81519b54a5","58065151868f85812eb9f153","580537753ca7247be13fe441","580652e8868f85812eb9f371","58064df67c476280f8b33172","5806408b6dcddf8010f371e9","58065417cbfa7d81497fe87c","580537863ca7247be13fe4f5","5806456154027480830ccd62","580652c8868f85812eb9f34b","58064e067c476280f8b331ad","5806559f11337e81519b5483","58065b3629169f816f05d20a","5806553c11337e81519b53fe","580657452a4f8e8160c49b4b","580653bfcbfa7d81497fe7c1","58065b1029169f816f05d1e7","58065b5829169f816f05d20f","580652a6868f85812eb9f2e7","58065a4729169f816f05d188","58065180868f85812eb9f197","580651c1868f85812eb9f1d4","580657992a4f8e8160c49bad","58064972503fae80cb45d7fc","580657fe2a4f8e8160c49c97","58065212868f85812eb9f24f","58065a9029169f816f05d1a9","58065d752418ec817d098a83","5806552911337e81519b53ee","5806539ccbfa7d81497fe785","580653eecbfa7d81497fe831","580652c6868f85812eb9f337","58065eb714a214818555f305","580652f4868f85812eb9f38c","58065a5d29169f816f05d197","580658122a4f8e8160c49cac","580652a7868f85812eb9f2f6","5806522c868f85812eb9f281","58065426cbfa7d81497fe88b","58065ad829169f816f05d1d1","5806515a868f85812eb9f160","580658122a4f8e8160c49ca5","580653b5cbfa7d81497fe7b1","5806515a868f85812eb9f166","58065445cbfa7d81497fe8bc","5806558e11337e81519b5475","58064e6da05fd98101c67265","580651c1868f85812eb9f1c3","580652e8868f85812eb9f367","58064d91af05f980ef9eaaac","58065213868f85812eb9f253","580658142a4f8e8160c49cc1","580651f9868f85812eb9f220","580652f4868f85812eb9f39a","58065cf92418ec817d0989c3","580653accbfa7d81497fe79b","58065407cbfa7d81497fe854","58065e9914a214818555f2e0","580658122a4f8e8160c49ca6","5806578f2a4f8e8160c49b89","58064fa99e84498120e7cbf5","58064f11cd5dd981118aa29c","580657692a4f8e8160c49b6f","58065439cbfa7d81497fe8a2","5806529c868f85812eb9f2d8","5806529b868f85812eb9f2c5","5806579a2a4f8e8160c49bba","58064f33cd5dd981118aa2ed","58065afb29169f816f05d1e2","58065151868f85812eb9f150","580657992a4f8e8160c49baf","58065212868f85812eb9f24c","5806556f11337e81519b5443","58064f13cd5dd981118aa2a2","58064e77a05fd98101c67277","580657f32a4f8e8160c49c75","58065416cbfa7d81497fe86a","58065afa29169f816f05d1de","58064eb12120e2810a5e0320","580655b711337e81519b549e","5806584c2a4f8e8160c49cd8","580652f4868f85812eb9f394","580653bfcbfa7d81497fe7c9","58064d77af05f980ef9eaa84","58064e64a05fd98101c6723f","58064df57c476280f8b3316c","58064e9c2120e2810a5e0314","5806559e11337e81519b547a","58064e097c476280f8b331b8","580657742a4f8e8160c49b71","58064e067c476280f8b331ae","580652b7868f85812eb9f328","58064d95af05f980ef9eaab9","5806559f11337e81519b548b","58064fa09e84498120e7cbd6","58065e9714a214818555f2c8","58064d95af05f980ef9eaab7","580652c9868f85812eb9f354","58065426cbfa7d81497fe87d","58064d91af05f980ef9eaaab","58064d73af05f980ef9eaa78","58064dfa7c476280f8b33184","58065388cbfa7d81497fe765","5806572d2a4f8e8160c49b37","58064e6ba05fd98101c67261","58065ee114a214818555f373","5806554c11337e81519b5416","58065ef814a214818555f381","580657f32a4f8e8160c49c74","58064df87c476280f8b3317d","580652a7868f85812eb9f2fd","58064e0b7c476280f8b331bb","580651fa868f85812eb9f22d","58065de514a214818555f257","5806559f11337e81519b5484","580652f4868f85812eb9f390","5806437851275a805bf3f1e6","58065166868f85812eb9f18d","580655cc11337e81519b54a6","580653ffcbfa7d81497fe83f","58064e77a05fd98101c67275","58065ee114a214818555f36e","580657e12a4f8e8160c49c47","58064fae9e84498120e7cc04","580653accbfa7d81497fe799","58065305868f85812eb9f3be","58065ea514a214818555f2e7","580657f32a4f8e8160c49c70","580653b5cbfa7d81497fe7b5","580652a7868f85812eb9f2f1","58065a5b29169f816f05d192","5806547ccbfa7d81497fe919","580652b5868f85812eb9f324","580652e7868f85812eb9f35b","58065a7629169f816f05d1a2","580657fe2a4f8e8160c49c91","5806548dcbfa7d81497fe934","58064f30cd5dd981118aa2e1","580657f32a4f8e8160c49c76","58064d9aaf05f980ef9eaac7","58065a5229169f816f05d189","580651fa868f85812eb9f236","580657e32a4f8e8160c49c53","58064d93af05f980ef9eaab4","58065a5329169f816f05d18b","5806539ccbfa7d81497fe78c","580537853ca7247be13fe4ea","5806529b868f85812eb9f2c1","58065d432418ec817d098a3a","580537863ca7247be13fe4f4","58065d362418ec817d098a22","5806558e11337e81519b546c","580651e9868f85812eb9f20b","58064e6ba05fd98101c6725f","58065e9714a214818555f2cc","580652e7868f85812eb9f35e","58065166868f85812eb9f189","58065ea514a214818555f2ef","58065ce22418ec817d0989af","580653eecbfa7d81497fe833","58065426cbfa7d81497fe888","580652b5868f85812eb9f310","58065ce22418ec817d0989b5","580658002a4f8e8160c49ca2","5806529d868f85812eb9f2da","580657f32a4f8e8160c49c71","580537853ca7247be13fe4d9","580652e9868f85812eb9f379","58065a9029169f816f05d1a8","58065eb814a214818555f310","580653accbfa7d81497fe792","58065ed514a214818555f359","580657f22a4f8e8160c49c63","5806555811337e81519b542f","58065b3629169f816f05d200","5806546bcbfa7d81497fe907","580652e8868f85812eb9f360","58064e74a05fd98101c6726e","580643aeb624f68064c5bdaf","580653b5cbfa7d81497fe7be","5806554b11337e81519b5412","580537833ca7247be13fe472","58065d502418ec817d098a4c","58065d292418ec817d098a10","58064f23cd5dd981118aa2bf","5806578f2a4f8e8160c49b94","580657f22a4f8e8160c49c5e","58065e6814a214818555f271","5806558e11337e81519b5469","580655b711337e81519b5498","580537843ca7247be13fe494","580651bf868f85812eb9f1b3","58065a5d29169f816f05d195","58065235868f85812eb9f29d","58065446cbfa7d81497fe8c1","58064e61a05fd98101c6723c","58064d91af05f980ef9eaaa9","58065eb914a214818555f31a","58065de414a214818555f256","58065ed514a214818555f347","58065439cbfa7d81497fe8a8","580657f32a4f8e8160c49c77","58065b5829169f816f05d20e","580655b711337e81519b5495","58065182868f85812eb9f1b0","5806529d868f85812eb9f2e1","580537833ca7247be13fe46e","58065b5829169f816f05d212","58064f11cd5dd981118aa29d","58065e9714a214818555f2d5","58064e6aa05fd98101c67253","58065ad829169f816f05d1cf","58065400cbfa7d81497fe845","580537853ca7247be13fe4e2","58064e097c476280f8b331b9","58065ef914a214818555f38a","580655b711337e81519b5493","58065400cbfa7d81497fe84c","58064d97af05f980ef9eaac3","580653cccbfa7d81497fe7e2","5806548dcbfa7d81497fe936","580651ea868f85812eb9f20f","580657452a4f8e8160c49b4a","580651f8868f85812eb9f219","58064f1ccd5dd981118aa2ae","58065181868f85812eb9f19e","580537853ca7247be13fe4d8","58065d0a2418ec817d0989d5","5806548dcbfa7d81497fe92f","58064f999e84498120e7cbc1","58064f0bcd5dd981118aa280","580537853ca7247be13fe4ba","580653eecbfa7d81497fe827","5806556f11337e81519b5445","580657fe2a4f8e8160c49c8f","58065407cbfa7d81497fe85d","58064e047c476280f8b331a4","580657752a4f8e8160c49b72","58065e8a14a214818555f2b4","58064e6ba05fd98101c6725d","580537833ca7247be13fe460","580652b5868f85812eb9f30f","580653d8cbfa7d81497fe80b","58064f11cd5dd981118aa298","58065a9029169f816f05d1ad","58064f30cd5dd981118aa2df","580657832a4f8e8160c49b7d","58064f26cd5dd981118aa2ca","5806546acbfa7d81497fe8f2","58064f33cd5dd981118aa2ea","58065e7314a214818555f28b","58064f13cd5dd981118aa29f","58064e68a05fd98101c6724d","58065459cbfa7d81497fe8e5","5806559e11337e81519b547c","58065ed414a214818555f33c","58064f9e9e84498120e7cbd2","58064f30cd5dd981118aa2dd","5806552911337e81519b53fa","58065159868f85812eb9f15b","58064e067c476280f8b331ac","580651f9868f85812eb9f229","580652b5868f85812eb9f30e","58064eab2120e2810a5e031c","5806546bcbfa7d81497fe906","58065ee014a214818555f362","58064df87c476280f8b3317e","58065d622418ec817d098a60","5806574f2a4f8e8160c49b54","580653d8cbfa7d81497fe7fa","58065afb29169f816f05d1e5","5806522b868f85812eb9f27b","580651ce868f85812eb9f1de","58065160868f85812eb9f175","58064ea02120e2810a5e0318","58065254868f85812eb9f2b7","58065d292418ec817d098a07","58065426cbfa7d81497fe87f","580652a6868f85812eb9f2ea","5806529e868f85812eb9f2e6","58065d422418ec817d098a32","58065a5d29169f816f05d194","580537843ca7247be13fe483","580652a8868f85812eb9f302","58064f33cd5dd981118aa2ec","580653eecbfa7d81497fe826","58065afb29169f816f05d1e0","5806558111337e81519b545d","58064d7aaf05f980ef9eaa8d","58065152868f85812eb9f155","580652f4868f85812eb9f395","58065e8a14a214818555f2b5","580653decbfa7d81497fe813","5806558111337e81519b545a","58065254868f85812eb9f2bd","580537853ca7247be13fe4dc","5806456154027480830ccd6b","580657fe2a4f8e8160c49c89","58065b5829169f816f05d211","58064e61a05fd98101c6723a","580652c7868f85812eb9f348","58065b3629169f816f05d204","580652c7868f85812eb9f347","58064e74a05fd98101c67271","580651c1868f85812eb9f1d3","58064e0b7c476280f8b331c0","58064f0dcd5dd981118aa288","5806556311337e81519b5433","58065ef914a214818555f38f","58064f19cd5dd981118aa2a6","58065d622418ec817d098a6d","580653cccbfa7d81497fe7df","58065439cbfa7d81497fe8a7","58065400cbfa7d81497fe842","5806574f2a4f8e8160c49b5a","58064cd15564f580e70fc3b1","5806546acbfa7d81497fe900","58065446cbfa7d81497fe8c2","580653d8cbfa7d81497fe7f9","580537853ca7247be13fe4d4","5806549ccbfa7d81497fe956","58065b1029169f816f05d1e8","58065a7629169f816f05d1a3","5806547ccbfa7d81497fe914","58065d372418ec817d098a29","580652a9868f85812eb9f30a","5806554c11337e81519b5414","58065ee114a214818555f374","5806546acbfa7d81497fe904","580652f4868f85812eb9f392","5806456154027480830ccd66","580651bf868f85812eb9f1b5","580537843ca7247be13fe489","580651ce868f85812eb9f1dc","58064f0bcd5dd981118aa285","580652c7868f85812eb9f344","580652a9868f85812eb9f306","580537843ca7247be13fe4a7","580657fe2a4f8e8160c49c8c","58064df67c476280f8b3316f","58064e66a05fd98101c67246","58064fac9e84498120e7cbfd","58064f2acd5dd981118aa2d6","580537853ca7247be13fe4d2","58064fa69e84498120e7cbea","58065d0a2418ec817d0989cb","580653ffcbfa7d81497fe840","5806456154027480830ccd68","58065426cbfa7d81497fe883","5806552911337e81519b53fb","58065160868f85812eb9f177","5806522b868f85812eb9f26e","58065182868f85812eb9f1b2","5806552911337e81519b53f6","58064f9b9e84498120e7cbc9","580653eecbfa7d81497fe836","5806558111337e81519b5461","58065e9814a214818555f2d6","580537843ca7247be13fe476","58064f9d9e84498120e7cbce","58065a0d29169f816f05d182","58064e6aa05fd98101c67259","58065e7314a214818555f28e","58065e7314a214818555f286","580652e7868f85812eb9f357","58065214868f85812eb9f25e","580651e8868f85812eb9f1f8","580652f3868f85812eb9f386","580653b5cbfa7d81497fe7b7","58064f2acd5dd981118aa2d3","5806546acbfa7d81497fe8fc","580651e8868f85812eb9f204","580537853ca7247be13fe4bc","58065acb29169f816f05d1ca","580657e12a4f8e8160c49c4a","58064ec22120e2810a5e032c","58064ec62120e2810a5e032f","58065d292418ec817d098a0b","580657362a4f8e8160c49b42","580651ce868f85812eb9f1e0","58065160868f85812eb9f16c","58065445cbfa7d81497fe8c0","58065e6714a214818555f267","58064e067c476280f8b331ab","58065b1029169f816f05d1e9","58064e77a05fd98101c67278","5806578f2a4f8e8160c49b98","58065d0a2418ec817d0989d0","58064d77af05f980ef9eaa83","58065213868f85812eb9f250","58065e9714a214818555f2d4","58064dfc7c476280f8b33194","58065ed414a214818555f33d","58065391cbfa7d81497fe777","58065a5429169f816f05d18d","58065254868f85812eb9f2a1","58064e5ba05fd98101c67230","58065ee014a214818555f367","58065212868f85812eb9f241","58065160868f85812eb9f173","580657682a4f8e8160c49b69","58064d6faf05f980ef9eaa72","580657912a4f8e8160c49ba6","58064f0fcd5dd981118aa291","58065459cbfa7d81497fe8df","58064e56a05fd98101c67228","58064d95af05f980ef9eaabc","58065235868f85812eb9f290","5806555811337e81519b5429","58064e64a05fd98101c67242","58064dfa7c476280f8b33188","580653b5cbfa7d81497fe7ae","580653decbfa7d81497fe817","5806546acbfa7d81497fe8f1","580537853ca7247be13fe4b2","58065d0a2418ec817d0989d7","5806574f2a4f8e8160c49b56","58065427cbfa7d81497fe894","58064f26cd5dd981118aa2d1","58064e56a05fd98101c67229","58065e8914a214818555f2ab","58065407cbfa7d81497fe858","58064f09cd5dd981118aa27a","58065e8014a214818555f2a4","58065ae729169f816f05d1d7","58065d372418ec817d098a24","58065d622418ec817d098a69","580657fe2a4f8e8160c49c98","58065ce22418ec817d0989b6","580537853ca7247be13fe4c2","5806539ccbfa7d81497fe78b","580657682a4f8e8160c49b67","58065416cbfa7d81497fe86d","5806558111337e81519b545f","58065aca29169f816f05d1c3","5806555811337e81519b5428","580652a6868f85812eb9f2e9","580651cf868f85812eb9f1f3","580652f4868f85812eb9f399","58065407cbfa7d81497fe85c","58064d9caf05f980ef9eaacb","5806584a2a4f8e8160c49cc7","5806553c11337e81519b540b","5806549ccbfa7d81497fe943","58064f1fcd5dd981118aa2b6","5806584b2a4f8e8160c49cd1","580653bfcbfa7d81497fe7c3","58064df67c476280f8b33173","58065ec714a214818555f334","580652e7868f85812eb9f359","5806548dcbfa7d81497fe922","58065ee114a214818555f36d","58065e9714a214818555f2d3","58065ef914a214818555f389","58064dfd7c476280f8b33199","58065cf92418ec817d0989c1","580653decbfa7d81497fe80f","580651f9868f85812eb9f228","580653ffcbfa7d81497fe83b","580657e32a4f8e8160c49c59","58065459cbfa7d81497fe8d9","58064f9e9e84498120e7cbd4","5806584a2a4f8e8160c49ccc","58064f0fcd5dd981118aa28f","58064f9b9e84498120e7cbc6","5806584c2a4f8e8160c49cd4","5806574f2a4f8e8160c49b53","580653accbfa7d81497fe794","58065e8014a214818555f2a9","58065af929169f816f05d1dc","5806551411337e81519b53e0","580657f22a4f8e8160c49c66","58064f13cd5dd981118aa2a0","58065e9914a214818555f2e1","58065212868f85812eb9f244","58064e6da05fd98101c67269","580651c1868f85812eb9f1d0","580658132a4f8e8160c49cb4","58065445cbfa7d81497fe8bb","580537843ca7247be13fe484","58065ab629169f816f05d1b9","580653cccbfa7d81497fe7ec","5806522c868f85812eb9f27f","58064d7aaf05f980ef9eaa8c","58064fab9e84498120e7cbf8","5806408b6dcddf8010f371e8","58065aa129169f816f05d1b4","580537843ca7247be13fe4a2","5806408b6dcddf8010f371ee","580655cc11337e81519b54a8","58064f30cd5dd981118aa2e2","58064f9e9e84498120e7cbd5","580657992a4f8e8160c49bb2","58064dfd7c476280f8b33197","58064df57c476280f8b3316e","58065212868f85812eb9f249","58065417cbfa7d81497fe877","5806554c11337e81519b5418","58065446cbfa7d81497fe8cb","580657682a4f8e8160c49b68","58065d362418ec817d098a16","58065ce22418ec817d0989b8","58065e8014a214818555f2a5","580652f3868f85812eb9f37e","580653decbfa7d81497fe81b","58065a5229169f816f05d18a","58065d752418ec817d098a81","580651f9868f85812eb9f225","580652c7868f85812eb9f33e","580657832a4f8e8160c49b7e","580652b5868f85812eb9f31a","58064d73af05f980ef9eaa7b","58064d75af05f980ef9eaa7f","58065391cbfa7d81497fe76b","580653c0cbfa7d81497fe7da","58065181868f85812eb9f1ab","580653decbfa7d81497fe81c","58064f33cd5dd981118aa2eb","580653b5cbfa7d81497fe7ad","58064ec02120e2810a5e032b","58064d77af05f980ef9eaa85","58065b5829169f816f05d217","580655cd11337e81519b54ba","58064e68a05fd98101c6724b","5806553c11337e81519b5400","580655cd11337e81519b54bc","580651ce868f85812eb9f1e9","5806584b2a4f8e8160c49cd2","5806408a6dcddf8010f371d4","58064d91af05f980ef9eaaad","58065ab829169f816f05d1bf","5806548dcbfa7d81497fe92b","580652a9868f85812eb9f30b","5806529d868f85812eb9f2df","58065eb714a214818555f309","58065cf72418ec817d0989ba","58064dfe7c476280f8b3319e","58064e61a05fd98101c6723b","58065d752418ec817d098a82","580537853ca7247be13fe4d7","58065446cbfa7d81497fe8c5","58065ef814a214818555f37a","5806522b868f85812eb9f270","580653bfcbfa7d81497fe7d4","5806553c11337e81519b540d","58065a7629169f816f05d1a4","580657832a4f8e8160c49b7a","580658132a4f8e8160c49cb2","58065303868f85812eb9f3a1","58065d0a2418ec817d0989da","58065446cbfa7d81497fe8cd","58065ec714a214818555f326","580652e7868f85812eb9f35a","580537853ca7247be13fe4bf","58065d622418ec817d098a63","580537843ca7247be13fe482","5806547ccbfa7d81497fe918","58065d622418ec817d098a5e","580537853ca7247be13fe4e0","58064eba2120e2810a5e0327","580655cd11337e81519b54bb","5806539ccbfa7d81497fe786","580537843ca7247be13fe491","58064f30cd5dd981118aa2de","58064f32cd5dd981118aa2e6","580653bfcbfa7d81497fe7cf","58065ab629169f816f05d1bb","580658132a4f8e8160c49cb6","58065214868f85812eb9f259","58065ef914a214818555f392","580651ce868f85812eb9f1ee","580651ce868f85812eb9f1d9","580653edcbfa7d81497fe81f","58065303868f85812eb9f3aa","58064f05cd5dd981118aa278","58064e64a05fd98101c67241","58064d78af05f980ef9eaa89","58065ce22418ec817d0989b4","58065e6814a214818555f274","5806549ccbfa7d81497fe94a","58064e77a05fd98101c6727a","58065e7214a214818555f283","580651c1868f85812eb9f1c9","58065391cbfa7d81497fe770","580653eecbfa7d81497fe82c","58065d362418ec817d098a20","580537853ca7247be13fe4b7","580652a9868f85812eb9f308","5806556f11337e81519b544d","58064fa39e84498120e7cbe4","58065ef914a214818555f390","58065e9814a214818555f2d7","58064f23cd5dd981118aa2c7","5806553c11337e81519b5406","580658132a4f8e8160c49cbb","580658132a4f8e8160c49cbf","58065426cbfa7d81497fe87e","580655cd11337e81519b54b8","580652b5868f85812eb9f30c","58065ada29169f816f05d1d3","58065235868f85812eb9f291","58065b3629169f816f05d201","58065e9714a214818555f2d0","580658122a4f8e8160c49ca9","58064e9e2120e2810a5e0316","580652e8868f85812eb9f369","58064e047c476280f8b331a3","58064e067c476280f8b331a9","5806539ccbfa7d81497fe77c","58064f1fcd5dd981118aa2b5","58065d502418ec817d098a59","5806584b2a4f8e8160c49cce","58065439cbfa7d81497fe8b1","580653eecbfa7d81497fe82b","5806529d868f85812eb9f2dc","5806549ccbfa7d81497fe953","58065e4014a214818555f261","58065415cbfa7d81497fe866","58064df87c476280f8b3317b","5806578f2a4f8e8160c49b8e","5806548dcbfa7d81497fe926","58065e7214a214818555f27a","580657832a4f8e8160c49b82","5806549ccbfa7d81497fe940","580653bfcbfa7d81497fe7c4","580653accbfa7d81497fe7a2","5806549ccbfa7d81497fe94b","580537853ca7247be13fe4ca","58065ea514a214818555f2ed","58065ef914a214818555f391","58064fa09e84498120e7cbda","580652b5868f85812eb9f31c","58064e66a05fd98101c67248","580657832a4f8e8160c49b85","580537843ca7247be13fe495","580651f9868f85812eb9f222","58065ed414a214818555f342","5806552911337e81519b53ed","580651ce868f85812eb9f1e3","58065254868f85812eb9f2b5","58065b1029169f816f05d1eb","58065e8014a214818555f29d","58065303868f85812eb9f3a7","58064dfa7c476280f8b33183","58065b5829169f816f05d21d","5806515a868f85812eb9f15e","58064d93af05f980ef9eaab5","58065ab729169f816f05d1be","58064eba2120e2810a5e0326","580657f22a4f8e8160c49c68","580651ea868f85812eb9f211","5806584c2a4f8e8160c49cda","58064dfc7c476280f8b33196","58065415cbfa7d81497fe867","580653d8cbfa7d81497fe7fe","58064f0dcd5dd981118aa28a","580651ce868f85812eb9f1d7","580655cd11337e81519b54b7","580652f3868f85812eb9f37b","58064e66a05fd98101c67247","580537853ca7247be13fe4b3","58064d71af05f980ef9eaa77","58064f2acd5dd981118aa2d2","58065159868f85812eb9f15a","58065a6629169f816f05d198","5806559f11337e81519b548c","5806555811337e81519b542d","58064e68a05fd98101c6724c","58065b2c29169f816f05d1fd","58065212868f85812eb9f23f","58065e7314a214818555f291","5806555811337e81519b542a","5806554c11337e81519b5419","58065b1029169f816f05d1ed","58065d292418ec817d098a0d","580651f9868f85812eb9f22a","580657e12a4f8e8160c49c43","58064d91af05f980ef9eaaae","5806529c868f85812eb9f2cc","5806522b868f85812eb9f26c","580653decbfa7d81497fe810","580655b711337e81519b5497","58064df87c476280f8b33180","580652c7868f85812eb9f341","580537853ca7247be13fe4bd","580651f9868f85812eb9f21d","58065391cbfa7d81497fe76a","58064d82af05f980ef9eaa9b","580652f4868f85812eb9f38f","58065166868f85812eb9f187","580652e9868f85812eb9f377","5806549dcbfa7d81497fe957","5806552011337e81519b53e7","580653d8cbfa7d81497fe803","58064e6aa05fd98101c67258","5806539ccbfa7d81497fe783","580653d8cbfa7d81497fe809","58065e9814a214818555f2d9","58065160868f85812eb9f171","58065213868f85812eb9f254","58065b1b29169f816f05d1f5","58065ea514a214818555f2e6","58064ec62120e2810a5e032d","58064f1fcd5dd981118aa2ba","580651bf868f85812eb9f1bb","5806529d868f85812eb9f2d9","58065ec714a214818555f324","58065e6814a214818555f26c","58065eb914a214818555f314","5806574f2a4f8e8160c49b59","58064e6aa05fd98101c67252","5806437851275a805bf3f1e4","58065ee014a214818555f368","58065eb914a214818555f313","58065159868f85812eb9f158","5806549ccbfa7d81497fe952","58065cf92418ec817d0989c9","58065d292418ec817d098a0a","5806584a2a4f8e8160c49ccd","58065e6814a214818555f268","58065151868f85812eb9f152","58065b5829169f816f05d21a","580657842a4f8e8160c49b87","580652c9868f85812eb9f351","5806456254027480830ccd72","58065202868f85812eb9f23e","58064fab9e84498120e7cbf9","58065427cbfa7d81497fe890","580651f8868f85812eb9f218","580537853ca7247be13fe4f1","58064f09cd5dd981118aa27c","58065159868f85812eb9f15c","58065304868f85812eb9f3b2","58065ed514a214818555f354","58065cf92418ec817d0989c5","58064fab9e84498120e7cbf7","58064f26cd5dd981118aa2c9","5806522c868f85812eb9f280","5806551411337e81519b53df","580651fb868f85812eb9f23c","58064f2fcd5dd981118aa2db","5806552911337e81519b53fc","580537843ca7247be13fe49c","58064f05cd5dd981118aa277","58065236868f85812eb9f2a0","58065e6814a214818555f26b","5806578f2a4f8e8160c49b8d","58064e6aa05fd98101c67256","58065305868f85812eb9f3bb","58065ab829169f816f05d1c2","58065234868f85812eb9f286","580652f4868f85812eb9f38b","58064df67c476280f8b33170","58064d6faf05f980ef9eaa70","58064e74a05fd98101c67270","580537843ca7247be13fe478","580652e9868f85812eb9f376","58065eb714a214818555f30d","580657912a4f8e8160c49ba5","58065e8914a214818555f2b1","580651c1868f85812eb9f1c4","58065ea614a214818555f2fe","58065e9914a214818555f2dd","58065213868f85812eb9f251","58064e077c476280f8b331b1","580658132a4f8e8160c49cb8","58065160868f85812eb9f16e","58064fa09e84498120e7cbdb","580652e8868f85812eb9f362","58065212868f85812eb9f245","58064d93af05f980ef9eaab3","5806522a868f85812eb9f264","58064e6ba05fd98101c6725a","58065426cbfa7d81497fe88d","580652f4868f85812eb9f393","58065a3229169f816f05d184","58065ea514a214818555f2f0","58064e5aa05fd98101c6722e","58065303868f85812eb9f3ab","58064d78af05f980ef9eaa88","580652b5868f85812eb9f323","58064ecb2120e2810a5e0332","580537843ca7247be13fe47b","580657e22a4f8e8160c49c4e","580537843ca7247be13fe49a","5806556f11337e81519b5453","580653edcbfa7d81497fe81e","580657342a4f8e8160c49b3b","5806558111337e81519b5460","58064d6faf05f980ef9eaa71","5806584c2a4f8e8160c49cdf","58065445cbfa7d81497fe8bf","58064d73af05f980ef9eaa7a","58065254868f85812eb9f2b3","58065acb29169f816f05d1ce","5806559f11337e81519b5489","580653decbfa7d81497fe812","58065ed414a214818555f344","58065eb714a214818555f304","580657fe2a4f8e8160c49c8b","58064f999e84498120e7cbc2","58064e047c476280f8b331a7","58064dee7c476280f8b33164","580652b5868f85812eb9f313","58065181868f85812eb9f1a0","5806556311337e81519b543a","58065303868f85812eb9f39e","580651ce868f85812eb9f1ea","58065ee114a214818555f36b","58065afa29169f816f05d1df","58064f0fcd5dd981118aa28e","58065b2b29169f816f05d1f8","5806515a868f85812eb9f167","580537863ca7247be13fe4fa","58064fac9e84498120e7cc00","5806556311337e81519b543c","58065e8014a214818555f2a2","58064fa69e84498120e7cbe9","580651f9868f85812eb9f21c","58064e68a05fd98101c6724e","580537843ca7247be13fe4ae","5806548dcbfa7d81497fe932","580651c1868f85812eb9f1d2","580653bfcbfa7d81497fe7d5","58065235868f85812eb9f297","58065ed514a214818555f348","58065254868f85812eb9f2b0","58065151868f85812eb9f14f","580651fa868f85812eb9f22c","58065181868f85812eb9f1a6","58064f23cd5dd981118aa2c3","58064f11cd5dd981118aa29b","58065ce22418ec817d0989ae","58065391cbfa7d81497fe768","58065b5829169f816f05d216","58064dfd7c476280f8b3319a","58065439cbfa7d81497fe89f","5806545acbfa7d81497fe8ec","58065d372418ec817d098a26","58065b1029169f816f05d1ea","58064dfe7c476280f8b331a0","58065212868f85812eb9f246","58065eb714a214818555f301","58065391cbfa7d81497fe77a","580658132a4f8e8160c49cb9","5806408b6dcddf8010f371e5","58065ed514a214818555f34b","58065ee114a214818555f377","580653cccbfa7d81497fe7de","580652b5868f85812eb9f317","580652e7868f85812eb9f35d","580651e8868f85812eb9f206","58065445cbfa7d81497fe8b7","58065459cbfa7d81497fe8e3","58065d292418ec817d0989fc","5806584c2a4f8e8160c49ce2","580651e8868f85812eb9f205","58065ed414a214818555f340","580537843ca7247be13fe474","58065afb29169f816f05d1e1","580657902a4f8e8160c49b9f","580651c1868f85812eb9f1c6","580657f22a4f8e8160c49c6b","580655cc11337e81519b54ab","580653eecbfa7d81497fe837","5806584b2a4f8e8160c49cd3","580651c1868f85812eb9f1cb","5806522b868f85812eb9f271","580651c1868f85812eb9f1c2","58065ea514a214818555f2f6","58064ec02120e2810a5e0329","58065acb29169f816f05d1cd","58064dfe7c476280f8b331a1","58065180868f85812eb9f193","58065d432418ec817d098a40","58064dfc7c476280f8b33191","580653eecbfa7d81497fe834","58065e8b14a214818555f2c3","58065234868f85812eb9f288","58065a7429169f816f05d19e","580657f32a4f8e8160c49c79","58064df47c476280f8b33166","580655b711337e81519b5499","58065445cbfa7d81497fe8be","58065d0a2418ec817d0989db","58065254868f85812eb9f2ab","580653d8cbfa7d81497fe7fc","58065391cbfa7d81497fe771","5806548dcbfa7d81497fe92e","580655cd11337e81519b54bf","580655b711337e81519b549b","580653accbfa7d81497fe796","580653bfcbfa7d81497fe7cb","5806546acbfa7d81497fe8fb","5806552911337e81519b53f2","58064dfc7c476280f8b33193","58064d97af05f980ef9eaac2","5806556e11337e81519b543f","58064df97c476280f8b33182","58064f2acd5dd981118aa2d5","580657f32a4f8e8160c49c7b","580653accbfa7d81497fe791","58065d292418ec817d098a01","58064f1fcd5dd981118aa2b8","58065cf92418ec817d0989c7","58065212868f85812eb9f247","58065234868f85812eb9f285","58065416cbfa7d81497fe869","58064f08cd5dd981118aa279","58064f26cd5dd981118aa2cf","58065ea514a214818555f2f4","580537843ca7247be13fe4a9","58064df57c476280f8b3316a","58065a6829169f816f05d19b","580651bf868f85812eb9f1bd","58064d80af05f980ef9eaa99","5806529c868f85812eb9f2c9","5806556311337e81519b5432","5806522a868f85812eb9f266","58065165868f85812eb9f17d","58064d9aaf05f980ef9eaac9","580652c7868f85812eb9f349","580651f9868f85812eb9f226","58065d292418ec817d098a13","58065ed514a214818555f357","58064df77c476280f8b33177","58065181868f85812eb9f19a","58065ef814a214818555f37d","58064dfa7c476280f8b33186","580651ce868f85812eb9f1e1","58065e9814a214818555f2da","580537843ca7247be13fe477","58064d6caf05f980ef9eaa6c","58065ea514a214818555f2ee","58064d82af05f980ef9eaa9c","58065439cbfa7d81497fe8a3","5806553c11337e81519b5405","58065235868f85812eb9f29f","5806547ccbfa7d81497fe913","58064f09cd5dd981118aa27d","58065e5814a214818555f266","580651ce868f85812eb9f1da","580657e32a4f8e8160c49c5a","5806548dcbfa7d81497fe92d","58064df67c476280f8b33174","58065d0a2418ec817d0989dd","58065180868f85812eb9f190","580652c6868f85812eb9f333","58065a4529169f816f05d186","58065180868f85812eb9f191","58065235868f85812eb9f293","580652a8868f85812eb9f300","5806456154027480830ccd65","58065b1b29169f816f05d1f4","5806548dcbfa7d81497fe924","58064fa69e84498120e7cbe7","5806552011337e81519b53ea","580652b5868f85812eb9f30d","58065166868f85812eb9f18e","58064d8faf05f980ef9eaa9f","5806547ccbfa7d81497fe91c","580657f22a4f8e8160c49c61","580651ce868f85812eb9f1e5","580537853ca7247be13fe4ee","580653d8cbfa7d81497fe7f6","58065ef914a214818555f385","58065ae829169f816f05d1d9","5806579a2a4f8e8160c49bb9","58065ab629169f816f05d1bc","58065d362418ec817d098a1d","580658142a4f8e8160c49cc4","580653bfcbfa7d81497fe7c6","58065d432418ec817d098a36","580651c1868f85812eb9f1c8","58065439cbfa7d81497fe89d","5806553c11337e81519b5401","58065304868f85812eb9f3af","58065254868f85812eb9f2bc","58065d292418ec817d098a09","58065415cbfa7d81497fe864","5806556211337e81519b5431","58064e59a05fd98101c6722a","58064e6da05fd98101c67267","5806558e11337e81519b546e","58065d1c2418ec817d0989e2","58065a5329169f816f05d18c","58064eba2120e2810a5e0325","580537843ca7247be13fe475","5806552911337e81519b53f9","58065254868f85812eb9f2a8","58065ec714a214818555f330","58065cc02418ec817d0989ab","580537853ca7247be13fe4c1","58064e53a05fd98101c67226","58064dfb7c476280f8b3318a","58065213868f85812eb9f252","58064ec82120e2810a5e0330","58065d362418ec817d098a15","580651fb868f85812eb9f23d","580652a9868f85812eb9f309","58064f23cd5dd981118aa2c1","58064ebd2120e2810a5e0328","5806551411337e81519b53de","580537843ca7247be13fe488","580652a7868f85812eb9f2ef","580651fa868f85812eb9f233","5806522b868f85812eb9f274","58064e64a05fd98101c67243","5806522a868f85812eb9f260","5806408a6dcddf8010f371d7","580653eecbfa7d81497fe82e","5806573b2a4f8e8160c49b44","580651ea868f85812eb9f215","58065d1c2418ec817d0989ec","58065eb814a214818555f311","58064e6aa05fd98101c67251","580537843ca7247be13fe47e","58065459cbfa7d81497fe8d8","58065427cbfa7d81497fe892","580653cccbfa7d81497fe7e0","580653bfcbfa7d81497fe7ca","5806579a2a4f8e8160c49bb8","580652b7868f85812eb9f32c","580537843ca7247be13fe48f","580651fa868f85812eb9f231","58065d742418ec817d098a76","58065445cbfa7d81497fe8b4","5806556311337e81519b5439","58065ada29169f816f05d1d5","5806552911337e81519b53f0","58064df57c476280f8b33169","580653d8cbfa7d81497fe804","58065427cbfa7d81497fe88e","58064f999e84498120e7cbbf","5806572f2a4f8e8160c49b3a","5806408a6dcddf8010f371e1","58065b3629169f816f05d207","58065160868f85812eb9f174","58065416cbfa7d81497fe873","58064e59a05fd98101c6722d","58064f23cd5dd981118aa2c6","58065ea514a214818555f2eb","580653cccbfa7d81497fe7ee","5806529c868f85812eb9f2ca","58065e8014a214818555f296","580655cc11337e81519b54ae","58065d292418ec817d098a14","58065438cbfa7d81497fe89c","580537843ca7247be13fe48b","580657f32a4f8e8160c49c6e","580653d8cbfa7d81497fe80a","580651e9868f85812eb9f20c","580537863ca7247be13fe4f3","5806554c11337e81519b541b","58065ef914a214818555f386","5806551411337e81519b53e1","58064fac9e84498120e7cbfe","5806556f11337e81519b5442","580658132a4f8e8160c49cbd","58065acb29169f816f05d1cc","5806555811337e81519b5423","580652f3868f85812eb9f381","58065ce22418ec817d0989b2","58065d502418ec817d098a4a","5806575a2a4f8e8160c49b5e","58065407cbfa7d81497fe857","58065adb29169f816f05d1d6","5806437951275a805bf3f1e9","580657682a4f8e8160c49b6b","58065ee014a214818555f365","58065303868f85812eb9f3a6","5806551311337e81519b53dc","58065ed514a214818555f355","580537843ca7247be13fe47c","58064e047c476280f8b331a8","58064e61a05fd98101c6723d","58065235868f85812eb9f296","58064dfe7c476280f8b3319f","580537833ca7247be13fe470","58064e067c476280f8b331af","58065d502418ec817d098a52","58065254868f85812eb9f2bb","58065416cbfa7d81497fe874","5806547ccbfa7d81497fe91d","580655cc11337e81519b54a3","58065400cbfa7d81497fe84d","58065439cbfa7d81497fe8a9","580537573ca7247be13fe423","58064d95af05f980ef9eaabd","58065ea514a214818555f2f5","580652c6868f85812eb9f335","58065415cbfa7d81497fe863","58065d432418ec817d098a34","580651ce868f85812eb9f1ec","58065180868f85812eb9f196","5806555811337e81519b5422","58065426cbfa7d81497fe881","58065214868f85812eb9f25c","58065254868f85812eb9f2a3","580653cccbfa7d81497fe7f0","58065acb29169f816f05d1c8","58064e6ca05fd98101c67263","5806547ccbfa7d81497fe917","58064ea62120e2810a5e031b","580655b711337e81519b54a0","58065aa129169f816f05d1b8","580653eecbfa7d81497fe835","58065ec714a214818555f328","580655cc11337e81519b54ad","580653ffcbfa7d81497fe839","580537853ca7247be13fe4b4","580657992a4f8e8160c49bb6","580653accbfa7d81497fe797","580651ce868f85812eb9f1e6","580537853ca7247be13fe4b9","580657fd2a4f8e8160c49c81","58065d372418ec817d098a2b","5806547ccbfa7d81497fe91a","58065415cbfa7d81497fe862","58064d9caf05f980ef9eaaca","58065d292418ec817d098a05","580657f12a4f8e8160c49c5c","58065ce12418ec817d0989ac","58064e097c476280f8b331b3","580652c7868f85812eb9f339","58065b1a29169f816f05d1ef","5806556f11337e81519b544f","58065b5829169f816f05d20d","580651e8868f85812eb9f207","580657762a4f8e8160c49b73","58065438cbfa7d81497fe899","580653accbfa7d81497fe7a1","58065438cbfa7d81497fe898","58064f0bcd5dd981118aa27f","58064ec62120e2810a5e032e","580655cc11337e81519b54ac","58065400cbfa7d81497fe849","58065ed414a214818555f343","58065ab629169f816f05d1bd","580652c6868f85812eb9f332","5806408a6dcddf8010f371da","580657e12a4f8e8160c49c41","58065234868f85812eb9f28a","58065e9714a214818555f2d1","58064f23cd5dd981118aa2c0","5806546acbfa7d81497fe8f5","58064d78af05f980ef9eaa8a","5806558e11337e81519b5474","58064e5ca05fd98101c67233","580651d0868f85812eb9f1f4","580651bf868f85812eb9f1ba","580657f32a4f8e8160c49c7a","58065416cbfa7d81497fe86f","580651e9868f85812eb9f20e","58065e7214a214818555f27e","580537843ca7247be13fe4ac","580651fa868f85812eb9f232","5806549ccbfa7d81497fe946","5806558111337e81519b545b","58065aca29169f816f05d1c4","5806522c868f85812eb9f27e","58064cd15564f580e70fc3ae","580653ffcbfa7d81497fe83e","58065160868f85812eb9f16f","580657f32a4f8e8160c49c7c","5806437951275a805bf3f1e8","580537853ca7247be13fe4b6","58065d622418ec817d098a68","5806578f2a4f8e8160c49b9d","58065213868f85812eb9f255","580657f32a4f8e8160c49c80","58065459cbfa7d81497fe8e2","58064f13cd5dd981118aa29e","5806539ccbfa7d81497fe782","58065d622418ec817d098a6c","580655cd11337e81519b54af","58065d622418ec817d098a67","58065d1c2418ec817d0989ee","58064e61a05fd98101c67238","58065234868f85812eb9f28c","58065e7214a214818555f27f","580657e12a4f8e8160c49c4d","580537863ca7247be13fe4f2","580653bfcbfa7d81497fe7d2","5806546ccbfa7d81497fe90a","58064d73af05f980ef9eaa7c","58065407cbfa7d81497fe850","58065165868f85812eb9f182","58064eb72120e2810a5e0322","5806548dcbfa7d81497fe931","580653decbfa7d81497fe815","5806554c11337e81519b5417","58064f30cd5dd981118aa2e0","580653d8cbfa7d81497fe802","580651f9868f85812eb9f221","580657992a4f8e8160c49bb5","58065213868f85812eb9f256","5806556311337e81519b543b","580657672a4f8e8160c49b66","5806578f2a4f8e8160c49b93","580537833ca7247be13fe471","58065ed414a214818555f345","58065e8014a214818555f2a8","58065a9029169f816f05d1ab","58065ef914a214818555f384","58064f23cd5dd981118aa2be","58065304868f85812eb9f3b9","58064fa99e84498120e7cbf6","58065407cbfa7d81497fe856","580655ce11337e81519b54c4","580652f2868f85812eb9f37a","58064e64a05fd98101c67240","58064fa39e84498120e7cbe2","58065254868f85812eb9f2a5","58065de314a214818555f253","58065439cbfa7d81497fe8a6","5806555811337e81519b5425","580537863ca7247be13fe4f9","5806555811337e81519b542b","58064fa89e84498120e7cbf2","58065d1d2418ec817d0989f0","580657f32a4f8e8160c49c7e","58064d7aaf05f980ef9eaa90","58064d7eaf05f980ef9eaa93","58064e067c476280f8b331b0","580651fa868f85812eb9f22e","58065ec714a214818555f335","58064df47c476280f8b33167","58065181868f85812eb9f1a5","58065d622418ec817d098a6a","58065416cbfa7d81497fe86b","580653cccbfa7d81497fe7eb","58064fa89e84498120e7cbef","5806522b868f85812eb9f276","58064f2acd5dd981118aa2d4","5806437851275a805bf3f1e5","58064f26cd5dd981118aa2d0","58065ef914a214818555f387","5806529d868f85812eb9f2e2","58065d0a2418ec817d0989d6","58064d97af05f980ef9eaac4","580657fd2a4f8e8160c49c87","58065400cbfa7d81497fe847","580537853ca7247be13fe4ec","5806548dcbfa7d81497fe939","58065e7214a214818555f279","5806546acbfa7d81497fe901","580652b5868f85812eb9f31d","5806578f2a4f8e8160c49b95","5806408a6dcddf8010f371e0","5806584b2a4f8e8160c49ccf","580653accbfa7d81497fe79a","58065ee114a214818555f371","5806522a868f85812eb9f263","5806584c2a4f8e8160c49cde","580537853ca7247be13fe4de","580657f32a4f8e8160c49c6d","5806556f11337e81519b5446","5806579b2a4f8e8160c49bc3","580657452a4f8e8160c49b49","58065a4429169f816f05d185","580655cd11337e81519b54b0","580655cc11337e81519b54a4","58065391cbfa7d81497fe76f","58065388cbfa7d81497fe767","5806529c868f85812eb9f2c8","5806578f2a4f8e8160c49b99","580653b5cbfa7d81497fe7b2","580657f22a4f8e8160c49c69","58065181868f85812eb9f1a4","58065e9714a214818555f2d2","5806547ccbfa7d81497fe916","580657832a4f8e8160c49b83","58064fa29e84498120e7cbdf","58064d7caf05f980ef9eaa91","580652a6868f85812eb9f2ec","5806574f2a4f8e8160c49b5b","58065165868f85812eb9f17a","580537853ca7247be13fe4e7","5806522c868f85812eb9f282","58065165868f85812eb9f180","58064d97af05f980ef9eaac1","5806529b868f85812eb9f2c0","58064e68a05fd98101c67250","58065b2c29169f816f05d1fc","580537853ca7247be13fe4ef","58065ef914a214818555f383","58064f9b9e84498120e7cbc7","58064df77c476280f8b33178","5806408b6dcddf8010f371e4","5806579a2a4f8e8160c49bbd","580653d8cbfa7d81497fe7fb","580651ea868f85812eb9f210","58064d73af05f980ef9eaa7d","58065a6829169f816f05d19c","58065aa129169f816f05d1b7","58065d372418ec817d098a2f","580658132a4f8e8160c49cae","5806522b868f85812eb9f26a","58065d502418ec817d098a4f","580655cd11337e81519b54b3","5806559f11337e81519b5482","58065d622418ec817d098a66","58065d362418ec817d098a1e","580651e8868f85812eb9f1fb","58065d292418ec817d0989fd","5806579a2a4f8e8160c49bb7","580657342a4f8e8160c49b3d","58064d9caf05f980ef9eaacd","580657912a4f8e8160c49ba3","58064f00cd5dd981118aa276","580651c1868f85812eb9f1ce","580652e8868f85812eb9f368","580652c8868f85812eb9f34f","5806529b868f85812eb9f2c3","580651cf868f85812eb9f1f0","58065ec714a214818555f31f","580652e8868f85812eb9f365","5806559e11337e81519b5481","580657ff2a4f8e8160c49c9d","58065152868f85812eb9f154","580658132a4f8e8160c49cb5","58065e7214a214818555f277","580651ce868f85812eb9f1e4","58065447cbfa7d81497fe8d4","58065439cbfa7d81497fe8af","580655cd11337e81519b54b1","580537853ca7247be13fe4be","58065a0c29169f816f05d181","58064d71af05f980ef9eaa76","58065388cbfa7d81497fe764","58064e74a05fd98101c6726c","5806559f11337e81519b5487","58064fab9e84498120e7cbfa","58065e8014a214818555f299","58065e0314a214818555f25e","580651e9868f85812eb9f209","580657e32a4f8e8160c49c51","5806547ccbfa7d81497fe90f","58065ab629169f816f05d1ba","580652a7868f85812eb9f2f8","58065446cbfa7d81497fe8c6","580657e12a4f8e8160c49c45","58065aa129169f816f05d1b6","580651e8868f85812eb9f1fd","5806456254027480830ccd6e","5806522c868f85812eb9f283","58064e66a05fd98101c67244","580652f4868f85812eb9f397","58064f2acd5dd981118aa2da","580537843ca7247be13fe492","58065d432418ec817d098a3b","5806556f11337e81519b544b","580657f12a4f8e8160c49c5d","580651f9868f85812eb9f21f","58065d752418ec817d098a88","580653accbfa7d81497fe79c","5806548dcbfa7d81497fe93b","58065181868f85812eb9f1ad","58065d622418ec817d098a61","58065d362418ec817d098a17","58064e6ba05fd98101c67260","580537853ca7247be13fe4d3","58065ae829169f816f05d1da","58065e8014a214818555f2aa","580652e8868f85812eb9f36d","58064d91af05f980ef9eaaaa","58065426cbfa7d81497fe887","58064eab2120e2810a5e031d","58064d7eaf05f980ef9eaa95","58065b2b29169f816f05d1f9","580537843ca7247be13fe4ad","58064d77af05f980ef9eaa82","58065235868f85812eb9f299","58065b3629169f816f05d20b","58065ef814a214818555f379","58065417cbfa7d81497fe878","580655cd11337e81519b54b5","580537853ca7247be13fe4eb","580653c1cbfa7d81497fe7dd","5806545acbfa7d81497fe8e9","58064cd15564f580e70fc3af","58065e6814a214818555f269","5806549ccbfa7d81497fe951","5806548dcbfa7d81497fe929","58065235868f85812eb9f29c","5806575a2a4f8e8160c49b64","58065303868f85812eb9f3a2","58065a9f29169f816f05d1af","58064f26cd5dd981118aa2c8","580651ce868f85812eb9f1eb","58064df57c476280f8b33168","58065407cbfa7d81497fe85a","58065e0d14a214818555f260","580653cccbfa7d81497fe7f2","580652a7868f85812eb9f2f2","58064d6faf05f980ef9eaa73","580651ce868f85812eb9f1e2","580537843ca7247be13fe485","58065459cbfa7d81497fe8d5","58065445cbfa7d81497fe8bd","5806529c868f85812eb9f2d2","5806578f2a4f8e8160c49b8b","58065e9714a214818555f2cb","58064fa09e84498120e7cbd8","5806575a2a4f8e8160c49b63","580651bf868f85812eb9f1b6","5806558e11337e81519b546a","580651e8868f85812eb9f1fa","58065b5829169f816f05d21c","58064f9b9e84498120e7cbc3","5806408a6dcddf8010f371df","58064d9caf05f980ef9eaace","580653eecbfa7d81497fe824","580658122a4f8e8160c49caa","58065254868f85812eb9f2a4","58064fa09e84498120e7cbd9","5806559f11337e81519b548d","580652e9868f85812eb9f373","580657352a4f8e8160c49b3f","580537843ca7247be13fe48c","580651c1868f85812eb9f1c1","5806556f11337e81519b5450","5806556f11337e81519b5451","58064f26cd5dd981118aa2cc","58065e8a14a214818555f2bd","580657e12a4f8e8160c49c49","58065439cbfa7d81497fe8a1","580537853ca7247be13fe4b5","58065305868f85812eb9f3bc","58065b2c29169f816f05d1fb","58065426cbfa7d81497fe884","58065447cbfa7d81497fe8d1","58065160868f85812eb9f172","5806579a2a4f8e8160c49bbb","58065439cbfa7d81497fe8ac","5806522b868f85812eb9f27c","58065181868f85812eb9f1ae","5806553c11337e81519b5404","58065254868f85812eb9f2ad","5806558111337e81519b5459","58064f23cd5dd981118aa2c4","58065d292418ec817d0989ff","58065e0214a214818555f25d","5806556f11337e81519b544e","580652a8868f85812eb9f2fe","580537863ca7247be13fe4f7","58065388cbfa7d81497fe763","58065e7214a214818555f280","58065ab829169f816f05d1c0","58064f0bcd5dd981118aa282","5806529c868f85812eb9f2cf","580652e8868f85812eb9f372","58065181868f85812eb9f1a7","58065d0a2418ec817d0989d1","5806573a2a4f8e8160c49b43","580643aeb624f68064c5bdb1","58065cf92418ec817d0989bb","580653cccbfa7d81497fe7e6","5806539ccbfa7d81497fe78a","5806529b868f85812eb9f2c7","580651e9868f85812eb9f20a","58065235868f85812eb9f295","580537853ca7247be13fe4e5","5806529c868f85812eb9f2cb","580653c1cbfa7d81497fe7dc","58065445cbfa7d81497fe8ba","58065ed414a214818555f33a","58065b1a29169f816f05d1f3","58064eba2120e2810a5e0324","58065e8b14a214818555f2c4","580651c1868f85812eb9f1ca","580537843ca7247be13fe499","580658122a4f8e8160c49cad","58065a7629169f816f05d1a5","580651cf868f85812eb9f1ef","5806515f868f85812eb9f169","58064e55a05fd98101c67227","58065a5429169f816f05d18f","580658132a4f8e8160c49cc0","58065255868f85812eb9f2be","58065e7314a214818555f28c","580653ffcbfa7d81497fe83c","58065d1e2418ec817d0989f5","5806578f2a4f8e8160c49b9a","58065eb814a214818555f312","58065e8914a214818555f2b0","58065d1e2418ec817d0989f6","58065303868f85812eb9f3a9","580651ce868f85812eb9f1e7","5806555711337e81519b541f","580652f3868f85812eb9f383","58065e8014a214818555f29b","580652f3868f85812eb9f382","58065254868f85812eb9f2a6","5806408b6dcddf8010f371e3","5806539ccbfa7d81497fe790","58064e74a05fd98101c67272","580652f4868f85812eb9f391","580657832a4f8e8160c49b84","58065ea514a214818555f2fc","58064fa99e84498120e7cbf4","5806548dcbfa7d81497fe937","5806556f11337e81519b5452","580652c7868f85812eb9f340","580651d0868f85812eb9f1f6","58064df67c476280f8b33171","580657822a4f8e8160c49b77","58065160868f85812eb9f16b","5806408a6dcddf8010f371dc","580652f3868f85812eb9f37f","58064d7eaf05f980ef9eaa96","5806575b2a4f8e8160c49b65","58065e0214a214818555f25c","58065eb714a214818555f30b","58064eae2120e2810a5e031e","5806547ccbfa7d81497fe91e","580651e8868f85812eb9f201","5806574f2a4f8e8160c49b5c","58065388cbfa7d81497fe766","58064e60a05fd98101c67235","58065d502418ec817d098a53","5806522a868f85812eb9f267","58065ed314a214818555f337","58065a9029169f816f05d1a7","580657fe2a4f8e8160c49c93","58065ee014a214818555f364","5806529d868f85812eb9f2e4","58064e5aa05fd98101c6722f","5806539ccbfa7d81497fe78f","5806408b6dcddf8010f371ed","58065b3629169f816f05d1ff","580651bf868f85812eb9f1bc","58064f9b9e84498120e7cbca","58064d96af05f980ef9eaabf","58065417cbfa7d81497fe87a","580657902a4f8e8160c49ba1","58065254868f85812eb9f2b8","580651e8868f85812eb9f203","580652c7868f85812eb9f343","580651e8868f85812eb9f200","58064f19cd5dd981118aa2a8","5806556f11337e81519b5440","5806551411337e81519b53e2","580652a7868f85812eb9f2ed","580652f4868f85812eb9f39b","58065427cbfa7d81497fe891","58065ef914a214818555f38c","5806456154027480830ccd67","58065d1d2418ec817d0989ef","5806515a868f85812eb9f15d","5806579a2a4f8e8160c49bbc","58065e7314a214818555f292","58065cf92418ec817d0989c0","58065ed514a214818555f358","5806559f11337e81519b548e","580653edcbfa7d81497fe821","58065ec714a214818555f32c","580652b7868f85812eb9f32a","5806515a868f85812eb9f161","580651c1868f85812eb9f1cf","580653b5cbfa7d81497fe7b4","58065407cbfa7d81497fe853","5806578f2a4f8e8160c49b9c","580652e9868f85812eb9f375","58064d97af05f980ef9eaac0","580537853ca7247be13fe4d0","580652c9868f85812eb9f355","58065ee014a214818555f366","58064f0bcd5dd981118aa281","580657fe2a4f8e8160c49c99","58065e6814a214818555f270","580537853ca7247be13fe4c7","580537853ca7247be13fe4b1","58065d432418ec817d098a45","5806553c11337e81519b5407","580652f4868f85812eb9f38e","5806547ccbfa7d81497fe91b","58065407cbfa7d81497fe85b","5806546acbfa7d81497fe8f6","580653b5cbfa7d81497fe7ba","58065407cbfa7d81497fe855","5806408b6dcddf8010f371e7","58065edf14a214818555f35a","58065e9914a214818555f2e3","58065ec714a214818555f320","580537833ca7247be13fe462","58065ed514a214818555f352","58065445cbfa7d81497fe8b6","580657832a4f8e8160c49b80","58065d432418ec817d098a37","580653eecbfa7d81497fe823","58065d362418ec817d098a19","58064dfb7c476280f8b3318e","58065ee114a214818555f375","5806546acbfa7d81497fe8fd","5806522b868f85812eb9f273","5806556f11337e81519b5448","580652a7868f85812eb9f2fc","5806529d868f85812eb9f2dd","580652a7868f85812eb9f2f5","58065439cbfa7d81497fe8aa","58065eb714a214818555f30a","58065ed314a214818555f336","580651fb868f85812eb9f23a","58064f11cd5dd981118aa299","58065303868f85812eb9f3a3","580537843ca7247be13fe473","58064e6aa05fd98101c67255","58065afb29169f816f05d1e3","58064d8faf05f980ef9eaaa1","580657f22a4f8e8160c49c5f","5806552911337e81519b53f7","580653bfcbfa7d81497fe7c0","580537843ca7247be13fe4a6","58064dfb7c476280f8b3318b","5806546acbfa7d81497fe902","580651ce868f85812eb9f1df","580657352a4f8e8160c49b40","58065d502418ec817d098a55","580653d8cbfa7d81497fe7ff","58064d6daf05f980ef9eaa6d","58065aa029169f816f05d1b0","580657fd2a4f8e8160c49c82","580657832a4f8e8160c49b78","58064f999e84498120e7cbbe","58065b1a29169f816f05d1f1","580652b5868f85812eb9f314","58065d0a2418ec817d0989cd","58065e8a14a214818555f2c0","5806556f11337e81519b544c","58065446cbfa7d81497fe8ca","58065459cbfa7d81497fe8e1","580652c6868f85812eb9f331","5806456254027480830ccd6d","580537843ca7247be13fe496","58065eb714a214818555f303","580652e7868f85812eb9f356","580537853ca7247be13fe4e6","580652a7868f85812eb9f2f0","58065a7429169f816f05d19d","58065446cbfa7d81497fe8cc","58065ef814a214818555f37e","580653bfcbfa7d81497fe7d0","58064fa09e84498120e7cbdc","58065391cbfa7d81497fe76d","58064f26cd5dd981118aa2ce","58064ea62120e2810a5e031a","58065e9914a214818555f2e4","580657e32a4f8e8160c49c58","58065166868f85812eb9f188","58065165868f85812eb9f183","58064e6aa05fd98101c67257","58065e9814a214818555f2d8","58065235868f85812eb9f29a","58065ea514a214818555f2f2","58065e6814a214818555f26d","5806552911337e81519b53f3","580652f4868f85812eb9f38d","58065aa129169f816f05d1b5","5806545acbfa7d81497fe8ea","58065ad929169f816f05d1d2","5806529d868f85812eb9f2e0","5806553c11337e81519b5409","5806584a2a4f8e8160c49cc9","5806548ecbfa7d81497fe93d","580653b5cbfa7d81497fe7aa","58064e68a05fd98101c67249","5806554c11337e81519b541d","5806522a868f85812eb9f261","58065235868f85812eb9f294","5806522b868f85812eb9f279","58065ce22418ec817d0989b9","58064d8faf05f980ef9eaaa4","58065eb714a214818555f2ff","5806556411337e81519b543d","58065439cbfa7d81497fe89e","5806515a868f85812eb9f165","58064f1ccd5dd981118aa2ad","58065e8014a214818555f29e","580651ce868f85812eb9f1dd","58065160868f85812eb9f176","5806572d2a4f8e8160c49b38","58064d8faf05f980ef9eaaa7","58065181868f85812eb9f1a9","580537843ca7247be13fe4a1","58064f26cd5dd981118aa2cd","5806558e11337e81519b5473","58065d292418ec817d098a0f","580537853ca7247be13fe4f0","58065391cbfa7d81497fe772","58064fa29e84498120e7cbe1","580653b5cbfa7d81497fe7a8","58065cf92418ec817d0989bc","58064d93af05f980ef9eaaaf","580537853ca7247be13fe4dd","580657fe2a4f8e8160c49c95","580651f8868f85812eb9f21b","58065d0a2418ec817d0989d8","5806547ccbfa7d81497fe912","580537833ca7247be13fe466","580652e8868f85812eb9f36e","580537863ca7247be13fe4f8","5806578f2a4f8e8160c49b9b","580652b5868f85812eb9f319","58064f9e9e84498120e7cbd1","580658132a4f8e8160c49cb3","58065ed514a214818555f34f","5806408a6dcddf8010f371dd","58065e7314a214818555f28a","58065d1c2418ec817d0989ea","58065b1a29169f816f05d1f2","58065e8b14a214818555f2c7","580657692a4f8e8160c49b6d","58065b5829169f816f05d213","580657832a4f8e8160c49b81","580652c7868f85812eb9f33f","58065165868f85812eb9f17c","5806558111337e81519b5464","5806552911337e81519b53f1","58065d0a2418ec817d0989de","58064e62a05fd98101c6723e","58065165868f85812eb9f17b","58065e9714a214818555f2cf","5806408b6dcddf8010f371ea","5806558111337e81519b5466","580657f22a4f8e8160c49c67","580537843ca7247be13fe47d","5806584a2a4f8e8160c49cc6","580653decbfa7d81497fe81a","580657462a4f8e8160c49b4c","58064e047c476280f8b331a5","58065445cbfa7d81497fe8b9","580652c6868f85812eb9f334","5806529e868f85812eb9f2e5","580537853ca7247be13fe4c5","580658152a4f8e8160c49cc5","580653bfcbfa7d81497fe7cc","58065e8014a214818555f29f","580652b7868f85812eb9f329","58064f1dcd5dd981118aa2b0","58065391cbfa7d81497fe77b","58065213868f85812eb9f258","5806584c2a4f8e8160c49cd6","58065304868f85812eb9f3b0","580537853ca7247be13fe4cb","580657ff2a4f8e8160c49c9e","5806546acbfa7d81497fe8f7","580651fa868f85812eb9f22f","58065ae829169f816f05d1db","5806558e11337e81519b5471","5806558111337e81519b5465","58064d82af05f980ef9eaa9e","5806553c11337e81519b53ff","580652e8868f85812eb9f36a","5806556f11337e81519b5454","58065ed514a214818555f356","58065400cbfa7d81497fe84a","580652f4868f85812eb9f38a","58065d502418ec817d098a51","5806408b6dcddf8010f371eb","58065305868f85812eb9f3c1","58064f0dcd5dd981118aa286","58065ed414a214818555f346","58064ec02120e2810a5e032a","58064d93af05f980ef9eaab2","580652b7868f85812eb9f32d","5806578f2a4f8e8160c49b8a","58064dfc7c476280f8b33195","58064f13cd5dd981118aa2a1","58065a5d29169f816f05d196","5806546bcbfa7d81497fe908","58065a7429169f816f05d19f","58065304868f85812eb9f3b1","58065e8014a214818555f29a","5806578f2a4f8e8160c49b8f","580653eecbfa7d81497fe828","58065ee114a214818555f370","58065234868f85812eb9f289","58065303868f85812eb9f3ac","580652c7868f85812eb9f33d","580537843ca7247be13fe47f","580652c7868f85812eb9f33a","5806558111337e81519b5463","580537853ca7247be13fe4cc","580651ce868f85812eb9f1db","580655cd11337e81519b54b9","5806578f2a4f8e8160c49b8c","58064e60a05fd98101c67237","58065d502418ec817d098a4e","58065181868f85812eb9f1a8","58065b2a29169f816f05d1f6","58065181868f85812eb9f19c","5806559e11337e81519b5477","58065a9029169f816f05d1aa","58065e8b14a214818555f2c5","58065e7214a214818555f27d","58064cd15564f580e70fc3ac","580652e8868f85812eb9f364","5806554c11337e81519b5413","58065400cbfa7d81497fe846","580537833ca7247be13fe46f","580657822a4f8e8160c49b75","58065eb914a214818555f318","58065d1c2418ec817d0989e6","58064f30cd5dd981118aa2dc","580652f3868f85812eb9f384","5806539ccbfa7d81497fe78e","58064fa09e84498120e7cbdd","5806553d11337e81519b540f","580537853ca7247be13fe4cf","5806552011337e81519b53e8","5806549ccbfa7d81497fe954","5806549ccbfa7d81497fe94f","580653d8cbfa7d81497fe801","580651f9868f85812eb9f21e","580652c9868f85812eb9f350","58065d1c2418ec817d0989e9","580653cdcbfa7d81497fe7f5","580651e8868f85812eb9f1f9","58065d1c2418ec817d0989e4","58065254868f85812eb9f2aa","5806555611337e81519b541e","580653eecbfa7d81497fe825","58064df87c476280f8b3317f","58065e7314a214818555f285","58064f11cd5dd981118aa294","58065e0c14a214818555f25f","5806408a6dcddf8010f371de","58065d292418ec817d098a00","58064f0fcd5dd981118aa28d","58065160868f85812eb9f16a","580657fd2a4f8e8160c49c84","580652f3868f85812eb9f387","5806578f2a4f8e8160c49b97","5806558111337e81519b545c","58065ec714a214818555f32b","58064df77c476280f8b33179","5806556f11337e81519b5441","580655ce11337e81519b54c5","58064f1fcd5dd981118aa2b4","58065439cbfa7d81497fe8ad","5806553c11337e81519b540c","58064df47c476280f8b33165","580652a8868f85812eb9f303","5806572e2a4f8e8160c49b39","580653c0cbfa7d81497fe7db","580653bfcbfa7d81497fe7d1","58064f20cd5dd981118aa2bc","580651f8868f85812eb9f21a","5806546ccbfa7d81497fe90b","580653ffcbfa7d81497fe83a","580658122a4f8e8160c49ca7","58065d292418ec817d0989fb","580653d8cbfa7d81497fe807","58065181868f85812eb9f1a1","580651ea868f85812eb9f216","580537843ca7247be13fe4a3","58065459cbfa7d81497fe8d7","5806579a2a4f8e8160c49bbe","5806546acbfa7d81497fe8f8","5806554c11337e81519b5415","580657e12a4f8e8160c49c40","580652c7868f85812eb9f345","58064f30cd5dd981118aa2e3","580653cccbfa7d81497fe7f1","58065ed514a214818555f350","58064d80af05f980ef9eaa98","580653cccbfa7d81497fe7e5","580652f3868f85812eb9f37d","5806529b868f85812eb9f2c2","580653b5cbfa7d81497fe7ac","58065165868f85812eb9f17f","580658132a4f8e8160c49cbe","58065e7314a214818555f28f","58065d752418ec817d098a7d","58064e0b7c476280f8b331bf","58064f19cd5dd981118aa2a3","580653b5cbfa7d81497fe7a7","58065e7314a214818555f287","58065439cbfa7d81497fe8ab","5806515a868f85812eb9f164","5806456254027480830ccd6f","5806578f2a4f8e8160c49b92","5806522b868f85812eb9f277","580537843ca7247be13fe487","5806408a6dcddf8010f371e2","58064eae2120e2810a5e031f","58064d95af05f980ef9eaaba","58065459cbfa7d81497fe8db","580658122a4f8e8160c49ca8","5806575a2a4f8e8160c49b5f","58065391cbfa7d81497fe779","58064e5ba05fd98101c67232","58065ed414a214818555f33b","58064f32cd5dd981118aa2e7","580652f3868f85812eb9f385","58065234868f85812eb9f284","580653eecbfa7d81497fe832","5806555811337e81519b5426","58065439cbfa7d81497fe8a4","58065eb914a214818555f315","58065427cbfa7d81497fe896","58065ea514a214818555f2f8","5806539ccbfa7d81497fe77f","58065426cbfa7d81497fe880","58064d95af05f980ef9eaabb","5806548dcbfa7d81497fe933","58065e6814a214818555f26a","58065445cbfa7d81497fe8b8","580653d8cbfa7d81497fe7fd","58065cf92418ec817d0989c4","580652a9868f85812eb9f307","580653cccbfa7d81497fe7ed","58064d8faf05f980ef9eaaa2","580658142a4f8e8160c49cc2","58065d0a2418ec817d0989d4","58065426cbfa7d81497fe88c","58065445cbfa7d81497fe8b3","58065ea514a214818555f2ea","58065d1e2418ec817d0989f2","58064e77a05fd98101c67276","580652e9868f85812eb9f374","580655b711337e81519b5494","580657fd2a4f8e8160c49c88","5806558e11337e81519b546d","58065ed314a214818555f338","580653bfcbfa7d81497fe7d9","580657fd2a4f8e8160c49c83","5806522b868f85812eb9f269","58064f0fcd5dd981118aa290","580652b5868f85812eb9f322","58065b5829169f816f05d210","58065416cbfa7d81497fe872"];module.exports=mainService;
 
 /***/ },
-/* 28 */
+/* 35 */
 /*!****************************************!*\
   !*** ./public/js/directives/navbar.js ***!
   \****************************************/
@@ -37491,7 +48180,7 @@
 	module.exports = navbarDirective;
 
 /***/ },
-/* 29 */
+/* 36 */
 /*!*****************************************!*\
   !*** ./public/js/directives/sidebar.js ***!
   \*****************************************/
@@ -37499,7 +48188,7 @@
 
 	"use strict";
 	
-	var _sidebarCtrl = __webpack_require__(/*! ../controllers/sidebarCtrl.js */ 39);
+	var _sidebarCtrl = __webpack_require__(/*! ../controllers/sidebarCtrl.js */ 37);
 	
 	var _sidebarCtrl2 = _interopRequireDefault(_sidebarCtrl);
 	
@@ -37515,7 +48204,47 @@
 	module.exports = sidebarDirective;
 
 /***/ },
-/* 30 */
+/* 37 */
+/*!**********************************************!*\
+  !*** ./public/js/controllers/sidebarCtrl.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
+	
+	function sidebarCtrl($scope, $http, mainService) {
+	
+	  $scope.test = "test";
+	
+	  $scope.getCurrentPage = function () {
+	    $scope.currentPage = mainService.getCurrentPage();
+	
+	    $("a#dashboard").removeClass("active");
+	    $("a#match").removeClass("active");
+	    $("a#recommendations").removeClass("active");
+	    $("a#favorites").removeClass("active");
+	    $("a#watchlist").removeClass("active");
+	    if ($scope.currentPage === "/dashboard") {
+	      $("a#dashboard").addClass("active");
+	    } else if ($scope.currentPage === "/match") {
+	      $("a#match").addClass("active");
+	    } else if ($scope.currentPage.slice(0, 15) === "/recommendations") {
+	      $("a#recommendations").addClass("active");
+	    } else if ($scope.currentPage === "/favorites") {
+	      $("a#favorites").addClass("active");
+	    } else if ($scope.currentPage === "/watchlist") {
+	      $("a#watchlist").addClass("active");
+	    }
+	  };
+	
+	  $scope.getCurrentPage();
+	}
+	
+	module.exports = sidebarCtrl;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
+
+/***/ },
+/* 38 */
 /*!*****************************************!*\
   !*** ./public/js/directives/dashNav.js ***!
   \*****************************************/
@@ -37532,7 +48261,7 @@
 	module.exports = dashNav;
 
 /***/ },
-/* 31 */
+/* 39 */
 /*!**************************************************!*\
   !*** ./public/js/directives/favSearchResults.js ***!
   \**************************************************/
@@ -37549,7 +48278,7 @@
 	module.exports = favSearchResults;
 
 /***/ },
-/* 32 */
+/* 40 */
 /*!*********************************************!*\
   !*** ./public/js/directives/enterSubmit.js ***!
   \*********************************************/
@@ -37574,13 +48303,13 @@
 	module.exports = enterSubmit;
 
 /***/ },
-/* 33 */
+/* 41 */
 /*!********************************************!*\
   !*** ./public/js/directives/trashMovie.js ***!
   \********************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
 	function trashMovie() {
 	  return function (scope, element, attrs) {
@@ -37594,15 +48323,16 @@
 	}
 	
 	module.exports = trashMovie;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
 
 /***/ },
-/* 34 */
+/* 42 */
 /*!*****************************************!*\
   !*** ./public/js/directives/ratings.js ***!
   \*****************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
 	function ratings() {
 	  return function (scope, element, attrs) {
@@ -37664,15 +48394,16 @@
 	}
 	
 	module.exports = ratings;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
 
 /***/ },
-/* 35 */
+/* 43 */
 /*!**********************************************!*\
   !*** ./public/js/directives/movieDetails.js ***!
   \**********************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
 	function movieDetails() {
 	  return function (scope, element, attrs) {
@@ -37683,18 +48414,24 @@
 	      $("span.overlay").css("visibility", "hidden");
 	    });
 	  };
+	
+	  $("li.movie-poster").on("mouseenter", function () {
+	    console.log("enter");
+	    $("span.overlay", this).css("visibility", "visible");
+	  });
 	}
 	
 	module.exports = movieDetails;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
 
 /***/ },
-/* 36 */
+/* 44 */
 /*!**************************************************!*\
   !*** ./public/js/directives/showMovieDetails.js ***!
   \**************************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
 	function showMovieDetails() {
 	  return function (scope, element, attrs) {
@@ -37714,9 +48451,10 @@
 	}
 	
 	module.exports = showMovieDetails;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
 
 /***/ },
-/* 37 */
+/* 45 */
 /*!******************************************************!*\
   !*** ./public/js/directives/movieDetailsTemplate.js ***!
   \******************************************************/
@@ -37733,397 +48471,48 @@
 	module.exports = movieDetailsTemplate;
 
 /***/ },
-/* 38 */
-/*!********************************************!*\
-  !*** ./public/js/controllers/matchCtrl.js ***!
-  \********************************************/
-/***/ function(module, exports) {
+/* 46 */
+/*!**************************************************!*\
+  !*** ./public/js/directives/watchlistDetails.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
-	function matchCtrl($scope, $http, $sce, $timeout, mainService) {
+	function watchlistDetails() {
+	  return function (scope, element, attrs) {
 	
-	  $scope.getInitMatchQueue = function () {
-	    mainService.getInitMatchQueue().then(function (response) {
-	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
-	        $scope.awards = results.data.Awards;
-	        $scope.imdbMetascore = results.data.Metascore;
-	        $scope.imdbRating = results.data.imdbRating;
-	        $scope.imdbVotes = results.data.imdbVotes;
-	        $scope.tomatoRating = results.data.tomatoRating;
-	        $scope.tomatoReviews = results.data.tomatoReviews;
-	        $scope.tomatoUserRating = results.data.tomatoUserRating;
-	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
-	        if ($scope.tomatoRating > 5) {
-	          $scope.tomatoClass = "rt-fresh";
-	        } else {
-	          $scope.tomatoClass = "rt-rotten";
-	        }
-	      });
-	      $scope.recommendedMovie = response;
-	      if ($scope.recommendedMovie) {
-	        $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	        console.log($scope.recommendedMovie);
-	        return $scope.recommendedMovie;
-	      } else {
-	        $timeout(function () {
-	          $scope.recommendedMovie = mainService.getInitMatchQueue();
-	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	          return $scope.recommendedMovie;
-	        }, 200);
-	      }
+	    $("li.movie-poster").on("mouseenter", function () {
+	      $("span.overlay", this).css("visibility", "visible");
+	    });
+	    $("li.movie-poster").on("mouseleave", function () {
+	      $("span.overlay", this).css("visibility", "hidden");
 	    });
 	  };
+	}
+	module.exports = watchlistDetails;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
+
+/***/ },
+/* 47 */
+/*!*********************************************!*\
+  !*** ./public/js/directives/genreSelect.js ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
-	  $scope.addToRatedOne = function (movie) {
-	    mainService.removeFromMatchQueue(movie._id);
-	    mainService.getInitMatchQueue().then(function (response) {
-	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
-	        $scope.awards = results.data.Awards;
-	        $scope.imdbMetascore = results.data.Metascore;
-	        $scope.imdbRating = results.data.imdbRating;
-	        $scope.imdbVotes = results.data.imdbVotes;
-	        $scope.tomatoRating = results.data.tomatoRating;
-	        $scope.tomatoReviews = results.data.tomatoReviews;
-	        $scope.tomatoUserRating = results.data.tomatoUserRating;
-	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
-	        if ($scope.tomatoRating > 5) {
-	          $scope.tomatoClass = "rt-fresh";
-	        } else {
-	          $scope.tomatoClass = "rt-rotten";
-	        }
-	      });
-	      $scope.recommendedMovie = response;
-	      if ($scope.recommendedMovie) {
-	        $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	        console.log($scope.recommendedMovie);
-	        return $scope.recommendedMovie;
-	      } else {
-	        $timeout(function () {
-	          $scope.recommendedMovie = mainService.getInitMatchQueue();
-	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	          return $scope.recommendedMovie;
-	        }, 200);
-	      }
-	    });
-	    mainService.addToRatedOne(movie);
-	    // return $scope.recommendedMovie;
-	  };
-	
-	  $scope.addToRatedTwo = function (movie) {
-	    mainService.removeFromMatchQueue(movie._id);
-	    mainService.getInitMatchQueue().then(function (response) {
-	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
-	        $scope.awards = results.data.Awards;
-	        $scope.imdbMetascore = results.data.Metascore;
-	        $scope.imdbRating = results.data.imdbRating;
-	        $scope.imdbVotes = results.data.imdbVotes;
-	        $scope.tomatoRating = results.data.tomatoRating;
-	        $scope.tomatoReviews = results.data.tomatoReviews;
-	        $scope.tomatoUserRating = results.data.tomatoUserRating;
-	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
-	        if ($scope.tomatoRating > 5) {
-	          $scope.tomatoClass = "rt-fresh";
-	        } else {
-	          $scope.tomatoClass = "rt-rotten";
-	        }
-	      });
-	      $scope.recommendedMovie = response;
-	      if ($scope.recommendedMovie) {
-	        $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	        console.log($scope.recommendedMovie);
-	        return $scope.recommendedMovie;
-	      } else {
-	        $timeout(function () {
-	          $scope.recommendedMovie = mainService.getInitMatchQueue();
-	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	          return $scope.recommendedMovie;
-	        }, 200);
-	      }
-	    });
-	    mainService.addToRatedTwo(movie);
-	  };
-	
-	  $scope.addToRatedThree = function (movie) {
-	    mainService.removeFromMatchQueue(movie._id);
-	    mainService.getInitMatchQueue().then(function (response) {
-	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
-	        $scope.awards = results.data.Awards;
-	        $scope.imdbMetascore = results.data.Metascore;
-	        $scope.imdbRating = results.data.imdbRating;
-	        $scope.imdbVotes = results.data.imdbVotes;
-	        $scope.tomatoRating = results.data.tomatoRating;
-	        $scope.tomatoReviews = results.data.tomatoReviews;
-	        $scope.tomatoUserRating = results.data.tomatoUserRating;
-	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
-	        if ($scope.tomatoRating > 5) {
-	          $scope.tomatoClass = "rt-fresh";
-	        } else {
-	          $scope.tomatoClass = "rt-rotten";
-	        }
-	      });
-	      $scope.recommendedMovie = response;
-	      if ($scope.recommendedMovie) {
-	        $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	        console.log($scope.recommendedMovie);
-	        return $scope.recommendedMovie;
-	      } else {
-	        $timeout(function () {
-	          $scope.recommendedMovie = mainService.getInitMatchQueue();
-	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	          return $scope.recommendedMovie;
-	        }, 200);
-	      }
-	    });
-	    mainService.addToRatedThree(movie);
-	  };
-	
-	  $scope.addToRatedFour = function (movie) {
-	    mainService.removeFromMatchQueue(movie._id);
-	    mainService.getInitMatchQueue().then(function (response) {
-	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
-	        $scope.awards = results.data.Awards;
-	        $scope.imdbMetascore = results.data.Metascore;
-	        $scope.imdbRating = results.data.imdbRating;
-	        $scope.imdbVotes = results.data.imdbVotes;
-	        $scope.tomatoRating = results.data.tomatoRating;
-	        $scope.tomatoReviews = results.data.tomatoReviews;
-	        $scope.tomatoUserRating = results.data.tomatoUserRating;
-	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
-	        if ($scope.tomatoRating > 5) {
-	          $scope.tomatoClass = "rt-fresh";
-	        } else {
-	          $scope.tomatoClass = "rt-rotten";
-	        }
-	      });
-	      $scope.recommendedMovie = response;
-	      if ($scope.recommendedMovie) {
-	        $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	        console.log($scope.recommendedMovie);
-	        return $scope.recommendedMovie;
-	      } else {
-	        $timeout(function () {
-	          $scope.recommendedMovie = mainService.getInitMatchQueue();
-	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	          return $scope.recommendedMovie;
-	        }, 200);
-	      }
-	    });
-	    mainService.addToRatedFour(movie);
-	  };
-	
-	  $scope.addToRatedFive = function (movie) {
-	    mainService.removeFromMatchQueue(movie._id);
-	    mainService.getInitMatchQueue().then(function (response) {
-	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
-	        $scope.awards = results.data.Awards;
-	        $scope.imdbMetascore = results.data.Metascore;
-	        $scope.imdbRating = results.data.imdbRating;
-	        $scope.imdbVotes = results.data.imdbVotes;
-	        $scope.tomatoRating = results.data.tomatoRating;
-	        $scope.tomatoReviews = results.data.tomatoReviews;
-	        $scope.tomatoUserRating = results.data.tomatoUserRating;
-	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
-	        if ($scope.tomatoRating > 5) {
-	          $scope.tomatoClass = "rt-fresh";
-	        } else {
-	          $scope.tomatoClass = "rt-rotten";
-	        }
-	      });
-	      $scope.recommendedMovie = response;
-	      if ($scope.recommendedMovie) {
-	        $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	        console.log($scope.recommendedMovie);
-	        return $scope.recommendedMovie;
-	      } else {
-	        $timeout(function () {
-	          $scope.recommendedMovie = mainService.getInitMatchQueue();
-	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	          return $scope.recommendedMovie;
-	        }, 200);
-	      }
-	    });
-	    mainService.addToRatedFive(movie);
-	  };
-	
-	  $scope.addToUnseen = function (movie) {
-	    mainService.removeFromMatchQueue(movie._id);
-	    mainService.getInitMatchQueue().then(function (response) {
-	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
-	        $scope.awards = results.data.Awards;
-	        $scope.imdbMetascore = results.data.Metascore;
-	        $scope.imdbRating = results.data.imdbRating;
-	        $scope.imdbVotes = results.data.imdbVotes;
-	        $scope.tomatoRating = results.data.tomatoRating;
-	        $scope.tomatoReviews = results.data.tomatoReviews;
-	        $scope.tomatoUserRating = results.data.tomatoUserRating;
-	        $scope.tomatoUserReviews = results.data.tomatoUserReviews;
-	        if ($scope.tomatoRating > 5) {
-	          $scope.tomatoClass = "rt-fresh";
-	        } else {
-	          $scope.tomatoClass = "rt-rotten";
-	        }
-	      });
-	      $scope.recommendedMovie = response;
-	      if ($scope.recommendedMovie) {
-	        $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
-	        console.log($scope.recommendedMovie);
-	        return $scope.recommendedMovie;
-	      } else {
-	        $timeout(function () {
-	          $scope.recommendedMovie = mainService.getInitMatchQueue();
-	          // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	          return $scope.recommendedMovie;
-	        }, 200);
-	      }
-	    });
-	    mainService.addToUnseen(movie);
-	  };
-	
-	  $scope.addToWatchlist = function (movie) {
-	    mainService.addToWatchlist(movie);
-	    $("span.watchlist").on("click", function () {
-	      $("span.watchlist").css("color", "#FC7100");
+	function genreSelect() {
+	  return function (scope, element, attrs) {
+	    $("div.genre").click(function () {
+	      console.log("clicked");
+	      $(this).toggleClass("genre-selected");
 	    });
 	  };
-	
-	  $scope.getInitMatchQueue();
 	}
 	
-	module.exports = matchCtrl;
-
-/***/ },
-/* 39 */
-/*!**********************************************!*\
-  !*** ./public/js/controllers/sidebarCtrl.js ***!
-  \**********************************************/
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	function sidebarCtrl($scope, $http, mainService) {
-	
-	  $scope.test = "test";
-	
-	  $scope.getCurrentPage = function () {
-	    $scope.currentPage = mainService.getCurrentPage();
-	
-	    $("a#dashboard").removeClass("active");
-	    $("a#match").removeClass("active");
-	    $("a#recommendations").removeClass("active");
-	    $("a#favorites").removeClass("active");
-	    $("a#watchlist").removeClass("active");
-	    if ($scope.currentPage === "/dashboard") {
-	      $("a#dashboard").addClass("active");
-	    } else if ($scope.currentPage === "/match") {
-	      $("a#match").addClass("active");
-	    } else if ($scope.currentPage === "/recommendations") {
-	      $("a#recommendations").addClass("active");
-	    } else if ($scope.currentPage === "/favorites") {
-	      $("a#favorites").addClass("active");
-	    } else if ($scope.currentPage === "/watchlist") {
-	      $("a#watchlist").addClass("active");
-	    }
-	  };
-	
-	  $scope.getCurrentPage();
-	}
-	
-	module.exports = sidebarCtrl;
-
-/***/ },
-/* 40 */
-/*!*****************************************************!*\
-  !*** ./public/js/controllers/recommendationCtrl.js ***!
-  \*****************************************************/
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	function recommendationsCtrl($scope, mainService) {}
-	
-	module.exports = recommendationsCtrl;
-
-/***/ },
-/* 41 */
-/*!*************************************!*\
-  !*** ./public/views/favorites.html ***!
-  \*************************************/
-/***/ function(module, exports) {
-
-	module.exports = "<navbar></navbar>\n<main class=\"getting-started\">\n  <div class=\"welcome\">\n    <div class=\"welcome-cont\">\n      <h1 class=\"top-five\">What are 5 of your favorite movies?</h1>\n      <div class=\"top-movie-search\">\n        <span class=\"glyphicon glyphicon-search search-icon\" aria-hidden=\"true\"></span>\n        <input ng-model=\"searchQuery\" type=\"text\" placeholder=\"Search for a movie...\" enter-submit=\"queryFavMovies(searchQuery)\">\n        <!-- <button class=\"search\" type=\"button\" ng-Enter=\"queryFavMovies(searchQuery)\"><span class=\"glyphicon glyphicon-arrow-right\" aria-hidden=\"true\"></span></button> -->\n\n        <ul class=\"top-five-results\">\n          <li ng-repeat=\"movie in topFive\">\n            <img trash-movie ng-src=\"{{movie.posterUrl}}\" />\n            <span class=\"remove-from-top-five\">\n              <span ng-click=\"removeFromTopFive(movie)\" class=\"glyphicon glyphicon-trash trash\" aria-hidden=\"true\"></span>\n            </span>\n          </li>\n        </ul>\n\n        <a ui-sref=\"initMatch\"><button class=\"gs-btn default\" type=\"button\" ng-disabled=\"reachFive\">Next</button></a>\n      </div>\n      <fav-search-results></fav-search-results>\n    </div>\n  </div>\n</main>\n";
-
-/***/ },
-/* 42 */
-/*!***********************************************************!*\
-  !*** ./public/views/recommendations/recommendations.html ***!
-  \***********************************************************/
-/***/ function(module, exports) {
-
-	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<h1>My Recommendations</h1>\n";
-
-/***/ },
-/* 43 */
-/*!*************************************!*\
-  !*** ./public/views/watchlist.html ***!
-  \*************************************/
-/***/ function(module, exports) {
-
-	module.exports = "<sidebar></sidebar>\n\n<dashnav></dashnav>\n\n<main class=\"dashboard\">\n  <h1>My Watchlist</h1>\n  <ul class=\"watchlist\">\n    <li ng-repeat=\"movie in watchlist\">\n      <img movie-details ng-src=\"{{movie.posterUrl}}\" />\n      <span class=\"overlay\"><span show-movie-details class=\"glyphicon glyphicon-info-sign movie-details\" aria-hidden=\"true\"></span></span>\n    </li>\n  </ul>\n</main>\n\n<movie-details-template></movie-details-template>\n";
-
-/***/ },
-/* 44 */
-/*!************************************************!*\
-  !*** ./public/js/controllers/favoritesCtrl.js ***!
-  \************************************************/
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	function favoritesCtrl($scope, $state, mainService) {
-	
-	  $scope.getTopFive = function () {
-	    $scope.topFive = mainService.getTopFive();
-	    return $scope.topFive;
-	  };
-	
-	  $scope.getRatedFive = function () {
-	    $scope.ratedFive = mainService.getRatedFive();
-	    return $scope.ratedFive;
-	  };
-	
-	  $scope.getRatedFour = function () {
-	    $scope.ratedFour = mainService.getRatedFour();
-	    return $scope.ratedFour;
-	  };
-	
-	  $scope.getRatedThree = function () {
-	    $scope.ratedThree = mainService.getRatedThree();
-	    return $scope.ratedThree;
-	  };
-	
-	  $scope.getWatchlist = function () {
-	    $scope.watchlist = mainService.getWatchlist();
-	    return $scope.watchlist;
-	  };
-	
-	  $scope.getTopFive();
-	  $scope.getRatedFive();
-	  $scope.getRatedFour();
-	  $scope.getRatedThree();
-	  $scope.getWatchlist();
-	
-	  $state.reload();
-	}
-	
-	module.exports = favoritesCtrl;
+	module.exports = genreSelect;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 28)))
 
 /***/ }
 /******/ ]);

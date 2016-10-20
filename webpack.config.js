@@ -1,3 +1,5 @@
+const Webpack = require('webpack');
+
 module.exports = {
 	entry: [
     "./public/app.js"
@@ -26,5 +28,6 @@ module.exports = {
 	, output: {
 		path: __dirname + "/public"
 		, filename: "bundle.js"
-	}
+	},
+		plugins : [new Webpack.ProvidePlugin({$ : "jquery", jQuery : "jquery"})]
 };
