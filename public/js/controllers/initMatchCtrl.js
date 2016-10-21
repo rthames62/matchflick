@@ -1,4 +1,8 @@
 function initMatch($scope, $sce, mainService, $timeout){
+  $scope.initLoading = false;
+  $scope.initCounterShow = false;
+  $scope.initCounter = mainService.initCounter;
+
   $scope.recommendMovieForInitMatch = function(){
     $scope.recommendedMovies = mainService.recommendMoviesForMatch;
     return $scope.recommendedMovies;
@@ -30,6 +34,8 @@ function initMatch($scope, $sce, mainService, $timeout){
     mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedOne(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+    $scope.initLoading = mainService.initLoading;
+    $scope.initCounter = mainService.initCounter;
     return $scope.recommendedMovie;
   }
 
@@ -37,6 +43,8 @@ function initMatch($scope, $sce, mainService, $timeout){
     mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedTwo(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+    $scope.initLoading = mainService.initLoading;
+    $scope.initCounter = mainService.initCounter;
     return $scope.recommendedMovie;
   }
 
@@ -44,6 +52,8 @@ function initMatch($scope, $sce, mainService, $timeout){
     mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedThree(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+    $scope.initLoading = mainService.initLoading;
+    $scope.initCounter = mainService.initCounter;
     return $scope.recommendedMovie;
   }
 
@@ -51,6 +61,8 @@ function initMatch($scope, $sce, mainService, $timeout){
     mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedFour(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+    $scope.initLoading = mainService.initLoading;
+    $scope.initCounter = mainService.initCounter;
     return $scope.recommendedMovie;
   }
 
@@ -58,6 +70,8 @@ function initMatch($scope, $sce, mainService, $timeout){
     mainService.removeFromMatchQueue(movie._id);
     mainService.addToRatedFive(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+    $scope.initLoading = mainService.initLoading;
+    $scope.initCounter = mainService.initCounter;
     return $scope.recommendedMovie;
   }
 
@@ -70,9 +84,14 @@ function initMatch($scope, $sce, mainService, $timeout){
 
   $scope.addToWatchlist = function(movie){
     mainService.addToWatchlist(movie);
-    $("span.watchlist").on("click", function(){
-      $("span.watchlist").css("color", "#FC7100")
-    })
+    // $("span.watchlist").on("click", function(){
+    //   $("span.watchlist").css("color", "#FC7100")
+    // })
+    // $(this).parent().siblings("div.added-to-watchlist").fadeIn("slow");
+    // setTimeout(function(){
+    //   console.log("help");
+    //   $(that).parent().siblings("div.added-to-watchlist").fadeOut("slow");
+    // }, 2000)
   }
 
 

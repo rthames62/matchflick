@@ -1,0 +1,68 @@
+<div class="movie-details">
+<span show-movie-details class="glyphicon glyphicon-remove close-details" aria-hidden="true"></span>
+<div class="movie-details-poster">
+  <img ng-src="http://image.tmdb.org/t/p/w500/{{movie.posterUrl}}" />
+  <div class="imdb-wrapper">
+    <img src="http://ia.media-imdb.com/images/M/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@._V1_.png" class="imdb-logo" />
+    <div class="rating-wrapper">
+      <div class="imdbStar"></div>
+      <h6>{{imdbRating}}<span class="out-of-ten">/10 </span></h6>
+      <p class="votes">{{imdbVotes}}</p>
+    </div>
+    <!-- <p>{{imdbVotes}}</p> -->
+  </div>
+  <div class="rt-wrapper">
+    <img src="http://www.esotericarticles.com/wp-content/uploads/rotten-tomatoes-logo.png" alt="Rotten Tomatoes Logo" class="rt-logo" />
+    <div class="rating-wrapper">
+      <div ng-class="tomatoClass"></div>
+      <h6>{{tomatoRating}}<span class="out-of-ten">/10 </span></h6>
+      <p class="votes">{{tomatoReviews}}</p>
+    </div>
+  </div>
+</div>
+<div class="details">
+  <h1>{{movie.movieTitle}} ({{movie.releaseDate.substr(movie.releaseDate.length - 4)}})</h1>
+  <a id="play-trailer" class="trailer"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Watch Trailer</a>
+  <p>
+    <strong>Rated: </strong>{{movie.certification}} | {{movie.runtime}} minutes | {{movie.releaseDate}}
+  </p>
+  <p class="genres">
+    <span ng-repeat="genre in movie.genreIds">{{genre.name + ($last ? '' : ',')}}  </span>
+  </p>
+  <p>
+    <strong>Director:</strong> <span ng-repeat="director in movie.crew | filter : {job : 'Director'} | limitTo : 1">{{director.name}}</span>
+  </p>
+  <p>
+    <strong>Writers:</strong> <span ng-repeat="writer in movie.crew | filter : {department : 'Writing'} | limitTo : 2">{{writer.name}} ({{writer.job}}) </span>
+  </p>
+  <p>
+    <strong>Stars:</strong> <span ng-repeat="actor in movie.movieCast | limitTo : 3">{{actor.name + ($last ? '' : ',')}} </span>
+  </p>
+  <p>{{movie.description}}</p>
+  <h4>Full Cast</h4>
+  <ul class="cast">
+    <li ng-repeat="cast in movie.movieCast">
+      <img ng-src="{{cast.profile_path}}" />
+      <div class="info">
+        <p><strong>{{cast.name}}</strong><br>
+        {{cast.character.substr(0, 50)}}</p>
+      </div>
+    </li>
+  </ul>
+  <h4>Full Crew</h4>
+  <ul class="cast">
+    <li ng-repeat="crew in movie.crew">
+      <img ng-src="{{crew.profile_path}}" />
+      <div class="info">
+        <p><strong>{{crew.name}}</strong><br>
+        {{crew.job.substr(0, 45)}}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="trailer-modal">
+  <div id="trailer-video" ng-bind-html="trailerUrl">
+  </div>
+  <span id="close-trailer" show-movie-details class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+</div>
+</div>

@@ -1,0 +1,50 @@
+<sidebar></sidebar>
+
+<dashnav></dashnav>
+
+<main class="my-favorites">
+  <h1 style="margin-bottom:25px;">My Preferences</h1>
+
+  <section id="actors" class="preferences">
+    <h2>Actors</h2>
+    <ul>
+      <li ng-repeat="preference in userActorPrefs">{{preference.actorName}} - <span class="score">{{preference.actorTotalScore}}</span></li>
+    </ul>
+  </section>
+
+  <section id="genres" class="preferences">
+    <h2>Genres</h2>
+    <ul>
+      <li ng-repeat="preference in userGenrePrefs">{{preference.genreName}} - <span class="score">{{preference.genreTotalScore}}</span></li>
+    </ul>
+  </section>
+
+  <section id="keywords" class="preferences">
+    <h2>Keywords</h2>
+    <ul>
+      <li ng-repeat="preference in userKeywordPrefs">{{preference.keywordName}} - <span class="score">{{preference.keywordTotalScore}}</span></li>
+    </ul>
+  </section>
+
+  <section id="directors" class="preferences">
+    <h2>Directors</h2>
+    <ul>
+      <li ng-repeat="preference in userDirectorPrefs">{{preference.directorName}} - <span class="score">{{preference.directorTotalScore}}</span></li>
+    </ul>
+  </section>
+
+  <section id="producers" class="preferences">
+    <h2>Producers</h2>
+    <ul>
+      <li ng-repeat="preference in userProducerPrefs">{{preference.producerName}} - <span class="score">{{preference.producerTotalScore}}</span></li>
+    </ul>
+  </section>
+
+  <section id="writers" class="preferences">
+    <h2>Writers</h2>
+    <ul>
+      <li ng-repeat="preference in userWriterPrefs">{{preference.writerName}} - <span class="score">{{preference.writerTotalScore}}</span></li>
+    </ul>
+  </section>
+
+</main>

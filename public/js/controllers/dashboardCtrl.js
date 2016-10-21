@@ -68,6 +68,13 @@ function dashboardCtrl($scope, $http, mainService){
   }
 
   $scope.getWatchlist();
+  $scope.getUserDecadePrefs();
+  $scope.getUserKeywordPrefs();
+  $scope.getUserWriterPrefs();
+  $scope.getUserProducerPrefs();
+  $scope.getUserDirectorPrefs();
+  $scope.getUserActorPrefs();
+  $scope.getUserGenrePrefs();
 }
 
 module.exports = dashboardCtrl;

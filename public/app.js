@@ -15,6 +15,7 @@ import "./views/instructions.html";
 import "./views/recommendations/recommendations.html";
 import "./views/favorites.html";
 import "./views/watchlist.html";
+import "./views/preferences.html";
 
 //CSS
 import "./css/reset.css";
@@ -47,6 +48,11 @@ import showMovieDetails from "./js/directives/showMovieDetails.js";
 import movieDetailsTemplate from "./js/directives/movieDetailsTemplate.js";
 import watchlistDetails from "./js/directives/watchlistDetails.js";
 import genreSelect from "./js/directives/genreSelect.js";
+import movieDetailsRec from "./js/directives/movieDetailsRec.js";
+import showMovieRecDetails from "./js/directives/showMovieRecDetails.js";
+import showRecDetails from "./js/directives/showRecDetails.js";
+import addToWatchlist from "./js/directives/addToWatchlist.js";
+import addToWatchlistMatch from "./js/directives/addToWatchlistMatch.js";
 
 angular.module("MatchFlick", [uiRouter])
 .config(function($stateProvider, $urlRouterProvider){
@@ -60,11 +66,11 @@ angular.module("MatchFlick", [uiRouter])
       url : "/signup",
       templateUrl : "./views/sign-up.html"
     })
-    .state("dashboard", {
-      url : "/dashboard",
-      templateUrl : "./views/dashboard.html",
-      controller : dashboardCtrl
-    })
+    // .state("dashboard", {
+    //   url : "/dashboard",
+    //   templateUrl : "./views/dashboard.html",
+    //   controller : dashboardCtrl
+    // })
     .state("gettingStarted", {
       url : "/getting-started",
       templateUrl : "./views/get-started.html",
@@ -110,14 +116,19 @@ angular.module("MatchFlick", [uiRouter])
       templateUrl : "./views/recommendations/categories.html",
       controller : recommendationCtrl
     })
-    .state("favorites", {
-      url : "/favorites",
+    .state("dashboard", {
+      url : "/dashboard",
       templateUrl : "./views/my-favorites.html",
       controller : favoritesCtrl
     })
     .state("watchlist", {
       url : "/watchlist",
       templateUrl : "./views/watchlist.html",
+      controller : dashboardCtrl
+    })
+    .state("preferences", {
+      url : "/preferences",
+      templateUrl : "./views/preferences.html",
       controller : dashboardCtrl
     })
 })
@@ -135,3 +146,8 @@ angular.module("MatchFlick", [uiRouter])
 .directive("movieDetailsTemplate", movieDetailsTemplate)
 .directive("watchlistDetails", watchlistDetails)
 .directive("genreSelect", genreSelect)
+.directive("movieDetailsRec", movieDetailsRec)
+.directive("showMovieRecDetails", showMovieRecDetails)
+.directive("showRecDetails", showRecDetails)
+.directive("addToWatchlist", addToWatchlist)
+.directive("addToWatchlistMatch", addToWatchlistMatch)

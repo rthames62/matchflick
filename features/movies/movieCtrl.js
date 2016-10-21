@@ -30,13 +30,24 @@ module.exports = {
     })
   },
   getMovies(req, res){
-    Movie.find({}, function(error, response){
+    Movie.find(req.query, function(error, response){
       if(error){
         return res.status(500).json(error);
       } else {
         return res.json(response);
       }
     })
+  },
+  getMoviesByGenre(req, res){
+    Movie.find({"genreIds" : {$elemMatch : {id : parseInt(req.query.id)}}})
+      .limit(200)
+      .exec(function(error, response){
+        if(error){
+          return res.status(500).json(error);
+        } else {
+          return res.json(response);
+        }
+      })
   },
   getMovie(req, res){
     Movie.findById(req.params.id, function(error, response){

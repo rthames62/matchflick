@@ -7,6 +7,9 @@ function mainService($http, $location, $timeout, $q){
   console.log("i am the first", myThis.done);
   let recommendMoviesForMatch = [];
   let initCounter = 0;
+  myThis.initCounter = 0;
+  myThis.myRecMoviesByGenre = [];
+  let indexToRemoveXXX = [];
   let currentMovie;
   let tempDiscover = [];
   let currentTopActors = [];
@@ -46,6 +49,7 @@ function mainService($http, $location, $timeout, $q){
         if(userResponse.data.length > 0){
           currentUser = userResponse.data[0];
           myThis.currentUser = currentUser;
+          myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length + currentUser.unseenMovies.length;;
           console.log("current user", currentUser);
         } else {
             currentUser = {
@@ -357,11 +361,15 @@ function mainService($http, $location, $timeout, $q){
       initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length + currentUser.unseenMovies.length;
       let toTwenty = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
 
-      if(toTwenty < 20 && initCounter < 100){
+      myThis.initCounter = initCounter;
+
+      if(toTwenty < 10 && initCounter < 100){
         currentMovie = currentUser.initRecommended[initCounter];
         console.log("counter", initCounter);
         return currentMovie;
       } else {
+        console.log("im done!");
+        myThis.initLoading = true;
         currentUser.initialized = true;
         $http.put(`/api/user/${currentUser._id}`, {initialized : true});
         $location.path("/getting-started/congratulations")
@@ -613,146 +621,222 @@ function mainService($http, $location, $timeout, $q){
         // console.log(`/api/movies/${x}`);
         if(response.data.popularity < 1){
           $http.put(`/api/user/${currentUser._id}/matchQueue`, {_id : x})
-          console.log("remove", response.data.movieTitle);
         }
       })
     })
   }
 
   this.getRecommendationsByGenre = function(arr){
-    let genres = "with_genres=";
+    let promises = [];
+    let unseen = [];
+
 
     arr.forEach(function(x){
-      genres += x + ",";
+      promises.push(getByGenre(x));
     })
 
-    genres = genres.slice(0, -1);
 
-    console.log(genres);
-
-    let promises = [
-      discoverByGenre1(genres),
-      discoverByGenre2(genres)
-      // discoverByGenre3(genres),
-      // discoverByGenre4(genres),
-      // discoverByGenre5(genres)
-      // discoverByGenre6(genres),
-      // discoverByGenre7(genres)
-      // discoverByGenre8(genres)
-      // discoverByGenre9(genres),
-      // discoverByGenre10(genres),
-      // discoverByGenre11(genres),
-      // discoverByGenre12(genres),
-      // discoverByGenre13(genres),
-      // discoverByGenre14(genres),
-      // discoverByGenre15(genres),
-      // discoverByGenre16(genres),
-      // discoverByGenre17(genres),
-      // discoverByGenre18(genres),
-      // discoverByGenre19(genres),
-      // discoverByGenre20(genres),
-    ];
+        // return $http.get(`/api/genres?id=${arr[0]}`)
 
     return $q.all(promises).then(function(response){
       let moviePromises = [];
-      console.log("q all", response);
-      response.forEach(function(x, i){
-        x.data.results.forEach(function(y, j){
-          moviePromises.push(getAndPostMovieByOMDBId(y.id))
-        })
+      let allMovies = [];
+      let rankedMovies = [];
+      let seenMovies = [];
+      let remove;
+
+      seenMovies.push(currentUser.ratedMoviesFive, currentUser.ratedMoviesFour, currentUser.ratedMoviesThree, currentUser.ratedMoviesTwo, currentUser.ratedMoviesOne, currentUser.topFive);
+
+      response.forEach(function(x){
+        allMovies.push(x);
       })
-      console.log("movie promises", moviePromises);
-        return $q.all(moviePromises).then(function(response2){
-          console.log("q all 2", response2);
-          return response2;
+      allMovies = flattenArr(allMovies);
+      seenMovies = flattenArr(seenMovies);
+      allMovies = sortByScore(allMovies, "omdbId")
+      seenMovies = sortByScore(seenMovies, "omdbId")
+
+      for (var i = 0; i < seenMovies.length; i++) {
+        searchDuplicates(0, allMovies.length - 1, allMovies, seenMovies[i].omdbId, "omdbId");
+      }
+
+      for (var i = indexToRemoveXXX.length - 1; i >= 0 ; i--) {
+        allMovies.splice(indexToRemoveXXX[i], 1);
+      }
+
+      let someMovies = allMovies.slice(0, 50);
+      allMovies.forEach(function(x){
+        rankedMovies.push(compareToPreferences(x));
+      })
+
+      rankedMovies = sortByScore(rankedMovies, "totalScore").reverse();
+
+      console.log(rankedMovies);
+
+      rankedMovies.forEach(function(x){
+        moviePromises.push(getMovieByMid(x.mId));
+      })
+
+      return $q.all(moviePromises).then(function(response){
+        console.log(response);
+        let finalMovies = [];
+
+        response.forEach(function(x){
+          finalMovies.push(x.data);
         })
+        myThis.myRecMoviesByGenre = finalMovies;
+        $location.path("/recommendations")
+        return finalMovies;
+      })
     })
   }
 
-  function discoverByGenre1(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=1&${genres}`);
-  }
+  this.removeFromRecommended = function(id){
 
-  function discoverByGenre2(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=2&${genres}`);
-  }
-
-  function discoverByGenre3(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=3&${genres}`);
-  }
-
-  function discoverByGenre4(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=4&${genres}`);
-  }
-
-  function discoverByGenre5(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=5&${genres}`);
-  }
-
-  function discoverByGenre6(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=6&${genres}`);
-  }
-
-  function discoverByGenre7(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=7&${genres}`);
-  }
-
-  function discoverByGenre8(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=8&${genres}`);
-  }
-
-  function discoverByGenre9(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=9&${genres}`);
-  }
-
-  function discoverByGenre10(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=10&${genres}`);
-  }
-
-  function discoverByGenre11(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=11&${genres}`);
-  }
-
-  function discoverByGenre12(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=12&${genres}`);
-  }
-
-  function discoverByGenre13(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=13&${genres}`);
-  }
-
-  function discoverByGenre14(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=14&${genres}`);
-  }
-
-  function discoverByGenre15(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=15&${genres}`);
-  }
-
-  function discoverByGenre16(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=16&${genres}`);
-  }
-
-  function discoverByGenre17(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=17&${genres}`);
-  }
-
-  function discoverByGenre18(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=18&${genres}`);
-  }
-
-  function discoverByGenre19(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=19&${genres}`);
-  }
-
-  function discoverByGenre20(genres) {
-    return $http.get(`${omdbUrl}discover/movie?${omdbKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=20&${genres}`);
   }
 
 // **********************************************************
 //  HELPER FUNCTIONS
 // **********************************************************
 
+
+  function getMovieByMid(id){
+    return $http.get(`/api/movies/${id}`);
+  }
+
+  function searchDuplicates(low, high, arr, value, key){
+    let mid = Math.floor((low + high) / 2);
+
+    if(high < low){
+      return;
+    }
+    if(arr[mid][key] === value){
+      indexToRemoveXXX.push(mid);
+      return;
+    } else if(value < arr[mid][key]){
+      searchDuplicates(low, mid - 1, arr, value, key);
+    } else {
+      searchDuplicates(mid + 1, high, arr, value, key)
+    }
+  }
+
+  function compareToPreferences(obj){
+    let score = {
+      mId : obj._id,
+      movieName : obj.movieTitle,
+      genres : obj.genreIds,
+      posterUrl : obj.posterUrl,
+      totalScore : 0,
+      actorScore : 0,
+      keywordScore : 0,
+      directorScore : 0,
+      producerScore : 0,
+      writerScore : 0
+    };
+    for (let i = 0; i < obj.movieCast.length; i++) {
+      let actorName = obj.movieCast[i].name;
+      let actorFirstLetter = actorName.slice(0, 1);
+      let compareTo = currentUser.preferences.actors[actorFirstLetter.toLowerCase()];
+
+      if(compareTo){
+        for (let j = 0; j < compareTo.length; j++) {
+          if(actorName === compareTo[j].actorName){
+            if(compareTo[j].actorCount === 1){
+              score.actorScore += compareTo[j].actorTotalScore;
+            } else {
+              score.actorScore += compareTo[j].actorScore;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+    for (let i = 0; i < obj.keywords.length; i++) {
+      let name = obj.keywords[i].name;
+      let firstLetter = name.slice(0, 1);
+      let compareTo = currentUser.preferences.keywords[firstLetter.toLowerCase()];
+
+      if(compareTo){
+        for (let j = 0; j < compareTo.length; j++) {
+          if(name === compareTo[j].keywordName){
+            if(compareTo[j].keywordCount === 1){
+              score.keywordScore += compareTo[j].keywordTotalScore;
+            } else {
+              score.keywordScore += compareTo[j].keywordScore;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+    for (let i = 0; i < obj.crew.length; i++) {
+      let name = obj.crew[i].name;
+      let firstLetter = name.slice(0, 1);
+      let compareTo = currentUser.preferences.directors[firstLetter.toLowerCase()];
+
+      if(compareTo){
+        for (let j = 0; j < compareTo.length; j++) {
+          if(name === compareTo[j].directorName){
+            if(compareTo[j].directorCount === 1){
+              score.directorScore += compareTo[j].directorTotalScore;
+            } else {
+              score.directorScore += compareTo[j].directorScore;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+    for (let i = 0; i < obj.crew.length; i++) {
+      let name = obj.crew[i].name;
+      let firstLetter = name.slice(0, 1);
+      let compareTo = currentUser.preferences.producers[firstLetter.toLowerCase()];
+
+      if(compareTo){
+        for (let j = 0; j < compareTo.length; j++) {
+          if(name === compareTo[j].producerName){
+            if(compareTo[j].producerCount === 1){
+              score.producerScore += compareTo[j].producerTotalScore;
+            } else {
+              score.producerScore += compareTo[j].producerScore;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+    for (let i = 0; i < obj.crew.length; i++) {
+      let name = obj.crew[i].name;
+      let firstLetter = name.slice(0, 1);
+      let compareTo = currentUser.preferences.writers[firstLetter.toLowerCase()];
+
+      if(compareTo){
+        for (let j = 0; j < compareTo.length; j++) {
+          if(name === compareTo[j].writerName){
+            if(compareTo[j].writerCount === 1){
+              score.writerScore += compareTo[j].writerTotalScore;
+            } else {
+              score.writerScore += compareTo[j].writerScore;
+            }
+            break;
+          }
+        }
+      }
+    }
+    score.totalScore = score.actorScore + score.keywordScore + (score.directorScore / 1.5) + (score.producerScore / 1.5) + (score.writerScore / 1.5);
+
+    return score;
+  }
+
+  function getByGenre(id){
+    console.log("this is the id", id);
+    return $http.get(`/api/genres?id=${id}`).then(function(response){
+      return response.data;
+    })
+  }
 
   function postCurrentUser(obj){
     return $http.post("/api/users", obj).then(function(response){

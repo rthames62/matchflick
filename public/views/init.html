@@ -10,7 +10,10 @@
         <div class="rating-cont">
           <ul>
             <a ng-click="addToUnseen(recommendedMovie)"><span class="glyphicon glyphicon-eye-close not-seen" aria-hidden="true"></span></a>
-            <a ng-click="addToWatchlist(recommendedMovie)"><span class="glyphicon glyphicon-plus watchlist" aria-hidden="true"></span></a>
+            <a ng-click="addToWatchlist(recommendedMovie)"><span add-to-watchlist-match  class="glyphicon glyphicon-plus watchlist" aria-hidden="true"></span></a>
+            <div class="added-to-watchlist-match">
+              <span>Added To Watchlist</span>
+            </div>
             <li><a id="rateOne" ratings ng-click="addToRatedOne(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
             <li><a id="rateTwo" ratings ng-click="addToRatedTwo(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
             <li><a id="rateThree" ratings ng-click="addToRatedThree(recommendedMovie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
@@ -20,6 +23,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="loading" ng-show="initLoading">
+    <img src="http://localhost:8080/images/spin.gif" alt="" />
   </div>
 </main>
 <movie-details-template></movie-details-template>

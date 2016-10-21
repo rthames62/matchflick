@@ -29,5 +29,7 @@ module.exports = {
 		path: __dirname + "/public"
 		, filename: "bundle.js"
 	},
-		plugins : [new Webpack.ProvidePlugin({$ : "jquery", jQuery : "jquery"})]
+		plugins : [
+			new Webpack.ProvidePlugin({$ : "jquery", jQuery : "jquery"})
+		]
 };

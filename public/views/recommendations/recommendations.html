@@ -4,4 +4,26 @@
 
 <main class="dashboard">
   <h1>My Recommendations</h1>
+  <ul class="recommended-movies">
+    <li show-movie-rec-details ng-repeat="movie in rankedMovies">
+      <img ng-src="{{movie.posterUrl}}" />
+      <span class="overlay">
+        <a ng-click="addToUnseen(movie)"><span class="glyphicon glyphicon-eye-close not-seen" aria-hidden="true"></span></a>
+        <a ng-click="addToWatchlist(movie)"><span add-to-watchlist class="glyphicon glyphicon-plus watchlist" aria-hidden="true"></span></a>
+        <div class="added-to-watchlist">
+          <span>Added To Watchlist</span>
+        </div>
+        <span show-rec-details class="glyphicon glyphicon-info-sign movie-details" aria-hidden="true"></span>
+        <ul class="rec-rating-cont">
+          <li><a id="rateOne" ratings ng-click="addToRatedOne(movie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+          <li><a id="rateTwo" ratings ng-click="addToRatedTwo(movie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+          <li><a id="rateThree" ratings ng-click="addToRatedThree(movie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+          <li><a id="rateFour" ratings ng-click="addToRatedFour(movie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+          <li><a id="rateFive" ratings ng-click="addToRatedFive(movie)"><img src="http://localhost:8080/images/matchflick-emblem100x134.png" alt="" /></a></li>
+        </ul>
+    </span>
+      <!-- <movie-details-rec id="show-rec-details"></movie-details-rec> -->
+    </li>
+  </ul>
+  <!-- <button ng-click="loadMore()" class="default load-more">Load More</button> -->
 </main>

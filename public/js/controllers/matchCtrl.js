@@ -69,6 +69,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         console.log($scope.recommendedMovie);
+        $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -107,6 +108,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         console.log($scope.recommendedMovie);
+        $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -144,6 +146,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         console.log($scope.recommendedMovie);
+        $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -181,6 +184,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         console.log($scope.recommendedMovie);
+        $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -219,6 +223,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         console.log($scope.recommendedMovie);
+        $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -257,6 +262,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
+        $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -270,10 +276,21 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   }
 
   $scope.addToWatchlist = function(movie){
+    // let that = this;
+    // $("span.watchlist").css("color", "#FC7100");
+    // $("span.watchlist").parent().siblings("div.added-to-watchlist-match").fadeIn("slow");
+    // setTimeout(function(){
+    //   console.log("help");
+    //   $("span.watchlist").parent().siblings("div.added-to-watchlist-match").fadeOut("slow");
+    // }, 2000)
+    // let that = this;
+    // $(this).css("color", "#FC7100");
+    // $(this).parent().siblings("div.added-to-watchlist-match").fadeIn("slow");
+    // setTimeout(function(){
+    //   console.log("help");
+    //   $(that).parent().siblings("div.added-to-watchlist-match").fadeOut("slow");
+    // }, 2000)
     mainService.addToWatchlist(movie);
-    $("span.watchlist").on("click", function(){
-      $("span.watchlist").css("color", "#FC7100")
-    })
   }
 
   $scope.getInitMatchQueue();
