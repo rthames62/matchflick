@@ -227,7 +227,7 @@ function mainService($http, $location, $timeout, $q){
             movieTitle : results.title,
             description : results.overview,
             popularity : results.popularity,
-            posterUrl : `http://image.tmdb.org/t/p/w500/${results.poster_path}`,
+            posterUrl : results.poster_path,
             releaseDate : formatDate(results.release_date),
             video : results.video,
             vote : results.vote_average,
