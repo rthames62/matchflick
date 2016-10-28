@@ -36736,7 +36736,7 @@
   \***********************************/
 /***/ function(module, exports) {
 
-	module.exports = "<navbar></navbar>\n<img class=\"loading\" src=\"http://localhost:8080/images/spin.gif\" />\n";
+	module.exports = "<navbar></navbar>\n<img class=\"loading\" src=\"http://159.203.169.243/images/spin.gif\" />\n";
 
 /***/ },
 /* 14 */
@@ -37203,7 +37203,6 @@
 	  $scope.getFbCurrentUser = function () {
 	    mainService.getFbCurrentUser().then(function (response) {
 	      $scope.currentUser = response;
-	      console.log($scope.currentUser);
 	      return $scope.currentUser;
 	    });
 	  };
@@ -37341,7 +37340,6 @@
 	    $scope.reachFive = true;
 	    mainService.addToTopFive(movie).then(function (response) {
 	      $scope.topFive = response;
-	      console.log("top five from scope", $scope.topFive);
 	      if ($scope.topFive.length === 5) {
 	        mainService.postInitRec();
 	      }
@@ -47643,7 +47641,6 @@
 	  };
 	  $scope.getRecommendedMovieForInitMatch = function () {
 	    $scope.recommendedMovie = mainService.getRecommendedMovieForInitMatch();
-	    console.log("scope recommended", $scope.recommendedMovie);
 	    if ($scope.recommendedMovie) {
 	      $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	      return $scope.recommendedMovie;
@@ -47651,7 +47648,6 @@
 	      $timeout(function () {
 	        $scope.recommendedMovie = mainService.getRecommendedMovieForInitMatch();
 	        // $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
-	        console.log("bout to finish", $scope.recommendedMovie);
 	        return $scope.recommendedMovie;
 	      }, 200);
 	    }
@@ -47748,16 +47744,12 @@
 	  $scope.done = mainService.done;
 	
 	  $scope.$watch("done", function (newValue, oldValue) {
-	    console.log(newValue, oldValue);
-	    if (newValue === 1) {
-	      console.log("yay");
-	    }
+	    if (newValue === 1) {}
 	  }, true);
 	
 	  $scope.getInitMatchQueue = function () {
 	    mainService.getInitMatchQueue().then(function (response) {
 	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
 	        $scope.awards = results.data.Awards;
 	        $scope.imdbMetascore = results.data.Metascore;
 	        $scope.imdbRating = results.data.imdbRating;
@@ -47777,7 +47769,6 @@
 	        if ($scope.recommendedMovie.videos.length > 0) {
 	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	        }
-	        console.log($scope.recommendedMovie);
 	        return $scope.recommendedMovie;
 	      } else {
 	        $timeout(function () {
@@ -47793,7 +47784,6 @@
 	    mainService.removeFromMatchQueue(movie._id);
 	    mainService.getInitMatchQueue().then(function (response) {
 	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
 	        $scope.awards = results.data.Awards;
 	        $scope.imdbMetascore = results.data.Metascore;
 	        $scope.imdbRating = results.data.imdbRating;
@@ -47813,7 +47803,6 @@
 	        if ($scope.recommendedMovie.videos.length > 0) {
 	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	        }
-	        console.log($scope.recommendedMovie);
 	        $("span.watchlist").css("color", "#929292");
 	        return $scope.recommendedMovie;
 	      } else {
@@ -47832,7 +47821,6 @@
 	    mainService.removeFromMatchQueue(movie._id);
 	    mainService.getInitMatchQueue().then(function (response) {
 	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
 	        $scope.awards = results.data.Awards;
 	        $scope.imdbMetascore = results.data.Metascore;
 	        $scope.imdbRating = results.data.imdbRating;
@@ -47852,7 +47840,6 @@
 	        if ($scope.recommendedMovie.videos.length > 0) {
 	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	        }
-	        console.log($scope.recommendedMovie);
 	        $("span.watchlist").css("color", "#929292");
 	        return $scope.recommendedMovie;
 	      } else {
@@ -47870,7 +47857,6 @@
 	    mainService.removeFromMatchQueue(movie._id);
 	    mainService.getInitMatchQueue().then(function (response) {
 	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
 	        $scope.awards = results.data.Awards;
 	        $scope.imdbMetascore = results.data.Metascore;
 	        $scope.imdbRating = results.data.imdbRating;
@@ -47890,7 +47876,6 @@
 	        if ($scope.recommendedMovie.videos.length > 0) {
 	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	        }
-	        console.log($scope.recommendedMovie);
 	        $("span.watchlist").css("color", "#929292");
 	        return $scope.recommendedMovie;
 	      } else {
@@ -47908,7 +47893,6 @@
 	    mainService.removeFromMatchQueue(movie._id);
 	    mainService.getInitMatchQueue().then(function (response) {
 	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
 	        $scope.awards = results.data.Awards;
 	        $scope.imdbMetascore = results.data.Metascore;
 	        $scope.imdbRating = results.data.imdbRating;
@@ -47928,7 +47912,6 @@
 	        if ($scope.recommendedMovie.videos.length > 0) {
 	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	        }
-	        console.log($scope.recommendedMovie);
 	        $("span.watchlist").css("color", "#929292");
 	        return $scope.recommendedMovie;
 	      } else {
@@ -47947,7 +47930,6 @@
 	    $scope.done = mainService.addToRatedFive(movie);
 	    mainService.getInitMatchQueue().then(function (response) {
 	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
 	        $scope.awards = results.data.Awards;
 	        $scope.imdbMetascore = results.data.Metascore;
 	        $scope.imdbRating = results.data.imdbRating;
@@ -47967,7 +47949,6 @@
 	        if ($scope.recommendedMovie.videos.length > 0) {
 	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	        }
-	        console.log($scope.recommendedMovie);
 	        $("span.watchlist").css("color", "#929292");
 	        return $scope.recommendedMovie;
 	      } else {
@@ -47984,7 +47965,6 @@
 	    mainService.removeFromMatchQueue(movie._id);
 	    mainService.getInitMatchQueue().then(function (response) {
 	      $http.get("http://www.omdbapi.com/?i=" + response.imdbId + "&tomatoes=true").then(function (results) {
-	        console.log("ratings", results);
 	        $scope.awards = results.data.Awards;
 	        $scope.imdbMetascore = results.data.Metascore;
 	        $scope.imdbRating = results.data.imdbRating;
@@ -48001,9 +47981,6 @@
 	      });
 	      $scope.recommendedMovie = response;
 	      if ($scope.recommendedMovie) {
-	        console.log($scope.recommendedMovie);
-	        console.log($scope.recommendedMovie.popularity);
-	        console.log($scope.recommendedMovie.language);
 	        if ($scope.recommendedMovie.videos.length > 0) {
 	          $scope.trailerUrl = $sce.trustAsHtml("<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + $scope.recommendedMovie.videos[0].key + "\" frameborder=\"0\" allowfullscreen></iframe>");
 	        }
@@ -48060,7 +48037,6 @@
 	  $scope.loading = false;
 	  var leftoverMovies = [];
 	  $scope.rankedMovies = mainService.myRecMoviesByGenre;
-	  console.log("chicken");
 	
 	  $scope.randomTest = 0;
 	
@@ -48093,15 +48069,12 @@
 	      // $scope.loading = false;
 	      //   $location.path("/recommendations");
 	      leftoverMovies = $scope.rankedMovies.splice(50);
-	      console.log("leftover", leftoverMovies);
 	      $scope.rankedMovies = $scope.rankedMovies.slice(0, 50);
-	      console.log("rankedMovies", $scope.rankedMovies);
 	      return $scope.rankedMovies;
 	    });
 	  };
 	
 	  $scope.loadMore = function () {
-	    console.log(leftoverMovies);
 	    for (var i = 0; i < 1; i++) {
 	      $scope.rankedMovies.push(leftoverMovies[0]);
 	      leftoverMovies.splice(0, 1);
@@ -48155,7 +48128,6 @@
 	  $scope.addToRatedFive = function (movie) {
 	
 	    mainService.addToRatedFive(movie);
-	    console.log(movie);
 	    for (var i = 0; i < $scope.rankedMovies.length; i++) {
 	      if (movie._id === $scope.rankedMovies[i]._id) {
 	        console.log("remove", movie._id, $scope.rankedMovies[i]._id);
@@ -48236,8 +48208,8 @@
   \*******************************************/
 /***/ function(module, exports) {
 
-	"use strict";function mainService($http,$location,$timeout,$q){var currentUser={};var currentUserFbId="";var topFive=[];var myThis=this;myThis.done=0;console.log("i am the first",myThis.done);var recommendMoviesForMatch=[];var initCounter=0;myThis.initCounter=0;myThis.myRecMoviesByGenre=[];var indexToRemoveXXX=[];var currentMovie=void 0;var tempDiscover=[];var currentTopActors=[];var currentTopGenres=[];var currentTopDirectors=[];var currentTopProducers=[];var currentTopWriters=[];var currentTopKeywords=[];var action80s=[218,941,85,562,106];var action90s=[36955,1701,754,710,9772];var action00s=[155,98,2501,180,8681,1858];var action10s=[76341,137113,1771,118340];var comedy80s=[620,9377,2108,11977,90];var comedy90s=[8467,1542,3049,816,9614];var comedy00s=[8699,9522,9398,134,8363];var comedy10s=[27581,109414,22538,55721,41733];var drama80s=[235,601,207,88,2323];var drama90s=[278,13,857,597,275];var drama00s=[7345,1422,12405,8358,70];var drama10s=[37799,68734,210577,85350,76203];var adventure80s=[9340,2493,105];var adventure90s=[329,8844,564,197];var adventure00s=[19995,674,22];var adventure10s=[27205,87827,36657,116745];var scifi80s=[11,348];var scifi90s=[602,607,18];var scifi00s=[17654,16320,13475,6479,2675];var scifi10s=[120,24428,37686,20504,277];var omdbUrl="https://api.themoviedb.org/3/";var omdbKey="550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";this.getFbCurrentUser=function(){return $http.get("/api/facebook").then(function(response){var results=response.data;$http.get("/api/users/fb/"+results.id).then(function(userResponse){// console.log(userResponse);
-	if(userResponse.data.length>0){currentUser=userResponse.data[0];myThis.currentUser=currentUser;myThis.initCounter=currentUser.ratedMoviesOne.length+currentUser.ratedMoviesTwo.length+currentUser.ratedMoviesThree.length+currentUser.ratedMoviesFour.length+currentUser.ratedMoviesFive.length+currentUser.unseenMovies.length;;console.log("current user",currentUser);}else{currentUser={firstName:results._json.first_name,lastName:results._json.last_name,email:results._json.email,facebookId:results.id,profileUrl:results.profileUrl,location:results._json.location,coverPhotoUrl:results._json.cover.source,profilePictureUrl:results._json.picture.data.url,topFive:[],initRecommended:[],matchQueue:shuffleArray(initMatchQueue),ratedMoviesOne:[],ratedMoviesTwo:[],ratedMoviesThree:[],ratedMoviesFour:[],ratedMoviesFive:[],unseenMovies:[],watchlist:[],preferences:[]};currentUserFbId=results.id;postCurrentUser(currentUser);}});return response.data;});};// this.getFbCurrentUser = function(){
+	"use strict";function mainService($http,$location,$timeout,$q){var currentUser={};var currentUserFbId="";var topFive=[];var myThis=this;myThis.done=0;var recommendMoviesForMatch=[];var initCounter=0;myThis.initCounter=0;myThis.myRecMoviesByGenre=[];var indexToRemoveXXX=[];var currentMovie=void 0;var tempDiscover=[];var currentTopActors=[];var currentTopGenres=[];var currentTopDirectors=[];var currentTopProducers=[];var currentTopWriters=[];var currentTopKeywords=[];var action80s=[218,941,85,562,106];var action90s=[36955,1701,754,710,9772];var action00s=[155,98,2501,180,8681,1858];var action10s=[76341,137113,1771,118340];var comedy80s=[620,9377,2108,11977,90];var comedy90s=[8467,1542,3049,816,9614];var comedy00s=[8699,9522,9398,134,8363];var comedy10s=[27581,109414,22538,55721,41733];var drama80s=[235,601,207,88,2323];var drama90s=[278,13,857,597,275];var drama00s=[7345,1422,12405,8358,70];var drama10s=[37799,68734,210577,85350,76203];var adventure80s=[9340,2493,105];var adventure90s=[329,8844,564,197];var adventure00s=[19995,674,22];var adventure10s=[27205,87827,36657,116745];var scifi80s=[11,348];var scifi90s=[602,607,18];var scifi00s=[17654,16320,13475,6479,2675];var scifi10s=[120,24428,37686,20504,277];var omdbUrl="https://api.themoviedb.org/3/";var omdbKey="550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";this.getFbCurrentUser=function(){return $http.get("/api/facebook").then(function(response){var results=response.data;$http.get("/api/users/fb/"+results.id).then(function(userResponse){// console.log(userResponse);
+	if(userResponse.data.length>0){currentUser=userResponse.data[0];myThis.currentUser=currentUser;myThis.initCounter=currentUser.ratedMoviesOne.length+currentUser.ratedMoviesTwo.length+currentUser.ratedMoviesThree.length+currentUser.ratedMoviesFour.length+currentUser.ratedMoviesFive.length+currentUser.unseenMovies.length;;}else{currentUser={firstName:results._json.first_name,lastName:results._json.last_name,email:results._json.email,facebookId:results.id,profileUrl:results.profileUrl,location:results._json.location,coverPhotoUrl:results._json.cover.source,profilePictureUrl:results._json.picture.data.url,topFive:[],initRecommended:[],matchQueue:shuffleArray(initMatchQueue),ratedMoviesOne:[],ratedMoviesTwo:[],ratedMoviesThree:[],ratedMoviesFour:[],ratedMoviesFive:[],unseenMovies:[],watchlist:[],preferences:[]};currentUserFbId=results.id;postCurrentUser(currentUser);}});return response.data;});};// this.getFbCurrentUser = function(){
 	//   return $http.get("/api/facebook").then(function(response){
 	//     let results = response.data;
 	//     $http.get("/api/users").then(function(userResponse){
@@ -48276,38 +48248,38 @@
 	//     return response.data;
 	//   })
 	// }
-	this.addToTopFive=function(obj){var dfd=$q.defer();var addedMovie=void 0;return $http.get(omdbUrl+"movie/"+obj.id+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response){var results=response.data;console.log(results);var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:formatDate(results.release_date),video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results,certification:getCertification(results.release_dates.results)};if(movieObj.crew.length<3){movieObj.crew=movieObj.crew[0];}movieObj.crew.forEach(function(y){if(!y.profile_path){y.profile_path="http://159.203.169.243/images/no-picture.png";}else{y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});movieObj.movieCast.forEach(function(y){// console.log(y.profile_path);
+	this.addToTopFive=function(obj){var dfd=$q.defer();var addedMovie=void 0;return $http.get(omdbUrl+"movie/"+obj.id+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response){var results=response.data;var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:formatDate(results.release_date),video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results,certification:getCertification(results.release_dates.results)};if(movieObj.crew.length<3){movieObj.crew=movieObj.crew[0];}movieObj.crew.forEach(function(y){if(!y.profile_path){y.profile_path="http://159.203.169.243/images/no-picture.png";}else{y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});movieObj.movieCast.forEach(function(y){// console.log(y.profile_path);
 	if(!y.profile_path){// console.log("no picture");
 	y.profile_path="http://159.203.169.243/images/no-picture.png";}else{// console.log("replacing picture");
 	y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});if(currentUser.topFive.length<5){// postMovieToDB(movieObj);
-	$http.post("/api/movies",movieObj).then(function(response){var addedMovie=response.data;console.log("added movie",addedMovie.omdbId);currentUser.topFive.push(addedMovie);topFive=currentUser.topFive;$http.post("/api/user/"+currentUser._id+"/topFive",addedMovie);dfd.resolve(topFive);});// currentUser.topFive.push(addedMovie);
+	$http.post("/api/movies",movieObj).then(function(response){var addedMovie=response.data;currentUser.topFive.push(addedMovie);topFive=currentUser.topFive;$http.post("/api/user/"+currentUser._id+"/topFive",addedMovie);dfd.resolve(topFive);});// currentUser.topFive.push(addedMovie);
 	// topFive = currentUser.topFive;
 	// $http.post(`/api/user/${currentUser._id}/topFive`, addedMovie);
 	}postGenrePref(movieObj,3);postActorPref(movieObj,3);postDirectorPref(movieObj,3);postProducerPref(movieObj,3);postWriterPref(movieObj,3);postKeywordPref(movieObj,3);// postDecadePref(movieObj, 3);
 	// console.log("chicken", topFive);
 	// return topFive;
-	return dfd.promise;});};this.postInitRec=function(){var dfd=$q.defer();var movieIds=recommendMovieForInitMatch();movieIds.push(action80s,action90s,action00s,action10s,comedy80s,comedy90s,comedy00s,comedy10s,drama80s,drama90s,drama00s,drama10s,adventure80s,adventure90s,adventure00s,adventure10s,scifi80s,scifi90s,scifi00s,scifi10s);movieIds=flattenArr(movieIds);var topFiveIds=getTopFiveIds(currentUser.topFive);console.log(movieIds);movieIds=findDuplicates(movieIds,topFiveIds);movieIds=removeDuplicates(movieIds);console.log(movieIds);movieIds=shuffleArray(movieIds);var recommendMoviesArr=[];var someMovies=movieIds.slice(0,50);currentUser.initRecommended=[];someMovies.forEach(function(x,i){if(x!==currentUser.topFive.omdbId){$http.get(omdbUrl+"movie/"+x+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response2){var results=response2.data;console.log("promise",results);var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:formatDate(results.release_date),video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results,certification:getCertification(results.release_dates.results)};if(movieObj.crew.length<3){movieObj.crew=movieObj.crew[0];}movieObj.crew.forEach(function(y){if(!y.profile_path){y.profile_path="http://159.203.169.243/images/no-picture.png";}else{y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});movieObj.movieCast.forEach(function(y){// console.log(y.profile_path);
+	return dfd.promise;});};this.postInitRec=function(){var dfd=$q.defer();var movieIds=recommendMovieForInitMatch();movieIds.push(action80s,action90s,action00s,action10s,comedy80s,comedy90s,comedy00s,comedy10s,drama80s,drama90s,drama00s,drama10s,adventure80s,adventure90s,adventure00s,adventure10s,scifi80s,scifi90s,scifi00s,scifi10s);movieIds=flattenArr(movieIds);var topFiveIds=getTopFiveIds(currentUser.topFive);movieIds=findDuplicates(movieIds,topFiveIds);movieIds=removeDuplicates(movieIds);movieIds=shuffleArray(movieIds);var recommendMoviesArr=[];var someMovies=movieIds.slice(0,100);currentUser.initRecommended=[];someMovies.forEach(function(x,i){if(x!==currentUser.topFive.omdbId){$http.get(omdbUrl+"movie/"+x+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response2){var results=response2.data;var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:formatDate(results.release_date),video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results,certification:getCertification(results.release_dates.results)};if(movieObj.crew.length<3){movieObj.crew=movieObj.crew[0];}movieObj.crew.forEach(function(y){if(!y.profile_path){y.profile_path="http://159.203.169.243/images/no-picture.png";}else{y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});movieObj.movieCast.forEach(function(y){// console.log(y.profile_path);
 	if(!y.profile_path){// console.log("no picture");
 	y.profile_path="http://159.203.169.243/images/no-picture.png";}else{// console.log("replacing picture");
-	y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});console.log("movieObj",movieObj);// currentUser.initRecommended.push(movieObj);
-	$http.post("/api/movies",movieObj).then(function(response){console.log("last",response.data);currentUser.initRecommended.push(response.data);$http.post("/api/user/"+currentUser._id+"/initRec",{_id:response.data._id});myThis.recommendMoviesForMatch=currentUser.initRecommended;});dfd.resolve(myThis.recommendMoviesForMatch);// console.log("rec movies arr", myThis.recommendMoviesForMatch);
-	});}else{console.log("found duplicate");}});// console.log("rec movies arr", myThis.recommendMoviesForMatch);
-	return dfd.promise;};this.removeFromTopFive=function(obj){$http.put("/api/user/"+currentUser._id+"/topFive",obj);currentUser.topFive.map(function(x,i){if(x.omdbId===obj.omdbId){currentUser.topFive.splice(i,1);}});return currentUser.topFive;};this.getTopFive=function(){this.topFive=[];console.log(currentUser);if(currentUser.topFive.length>0){this.topFive=currentUser.topFive;}return this.topFive;};this.getInitRecommendedArr=function(){var initRecArr=[];if(currentUser.initRecommended){initRecArr=currentUser.initRecommended;}return initRecArr;};this.queryFavMovies=function(query){return $http.get(omdbUrl+"search/movie?"+omdbKey+"&language=en-US&query="+query).then(function(response){var results=response.data.results;var resultsArr=[];results.forEach(function(x,i){if(x.poster_path){x.poster_path="http://image.tmdb.org/t/p/w500/"+x.poster_path;resultsArr.push(x);}});return resultsArr;});};this.loading=function(){$timeout(function(){if(currentUser.initialized===false&&currentUser.topFive.length===5){$location.path("/getting-started/match");}else if(currentUser.initialized===false&&currentUser.topFive.length>0){$location.path("/getting-started/favorites");}else if(currentUser.initialized===false){$location.path("/getting-started");}else{$location.path("/dashboard");}},2000);};this.reachFive=function(arr){if(arr.length===5){return false;}else{return true;}};this.getRecommendedMovieForInitMatch=function(){if(Object.keys(currentUser).length>0){initCounter=currentUser.ratedMoviesOne.length+currentUser.ratedMoviesTwo.length+currentUser.ratedMoviesThree.length+currentUser.ratedMoviesFour.length+currentUser.ratedMoviesFive.length+currentUser.unseenMovies.length;var toTwenty=currentUser.ratedMoviesOne.length+currentUser.ratedMoviesTwo.length+currentUser.ratedMoviesThree.length+currentUser.ratedMoviesFour.length+currentUser.ratedMoviesFive.length;myThis.initCounter=initCounter;if(toTwenty<10&&initCounter<100){currentMovie=currentUser.initRecommended[initCounter];console.log("counter",initCounter);return currentMovie;}else{console.log("im done!");myThis.initLoading=true;currentUser.initialized=true;$http.put("/api/user/"+currentUser._id,{initialized:true});$location.path("/getting-started/congratulations");}}};this.discoverForMatch=function(){console.log("starting");for(var i=0;i<50;i++){$http.get(omdbUrl+"discover/movie?"+omdbKey+"&sort_by=popularity.desc&include_adult=false&include_video=true&page="+i+"&with_genres=9648").then(function(response){response.data.results.forEach(function(x){tempDiscover.push(x.id);console.log("pushed");console.log(tempDiscover.length);});});}};this.getMoviesFromDiscover=function(){for(var i=0;i<40;i++){$http.get(omdbUrl+"movie/"+tempDiscover[i]+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response2){var results=response2.data;// console.log(results);
+	y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});// currentUser.initRecommended.push(movieObj);
+	$http.post("/api/movies",movieObj).then(function(response){currentUser.initRecommended.push(response.data);$http.post("/api/user/"+currentUser._id+"/initRec",{_id:response.data._id});myThis.recommendMoviesForMatch=currentUser.initRecommended;});dfd.resolve(myThis.recommendMoviesForMatch);// console.log("rec movies arr", myThis.recommendMoviesForMatch);
+	});}else{}});// console.log("rec movies arr", myThis.recommendMoviesForMatch);
+	return dfd.promise;};this.removeFromTopFive=function(obj){$http.put("/api/user/"+currentUser._id+"/topFive",obj);currentUser.topFive.map(function(x,i){if(x.omdbId===obj.omdbId){currentUser.topFive.splice(i,1);}});return currentUser.topFive;};this.getTopFive=function(){this.topFive=[];if(currentUser.topFive.length>0){this.topFive=currentUser.topFive;}return this.topFive;};this.getInitRecommendedArr=function(){var initRecArr=[];if(currentUser.initRecommended){initRecArr=currentUser.initRecommended;}return initRecArr;};this.queryFavMovies=function(query){return $http.get(omdbUrl+"search/movie?"+omdbKey+"&language=en-US&query="+query).then(function(response){var results=response.data.results;var resultsArr=[];results.forEach(function(x,i){if(x.poster_path){x.poster_path="http://image.tmdb.org/t/p/w500/"+x.poster_path;resultsArr.push(x);}});return resultsArr;});};this.loading=function(){$timeout(function(){if(currentUser.initialized===false&&currentUser.topFive.length===5){$location.path("/getting-started/match");}else if(currentUser.initialized===false&&currentUser.topFive.length>0){$location.path("/getting-started/favorites");}else if(currentUser.initialized===false){$location.path("/getting-started");}else{$location.path("/dashboard");}},2000);};this.reachFive=function(arr){if(arr.length===5){return false;}else{return true;}};this.getRecommendedMovieForInitMatch=function(){if(Object.keys(currentUser).length>0){initCounter=currentUser.ratedMoviesOne.length+currentUser.ratedMoviesTwo.length+currentUser.ratedMoviesThree.length+currentUser.ratedMoviesFour.length+currentUser.ratedMoviesFive.length+currentUser.unseenMovies.length;var toTwenty=currentUser.ratedMoviesOne.length+currentUser.ratedMoviesTwo.length+currentUser.ratedMoviesThree.length+currentUser.ratedMoviesFour.length+currentUser.ratedMoviesFive.length;myThis.initCounter=initCounter;if(toTwenty<20&&initCounter<100){currentMovie=currentUser.initRecommended[initCounter];return currentMovie;}else{myThis.initLoading=true;currentUser.initialized=true;$http.put("/api/user/"+currentUser._id,{initialized:true});$location.path("/getting-started/congratulations");}}};this.discoverForMatch=function(){for(var i=0;i<50;i++){$http.get(omdbUrl+"discover/movie?"+omdbKey+"&sort_by=popularity.desc&include_adult=false&include_video=true&page="+i+"&with_genres=9648").then(function(response){response.data.results.forEach(function(x){tempDiscover.push(x.id);});});}};this.getMoviesFromDiscover=function(){for(var i=0;i<40;i++){$http.get(omdbUrl+"movie/"+tempDiscover[i]+"?"+omdbKey+"&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates").then(function(response2){var results=response2.data;// console.log(results);
 	var movieObj={movieTitle:results.title,description:results.overview,popularity:results.popularity,posterUrl:"http://image.tmdb.org/t/p/w500/"+results.poster_path,releaseDate:formatDate(results.release_date),video:results.video,vote:results.vote_average,voteCount:results.vote_count,genreIds:results.genres,backdropPath:"http://image.tmdb.org/t/p/w500/"+results.backdrop_path,omdbId:results.id,language:results.original_language,homepage:results.homepage,imdbId:results.imdb_id,productionCompanies:results.production_companies,revenue:results.revenue,runtime:results.runtime,status:results.status,tagline:results.tagline,videos:results.videos.results,images:results.images.backdrops,adult:results.adult,crew:results.credits.crew,movieCast:results.credits.cast,keywords:results.keywords.keywords,recommendations:results.recommendations.results,similar:results.similar.results,certification:getCertification(results.release_dates.results)};if(movieObj.crew.length<3){movieObj.crew=movieObj.crew[0];}movieObj.crew.forEach(function(y){if(!y.profile_path){y.profile_path="http://159.203.169.243/images/no-picture.png";}else{y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});movieObj.movieCast.forEach(function(y){// console.log(y.profile_path);
 	if(!y.profile_path){// console.log("no picture");
 	y.profile_path="http://159.203.169.243/images/no-picture.png";}else{// console.log("replacing picture");
 	y.profile_path="http://image.tmdb.org/t/p/w500/"+y.profile_path;}});// currentUser.initRecommended.push(movieObj);
-	$http.post("/api/movies",movieObj).then(function(response){console.log(response.data._id);currentUser.matchQueue.push(response.data._id);$http.post("/api/user/"+currentUser._id+"/matchQueue",{_id:response.data._id});console.log("temp index",tempDiscover[i],i);tempDiscover.splice(0,1);console.log("done");console.log("tempDiscover",tempDiscover.length);});});}};this.getInitMatchQueue=function(){return $http.get("/api/movies/"+currentUser.matchQueue[0]).then(function(response){return response.data;});};this.addToRatedOne=function(obj){currentUser.ratedMoviesOne.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedOne",{_id:obj._id});postGenrePref(obj,-2);postActorPref(obj,-2);postDirectorPref(obj,-2);postProducerPref(obj,-2);postWriterPref(obj,-2);postKeywordPref(obj,-2);// postDecadePref(obj, -2);
+	$http.post("/api/movies",movieObj).then(function(response){currentUser.matchQueue.push(response.data._id);$http.post("/api/user/"+currentUser._id+"/matchQueue",{_id:response.data._id});tempDiscover.splice(0,1);});});}};this.getInitMatchQueue=function(){return $http.get("/api/movies/"+currentUser.matchQueue[0]).then(function(response){return response.data;});};this.addToRatedOne=function(obj){currentUser.ratedMoviesOne.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedOne",{_id:obj._id});postGenrePref(obj,-2);postActorPref(obj,-2);postDirectorPref(obj,-2);postProducerPref(obj,-2);postWriterPref(obj,-2);postKeywordPref(obj,-2);// postDecadePref(obj, -2);
 	};this.addToRatedTwo=function(obj){currentUser.ratedMoviesTwo.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedTwo",{_id:obj._id});postGenrePref(obj,-1);postActorPref(obj,-1);postDirectorPref(obj,-1);postProducerPref(obj,-1);postWriterPref(obj,-1);postKeywordPref(obj,-1);// postDecadePref(obj, -1);
 	};this.addToRatedThree=function(obj){currentUser.ratedMoviesThree.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedThree",{_id:obj._id});postGenrePref(obj,1);postActorPref(obj,1);postDirectorPref(obj,1);postProducerPref(obj,1);postWriterPref(obj,1);postKeywordPref(obj,1);// postDecadePref(obj, 1);
 	};this.addToRatedFour=function(obj){currentUser.ratedMoviesFour.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedFour",{_id:obj._id});postGenrePref(obj,2);postActorPref(obj,2);postDirectorPref(obj,2);postProducerPref(obj,2);postWriterPref(obj,2);postKeywordPref(obj,2);// postDecadePref(obj, 2);
 	};this.addToRatedFive=function(obj){currentUser.ratedMoviesFive.push(obj);$http.post("/api/user/"+currentUser._id+"/ratedFive",{_id:obj._id});postGenrePref(obj,3);postActorPref(obj,3);postDirectorPref(obj,3);postProducerPref(obj,3);postWriterPref(obj,3);postKeywordPref(obj,3);// postDecadePref(obj, 3);
 	myThis.done=1;return myThis.done;};this.addToUnseen=function(obj){currentUser.unseenMovies.push(obj);$http.post("/api/user/"+currentUser._id+"/unseenMovies",{_id:obj._id});};this.addToWatchlist=function(obj){currentUser.watchlist.push(obj);$http.post("/api/user/"+currentUser._id+"/watchlist",{_id:obj._id});};this.getUserGenrePrefs=function(){return $http.get("/api/user/"+currentUser._id+"/genrePref").then(function(response){currentTopGenres=response.data;return response.data;});};this.getUserActorPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/actorPref").then(function(response){currentTopActors=response.data;return response.data;});};this.getUserDirectorPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/directorPref").then(function(response){currentTopDirectors=response.data;return response.data;});};this.getUserProducerPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/producerPref").then(function(response){currentTopProducers=response.data;return response.data;});};this.getUserWriterPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/writerPref").then(function(response){currentTopWriters=response.data;return response.data;});};this.getUserKeywordPrefs=function(){return $http.get("/api/user/"+currentUser._id+"/keywordPref").then(function(response){currentTopKeywords=response.data;return response.data;});};this.getUserDecadePrefs=function(){return $http.get("/api/user/"+currentUser._id+"/decadePref").then(function(response){return response.data;});};this.getCurrentPage=function(){myThis.currentPage=$location.path();return myThis.currentPage;};this.removeFromMatchQueue=function(mId){currentUser.matchQueue.splice(0,1);$http.put("/api/user/"+currentUser._id+"/matchQueue",{_id:mId});};this.getRatedFive=function(){return currentUser.ratedMoviesFive;};this.getRatedFour=function(){return currentUser.ratedMoviesFour;};this.getRatedThree=function(){return currentUser.ratedMoviesThree;};this.getWatchlist=function(){return currentUser.watchlist;};this.removePorn=function(){var myArr=initMatchQueue;myArr.forEach(function(x){$http.get("/api/movies/"+x).then(function(response){// console.log(`/api/movies/${x}`);
 	if(response.data.popularity<1){$http.put("/api/user/"+currentUser._id+"/matchQueue",{_id:x});}});});};this.getRecommendationsByGenre=function(arr){var promises=[];var unseen=[];arr.forEach(function(x){promises.push(getByGenre(x));});// return $http.get(`/api/genres?id=${arr[0]}`)
-	return $q.all(promises).then(function(response){var moviePromises=[];var allMovies=[];var rankedMovies=[];var seenMovies=[];var remove=void 0;seenMovies.push(currentUser.ratedMoviesFive,currentUser.ratedMoviesFour,currentUser.ratedMoviesThree,currentUser.ratedMoviesTwo,currentUser.ratedMoviesOne,currentUser.topFive);response.forEach(function(x){allMovies.push(x);});allMovies=flattenArr(allMovies);seenMovies=flattenArr(seenMovies);allMovies=sortByScore(allMovies,"omdbId");seenMovies=sortByScore(seenMovies,"omdbId");for(var i=0;i<seenMovies.length;i++){searchDuplicates(0,allMovies.length-1,allMovies,seenMovies[i].omdbId,"omdbId");}for(var i=indexToRemoveXXX.length-1;i>=0;i--){allMovies.splice(indexToRemoveXXX[i],1);}var someMovies=allMovies.slice(0,50);allMovies.forEach(function(x){rankedMovies.push(compareToPreferences(x));});rankedMovies=sortByScore(rankedMovies,"totalScore").reverse();console.log(rankedMovies);rankedMovies.forEach(function(x){moviePromises.push(getMovieByMid(x.mId));});return $q.all(moviePromises).then(function(response){console.log(response);var finalMovies=[];response.forEach(function(x){finalMovies.push(x.data);});myThis.myRecMoviesByGenre=finalMovies;$location.path("/recommendations");return finalMovies;});});};this.removeFromRecommended=function(id){};// **********************************************************
+	return $q.all(promises).then(function(response){var moviePromises=[];var allMovies=[];var rankedMovies=[];var seenMovies=[];var remove=void 0;seenMovies.push(currentUser.ratedMoviesFive,currentUser.ratedMoviesFour,currentUser.ratedMoviesThree,currentUser.ratedMoviesTwo,currentUser.ratedMoviesOne,currentUser.topFive);response.forEach(function(x){allMovies.push(x);});allMovies=flattenArr(allMovies);seenMovies=flattenArr(seenMovies);allMovies=sortByScore(allMovies,"omdbId");seenMovies=sortByScore(seenMovies,"omdbId");for(var i=0;i<seenMovies.length;i++){searchDuplicates(0,allMovies.length-1,allMovies,seenMovies[i].omdbId,"omdbId");}for(var i=indexToRemoveXXX.length-1;i>=0;i--){allMovies.splice(indexToRemoveXXX[i],1);}var someMovies=allMovies.slice(0,50);allMovies.forEach(function(x){rankedMovies.push(compareToPreferences(x));});rankedMovies=sortByScore(rankedMovies,"totalScore").reverse();rankedMovies.forEach(function(x){moviePromises.push(getMovieByMid(x.mId));});return $q.all(moviePromises).then(function(response){var finalMovies=[];response.forEach(function(x){finalMovies.push(x.data);});myThis.myRecMoviesByGenre=finalMovies;$location.path("/recommendations");return finalMovies;});});};this.removeFromRecommended=function(id){};// **********************************************************
 	//  HELPER FUNCTIONS
 	// **********************************************************
-	function getMovieByMid(id){return $http.get("/api/movies/"+id);}function searchDuplicates(low,high,arr,value,key){var mid=Math.floor((low+high)/2);if(high<low){return;}if(arr[mid][key]===value){indexToRemoveXXX.push(mid);return;}else if(value<arr[mid][key]){searchDuplicates(low,mid-1,arr,value,key);}else{searchDuplicates(mid+1,high,arr,value,key);}}function compareToPreferences(obj){var score={mId:obj._id,movieName:obj.movieTitle,genres:obj.genreIds,posterUrl:obj.posterUrl,totalScore:0,actorScore:0,keywordScore:0,directorScore:0,producerScore:0,writerScore:0};for(var i=0;i<obj.movieCast.length;i++){var actorName=obj.movieCast[i].name;var actorFirstLetter=actorName.slice(0,1);var compareTo=currentUser.preferences.actors[actorFirstLetter.toLowerCase()];if(compareTo){for(var j=0;j<compareTo.length;j++){if(actorName===compareTo[j].actorName){if(compareTo[j].actorCount===1){score.actorScore+=compareTo[j].actorTotalScore;}else{score.actorScore+=compareTo[j].actorScore;}break;}}}}for(var _i=0;_i<obj.keywords.length;_i++){var name=obj.keywords[_i].name;var firstLetter=name.slice(0,1);var _compareTo=currentUser.preferences.keywords[firstLetter.toLowerCase()];if(_compareTo){for(var _j=0;_j<_compareTo.length;_j++){if(name===_compareTo[_j].keywordName){if(_compareTo[_j].keywordCount===1){score.keywordScore+=_compareTo[_j].keywordTotalScore;}else{score.keywordScore+=_compareTo[_j].keywordScore;}break;}}}}for(var _i2=0;_i2<obj.crew.length;_i2++){var _name=obj.crew[_i2].name;var _firstLetter=_name.slice(0,1);var _compareTo2=currentUser.preferences.directors[_firstLetter.toLowerCase()];if(_compareTo2){for(var _j2=0;_j2<_compareTo2.length;_j2++){if(_name===_compareTo2[_j2].directorName){if(_compareTo2[_j2].directorCount===1){score.directorScore+=_compareTo2[_j2].directorTotalScore;}else{score.directorScore+=_compareTo2[_j2].directorScore;}break;}}}}for(var _i3=0;_i3<obj.crew.length;_i3++){var _name2=obj.crew[_i3].name;var _firstLetter2=_name2.slice(0,1);var _compareTo3=currentUser.preferences.producers[_firstLetter2.toLowerCase()];if(_compareTo3){for(var _j3=0;_j3<_compareTo3.length;_j3++){if(_name2===_compareTo3[_j3].producerName){if(_compareTo3[_j3].producerCount===1){score.producerScore+=_compareTo3[_j3].producerTotalScore;}else{score.producerScore+=_compareTo3[_j3].producerScore;}break;}}}}for(var _i4=0;_i4<obj.crew.length;_i4++){var _name3=obj.crew[_i4].name;var _firstLetter3=_name3.slice(0,1);var _compareTo4=currentUser.preferences.writers[_firstLetter3.toLowerCase()];if(_compareTo4){for(var _j4=0;_j4<_compareTo4.length;_j4++){if(_name3===_compareTo4[_j4].writerName){if(_compareTo4[_j4].writerCount===1){score.writerScore+=_compareTo4[_j4].writerTotalScore;}else{score.writerScore+=_compareTo4[_j4].writerScore;}break;}}}}score.totalScore=score.actorScore+score.keywordScore+score.directorScore/1.5+score.producerScore/1.5+score.writerScore/1.5;return score;}function getByGenre(id){console.log("this is the id",id);return $http.get("/api/genres?id="+id).then(function(response){return response.data;});}function postCurrentUser(obj){return $http.post("/api/users",obj).then(function(response){currentUser=response.data;return response;});}function postMovieToDB(obj){return $http.post("/api/movies",obj).then(function(response){console.log("responsedddd",response);return response.data;});}function postTopFiveToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.topFive.push(obj);topFive=currentUser.topFive;$http.post("/api/user/"+currentUser._id+"/topFive",addedMovie);});}function postInitRecToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.initRecommended.push(response.data._id);$http.post("/api/user/"+currentUser._id+"/initRec",{_id:response.data._id});myThis.recommendMoviesForMatch=[];myThis.recommendMoviesForMatch=currentUser.initRecommended;console.log("2",myThis.recommendMoviesForMatch);});}function recommendMovieForInitMatch(){var recommendedMovies=[];var shuffled=[];currentUser.topFive.forEach(function(x,i){x.recommendations.forEach(function(y,j){recommendedMovies.push(y.id);});});return shuffleArray(recommendedMovies);}function shuffleArray(arr){var array=arr.slice(0,arr.length);var currentIndex=array.length,temporaryValue,randomIndex;while(0!==currentIndex){randomIndex=Math.floor(Math.random()*currentIndex);currentIndex-=1;temporaryValue=array[currentIndex];array[currentIndex]=array[randomIndex];array[randomIndex]=temporaryValue;}return array;}function getCertification(arr){for(var i=0;i<arr.length;i++){if(arr[i].iso_3166_1==="US"){if(arr[i].release_dates.length<2){return arr[i].release_dates[0].certification;}else{for(var j=0;j<arr[i].release_dates.length;j++){if(arr[i].release_dates[j].certification){return arr[i].release_dates[j].certification;}}}}}}function formatDate(str){var splitStr=str.split("");var year=splitStr.slice(0,4).join("");var day=splitStr.slice(8,10).join("");var month=splitStr.slice(5,7).join("");var date="";if(month==="01"){month="January";};if(month==="02"){month="February";};if(month==="03"){month="March";};if(month==="04"){month="April";};if(month==="05"){month="May";};if(month==="06"){month="June";};if(month==="07"){month="July";};if(month==="08"){month="August";};if(month==="09"){month="September";};if(month==="10"){month="October";};if(month==="11"){month="November";};if(month==="12"){month="December";};date=month+" "+day+", "+year;return date;}function postGenrePref(obj,score){var transferObj={};obj.genreIds.forEach(function(x){transferObj={genreName:x.name,genreTotalScore:score,genreId:x.id};$http.post("/api/user/"+currentUser._id+"/genrePref",transferObj);});}function postActorPref(obj,score){var transferObj={};var myArray=obj.movieCast.slice(0,3);// for (var i = 0; i < 3; i++) {
+	function getMovieByMid(id){return $http.get("/api/movies/"+id);}function searchDuplicates(low,high,arr,value,key){var mid=Math.floor((low+high)/2);if(high<low){return;}if(arr[mid][key]===value){indexToRemoveXXX.push(mid);return;}else if(value<arr[mid][key]){searchDuplicates(low,mid-1,arr,value,key);}else{searchDuplicates(mid+1,high,arr,value,key);}}function compareToPreferences(obj){var score={mId:obj._id,movieName:obj.movieTitle,genres:obj.genreIds,posterUrl:obj.posterUrl,totalScore:0,actorScore:0,keywordScore:0,directorScore:0,producerScore:0,writerScore:0};for(var i=0;i<obj.movieCast.length;i++){var actorName=obj.movieCast[i].name;var actorFirstLetter=actorName.slice(0,1);var compareTo=currentUser.preferences.actors[actorFirstLetter.toLowerCase()];if(compareTo){for(var j=0;j<compareTo.length;j++){if(actorName===compareTo[j].actorName){if(compareTo[j].actorCount===1){score.actorScore+=compareTo[j].actorTotalScore;}else{score.actorScore+=compareTo[j].actorScore;}break;}}}}for(var _i=0;_i<obj.keywords.length;_i++){var name=obj.keywords[_i].name;var firstLetter=name.slice(0,1);var _compareTo=currentUser.preferences.keywords[firstLetter.toLowerCase()];if(_compareTo){for(var _j=0;_j<_compareTo.length;_j++){if(name===_compareTo[_j].keywordName){if(_compareTo[_j].keywordCount===1){score.keywordScore+=_compareTo[_j].keywordTotalScore;}else{score.keywordScore+=_compareTo[_j].keywordScore;}break;}}}}for(var _i2=0;_i2<obj.crew.length;_i2++){var _name=obj.crew[_i2].name;var _firstLetter=_name.slice(0,1);var _compareTo2=currentUser.preferences.directors[_firstLetter.toLowerCase()];if(_compareTo2){for(var _j2=0;_j2<_compareTo2.length;_j2++){if(_name===_compareTo2[_j2].directorName){if(_compareTo2[_j2].directorCount===1){score.directorScore+=_compareTo2[_j2].directorTotalScore;}else{score.directorScore+=_compareTo2[_j2].directorScore;}break;}}}}for(var _i3=0;_i3<obj.crew.length;_i3++){var _name2=obj.crew[_i3].name;var _firstLetter2=_name2.slice(0,1);var _compareTo3=currentUser.preferences.producers[_firstLetter2.toLowerCase()];if(_compareTo3){for(var _j3=0;_j3<_compareTo3.length;_j3++){if(_name2===_compareTo3[_j3].producerName){if(_compareTo3[_j3].producerCount===1){score.producerScore+=_compareTo3[_j3].producerTotalScore;}else{score.producerScore+=_compareTo3[_j3].producerScore;}break;}}}}for(var _i4=0;_i4<obj.crew.length;_i4++){var _name3=obj.crew[_i4].name;var _firstLetter3=_name3.slice(0,1);var _compareTo4=currentUser.preferences.writers[_firstLetter3.toLowerCase()];if(_compareTo4){for(var _j4=0;_j4<_compareTo4.length;_j4++){if(_name3===_compareTo4[_j4].writerName){if(_compareTo4[_j4].writerCount===1){score.writerScore+=_compareTo4[_j4].writerTotalScore;}else{score.writerScore+=_compareTo4[_j4].writerScore;}break;}}}}score.totalScore=score.actorScore+score.keywordScore+score.directorScore/1.5+score.producerScore/1.5+score.writerScore/1.5;return score;}function getByGenre(id){return $http.get("/api/genres?id="+id).then(function(response){return response.data;});}function postCurrentUser(obj){return $http.post("/api/users",obj).then(function(response){currentUser=response.data;return response;});}function postMovieToDB(obj){return $http.post("/api/movies",obj).then(function(response){return response.data;});}function postTopFiveToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.topFive.push(obj);topFive=currentUser.topFive;$http.post("/api/user/"+currentUser._id+"/topFive",addedMovie);});}function postInitRecToDB(obj){return $http.post("/api/movies",obj).then(function(response){currentUser.initRecommended.push(response.data._id);$http.post("/api/user/"+currentUser._id+"/initRec",{_id:response.data._id});myThis.recommendMoviesForMatch=[];myThis.recommendMoviesForMatch=currentUser.initRecommended;});}function recommendMovieForInitMatch(){var recommendedMovies=[];var shuffled=[];currentUser.topFive.forEach(function(x,i){x.recommendations.forEach(function(y,j){recommendedMovies.push(y.id);});});return shuffleArray(recommendedMovies);}function shuffleArray(arr){var array=arr.slice(0,arr.length);var currentIndex=array.length,temporaryValue,randomIndex;while(0!==currentIndex){randomIndex=Math.floor(Math.random()*currentIndex);currentIndex-=1;temporaryValue=array[currentIndex];array[currentIndex]=array[randomIndex];array[randomIndex]=temporaryValue;}return array;}function getCertification(arr){for(var i=0;i<arr.length;i++){if(arr[i].iso_3166_1==="US"){if(arr[i].release_dates.length<2){return arr[i].release_dates[0].certification;}else{for(var j=0;j<arr[i].release_dates.length;j++){if(arr[i].release_dates[j].certification){return arr[i].release_dates[j].certification;}}}}}}function formatDate(str){var splitStr=str.split("");var year=splitStr.slice(0,4).join("");var day=splitStr.slice(8,10).join("");var month=splitStr.slice(5,7).join("");var date="";if(month==="01"){month="January";};if(month==="02"){month="February";};if(month==="03"){month="March";};if(month==="04"){month="April";};if(month==="05"){month="May";};if(month==="06"){month="June";};if(month==="07"){month="July";};if(month==="08"){month="August";};if(month==="09"){month="September";};if(month==="10"){month="October";};if(month==="11"){month="November";};if(month==="12"){month="December";};date=month+" "+day+", "+year;return date;}function postGenrePref(obj,score){var transferObj={};obj.genreIds.forEach(function(x){transferObj={genreName:x.name,genreTotalScore:score,genreId:x.id};$http.post("/api/user/"+currentUser._id+"/genrePref",transferObj);});}function postActorPref(obj,score){var transferObj={};var myArray=obj.movieCast.slice(0,3);// for (var i = 0; i < 3; i++) {
 	//   transferObj = {
 	//     actorName : obj.movieCast[i].name,
 	//     actorTotalScore : score,
@@ -48394,8 +48366,6 @@
 	    $("a#recommendations").removeClass("active");
 	    $("a#favorites").removeClass("active");
 	    $("a#watchlist").removeClass("active");
-	
-	    console.log($scope.currentPage.slice(0, 16), "/recommendations");
 	
 	    if ($scope.currentPage === "/dashboard") {
 	      $("a#dashboard").addClass("active");
@@ -48528,7 +48498,6 @@
 	    });
 	
 	    $("a#rateThree").on("mouseenter", function () {
-	      console.log("enter");
 	      $(this).parent().siblings().children("a#rateOne").children().addClass("rate-color");
 	      $(this).parent().siblings().children("a#rateTwo").children().addClass("rate-color");
 	      $(this).children().addClass("rate-color");
@@ -48592,7 +48561,6 @@
 	  };
 	
 	  $("li.movie-poster").on("mouseenter", function () {
-	    console.log("enter");
 	    $("span.overlay", this).css("visibility", "visible");
 	  });
 	}
@@ -48679,12 +48647,11 @@
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 	
 	function genreSelect() {
-	  return function (scope, element, attrs) {
-	    $("div.genre").click(function () {
-	      console.log("clicked");
-	      $(this).toggleClass("genre-selected");
-	    });
-	  };
+	    return function (scope, element, attrs) {
+	        $("div.genre").click(function () {
+	            $(this).toggleClass("genre-selected");
+	        });
+	    };
 	}
 	
 	module.exports = genreSelect;
@@ -48772,11 +48739,9 @@
 	  return function (scope, element, attrs) {
 	    $("span.watchlist").on("click", function () {
 	      var that = this;
-	      console.log("fired");
 	      $(this).css("color", "#FC7100");
 	      $(this).parent().siblings("div.added-to-watchlist").fadeIn("slow");
 	      setTimeout(function () {
-	        console.log("help");
 	        $(that).parent().siblings("div.added-to-watchlist").fadeOut("slow");
 	      }, 4000);
 	    });
@@ -48799,11 +48764,9 @@
 	  return function (scope, element, attrs) {
 	    $("span.watchlist").on("click", function () {
 	      var that = this;
-	      console.log("fired");
 	      $(this).css("color", "#FC7100");
 	      $(this).parent().siblings("div.added-to-watchlist-match").fadeIn("slow");
 	      setTimeout(function () {
-	        console.log("help");
 	        $(that).parent().siblings("div.added-to-watchlist-match").fadeOut("slow");
 	      }, 4000);
 	    });

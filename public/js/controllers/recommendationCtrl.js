@@ -5,7 +5,6 @@ function recommendationCtrl($scope, $location, $timeout, mainService){
   $scope.loading = false;
   let leftoverMovies = [];
   $scope.rankedMovies = mainService.myRecMoviesByGenre;
-  console.log("chicken");
 
   $scope.randomTest = 0;
 
@@ -40,15 +39,12 @@ function recommendationCtrl($scope, $location, $timeout, mainService){
       // $scope.loading = false;
       //   $location.path("/recommendations");
       leftoverMovies = $scope.rankedMovies.splice(50);
-      console.log("leftover", leftoverMovies);
       $scope.rankedMovies = $scope.rankedMovies.slice(0, 50);
-      console.log("rankedMovies", $scope.rankedMovies);
       return $scope.rankedMovies;
     })
   }
 
   $scope.loadMore = function(){
-    console.log(leftoverMovies);
     for (var i = 0; i < 1; i++) {
       $scope.rankedMovies.push(leftoverMovies[0]);
       leftoverMovies.splice(0, 1);
@@ -102,7 +98,6 @@ function recommendationCtrl($scope, $location, $timeout, mainService){
   $scope.addToRatedFive = function(movie){
 
     mainService.addToRatedFive(movie);
-    console.log(movie);
     for (var i = 0; i < $scope.rankedMovies.length; i++) {
       if(movie._id === $scope.rankedMovies[i]._id){
         console.log("remove", movie._id, $scope.rankedMovies[i]._id);

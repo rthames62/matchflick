@@ -9,7 +9,6 @@ function movieDetails(){
   };
 
   $("li.movie-poster").on("mouseenter", function(){
-    console.log("enter");
     $("span.overlay", this).css("visibility", "visible")
   })
 }

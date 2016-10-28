@@ -4,7 +4,6 @@ function mainService($http, $location, $timeout, $q){
   let topFive = [];
   let myThis = this;
   myThis.done = 0;
-  console.log("i am the first", myThis.done);
   let recommendMoviesForMatch = [];
   let initCounter = 0;
   myThis.initCounter = 0;
@@ -50,7 +49,6 @@ function mainService($http, $location, $timeout, $q){
           currentUser = userResponse.data[0];
           myThis.currentUser = currentUser;
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length + currentUser.unseenMovies.length;;
-          console.log("current user", currentUser);
         } else {
             currentUser = {
               firstName : results._json.first_name,
@@ -127,7 +125,6 @@ function mainService($http, $location, $timeout, $q){
     return $http.get(`${omdbUrl}movie/${obj.id}?${omdbKey}&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates`)
     .then(function(response) {
         let results = response.data;
-        console.log(results);
         let movieObj = {
           movieTitle : results.title,
           description : results.overview,
@@ -182,7 +179,6 @@ function mainService($http, $location, $timeout, $q){
             // postMovieToDB(movieObj);
             $http.post("/api/movies", movieObj).then(function(response){
               let addedMovie = response.data;
-              console.log("added movie", addedMovie.omdbId);
               currentUser.topFive.push(addedMovie);
               topFive = currentUser.topFive;
               $http.post(`/api/user/${currentUser._id}/topFive`, addedMovie);
@@ -212,21 +208,18 @@ function mainService($http, $location, $timeout, $q){
     movieIds.push(action80s, action90s, action00s, action10s, comedy80s, comedy90s, comedy00s, comedy10s, drama80s, drama90s, drama00s, drama10s, adventure80s, adventure90s, adventure00s, adventure10s, scifi80s, scifi90s, scifi00s, scifi10s);
     movieIds = flattenArr(movieIds)
     let topFiveIds = getTopFiveIds(currentUser.topFive);
-    console.log(movieIds);
     movieIds = findDuplicates(movieIds, topFiveIds);
     movieIds = removeDuplicates(movieIds);
-    console.log(movieIds);
     movieIds = shuffleArray(movieIds);
     let recommendMoviesArr = [];
 
-    let someMovies = movieIds.slice(0, 50);
+    let someMovies = movieIds.slice(0, 100);
 
     currentUser.initRecommended = [];
     someMovies.forEach(function(x, i){
       if(x !== currentUser.topFive.omdbId){
         $http.get(`${omdbUrl}movie/${x}?${omdbKey}&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates`).then(function(response2){
           let results = response2.data;
-          console.log("promise", results);
           let movieObj = {
             movieTitle : results.title,
             description : results.overview,
@@ -277,10 +270,8 @@ function mainService($http, $location, $timeout, $q){
               y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
             }
           })
-          console.log("movieObj", movieObj);
           // currentUser.initRecommended.push(movieObj);
           $http.post("/api/movies", movieObj).then(function(response){
-            console.log("last", response.data);
             currentUser.initRecommended.push(response.data);
             $http.post(`/api/user/${currentUser._id}/initRec`, {_id : response.data._id});
             myThis.recommendMoviesForMatch = currentUser.initRecommended;
@@ -289,7 +280,6 @@ function mainService($http, $location, $timeout, $q){
           // console.log("rec movies arr", myThis.recommendMoviesForMatch);
         })
       } else {
-        console.log("found duplicate");
       }
     })
     // console.log("rec movies arr", myThis.recommendMoviesForMatch);
@@ -308,7 +298,6 @@ function mainService($http, $location, $timeout, $q){
 
   this.getTopFive = function(){
       this.topFive = [];
-      console.log(currentUser);
       if(currentUser.topFive.length > 0){
         this.topFive = currentUser.topFive;
       }
@@ -366,12 +355,10 @@ function mainService($http, $location, $timeout, $q){
 
       myThis.initCounter = initCounter;
 
-      if(toTwenty < 10 && initCounter < 100){
+      if(toTwenty < 20 && initCounter < 100){
         currentMovie = currentUser.initRecommended[initCounter];
-        console.log("counter", initCounter);
         return currentMovie;
       } else {
-        console.log("im done!");
         myThis.initLoading = true;
         currentUser.initialized = true;
         $http.put(`/api/user/${currentUser._id}`, {initialized : true});
@@ -381,13 +368,10 @@ function mainService($http, $location, $timeout, $q){
   }
 
   this.discoverForMatch = function(){
-    console.log("starting");
     for (var i = 0; i < 50; i++) {
       $http.get(`${omdbUrl}discover/movie?${omdbKey}&sort_by=popularity.desc&include_adult=false&include_video=true&page=${i}&with_genres=9648`).then(function(response){
         response.data.results.forEach(function(x){
           tempDiscover.push(x.id);
-          console.log("pushed");
-          console.log(tempDiscover.length);
         })
       });
     }
@@ -450,13 +434,9 @@ function mainService($http, $location, $timeout, $q){
         })
         // currentUser.initRecommended.push(movieObj);
         $http.post("/api/movies", movieObj).then(function(response){
-          console.log(response.data._id);
           currentUser.matchQueue.push(response.data._id);
           $http.post(`/api/user/${currentUser._id}/matchQueue`, {_id : response.data._id});
-          console.log("temp index", tempDiscover[i], i);
           tempDiscover.splice(0, 1);
-          console.log("done");
-          console.log("tempDiscover", tempDiscover.length);
         });
       })
     }
@@ -673,14 +653,12 @@ function mainService($http, $location, $timeout, $q){
 
       rankedMovies = sortByScore(rankedMovies, "totalScore").reverse();
 
-      console.log(rankedMovies);
 
       rankedMovies.forEach(function(x){
         moviePromises.push(getMovieByMid(x.mId));
       })
 
       return $q.all(moviePromises).then(function(response){
-        console.log(response);
         let finalMovies = [];
 
         response.forEach(function(x){
@@ -835,7 +813,6 @@ function mainService($http, $location, $timeout, $q){
   }
 
   function getByGenre(id){
-    console.log("this is the id", id);
     return $http.get(`/api/genres?id=${id}`).then(function(response){
       return response.data;
     })
@@ -850,7 +827,6 @@ function mainService($http, $location, $timeout, $q){
 
   function postMovieToDB(obj){
     return $http.post("/api/movies", obj).then(function(response){
-      console.log("responsedddd", response);
       return response.data;
     });
   }
@@ -869,7 +845,6 @@ function mainService($http, $location, $timeout, $q){
       $http.post(`/api/user/${currentUser._id}/initRec`, {_id : response.data._id});
       myThis.recommendMoviesForMatch = [];
       myThis.recommendMoviesForMatch = currentUser.initRecommended;
-      console.log("2", myThis.recommendMoviesForMatch);
     });
   }
 

@@ -3,16 +3,13 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   $scope.done = mainService.done;
 
   $scope.$watch("done", function(newValue, oldValue){
-    console.log(newValue, oldValue);
     if (newValue === 1) {
-      console.log("yay");
     }
   }, true)
 
   $scope.getInitMatchQueue = function(){
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
-        console.log("ratings", results);
         $scope.awards = results.data.Awards;
         $scope.imdbMetascore = results.data.Metascore;
         $scope.imdbRating = results.data.imdbRating;
@@ -32,7 +29,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
-        console.log($scope.recommendedMovie);
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -48,7 +44,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
-        console.log("ratings", results);
         $scope.awards = results.data.Awards;
         $scope.imdbMetascore = results.data.Metascore;
         $scope.imdbRating = results.data.imdbRating;
@@ -68,7 +63,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
-        console.log($scope.recommendedMovie);
         $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
@@ -87,7 +81,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
-        console.log("ratings", results);
         $scope.awards = results.data.Awards;
         $scope.imdbMetascore = results.data.Metascore;
         $scope.imdbRating = results.data.imdbRating;
@@ -107,7 +100,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
-        console.log($scope.recommendedMovie);
         $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
@@ -125,7 +117,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
-        console.log("ratings", results);
         $scope.awards = results.data.Awards;
         $scope.imdbMetascore = results.data.Metascore;
         $scope.imdbRating = results.data.imdbRating;
@@ -145,7 +136,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
-        console.log($scope.recommendedMovie);
         $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
@@ -163,7 +153,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
-        console.log("ratings", results);
         $scope.awards = results.data.Awards;
         $scope.imdbMetascore = results.data.Metascore;
         $scope.imdbRating = results.data.imdbRating;
@@ -183,7 +172,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
-        console.log($scope.recommendedMovie);
         $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
@@ -202,7 +190,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
     $scope.done = mainService.addToRatedFive(movie);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
-        console.log("ratings", results);
         $scope.awards = results.data.Awards;
         $scope.imdbMetascore = results.data.Metascore;
         $scope.imdbRating = results.data.imdbRating;
@@ -222,7 +209,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
-        console.log($scope.recommendedMovie);
         $("span.watchlist").css("color", "#929292");
         return $scope.recommendedMovie;
       } else {
@@ -239,7 +225,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
-        console.log("ratings", results);
         $scope.awards = results.data.Awards;
         $scope.imdbMetascore = results.data.Metascore;
         $scope.imdbRating = results.data.imdbRating;
@@ -256,9 +241,6 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
       })
       $scope.recommendedMovie = response;
       if($scope.recommendedMovie){
-        console.log($scope.recommendedMovie);
-        console.log($scope.recommendedMovie.popularity);
-        console.log($scope.recommendedMovie.language);
         if ($scope.recommendedMovie.videos.length > 0) {
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }

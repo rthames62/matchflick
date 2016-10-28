@@ -11,7 +11,6 @@ function sidebarCtrl($scope, $http, mainService){
     $("a#favorites").removeClass("active");
     $("a#watchlist").removeClass("active");
 
-    console.log($scope.currentPage.slice(0, 16), "/recommendations");
 
     if($scope.currentPage === "/dashboard"){
       $("a#dashboard").addClass("active");

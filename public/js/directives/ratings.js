@@ -19,7 +19,6 @@ function ratings(){
 
 
       $("a#rateThree").on("mouseenter", function(){
-        console.log("enter");
         $(this).parent().siblings().children("a#rateOne").children().addClass("rate-color");
         $(this).parent().siblings().children("a#rateTwo").children().addClass("rate-color");
         $(this).children().addClass("rate-color");

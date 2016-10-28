@@ -14,7 +14,6 @@ function gsCtrl($scope, $timeout, mainService){
     $scope.reachFive = true;
     mainService.addToTopFive(movie).then(function(response){
       $scope.topFive = response;
-      console.log("top five from scope", $scope.topFive);
       if($scope.topFive.length === 5){
         mainService.postInitRec();
       }
