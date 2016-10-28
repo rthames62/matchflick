@@ -213,7 +213,7 @@ function mainService($http, $location, $timeout, $q){
     movieIds = shuffleArray(movieIds);
     let recommendMoviesArr = [];
 
-    let someMovies = movieIds.slice(0, 100);
+    let someMovies = movieIds.slice(0, 60);
 
     currentUser.initRecommended = [];
     someMovies.forEach(function(x, i){
