@@ -163,7 +163,7 @@ function mainService($http, $location, $timeout, $q){
         }
         movieObj.crew.forEach(function(y){
           if(!y.profile_path){
-            y.profile_path = "http://localhost:8080/images/no-picture.png"
+            y.profile_path = "http://159.203.169.243/images/no-picture.png"
           } else {
             y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
           }
@@ -172,7 +172,7 @@ function mainService($http, $location, $timeout, $q){
           // console.log(y.profile_path);
           if(!y.profile_path){
             // console.log("no picture");
-            y.profile_path = "http://localhost:8080/images/no-picture.png"
+            y.profile_path = "http://159.203.169.243/images/no-picture.png"
           } else {
             // console.log("replacing picture");
             y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
@@ -262,7 +262,7 @@ function mainService($http, $location, $timeout, $q){
           }
           movieObj.crew.forEach(function(y){
             if(!y.profile_path){
-              y.profile_path = "http://localhost:8080/images/no-picture.png"
+              y.profile_path = "http://159.203.169.243/images/no-picture.png"
             } else {
               y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
             }
@@ -271,7 +271,7 @@ function mainService($http, $location, $timeout, $q){
             // console.log(y.profile_path);
             if(!y.profile_path){
               // console.log("no picture");
-              y.profile_path = "http://localhost:8080/images/no-picture.png"
+              y.profile_path = "http://159.203.169.243/images/no-picture.png"
             } else {
               // console.log("replacing picture");
               y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
@@ -433,7 +433,7 @@ function mainService($http, $location, $timeout, $q){
         }
         movieObj.crew.forEach(function(y){
           if(!y.profile_path){
-            y.profile_path = "http://localhost:8080/images/no-picture.png"
+            y.profile_path = "http://159.203.169.243/images/no-picture.png"
           } else {
             y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
           }
@@ -442,7 +442,7 @@ function mainService($http, $location, $timeout, $q){
           // console.log(y.profile_path);
           if(!y.profile_path){
             // console.log("no picture");
-            y.profile_path = "http://localhost:8080/images/no-picture.png"
+            y.profile_path = "http://159.203.169.243/images/no-picture.png"
           } else {
             // console.log("replacing picture");
             y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
@@ -1211,7 +1211,7 @@ function mainService($http, $location, $timeout, $q){
     }
     movieObj.crew.forEach(function(y){
       if(!y.profile_path){
-        y.profile_path = "http://localhost:8080/images/no-picture.png"
+        y.profile_path = "http://159.203.169.243/images/no-picture.png"
       } else {
         y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
       }
@@ -1220,7 +1220,7 @@ function mainService($http, $location, $timeout, $q){
       // console.log(y.profile_path);
       if(!y.profile_path){
         // console.log("no picture");
-        y.profile_path = "http://localhost:8080/images/no-picture.png"
+        y.profile_path = "http://159.203.169.243/images/no-picture.png"
       } else {
         // console.log("replacing picture");
         y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
