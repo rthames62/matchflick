@@ -5,13 +5,13 @@ const passport = require('passport');
 const FacebookStrategy = require('passport-facebook').Strategy;
 const config = require('./config.js');
 const mongoose = require("mongoose");
-const mongoUri = "mongodb://localhost:27017/matchflick";
+const mongoUri = config.mongoUri.url;
 const $ = require('jquery');
 const jquery = require('jquery');
 const AWS = require('aws-sdk');
 
 const app = express();
-const port = 8080;
+const port = 80;
 
 app.use(express.static(`${__dirname}/public`));
 // app.use(json({limit: '50mb'}));
@@ -19,7 +19,7 @@ app.use(json({limit: '50mb'}));
 // app.use(cors());
 require("./masterRoutes.js")(app);
 mongoose.connect(mongoUri);
-mongoose.connection.once("open", function(){});
+mongoose.connection.once("open", function(){console.log("connected to db");});
 app.use(session({secret : config.mySecrets.secret}));
 app.use(passport.initialize());
 app.use(passport.session());

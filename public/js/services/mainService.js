@@ -162,7 +162,6 @@ function mainService($http, $location, $timeout, $q){
           movieObj.crew = movieObj.crew[0];
         }
         movieObj.crew.forEach(function(y){
-          console.log(y.profile_path);
           if(!y.profile_path){
             y.profile_path = "http://localhost:8080/images/no-picture.png"
           } else {
@@ -213,21 +212,26 @@ function mainService($http, $location, $timeout, $q){
     movieIds.push(action80s, action90s, action00s, action10s, comedy80s, comedy90s, comedy00s, comedy10s, drama80s, drama90s, drama00s, drama10s, adventure80s, adventure90s, adventure00s, adventure10s, scifi80s, scifi90s, scifi00s, scifi10s);
     movieIds = flattenArr(movieIds)
     let topFiveIds = getTopFiveIds(currentUser.topFive);
+    console.log(movieIds);
     movieIds = findDuplicates(movieIds, topFiveIds);
     movieIds = removeDuplicates(movieIds);
+    console.log(movieIds);
     movieIds = shuffleArray(movieIds);
     let recommendMoviesArr = [];
 
+    let someMovies = movieIds.slice(0, 50);
+
     currentUser.initRecommended = [];
-    movieIds.forEach(function(x, i){
+    someMovies.forEach(function(x, i){
       if(x !== currentUser.topFive.omdbId){
         $http.get(`${omdbUrl}movie/${x}?${omdbKey}&append_to_response=videos,images,credits,recommendations,keywords,similar,release_dates`).then(function(response2){
           let results = response2.data;
+          console.log("promise", results);
           let movieObj = {
             movieTitle : results.title,
             description : results.overview,
             popularity : results.popularity,
-            posterUrl : results.poster_path,
+            posterUrl : `http://image.tmdb.org/t/p/w500/${results.poster_path}`,
             releaseDate : formatDate(results.release_date),
             video : results.video,
             vote : results.vote_average,
@@ -257,12 +261,9 @@ function mainService($http, $location, $timeout, $q){
             movieObj.crew = movieObj.crew[0];
           }
           movieObj.crew.forEach(function(y){
-            console.log(y.profile_path);
             if(!y.profile_path){
-              console.log("no picture");
               y.profile_path = "http://localhost:8080/images/no-picture.png"
             } else {
-              console.log("replacing picture");
               y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
             }
           })
@@ -276,8 +277,10 @@ function mainService($http, $location, $timeout, $q){
               y.profile_path = `http://image.tmdb.org/t/p/w500/${y.profile_path}`
             }
           })
+          console.log("movieObj", movieObj);
           // currentUser.initRecommended.push(movieObj);
           $http.post("/api/movies", movieObj).then(function(response){
+            console.log("last", response.data);
             currentUser.initRecommended.push(response.data);
             $http.post(`/api/user/${currentUser._id}/initRec`, {_id : response.data._id});
             myThis.recommendMoviesForMatch = currentUser.initRecommended;
