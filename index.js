@@ -8,7 +8,6 @@ const mongoose = require("mongoose");
 const mongoUri = config.mongoUri.url;
 const $ = require('jquery');
 const jquery = require('jquery');
-const AWS = require('aws-sdk');
 
 const app = express();
 const port = 80;

@@ -16,6 +16,7 @@ import "./views/recommendations/recommendations.html";
 import "./views/favorites.html";
 import "./views/watchlist.html";
 import "./views/preferences.html";
+import "./views/directives/dashnav.html";
 
 //CSS
 import "./css/reset.css";
