@@ -350,7 +350,7 @@ function mainService($http, $location, $timeout, $q){
 
   this.getRecommendedMovieForInitMatch = function(){
     if(Object.keys(currentUser).length > 0) {
-      initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length + currentUser.unseenMovies.length;
+      initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
       let toTwenty = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
 
       myThis.initCounter = initCounter;
