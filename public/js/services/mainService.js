@@ -43,19 +43,14 @@ function mainService($http, $location, $timeout, $q){
   const omdbKey = "550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";
 
   this.getFbCurrentUser = function(){
-    console.log("chicken");
     return $http.get("/api/facebook").then(function(response){
-      console.log("facebook done");
       let results = response.data;
       $http.get(`/api/users/fb/${results.id}`).then(function(userResponse){
-        console.log("have user obj");
-        console.log(userResponse.data[0]);
         if(userResponse.data.length > 0){
           currentUser = userResponse.data[0];
           myThis.currentUser = currentUser;
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
           myThis.userLoaded.push("lets go");
-          console.log("userLoaded", myThis.userLoaded);
         } else {
             currentUser = {
               firstName : results._json.first_name,
@@ -354,17 +349,9 @@ function mainService($http, $location, $timeout, $q){
   }
 
   this.getRecommendedMovieForInitMatch = function(){
-    console.log("hello");
     if(Object.keys(currentUser).length > 0) {
       initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
       let toTwenty = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
-
-      console.log(currentUser.ratedMoviesOne.length);
-      console.log(currentUser.ratedMoviesTwo.length);
-      console.log(currentUser.ratedMoviesThree.length);
-      console.log(currentUser.ratedMoviesFour.length);
-      console.log(currentUser.ratedMoviesFive.length);
-      console.log("counter", initCounter);
 
       myThis.initCounter = initCounter;
 
