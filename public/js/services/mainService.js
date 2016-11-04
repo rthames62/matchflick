@@ -349,6 +349,7 @@ function mainService($http, $location, $timeout, $q){
   }
 
   this.getRecommendedMovieForInitMatch = function(){
+    console.log("hello");
     if(Object.keys(currentUser).length > 0) {
       initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
       let toTwenty = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
