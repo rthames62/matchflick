@@ -18,7 +18,7 @@ function loadingCtrl($scope, mainService){
     if($scope.userLoaded){
       console.log("time to roll, TINY RICK");
     }
-  })
+  }, true)
 
   $scope.getFbCurrentUser();
   // $scope.loading();

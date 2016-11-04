@@ -45,7 +45,7 @@ function mainService($http, $location, $timeout, $q){
   this.getFbCurrentUser = function(){
     console.log("chicken");
     return $http.get("/api/facebook").then(function(response){
-      console.log("tiny rick");
+      console.log("facebook done");
       let results = response.data;
       $http.get(`/api/users/fb/${results.id}`).then(function(userResponse){
         console.log("have user obj");
