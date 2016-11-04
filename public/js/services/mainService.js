@@ -44,10 +44,11 @@ function mainService($http, $location, $timeout, $q){
   this.getFbCurrentUser = function(){
     console.log("chicken");
     return $http.get("/api/facebook").then(function(response){
+      console.log("tiny rick");
       let results = response.data;
       $http.get(`/api/users/fb/${results.id}`).then(function(userResponse){
         console.log("have user obj");
-        console.log(userResponse);
+        console.log(userResponse.data[0]);
         if(userResponse.data.length > 0){
           currentUser = userResponse.data[0];
           myThis.currentUser = currentUser;
