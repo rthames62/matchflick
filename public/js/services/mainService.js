@@ -5,6 +5,7 @@ function mainService($http, $location, $timeout, $q){
   let topFive = [];
   let myThis = this;
   myThis.done = 0;
+  myThis.userLoaded = false;
   let recommendMoviesForMatch = [];
   let initCounter = 0;
   myThis.initCounter = 0;
@@ -53,6 +54,7 @@ function mainService($http, $location, $timeout, $q){
           currentUser = userResponse.data[0];
           myThis.currentUser = currentUser;
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
+          myThis.userLoaded = true;
         } else {
             currentUser = {
               firstName : results._json.first_name,
