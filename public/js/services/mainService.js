@@ -41,14 +41,15 @@ function mainService($http, $location, $timeout, $q){
   const omdbKey = "550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";
 
   this.getFbCurrentUser = function(){
+    console.log("chicken");
     return $http.get("/api/facebook").then(function(response){
       let results = response.data;
       $http.get(`/api/users/fb/${results.id}`).then(function(userResponse){
-        // console.log(userResponse);
+        console.log(userResponse);
         if(userResponse.data.length > 0){
           currentUser = userResponse.data[0];
           myThis.currentUser = currentUser;
-          myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length + currentUser.unseenMovies.length;;
+          myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
         } else {
             currentUser = {
               firstName : results._json.first_name,
