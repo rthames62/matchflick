@@ -353,6 +353,13 @@ function mainService($http, $location, $timeout, $q){
       initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
       let toTwenty = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
 
+      console.log(currentUser.ratedMoviesOne.length);
+      console.log(currentUser.ratedMoviesTwo.length);
+      console.log(currentUser.ratedMoviesThree.length);
+      console.log(currentUser.ratedMoviesFour.length);
+      console.log(currentUser.ratedMoviesFive.length);
+      console.log("counter", initCounter);
+
       myThis.initCounter = initCounter;
 
       if(toTwenty < 20 && initCounter < 100){
