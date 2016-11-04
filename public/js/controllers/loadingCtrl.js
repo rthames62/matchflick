@@ -16,6 +16,7 @@ function loadingCtrl($scope, mainService){
     console.log(newValue, oldValue);
     if($scope.userLoaded.length > 0){
       console.log("time to roll, TINY RICK");
+      return mainService.loading();
     }
   }, true)
 

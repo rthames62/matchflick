@@ -334,7 +334,6 @@ function mainService($http, $location, $timeout, $q){
   }
 
   this.loading = function(){
-    $timeout(function(){
       if(currentUser.initialized === false && currentUser.topFive.length === 5){
         $location.path("/getting-started/match")
       } else if(currentUser.initialized === false && currentUser.topFive.length > 0){
@@ -344,7 +343,6 @@ function mainService($http, $location, $timeout, $q){
       } else {
         $location.path("/dashboard")
       }
-    }, 2000)
   }
 
   this.reachFive = function(arr){
