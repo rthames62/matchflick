@@ -1,3 +1,4 @@
+function initMatchFile(){
 const initMatchQueue = [
       "580653decbfa7d81497fe80d",
       "58065d1c2418ec817d0989eb",
@@ -2636,3 +2637,5 @@ const initMatchQueue = [
       "58065b5829169f816f05d210",
       "58065416cbfa7d81497fe872"
   ]
+}
+module.exports = initMatchFile;

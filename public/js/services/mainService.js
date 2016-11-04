@@ -1,5 +1,5 @@
+import "./recMovies.js"
 function mainService($http, $location, $timeout, $q){
-  console.log("hi?");
   let currentUser = {};
   let currentUserFbId = "";
   let topFive = [];
@@ -46,6 +46,7 @@ function mainService($http, $location, $timeout, $q){
     return $http.get("/api/facebook").then(function(response){
       let results = response.data;
       $http.get(`/api/users/fb/${results.id}`).then(function(userResponse){
+        console.log("have user obj");
         console.log(userResponse);
         if(userResponse.data.length > 0){
           currentUser = userResponse.data[0];
