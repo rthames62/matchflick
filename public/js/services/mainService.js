@@ -1,4 +1,5 @@
 function mainService($http, $location, $timeout, $q){
+  console.log("hi?");
   let currentUser = {};
   let currentUserFbId = "";
   let topFive = [];
