@@ -15,7 +15,7 @@ function loadingCtrl($scope, mainService){
   $scope.$watch('userLoaded', function(newValue, oldValue){
     console.log("hello from watch");
     console.log(newValue, oldValue);
-    if(userLoaded){
+    if($scope.userLoaded){
       console.log("time to roll, TINY RICK");
     }
   })
