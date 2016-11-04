@@ -1,11 +1,11 @@
 import "./recMovies.js"
-function mainService($http, $location, $timeout, $q, $rootScope){
+function mainService($http, $location, $timeout, $q){
   let currentUser = {};
   let currentUserFbId = "";
   let topFive = [];
   let myThis = this;
   myThis.done = 0;
-  myThis.userLoaded = false;
+  myThis.userLoaded = [];
   let recommendMoviesForMatch = [];
   let initCounter = 0;
   myThis.initCounter = 0;
@@ -54,10 +54,8 @@ function mainService($http, $location, $timeout, $q, $rootScope){
           currentUser = userResponse.data[0];
           myThis.currentUser = currentUser;
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
-          $rootScope.$apply(function(){
-            myThis.userLoaded = true;
-            console.log("userLoaded", myThis.userLoaded);
-          });
+          myThis.userLoaded.push("lets go");
+          console.log("userLoaded", myThis.userLoaded);
         } else {
             currentUser = {
               firstName : results._json.first_name,
