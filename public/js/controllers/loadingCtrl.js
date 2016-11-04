@@ -1,4 +1,5 @@
 function loadingCtrl($scope, mainService){
+  console.log("hi");
   $scope.loading = function(){
     return mainService.loading();
   }
