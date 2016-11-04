@@ -1,7 +1,6 @@
 function dashboardCtrl($scope, $http, mainService){
 
   $scope.currentUser = mainService.currentUser;
-  console.log("from ctrl", $scope.currentUser);
 
   $scope.discoverForMatch = function(){
     mainService.discoverForMatch();
@@ -25,7 +24,6 @@ function dashboardCtrl($scope, $http, mainService){
   $scope.getUserActorPrefs = function(){
     mainService.getUserActorPrefs().then(function(response){
       $scope.userActorPrefs = response;
-      console.log($scope.userActorPrefs);
       return $scope.userActorPrefs;
     })
   }
