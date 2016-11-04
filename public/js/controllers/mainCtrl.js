@@ -1,5 +1,6 @@
 function mainCtrl($scope, $location, mainService){
   $scope.initCounterShow = true;
+  $scope.test = "hi";
   $scope.getFbCurrentUser = function(){
     console.log("from mainctrl");
       mainService.getFbCurrentUser().then(function(response){
