@@ -55,6 +55,7 @@ function mainService($http, $location, $timeout, $q){
           myThis.currentUser = currentUser;
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
           myThis.userLoaded = true;
+          console.log("userLoaded", myThis.userLoaded);
         } else {
             currentUser = {
               firstName : results._json.first_name,

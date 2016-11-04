@@ -2,12 +2,13 @@ function loadingCtrl($scope, mainService){
   // $scope.loading = function(){
   //   return mainService.loading();
   // }
-  $scope.userLoaded = mainService.userLoaded;
+  $scope.userLoaded = false;
 
   $scope.test = "hi";
   $scope.getFbCurrentUser = function(){
       mainService.getFbCurrentUser().then(function(response){
         $scope.currentUser = response;
+        $scope.userLoaded = true;
         return $scope.currentUser;
       })
   }
