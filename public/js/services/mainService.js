@@ -653,6 +653,8 @@ function mainService($http, $location, $timeout, $q){
 
       rankedMovies = sortByScore(rankedMovies, "totalScore").reverse();
 
+      console.log("ranked movies", rankedMovies);
+
 
       rankedMovies.forEach(function(x){
         moviePromises.push(getMovieByMid(x.mId));
@@ -722,6 +724,8 @@ function mainService($http, $location, $timeout, $q){
         for (let j = 0; j < compareTo.length; j++) {
           if(actorName === compareTo[j].actorName){
             if(compareTo[j].actorCount === 1){
+              console.log("name", actorName);
+              console.log("score", compareTo[j].actorTotalScore);
               score.actorScore += compareTo[j].actorTotalScore;
             } else {
               score.actorScore += compareTo[j].actorScore;
