@@ -1,6 +1,7 @@
 function matchCtrl($scope, $http, $sce, $timeout, mainService){
 
   $scope.done = mainService.done;
+  $scope.loading = false;
 
   $scope.$watch("done", function(newValue, oldValue){
     if (newValue === 1) {
@@ -41,6 +42,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   }
 
   $scope.addToRatedOne = function(movie){
+    $scope.loading = true;
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
@@ -64,6 +66,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         $("span.watchlist").css("color", "#929292");
+        $scope.loading = false;
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -78,6 +81,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   }
 
   $scope.addToRatedTwo = function(movie){
+    $scope.loading = true;
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
@@ -101,6 +105,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         $("span.watchlist").css("color", "#929292");
+        $scope.loading = false;
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -114,6 +119,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   }
 
   $scope.addToRatedThree = function(movie){
+    $scope.loading = true;
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
@@ -137,6 +143,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         $("span.watchlist").css("color", "#929292");
+        $scope.loading = false;
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -150,6 +157,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   }
 
   $scope.addToRatedFour = function(movie){
+    $scope.loading = true;
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
@@ -173,6 +181,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         $("span.watchlist").css("color", "#929292");
+        $scope.loading = false;
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -186,6 +195,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   }
 
   $scope.addToRatedFive = function(movie){
+    $scope.loading = true;
     mainService.removeFromMatchQueue(movie._id);
     $scope.done = mainService.addToRatedFive(movie);
     mainService.getInitMatchQueue().then(function(response){
@@ -210,6 +220,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         $("span.watchlist").css("color", "#929292");
+        $scope.loading = false;
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
@@ -222,6 +233,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
   }
 
   $scope.addToUnseen = function(movie){
+    $scope.loading = true;
     mainService.removeFromMatchQueue(movie._id);
     mainService.getInitMatchQueue().then(function(response){
       $http.get(`http://www.omdbapi.com/?i=${response.imdbId}&tomatoes=true`).then(function(results){
@@ -245,6 +257,7 @@ function matchCtrl($scope, $http, $sce, $timeout, mainService){
             $scope.trailerUrl = $sce.trustAsHtml(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${$scope.recommendedMovie.videos[0].key}" frameborder="0" allowfullscreen></iframe>`);
         }
         $("span.watchlist").css("color", "#929292");
+        $scope.loading = false;
         return $scope.recommendedMovie;
       } else {
         $timeout(function(){
