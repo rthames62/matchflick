@@ -811,7 +811,7 @@ function mainService($http, $location, $timeout, $q){
         }
       }
     }
-    score.totalScore = score.actorScore + score.keywordScore + (score.directorScore / 1.5) + (score.producerScore / 1.5) + (score.writerScore / 1.5);
+    score.totalScore = score.actorScore + (score.keywordScore / 2) + (score.directorScore / 1.5) + (score.producerScore / 1.5) + (score.writerScore / 1.5);
 
     return score;
   }
