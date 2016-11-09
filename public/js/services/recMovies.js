@@ -2637,5 +2637,6 @@ const initMatchQueue = [
       "58065b5829169f816f05d210",
       "58065416cbfa7d81497fe872"
   ]
+  return initMatchQueue;
 }
 module.exports = initMatchFile;
