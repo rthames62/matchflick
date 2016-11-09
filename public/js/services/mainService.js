@@ -80,7 +80,9 @@ function mainService($http, $location, $timeout, $q){
             currentUserFbId = results.id;
             postCurrentUser(currentUser);
             console.log("posting currentUser", currentUser);
-            myThis.userLoaded.push("lets go");
+            setTimeout(function(){
+              myThis.userLoaded.push("lets go");
+            }, 1000)
           }
       })
       return response.data;
