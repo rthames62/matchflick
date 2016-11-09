@@ -74,8 +74,11 @@ function mainService($http, $location, $timeout, $q){
               watchlist : [],
               preferences : []
             };
+            console.log("1");
             currentUserFbId = results.id;
+            console.log("2");
             postCurrentUser(currentUser);
+            console.log("3");
           }
       })
       return response.data;
