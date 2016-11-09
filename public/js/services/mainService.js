@@ -52,6 +52,7 @@ function mainService($http, $location, $timeout, $q){
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
           myThis.userLoaded.push("lets go");
         } else {
+          console.log("new user");
             currentUser = {
               firstName : results._json.first_name,
               lastName : results._json.last_name,
@@ -80,46 +81,6 @@ function mainService($http, $location, $timeout, $q){
       return response.data;
     })
   }
-
-  // this.getFbCurrentUser = function(){
-  //   return $http.get("/api/facebook").then(function(response){
-  //     let results = response.data;
-  //     $http.get("/api/users").then(function(userResponse){
-  //       let found = false;
-  //       userResponse.data.map(function(x, i){
-  //         if(x.facebookId == results.id){
-  //           currentUser = x;
-  //           console.log("Current User", currentUser);
-  //           found = true;
-  //         }
-  //       })
-  //       if(!found){
-  //         currentUser = {
-  //           firstName : results._json.first_name,
-  //           lastName : results._json.last_name,
-  //           email : results._json.email,
-  //           facebookId : results.id,
-  //           profileUrl : results.profileUrl,
-  //           location : results._json.location,
-  //           coverPhotoUrl : results._json.cover.source,
-  //           profilePictureUrl : results._json.picture.data.url,
-  //           topFive : [],
-  //           initRecommended : [],
-  //           ratedMoviesOne : [],
-  //           ratedMoviesTwo : [],
-  //           ratedMoviesThree : [],
-  //           ratedMoviesFour : [],
-  //           ratedMoviesFive : [],
-  //           unseenMovies : [],
-  //           watchlist : []
-  //         };
-  //         currentUserFbId = results.id;
-  //         postCurrentUser(currentUser);
-  //       }
-  //     })
-  //     return response.data;
-  //   })
-  // }
 
   this.addToTopFive = function(obj) {
     let dfd = $q.defer();
