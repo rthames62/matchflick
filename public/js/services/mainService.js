@@ -52,8 +52,6 @@ function mainService($http, $location, $timeout, $q){
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
           myThis.userLoaded.push("lets go");
         } else {
-          console.log("new user");
-          console.log(results);
             currentUser = {
               firstName : results._json.first_name,
               lastName : results._json.last_name,
@@ -75,11 +73,9 @@ function mainService($http, $location, $timeout, $q){
               watchlist : [],
               preferences : []
             };
-            console.log("1");
             currentUserFbId = results.id;
-            console.log("2");
             postCurrentUser(currentUser);
-            console.log("3");
+            myThis.userLoaded.push("lets go");
           }
       })
       return response.data;
