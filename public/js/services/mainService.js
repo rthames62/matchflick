@@ -54,14 +54,14 @@ function mainService($http, $location, $timeout, $q){
         } else {
           console.log("new user");
             currentUser = {
-              firstName : results._json.first_name,
-              lastName : results._json.last_name,
-              email : results._json.email,
-              facebookId : results.id,
-              profileUrl : results.profileUrl,
-              location : results._json.location,
-              coverPhotoUrl : results._json.cover.source,
-              profilePictureUrl : results._json.picture.data.url,
+              firstName : results[_json][first_name],
+              lastName : results[_json][last_name],
+              email : results[_json][email],
+              facebookId : results[id],
+              profileUrl : results[profileUrl],
+              location : results[_json][location],
+              coverPhotoUrl : results[_json][cover][source],
+              profilePictureUrl : results[_json][picture][data][url],
               topFive : [],
               initRecommended : [],
               matchQueue : shuffleArray(initMatchQueue),
