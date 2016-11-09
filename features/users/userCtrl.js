@@ -5,6 +5,7 @@ module.exports = {
   postUser(req, res){
     new User(req.body).save(function(error, response){
       if(error){
+        console.log(error)
         return res.status(500).json(error);
       } else {
         return res.json(response);
