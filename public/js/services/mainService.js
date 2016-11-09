@@ -65,7 +65,7 @@ function mainService($http, $location, $timeout, $q){
               profilePictureUrl : results._json.picture.data.url,
               topFive : [],
               initRecommended : [],
-              matchQueue : shuffleArray(initMatchQueue),
+              matchQueue : shuffleArray(initMatchQueue()),
               ratedMoviesOne : [],
               ratedMoviesTwo : [],
               ratedMoviesThree : [],
