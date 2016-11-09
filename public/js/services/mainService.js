@@ -317,14 +317,18 @@ function mainService($http, $location, $timeout, $q){
   }
 
   this.getRecommendedMovieForInitMatch = function(){
+    console.log("fired");
     if(Object.keys(currentUser).length > 0) {
+      console.log("there is a user");
       initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
       let toTwenty = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
 
       myThis.initCounter = initCounter;
 
       if(toTwenty < 20 && initCounter < 100){
+        console.log("another movie");
         currentMovie = currentUser.initRecommended[initCounter];
+        console.log("current movie", currentMovie);
         return currentMovie;
       } else {
         myThis.initLoading = true;

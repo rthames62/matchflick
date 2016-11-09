@@ -77,6 +77,7 @@ function initMatch($scope, $sce, mainService, $timeout){
     mainService.removeFromMatchQueue(movie._id);
     mainService.addToUnseen(movie);
     $scope.recommendedMovie = $scope.getRecommendedMovieForInitMatch();
+    console.log("from CTRL", $scope.recommendedMovie);
     return $scope.recommendedMovie;
   }
 
