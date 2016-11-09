@@ -74,7 +74,8 @@ function mainService($http, $location, $timeout, $q){
               ratedMoviesFive : [],
               unseenMovies : [],
               watchlist : [],
-              preferences : []
+              preferences : [],
+              initialized : false
             };
             currentUserFbId = results.id;
             postCurrentUser(currentUser);
