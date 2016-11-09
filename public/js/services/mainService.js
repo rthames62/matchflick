@@ -39,7 +39,6 @@ function mainService($http, $location, $timeout, $q){
   let scifi90s = [602, 607, 18];
   let scifi00s = [17654, 16320, 13475, 6479, 2675];
   let scifi10s = [120, 24428, 37686, 20504, 277];
-  let testingInitMatch = initMatchQueue();
   const omdbUrl = "https://api.themoviedb.org/3/"
   const omdbKey = "550&api_key=be7c9a53bfd40a5a3d9aa3c4cf99b5c9";
 
