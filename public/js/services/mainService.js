@@ -45,13 +45,16 @@ function mainService($http, $location, $timeout, $q){
   this.getFbCurrentUser = function(){
     return $http.get("/api/facebook").then(function(response){
       let results = response.data;
+      console.log(results);
       $http.get(`/api/users/fb/${results.id}`).then(function(userResponse){
         if(userResponse.data.length > 0){
           currentUser = userResponse.data[0];
+          console.log("user found", currentUser);
           myThis.currentUser = currentUser;
           myThis.initCounter = currentUser.ratedMoviesOne.length + currentUser.ratedMoviesTwo.length + currentUser.ratedMoviesThree.length + currentUser.ratedMoviesFour.length + currentUser.ratedMoviesFive.length;
           myThis.userLoaded.push("lets go");
         } else {
+          console.log("no user");
             currentUser = {
               firstName : results._json.first_name,
               lastName : results._json.last_name,
@@ -75,6 +78,7 @@ function mainService($http, $location, $timeout, $q){
             };
             currentUserFbId = results.id;
             postCurrentUser(currentUser);
+            console.log("posting currentUser", currentUser);
             myThis.userLoaded.push("lets go");
           }
       })
